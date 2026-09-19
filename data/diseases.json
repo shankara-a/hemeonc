@@ -1,0 +1,22 @@
+{
+  "groups": [
+    { "id": "solid", "name": "Solid tumors" },
+    { "id": "malignant-heme", "name": "Malignant hematology" },
+    { "id": "benign-heme", "name": "Classical hematology" }
+  ],
+  "diseases": [
+    { "slug": "breast",     "name": "Breast cancer",                    "short": "Breast",      "group": "solid",          "onepager": "Breast Cancer.pdf",              "aliases": ["breast"] },
+    { "slug": "colon",      "name": "Colon adenocarcinoma",             "short": "Colon",       "group": "solid",          "onepager": "Colon Adenocarcinoma.pdf",       "aliases": ["colon", "colorectal", "crc"] },
+    { "slug": "rectal",     "name": "Rectal adenocarcinoma",            "short": "Rectal",      "group": "solid",          "onepager": "Rectal Adenocarcinoma.pdf",      "aliases": ["rectal", "rectum"] },
+    { "slug": "pancreatic", "name": "Pancreatic adenocarcinoma",        "short": "Pancreatic",  "group": "solid",          "onepager": "Pancreatic Cancer.pdf",          "aliases": ["pancreatic", "pancreas", "pdac"] },
+    { "slug": "nsclc",      "name": "Non-small cell lung cancer",       "short": "NSCLC",       "group": "solid",          "onepager": "Non-Small Cell Lung Cancer.pdf", "aliases": ["nsclc", "lung", "lung cancer"] },
+    { "slug": "prostate",   "name": "Prostate cancer",                  "short": "Prostate",    "group": "solid",          "onepager": "Prostate Cancer.pdf",            "aliases": ["prostate"] },
+    { "slug": "testicular", "name": "Testicular cancer",                "short": "Testicular",  "group": "solid",          "onepager": "Testicular Cancer.pdf",          "aliases": ["testicular", "germ cell", "gct"] },
+    { "slug": "melanoma",   "name": "Melanoma",                         "short": "Melanoma",    "group": "solid",          "onepager": "Melanoma.pdf",                   "aliases": ["melanoma"] },
+    { "slug": "net",        "name": "Neuroendocrine tumors (GEP-NET)",  "short": "NET",         "group": "solid",          "onepager": "Neuroendocrine Tumors.pdf",      "aliases": ["net", "neuroendocrine", "gep-net", "carcinoid"] },
+    { "slug": "head-neck",  "name": "Head & neck squamous cell carcinoma", "short": "Head & neck", "group": "solid",       "onepager": null,                             "aliases": ["head and neck", "hnscc", "h&n"] },
+    { "slug": "thyroid",    "name": "Thyroid cancer",                   "short": "Thyroid",     "group": "solid",          "onepager": null,                             "aliases": ["thyroid", "dtc"] },
+    { "slug": "mpn",        "name": "Myeloproliferative neoplasms (PV / ET / PMF)", "short": "MPN", "group": "malignant-heme", "onepager": "Myeloproliferative Neoplasms.pdf", "aliases": ["mpn", "polycythemia", "pv", "et", "myelofibrosis", "pmf"] },
+    { "slug": "mds",        "name": "Myelodysplastic syndromes",        "short": "MDS",         "group": "malignant-heme", "onepager": null,                             "aliases": ["mds", "myelodysplastic"] }
+  ]
+}

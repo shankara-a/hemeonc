@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Heme/Onc Hub</title>
+<meta name="description" content="One-pager reference cards and landmark clinical trials for hematology-oncology, plus links to the PubMed tracker, K-Hub and job board." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦀</text></svg>" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-text">
+      <h1><a href="#home">Heme/Onc Hub</a></h1>
+      <p class="tagline">One-pagers, landmark trials, and the rest of the toolkit</p>
+    </div>
+    <nav class="sites" aria-label="Other sites">
+      <a class="site-link" href="https://shankara-a.github.io/heme-onc-pubmed-tracker/" target="_blank" rel="noopener">PubMed Tracker <span aria-hidden="true">↗</span></a>
+      <a class="site-link" href="https://shankara-a.github.io/heme-onc-hub/" target="_blank" rel="noopener">K-Hub <span aria-hidden="true">↗</span></a>
+      <a class="site-link" href="https://shankara-a.github.io/heme-onc-jobs/" target="_blank" rel="noopener">Jobs <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs" role="tablist">
+  <div class="tabs-inner">
+    <button class="tab active" data-tab="home" role="tab">Home</button>
+    <button class="tab" data-tab="reviews" role="tab">Reviews</button>
+    <button class="tab" data-tab="trials" role="tab">Trials</button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ===================== HOME ===================== -->
+<section id="home" class="panel active">
+  <div class="stat-grid" id="home-stats"></div>
+
+  <div class="card-grid">
+    <a class="hub-card internal" href="#reviews">
+      <div class="hub-card-icon">📄</div>
+      <h3>Reviews</h3>
+      <p>One-page reference cards per cancer type — workup, staging, pathway, dosing — with the trials behind each decision alongside.</p>
+      <span class="hub-card-cta">Open reviews →</span>
+    </a>
+    <a class="hub-card internal" href="#trials">
+      <div class="hub-card-icon">🧪</div>
+      <h3>Trials</h3>
+      <p>Landmark trial library: population, arms, endpoint, result, and the one-line takeaway. Hover any trial anywhere on the site to see it.</p>
+      <span class="hub-card-cta">Browse trials →</span>
+    </a>
+    <a class="hub-card" href="https://shankara-a.github.io/heme-onc-pubmed-tracker/" target="_blank" rel="noopener">
+      <div class="hub-card-icon">🔎</div>
+      <h3>PubMed Tracker</h3>
+      <p>Recent heme/onc publications ranked by journal, with institution highlighting and an AI digest.</p>
+      <span class="hub-card-cta">shankara-a.github.io/heme-onc-pubmed-tracker ↗</span>
+    </a>
+    <a class="hub-card" href="https://shankara-a.github.io/heme-onc-hub/" target="_blank" rel="noopener">
+      <div class="hub-card-icon">🎓</div>
+      <h3>K-Hub</h3>
+      <p>NIH K-award tracker, society funding, and conference abstract deadlines for fellows.</p>
+      <span class="hub-card-cta">shankara-a.github.io/heme-onc-hub ↗</span>
+    </a>
+    <a class="hub-card" href="https://shankara-a.github.io/heme-onc-jobs/" target="_blank" rel="noopener">
+      <div class="hub-card-icon">💼</div>
+      <h3>Jobs</h3>
+      <p>Daily-scraped US hematology-oncology physician postings with salary, type and time split.</p>
+      <span class="hub-card-cta">shankara-a.github.io/heme-onc-jobs ↗</span>
+    </a>
+  </div>
+
+  <div class="card home-recent">
+    <div class="dash-head"><h3>Recently updated</h3></div>
+    <div id="home-recent"></div>
+  </div>
+</section>
+
+<!-- ===================== REVIEWS ===================== -->
+<section id="reviews" class="panel">
+  <div class="rv-layout">
+    <aside class="dz-rail" id="dz-rail" aria-label="Diseases"></aside>
+    <div class="rv-main" id="rv-main">
+      <div class="empty">Pick a disease on the left.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRIALS ===================== -->
+<section id="trials" class="panel">
+  <div class="card filters">
+    <input type="search" id="tr-q" placeholder="Search trials — name, drug, endpoint, takeaway…" aria-label="Search trials" />
+    <select id="tr-disease" aria-label="Disease"><option value="">All diseases</option></select>
+    <select id="tr-year" aria-label="Year">
+      <option value="">Any year</option>
+      <option value="2024">2024+</option>
+      <option value="2022">2022+</option>
+      <option value="2020">2020+</option>
+      <option value="2015">2015+</option>
+    </select>
+    <select id="tr-sort" aria-label="Sort">
+      <option value="year-desc">Newest first</option>
+      <option value="year-asc">Oldest first</option>
+      <option value="name">Name A–Z</option>
+      <option value="disease">By disease</option>
+    </select>
+    <label class="check"><input type="checkbox" id="tr-unverified" /> Unverified only</label>
+    <span class="result-count" id="tr-count"></span>
+  </div>
+  <div id="tr-list" class="trial-list"></div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <span>Heme/Onc Hub · <span id="foot-updated"></span></span>
+  <span>Trials marked <span class="unverified-dot" aria-hidden="true"></span> were drafted from one-pager text and not yet checked against the primary paper.</span>
+</footer>
+
+<div id="trial-pop" class="trial-pop" role="tooltip" hidden></div>
+
+<script src="assets/util.js"></script>
+<script src="assets/pdfviewer.js"></script>
+<script src="assets/reviews.js"></script>
+<script src="assets/trials.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

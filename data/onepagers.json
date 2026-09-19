@@ -1,0 +1,95 @@
+{
+ "generated": "2026-09-19T12:05:26",
+ "onepagers": [
+  {
+   "disease": "breast",
+   "file": "Breast Cancer.pdf",
+   "title": "Breast cancer",
+   "pages": 2,
+   "size": 50119,
+   "sha1": "2e90fb2e864a50d79fe5d239fab664488cccf80b",
+   "updated": "2026-09-19"
+  },
+  {
+   "disease": "colon",
+   "file": "Colon Adenocarcinoma.pdf",
+   "title": "Colon adenocarcinoma",
+   "pages": 1,
+   "size": 38643,
+   "sha1": "467557aaba93110b7aab8288229a07f569018480",
+   "updated": "2026-09-19"
+  },
+  {
+   "disease": "melanoma",
+   "file": "Melanoma.pdf",
+   "title": "Melanoma",
+   "pages": 2,
+   "size": 53983,
+   "sha1": "ff05a9fe04fb32883c7cb5286abcc9cfad14e6c0",
+   "updated": "2026-09-19"
+  },
+  {
+   "disease": "mpn",
+   "file": "Myeloproliferative Neoplasms.pdf",
+   "title": "Myeloproliferative neoplasms (PV / ET / PMF)",
+   "pages": 1,
+   "size": 40523,
+   "sha1": "e28d364e122ac1a844b995d7c69343a93876720f",
+   "updated": "2026-09-19"
+  },
+  {
+   "disease": "net",
+   "file": "Neuroendocrine Tumors.pdf",
+   "title": "Neuroendocrine tumors (GEP-NET)",
+   "pages": 2,
+   "size": 45383,
+   "sha1": "39f9ee00145210e42f462c1347d61da9fb030e96",
+   "updated": "2026-09-19"
+  },
+  {
+   "disease": "nsclc",
+   "file": "Non-Small Cell Lung Cancer.pdf",
+   "title": "Non-small cell lung cancer",
+   "pages": 1,
+   "size": 38043,
+   "sha1": "af90e283320d7bb2b0f8ed5ee92061ce475327ba",
+   "updated": "2026-09-19"
+  },
+  {
+   "disease": "pancreatic",
+   "file": "Pancreatic Cancer.pdf",
+   "title": "Pancreatic adenocarcinoma",
+   "pages": 1,
+   "size": 37677,
+   "sha1": "b9036074d313816d1da809d9892884a0f3353ced",
+   "updated": "2026-09-19"
+  },
+  {
+   "disease": "prostate",
+   "file": "Prostate Cancer.pdf",
+   "title": "Prostate cancer",
+   "pages": 1,
+   "size": 37515,
+   "sha1": "a4bc62aa5dcf8b2b8ae7bdc75b08c6bb33322328",
+   "updated": "2026-09-19"
+  },
+  {
+   "disease": "rectal",
+   "file": "Rectal Adenocarcinoma.pdf",
+   "title": "Rectal adenocarcinoma",
+   "pages": 1,
+   "size": 39231,
+   "sha1": "81ccc465d5273b7a9bae38825cc09bdf8dbff8f6",
+   "updated": "2026-09-19"
+  },
+  {
+   "disease": "testicular",
+   "file": "Testicular Cancer.pdf",
+   "title": "Testicular cancer",
+   "pages": 1,
+   "size": 36905,
+   "sha1": "4c8cf7797d3819c886b2cfb41b864cbd500d6f7b",
+   "updated": "2026-09-19"
+  }
+ ]
+}
