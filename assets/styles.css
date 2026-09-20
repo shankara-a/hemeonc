@@ -104,19 +104,19 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
 .unverified-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--amber); vertical-align: middle; }
 
 /* ---------- reviews layout ---------- */
-.rv-layout { display: grid; grid-template-columns: 230px 1fr; gap: 16px; align-items: start; }
-.dz-rail { position: sticky; top: 62px; display: flex; flex-direction: column; gap: 14px; max-height: calc(100vh - 80px); overflow-y: auto; }
-.dz-group-title { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 4px 6px; font-weight: 700; }
+.dz-rail { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-bottom: 14px; }
+.dz-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.dz-group + .dz-group { padding-left: 14px; border-left: 1px solid var(--line); }
+.dz-group-title { font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 700; margin-right: 2px; }
 .dz-btn {
-  display: flex; align-items: center; gap: 8px; width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line);
-  border-radius: 8px; padding: 8px 10px; cursor: pointer; font: inherit; font-size: .9rem; color: var(--ink); margin-bottom: 4px;
+  display: inline-flex; align-items: center; gap: 6px; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 999px; padding: 4px 11px; cursor: pointer; font: inherit; font-size: .84rem; font-weight: 500; color: var(--ink);
 }
 .dz-btn:hover { border-color: var(--accent); }
-.dz-btn.active { border-color: var(--primary); background: var(--primary-soft); color: var(--primary-dark); font-weight: 600; }
-.dz-btn .dz-name { flex: 1; }
-.dz-btn .dz-meta { display: flex; gap: 4px; align-items: center; font-size: .72rem; color: var(--muted); }
-.dz-btn .dz-meta .pdf { color: var(--primary); }
-.dz-btn.active .dz-meta { color: var(--primary-dark); }
+.dz-btn.nopdf { color: var(--muted); border-style: dashed; }
+.dz-btn.active { border-color: var(--primary); background: var(--primary); color: #fff; font-weight: 600; }
+.dz-btn .dz-n { font-size: .7rem; color: var(--muted); }
+.dz-btn.active .dz-n { color: rgba(255,255,255,.8); }
 
 .rv-main { min-width: 0; }
 .rv-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
@@ -128,24 +128,44 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
   background: var(--surface); color: var(--ink); font: inherit; font-size: .86rem; font-weight: 600; cursor: pointer; text-decoration: none;
 }
 .btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn:disabled { opacity: .4; cursor: default; }
 .btn.primary { background: var(--primary); border-color: var(--primary); color: #fff; }
 .btn.primary:hover { background: var(--primary-dark); color: #fff; }
 .btn.small { padding: 4px 9px; font-size: .78rem; }
 
-.rv-body { display: grid; grid-template-columns: minmax(300px, 380px) 1fr; gap: 16px; align-items: start; }
+/* PDF full width, trial strip on the right; strip widens into a drawer */
+.rv-body { display: grid; grid-template-columns: minmax(0, 1fr) 176px; gap: 16px; align-items: start; }
+.rv-body.drawer-open { grid-template-columns: minmax(0, 1fr) 380px; }
 .rv-body.no-pdf { grid-template-columns: 1fr; }
-.rv-trials { position: sticky; top: 62px; max-height: calc(100vh - 80px); overflow-y: auto; }
-.rv-trials .card { padding: 12px; }
-.rv-trials .dash-head { padding: 0 4px; }
-.rv-pdf { min-width: 0; }
-.pdf-toolbar { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.rv-body.no-pdf .rv-side { max-width: 720px; }
+.rv-pdf { min-width: 0; padding: 0; }
+.pdf-toolbar { display: flex; align-items: center; gap: 6px; padding: 8px 10px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
 .pdf-toolbar .spacer { flex: 1; }
-.pdf-toolbar .pg { color: var(--muted); font-size: .82rem; }
-.pdf-pages { background: #d9dee5; padding: 12px; overflow: auto; max-height: calc(100vh - 140px); }
-.pdf-pages canvas { display: block; margin: 0 auto 12px; box-shadow: 0 2px 10px rgba(0,0,0,.25); background: #fff; max-width: none; }
-.pdf-pages canvas:last-child { margin-bottom: 0; }
+.pdf-toolbar .sep { width: 1px; height: 18px; background: var(--line); margin: 0 4px; }
+.pdf-toolbar .pg { color: var(--muted); font-size: .82rem; min-width: 44px; text-align: center; font-variant-numeric: tabular-nums; }
+.single-page [data-nav], .single-page .sep { display: none; }
+.pdf-pages { background: #d9dee5; padding: 12px; overflow: auto; border-radius: 0 0 var(--radius) var(--radius); }
+.pdf-pages canvas { display: block; margin: 0 auto; box-shadow: 0 2px 10px rgba(0,0,0,.25); background: #fff; max-width: none; }
 .pdf-status { color: var(--muted); font-size: .85rem; padding: 24px; text-align: center; }
 .nopdf-note { border-style: dashed; color: var(--muted); font-size: .9rem; }
+
+.rv-side { position: sticky; top: 62px; max-height: calc(100vh - 80px); display: flex; flex-direction: column; min-width: 0; }
+.rv-side-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 8px; }
+.rv-side-title { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.rv-side-hint { font-size: .72rem; color: var(--muted); margin-top: 8px; }
+.rv-strip { display: flex; flex-direction: column; gap: 5px; overflow-y: auto; }
+.rv-drawer { display: none; overflow-y: auto; }
+.drawer-open .rv-strip { display: none; }
+.drawer-open .rv-drawer { display: block; }
+.trial-pill {
+  display: flex; align-items: center; gap: 6px; width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 8px; padding: 5px 9px; cursor: pointer; font: inherit; font-size: .8rem; color: var(--ink); min-width: 0;
+}
+.trial-pill:hover, .trial-pill.hovered { border-color: var(--accent); background: var(--accent-soft); }
+.trial-pill .tp-n { font-weight: 700; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.trial-pill .tp-y { color: var(--muted); font-size: .72rem; font-variant-numeric: tabular-nums; }
+.trial-pill .tp-u { width: 6px; height: 6px; border-radius: 50%; background: var(--amber); flex: none; }
+.empty.small { padding: 12px; font-size: .82rem; }
 
 /* ---------- trial rows ---------- */
 .trial-list { display: flex; flex-direction: column; gap: 8px; }
@@ -163,9 +183,9 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
 .trial-row .tr-take::before { content: "→ "; color: var(--accent); font-weight: 700; }
 .trial-row .tr-more { display: none; margin-top: 10px; border-top: 1px solid var(--line); padding-top: 10px; cursor: auto; }
 .trial-row.open .tr-more { display: block; }
-.rv-trials .trial-row { padding: 8px 10px; }
-.rv-trials .trial-row .tr-take { display: none; }
-.rv-trials .trial-row.open .tr-take { display: block; }
+.rv-drawer .trial-row { padding: 8px 10px; }
+.rv-drawer .trial-row .tr-take { display: none; }
+.rv-drawer .trial-row.open .tr-take { display: block; }
 
 /* ---------- trial card (shared by popover + expanded row) ---------- */
 .tcard dl { display: grid; grid-template-columns: 110px 1fr; gap: 4px 10px; margin: 8px 0; font-size: .86rem; }
@@ -205,16 +225,12 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
-  .rv-layout { grid-template-columns: 1fr; }
-  .dz-rail { position: static; max-height: none; flex-direction: row; flex-wrap: wrap; gap: 6px; }
-  .dz-rail .dz-group { display: contents; }
-  .dz-group-title { width: 100%; margin: 8px 0 0 2px; }
-  .dz-btn { width: auto; padding: 6px 10px; margin: 0; }
-  .dz-btn .dz-meta { display: none; }
-  .rv-body { grid-template-columns: 1fr; }
-  .rv-trials { position: static; max-height: none; }
-  .rv-pdf { order: -1; }
-  .pdf-pages { max-height: 70vh; }
+  .dz-group + .dz-group { padding-left: 0; border-left: none; }
+  .rv-body, .rv-body.drawer-open { grid-template-columns: 1fr; }
+  .rv-side { position: static; max-height: none; }
+  .rv-strip { flex-direction: row; flex-wrap: wrap; }
+  .trial-pill { width: auto; }
+  .pdf-pages { max-height: 75vh; }
 }
 @media (max-width: 600px) {
   body { font-size: 14px; }

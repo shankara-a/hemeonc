@@ -1,8 +1,12 @@
-/* Reviews tab: disease rail on the left, trials + one-pager PDF on the right. */
+/* Reviews tab: disease pill bar on top, full-width one-pager, trial strip / drawer on the right. */
 (function () {
   const HH = (window.HH = window.HH || {});
   let viewer = null;
   let currentSlug = null;
+  let drawerOpen = false;
+  try { drawerOpen = localStorage.getItem("hh.drawer") === "1"; } catch (_) { /* private mode */ }
+
+  const trialsFor = (slug) => HH.data.trials.filter((t) => t.disease === slug).sort((a, b) => b.year - a.year || a.name.localeCompare(b.name));
 
   HH.renderRail = function () {
     const rail = document.getElementById("dz-rail");
@@ -16,10 +20,9 @@
         .sort((a, b) => (opBy[b.slug] ? 1 : 0) - (opBy[a.slug] ? 1 : 0) || a.name.localeCompare(b.name));
       if (!list.length) return "";
       const g = groups.find((x) => x.id === gid) || { name: "Other" };
-      return `<div class="dz-group"><div class="dz-group-title">${HH.esc(g.name)}</div>` + list.map((d) => `
-        <button class="dz-btn" data-slug="${d.slug}">
-          <span class="dz-name">${HH.esc(d.short || d.name)}</span>
-          <span class="dz-meta">${opBy[d.slug] ? `<span class="pdf" title="One-pager available">📄</span>` : ""}${count[d.slug] ? `<span title="${count[d.slug]} trials">🧪 ${count[d.slug]}</span>` : ""}</span>
+      return `<div class="dz-group"><span class="dz-group-title">${HH.esc(g.name)}</span>` + list.map((d) => `
+        <button class="dz-btn ${opBy[d.slug] ? "" : "nopdf"}" data-slug="${d.slug}" title="${HH.esc(d.name)}${opBy[d.slug] ? "" : " — no one-pager yet"}${count[d.slug] ? ` · ${count[d.slug]} trials` : ""}">
+          ${HH.esc(d.short || d.name)}${count[d.slug] ? `<span class="dz-n">${count[d.slug]}</span>` : ""}
         </button>`).join("") + `</div>`;
     }).join("");
     rail.addEventListener("click", (e) => {
@@ -28,17 +31,29 @@
     });
   };
 
+  const setDrawer = (open) => {
+    drawerOpen = open;
+    try { localStorage.setItem("hh.drawer", open ? "1" : "0"); } catch (_) { /* ignore */ }
+    const body = document.querySelector("#rv-main .rv-body");
+    if (!body) return;
+    body.classList.toggle("drawer-open", open);
+    const btn = body.querySelector(".drawer-toggle");
+    if (btn) btn.textContent = open ? "Collapse ›" : "‹ Expand";
+    viewer?.refit();
+  };
+
   HH.showDisease = function (slug) {
     const main = document.getElementById("rv-main");
     const d = HH.disease(slug);
     document.querySelectorAll(".dz-btn").forEach((b) => b.classList.toggle("active", b.dataset.slug === slug));
-    if (!d) { main.innerHTML = `<div class="empty">Pick a disease on the left.</div>`; return; }
+    if (!d) { main.innerHTML = `<div class="empty">Pick a disease above.</div>`; return; }
     if (viewer) { viewer.destroy(); viewer = null; }
     currentSlug = slug;
 
     const op = HH.data.onepagers.find((o) => o.disease === slug);
-    const trials = HH.data.trials.filter((t) => t.disease === slug).sort((a, b) => b.year - a.year || a.name.localeCompare(b.name));
+    const trials = trialsFor(slug);
     const pdfUrl = op ? `pdfs/${encodeURIComponent(op.file)}` : null;
+    const pills = trials.map((t) => `<button class="trial-pill trial-row" data-id="${HH.esc(t.id)}" title="${HH.esc(t.takeaway || "")}"><span class="tp-n">${HH.esc(t.name)}</span><span class="tp-y">${t.year}</span>${t.verified ? "" : '<span class="tp-u" aria-label="unverified"></span>'}</button>`).join("");
 
     main.innerHTML = `
       <div class="rv-head">
@@ -51,19 +66,44 @@
           <a class="btn" href="#trials/${slug}">All ${HH.esc(d.short)} trials →</a>
         </div>
       </div>
-      <div class="rv-body ${op ? "" : "no-pdf"}">
-        <div class="rv-trials">
-          <div class="card">
-            <div class="dash-head"><h3>Key trials</h3><span class="result-count">hover for takeaways · click to pin</span></div>
-            <div class="trial-list">${trials.length ? trials.map((t) => HH.trialRow(t)).join("") : `<div class="empty">No trials filed yet — add them with the add-trial skill.</div>`}</div>
-          </div>
-        </div>
-        ${op ? `<div class="rv-pdf card" style="padding:0" id="rv-pdf"></div>`
+      <div class="rv-body ${op ? "" : "no-pdf"} ${drawerOpen ? "drawer-open" : ""}">
+        ${op ? `<div class="rv-pdf card" id="rv-pdf"></div>`
              : `<div class="card nopdf-note">No one-pager for ${HH.esc(d.name)} yet. Run the <code>cancer-one-pager</code> skill; the PDF lands here automatically on the next sync.</div>`}
+        <aside class="rv-side" aria-label="Key trials">
+          <div class="rv-side-head">
+            <span class="rv-side-title">Key trials <span class="result-count">${trials.length}</span></span>
+            <button class="btn small drawer-toggle" title="Toggle trial details (t)">${drawerOpen ? "Collapse ›" : "‹ Expand"}</button>
+          </div>
+          <div class="rv-strip">${pills || `<div class="empty small">None filed yet</div>`}</div>
+          <div class="rv-drawer"><div class="trial-list">${trials.map((t) => HH.trialRow(t)).join("")}</div></div>
+          <div class="rv-side-hint">hover for the takeaway · click to open</div>
+        </aside>
       </div>`;
+
+    main.querySelector(".drawer-toggle").addEventListener("click", () => setDrawer(!drawerOpen));
+    main.querySelector(".rv-strip").addEventListener("click", (e) => {
+      const pill = e.target.closest(".trial-pill");
+      if (!pill) return;
+      e.stopPropagation();
+      if (!drawerOpen) setDrawer(true);
+      HH.hidePop?.(0);
+      const row = main.querySelector(`.rv-drawer #trial-${CSS.escape(pill.dataset.id)}`);
+      if (row) {
+        main.querySelectorAll(".rv-drawer .trial-row.open").forEach((r) => r !== row && r.classList.remove("open"));
+        row.classList.add("open");
+        row.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      }
+    }, true);
 
     if (op) viewer = HH.mountPdf(document.getElementById("rv-pdf"), pdfUrl, { title: d.name });
   };
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key !== "t" || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.target.matches("input, select, textarea")) return;
+    if (!document.getElementById("reviews").classList.contains("active")) return;
+    setDrawer(!drawerOpen);
+  });
 
   HH.currentDisease = () => currentSlug;
 })();
