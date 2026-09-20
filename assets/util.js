@@ -24,7 +24,6 @@
       `<span class="chip year">${t.year}</span>`,
       t.phase ? `<span class="chip phase">Ph ${HH.esc(t.phase)}</span>` : "",
       t.n ? `<span class="chip year">n=${t.n.toLocaleString()}</span>` : "",
-      !t.verified ? `<span class="chip unverified" title="Drafted from the one-pager; not yet checked against the primary paper">unverified</span>` : "",
     ].join("");
   };
 
@@ -43,7 +42,7 @@
       `<a href="${HH.pubmedUrl(t)}" target="_blank" rel="noopener">PubMed ↗</a>` +
       (t.nct ? `<a href="https://clinicaltrials.gov/study/${HH.esc(t.nct)}" target="_blank" rel="noopener">${HH.esc(t.nct)} ↗</a>` : "") +
       `</div>`;
-    const flags = `<div class="tflags">${t.verified ? "Verified" : "Unverified — drafted from one-pager text"} · source: ${HH.esc(t.source || "manual")} · updated ${HH.fmtDate(t.updated)}</div>`;
+    const flags = `<div class="tflags">updated ${HH.fmtDate(t.updated)}</div>`;
     return `<div class="tcard">${withTakeaway && t.takeaway ? `<div class="tp-take">${HH.esc(t.takeaway)}</div>` : ""}<dl>${dl}</dl>${hl}${ref}${flags}</div>`;
   };
 

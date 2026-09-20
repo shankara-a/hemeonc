@@ -21,7 +21,7 @@
       });
       sel.appendChild(og);
     });
-    ["tr-q", "tr-disease", "tr-year", "tr-sort", "tr-unverified"].forEach((id) => $(id).addEventListener("input", HH.renderTrials));
+    ["tr-q", "tr-disease", "tr-year", "tr-sort"].forEach((id) => $(id).addEventListener("input", HH.renderTrials));
   };
 
   HH.setTrialFilter = function ({ disease = "", q = "" } = {}) {
@@ -39,11 +39,10 @@
     const dz = $("tr-disease").value;
     const yr = parseInt($("tr-year").value || "0", 10);
     const sort = $("tr-sort").value;
-    const unv = $("tr-unverified").checked;
     const terms = q.split(/\s+/).filter(Boolean);
 
     let list = HH.data.trials.filter((t) =>
-      (!dz || t.disease === dz) && (!yr || t.year >= yr) && (!unv || !t.verified) &&
+      (!dz || t.disease === dz) && (!yr || t.year >= yr) &&
       (!terms.length || terms.every((w) => hay(t).includes(w))));
 
     const byName = (a, b) => a.name.localeCompare(b.name);

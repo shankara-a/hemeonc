@@ -70,7 +70,7 @@ Trial schema (required in bold):
 | **takeaway** | one sentence shown in the hover card |
 | tags | drugs, biomarkers, themes |
 | source | `notion`, `onepager:<slug>`, `manual` |
-| verified | `false` = drafted, not yet checked against the paper (shown as an amber chip) |
+| verified | bookkeeping only — every entry is checked against the primary abstract before it is added |
 
 `python3 scripts/validate.py` checks everything; `python3 scripts/pubmed_lookup.py` fills missing PMIDs.
 

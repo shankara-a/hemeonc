@@ -3,10 +3,18 @@
   const HH = (window.HH = window.HH || {});
   let viewer = null;
   let currentSlug = null;
-  let drawerOpen = false;
-  try { drawerOpen = localStorage.getItem("hh.drawer") === "1"; } catch (_) { /* private mode */ }
+  let drawerOpen = false, sortMode = "new";
+  try {
+    drawerOpen = localStorage.getItem("hh.drawer") === "1";
+    sortMode = localStorage.getItem("hh.trialsort") || "new";
+  } catch (_) { /* private mode */ }
 
-  const trialsFor = (slug) => HH.data.trials.filter((t) => t.disease === slug).sort((a, b) => b.year - a.year || a.name.localeCompare(b.name));
+  const SORTS = {
+    new: (a, b) => b.year - a.year || a.name.localeCompare(b.name),
+    old: (a, b) => a.year - b.year || a.name.localeCompare(b.name),
+    az: (a, b) => a.name.localeCompare(b.name),
+  };
+  const trialsFor = (slug) => HH.data.trials.filter((t) => t.disease === slug).sort(SORTS[sortMode] || SORTS.new);
 
   HH.renderRail = function () {
     const rail = document.getElementById("dz-rail");
@@ -53,7 +61,8 @@
     const op = HH.data.onepagers.find((o) => o.disease === slug);
     const trials = trialsFor(slug);
     const pdfUrl = op ? `pdfs/${encodeURIComponent(op.file)}` : null;
-    const pills = trials.map((t) => `<button class="trial-pill trial-row" data-id="${HH.esc(t.id)}" title="${HH.esc(t.takeaway || "")}"><span class="tp-n">${HH.esc(t.name)}</span><span class="tp-y">${t.year}</span>${t.verified ? "" : '<span class="tp-u" aria-label="unverified"></span>'}</button>`).join("");
+    const pills = trials.map((t) => `<button class="trial-pill trial-row" data-id="${HH.esc(t.id)}" title="${HH.esc(t.takeaway || "")}"><span class="tp-n">${HH.esc(t.name)}</span><span class="tp-y">${t.year}</span></button>`).join("");
+    const sortBtns = [["new", "Newest"], ["old", "Oldest"], ["az", "A–Z"]].map(([k, l]) => `<button class="seg ${sortMode === k ? "active" : ""}" data-sort="${k}">${l}</button>`).join("");
 
     main.innerHTML = `
       <div class="rv-head">
@@ -74,6 +83,7 @@
             <span class="rv-side-title">Key trials <span class="result-count">${trials.length}</span></span>
             <button class="btn small drawer-toggle" title="Toggle trial details (t)">${drawerOpen ? "Collapse ›" : "‹ Expand"}</button>
           </div>
+          <div class="segmented tiny rv-sort" role="group" aria-label="Sort trials">${sortBtns}</div>
           <div class="rv-strip">${pills || `<div class="empty small">None filed yet</div>`}</div>
           <div class="rv-drawer"><div class="trial-list">${trials.map((t) => HH.trialRow(t)).join("")}</div></div>
           <div class="rv-side-hint">hover for the takeaway · click to open</div>
@@ -81,6 +91,15 @@
       </div>`;
 
     main.querySelector(".drawer-toggle").addEventListener("click", () => setDrawer(!drawerOpen));
+    main.querySelector(".rv-sort").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-sort]");
+      if (!b || b.dataset.sort === sortMode) return;
+      sortMode = b.dataset.sort;
+      try { localStorage.setItem("hh.trialsort", sortMode); } catch (_) { /* ignore */ }
+      const wasOpen = drawerOpen;
+      HH.showDisease(slug);
+      if (wasOpen !== drawerOpen) setDrawer(wasOpen);
+    });
     main.querySelector(".rv-strip").addEventListener("click", (e) => {
       const pill = e.target.closest(".trial-pill");
       if (!pill) return;

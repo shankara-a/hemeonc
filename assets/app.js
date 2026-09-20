@@ -37,14 +37,13 @@
 
   const renderHome = () => {
     const { trials, onepagers, diseases } = HH.data;
-    const unverified = trials.filter((t) => !t.verified).length;
     const latestTrial = trials.map((t) => t.updated).sort().pop();
     const latestPdf = onepagers.map((o) => o.updated).sort().pop();
     $("home-stats").innerHTML = [
       [onepagers.length, "one-pagers"],
       [trials.length, "landmark trials"],
       [new Set(trials.map((t) => t.disease)).size, "diseases with trials"],
-      [unverified, "trials to verify"],
+      [trials.filter((t) => t.year >= new Date().getFullYear() - 1).length, "trials from the last 2 years"],
     ].map(([n, l]) => `<div class="stat"><div class="num">${n}</div><div class="lbl">${l}</div></div>`).join("");
 
     const recent = [

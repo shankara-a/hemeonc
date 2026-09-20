@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-09-19",
+ "updated": "2026-09-20",
  "trials": [
   {
    "id": "nsabp-b24",
@@ -14,7 +14,7 @@
    "arms": "Tamoxifen 20 mg/day × 5 years vs placebo",
    "n": 1804,
    "primary_endpoint": "Ipsilateral and contralateral breast events",
-   "results": "All breast events 8.2% vs 13.4% at 5 yr; ipsilateral invasive recurrence reduced ~44%; benefit confined to ER-positive DCIS (Allred, 2012)",
+   "results": "Breast-cancer events at 5 yr 8.2% vs 13.4% (p=0.0009); cumulative invasive events 4.1% at 5 yr with tamoxifen (2.1% ipsilateral, 1.8% contralateral); benefit seen even with involved margins; later analysis showed the benefit is confined to ER-positive DCIS (Allred, JCO 2012)",
    "toxicity": "Endometrial cancer, VTE, hot flashes",
    "reference": "Fisher B et al. Lancet 1999;353:1993; Allred DC et al. JCO 2012;30:1268 (ER subset)",
    "pmid": "10376613",
@@ -30,8 +30,8 @@
     "endocrine therapy"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "z0011",
@@ -45,7 +45,7 @@
    "arms": "Sentinel lymph node dissection alone vs completion axillary lymph node dissection",
    "n": 891,
    "primary_endpoint": "Overall survival (non-inferiority)",
-   "results": "10-yr OS 86.3% vs 83.6% (non-inferior); 10-yr DFS 80.2% vs 78.2%; regional recurrence 1.5% vs 0.5%",
+   "results": "5-yr OS 92.5% vs 91.8% (SLND alone vs ALND; HR 0.79) and 5-yr DFS 83.9% vs 82.2% — non-inferior; 10-yr update: OS 86.3% vs 83.6%, DFS 80.2% vs 78.2%, regional recurrence 1.5% vs 0.5%",
    "toxicity": "Lymphedema, wound infection, paresthesia markedly lower without ALND",
    "reference": "Giuliano AE et al. JAMA 2011;305:569; JAMA 2017;318:918 (10-yr)",
    "pmid": "21304082",
@@ -61,8 +61,8 @@
     "de-escalation"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "soft",
@@ -76,7 +76,7 @@
    "arms": "Tamoxifen alone vs tamoxifen + ovarian suppression vs exemestane + ovarian suppression (× 5 years)",
    "n": 3066,
    "primary_endpoint": "Disease-free survival (tamoxifen + OFS vs tamoxifen)",
-   "results": "8-yr DFS 83.2% vs 78.9% (HR 0.76) with OFS; 8-yr OS 93.3% vs 91.5%; exemestane + OFS 8-yr DFS 85.9%. Largest benefit in women <35 and those needing chemotherapy",
+   "results": "Primary (5-yr): DFS 86.6% vs 84.7% (HR 0.83, NS overall); in women who had chemotherapy 82.5% vs 78.0% (HR 0.78). 8-yr update: DFS 83.2% vs 78.9% (HR 0.76), OS 93.3% vs 91.5%; exemestane + OFS 8-yr DFS 85.9%. Largest benefit in women <35 and those needing chemotherapy",
    "toxicity": "Menopausal symptoms, osteoporosis, depression, hypertension, sexual dysfunction with OFS",
    "reference": "Francis PA et al. NEJM 2015;372:436; NEJM 2018;379:122 (8-yr, with TEXT)",
    "pmid": "25495490",
@@ -93,8 +93,8 @@
     "premenopausal"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "create-x",
@@ -108,7 +108,7 @@
    "arms": "Capecitabine 1250 mg/m² BID d1–14 q3wk × 6–8 cycles vs no further chemotherapy (both with standard endocrine/RT)",
    "n": 910,
    "primary_endpoint": "Disease-free survival",
-   "results": "5-yr DFS 74.1% vs 67.6% (HR 0.70); OS 89.2% vs 83.6% (HR 0.59). TNBC subgroup: DFS 69.8% vs 56.1% (HR 0.58), OS HR 0.52",
+   "results": "5-yr DFS 74.1% vs 67.6% (HR 0.70); OS 89.2% vs 83.6% (HR 0.59). TNBC subgroup: DFS 69.8% vs 56.1% (HR 0.58), OS 78.8% vs 70.3% (HR 0.52)",
    "toxicity": "Hand-foot syndrome (73%), neutropenia, diarrhea",
    "reference": "Masuda N et al. NEJM 2017;376:2147",
    "pmid": "28564564",
@@ -124,8 +124,8 @@
     "adjuvant"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "tailorx",
@@ -155,8 +155,8 @@
     "chemotherapy de-escalation"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "katherine",
@@ -187,8 +187,8 @@
     "ADC"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "her2climb",
@@ -202,7 +202,7 @@
    "arms": "Tucatinib 300 mg BID + trastuzumab + capecitabine vs placebo + trastuzumab + capecitabine",
    "n": 612,
    "primary_endpoint": "Progression-free survival",
-   "results": "PFS 7.8 vs 5.6 mo (HR 0.54); OS 24.7 vs 19.2 mo (HR 0.73, updated); brain-metastasis subgroup CNS-PFS 9.9 vs 4.2 mo (HR 0.32)",
+   "results": "1-yr PFS 33.1% vs 12.3%, median 7.8 vs 5.6 mo (HR 0.54); OS 21.9 vs 17.4 mo (HR 0.66; updated 24.7 vs 19.2, HR 0.73); brain metastases: 1-yr PFS 24.9% vs 0%, median 7.6 vs 5.4 mo (HR 0.48); CNS-PFS 9.9 vs 4.2 mo (HR 0.32, Lin JCO 2020)",
    "toxicity": "Diarrhea, hand-foot syndrome, transaminase elevation",
    "reference": "Murthy RK et al. NEJM 2020;382:597; Lin NU et al. JCO 2020 (CNS); Curigliano G et al. Ann Oncol 2022 (OS)",
    "pmid": "31825569",
@@ -219,8 +219,8 @@
     "TKI"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "keynote-522",
@@ -251,8 +251,8 @@
     "immunotherapy"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "monarche",
@@ -266,7 +266,7 @@
    "arms": "Abemaciclib 150 mg BID × 2 years + endocrine therapy vs endocrine therapy alone",
    "n": 5637,
    "primary_endpoint": "Invasive disease-free survival",
-   "results": "4-yr iDFS 85.8% vs 79.4% (HR 0.66); 5-yr iDFS 83.6% vs 76.0% — benefit deepens after abemaciclib stops; OS immature",
+   "results": "2-yr iDFS 92.2% vs 88.7% (HR 0.75) at primary analysis; 4-yr iDFS 85.8% vs 79.4% (HR 0.66); 5-yr iDFS 83.6% vs 76.0% — benefit deepens after abemaciclib stops; OS immature",
    "toxicity": "Diarrhea (84%, mostly grade 1–2), neutropenia, fatigue, VTE (2.5%), ILD (rare)",
    "reference": "Johnston SRD et al. JCO 2020;38:3987; Lancet Oncol 2023;24:77 (4-yr); Rastogi P et al. JCO 2024 (5-yr)",
    "pmid": "32954927",
@@ -283,8 +283,8 @@
     "HR+"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "olympia",
@@ -315,8 +315,8 @@
     "adjuvant"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "rxponder",
@@ -346,8 +346,8 @@
     "node-positive"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "maintain",
@@ -377,8 +377,8 @@
     "endocrine resistance"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "sound",
@@ -408,8 +408,8 @@
     "de-escalation"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "natalee",
@@ -440,8 +440,8 @@
     "HR+"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "postmonarch",
@@ -472,8 +472,8 @@
     "endocrine resistance"
    ],
    "source": "onepager:breast",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "optimox1",
@@ -487,7 +487,7 @@
    "arms": "FOLFOX4 until progression vs FOLFOX7 × 6 → sFU/LV maintenance × 12 → FOLFOX7 reintroduction",
    "n": 620,
    "primary_endpoint": "Duration of disease control",
-   "results": "Duration of disease control 9.0 vs 10.6 mo (NS); OS 19.3 vs 21.2 mo (NS); grade 3 neuropathy 17.9% vs 13.3%; oxaliplatin reintroduced in only 40%",
+   "results": "PFS 9.0 vs 8.7 mo and OS 19.3 vs 21.2 mo (NS); response 58.5% vs 59.2%; grade 3 neuropathy 17.9% vs 13.3%; oxaliplatin reintroduced in only 40% but achieved response or stabilization in 69% of them",
    "toxicity": null,
    "reference": "Tournigand C et al. JCO 2006;24:394",
    "pmid": "16421419",
@@ -504,8 +504,8 @@
     "neuropathy"
    ],
    "source": "onepager:colon",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "tribe",
@@ -519,7 +519,7 @@
    "arms": "FOLFOXIRI + bevacizumab vs FOLFIRI + bevacizumab (induction × 12, then 5-FU/bev maintenance)",
    "n": 508,
    "primary_endpoint": "Progression-free survival",
-   "results": "PFS 12.1 vs 9.7 mo (HR 0.75); ORR 65% vs 53%; OS 29.8 vs 25.8 mo (HR 0.80). BRAF-mutant: OS 19.0 vs 10.7 mo (n=28)",
+   "results": "PFS 12.1 vs 9.7 mo (HR 0.75); ORR 65% vs 53%; OS 31.0 vs 25.8 mo (HR 0.79, p=0.054; updated 29.8 vs 25.8, HR 0.80). BRAF-mutant: OS 19.0 vs 10.7 mo (n=28)",
    "toxicity": "Grade 3–4 neutropenia 50% vs 20%, diarrhea 19% vs 11%, neuropathy 5% vs 0%",
    "reference": "Loupakis F et al. NEJM 2014;371:1609; Cremolini C et al. Lancet Oncol 2015 (OS)",
    "pmid": "25337750",
@@ -535,8 +535,8 @@
     "triplet chemotherapy"
    ],
    "source": "onepager:colon",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "idea",
@@ -568,8 +568,8 @@
     "duration"
    ],
    "source": "onepager:colon",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "beacon",
@@ -583,7 +583,7 @@
    "arms": "Encorafenib + binimetinib + cetuximab (triplet) vs encorafenib + cetuximab (doublet) vs irinotecan/FOLFIRI + cetuximab (control)",
    "n": 665,
    "primary_endpoint": "OS and ORR (triplet vs control)",
-   "results": "OS triplet 9.3 vs doublet 9.3 vs control 5.9 mo (HR ~0.60); ORR 27% / 20% / 2%. Doublet became the approved standard (MEK adds toxicity, not survival)",
+   "results": "Primary: OS triplet 9.0 vs control 5.4 mo (HR 0.52); doublet 8.4 mo (HR 0.60); ORR 26% / 20% / 2%. Updated (JCO 2021): OS 9.3 / 9.3 / 5.9 mo. Doublet became the approved standard (MEK adds toxicity, not survival)",
    "toxicity": "Diarrhea, dermatitis acneiform, nausea; more GI/ocular toxicity with binimetinib",
    "reference": "Kopetz S et al. NEJM 2019;381:1632; JCO 2021 (updated)",
    "pmid": "31566309",
@@ -600,8 +600,8 @@
     "BRAF"
    ],
    "source": "onepager:colon",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "keynote-177",
@@ -632,8 +632,8 @@
     "dMMR"
    ],
    "source": "onepager:colon",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "atomic",
@@ -665,8 +665,8 @@
     "adjuvant"
    ],
    "source": "onepager:colon",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "breakwater",
@@ -697,8 +697,8 @@
     "FOLFOX"
    ],
    "source": "onepager:colon",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "keynote-048",
@@ -949,7 +949,7 @@
    "arms": "Nivolumab 1 mg/kg + ipilimumab 3 mg/kg × 4 → nivolumab vs nivolumab alone vs ipilimumab alone",
    "n": 945,
    "primary_endpoint": "PFS and OS (combination or nivolumab vs ipilimumab)",
-   "results": "Median OS 72.1 / 36.9 / 19.9 mo; 10-yr OS 43% / 37% / 19%; 10-yr melanoma-specific survival 52% / 44% / 23%; patients progression-free at 3 years had >96% 10-yr MSS",
+   "results": "Primary: PFS 11.5 / 6.9 / 2.9 mo. 10-yr: median OS 72.1 / 36.9 / 19.9 mo; 10-yr OS 43% / 37% / 19%; 10-yr melanoma-specific survival 52% / 44% / 23%; patients progression-free at 3 years had >96% 10-yr MSS",
    "toxicity": "Grade 3–4 treatment-related AEs 59% (combo) vs 24% (nivo) vs 28% (ipi)",
    "reference": "Larkin J et al. NEJM 2015;373:23; Wolchok JD et al. NEJM 2025;392:11 (10-yr)",
    "pmid": "26027431",
@@ -965,8 +965,8 @@
     "immunotherapy"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "decog-slt",
@@ -992,12 +992,12 @@
     "de-escalation"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
+   "verified": true,
    "toxicity": null,
    "pmid": "27161539",
    "nct": null,
    "phase": "3",
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "checkmate-238",
@@ -1027,8 +1027,8 @@
     "adjuvant"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "combi-ad",
@@ -1042,7 +1042,7 @@
    "arms": "Dabrafenib 150 mg BID + trametinib 2 mg daily × 12 months vs placebo",
    "n": 870,
    "primary_endpoint": "Relapse-free survival",
-   "results": "5-yr RFS 52% vs 36% (HR 0.51); DMFS HR 0.55; OS HR 0.80 (10-yr update, 2024; did not reach significance threshold)",
+   "results": "3-yr RFS 58% vs 39% (HR 0.47); 5-yr RFS 52% vs 36% (HR 0.51); DMFS HR 0.55; OS HR 0.80 (10-yr update, 2024; did not reach significance threshold)",
    "toxicity": "Pyrexia (63%), fatigue, nausea; 26% discontinued for AEs",
    "reference": "Long GV et al. NEJM 2017;377:1813; Dummer R et al. NEJM 2020 (5-yr)",
    "pmid": "28891408",
@@ -1059,8 +1059,8 @@
     "adjuvant"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "mslt-ii",
@@ -1090,8 +1090,8 @@
     "de-escalation"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "checkmate-204",
@@ -1121,8 +1121,8 @@
     "brain metastases"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "keynote-054",
@@ -1136,7 +1136,7 @@
    "arms": "Pembrolizumab 200 mg q3wk × 18 vs placebo (crossover to pembrolizumab at recurrence)",
    "n": 1019,
    "primary_endpoint": "Recurrence-free survival",
-   "results": "5-yr RFS 55.4% vs 38.3% (HR 0.61); 5-yr DMFS 60.6% vs 44.5% (HR 0.62); benefit regardless of PD-L1 or BRAF status; OS not significant (crossover)",
+   "results": "1-yr RFS 75.4% vs 61.0% (HR 0.57); 5-yr RFS 55.4% vs 38.3% (HR 0.61); 5-yr DMFS 60.6% vs 44.5% (HR 0.62); benefit regardless of PD-L1 or BRAF status; OS not significant (crossover)",
    "toxicity": "Grade ≥3 treatment-related AEs 14.7%; endocrinopathies",
    "reference": "Eggermont AMM et al. NEJM 2018;378:1789; Lancet Oncol 2021 / NEJM Evidence 2022 (5-yr)",
    "pmid": "29658430",
@@ -1152,8 +1152,8 @@
     "stage III"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "keynote-716",
@@ -1167,7 +1167,7 @@
    "arms": "Pembrolizumab 200 mg q3wk × 17 vs placebo",
    "n": 976,
    "primary_endpoint": "Recurrence-free survival",
-   "results": "3-yr RFS 76.2% vs 63.4% (HR 0.62); DMFS HR 0.59; OS not yet significant",
+   "results": "12-mo RFS 90.5% vs 83.1% (HR 0.65 at first interim; 0.61 at second); 3-yr RFS 76.2% vs 63.4% (HR 0.62); DMFS HR 0.59; OS not yet significant",
    "toxicity": "Grade 3–4 treatment-related AEs 17%; permanent endocrinopathies (hypothyroidism ~17%)",
    "reference": "Luke JJ et al. Lancet 2022;399:1718; Long GV et al. Lancet Oncol 2023 (DMFS)",
    "pmid": "35367007",
@@ -1183,8 +1183,8 @@
     "stage II"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "relativity-047",
@@ -1215,8 +1215,8 @@
     "immunotherapy"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "checkmate-76k",
@@ -1245,8 +1245,8 @@
     "stage II"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "dreamseq",
@@ -1279,8 +1279,8 @@
     "trametinib"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "secombit",
@@ -1294,7 +1294,7 @@
    "arms": "Arm A: encorafenib + binimetinib → ipi/nivo; Arm B: ipi/nivo → encorafenib + binimetinib; Arm C 'sandwich': 8 weeks enco/bini → ipi/nivo → enco/bini at progression",
    "n": 209,
    "primary_endpoint": "Overall survival",
-   "results": "4-yr OS: Arm A 45%, Arm B 65%, Arm C 68%; 4-yr total PFS 41% / 53% / 54%",
+   "results": "2-yr OS 65% (A, targeted-first) / 73% (B, IO-first) / 69% (C, sandwich); 3-yr OS 54% / 62% / 60%; median OS not reached in any arm; longer follow-up (ASCO 2024 update) continued to favor IO-first and sandwich for PFS and OS",
    "toxicity": null,
    "reference": "Ascierto PA et al. JCO 2023;41:212",
    "pmid": "36049147",
@@ -1312,8 +1312,8 @@
     "immunotherapy"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "swog-s1801",
@@ -1343,8 +1343,8 @@
     "immunotherapy"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "nadina",
@@ -1375,8 +1375,8 @@
     "immunotherapy"
    ],
    "source": "onepager:melanoma",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "cyto-pv",
@@ -1406,8 +1406,8 @@
     "hematocrit"
    ],
    "source": "onepager:mpn",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "response",
@@ -1437,8 +1437,8 @@
     "polycythemia vera"
    ],
    "source": "onepager:mpn",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "verify",
@@ -1468,8 +1468,8 @@
     "polycythemia vera"
    ],
    "source": "onepager:mpn",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "promid",
@@ -1498,8 +1498,8 @@
     "somatostatin analogue"
    ],
    "source": "onepager:net",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "radiant-3",
@@ -1528,8 +1528,8 @@
     "mTOR"
    ],
    "source": "onepager:net",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "clarinet",
@@ -1558,8 +1558,8 @@
     "somatostatin analogue"
    ],
    "source": "onepager:net",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "radiant-4",
@@ -1589,8 +1589,8 @@
     "lung NET"
    ],
    "source": "onepager:net",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "netter-1",
@@ -1620,8 +1620,8 @@
     "radioligand"
    ],
    "source": "onepager:net",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "e2211",
@@ -1652,8 +1652,8 @@
     "chemotherapy"
    ],
    "source": "onepager:net",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "cabinet",
@@ -1682,8 +1682,8 @@
     "TKI"
    ],
    "source": "onepager:net",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "netter-2",
@@ -1714,8 +1714,8 @@
     "G3"
    ],
    "source": "onepager:net",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "compete",
@@ -1745,8 +1745,8 @@
     "radioligand"
    ],
    "source": "onepager:net",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "keynote-024",
@@ -1776,8 +1776,8 @@
     "PD-L1"
    ],
    "source": "onepager:nsclc",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "aura3",
@@ -1821,7 +1821,7 @@
    "arms": "Durvalumab 10 mg/kg q2wk × 12 months vs placebo",
    "n": 713,
    "primary_endpoint": "PFS and OS",
-   "results": "PFS 16.9 vs 5.6 mo (HR 0.55); OS 47.5 vs 29.1 mo (HR 0.72); 5-yr OS 42.9% vs 33.4%",
+   "results": "PFS 16.8 vs 5.6 mo (HR 0.52; updated 16.9 vs 5.6, HR 0.55); OS 47.5 vs 29.1 mo (HR 0.72); 5-yr OS 42.9% vs 33.4%",
    "toxicity": "Pneumonitis any grade 33.9% vs 24.8% (grade 3–4 similar, ~3–4%)",
    "reference": "Antonia SJ et al. NEJM 2017;377:1919; NEJM 2018 (OS); Spigel DR et al. JCO 2022 (5-yr)",
    "pmid": "28885881",
@@ -1838,8 +1838,8 @@
     "immunotherapy"
    ],
    "source": "onepager:nsclc",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "flaura",
@@ -1883,7 +1883,7 @@
    "arms": "Pembrolizumab + pemetrexed + platinum × 4 → pembrolizumab + pemetrexed maintenance vs placebo + same chemo (crossover allowed)",
    "n": 616,
    "primary_endpoint": "OS and PFS",
-   "results": "OS 22.0 vs 10.6 mo (HR 0.56); PFS 9.0 vs 4.9 mo (HR 0.49); benefit in all PD-L1 strata (TPS <1%: OS HR 0.52); 5-yr OS 19.4% vs 11.3%",
+   "results": "Primary: 12-mo OS 69.2% vs 49.4% (HR 0.49), PFS 8.8 vs 4.9 mo (HR 0.52); updated OS 22.0 vs 10.6 mo (HR 0.56), PFS 9.0 vs 4.9 mo (HR 0.49); benefit in all PD-L1 strata (TPS <1%: OS HR 0.52); 5-yr OS 19.4% vs 11.3%",
    "toxicity": "Acute kidney injury 5.2% vs 0.5%; pneumonitis 4.4%",
    "reference": "Gandhi L et al. NEJM 2018;378:2078; Garassino MC et al. JCO 2023 (5-yr)",
    "pmid": "29658856",
@@ -1899,8 +1899,8 @@
     "chemo-immunotherapy"
    ],
    "source": "onepager:nsclc",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "checkmate-227",
@@ -1931,8 +1931,8 @@
     "PD-L1"
    ],
    "source": "onepager:nsclc",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "adaura",
@@ -1976,7 +1976,7 @@
    "arms": "Lorlatinib 100 mg daily vs crizotinib 250 mg BID",
    "n": 296,
    "primary_endpoint": "Progression-free survival (BICR)",
-   "results": "5-yr PFS 60% vs 8%; median PFS not reached vs 9.1 mo (HR 0.19); intracranial ORR 82% vs 23%; time to CNS progression HR 0.06",
+   "results": "12-mo PFS 78% vs 39% (HR 0.28); 5-yr PFS 60% vs 8%, median not reached vs 9.1 mo (HR 0.19); intracranial ORR 82% vs 23%; time to CNS progression HR 0.06",
    "toxicity": "Hyperlipidemia (majority), edema, weight gain, peripheral neuropathy, CNS effects (cognitive/mood, ~40%)",
    "reference": "Shaw AT et al. NEJM 2020;383:2018; Solomon BJ et al. JCO 2024 (5-yr)",
    "pmid": "33207094",
@@ -1992,8 +1992,8 @@
     "TKI"
    ],
    "source": "onepager:nsclc",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "checkmate-816",
@@ -2023,8 +2023,8 @@
     "immunotherapy"
    ],
    "source": "onepager:nsclc",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "aegean",
@@ -2038,7 +2038,7 @@
    "arms": "Durvalumab + platinum doublet × 4 → surgery → durvalumab × 12 vs placebo + chemo → surgery → placebo",
    "n": 802,
    "primary_endpoint": "Event-free survival and pathologic complete response",
-   "results": "pCR 17.2% vs 4.3%; EFS HR 0.68 (24-mo 63.3% vs 52.4%); OS immature",
+   "results": "pCR 17.2% vs 4.3%; EFS HR 0.68 (12-mo 73.4% vs 64.5%); OS immature",
    "toxicity": null,
    "reference": "Heymach JV et al. NEJM 2023;389:1672",
    "pmid": "37870974",
@@ -2054,8 +2054,8 @@
     "immunotherapy"
    ],
    "source": "onepager:nsclc",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "flaura2",
@@ -2116,8 +2116,8 @@
     "immunotherapy"
    ],
    "source": "onepager:nsclc",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "alina",
@@ -2147,8 +2147,8 @@
     "adjuvant"
    ],
    "source": "onepager:nsclc",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "laura",
@@ -2210,8 +2210,8 @@
     "bispecific"
    ],
    "source": "onepager:nsclc",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "prodige-4",
@@ -2225,7 +2225,7 @@
    "arms": "FOLFIRINOX (oxaliplatin 85, irinotecan 180, LV, bolus + infusional 5-FU) q2wk vs gemcitabine weekly",
    "n": 342,
    "primary_endpoint": "Overall survival",
-   "results": "OS 11.1 vs 6.8 mo (HR 0.57); PFS 6.4 vs 3.3 mo; ORR 31.6% vs 9.4%",
+   "results": "OS 11.1 vs 6.8 mo (HR 0.57); PFS 6.4 vs 3.3 mo (HR 0.47); ORR 31.6% vs 9.4%",
    "toxicity": "Grade 3–4 neutropenia 45.7%, febrile neutropenia 5.4%, diarrhea 12.7%, neuropathy 9%",
    "reference": "Conroy T et al. NEJM 2011;364:1817",
    "pmid": "21561347",
@@ -2240,8 +2240,8 @@
     "metastatic"
    ],
    "source": "onepager:pancreatic",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "mpact",
@@ -2271,8 +2271,8 @@
     "metastatic"
    ],
    "source": "onepager:pancreatic",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "espac-4",
@@ -2302,8 +2302,8 @@
     "adjuvant"
    ],
    "source": "onepager:pancreatic",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "prodige-24",
@@ -2332,8 +2332,8 @@
     "adjuvant"
    ],
    "source": "onepager:pancreatic",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "polo",
@@ -2364,8 +2364,8 @@
     "maintenance"
    ],
    "source": "onepager:pancreatic",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "keynote-158",
@@ -2396,8 +2396,8 @@
     "tissue-agnostic"
    ],
    "source": "onepager:pancreatic",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "napoli-3",
@@ -2427,8 +2427,8 @@
     "metastatic"
    ],
    "source": "onepager:pancreatic",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "eortc-22863",
@@ -2441,7 +2441,7 @@
    "population": "T3–T4 any grade, or T1–T2 WHO grade 3, N0–1 M0 prostate cancer",
    "arms": "RT (70 Gy) + goserelin × 3 years (started with RT) vs RT alone (ADT at relapse)",
    "primary_endpoint": "Clinical disease-free survival",
-   "results": "10-yr OS 58.1% vs 39.8% (HR 0.60); 10-yr clinical DFS 47.7% vs 22.7%; prostate cancer mortality 10.3% vs 30.4%",
+   "results": "5-yr OS 79% vs 62%; 10-yr OS 58.1% vs 39.8% (HR 0.60); 10-yr clinical DFS 47.7% vs 22.7%; prostate cancer mortality 10.3% vs 30.4%",
    "reference": "Bolla M et al. NEJM 1997;337:295; Bolla M et al. Lancet Oncol 2010;11:1066 (10-yr)",
    "highlights": [
     "The foundational trial for long-term ADT with radiation in high-risk/locally advanced disease — an 18-point OS gain at 10 years.",
@@ -2455,12 +2455,12 @@
     "high-risk"
    ],
    "source": "onepager:prostate",
-   "verified": false,
+   "verified": true,
    "toxicity": null,
    "pmid": "9233866",
    "nct": null,
    "phase": "3",
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "rtog-9202",
@@ -2473,7 +2473,7 @@
    "population": "T2c–T4 N0–Nx prostate cancer, PSA <150",
    "arms": "RT + 4 months neoadjuvant/concurrent ADT vs the same + 24 additional months of goserelin (28 months total)",
    "primary_endpoint": "Disease-free survival",
-   "results": "10-yr DFS 22.5% vs 13.2%; disease-specific survival 88.7% vs 83.9%; OS 53.9% vs 51.6% (NS overall) but Gleason 8–10: 10-yr OS 45.1% vs 31.9% (p=0.0061)",
+   "results": "5-yr OS 80.0% vs 78.5% (NS); Gleason 8–10 5-yr OS 81.0% vs 70.7%. 10-yr: DFS 22.5% vs 13.2%; disease-specific survival 88.7% vs 83.9%; OS 53.9% vs 51.6% (NS overall) but Gleason 8–10 OS 45.1% vs 31.9% (p=0.0061)",
    "reference": "Hanks GE et al. JCO 2003;21:3972; Horwitz EM et al. JCO 2008;26:2497 (10-yr)",
    "highlights": [
     "Long-term ADT improves disease control for locally advanced disease; the OS benefit is concentrated in Gleason 8–10.",
@@ -2486,12 +2486,12 @@
     "duration"
    ],
    "source": "onepager:prostate",
-   "verified": false,
+   "verified": true,
    "toxicity": null,
    "pmid": "14581419",
    "nct": null,
    "phase": "3",
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "eortc-22961",
@@ -2504,7 +2504,7 @@
    "population": "T1c–T2b N1–2 or T2c–T4 N0–2 M0 prostate cancer (locally advanced)",
    "arms": "RT + 6 months ADT vs RT + 3 years ADT (non-inferiority)",
    "primary_endpoint": "Overall survival (non-inferiority of short-term ADT)",
-   "results": "5-yr OS 81.0% vs 85.3% (HR 1.42 for short-term) — 6 months NOT non-inferior; prostate cancer mortality 4.7% vs 3.2%",
+   "results": "5-yr overall mortality 19.0% vs 15.2% (OS 81.0% vs 84.8%; HR 1.42 for short-term) — 6 months NOT non-inferior; prostate cancer deaths 47 vs 29 (4.7% vs 3.2%)",
    "reference": "Bolla M et al. NEJM 2009;360:2516",
    "highlights": [
     "Six months of ADT is not enough for high-risk/locally advanced disease treated with RT — long-course (18–36 months) remains standard.",
@@ -2518,12 +2518,12 @@
     "high-risk"
    ],
    "source": "onepager:prostate",
-   "verified": false,
+   "verified": true,
    "toxicity": null,
    "pmid": "19516032",
    "nct": null,
    "phase": "3",
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "rtog-9408",
@@ -2549,12 +2549,12 @@
     "duration"
    ],
    "source": "onepager:prostate",
-   "verified": false,
+   "verified": true,
    "toxicity": null,
    "pmid": "21751904",
    "nct": null,
    "phase": "3",
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "alsympca",
@@ -2644,12 +2644,12 @@
     "high-risk"
    ],
    "source": "onepager:prostate",
-   "verified": false,
+   "verified": true,
    "toxicity": null,
    "pmid": "25702876",
    "nct": null,
    "phase": "3",
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "latitude",
@@ -2692,7 +2692,7 @@
    "population": "High-risk localized prostate cancer (T3–T4, or PSA >20, or Gleason >7)",
    "arms": "RT + 18 months ADT vs RT + 36 months ADT",
    "primary_endpoint": "Overall survival",
-   "results": "10-yr OS 62% vs 62% (HR 1.02); disease-specific survival 87% vs 87%; faster quality-of-life recovery with 18 months",
+   "results": "5-yr OS 86% (18 mo) vs 91% (36 mo), p=0.07; 10-yr OS 62% vs 62% (HR 1.02); disease-specific survival 87% vs 87%; quality of life favored 18 months (6 scales, 13 items)",
    "reference": "Nabid A et al. Eur Urol 2018;74:432",
    "highlights": [
     "18 months of ADT is as effective as 36 months for high-risk disease treated with RT — the practical upper bound in most guidelines.",
@@ -2706,12 +2706,12 @@
     "high-risk"
    ],
    "source": "onepager:prostate",
-   "verified": false,
+   "verified": true,
    "toxicity": null,
    "pmid": "29980331",
    "nct": null,
    "phase": "3",
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "prosper",
@@ -2845,7 +2845,7 @@
    "population": "Asymptomatic or mildly symptomatic chemotherapy-naive mCRPC with bone metastases (≥2 lesions)",
    "arms": "Abiraterone/prednisone + radium-223 vs abiraterone/prednisone + placebo",
    "primary_endpoint": "Symptomatic skeletal event-free survival",
-   "results": "SSE-FS 22.3 vs 26.0 mo (HR 1.12, NS); fractures 29% vs 11%; deaths 34.7% vs 28.2% — trial unblinded early for harm",
+   "results": "SSE-FS 22.3 vs 26.0 mo (HR 1.12, p=0.26); fractures 29% vs 11%; deaths 34.7% vs 28.2% — trial unblinded early for harm",
    "toxicity": "Fractures (largely osteoporotic, in patients not on bone-protective agents), no excess marrow toxicity",
    "reference": "Smith M et al. Lancet Oncol 2019;20:408",
    "highlights": [
@@ -2860,11 +2860,11 @@
     "safety"
    ],
    "source": "onepager:prostate",
-   "verified": false,
+   "verified": true,
    "pmid": "30738780",
    "nct": null,
    "phase": "3",
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "titan",
@@ -2984,10 +2984,10 @@
     "BRCA"
    ],
    "source": "onepager:prostate",
-   "verified": false,
+   "verified": true,
    "pmid": "32795228",
    "nct": null,
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "vision",
@@ -3109,11 +3109,11 @@
     "BRCA"
    ],
    "source": "onepager:prostate",
-   "verified": false,
+   "verified": true,
    "pmid": "38319800",
    "nct": null,
    "phase": "3",
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "embark",
@@ -3173,11 +3173,11 @@
     "HRR"
    ],
    "source": "onepager:prostate",
-   "verified": false,
+   "verified": true,
    "pmid": "36952634",
    "nct": null,
    "phase": "3",
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "talapro-2",
@@ -3236,11 +3236,11 @@
     "PSMA"
    ],
    "source": "onepager:prostate",
-   "verified": false,
+   "verified": true,
    "pmid": "39293462",
    "nct": null,
    "phase": "3",
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "patch",
@@ -3303,8 +3303,8 @@
     "induction"
    ],
    "source": "onepager:rectal",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "rapido",
@@ -3334,8 +3334,8 @@
     "CAPOX"
    ],
    "source": "onepager:rectal",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "opra",
@@ -3365,8 +3365,8 @@
     "total neoadjuvant therapy"
    ],
    "source": "onepager:rectal",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "prospect",
@@ -3397,8 +3397,8 @@
     "de-escalation"
    ],
    "source": "onepager:rectal",
-   "verified": false,
-   "updated": "2026-09-19"
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "decision",

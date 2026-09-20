@@ -17,9 +17,12 @@ Repo: `/Users/shankaraanand/Library/CloudStorage/GoogleDrive-shankara.k.anand@gm
 2. **Pick the disease slug** from `data/diseases.json` (`jq '.diseases[].slug'`). If the disease doesn't
    exist, add it in the same command with `--new-disease '{"slug","name","short","group"}'`
    (group ∈ `solid` · `malignant-heme` · `benign-heme`).
-3. **Research the trial** — use the PubMed MCP tools (`search_articles`, `get_article_metadata`) or
-   your knowledge for the primary publication; confirm the numbers you put in `results`. Prefer the
-   primary endpoint paper for `reference`/`year`, and mention updates (OS, 5-yr) inside `results`.
+3. **Research the trial — and check it against the abstract.** Use the PubMed MCP tools
+   (`search_articles`, `get_article_metadata`) to pull the primary publication's abstract and confirm
+   every number you put in `results` (medians, HRs, rates). Prefer the primary-endpoint paper for
+   `reference`/`year`; quote the primary analysis first and mention updates (OS, 5-yr) after it.
+   Never add an entry whose numbers you couldn't check — the site shows no "unverified" flag, so what
+   goes in is presented as checked.
 4. **Write the JSON** (one object or a list) to a scratch file and run:
    ```bash
    python3 scripts/add_trial.py /tmp/trial.json --push
@@ -46,7 +49,7 @@ Repo: `/Users/shankaraanand/Library/CloudStorage/GoogleDrive-shankara.k.anand@gm
   "takeaway": "one sentence for the hover card",
   "tags": ["pembrolizumab", "PD-L1"],
   "source": "manual",                        // or "onepager:<slug>" when extracted from a one-pager
-  "verified": true                           // true only if the user confirmed or the numbers were checked against the paper
+  "verified": true                           // always true — you checked the abstract in step 3
 }
 ```
 
@@ -54,8 +57,8 @@ Style: match the existing entries — terse, numbers first (`OS 13.0 vs 10.7 mo 
 `highlights` say what changed in practice and any caveat (crossover, subgroup-only benefit, harm signals).
 Use plain Unicode (≥, →, ×, µ) — this is JSON, not the one-pager HTML.
 
-`verified`: set `true` when the user dictated the content or you confirmed the key numbers from the
-PubMed abstract; otherwise `false` (the site shows an amber "unverified" chip so they can be checked later).
+`verified` is kept in the schema for bookkeeping but the site no longer displays it — every entry is
+expected to have been checked against the abstract before it is added.
 
 ## Gotchas
 

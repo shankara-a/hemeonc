@@ -100,8 +100,6 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
 .chip.dz { background: var(--primary-soft); color: var(--primary-dark); }
 .chip.setting { background: #eef2f7; color: var(--ink); font-weight: 500; max-width: 100%; white-space: normal; }
 .chip.phase { background: #ede9fe; color: #5b21b6; }
-.chip.unverified { background: var(--amber-soft); color: var(--amber); }
-.unverified-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--amber); vertical-align: middle; }
 
 /* ---------- reviews layout ---------- */
 .dz-rail { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-bottom: 14px; }
@@ -150,11 +148,11 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
 .nopdf-note { border-style: dashed; color: var(--muted); font-size: .9rem; }
 
 .rv-side { position: sticky; top: 62px; max-height: calc(100vh - 80px); display: flex; flex-direction: column; min-width: 0; }
-.rv-side-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 8px; }
+.rv-side-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 8px; flex: none; }
 .rv-side-title { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
-.rv-side-hint { font-size: .72rem; color: var(--muted); margin-top: 8px; }
-.rv-strip { display: flex; flex-direction: column; gap: 5px; overflow-y: auto; }
-.rv-drawer { display: none; overflow-y: auto; }
+.rv-side-hint { font-size: .72rem; color: var(--muted); margin-top: 8px; flex: none; }
+.rv-strip { display: flex; flex-direction: column; gap: 5px; overflow-y: auto; min-height: 0; }
+.rv-drawer { display: none; overflow-y: auto; min-height: 0; }
 .drawer-open .rv-strip { display: none; }
 .drawer-open .rv-drawer { display: block; }
 .trial-pill {
@@ -164,7 +162,11 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
 .trial-pill:hover, .trial-pill.hovered { border-color: var(--accent); background: var(--accent-soft); }
 .trial-pill .tp-n { font-weight: 700; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .trial-pill .tp-y { color: var(--muted); font-size: .72rem; font-variant-numeric: tabular-nums; }
-.trial-pill .tp-u { width: 6px; height: 6px; border-radius: 50%; background: var(--amber); flex: none; }
+.segmented { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--surface); }
+.segmented .seg { background: none; border: none; padding: 3px 10px; font: inherit; font-size: .76rem; font-weight: 600; color: var(--muted); cursor: pointer; }
+.segmented .seg + .seg { border-left: 1px solid var(--line); }
+.segmented .seg.active { background: var(--primary-soft); color: var(--primary-dark); }
+.rv-sort { margin-bottom: 8px; align-self: flex-start; flex: none; }
 .empty.small { padding: 12px; font-size: .82rem; }
 
 /* ---------- trial rows ---------- */
