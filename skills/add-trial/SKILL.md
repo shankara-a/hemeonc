@@ -1,6 +1,6 @@
 ---
-name: add-trial
-description: Add a landmark clinical trial (or several) to the Heme/Onc Hub trial library at shankara-a.github.io/hemeonc — fills the population/arms/endpoint/result/takeaway card, links the PubMed record, and pushes. Use when asked to "add a trial", "add X to the trial tracker", "log this trial", or "put these trials on the site".
+name: "add-trial"
+description: "Add a landmark clinical trial (or several) to the Heme/Onc Hub trial library at shankara-a.github.io/hemeonc — fills the population/arms/endpoint/result/takeaway card, links the PubMed record, and pushes. Use when asked to \"add a trial\", \"add X to the trial tracker\", \"log this trial\", or \"put these trials on the site\"."
 ---
 
 # Add trial
@@ -119,3 +119,4 @@ expected to have been checked against the abstract before it is added.
   Then tell the user to run `cd "<repo>" && git push`. Harmless `unable to unlink ... Operation not
   permitted` warnings on `.git` lock files are expected on the Drive mount; confirm the commit landed
   with `git log -1` and `git status --porcelain`.
+

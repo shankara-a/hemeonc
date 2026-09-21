@@ -1,6 +1,6 @@
 ---
 name: "cancer-one-pager"
-description: "Build a compact landscape PDF reference card for a cancer type from the Stanford Oncology Handbook — workup, staging, treatment pathway diagram, regimen dosing, biomarkers, surveillance, key trials — then publishes it to the Heme/Onc Hub site with its trials. Use when asked for a one-pager, cheat sheet, or reference card for a disease."
+description: "Build a compact landscape PDF reference card for a cancer type from the Stanford Oncology Handbook — workup, staging, treatment pathway diagram, regimen dosing, biomarkers, surveillance, key trials — then publish it to the heme/onc Hub. Use when asked for a one-pager, cheat sheet, or reference card for a disease."
 ---
 
 # Cancer one-pager
@@ -35,7 +35,9 @@ Requires `pip install weasyprint pypdf --break-system-packages`.
 4. **Publish to the Hub** (see "Publish" below) — file every trial the page cites, then run the sync.
 
 Some diseases are not in the handbook at all (MPN, leukemias, myeloma). Say so plainly, source
-from WHO/NCCN/landmark trials instead, and make the source line reflect that.
+from WHO/NCCN/landmark trials instead, and make the source line reflect that. For those, the
+user's own Notion review notes and Anki deck are often the better starting point — check them
+first and build the page around what is already there, filling the gaps rather than duplicating.
 
 ## Spec schema
 
@@ -94,6 +96,8 @@ not sequence.
 
 - **Three columns per page.** Col 1 = workup, staging, key trials. Col 2 = pathway diagram + a note
   box for caveats. Col 3 = regimen dosing, biomarker→therapy, surveillance, pearls. Widths flex.
+  A reference-heavy second page can use **two wide columns** instead of three — it reads better
+  than three sparse ones.
 - **Two pages:** page 1 = diagnosis through curative-intent treatment; page 2 = reference (dosing,
   endocrine/supportive therapy, metastatic sequencing, pearls). Give page 2 its own subtitle.
 - **Mark additions with `†`** and explain the convention in the source line. Never blur
@@ -130,6 +134,17 @@ Hub repo: `/Users/shankaraanand/Library/CloudStorage/GoogleDrive-shankara.k.anan
 (`HUB` below). Site: https://shankara-a.github.io/hemeonc/. The Notion "Clinical Trials" page is retired —
 trials live in `HUB/data/trials.json`.
 
+**The Hub is on a different Drive account from the Encyclopedia**, so a Cowork session that only has
+the Encyclopedia folder connected cannot see it. Request it once with `request_cowork_directory`
+before starting step 1.
+
+0. **Copy the PDF into `HUB/pdfs/` FIRST.** `add_trial.py` validates `diseases.json`, and it
+   **rejects an `onepager` value whose file is not already in `pdfs/`** (`onepager file missing`).
+   If you hit that error the disease may still have been written while the trials were not — re-check
+   `diseases.json` before re-running, or you will add the disease twice.
+   ```bash
+   cp "<...>/One Pagers/<Disease>.pdf" "$HUB/pdfs/"
+   ```
 1. **Register the disease** if it's new. Check `HUB/data/diseases.json` for a slug; if absent, add one
    with the PDF filename so the sync links them:
    ```bash
@@ -137,6 +152,9 @@ trials live in `HUB/data/trials.json`.
      '{"slug":"gastric","name":"Gastric adenocarcinoma","short":"Gastric","group":"solid","onepager":"Gastric Cancer.pdf"}'
    ```
    (`group`: `solid` · `malignant-heme` · `benign-heme`.)
+   **A slug may already exist with `onepager: null`** — that is not "already done". Set the field:
+   the sync derives a slug from the *filename* (`Myelodysplastic Syndromes.pdf` → `myelodysplastic-syndromes`),
+   so without it you get a duplicate stub instead of a match to `mds`.
 2. **File every trial the page names** — tables, pathway boxes, notes, footnotes, `†` items. Grep
    `HUB/data/trials.json` for each; write the missing ones as a JSON list to `/tmp/trials.json` using the
    schema in the `add-trial` skill (`source: "onepager:<slug>"`, `verified: true`; `reference` as
@@ -145,6 +163,10 @@ trials live in `HUB/data/trials.json`.
    flag, so what goes in is presented as checked. Then `python3 "$HUB/scripts/add_trial.py" /tmp/trials.json`
    (no `--push` yet — the sync pushes).
    Trials already filed under another disease (e.g. KEYNOTE-158) don't need a duplicate.
+   Verification routinely turns up errors in what you *thought* you knew — a trial's phase, primary
+   endpoint, publication year, or numbers that are widely misattributed from a neighbouring trial.
+   File what the abstract says, and if a commonly quoted figure isn't in the primary source, leave
+   it out rather than repeating it.
 3. **Sync + push:**
    ```bash
    python3 "$HUB/scripts/sync_onepagers.py"
@@ -152,11 +174,25 @@ trials live in `HUB/data/trials.json`.
    Copies the PDF into `HUB/pdfs/`, rebuilds `data/onepagers.json`, prints a coverage report
    ("tokens with no trial entry" = names it saw in the PDF that have no `trials.json` entry — add the real
    trials among them and rerun), then commits and pushes. Pages redeploys in ~1 minute.
+   Most flagged tokens are false positives — section headings (TREATMENT, DOSING) and gene names
+   (ZRSR2, STAG2, MECOM). Scan for the occasional real one (e.g. CPX-351) and ignore the rest.
 4. Report the link: `https://shankara-a.github.io/hemeonc/#reviews/<slug>`.
 
-**If the sync fails with `Operation not permitted`** on the Stanford Drive path, this session can't read
-that mount: run the same command in the user's terminal tab (`run_in_terminal`), or pass
-`--src` pointing at a readable copy of the `One Pagers` folder.
+### Sandbox limitations on the last step
+
+- **`--src` is required from a Cowork sandbox.** The script's default source is the *host* Stanford
+  Drive path, which the sandbox cannot see (`FileNotFoundError` / `Operation not permitted`). Pass the
+  sandbox mount instead: `--src "/sessions/<session>/mnt/Encyclopedia/One Pagers"`.
+- **The sandbox can commit but cannot push.** There is no network route to GitHub and no git identity,
+  so the script's final step fails with `could not read Username for 'https://github.com'`. Commit
+  under the user's own identity (read it from `git log -1 --format='%an <%ae>'` rather than inventing
+  one) and hand them the push:
+  ```bash
+  git -c user.name="..." -c user.email="..." commit -q -a -m "Add <Disease> one-pager; file N new trials"
+  ```
+  Then tell the user to run `cd "<HUB>" && git push`. Harmless
+  `unable to unlink ... Operation not permitted` warnings on `.git` lock files are expected on the
+  Drive mount — the commit still succeeds; confirm with `git log -1` and `git status --porcelain`.
 
 ## Gotchas
 
@@ -174,6 +210,6 @@ that mount: run the same command in the user's terminal tab (`run_in_terminal`),
 ## Done so far
 
 Breast (2 pages), Colon, Rectal, Pancreatic, NSCLC, Prostate, Testicular, MPN (PV/ET/PMF), Melanoma (2 pages),
-NET (2 pages). All ten are on the Hub with their trials filed.
+NET (2 pages), MDS, AML (2 pages). All twelve are on the Hub with their trials filed.
 Keep the same visual grammar for new ones so the set reads as a series.
 
