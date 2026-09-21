@@ -139,9 +139,11 @@ trials live in `HUB/data/trials.json`.
    (`group`: `solid` · `malignant-heme` · `benign-heme`.)
 2. **File every trial the page names** — tables, pathway boxes, notes, footnotes, `†` items. Grep
    `HUB/data/trials.json` for each; write the missing ones as a JSON list to `/tmp/trials.json` using the
-   schema in the `add-trial` skill (`source: "onepager:<slug>"`, `verified: false` unless you confirmed the
-   numbers against the paper; `reference` as `Author AB et al. Journal YYYY;vol:page` so the PMID resolves),
-   then `python3 "$HUB/scripts/add_trial.py" /tmp/trials.json` (no `--push` yet — the sync pushes).
+   schema in the `add-trial` skill (`source: "onepager:<slug>"`, `verified: true`; `reference` as
+   `Author AB et al. Journal YYYY;vol:page` so the PMID resolves). **Check every number against the
+   primary abstract** (PubMed MCP `get_article_metadata`) before filing — the site shows no "unverified"
+   flag, so what goes in is presented as checked. Then `python3 "$HUB/scripts/add_trial.py" /tmp/trials.json`
+   (no `--push` yet — the sync pushes).
    Trials already filed under another disease (e.g. KEYNOTE-158) don't need a duplicate.
 3. **Sync + push:**
    ```bash
