@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-09-20",
+ "updated": "2026-09-21",
  "trials": [
   {
    "id": "e1900",
@@ -3768,6 +3768,352 @@
    "source": "notion",
    "verified": true,
    "updated": "2026-09-19"
+  },
+  {
+   "id": "s-trac",
+   "name": "S-TRAC",
+   "disease": "rcc",
+   "year": 2016,
+   "phase": "3",
+   "setting": "adjuvant high-risk ccRCC",
+   "descriptor": "adjuvant sunitinib vs placebo after nephrectomy in high-risk locoregional ccRCC",
+   "population": "Locoregional high-risk clear-cell RCC after nephrectomy (UISS high-risk criteria)",
+   "arms": "Sunitinib 50 mg PO daily 4-on/2-off × 1 year vs placebo",
+   "n": 615,
+   "primary_endpoint": "Disease-free survival by blinded independent central review",
+   "results": "DFS 6.8 vs 5.6 years, HR 0.76 (0.59-0.98), P=0.03. OS immature at primary analysis; updated OS not significant, HR 0.92 (0.66-1.28) (Motzer, Eur Urol 2018)",
+   "toxicity": "Grade 3 AEs 48.4% vs 15.8%, grade 4 12.1% vs 3.6%; dose reductions 34.3%, discontinuations 28.1% vs 5.6%",
+   "reference": "Ravaud A et al. NEJM 2016;375:2246",
+   "pmid": "27718781",
+   "nct": null,
+   "highlights": [
+    "The only adjuvant TKI trial to show a DFS benefit (ASSURE, PROTECT and ATLAS were negative)",
+    "No overall survival benefit and heavy toxicity (28% discontinuation) — displaced by adjuvant pembrolizumab"
+   ],
+   "takeaway": "Adjuvant sunitinib prolongs DFS by about a year in high-risk resected ccRCC but at substantial toxicity and with no survival benefit.",
+   "tags": [
+    "sunitinib",
+    "adjuvant",
+    "VEGFR-TKI"
+   ],
+   "source": "onepager:rcc",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "cabosun",
+   "name": "CABOSUN (Alliance A031203)",
+   "disease": "rcc",
+   "year": 2017,
+   "phase": "2",
+   "setting": "1L intermediate/poor-risk mRCC",
+   "descriptor": "cabozantinib vs sunitinib in untreated IMDC intermediate/poor-risk metastatic RCC",
+   "population": "Untreated clear-cell mRCC, ECOG 0-2, IMDC intermediate or poor risk",
+   "arms": "Cabozantinib 60 mg PO daily (n=79) vs sunitinib 50 mg PO daily 4-on/2-off (n=78)",
+   "n": 157,
+   "primary_endpoint": "Progression-free survival",
+   "results": "PFS 8.2 vs 5.6 mo; adjusted HR 0.66 (95% CI 0.46-0.95), one-sided P=0.012; ORR 33% vs 12%. OS was secondary and not significantly different",
+   "toxicity": "All-causality grade 3-4 AEs 67% vs 68%; hypertension 28% vs 22%; hematologic AEs 3% vs 22%",
+   "reference": "Choueiri TK et al. JCO 2017;35:591",
+   "pmid": "28199818",
+   "nct": null,
+   "highlights": [
+    "Basis for single-agent cabozantinib as a 1L option in intermediate/poor-risk disease when IO is not feasible",
+    "Randomized PHASE 2 with only 157 patients, a one-sided p-value and no OS benefit — frequently misremembered as a phase 3"
+   ],
+   "takeaway": "Cabozantinib beat sunitinib on PFS and response rate in untreated intermediate/poor-risk mRCC, but in a small randomized phase 2 with no survival benefit.",
+   "tags": [
+    "cabozantinib",
+    "first-line",
+    "phase2"
+   ],
+   "source": "onepager:rcc",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "carmena",
+   "name": "CARMENA",
+   "disease": "rcc",
+   "year": 2018,
+   "phase": "3",
+   "setting": "cytoreductive nephrectomy in mRCC",
+   "descriptor": "sunitinib alone vs cytoreductive nephrectomy followed by sunitinib",
+   "population": "Synchronous metastatic clear-cell RCC at presentation, suitable candidates for nephrectomy, ECOG 0-1, MSKCC intermediate or poor risk",
+   "arms": "Cytoreductive nephrectomy → sunitinib 50 mg daily 4-on/2-off (n=226) vs sunitinib alone (n=224)",
+   "n": 450,
+   "primary_endpoint": "Overall survival (noninferiority, margin HR ≤1.20)",
+   "results": "At 50.9 mo and 326 deaths: sunitinib alone noninferior — stratified HR 0.89 (95% CI 0.71-1.10), median OS 18.4 vs 13.9 mo. No difference in ORR or PFS. Updated analysis (Méjean, Eur Urol 2021): HR 0.97 (0.79-1.19), OS 19.8 vs 15.6 mo; with ≥2 IMDC risk factors OS 31.2 vs 17.6 mo favoring sunitinib alone (HR 0.65, P=0.03), while 1 IMDC risk factor favored nephrectomy (31.4 vs 25.2 mo, HR 1.30, P=0.2)",
+   "toxicity": "Adverse events as anticipated in both groups; 22.5% in the nephrectomy arm never received sunitinib",
+   "reference": "Mejean A et al. NEJM 2018;379:417",
+   "pmid": "29860937",
+   "nct": null,
+   "highlights": [
+    "Ended cytoreductive nephrectomy as routine standard of care in metastatic RCC requiring systemic therapy",
+    "Enrolled only intermediate/poor MSKCC risk and used sunitinib, not modern IO — good-performance patients with one risk factor and a large symptomatic primary may still benefit from surgery"
+   ],
+   "takeaway": "Sunitinib alone was noninferior to cytoreductive nephrectomy followed by sunitinib in intermediate/poor-risk metastatic RCC, so upfront nephrectomy is no longer routine.",
+   "tags": [
+    "cytoreductive nephrectomy",
+    "sunitinib",
+    "surgery"
+   ],
+   "source": "onepager:rcc",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "checkmate-214",
+   "name": "CheckMate 214",
+   "disease": "rcc",
+   "year": 2018,
+   "phase": "3",
+   "setting": "1L advanced ccRCC",
+   "descriptor": "nivolumab + ipilimumab vs sunitinib in untreated advanced clear-cell RCC",
+   "population": "Previously untreated advanced/metastatic ccRCC; efficacy co-primary endpoints assessed in IMDC intermediate/poor-risk patients (847 of 1096)",
+   "arms": "Nivolumab 3 mg/kg + ipilimumab 1 mg/kg IV q3w × 4 → nivolumab 3 mg/kg q2w vs sunitinib 50 mg PO daily 4-on/2-off",
+   "n": 1096,
+   "primary_endpoint": "Co-primary OS, ORR and PFS — in IMDC intermediate/poor-risk patients only",
+   "results": "Intermediate/poor risk at 25.2 mo: OS median NR vs 26.0 mo, HR 0.63, P<0.001; ORR 42% vs 27%, P<0.001; CR 9% vs 1%. PFS 11.6 vs 8.4 mo, HR 0.82, P=0.03 — did NOT meet the prespecified α of 0.009. At 99.1 mo (Tannir, Ann Oncol 2024): OS HR 0.69 int/poor, 0.72 ITT, 0.82 (0.60-1.13) favorable",
+   "toxicity": "Grade 3-4 treatment-related AEs 46% vs 63%; discontinuation for TRAE 22% vs 12%",
+   "reference": "Motzer RJ et al. NEJM 2018;378:1277",
+   "pmid": "29562145",
+   "nct": null,
+   "highlights": [
+    "Established the IO/IO doublet as a 1L standard for IMDC intermediate/poor-risk disease — highest CR rate and most durable responses",
+    "PFS was a co-primary endpoint and formally failed; favorable-risk patients did not benefit (ORR numerically lower than sunitinib)"
+   ],
+   "takeaway": "Ipi/nivo beats sunitinib on OS and ORR in intermediate/poor-risk advanced ccRCC with durable complete responses — but not on PFS, and not in favorable risk.",
+   "tags": [
+    "nivolumab",
+    "ipilimumab",
+    "first-line",
+    "IO-IO"
+   ],
+   "source": "onepager:rcc",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "keynote-426",
+   "name": "KEYNOTE-426",
+   "disease": "rcc",
+   "year": 2019,
+   "phase": "3",
+   "setting": "1L advanced ccRCC",
+   "descriptor": "pembrolizumab + axitinib vs sunitinib in untreated advanced clear-cell RCC",
+   "population": "Previously untreated advanced ccRCC; KPS ≥70; all IMDC risk groups",
+   "arms": "Pembrolizumab 200 mg IV q3w + axitinib 5 mg PO BID vs sunitinib 50 mg PO daily, 4 wk of each 6-wk cycle",
+   "n": 861,
+   "primary_endpoint": "Dual primary — overall survival AND progression-free survival (ITT)",
+   "results": "At 12.8 mo: 12-mo OS 89.9% vs 78.3%, HR 0.53 (0.38-0.74), P<0.0001; PFS 15.1 vs 11.1 mo, HR 0.69 (0.57-0.84), P<0.001; ORR 59.3% vs 35.7%, P<0.001. Benefit across all IMDC risk groups and regardless of PD-L1",
+   "toxicity": "Grade ≥3 AEs 75.8% vs 70.6%; overlapping hepatotoxicity complicates attribution between the two drugs",
+   "reference": "Rini BI et al. NEJM 2019;380:1116",
+   "pmid": "30779529",
+   "nct": null,
+   "highlights": [
+    "First IO/TKI combination to beat sunitinib on both OS and PFS — made IO/TKI a 1L standard including favorable-risk disease",
+    "Only 12.8 months median follow-up at the reported primary analysis"
+   ],
+   "takeaway": "Pembrolizumab + axitinib improved OS, PFS and response rate over sunitinib in untreated advanced ccRCC across all risk groups.",
+   "tags": [
+    "pembrolizumab",
+    "axitinib",
+    "first-line",
+    "IO-TKI"
+   ],
+   "source": "onepager:rcc",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "tivo-3",
+   "name": "TIVO-3",
+   "disease": "rcc",
+   "year": 2020,
+   "phase": "3",
+   "setting": "3rd/4th-line metastatic RCC",
+   "descriptor": "tivozanib vs sorafenib in heavily pretreated metastatic RCC",
+   "population": "Metastatic RCC with ≥2 prior systemic regimens (≥1 prior VEGFR TKI); ECOG 0-1; ~26-28% prior checkpoint inhibitor",
+   "arms": "Tivozanib 1.5 mg PO daily in 4-wk cycles vs sorafenib 400 mg PO BID continuously",
+   "n": 350,
+   "primary_endpoint": "Progression-free survival by independent review (ITT)",
+   "results": "PFS 5.6 vs 3.9 mo, HR 0.73 (0.56-0.94), P=0.016. No OS data in the primary publication; later analysis (Beckermann, Oncologist 2024) OS HR 0.89 (0.70-1.14), not significant, 3-yr PFS 12.3% vs 2.4%",
+   "toxicity": "Grade 3-4 treatment-related hypertension 20% vs 14%; serious treatment-related AEs 11% vs 10%; no treatment-related deaths",
+   "reference": "Rini BI et al. Lancet Oncol 2020;21:95",
+   "pmid": "31810797",
+   "nct": null,
+   "highlights": [
+    "Supported FDA approval of tivozanib after ≥2 prior systemic therapies; better tolerated than sorafenib",
+    "Modest 1.7-month PFS gain, no OS benefit, and sorafenib is a weak comparator in the modern post-IO setting"
+   ],
+   "takeaway": "Tivozanib modestly improves PFS over sorafenib in third/fourth-line RCC with good tolerability but no survival gain.",
+   "tags": [
+    "tivozanib",
+    "VEGFR-TKI",
+    "refractory"
+   ],
+   "source": "onepager:rcc",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "checkmate-9er",
+   "name": "CheckMate 9ER",
+   "disease": "rcc",
+   "year": 2021,
+   "phase": "3",
+   "setting": "1L advanced ccRCC",
+   "descriptor": "nivolumab + cabozantinib vs sunitinib in untreated advanced clear-cell RCC",
+   "population": "Previously untreated advanced clear-cell RCC",
+   "arms": "Nivolumab 240 mg IV q2w + cabozantinib 40 mg PO daily vs sunitinib 50 mg PO daily, 4 wk of each 6-wk cycle",
+   "n": 651,
+   "primary_endpoint": "Progression-free survival by blinded independent central review",
+   "results": "At 18.1 mo: PFS 16.6 vs 8.3 mo, HR 0.51 (0.41-0.64), P<0.001; 12-mo OS 85.7% vs 75.6%, HR 0.60 (98.89% CI 0.40-0.89), P=0.001; ORR 55.7% vs 27.1%, P<0.001. Health-related quality of life favored the combination",
+   "toxicity": "Grade ≥3 AEs 75.3% vs 70.6%; 19.7% discontinued ≥1 drug for AEs, 5.6% discontinued both",
+   "reference": "Choueiri TK et al. NEJM 2021;384:829",
+   "pmid": "33657295",
+   "nct": null,
+   "highlights": [
+    "IO/TKI option with the best reported quality-of-life data; cabozantinib is dosed at 40 mg here, not the 60 mg monotherapy dose",
+    "Primary endpoint was PFS alone; OS was secondary, reported with a 98.89% CI at short follow-up"
+   ],
+   "takeaway": "Nivolumab + cabozantinib doubled PFS and improved OS and response rate versus sunitinib in untreated advanced ccRCC.",
+   "tags": [
+    "nivolumab",
+    "cabozantinib",
+    "first-line",
+    "IO-TKI"
+   ],
+   "source": "onepager:rcc",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "clear-rcc",
+   "name": "CLEAR",
+   "disease": "rcc",
+   "year": 2021,
+   "phase": "3",
+   "setting": "1L advanced RCC",
+   "descriptor": "lenvatinib + pembrolizumab or + everolimus vs sunitinib in untreated advanced RCC",
+   "population": "Advanced RCC, no prior systemic therapy; 1:1:1 randomization",
+   "arms": "Lenvatinib 20 mg PO daily + pembrolizumab 200 mg IV q3w; lenvatinib 18 mg + everolimus 5 mg PO daily; sunitinib 50 mg PO daily 4-on/2-off",
+   "n": 1069,
+   "primary_endpoint": "Progression-free survival by independent review (RECIST 1.1)",
+   "results": "Lenvatinib+pembrolizumab vs sunitinib: PFS 23.9 vs 9.2 mo, HR 0.39 (0.32-0.49), P<0.001; OS HR 0.66 (0.49-0.88), P=0.005; ORR 71.0% vs 36.1%. Lenvatinib+everolimus vs sunitinib: PFS 14.7 vs 9.2 mo, HR 0.65; OS HR 1.15 (0.88-1.50), P=0.30 — no OS benefit",
+   "toxicity": "Grade ≥3 AEs 82.4% (len+pembro), 83.1% (len+eve), 71.8% (sunitinib); hypertension, diarrhea, lipase elevation",
+   "reference": "Motzer R et al. NEJM 2021;384:1289",
+   "pmid": "33616314",
+   "nct": null,
+   "highlights": [
+    "Longest median PFS reported for any 1L RCC regimen (23.9 mo) — a preferred IO/TKI option across IMDC risk groups",
+    "Primary endpoint was PFS only; the lenvatinib+everolimus arm showed no OS benefit and is not a 1L standard"
+   ],
+   "takeaway": "Lenvatinib + pembrolizumab roughly doubles PFS and improves OS versus sunitinib in untreated advanced RCC, at the cost of high-grade toxicity.",
+   "tags": [
+    "lenvatinib",
+    "pembrolizumab",
+    "first-line",
+    "IO-TKI"
+   ],
+   "source": "onepager:rcc",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "keynote-564",
+   "name": "KEYNOTE-564",
+   "disease": "rcc",
+   "year": 2021,
+   "phase": "3",
+   "setting": "adjuvant ccRCC",
+   "descriptor": "pembrolizumab vs placebo after nephrectomy in high-risk clear-cell RCC",
+   "population": "ccRCC at increased risk of recurrence after nephrectomy ± metastasectomy (intermediate-high, high risk, or M1 NED); surgery ≤12 wk prior; ECOG 0-1",
+   "arms": "Pembrolizumab 200 mg IV q3w × up to 17 cycles (~1 yr) vs placebo",
+   "n": 994,
+   "primary_endpoint": "Disease-free survival (investigator assessed, ITT)",
+   "results": "DFS HR 0.68 (95% CI 0.53-0.87), P=0.002; 24-mo DFS 77.3% vs 68.1%. Update at 57.2 mo (Choueiri, NEJM 2024): OS HR 0.62 (0.44-0.87), 48-mo OS 91.2% vs 86.0%; DFS HR 0.72 (0.59-0.87)",
+   "toxicity": "Grade ≥3 AEs 32.4% vs 17.7%; treatment-related grade 3-4 18.6% vs 1.2%; no treatment-related deaths",
+   "reference": "Choueiri TK et al. NEJM 2021;385:683",
+   "pmid": "34407342",
+   "nct": null,
+   "highlights": [
+    "First adjuvant therapy in RCC to show an OS benefit (2024 update) — now standard of care for resected high-risk ccRCC",
+    "ITT included M1 NED (fully resected oligometastatic) patients; benefit in true M0 disease is smaller, so selection matters"
+   ],
+   "takeaway": "One year of adjuvant pembrolizumab improves DFS and, on longer follow-up, overall survival in resected high-risk ccRCC.",
+   "tags": [
+    "pembrolizumab",
+    "adjuvant",
+    "ccRCC"
+   ],
+   "source": "onepager:rcc",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "papmet",
+   "name": "SWOG S1500 (PAPMET)",
+   "disease": "rcc",
+   "year": 2021,
+   "phase": "2",
+   "setting": "metastatic papillary RCC",
+   "descriptor": "sunitinib vs cabozantinib vs crizotinib vs savolitinib in metastatic papillary RCC",
+   "population": "Metastatic papillary RCC, ≤1 prior therapy (excluding VEGF- and MET-directed agents); 152 randomized, 147 analyzed",
+   "arms": "Sunitinib 50 mg 4-on/2-off (n=46) vs cabozantinib 60 mg daily (n=44) vs crizotinib 250 mg BID (n=28) vs savolitinib 600 mg daily (n=29)",
+   "n": 147,
+   "primary_endpoint": "Progression-free survival (ITT)",
+   "results": "Cabozantinib vs sunitinib: PFS 9.0 vs 5.6 mo, HR 0.60 (0.37-0.97), one-sided P=0.019; ORR 23% vs 4%, P=0.010. Savolitinib and crizotinib arms closed early for futility. Final OS (Barata, JCO 2024): 21.5 vs 17.3 mo, HR 0.83, P=0.46 — no difference",
+   "toxicity": "Grade 3-4 AEs: sunitinib 69%, cabozantinib 74%, crizotinib 37%, savolitinib 39%; one grade 5 thromboembolic event with cabozantinib",
+   "reference": "Pal SK et al. Lancet 2021;397:695",
+   "pmid": "33592176",
+   "nct": null,
+   "highlights": [
+    "Established cabozantinib as the reference regimen for metastatic papillary RCC — a rare disease with almost no randomized data",
+    "Randomized phase 2 with ~45 patients per active arm, a one-sided p-value and no OS benefit; unselected MET inhibitors failed"
+   ],
+   "takeaway": "Cabozantinib outperformed sunitinib on PFS and response in metastatic papillary RCC while MET inhibitors failed, though without a survival benefit.",
+   "tags": [
+    "cabozantinib",
+    "papillary",
+    "MET",
+    "phase2"
+   ],
+   "source": "onepager:rcc",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "litespark-005",
+   "name": "LITESPARK-005",
+   "disease": "rcc",
+   "year": 2024,
+   "phase": "3",
+   "setting": "refractory advanced ccRCC",
+   "descriptor": "belzutifan vs everolimus after IO and anti-angiogenic therapy",
+   "population": "Advanced ccRCC progressing after anti-PD-1/PD-L1 and VEGF-targeted therapy; 1-3 prior lines; KPS ≥70",
+   "arms": "Belzutifan 120 mg PO daily vs everolimus 10 mg PO daily",
+   "n": 746,
+   "primary_endpoint": "Dual primary — progression-free survival (BICR) AND overall survival",
+   "results": "Median PFS 5.6 mo in BOTH arms; 18-mo PFS 24.0% vs 8.3%, P=0.002 (met). Confirmed ORR 21.9% vs 3.5%, P<0.001. At 25.7 mo: OS 21.4 vs 18.1 mo, HR 0.88 (0.73-1.07), P=0.20 — OS co-primary NOT met",
+   "toxicity": "Grade ≥3 AEs 61.8% vs 62.5%; discontinuation for AEs 5.9% vs 14.7%. Class effects: anemia, hypoxia",
+   "reference": "Choueiri TK et al. NEJM 2024;391:710",
+   "pmid": "39167807",
+   "nct": null,
+   "highlights": [
+    "First HIF-2α inhibitor with a positive phase 3 in RCC — a genuinely new mechanism for post-IO, post-TKI disease",
+    "Medians are identical (5.6 vs 5.6 mo): the benefit is entirely in the tail of the curve, and the OS co-primary failed"
+   ],
+   "takeaway": "Belzutifan improves 18-month PFS and response rate over everolimus in refractory ccRCC without improving overall survival.",
+   "tags": [
+    "belzutifan",
+    "HIF-2alpha",
+    "refractory"
+   ],
+   "source": "onepager:rcc",
+   "verified": true,
+   "updated": "2026-09-21"
   },
   {
    "id": "prodige-23",

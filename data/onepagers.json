@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T18:28:19",
+ "generated": "2026-09-21T12:55:09",
  "onepagers": [
   {
    "disease": "aml",
@@ -99,6 +99,15 @@
    "size": 39231,
    "sha1": "81ccc465d5273b7a9bae38825cc09bdf8dbff8f6",
    "updated": "2026-09-19"
+  },
+  {
+   "disease": "rcc",
+   "file": "Renal Cell Carcinoma.pdf",
+   "title": "Renal cell carcinoma",
+   "pages": 1,
+   "size": 39007,
+   "sha1": "19e2eaf1cc8a23fae2cd39ca2d04c7664752cdd2",
+   "updated": "2026-09-21"
   },
   {
    "disease": "testicular",
