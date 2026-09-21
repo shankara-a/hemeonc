@@ -19,7 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from pubmed_lookup import resolve  # noqa: E402
-from validate import validate  # noqa: E402
+from validate import validate, bump_asset_version  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 TRIALS = ROOT / "data" / "trials.json"
@@ -111,7 +111,8 @@ def main():
     if a.commit or a.push:
         names = added + updated
         msg = "Add trials: " + ", ".join(names) if added and not updated else "Update trials: " + ", ".join(names)
-        subprocess.run(["git", "add", "data/trials.json", "data/diseases.json"], cwd=ROOT, check=True)
+        bump_asset_version()
+        subprocess.run(["git", "add", "data/trials.json", "data/diseases.json", "index.html"], cwd=ROOT, check=True)
         subprocess.run(["git", "commit", "-q", "-m", msg], cwd=ROOT, check=True)
         print(f"   committed: {msg}")
         if a.push:

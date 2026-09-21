@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Sanity-check data/*.json (run before committing; add_trial.py and CI call this)."""
-import json, sys
+import json, re, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -42,6 +42,16 @@ def validate(trials_db, diseases_db, onepagers_db=None):
             if not (ROOT / "pdfs" / o["file"]).exists():
                 problems.append(f"onepager {o['file']}: file missing")
     return problems
+
+
+def bump_asset_version():
+    """Rewrite ?v=N on asset tags in index.html to the current commit count (cache-busting)."""
+    idx = ROOT / "index.html"
+    n = subprocess.run(["git", "rev-list", "--count", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip() or "0"
+    s = idx.read_text()
+    new = re.sub(r"(assets/[a-z]+\.(?:js|css))(\?v=\d+)?", lambda m: f"{m.group(1)}?v={int(n) + 1}", s)
+    if new != s:
+        idx.write_text(new)
 
 
 def main():

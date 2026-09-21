@@ -21,6 +21,8 @@ Steps
 import argparse, datetime, hashlib, json, os, re, shutil, subprocess, sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 ROOT = Path(__file__).resolve().parent.parent
 PDF_DIR = ROOT / "pdfs"
 DATA = ROOT / "data"
@@ -242,7 +244,9 @@ def main():
         for lk in locks:
             print(f"   removing stale {lk.relative_to(ROOT)} (no git process is running)")
             lk.unlink()
-    if run(["git", "add", "pdfs", "data/onepagers.json", "data/diseases.json"]):
+    from validate import bump_asset_version
+    bump_asset_version()
+    if run(["git", "add", "pdfs", "data/onepagers.json", "data/diseases.json", "index.html"]):
         sys.exit("!! git add failed — fix the repo state and rerun (nothing was committed)")
     status = subprocess.run(["git", "status", "--porcelain", "pdfs", "data/onepagers.json", "data/diseases.json"],
                             cwd=ROOT, capture_output=True, text=True).stdout.strip()

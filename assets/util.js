@@ -60,45 +60,48 @@
   let hideTimer = null, current = null;
   const canHover = () => window.matchMedia("(hover: hover) and (min-width: 601px)").matches;
 
-  /* ---------- Trials-tab detail pane (list left, details right) ---------- */
-  const detailPane = () => document.getElementById("tr-detail");
-  const paneActive = () => {
-    const pane = detailPane();
-    return pane && pane.offsetParent !== null && window.matchMedia("(min-width: 901px)").matches;
+  /* ---------- Detail panes (Trials tab: #tr-detail · Reviews: .rv-detail) ---------- */
+  const paneFor = (row) => {
+    if (!window.matchMedia("(min-width: 901px)").matches) return null;
+    const pane = row.closest("#tr-list") ? document.getElementById("tr-detail")
+               : row.closest(".rv-side") ? row.closest(".rv-side").querySelector(".rv-detail") : null;
+    return pane && pane.offsetParent !== null ? pane : null;
   };
-  let pinned = null;
-  HH.renderDetail = (t, { isPinned = false } = {}) => {
-    const pane = detailPane();
+  HH.renderDetail = (pane, t, { isPinned = false } = {}) => {
     if (!pane || !t) return;
     const dz = HH.disease(t.disease);
+    const inReviews = pane.classList.contains("rv-detail");
     pane.innerHTML = `
-      <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t, { disease: true })}</div>
+      <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t, { disease: !inReviews })}</div>
       <div class="tp-desc">${HH.esc(t.descriptor || "")}${t.setting ? ` · ${HH.esc(t.setting)}` : ""}</div>
       ${HH.trialBody(t)}
-      <div class="tp-hint">${isPinned ? "Pinned — click the trial again to unpin" : "Click the trial to pin it here"}${dz ? ` · <a href="#reviews/${dz.slug}">${HH.esc(dz.short)} review →</a>` : ""}</div>`;
+      <div class="tp-hint">${isPinned ? "Pinned — click again to unpin" : "Click to pin"}${dz && !inReviews ? ` · <a href="#reviews/${dz.slug}">${HH.esc(dz.short)} review →</a>` : ""}</div>`;
   };
-  HH.pinTrial = (row) => {
-    const list = document.getElementById("tr-list");
-    if (pinned === row) {
-      pinned = null;
+  HH.pinTrial = (row, pane = paneFor(row)) => {
+    if (!pane) return;
+    const list = row.closest("#tr-list, .rv-side");
+    const t = HH.data.trialById[row.dataset.id];
+    if (pane.dataset.pinned === row.dataset.id) {
+      delete pane.dataset.pinned;
       row.classList.remove("selected");
-      HH.renderDetail(HH.data.trialById[row.dataset.id]);
+      HH.renderDetail(pane, t);
       return;
     }
     list.querySelectorAll(".trial-row.selected").forEach((r) => r.classList.remove("selected"));
-    pinned = row;
+    pane.dataset.pinned = row.dataset.id;
     row.classList.add("selected");
-    HH.renderDetail(HH.data.trialById[row.dataset.id], { isPinned: true });
+    HH.renderDetail(pane, t, { isPinned: true });
   };
-  HH.resetPin = () => { pinned = null; };
+  HH.resetPin = (pane) => { if (pane) delete pane.dataset.pinned; };
 
   HH.showPop = (row) => {
     if (!canHover()) return;
     const t = HH.data.trialById[row.dataset.id];
     if (!t || row.classList.contains("open")) return;
-    if (paneActive() && row.closest("#tr-list")) {         // Trials tab: use the side pane, not the popover
-      if (!pinned) HH.renderDetail(t);
-      document.querySelectorAll("#tr-list .trial-row.hovered").forEach((r) => r !== row && r.classList.remove("hovered"));
+    const pane = paneFor(row);
+    if (pane) {                                             // a detail pane exists: fill it, no popover
+      if (!pane.dataset.pinned) HH.renderDetail(pane, t);
+      row.closest("#tr-list, .rv-side").querySelectorAll(".trial-row.hovered").forEach((r) => r !== row && r.classList.remove("hovered"));
       row.classList.add("hovered");
       return;
     }
@@ -150,7 +153,13 @@
     const row = e.target.closest(".trial-row");
     if (!row) return;
     if (e.target.closest("a") || e.target.closest(".tr-more")) return; // let links & selection work
-    if (paneActive() && row.closest("#tr-list")) { HH.pinTrial(row); return; }
+    const pane = paneFor(row);
+    if (pane) { HH.pinTrial(row, pane); return; }
+    if (row.classList.contains("trial-pill")) {               // phone: pill tap shows the card inline
+      const side = row.closest(".rv-side"), rvPane = side && side.querySelector(".rv-detail");
+      if (rvPane) { HH.pinTrial(row, rvPane); rvPane.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
+      return;
+    }
     row.classList.toggle("open");
     if (row.classList.contains("open")) HH.hidePop(0);
   });

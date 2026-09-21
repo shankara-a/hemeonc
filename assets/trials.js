@@ -66,13 +66,13 @@
       host.innerHTML = list.map((t) => HH.trialRow(t, { disease: !dz })).join("");
     }
 
-    HH.resetPin?.();
+    const pane = document.getElementById("tr-detail");
+    HH.resetPin?.(pane);
     if (pendingOpen) {
       const row = document.getElementById(`trial-${pendingOpen}`);
       pendingOpen = null;
       if (row) {
-        const pane = document.getElementById("tr-detail");
-        if (pane && pane.offsetParent !== null && window.matchMedia("(min-width: 901px)").matches) HH.pinTrial(row);
+        if (pane && pane.offsetParent !== null && window.matchMedia("(min-width: 901px)").matches) HH.pinTrial(row, pane);
         else row.classList.add("open");
         setTimeout(() => row.scrollIntoView({ block: "center" }), 30);
       }
