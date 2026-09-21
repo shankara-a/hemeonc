@@ -70,8 +70,8 @@
             <div class="segmented tiny rv-sort" role="group" aria-label="Sort trials">${sortBtns}</div>
           </div>
           <div class="rv-strip">${pills || `<div class="empty small">None filed yet</div>`}</div>
-          <div class="rv-detail card" aria-live="polite"><div class="empty small">Hover a trial for its takeaway · click to pin</div></div>
         </aside>
+        <aside class="rv-detail card" aria-live="polite"><div class="empty small">Hover a trial for its takeaway · click to pin</div></aside>
       </div>`;
 
     main.querySelector(".rv-sort").addEventListener("click", (e) => {

@@ -132,9 +132,10 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
 .btn.small { padding: 4px 9px; font-size: .78rem; }
 
 /* PDF full width; right column = detail card on top, trial pills below */
-.rv-body { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 16px; align-items: start; }
-.rv-body.no-pdf { grid-template-columns: 1fr; }
-.rv-body.no-pdf .rv-side { max-width: 720px; }
+/* PDF | trial list | summary — Reviews uses the full window width so the PDF keeps room */
+body:has(#reviews.active) :is(main, .header-inner, .tabs-inner, .site-footer) { max-width: none; }
+.rv-body { display: grid; grid-template-columns: minmax(0, 1fr) 210px 360px; gap: 16px; align-items: start; }
+.rv-body.no-pdf { grid-template-columns: 1fr 1fr; max-width: 960px; }
 .rv-pdf { min-width: 0; padding: 0; }
 .pdf-toolbar { display: flex; align-items: center; gap: 6px; padding: 8px 10px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
 .pdf-toolbar .spacer { flex: 1; }
@@ -147,9 +148,9 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
 .nopdf-note { border-style: dashed; color: var(--muted); font-size: .9rem; }
 
 .rv-side { position: sticky; top: 62px; max-height: calc(100vh - 78px); display: flex; flex-direction: column; min-width: 0; }
-.rv-side-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 8px; flex: none; }
+.rv-side-head { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; margin-bottom: 8px; flex: none; }
 .rv-side-title { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
-.rv-detail { flex: 1 1 auto; min-height: 140px; overflow-y: auto; padding: 12px 14px; margin-top: 10px; font-size: .86rem; }
+.rv-detail { position: sticky; top: 62px; max-height: calc(100vh - 78px); overflow-y: auto; padding: 14px 16px; font-size: .88rem; }
 .rv-detail .tp-head { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 2px; }
 .rv-detail .tp-name { font-weight: 700; font-size: 1rem; }
 .rv-detail .tp-desc { color: var(--muted); font-size: .82rem; }
@@ -158,7 +159,7 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
 .rv-detail .tcard dt { margin-top: 6px; }
 .rv-detail .tcard .thl { font-size: .84rem; padding-left: 16px; }
 .rv-detail .tp-hint { margin-top: 8px; font-size: .72rem; color: var(--muted); }
-.rv-strip { display: flex; flex-direction: column; gap: 5px; overflow-y: auto; flex: 0 1 auto; max-height: 38vh; }
+.rv-strip { display: flex; flex-direction: column; gap: 5px; overflow-y: auto; flex: 1 1 auto; min-height: 0; }
 .trial-pill {
   display: flex; align-items: center; gap: 6px; width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line);
   border-radius: 8px; padding: 5px 9px; cursor: pointer; font: inherit; font-size: .8rem; color: var(--ink); min-width: 0;
@@ -248,12 +249,17 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
 .site-footer { max-width: 1280px; margin: 0 auto; padding: 12px 16px 32px; color: var(--muted); font-size: .8rem; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 
 /* ---------- responsive ---------- */
+@media (max-width: 1200px) {
+  .rv-body { grid-template-columns: minmax(0, 1fr) 330px; }
+  .rv-body .rv-detail { grid-column: 2; }
+  .rv-side { max-height: 40vh; }
+}
 @media (max-width: 900px) {
   .dz-group + .dz-group { padding-left: 0; border-left: none; }
-  .rv-body { grid-template-columns: 1fr; }
+  .rv-body, .rv-body.no-pdf { grid-template-columns: 1fr; }
+  .rv-body .rv-detail { grid-column: auto; position: static; max-height: none; }
   .rv-side { position: static; max-height: none; }
-  .rv-detail { min-height: 0; }
-  .rv-strip { flex-direction: row; flex-wrap: wrap; max-height: none; }
+  .rv-strip { flex-direction: row; flex-wrap: wrap; }
   .trial-pill { width: auto; }
   .pdf-pages { max-height: 75vh; }
 }

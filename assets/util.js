@@ -64,7 +64,7 @@
   const paneFor = (row) => {
     if (!window.matchMedia("(min-width: 901px)").matches) return null;
     const pane = row.closest("#tr-list") ? document.getElementById("tr-detail")
-               : row.closest(".rv-side") ? row.closest(".rv-side").querySelector(".rv-detail") : null;
+               : row.closest(".rv-body") ? row.closest(".rv-body").querySelector(".rv-detail") : null;
     return pane && pane.offsetParent !== null ? pane : null;
   };
   HH.renderDetail = (pane, t, { isPinned = false } = {}) => {
@@ -156,7 +156,7 @@
     const pane = paneFor(row);
     if (pane) { HH.pinTrial(row, pane); return; }
     if (row.classList.contains("trial-pill")) {               // phone: pill tap shows the card inline
-      const side = row.closest(".rv-side"), rvPane = side && side.querySelector(".rv-detail");
+      const body = row.closest(".rv-body"), rvPane = body && body.querySelector(".rv-detail");
       if (rvPane) { HH.pinTrial(row, rvPane); rvPane.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
       return;
     }
