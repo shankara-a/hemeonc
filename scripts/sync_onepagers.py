@@ -236,17 +236,25 @@ def main():
     if a.dry_run or a.no_commit:
         print("   (no commit)")
         return
-    run(["git", "add", "pdfs", "data/onepagers.json", "data/diseases.json"])
+    locks = list((ROOT / ".git").glob("*.lock"))
+    if locks and not re.search(r"(^|/)git( |$)", subprocess.run(["ps", "-axo", "command="], capture_output=True, text=True).stdout, re.M):
+        # stale locks from a killed git — common in Drive-synced repos; safe when no git process is running
+        for lk in locks:
+            print(f"   removing stale {lk.relative_to(ROOT)} (no git process is running)")
+            lk.unlink()
+    if run(["git", "add", "pdfs", "data/onepagers.json", "data/diseases.json"]):
+        sys.exit("!! git add failed — fix the repo state and rerun (nothing was committed)")
     status = subprocess.run(["git", "status", "--porcelain", "pdfs", "data/onepagers.json", "data/diseases.json"],
                             cwd=ROOT, capture_output=True, text=True).stdout.strip()
     if not status:
-        print("   nothing to commit")
+        print("   nothing to commit — site already up to date")
         return
     msg = a.message or ("Sync one-pagers: " + ", ".join(changed) if changed else "Refresh one-pager manifest")
-    run(["git", "commit", "-q", "-m", msg])
+    if run(["git", "commit", "-q", "-m", msg]):
+        sys.exit("!! git commit failed — nothing pushed")
     if not a.no_push:
         rc = run(["git", "push"])
-        print("   pushed — GitHub Pages redeploys in ~1 minute" if rc == 0 else "   !! push failed")
+        print("   pushed — GitHub Pages redeploys in ~1 minute" if rc == 0 else "   !! push failed — commit is local; run `git push` when online")
 
 
 if __name__ == "__main__":
