@@ -3,6 +3,355 @@
  "updated": "2026-09-20",
  "trials": [
   {
+   "id": "e1900",
+   "name": "E1900",
+   "disease": "aml",
+   "year": 2009,
+   "phase": "3",
+   "setting": "Newly diagnosed AML, age 17-60, fit for intensive induction",
+   "descriptor": "Anthracycline dose intensification - daunorubicin 90 vs 45 mg/m2 in 7+3",
+   "population": "657 patients aged 17-60 with previously untreated AML",
+   "arms": "Daunorubicin 90 mg/m2 vs 45 mg/m2 IV daily x 3, each with cytarabine 100 mg/m2/day CIV x 7 days; responders offered allogeneic HCT or HiDAC +/- gemtuzumab then autologous transplant",
+   "n": 657,
+   "primary_endpoint": "Overall survival",
+   "results": "Intention-to-treat: CR 70.6% with high-dose vs 57.3% with standard-dose daunorubicin (P<0.001); median OS 23.7 vs 15.7 months (P=0.003) at median follow-up 25.2 months.",
+   "toxicity": "Rates of serious adverse events were similar in the two groups.",
+   "reference": "Fernandez HF et al. N Engl J Med 2009;361:1249-1259",
+   "pmid": "19776406",
+   "nct": "NCT00049517",
+   "highlights": [
+    "Made daunorubicin 90 mg/m2 (or at minimum 60) the standard anthracycline dose in 7+3 for younger adults, displacing 45 mg/m2.",
+    "The higher dose bought a better remission rate and longer survival without more serious toxicity - dose intensification is essentially free in a fit patient."
+   ],
+   "takeaway": "Use daunorubicin 90 mg/m2, not 45, with cytarabine in fit adults under 60 - higher CR rate and 8 months longer median survival.",
+   "tags": [
+    "aml"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
+   "id": "alfa-0701",
+   "name": "ALFA-0701",
+   "disease": "aml",
+   "year": 2012,
+   "phase": "3",
+   "setting": "Newly diagnosed de novo CD33-positive AML, age 50-70, fit for intensive induction",
+   "descriptor": "Adding fractionated low-dose gemtuzumab ozogamicin to induction and consolidation",
+   "population": "280 previously untreated patients aged 50-70 with de novo AML at 26 French centres",
+   "arms": "Standard induction and consolidation chemotherapy alone vs the same plus fractionated gemtuzumab ozogamicin 3 mg/m2 IV on days 1, 4 and 7 of induction and day 1 of each of two consolidation courses (five doses total)",
+   "n": 280,
+   "primary_endpoint": "Event-free survival",
+   "results": "CR with or without incomplete platelet recovery 75% vs 81% (odds ratio 1.46; P=0.25). At 2 years: EFS 17.1% vs 40.8%, HR 0.58 (0.43-0.78), P=0.0003; OS 41.9% vs 53.2%, HR 0.69 (0.49-0.98), P=0.0368; RFS 22.7% vs 50.3%, HR 0.52 (0.36-0.75), P=0.0003.",
+   "toxicity": "Persistent thrombocytopenia more common with GO (16% vs 3%; P<0.0001), without an increase in death from toxicity.",
+   "reference": "Castaigne S et al. Lancet 2012;379:1508-1516",
+   "pmid": "22482940",
+   "nct": "NCT00927498",
+   "highlights": [
+    "Rehabilitated gemtuzumab after its 2010 market withdrawal by showing that fractionated low doses deliver a higher cumulative dose safely - and drove the 2017 FDA re-approval.",
+    "The survival gain concentrates in favourable- and intermediate-risk cytogenetics, which is why GO is routinely added to 7+3 for core-binding-factor AML."
+   ],
+   "takeaway": "Fractionated GO 3 mg/m2 on days 1, 4 and 7 added to 7+3 improves EFS, RFS and OS in CD33-positive AML, at the cost of persistent thrombocytopenia.",
+   "tags": [
+    "aml"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
+   "id": "apl0406",
+   "name": "APL0406",
+   "disease": "aml",
+   "year": 2013,
+   "phase": "3",
+   "setting": "Newly diagnosed low- to intermediate-risk acute promyelocytic leukemia (WBC <=10 x 10^9/L)",
+   "descriptor": "Chemotherapy-free ATRA + arsenic trioxide versus ATRA + chemotherapy",
+   "population": "162 adults with newly diagnosed low-to-intermediate-risk APL; 156 evaluable for response (77 ATRA-ATO, 79 ATRA-chemotherapy)",
+   "arms": "ATRA + arsenic trioxide for induction and consolidation (chemotherapy-free) vs ATRA-idarubicin induction, three cycles of ATRA + chemotherapy consolidation, and low-dose chemotherapy + ATRA maintenance. Non-inferiority design, 5-point margin for 2-year EFS",
+   "n": 162,
+   "primary_endpoint": "Event-free survival at 2 years (non-inferiority, 5% margin)",
+   "results": "CR 77/77 (100%) with ATRA-ATO vs 75/79 (95%) with ATRA-chemotherapy (P=0.12). At median follow-up 34.4 months, 2-year EFS 97% vs 86% (95% CI for difference 2-22 points; P<0.001 for non-inferiority, P=0.02 for superiority). Overall survival also better with ATRA-ATO (P=0.02).",
+   "toxicity": "Less hematologic toxicity and fewer infections with ATRA-ATO, but more hepatic toxicity. QT prolongation and differentiation syndrome are recognized ATO effects, not quantified in the primary report.",
+   "reference": "Lo-Coco F et al. N Engl J Med 2013;369:111-121",
+   "pmid": "23841729",
+   "nct": "NCT00482833",
+   "highlights": [
+    "Established a completely chemotherapy-free regimen as standard of care for non-high-risk APL, with cure rates above 95% and no anthracycline exposure.",
+    "Trades myelosuppression and infection for hepatotoxicity, QT prolongation and differentiation syndrome - a monitorable rather than life-threatening profile in most patients."
+   ],
+   "takeaway": "For low/intermediate-risk APL, ATRA + arsenic trioxide is non-inferior and probably superior to ATRA + chemotherapy, and spares cytotoxics entirely.",
+   "tags": [
+    "aml",
+    "apl"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
+   "id": "aml15",
+   "name": "MRC/NCRI AML15",
+   "disease": "aml",
+   "year": 2013,
+   "phase": "3",
+   "setting": "Younger adults with newly diagnosed AML, consolidation phase",
+   "descriptor": "Multi-randomization trial; the consolidation question was cytarabine 1.5 vs 3 g/m2",
+   "population": "Younger AML patients, median age 49 (range 0-73); the cytarabine consolidation dose comparison included 657 patients",
+   "arms": "Cytarabine consolidation 3 g/m2 vs 1.5 g/m2 (n=657). Other randomizations in the same trial: DA +/- etoposide; ADE vs FLAG-Ida; MACE-MidAc vs high-dose cytarabine; a fifth course or not",
+   "n": 657,
+   "primary_endpoint": "Not designated in the primary report; outcomes reported are remission rate, relapse, relapse-free survival and overall survival",
+   "results": "Cytarabine 1.5 g/m2 was equivalent to 3 g/m2 - no benefit from dose escalation (no HR or p-value published for this comparison). Outcomes were similar between MACE/MidAc and high-dose cytarabine, but cytarabine required less supportive care; MACE/MidAc was superior for high-risk patients; a fifth course provided no benefit. For FLAG-Ida x2 plus cytarabine x2, 8-year survival was 63% (intermediate risk) and 95% (favourable risk).",
+   "toxicity": "No toxicity difference reported between the 1.5 and 3 g/m2 cytarabine doses.",
+   "reference": "Burnett AK et al. J Clin Oncol 2013;31:3360-3368",
+   "pmid": "23940227",
+   "nct": null,
+   "highlights": [
+    "The randomized evidence that intermediate-dose cytarabine (1.5 g/m2) consolidation is equivalent to high-dose (3 g/m2), underpinning the widespread use of lower-dose schedules - particularly relevant over age 60.",
+    "A factorial multi-randomization trial that also showed no benefit from a fifth chemotherapy course and defined FLAG-Ida as effective induction for younger adults."
+   ],
+   "takeaway": "Escalating consolidation cytarabine from 1.5 to 3 g/m2 adds nothing - the lower dose is equivalent.",
+   "tags": [
+    "aml"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
+   "id": "ratify",
+   "name": "RATIFY (CALGB 10603)",
+   "disease": "aml",
+   "year": 2017,
+   "phase": "3",
+   "setting": "Newly diagnosed FLT3-mutated AML, age 18-59, fit for intensive induction",
+   "descriptor": "Adding midostaurin to 7+3 induction, consolidation and maintenance",
+   "population": "717 FLT3-mutated patients aged 18-59 with newly diagnosed non-APL AML (ITD-high 214, ITD-low 341, TKD 162), screened from 3277; 68.6% normal karyotype",
+   "arms": "Midostaurin 50 mg PO BID days 8-21 vs placebo, each added to daunorubicin 60 mg/m2 days 1-3 + cytarabine 200 mg/m2 CIV days 1-7; then 4 cycles HiDAC 3000 mg/m2 q12h days 1, 3, 5; then 12 cycles maintenance",
+   "n": 717,
+   "primary_endpoint": "Overall survival",
+   "results": "Median OS 74.7 months (95% CI 31.5-NR) vs 25.6 months (95% CI 18.6-42.9); HR 0.78 (95% CI 0.63-0.96), one-sided P=0.009. 4-year OS 51.4% vs 44.3%. Median EFS 8.2 vs 3.0 months, HR 0.78 (0.66-0.93), P=0.002. CR 58.9% vs 53.5% (P=0.15). Benefit consistent across ITD-high, ITD-low and TKD and in the transplant-censored analysis; 57.0% underwent transplant.",
+   "toxicity": "Similar overall severe adverse events; grade 3-5 rash higher with midostaurin (14.1% vs 7.6%, P=0.008) and anemia (92.7% vs 87.8%, P=0.03).",
+   "reference": "Stone RM et al. N Engl J Med 2017;377:454-464",
+   "pmid": "28644114",
+   "nct": "NCT00651261",
+   "highlights": [
+    "The first targeted agent to improve survival when added to 7+3, and the trial that made rapid FLT3 testing at diagnosis mandatory - the inhibitor starts on day 8.",
+    "Benefit held across ITD-high, ITD-low and TKD, so midostaurin is given for any activating FLT3 mutation, not ITD alone."
+   ],
+   "takeaway": "Add midostaurin to 7+3 and consolidation for any FLT3-mutated AML in a fit younger adult - 22% lower risk of death.",
+   "tags": [
+    "aml"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
+   "id": "cpx-351",
+   "name": "CPX-351 (Study 301)",
+   "disease": "aml",
+   "year": 2018,
+   "phase": "3",
+   "setting": "Newly diagnosed high-risk or secondary AML, age 60-75, fit for intensive induction",
+   "descriptor": "Liposomal cytarabine-daunorubicin (5:1 fixed ratio) versus conventional 7+3",
+   "population": "309 patients age 60-75 with newly diagnosed high-risk or secondary AML",
+   "arms": "CPX-351 (dual-drug liposomal cytarabine + daunorubicin, 5:1 molar ratio) vs conventional 7+3; one to two induction cycles followed by similar consolidation",
+   "n": 309,
+   "primary_endpoint": "Overall survival",
+   "results": "Median OS 9.56 vs 5.95 months; HR 0.69 (95% CI 0.52-0.90), one-sided P=.003. Overall remission rate 47.7% vs 33.3% (two-sided P=.016). Improvements seen across age groups and AML subtypes. Early mortality: day 30 5.9% vs 10.6% (P=.149); day 60 13.7% vs 21.2% (P=.097).",
+   "toxicity": "Non-hematologic adverse event rates comparable between arms, but prolonged time to neutrophil and platelet recovery with CPX-351 and a longer treatment phase.",
+   "reference": "Lancet JE et al. J Clin Oncol 2018;36:2684-2692",
+   "pmid": "30024784",
+   "nct": "NCT01696084",
+   "highlights": [
+    "The trial that established CPX-351 for secondary and therapy-related AML in older adults, and the basis for its FDA approval.",
+    "Important caveat: the comparator was 7+3, not venetoclax + azacitidine. Real-world survival is comparable to ven/aza, so the niche has narrowed to the fitter older adult (~60-75) with secondary or therapy-related AML who is a transplant candidate."
+   ],
+   "takeaway": "CPX-351 beat 7+3 on survival in older adults with secondary or high-risk AML (9.56 vs 5.95 months), but it was never compared with venetoclax + azacitidine.",
+   "tags": [
+    "aml"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
+   "id": "admiral",
+   "name": "ADMIRAL",
+   "disease": "aml",
+   "year": 2019,
+   "phase": "3",
+   "setting": "Relapsed or refractory FLT3-mutated AML",
+   "descriptor": "Single-agent gilteritinib versus investigator-choice salvage chemotherapy",
+   "population": "371 eligible adults with relapsed or refractory FLT3-mutated AML",
+   "arms": "Gilteritinib 120 mg PO daily (n=247) vs salvage chemotherapy (n=124), randomized 2:1",
+   "n": 371,
+   "primary_endpoint": "Dual: overall survival, and complete remission with full or partial hematologic recovery (CR/CRh)",
+   "results": "Median OS 9.3 vs 5.6 months; HR 0.64 (95% CI 0.49-0.83), P<0.001. CR/CRh 34.0% vs 15.3% (difference 18.6 points, 95% CI 9.8-27.4); CR 21.1% vs 10.5%. Median EFS 2.8 vs 0.7 months; HR 0.79 (95% CI 0.58-1.09).",
+   "toxicity": "Adjusted for therapy duration, grade >=3 and serious adverse events were less frequent with gilteritinib. Most common grade >=3 with gilteritinib: febrile neutropenia 45.9%, anemia 40.7%, thrombocytopenia 22.8%. Differentiation syndrome and QT prolongation are class effects.",
+   "reference": "Perl AE et al. N Engl J Med 2019;381:1728-1740",
+   "pmid": "31665578",
+   "nct": "NCT02421939",
+   "highlights": [
+    "Made single-agent gilteritinib the standard salvage for relapsed/refractory FLT3-mutated AML, beating intensive chemotherapy on survival with less toxicity.",
+    "An oral, better-tolerated bridge to allogeneic transplant - the higher CR/CRh rate translates into more patients actually reaching transplant."
+   ],
+   "takeaway": "In relapsed/refractory FLT3-mutated AML, oral gilteritinib beats salvage chemotherapy on survival (9.3 vs 5.6 months) with fewer severe toxicities.",
+   "tags": [
+    "aml"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
+   "id": "quazar-aml-001",
+   "name": "QUAZAR AML-001",
+   "disease": "aml",
+   "year": 2020,
+   "phase": "3",
+   "setting": "AML in first complete remission after intensive induction, age 55+, not a transplant candidate",
+   "descriptor": "Oral azacitidine (CC-486) maintenance versus placebo in CR1",
+   "population": "472 patients aged >=55 in complete remission with or without count recovery after intensive chemotherapy, not candidates for stem-cell transplantation; median age 68",
+   "arms": "CC-486 (oral azacitidine, NOT bioequivalent to injectable azacitidine) 300 mg PO daily for 14 days of each 28-day cycle (n=238) vs placebo (n=234)",
+   "n": 472,
+   "primary_endpoint": "Overall survival",
+   "results": "Median OS from randomization 24.7 vs 14.8 months (P<0.001; HR 0.69, 95% CI 0.55-0.86). Median relapse-free survival 10.2 vs 4.8 months (P<0.001). Benefit across most baseline subgroups; health-related quality of life preserved.",
+   "toxicity": "Most common events grade 1-2 gastrointestinal (nausea, vomiting, diarrhea). Grade 3-4 neutropenia 41% vs 24%; thrombocytopenia 22% vs 21%.",
+   "reference": "Wei AH et al. N Engl J Med 2020;383:2526-2537",
+   "pmid": "33369355",
+   "nct": "NCT01757535",
+   "highlights": [
+    "Created a maintenance standard for older AML patients in CR1 who cannot proceed to transplant - the first maintenance strategy to prolong overall survival in this setting.",
+    "CC-486 is a distinct oral formulation and is NOT interchangeable with injectable azacitidine; 300 mg for 14 days per cycle is the tested schedule."
+   ],
+   "takeaway": "Oral azacitidine 300 mg for 14 days per cycle as CR1 maintenance adds about 10 months of median overall survival in older AML patients who are not transplant candidates.",
+   "tags": [
+    "aml"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
+   "id": "viale-a",
+   "name": "VIALE-A",
+   "disease": "aml",
+   "year": 2020,
+   "phase": "3",
+   "setting": "Newly diagnosed AML ineligible for intensive induction (age 75+ or significant comorbidity)",
+   "descriptor": "Adding venetoclax to azacitidine in unfit newly diagnosed AML",
+   "population": "431 previously untreated patients ineligible for standard induction because of coexisting conditions, age >=75, or both; median age 76",
+   "arms": "Azacitidine 75 mg/m2 SC or IV days 1-7 of each 28-day cycle plus venetoclax (target 400 mg) PO daily (n=286) or placebo (n=145)",
+   "n": 431,
+   "primary_endpoint": "Overall survival",
+   "results": "At median follow-up 20.5 months, median OS 14.7 vs 9.6 months; HR 0.66 (95% CI 0.52-0.85), P<0.001. CR 36.7% vs 17.9% (P<0.001); composite CR 66.4% vs 28.3% (P<0.001).",
+   "toxicity": "Grade >=3 febrile neutropenia 42% vs 19%; thrombocytopenia 45% vs 38%; neutropenia 42% vs 28%; any-grade infection 85% vs 67%; serious adverse events 83% vs 73%.",
+   "reference": "DiNardo CD et al. N Engl J Med 2020;383:617-629",
+   "pmid": "32786187",
+   "nct": "NCT02993523",
+   "highlights": [
+    "Redefined frontline therapy for AML unfit for induction, roughly doubling the CR rate and adding 5 months of median survival over a hypomethylating agent alone.",
+    "The cost is real myelosuppression - febrile neutropenia more than doubled - so cycle-1 marrow assessment, venetoclax duration truncation and azole dose adjustment are part of delivering it safely."
+   ],
+   "takeaway": "Azacitidine + venetoclax is standard for newly diagnosed AML unfit for intensive chemotherapy: median OS 14.7 vs 9.6 months.",
+   "tags": [
+    "aml"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
+   "id": "agile",
+   "name": "AGILE",
+   "disease": "aml",
+   "year": 2022,
+   "phase": "3",
+   "setting": "Newly diagnosed IDH1-mutated AML, ineligible for intensive induction",
+   "descriptor": "Adding the IDH1 inhibitor ivosidenib to azacitidine",
+   "population": "146 patients with newly diagnosed IDH1-mutated AML ineligible for intensive induction (72 ivosidenib-azacitidine, 74 placebo-azacitidine)",
+   "arms": "Ivosidenib 500 mg PO daily + azacitidine 75 mg/m2 for 7 days of each 28-day cycle vs placebo + the same azacitidine",
+   "n": 146,
+   "primary_endpoint": "Event-free survival (treatment failure, relapse or death)",
+   "results": "At median follow-up 12.4 months, HR for treatment failure, relapse or death 0.33 (95% CI 0.16-0.69), P=0.002; event-free at 12 months 37% vs 12%. Median OS 24.0 vs 7.9 months; HR 0.44 (95% CI 0.27-0.73), P=0.001.",
+   "toxicity": "Grade >=3 febrile neutropenia 28% vs 34%, neutropenia 27% vs 16%; any-grade bleeding 41% vs 29%; infection 28% vs 49%. Differentiation syndrome any grade 14% vs 8%.",
+   "reference": "Montesinos P et al. N Engl J Med 2022;386:1519-1531",
+   "pmid": "35443108",
+   "nct": "NCT03173248",
+   "highlights": [
+    "Established ivosidenib + azacitidine as a frontline option for IDH1-mutated AML unfit for induction, with a median OS of 24 months - the longest reported in this population.",
+    "Interpret the EFS with care: failure to achieve CR by week 24 counted as an event dated back to randomization, which inflates early curve separation. The OS result is the more robust finding."
+   ],
+   "takeaway": "In IDH1-mutant AML unfit for induction, ivosidenib + azacitidine triples median overall survival (24.0 vs 7.9 months); watch for differentiation syndrome.",
+   "tags": [
+    "aml"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
+   "id": "quantum-first",
+   "name": "QuANTUM-First",
+   "disease": "aml",
+   "year": 2023,
+   "phase": "3",
+   "setting": "Newly diagnosed FLT3-ITD-positive AML, age 18-75, fit for intensive induction",
+   "descriptor": "Adding the type II FLT3 inhibitor quizartinib to 7+3, consolidation and up to 3 years of continuation",
+   "population": "539 adults aged 18-75 with newly diagnosed FLT3-ITD-positive AML at 193 sites in 26 countries; median age 56",
+   "arms": "Quizartinib 40 mg PO daily from day 8 for 14 days vs placebo, added to standard 7+3; responders received HiDAC consolidation with quizartinib or placebo, allogeneic HCT, or both, then single-agent continuation up to 3 years",
+   "n": 539,
+   "primary_endpoint": "Overall survival (intention-to-treat)",
+   "results": "At median follow-up 39.2 months, median OS 31.9 months (95% CI 21.0-NE) vs 15.1 months (95% CI 13.2-26.2); HR 0.78 (95% CI 0.62-0.98), P=0.032.",
+   "toxicity": "Grade >=3 adverse events 92% vs 90%; most common febrile neutropenia, hypokalaemia and pneumonia in both arms, plus neutropenia with quizartinib. Known QT-prolongation risk drives the REMS requirement.",
+   "reference": "Erba HP et al. Lancet 2023;401:1571-1583",
+   "pmid": "37116523",
+   "nct": "NCT02668653",
+   "highlights": [
+    "A second FLT3 inhibitor option for newly diagnosed disease, doubling median overall survival versus chemotherapy alone in FLT3-ITD AML.",
+    "Unlike RATIFY it enrolled up to age 75 and included up to 3 years of continuation - but it applies only to ITD-positive disease, since quizartinib has no activity against TKD mutations."
+   ],
+   "takeaway": "Quizartinib added to 7+3 prolongs survival in FLT3-ITD AML up to age 75, with QT monitoring as the practical cost.",
+   "tags": [
+    "aml"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
+   "id": "swog-s1203",
+   "name": "SWOG S1203",
+   "disease": "aml",
+   "year": 2024,
+   "phase": "3",
+   "setting": "Newly diagnosed AML in younger adults, fit for intensive induction",
+   "descriptor": "Standard 7+3 versus idarubicin/high-dose cytarabine, with or without vorinostat",
+   "population": "738 eligible younger adults with newly diagnosed AML registered 2013-2015; APL and CML blast phase excluded",
+   "arms": "DA (7+3): daunorubicin 90 mg/m2 + cytarabine 100 mg/m2/day CIV (n=261). IA: idarubicin 12 mg/m2 x3 + cytarabine 1500 mg/m2/day CIV x4 days (n=261). IA+V: vorinostat 500 mg PO TID days 1-3 then IA (n=216; stopped early for futility)",
+   "n": 738,
+   "primary_endpoint": "Event-free survival (DA vs IA or IA+V); overall survival was secondary",
+   "results": "No arm beat 7+3. Overall response 77.5% (CR 62.5%, CRi 15.0%) with no difference between arms. At median follow-up 33 months, no significant EFS difference (all P>0.38): 2-year EFS 36% / 41% / 37%. No significant OS difference (all P>0.29): 2-year OS 57% / 59% / 57%. In favourable cytogenetics DA was significantly BETTER than IA (P=0.008) and IA+V (P=0.006). IA+V closed for futility at the second interim analysis; IA later crossed a futility boundary.",
+   "toxicity": "More toxicity in the experimental arms, driven by IA+V: grade 3 diarrhea 6%/8%/18% (P<0.001); grade 3 typhlitis 3%/5%/10% (P=0.002); grade 4 sepsis 6%/7%/13% (P=0.002); grade 5 sepsis 0%/3%/3% (P=0.03).",
+   "reference": "Garcia-Manero G et al. Leukemia 2024;38:58-66",
+   "pmid": "37935977",
+   "nct": "NCT01802333",
+   "highlights": [
+    "A negative trial that settled the question: high-dose cytarabine induction, with or without vorinostat, does not improve remission, EFS or OS over standard 7+3, and adds gastrointestinal and infectious toxicity.",
+    "In favourable-risk cytogenetics the experimental regimens were actually worse than 7+3, reinforcing DA plus gemtuzumab as the right backbone for core-binding-factor AML."
+   ],
+   "takeaway": "7+3 remains the standard induction for fit younger adults - idarubicin/high-dose cytarabine, with or without vorinostat, offered no benefit and more toxicity.",
+   "tags": [
+    "aml"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
    "id": "nsabp-b24",
    "name": "NSABP B-24",
    "disease": "breast",
@@ -792,6 +1141,35 @@
    "updated": "2026-09-19"
   },
   {
+   "id": "d-0007",
+   "name": "D-0007",
+   "disease": "mds",
+   "year": 2006,
+   "phase": "3",
+   "setting": "Intermediate/high-risk MDS, first line (pre-HMA era)",
+   "descriptor": "Decitabine added to supportive care vs supportive care alone",
+   "population": "170 adults with de novo or secondary MDS (IPSS Int-1, Int-2 or high risk); ~70% IPSS Int-2/high risk; CMML included",
+   "arms": "Decitabine 15 mg/m2 IV over 3 h every 8 h x 3 days (135 mg/m2 per course) every 6 weeks + supportive care vs best supportive care alone",
+   "n": 170,
+   "primary_endpoint": "Overall response rate (IWG) and time to AML transformation or death",
+   "results": "ORR 17% with decitabine (9% CR, 8% PR) vs 0% with supportive care (P<.001); a further 13% had hematologic improvement. Median response duration 10.3 months. Time to AML progression or death favored decitabine but was not significant overall: 12.1 vs 7.8 months (P=.16); significant only in subgroups (IPSS Int-2/high 12.0 vs 6.8 months, P=.03). No overall survival benefit was demonstrated. Median exposure was only 3 courses because the protocol withdrew patients after a maintained CR or after 6-8 cycles without response.",
+   "toxicity": "Myelosuppression: grade 3-4 neutropenia, thrombocytopenia and febrile neutropenia; serious adverse events in 69% of decitabine-treated patients.",
+   "reference": "Kantarjian H et al. Cancer 2006;106:1794-803",
+   "pmid": "16532500",
+   "nct": "NCT00043381",
+   "highlights": [
+    "The registration trial that won decitabine FDA approval for MDS in 2006 - it established response and delayed AML transformation, not survival.",
+    "Cycle number was capped by protocol design (median 3 courses), the standard explanation for why decitabine underperformed azacitidine; modern practice is at least 4-6 cycles before declaring HMA failure."
+   ],
+   "takeaway": "Decitabine produced real responses (ORR 17% vs 0%) and delayed AML transformation in higher-risk subgroups, but showed no overall survival benefit - in contrast to azacitidine in AZA-001.",
+   "tags": [
+    "mds"
+   ],
+   "source": "onepager:mds",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
    "id": "mds-003",
    "name": "MDS-003",
    "disease": "mds",
@@ -850,6 +1228,64 @@
    "updated": "2026-09-19"
   },
   {
+   "id": "eortc-06011",
+   "name": "EORTC 06011",
+   "disease": "mds",
+   "year": 2011,
+   "phase": "3",
+   "setting": "Higher-risk MDS in older adults ineligible for intensive chemotherapy, first line",
+   "descriptor": "Low-dose decitabine vs best supportive care, powered for overall survival",
+   "population": "233 patients age >=60 (median 70) with primary or secondary MDS or CMML, IPSS intermediate or high risk, ineligible for intensive chemotherapy; 53% poor-risk cytogenetics",
+   "arms": "Decitabine 15 mg/m2 IV over 4 h three times daily x 3 days in 6-week cycles (max 8 cycles) vs best supportive care",
+   "n": 233,
+   "primary_endpoint": "Overall survival",
+   "results": "Primary endpoint NOT met: median OS 10.1 vs 8.5 months, HR 0.88 (95% CI 0.66-1.17), P=.38 - no overall survival benefit, in contrast to azacitidine in AZA-001. PFS was prolonged: 6.6 vs 3.0 months, HR 0.68 (0.52-0.88), P=.004. AML-free survival not significant: 8.8 vs 6.1 months, P=.24. AML transformation at 1 year 22% vs 33% (P=.036). CR 13% vs 0%, PR 6% vs 0%, HI 15% vs 2%. Patients received a median of only 4 cycles and ~40% received no more than 2.",
+   "toxicity": "Grade 3-4 febrile neutropenia 25% vs 7%; grade 3-4 infections 57% vs 52%.",
+   "reference": "Lubbert M et al. J Clin Oncol 2011;29:1987-96",
+   "pmid": "21483003",
+   "nct": "NCT00043134",
+   "highlights": [
+    "The definitive OS-powered test of decitabine against supportive care in higher-risk MDS - and it was negative, which is why azacitidine, not decitabine, is the HMA with a proven survival benefit.",
+    "Decitabine still delayed progression and AML transformation and improved quality of life, so it remains reasonable when schedule or tolerability favors it."
+   ],
+   "takeaway": "In older higher-risk MDS, decitabine improved PFS, response and AML transformation but did NOT improve overall survival (10.1 vs 8.5 months, HR 0.88, P=.38) - the key contrast with AZA-001.",
+   "tags": [
+    "mds"
+   ],
+   "source": "onepager:mds",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
+   "id": "mds-004",
+   "name": "MDS-004",
+   "disease": "mds",
+   "year": 2011,
+   "phase": "3",
+   "setting": "Lower-risk del(5q) MDS with RBC transfusion dependence",
+   "descriptor": "Lenalidomide at two dose schedules vs placebo for transfusion independence",
+   "population": "205 RBC transfusion-dependent patients with IPSS Low- or Intermediate-1-risk del(5q31) MDS",
+   "arms": "Lenalidomide 10 mg/day days 1-21 (n=69) vs 5 mg/day days 1-28 (n=69) vs placebo (n=67), 28-day cycles; crossover permitted after 16 weeks",
+   "n": 205,
+   "primary_endpoint": "RBC transfusion independence for >=26 weeks",
+   "results": "RBC-TI >=26 weeks 56.1% (10 mg) and 42.6% (5 mg) vs 5.9% (placebo), both P<.001. Cytogenetic response 50.0% vs 25.0% (P=.066). Pooled lenalidomide 3-year OS 56.5%, 3-year AML risk 25.1%. Achieving RBC-TI >=8 weeks was associated with a 47% reduction in relative risk of death (P=.021) and 42% reduction in risk of AML progression or death (P=.048).",
+   "toxicity": "Myelosuppression dominates - grade 3-4 neutropenia and thrombocytopenia requiring dose reduction and interruption.",
+   "reference": "Fenaux P et al. Blood 2011;118:3765-76",
+   "pmid": "21753188",
+   "nct": "NCT00179621",
+   "highlights": [
+    "The randomized placebo-controlled confirmation of lenalidomide in del(5q) MDS, establishing 10 mg days 1-21 as the standard schedule.",
+    "Achieving transfusion independence was itself associated with lower risk of death and of AML progression - TI is more than a cosmetic endpoint."
+   ],
+   "takeaway": "Lenalidomide 10 mg (days 1-21) makes roughly half of transfusion-dependent lower-risk del(5q) patients transfusion independent for >=26 weeks, at the cost of significant myelosuppression.",
+   "tags": [
+    "mds"
+   ],
+   "source": "onepager:mds",
+   "verified": true,
+   "updated": "2026-09-20"
+  },
+  {
    "id": "medalist",
    "name": "MEDALIST",
    "disease": "mds",
@@ -878,6 +1314,35 @@
    "source": "notion",
    "verified": true,
    "updated": "2026-09-19"
+  },
+  {
+   "id": "bmt-ctn-1102",
+   "name": "BMT CTN 1102",
+   "disease": "mds",
+   "year": 2021,
+   "phase": "2",
+   "setting": "Higher-risk (IPSS Int-2/high) MDS, age 50-75, transplant-eligible",
+   "descriptor": "Biologic assignment to reduced-intensity allogeneic HCT (donor) vs non-transplant therapy (no donor)",
+   "population": "384 patients age 50-75 with de novo MDS that was or had been IPSS Intermediate-2 or high risk; <20% marrow blasts; suitable RIC alloHCT candidates; 34 centers, 2014-2018",
+   "arms": "Donor arm: reduced-intensity conditioning allogeneic HCT. No-Donor arm: hypomethylating therapy or best supportive care. Assignment was biologic - by availability of an HLA-matched related or unrelated donor within 90 days - not randomized",
+   "n": 384,
+   "primary_endpoint": "Overall survival at 3 years (intention-to-treat)",
+   "results": "Adjusted 3-year overall survival 47.9% (95% CI 41.3-54.1) in the Donor arm vs 26.6% (95% CI 18.4-35.6) in the No-Donor arm, P=.0001; absolute difference 21.3% (95% CI 10.2-31.8). Three-year leukemia-free survival 35.8% vs 20.6%, P=.003. Benefit seen across all subgroups examined.",
+   "toxicity": null,
+   "reference": "Nakamura R et al. J Clin Oncol 2021;39:3328-3339",
+   "pmid": "34106753",
+   "nct": "NCT02016781",
+   "highlights": [
+    "The best available evidence that reduced-intensity allogeneic transplant should be offered to fit older adults with higher-risk MDS - a 21-point absolute gain in 3-year survival.",
+    "Assignment was by donor availability rather than randomization, which avoids the selection bias of retrospective transplant series while stopping short of a true randomized comparison."
+   ],
+   "takeaway": "Fit patients aged 50-75 with higher-risk MDS who have a matched donor and proceed to RIC allogeneic HCT live substantially longer (3-year OS 47.9% vs 26.6%) - start the donor search at diagnosis.",
+   "tags": [
+    "mds"
+   ],
+   "source": "onepager:mds",
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "commands",
@@ -936,6 +1401,35 @@
    "source": "notion",
    "verified": true,
    "updated": "2026-09-19"
+  },
+  {
+   "id": "verona",
+   "name": "VERONA",
+   "disease": "mds",
+   "year": 2025,
+   "phase": "3",
+   "setting": "Treatment-naive intermediate- and higher-risk MDS, first line",
+   "descriptor": "Adding venetoclax to azacitidine in newly diagnosed higher-risk MDS",
+   "population": "509 randomized patients with newly diagnosed MDS, <20% marrow blasts, IPSS-R >3 (intermediate, high or very high); median age 72; prior HMA, therapy-related MDS, MDS/MPN and CMML excluded",
+   "arms": "Venetoclax 400 mg PO daily days 1-14 + azacitidine 75 mg/m2 on 7 of the first 9 days (n=256) vs placebo + identical azacitidine (n=253), 28-day cycles",
+   "n": 509,
+   "primary_endpoint": "Overall survival",
+   "results": "Primary endpoint NOT met: median OS 22.18 months (95% CI 17.28-27.27) vs 21.68 months (95% CI 17.81-23.79); HR 0.908 (95% CI 0.733-1.126), P=.38 at median follow-up 41.2 months. Secondary endpoints favored the combination: modified ORR 76.2% vs 57.7%; marrow CR 57.8% vs 37.5%; transfusion independence 55.7% vs 33.6% (P=.0003). Subgroup signals in >5% to <20% marrow blasts and in ASXL1, TP53 or RUNX1 mutated disease.",
+   "toxicity": "No new safety signals. Neutropenia 77.3% vs 60.2%, thrombocytopenia 66.3% vs 58.9%. Dose interruption 78.8% vs 67.9%; azacitidine dose reduction 48.6% vs 27.2%.",
+   "reference": "Garcia-Manero G et al. SOHO Annual Meeting 2025; abstract MDS-1497",
+   "pmid": null,
+   "nct": "NCT04401748",
+   "highlights": [
+    "The largest randomized test of venetoclax in higher-risk MDS - deeper marrow responses and more transfusion independence, but no survival gain, so azacitidine monotherapy remains the standard first-line HMA.",
+    "The dissociation between marrow response and survival is the lesson: in MDS, unlike AML, adding venetoclax to an HMA improves depth of response without translating into longer life."
+   ],
+   "takeaway": "Venetoclax added to azacitidine did not prolong overall survival in treatment-naive higher-risk MDS (22.18 vs 21.68 months, HR 0.908, P=.38) despite much higher response rates - not a new standard of care.",
+   "tags": [
+    "mds"
+   ],
+   "source": "onepager:mds",
+   "verified": true,
+   "updated": "2026-09-20"
   },
   {
    "id": "checkmate-067",

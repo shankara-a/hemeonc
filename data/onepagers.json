@@ -1,6 +1,15 @@
 {
- "generated": "2026-09-19T12:05:26",
+ "generated": "2026-09-20T18:23:35",
  "onepagers": [
+  {
+   "disease": "aml",
+   "file": "Acute Myeloid Leukemia.pdf",
+   "title": "Acute myeloid leukemia",
+   "pages": 2,
+   "size": 57971,
+   "sha1": "9e06e9c55c4ed89538122b5400cd97db965d8dee",
+   "updated": "2026-09-20"
+  },
   {
    "disease": "breast",
    "file": "Breast Cancer.pdf",
@@ -27,6 +36,15 @@
    "size": 53983,
    "sha1": "ff05a9fe04fb32883c7cb5286abcc9cfad14e6c0",
    "updated": "2026-09-19"
+  },
+  {
+   "disease": "mds",
+   "file": "Myelodysplastic Syndromes.pdf",
+   "title": "Myelodysplastic syndromes",
+   "pages": 1,
+   "size": 38902,
+   "sha1": "33136fe1413ffdd0dbd6fc47755d4317cf9caed3",
+   "updated": "2026-09-20"
   },
   {
    "disease": "mpn",
