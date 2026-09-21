@@ -214,6 +214,26 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 48px; }
 .trial-pop dl { grid-template-columns: 96px 1fr; }
 .trial-pop .tp-hint { margin-top: 8px; font-size: .74rem; color: var(--muted); }
 
+/* ---------- trials tab: list | detail pane ---------- */
+.tr-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+.tr-detail { position: sticky; top: 62px; max-height: calc(100vh - 78px); overflow-y: auto; padding: 16px 18px; }
+.tr-detail .tp-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 2px; }
+.tr-detail .tp-name { font-weight: 700; font-size: 1.1rem; }
+.tr-detail .tp-desc { color: var(--muted); font-size: .88rem; }
+.tr-detail .tp-take { margin: 10px 0 0; padding: 9px 11px; background: var(--accent-soft); border-radius: 8px; font-weight: 600; font-size: .92rem; }
+.tr-detail .tp-hint { margin-top: 10px; font-size: .76rem; color: var(--muted); }
+.tr-detail .tcard dl { grid-template-columns: 120px 1fr; font-size: .9rem; }
+.tr-detail .tcard .thl { font-size: .9rem; }
+#tr-list .trial-row.selected { border-color: var(--primary); background: var(--primary-soft); }
+@media (min-width: 901px) {
+  #tr-list .trial-row .tr-take { display: none; }      /* the pane shows it */
+  #tr-list .trial-row .tr-more { display: none !important; }
+}
+@media (max-width: 900px) {
+  .tr-layout { grid-template-columns: 1fr; }
+  .tr-detail { display: none; }                         /* rows expand inline instead */
+}
+
 /* ---------- trials tab filters ---------- */
 .filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
 .filters input[type="search"] { flex: 1 1 260px; min-width: 200px; }

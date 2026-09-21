@@ -60,10 +60,48 @@
   let hideTimer = null, current = null;
   const canHover = () => window.matchMedia("(hover: hover) and (min-width: 601px)").matches;
 
+  /* ---------- Trials-tab detail pane (list left, details right) ---------- */
+  const detailPane = () => document.getElementById("tr-detail");
+  const paneActive = () => {
+    const pane = detailPane();
+    return pane && pane.offsetParent !== null && window.matchMedia("(min-width: 901px)").matches;
+  };
+  let pinned = null;
+  HH.renderDetail = (t, { isPinned = false } = {}) => {
+    const pane = detailPane();
+    if (!pane || !t) return;
+    const dz = HH.disease(t.disease);
+    pane.innerHTML = `
+      <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t, { disease: true })}</div>
+      <div class="tp-desc">${HH.esc(t.descriptor || "")}${t.setting ? ` · ${HH.esc(t.setting)}` : ""}</div>
+      ${HH.trialBody(t)}
+      <div class="tp-hint">${isPinned ? "Pinned — click the trial again to unpin" : "Click the trial to pin it here"}${dz ? ` · <a href="#reviews/${dz.slug}">${HH.esc(dz.short)} review →</a>` : ""}</div>`;
+  };
+  HH.pinTrial = (row) => {
+    const list = document.getElementById("tr-list");
+    if (pinned === row) {
+      pinned = null;
+      row.classList.remove("selected");
+      HH.renderDetail(HH.data.trialById[row.dataset.id]);
+      return;
+    }
+    list.querySelectorAll(".trial-row.selected").forEach((r) => r.classList.remove("selected"));
+    pinned = row;
+    row.classList.add("selected");
+    HH.renderDetail(HH.data.trialById[row.dataset.id], { isPinned: true });
+  };
+  HH.resetPin = () => { pinned = null; };
+
   HH.showPop = (row) => {
     if (!canHover()) return;
     const t = HH.data.trialById[row.dataset.id];
     if (!t || row.classList.contains("open")) return;
+    if (paneActive() && row.closest("#tr-list")) {         // Trials tab: use the side pane, not the popover
+      if (!pinned) HH.renderDetail(t);
+      document.querySelectorAll("#tr-list .trial-row.hovered").forEach((r) => r !== row && r.classList.remove("hovered"));
+      row.classList.add("hovered");
+      return;
+    }
     clearTimeout(hideTimer);
     const el = pop();
     if (current !== row) {
@@ -112,6 +150,7 @@
     const row = e.target.closest(".trial-row");
     if (!row) return;
     if (e.target.closest("a") || e.target.closest(".tr-more")) return; // let links & selection work
+    if (paneActive() && row.closest("#tr-list")) { HH.pinTrial(row); return; }
     row.classList.toggle("open");
     if (row.classList.contains("open")) HH.hidePop(0);
   });
