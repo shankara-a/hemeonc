@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-09-21",
+ "updated": "2026-09-22",
  "trials": [
   {
    "id": "e1900",
@@ -4631,30 +4631,32 @@
    "disease": "prostate",
    "year": 2023,
    "phase": "3",
-   "setting": "High-risk BCR (M0 CSPC)",
-   "descriptor": "enzalutamide in high-risk biochemical recurrence",
-   "population": "High-risk biochemical recurrence (M0, castration-sensitive) after definitive therapy, PSA doubling time ≤9 months",
-   "arms": "(1) enzalutamide + leuprolide; (2) leuprolide alone; (3) enzalutamide monotherapy",
-   "n": null,
-   "primary_endpoint": "Metastasis-free survival",
-   "results": "5-yr MFS 87.3% (combination) vs 71.4% (leuprolide alone) vs 80% (enzalutamide monotherapy)",
-   "toxicity": null,
+   "setting": "high-risk BCR, M0 castration-sensitive",
+   "descriptor": "enzalutamide + leuprolide vs leuprolide alone vs enzalutamide monotherapy in high-risk biochemical recurrence",
+   "population": "1,068 men with high-risk biochemical recurrence after definitive local therapy, M0 and castration-sensitive, PSA doubling time ≤9 months (PSA ≥2 ng/mL above nadir after radiotherapy, or ≥1 ng/mL after prostatectomy ± postoperative RT). Randomized 1:1:1; median follow-up 60.7 months",
+   "arms": "Enzalutamide 160 mg daily + leuprolide q12wk (n=355) vs placebo + leuprolide (n=358) vs enzalutamide 160 mg monotherapy (n=355). Treatment was suspended at week 37 in patients whose PSA became undetectable",
+   "n": 1068,
+   "primary_endpoint": "Metastasis-free survival by blinded independent central review, combination vs leuprolide alone. Overall survival was an alpha-controlled key secondary endpoint",
+   "results": "5-yr MFS 87.3% (combination) vs 71.4% (leuprolide alone) vs 80.0% (monotherapy). Combination vs leuprolide HR 0.42 (95% CI 0.30-0.61), P<0.001; monotherapy vs leuprolide HR 0.63 (0.46-0.87), P=0.005. Final OS analysis (Shore ND et al. NEJM 2025;394:563, PMID 41124201): 8-yr OS 78.9% vs 69.5%, HR for death 0.60 (0.44-0.80), P<0.001 for the combination — but monotherapy 73.1%, HR 0.83 (0.63-1.10), P=0.19, NOT significant",
+   "toxicity": "No new safety signals and no substantial between-group difference in quality of life. Secondary endpoints favored the combination: 5-yr freedom from castration resistance 96.6% vs 67.8%, from distant metastasis 91.0% vs 81.5%",
    "reference": "Freedland SJ et al. NEJM 2023;389:1453",
    "pmid": "37851874",
-   "nct": null,
+   "nct": "NCT02319837",
    "highlights": [
-    "Brought treatment intensification into the biochemical-recurrence (M0 CSPC) space — a setting previously managed with ADT alone or observation.",
-    "Enzalutamide monotherapy was a credible option, relevant for patients wanting to avoid castration side effects."
+    "Brought treatment intensification into the biochemical-recurrence space, previously managed with ADT alone or observation, and now carries a proven survival benefit",
+    "The 2025 final analysis separates the two experimental arms: the combination improves overall survival, but enzalutamide monotherapy does not — despite having beaten leuprolide on MFS in 2023",
+    "Monotherapy remains a defensible choice for a patient prioritizing avoidance of castration side effects, but it should no longer be presented as survival-equivalent to the combination"
    ],
-   "takeaway": "Enzalutamide ± leuprolide improves MFS in high-risk biochemical recurrence",
+   "takeaway": "Enzalutamide plus leuprolide improves both metastasis-free and overall survival in high-risk biochemical recurrence; enzalutamide alone improves MFS but not survival.",
    "tags": [
     "enzalutamide",
-    "ARPI",
-    "biochemical recurrence"
+    "leuprolide",
+    "biochemical recurrence",
+    "M0 CSPC"
    ],
-   "source": "notion",
+   "source": "onepager:prostate",
    "verified": true,
-   "updated": "2026-09-19"
+   "updated": "2026-09-22"
   },
   {
    "id": "magnitude",
