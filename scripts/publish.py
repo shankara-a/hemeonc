@@ -211,6 +211,20 @@ def main():
             args += ["--new-disease", a.new_disease]
         run("add_trial.py", *args)
 
+    # 2b. The sync stamps a fresh "generated" time into onepagers.json every run. Left alone
+    # that makes every invocation produce a commit even when nothing changed. If that stamp is
+    # the file's only difference, put the old one back.
+    op = DATA / "onepagers.json"
+    prev = git("show", f"HEAD:data/onepagers.json", check=False).stdout
+    if prev:
+        try:
+            was, now_ = json.loads(prev), json.loads(op.read_text())
+            if {k: v for k, v in was.items() if k != "generated"} == \
+               {k: v for k, v in now_.items() if k != "generated"}:
+                op.write_text(prev)
+        except (ValueError, OSError):
+            pass
+
     # 3. Gate.
     say("→ validating")
     run("validate.py")
