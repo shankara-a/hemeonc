@@ -1112,6 +1112,347 @@
    "updated": "2026-09-19"
   },
   {
+   "id": "swog-8736",
+   "name": "SWOG 8736",
+   "disease": "lymphoma-aggressive-bcell",
+   "year": 1998,
+   "phase": "3",
+   "setting": "1L localized aggressive NHL",
+   "descriptor": "CHOP ×3 + involved-field RT vs CHOP ×8 in localized intermediate/high-grade NHL",
+   "population": "Stage I, IE, or non-bulky II/IIE intermediate- or high-grade NHL (Working Formulation); 401 eligible (200 CHOP+RT, 201 CHOP)",
+   "arms": "CHOP ×3 → involved-field RT 40-55 Gy vs CHOP ×8 alone",
+   "n": 401,
+   "primary_endpoint": "Progression-free survival",
+   "results": "5-yr PFS 77% vs 64% (P=0.03); 5-yr OS 82% vs 72% (P=0.02). Life-threatening toxicity 61/200 vs 80/201 (P=0.06); decreased LVEF in 7 CHOP-alone patients vs 0 (P=0.02). Long-term SWOG follow-up (Stephens, JCO 2016) showed the curves crossing at ~7-9 yr with no lasting advantage",
+   "toxicity": "Less life-threatening toxicity and no cardiac events with the abbreviated arm",
+   "reference": "Miller TP et al. NEJM 1998;339:21",
+   "pmid": "9647875",
+   "nct": null,
+   "highlights": [
+    "Established abbreviated chemotherapy + radiation as an option for localized aggressive NHL",
+    "Pre-rituximab, and the early PFS/OS advantage did not persist — it no longer defines modern practice"
+   ],
+   "takeaway": "Three cycles of CHOP with involved-field RT beat eight cycles of CHOP at 5 years in localized aggressive NHL, but the advantage disappeared with longer follow-up.",
+   "tags": [
+    "chop",
+    "radiotherapy",
+    "limited-stage"
+   ],
+   "source": "onepager:lymphoma-aggressive-bcell",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "gela-lnh98-5",
+   "name": "GELA LNH-98.5",
+   "disease": "lymphoma-aggressive-bcell",
+   "year": 2002,
+   "phase": "3",
+   "setting": "1L elderly DLBCL",
+   "descriptor": "R-CHOP vs CHOP in previously untreated DLBCL age 60-80",
+   "population": "Untreated DLBCL, age 60-80, stage II-IV; 399 randomized (202 R-CHOP, 197 CHOP); 60% aaIPI 2-3",
+   "arms": "CHOP ×8 q21d vs the same plus rituximab 375 mg/m² on day 1 of each cycle",
+   "n": 399,
+   "primary_endpoint": "Event-free survival",
+   "results": "At median 2 yr: CR 76% vs 63% (P=0.005); EFS P<0.001 and OS P=0.007; risk ratio 0.58 (95% CI 0.44-0.77) for treatment failure and 0.64 (0.45-0.89) for death. 10-yr update (Coiffier, Blood 2010;116:2040): PFS 36.5% vs 20%, OS 43.5% vs 27.6%, with equal second cancers and non-lymphoma deaths",
+   "toxicity": "No clinically relevant increase in toxicity with rituximab, and no excess late toxicity at 10 years",
+   "reference": "Coiffier B et al. NEJM 2002;346:235",
+   "pmid": "11807147",
+   "nct": null,
+   "highlights": [
+    "Established R-CHOP as the global standard of care in DLBCL",
+    "An absolute ~16% overall survival gain at 10 years that no chemotherapy backbone has improved on since"
+   ],
+   "takeaway": "Adding rituximab to CHOP raised complete response, event-free and overall survival in elderly DLBCL, and the benefit held at ten years.",
+   "tags": [
+    "rituximab",
+    "r-chop",
+    "frontline"
+   ],
+   "source": "onepager:lymphoma-aggressive-bcell",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "calgb-50202",
+   "name": "CALGB 50202",
+   "disease": "lymphoma-aggressive-bcell",
+   "year": 2013,
+   "phase": "2",
+   "setting": "1L primary CNS lymphoma",
+   "descriptor": "MT-R induction then EA consolidation, omitting whole-brain radiotherapy, in newly diagnosed PCNSL",
+   "population": "44 patients with newly diagnosed primary CNS lymphoma, multicenter",
+   "arms": "Single arm, two steps: methotrexate 8 g/m² + temozolomide + rituximab induction, then etoposide + cytarabine consolidation in responders. No whole-brain radiotherapy",
+   "n": 44,
+   "primary_endpoint": "Complete response rate to MT-R induction",
+   "results": "CR to induction 66%. At median follow-up 4.9 yr, 2-yr PFS 0.57 overall; 2-yr time to progression 0.59 overall and 0.77 among those completing consolidation. Patients over 60 did as well as younger ones; treatment delay was the strongest adverse prognostic variable",
+   "toxicity": "Dose-intensive consolidation proved feasible outside a single center; myelosuppression predominated",
+   "reference": "Rubenstein JL et al. JCO 2013;31:3061",
+   "pmid": "23569323",
+   "nct": null,
+   "highlights": [
+    "First multicenter demonstration that dose-intensive consolidation without whole-brain radiotherapy is feasible in PCNSL",
+    "Directly motivated CALGB 51101, which randomized this consolidation against autologous transplant"
+   ],
+   "takeaway": "MT-R induction with etoposide-cytarabine consolidation achieved outcomes comparable to radiation-containing regimens while sparing the brain from radiotherapy.",
+   "tags": [
+    "pcnsl",
+    "methotrexate",
+    "consolidation"
+   ],
+   "source": "onepager:lymphoma-aggressive-bcell",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "ielsg32-matrix",
+   "name": "IELSG32 / MATRix",
+   "disease": "lymphoma-aggressive-bcell",
+   "year": 2016,
+   "phase": "2",
+   "setting": "1L primary CNS lymphoma",
+   "descriptor": "methotrexate/cytarabine ± rituximab ± thiotepa induction in newly diagnosed PCNSL",
+   "population": "HIV-negative, age 18-70, newly diagnosed PCNSL with measurable disease, ECOG 0-3; 227 enrolled at 53 centers in 5 countries, 219 assessable",
+   "arms": "1:1:1 — methotrexate 3.5 g/m² + cytarabine 2 g/m² BID; the same plus rituximab; or the same plus rituximab and thiotepa 30 mg/m² (MATRix). Four courses q21d, then a second randomization to whole-brain radiotherapy or autologous transplant",
+   "n": 227,
+   "primary_endpoint": "Complete remission rate after induction (first randomization)",
+   "results": "At median follow-up 30 mo: CR 49% (95% CI 38-60) with MATRix vs 23% (14-31) with methotrexate-cytarabine (HR 0.46, 0.28-0.74) and 30% (21-42) with the rituximab doublet (HR 0.61, 0.40-0.94). Thirteen toxic deaths (6%). Second randomization (Lancet Haematol 2017;4:e510): 2-yr PFS 80% with radiotherapy vs 69% with transplant, HR 1.50, P=0.17 — no significant difference. At 7 years OS was 21% / 37% / 56% across the three induction arms",
+   "toxicity": "Grade 4 hematologic toxicity most frequent with MATRix; infective complications similar across arms; 6% toxic mortality",
+   "reference": "Ferreri AJM et al. Lancet Haematol 2016;3:e217",
+   "pmid": "27132696",
+   "nct": "NCT01011920",
+   "highlights": [
+    "Established MATRix as the standard induction backbone for PCNSL in patients up to age 70",
+    "A randomized phase 2, not a phase 3, and 6% toxic mortality limits its use in frail or older patients"
+   ],
+   "takeaway": "Adding rituximab and thiotepa to methotrexate-cytarabine doubled the complete remission rate in PCNSL and made MATRix the standard induction.",
+   "tags": [
+    "pcnsl",
+    "matrix",
+    "thiotepa",
+    "frontline"
+   ],
+   "source": "onepager:lymphoma-aggressive-bcell",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "flyer",
+   "name": "FLYER",
+   "disease": "lymphoma-aggressive-bcell",
+   "year": 2019,
+   "phase": "3",
+   "setting": "1L favorable low-risk DLBCL",
+   "descriptor": "4 cycles R-CHOP + 2 rituximab vs 6 cycles R-CHOP in young favorable-prognosis aggressive B-NHL",
+   "population": "Age 18-60, stage I-II, normal LDH, ECOG 0-1, no bulk (<7.5 cm), aaIPI 0; 588 in the ITT analysis",
+   "arms": "R-CHOP ×6 vs CHOP ×4 + rituximab ×6 (4 R-CHOP then 2 rituximab alone), q21d; no planned RT except testicular",
+   "n": 588,
+   "primary_endpoint": "3-year progression-free survival, non-inferiority margin −5.5%",
+   "results": "3-yr PFS 96% (95% CI 94-99) with 4 cycles vs 93% with 6 — difference +3%, lower bound 0%, non-inferiority met at median follow-up 66 mo. 3-yr OS 99% vs 98%. Adverse events roughly a third lower: 294 hematologic + 1,036 non-hematologic vs 426 + 1,280. Both on-therapy deaths were in the 6-cycle arm",
+   "toxicity": "Substantially less hematologic and non-hematologic toxicity with 4 cycles",
+   "reference": "Poeschel V et al. Lancet 2019;394:2271",
+   "pmid": "31868632",
+   "nct": "NCT00278421",
+   "highlights": [
+    "Made 4×R-CHOP + 2 rituximab standard for young aaIPI-0 non-bulky DLBCL",
+    "Applies only to that narrow favorable subset — age ≤60, stage I-II, normal LDH, no bulk"
+   ],
+   "takeaway": "Four cycles of R-CHOP plus two extra rituximab doses is non-inferior to six cycles in young favorable-risk DLBCL, with less toxicity.",
+   "tags": [
+    "r-chop",
+    "de-escalation",
+    "frontline"
+   ],
+   "source": "onepager:lymphoma-aggressive-bcell",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "go29365",
+   "name": "GO29365 (pola-BR)",
+   "disease": "lymphoma-aggressive-bcell",
+   "year": 2020,
+   "phase": "1/2",
+   "setting": "R/R DLBCL, transplant-ineligible",
+   "descriptor": "polatuzumab vedotin + bendamustine/rituximab vs bendamustine/rituximab in transplant-ineligible R/R DLBCL",
+   "population": "Transplant-ineligible R/R DLBCL; randomized cohort of 80 (40 per arm)",
+   "arms": "Polatuzumab 1.8 mg/kg + bendamustine 90 mg/m² + rituximab 375 mg/m² q21d ×6 vs BR ×6",
+   "n": 80,
+   "primary_endpoint": "Complete response rate at end of treatment by independent review",
+   "results": "CR at end of treatment 40.0% vs 17.5% (P=0.026). Median PFS 9.5 vs 3.7 mo, HR 0.36 (95% CI 0.21-0.63), P<0.001; median OS 12.4 vs 4.7 mo, HR 0.42 (0.24-0.75), P=0.002, at median follow-up 22.3 mo. A 106-patient extension cohort gave ORR 41.5%, CR 38.7%",
+   "toxicity": "Grade 3-4 neutropenia 46.2% vs 33.3%, thrombocytopenia 41% vs 23.1%; peripheral neuropathy 43.6%, grade 1-2 and mostly reversible",
+   "reference": "Sehn LH et al. JCO 2020;38:155",
+   "pmid": "31693429",
+   "nct": "NCT02257567",
+   "highlights": [
+    "Basis for approval of pola-BR in R/R DLBCL after ≥2 prior lines",
+    "Only 40 patients per randomized arm — a very small dataset for a registrational survival claim"
+   ],
+   "takeaway": "Adding polatuzumab to bendamustine-rituximab more than doubled complete responses and roughly tripled median survival in transplant-ineligible R/R DLBCL.",
+   "tags": [
+    "polatuzumab",
+    "bendamustine",
+    "relapsed"
+   ],
+   "source": "onepager:lymphoma-aggressive-bcell",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "l-mind",
+   "name": "L-MIND",
+   "disease": "lymphoma-aggressive-bcell",
+   "year": 2020,
+   "phase": "2",
+   "setting": "R/R DLBCL, ASCT-ineligible",
+   "descriptor": "single-arm tafasitamab + lenalidomide in transplant-ineligible relapsed/refractory DLBCL",
+   "population": "R/R DLBCL after 1-3 prior regimens including an anti-CD20, not ASCT candidates, ECOG 0-2; 81 treated at 35 sites",
+   "arms": "Single arm: tafasitamab 12 mg/kg IV + lenalidomide 25 mg PO d1-21 for up to 12 cycles, then tafasitamab alone q2wk until progression",
+   "n": 81,
+   "primary_endpoint": "Best objective response rate by central review",
+   "results": "Primary (median follow-up 13.2 mo): ORR 60% (95% CI 48-71), CR 43%, PR 18% of 80 evaluable. Five-year final analysis (Duell, Haematologica 2024;109:553): ORR 57.5%, CR 41.3%, median PFS 11.6 mo, median OS 33.5 mo; by prior lines, ORR 67.5% after one line vs 47.5% after ≥2",
+   "toxicity": "Grade ≥3 neutropenia 48%, thrombocytopenia 17%, febrile neutropenia 12%; serious adverse events 51%",
+   "reference": "Salles G et al. Lancet Oncol 2020;21:978",
+   "pmid": "32511983",
+   "nct": "NCT02399085",
+   "highlights": [
+    "Basis for accelerated approval of tafasitamab + lenalidomide in transplant-ineligible R/R DLBCL",
+    "Single-arm phase 2 of 80 patients, enriched for a single prior line — real-world third-line results are lower"
+   ],
+   "takeaway": "Tafasitamab plus lenalidomide gave roughly 60% responses and 40% complete responses in transplant-ineligible R/R DLBCL, best after only one prior line.",
+   "tags": [
+    "tafasitamab",
+    "lenalidomide",
+    "relapsed"
+   ],
+   "source": "onepager:lymphoma-aggressive-bcell",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "nci-9177-burkitt",
+   "name": "NCI 9177 (risk-adapted DA-EPOCH-R)",
+   "disease": "lymphoma-aggressive-bcell",
+   "year": 2020,
+   "phase": "2",
+   "setting": "1L adult Burkitt lymphoma",
+   "descriptor": "risk-adapted DA-EPOCH-R in untreated adult Burkitt lymphoma",
+   "population": "113 adults with untreated Burkitt lymphoma at 22 centers, any HIV status; 87% high-risk, median age 49, 26% with marrow and/or CSF involvement, 25% HIV-positive",
+   "arms": "Single arm, risk-adapted: low risk → DA-EPOCH-R ×3 with no CNS prophylaxis; high risk → ×6 with intrathecal methotrexate. No cranial radiation",
+   "n": 113,
+   "primary_endpoint": "Event-free survival",
+   "results": "At median follow-up 58.7 mo: EFS 84.5%, OS 87.0%. EFS 100% in low-risk and 82.1% in high-risk, with equivalent outcomes across age, HIV status and IPI. Five treatment-related deaths (4%); febrile neutropenia in 16% of cycles",
+   "toxicity": "Markedly less toxic than CODOX-M/IVAC or hyper-CVAD; 4% treatment-related mortality",
+   "reference": "Roschewski M et al. JCO 2020;38:2519",
+   "pmid": "32453640",
+   "nct": "NCT01092182",
+   "highlights": [
+    "Made risk-adapted DA-EPOCH-R a standard option for adult Burkitt, including older and HIV-positive patients",
+    "Low-risk patients were cured with three cycles and no intrathecal prophylaxis; CSF involvement remains the unsolved problem"
+   ],
+   "takeaway": "Risk-adapted DA-EPOCH-R cured about 85% of adults with Burkitt lymphoma regardless of age or HIV status, with far less toxicity than dose-intensive regimens.",
+   "tags": [
+    "burkitt",
+    "da-epoch-r",
+    "risk-adapted"
+   ],
+   "source": "onepager:lymphoma-aggressive-bcell",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "np30179-glofitamab",
+   "name": "NP30179 (glofitamab)",
+   "disease": "lymphoma-aggressive-bcell",
+   "year": 2022,
+   "phase": "1/2",
+   "setting": "R/R DLBCL, 3L+",
+   "descriptor": "fixed-duration glofitamab monotherapy after ≥2 prior lines",
+   "population": "R/R DLBCL with ≥2 prior lines; 155 enrolled, 154 treated; median 3 prior therapies, about a third with prior CAR-T, ~84% refractory to their last regimen",
+   "arms": "Single arm: obinutuzumab 1,000 mg pretreatment C1D1, glofitamab step-up 2.5 mg C1D8 and 10 mg C1D15, then 30 mg on day 1 of cycles 2-12 — fixed 12 cycles",
+   "n": 155,
+   "primary_endpoint": "Complete response rate by independent review",
+   "results": "At median follow-up 12.6 mo: CR 39% (95% CI 32-48), ORR 52%; CR 35% among the 52 with prior CAR-T. Median time to CR 42 days; 78% of complete responses ongoing at 12 mo; 12-mo PFS 37%. Three-year update (Blood 2024): CR 40%, median duration of CR 29.8 mo",
+   "toxicity": "CRS 63% (grade ≥3 4%), grade ≥3 neurologic events 3%, discontinuation for adverse events 9%",
+   "reference": "Dickinson MJ et al. NEJM 2022;387:2220",
+   "pmid": "36507690",
+   "nct": "NCT03075696",
+   "highlights": [
+    "Basis for approval of glofitamab in R/R DLBCL after ≥2 lines; the fixed 12-cycle course gives treatment-free remission",
+    "Obinutuzumab pretreatment is mandatory for CRS mitigation, and CRS is more frequent than with epcoritamab"
+   ],
+   "takeaway": "Fixed-duration glofitamab gave a 39% complete response rate in heavily pretreated R/R DLBCL, with most remissions durable off therapy.",
+   "tags": [
+    "glofitamab",
+    "bispecific",
+    "relapsed"
+   ],
+   "source": "onepager:lymphoma-aggressive-bcell",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "polarix",
+   "name": "POLARIX",
+   "disease": "lymphoma-aggressive-bcell",
+   "year": 2022,
+   "phase": "3",
+   "setting": "1L DLBCL, IPI 2-5",
+   "descriptor": "pola-R-CHP vs R-CHOP in previously untreated intermediate/high-risk DLBCL",
+   "population": "Untreated DLBCL, age 18-80, IPI 2-5; 879 randomized (440 pola-R-CHP, 439 R-CHOP)",
+   "arms": "6 cycles pola-R-CHP (polatuzumab replaces vincristine) + 2 rituximab vs 6 cycles R-CHOP + 2 rituximab; double-blind",
+   "n": 879,
+   "primary_endpoint": "Investigator-assessed progression-free survival",
+   "results": "2-yr PFS 76.7% (95% CI 72.7-80.8) vs 70.2% (65.8-74.6); stratified HR 0.73 (0.57-0.95), P=0.02. 2-yr OS 88.7% vs 88.6%, HR 0.94 (0.65-1.37), P=0.75 — no OS benefit. Median follow-up 28.2 mo",
+   "toxicity": "Comparable grade ≥3 adverse events; peripheral neuropathy similar to R-CHOP and largely reversible",
+   "reference": "Tilly H et al. NEJM 2022;386:351",
+   "pmid": "34904799",
+   "nct": "NCT03274492",
+   "highlights": [
+    "First regimen in two decades to beat R-CHOP on PFS; approved for IPI ≥2 DLBCL",
+    "No overall survival benefit; the gains concentrate in age >60, IPI 3-5 and non-GCB disease"
+   ],
+   "takeaway": "Pola-R-CHP improved 2-year PFS over R-CHOP in IPI ≥2 DLBCL without any difference in overall survival.",
+   "tags": [
+    "polatuzumab",
+    "frontline"
+   ],
+   "source": "onepager:lymphoma-aggressive-bcell",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
+   "id": "epcore-nhl-1",
+   "name": "EPCORE NHL-1",
+   "disease": "lymphoma-aggressive-bcell",
+   "year": 2023,
+   "phase": "1/2",
+   "setting": "R/R large B-cell lymphoma, 3L+",
+   "descriptor": "subcutaneous epcoritamab monotherapy after ≥2 prior lines",
+   "population": "R/R CD20+ large B-cell lymphoma (DLBCL, HGBCL, PMBCL, FL grade 3B) with ≥2 prior lines including anti-CD20; n=157, median 3 prior lines, 61.1% primary refractory, 38.9% prior CAR-T",
+   "arms": "Single arm: subcutaneous epcoritamab with step-up dosing in cycle 1 then 48 mg — weekly cycles 1-3, q2wk cycles 4-9, q4wk from cycle 10, until progression",
+   "n": 157,
+   "primary_endpoint": "Overall response rate by independent review",
+   "results": "At median follow-up 10.7 mo: ORR 63.1% (95% CI 55.0-70.6), CR 38.9%; median duration of response 12.0 mo and not reached among complete responders. Two-year update (Leukemia 2024): ORR 63.1%, CR 40.1%, 24-mo PFS 27.8%, OS 44.6%",
+   "toxicity": "CRS 49.7% (grade 3 only 2.5%), ICANS 6.4% with one fatal event",
+   "reference": "Thieblemont C et al. JCO 2023;41:2238",
+   "pmid": "36548927",
+   "nct": "NCT03625037",
+   "highlights": [
+    "Basis for approval of epcoritamab in R/R large B-cell lymphoma after ≥2 lines; the first subcutaneous bispecific in DLBCL",
+    "Retains activity after CAR-T, and is dosed continuously rather than for a fixed duration"
+   ],
+   "takeaway": "Subcutaneous epcoritamab produced 63% responses and 39% complete responses in heavily pretreated large B-cell lymphoma, including after CAR-T.",
+   "tags": [
+    "epcoritamab",
+    "bispecific",
+    "relapsed"
+   ],
+   "source": "onepager:lymphoma-aggressive-bcell",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
    "id": "calgb-9221",
    "name": "CALGB 9221",
    "disease": "mds",

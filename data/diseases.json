@@ -9,6 +9,10 @@
       "name": "Malignant hematology"
     },
     {
+      "id": "lymphoma",
+      "name": "Lymphoma"
+    },
+    {
       "id": "benign-heme",
       "name": "Classical hematology"
     }
@@ -187,6 +191,30 @@
         "kidney",
         "renal cell"
       ]
+    },
+    {
+      "slug": "lymphoma-aggressive-b-cell",
+      "name": "Lymphoma - Aggressive B-cell",
+      "short": "Lymphoma - Aggressive B-cell",
+      "group": "unassigned",
+      "onepager": "Lymphoma - Aggressive B-cell.pdf",
+      "aliases": [
+        "lymphoma-aggressive-b-cell"
+      ]
+    },
+    {
+      "slug": "lymphoma-aggressive-bcell",
+      "name": "Aggressive B-cell lymphoma",
+      "short": "Aggressive B-cell",
+      "group": "lymphoma",
+      "aliases": [
+        "dlbcl",
+        "burkitt",
+        "pcnsl",
+        "hiv lymphoma",
+        "aggressive b-cell"
+      ],
+      "onepager": null
     }
   ]
 }
