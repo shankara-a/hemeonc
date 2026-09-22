@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T22:38:31",
+ "generated": "2026-09-22T07:33:47",
  "onepagers": [
   {
    "disease": "aml",
@@ -60,9 +60,9 @@
    "file": "Lymphoma - T-cell and Cutaneous.pdf",
    "title": "T-cell and cutaneous lymphoma",
    "pages": 1,
-   "size": 41626,
-   "sha1": "b79e8ed82d24334d6244692e28d5a1bcb71b9fe4",
-   "updated": "2026-09-21"
+   "size": 41982,
+   "sha1": "2e186b84e2f15f6f73bddc8c1bcb71113f1ebd88",
+   "updated": "2026-09-22"
   },
   {
    "disease": "melanoma",
