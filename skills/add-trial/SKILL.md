@@ -39,22 +39,19 @@ to the Encyclopedia folder cannot see it — request it with `request_cowork_dir
    `publish.py` is **strict on purpose** — it refuses to commit if `verified` isn't `true`, if a trial
    has no PMID/NCT and isn't flagged as conference-only, or if `validate.py` reports anything. If it
    stops, fix the entry rather than reaching for `--allow-unverified`.
-5. Reply with the trial name(s), the disease, and the deep link
-   `https://shankara-a.github.io/hemeonc/#trial/<id>`. **Don't ask the user to push** — see below.
+5. Reply with the trial name(s), the disease, the deep link
+   `https://shankara-a.github.io/hemeonc/#trial/<id>`, and the `git push` command the script
+   printed.
 
-## Pushing is automatic
+## The push is the user's to run
 
-A Cowork sandbox has no GitHub credentials, so `publish.py` commits and then reports
-"queued for the auto-push agent". A launchd agent on the Mac (`com.shankara.hemeonc-autopush`) polls
-the repo every 60 seconds and pushes; GitHub Pages redeploys about a minute later. Tell the user the
-change will be live shortly — do not hand them a `git push` command.
+`publish.py` commits and then tries to push. From a Cowork sandbox there are no GitHub
+credentials, so the push fails harmlessly and the script prints the exact command for the
+user, with their Mac path already filled in. **Relay that command** and say how many commits
+are waiting — don't claim the change is live until they've run it.
 
-If they say it never went live, the log is `~/Library/Logs/hemeonc-autopush.log`. A "diverged" line
-means the local and remote histories disagree and a human has to resolve it. No log at all means the
-agent isn't loaded:
-```bash
-launchctl load -w ~/Library/LaunchAgents/com.shankara.hemeonc-autopush.plist
-```
+A launchd auto-push agent used to do this automatically. **It was retired at the user's
+request (2026-09) — do not suggest reinstating it.**
 
 ## Verify like you mean it
 
@@ -130,8 +127,10 @@ expected to have been checked against the abstract before it is added.
 - A slug can already exist with `"onepager": null` — that is not "already done", but the sync fills it
   in on the next run.
 - **Stale `.git/*.lock` files** appear because the Drive mount allows `rename()` but refuses
-  `unlink()`. `publish.py` moves them aside and the auto-push agent deletes them; the
-  `unable to unlink ... Operation not permitted` warnings are cosmetic.
+  `unlink()`. `publish.py` moves them into `.git/.stale-locks` and clears that directory on the
+  next run; the `unable to unlink ... Operation not permitted` warnings are cosmetic.
+- **You cannot delete files on the Drive mount** — `rm` returns EPERM. `git rm --cached` to
+  untrack, then ask the user to delete.
 - **Don't call `add_trial.py`, `sync_onepagers.py` or `git` directly** unless you're debugging.
   `publish.py` exists so the ordering and the identity/lock/push workarounds live in one place.
 

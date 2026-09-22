@@ -188,13 +188,12 @@ by hand; the ordering constraints that used to live in this section are now enfo
 - **Git identity.** Set locally in the repo; if it's ever missing the script borrows it from the last
   commit. No more `-c user.name=...`.
 - **Stale `.git/*.lock` files.** Drive mounts allow `rename()` but refuse `unlink()`, so an aborted git
-  command leaves a 0-byte lock that blocks everything after it. The script moves them aside; the
-  auto-push agent deletes them.
-- **Pushing.** A sandbox has no GitHub credentials, so `publish.py` treats a failed push as normal and
-  says "queued for the auto-push agent". A launchd agent on the Mac
-  (`com.shankara.hemeonc-autopush`, every 60s) ships it. **Don't ask the user to run `git push`** —
-  just tell them the change is live in about a minute. If they say it never appeared, have them check
-  `~/Library/Logs/hemeonc-autopush.log`; a "diverged" line there means a real conflict to resolve.
+  command leaves a 0-byte lock that blocks everything after it. The script moves them into
+  `.git/.stale-locks` and clears that directory on its next run.
+- **Pushing, up to a point.** A sandbox has no GitHub credentials, so `publish.py` treats a failed
+  push as normal, then prints the `git push` command with the user's **Mac** path filled in and the
+  number of waiting commits. Relay it; don't say the page is live until they've run it. (A launchd
+  auto-push agent did this automatically until the user retired it in 2026-09 — don't propose it again.)
 
 ## Gotchas
 
