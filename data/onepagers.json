@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T17:51:57",
+ "generated": "2026-09-21T18:13:43",
  "onepagers": [
   {
    "disease": "aml",
@@ -114,9 +114,9 @@
    "file": "Testicular Cancer.pdf",
    "title": "Testicular cancer",
    "pages": 1,
-   "size": 36905,
-   "sha1": "4c8cf7797d3819c886b2cfb41b864cbd500d6f7b",
-   "updated": "2026-09-19"
+   "size": 38939,
+   "sha1": "c37de6274aa7c1dbe4d491e4a5117b3bc9954b60",
+   "updated": "2026-09-21"
   }
  ]
 }
