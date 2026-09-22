@@ -1965,6 +1965,40 @@
    "updated": "2026-09-21"
   },
   {
+   "id": "propel-pralatrexate",
+   "name": "PROPEL (pralatrexate)",
+   "disease": "lymphoma-tcell",
+   "year": 2011,
+   "phase": "2",
+   "setting": "relapsed/refractory PTCL",
+   "descriptor": "single-arm pivotal study of pralatrexate in relapsed or refractory peripheral T-cell lymphoma",
+   "population": "115 enrolled and 109 evaluable with independently confirmed PTCL progressing after at least one prior therapy; median 3 prior systemic regimens (range 1-12), 70% had failed CHOP, PTCL-NOS in 53%",
+   "arms": "Single arm — pralatrexate 30 mg/m² IV weekly for 6 of every 7 weeks, with B12 and folate supplementation",
+   "n": 115,
+   "primary_endpoint": "Overall response rate by independent central review",
+   "results": "ORR 29% with complete response 11% and partial response 18%. Median duration of response 10.1 months, median PFS 3.5 months, median OS 14.5 months. Response was independent of age, histology, number of prior therapies, prior methotrexate or prior transplant",
+   "toxicity": "Grade 3-4 thrombocytopenia 32%, mucositis 22%, neutropenia 22%, anemia 18%",
+   "reference": "O'Connor OA et al. JCO 2011;29:1182",
+   "pmid": "21245435",
+   "nct": null,
+   "highlights": [
+    "The first drug ever approved for relapsed peripheral T-cell lymphoma",
+    "Responses are infrequent at 29% but durable at 10.1 months; median PFS of 3.5 months shows how fast non-responders progress",
+    "Mucositis is the signature toxicity and mandates B12 and folate support",
+    "Not to be confused with PROpel in prostate cancer (olaparib + abiraterone) — unrelated trials with near-identical names"
+   ],
+   "takeaway": "Pralatrexate produces durable but infrequent responses in heavily pretreated PTCL and was the first agent approved for the disease.",
+   "tags": [
+    "pralatrexate",
+    "antifolate",
+    "PTCL",
+    "relapsed"
+   ],
+   "source": "onepager:lymphoma-tcell",
+   "verified": true,
+   "updated": "2026-09-21"
+  },
+  {
    "id": "belief",
    "name": "BELIEF (CLN-19)",
    "disease": "lymphoma-tcell",
