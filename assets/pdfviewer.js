@@ -18,9 +18,10 @@
    * Mount a viewer into `host`. Returns { destroy, refit, next, prev }.
    * host gets: .pdf-toolbar (paging, zoom, open/download) + .pdf-pages (one canvas)
    */
-  HH.mountPdf = function (host, url, { title = "" } = {}) {
+  HH.mountPdf = function (host, url, { title = "", meta = "" } = {}) {
     host.innerHTML = `
       <div class="pdf-toolbar">
+        <span class="pdf-label"><b>${HH.esc(title)}</b>${meta ? `<span class="meta">${HH.esc(meta)}</span>` : ""}</span>
         <button class="btn small" data-nav="prev" title="Previous page (←)">◀</button>
         <span class="pg">…</span>
         <button class="btn small" data-nav="next" title="Next page (→)">▶</button>

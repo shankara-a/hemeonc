@@ -6,31 +6,39 @@
 <title>Heme/Onc Hub</title>
 <meta name="description" content="One-pager reference cards and landmark clinical trials for hematology-oncology, plus links to the PubMed tracker, K-Hub and job board." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦀</text></svg>" />
-<link rel="stylesheet" href="assets/styles.css?v=28" />
+<link rel="stylesheet" href="assets/styles.css?v=29" />
 </head>
 <body>
 
 <header class="site-header">
   <div class="header-inner">
-    <div class="header-text">
-      <h1><a href="#home">Heme/Onc Hub</a></h1>
-      <p class="tagline">One-pagers, landmark trials, and the rest of the toolkit</p>
-    </div>
-    <nav class="sites" aria-label="Other sites">
-      <a class="site-link" href="https://shankara-a.github.io/heme-onc-pubmed-tracker/" target="_blank" rel="noopener">PubMed Tracker <span aria-hidden="true">↗</span></a>
-      <a class="site-link" href="https://shankara-a.github.io/heme-onc-hub/" target="_blank" rel="noopener">K-Hub <span aria-hidden="true">↗</span></a>
-      <a class="site-link" href="https://shankara-a.github.io/heme-onc-jobs/" target="_blank" rel="noopener">Jobs <span aria-hidden="true">↗</span></a>
+    <a class="wordmark" href="#home">Heme/Onc&nbsp;Hub</a>
+
+    <nav class="tabs" id="tabs" role="tablist">
+      <button class="tab active" data-tab="home" role="tab">Home</button>
+      <button class="tab" data-tab="reviews" role="tab">Reviews</button>
+      <button class="tab" data-tab="trials" role="tab">Trials</button>
     </nav>
+
+    <button class="dz-switch" id="dz-switch" hidden aria-haspopup="dialog" aria-expanded="false"
+            title="Switch disease (⌘K or /)">
+      <span class="dz-switch-name">Pick a disease</span>
+      <span class="dz-switch-meta"></span>
+      <span class="caret" aria-hidden="true">▾</span>
+    </button>
+
+    <div class="header-right">
+      <div class="menu" id="tools-menu">
+        <button class="menu-btn" aria-haspopup="true" aria-expanded="false">Tools <span class="caret" aria-hidden="true">▾</span></button>
+        <div class="menu-list" hidden>
+          <a href="https://shankara-a.github.io/heme-onc-pubmed-tracker/" target="_blank" rel="noopener">PubMed Tracker <span aria-hidden="true">↗</span></a>
+          <a href="https://shankara-a.github.io/heme-onc-hub/" target="_blank" rel="noopener">K-Hub <span aria-hidden="true">↗</span></a>
+          <a href="https://shankara-a.github.io/heme-onc-jobs/" target="_blank" rel="noopener">Jobs <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
-
-<nav class="tabs" id="tabs" role="tablist">
-  <div class="tabs-inner">
-    <button class="tab active" data-tab="home" role="tab">Home</button>
-    <button class="tab" data-tab="reviews" role="tab">Reviews</button>
-    <button class="tab" data-tab="trials" role="tab">Trials</button>
-  </div>
-</nav>
 
 <main>
 
@@ -79,9 +87,8 @@
 
 <!-- ===================== REVIEWS ===================== -->
 <section id="reviews" class="panel">
-  <nav class="dz-rail" id="dz-rail" aria-label="Diseases"></nav>
   <div class="rv-main" id="rv-main">
-    <div class="empty">Pick a disease above.</div>
+    <div class="empty">Pick a disease from the switcher above (or press <kbd>/</kbd>).</div>
   </div>
 </section>
 
@@ -120,12 +127,19 @@
   <span>Trial entries are checked against the primary publication; PubMed links go to the paper cited.</span>
 </footer>
 
+<div id="dz-palette" class="palette" hidden>
+  <div class="palette-box" role="dialog" aria-modal="true" aria-label="Switch disease">
+    <input type="search" id="dz-q" placeholder="Search diseases…" autocomplete="off" spellcheck="false" aria-controls="dz-results" />
+    <div id="dz-results" class="palette-results" role="listbox" aria-label="Diseases"></div>
+  </div>
+</div>
+
 <div id="trial-pop" class="trial-pop" role="tooltip" hidden></div>
 
-<script src="assets/util.js?v=28"></script>
-<script src="assets/pdfviewer.js?v=28"></script>
-<script src="assets/reviews.js?v=28"></script>
-<script src="assets/trials.js?v=28"></script>
-<script src="assets/app.js?v=28"></script>
+<script src="assets/util.js?v=29"></script>
+<script src="assets/pdfviewer.js?v=29"></script>
+<script src="assets/reviews.js?v=29"></script>
+<script src="assets/trials.js?v=29"></script>
+<script src="assets/app.js?v=29"></script>
 </body>
 </html>

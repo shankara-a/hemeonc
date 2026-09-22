@@ -6,6 +6,7 @@
   const showTab = (name) => {
     document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b.dataset.tab === name));
     document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("active", p.id === name));
+    $("dz-switch").hidden = name !== "reviews";
     HH.hidePop?.(0);
   };
 
@@ -74,7 +75,7 @@
       return;
     }
     renderHome();
-    HH.renderRail();
+    HH.initSwitcher();
     HH.initTrials();
     window.addEventListener("hashchange", route);
     route();
