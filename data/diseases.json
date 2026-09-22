@@ -205,6 +205,48 @@
         "aggressive b-cell"
       ],
       "onepager": "Lymphoma - Aggressive B-cell.pdf"
+    },
+    {
+      "slug": "lymphoma-hodgkin",
+      "name": "Hodgkin lymphoma",
+      "short": "Hodgkin",
+      "group": "lymphoma",
+      "aliases": [
+        "hodgkin",
+        "hl",
+        "nlphl",
+        "classic hodgkin"
+      ],
+      "onepager": "Lymphoma - Hodgkin.pdf"
+    },
+    {
+      "slug": "lymphoma-indolent-mantle",
+      "name": "Indolent and mantle B-cell lymphoma",
+      "short": "Indolent & mantle",
+      "group": "lymphoma",
+      "aliases": [
+        "follicular",
+        "mantle cell",
+        "mcl",
+        "fl",
+        "indolent"
+      ],
+      "onepager": "Lymphoma - Indolent and Mantle.pdf"
+    },
+    {
+      "slug": "lymphoma-tcell",
+      "name": "T-cell and cutaneous lymphoma",
+      "short": "T-cell & cutaneous",
+      "group": "lymphoma",
+      "aliases": [
+        "ptcl",
+        "t-cell",
+        "mycosis fungoides",
+        "sezary",
+        "ctcl",
+        "nk/t"
+      ],
+      "onepager": "Lymphoma - T-cell and Cutaneous.pdf"
     }
   ]
 }

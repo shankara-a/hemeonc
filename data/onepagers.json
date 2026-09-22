@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T22:05:43",
+ "generated": "2026-09-21T22:38:31",
  "onepagers": [
   {
    "disease": "aml",
@@ -35,6 +35,33 @@
    "pages": 2,
    "size": 58239,
    "sha1": "584bff6eeb2a5014cdc37ff223d79d8616b396ef",
+   "updated": "2026-09-21"
+  },
+  {
+   "disease": "lymphoma-hodgkin",
+   "file": "Lymphoma - Hodgkin.pdf",
+   "title": "Hodgkin lymphoma",
+   "pages": 1,
+   "size": 45298,
+   "sha1": "6bd0c328a20c560cf4d5999b8964d3207cfcafa4",
+   "updated": "2026-09-21"
+  },
+  {
+   "disease": "lymphoma-indolent-mantle",
+   "file": "Lymphoma - Indolent and Mantle.pdf",
+   "title": "Indolent and mantle B-cell lymphoma",
+   "pages": 1,
+   "size": 43936,
+   "sha1": "4d6e9a4af956351f24f877897431120bdb4698e8",
+   "updated": "2026-09-21"
+  },
+  {
+   "disease": "lymphoma-tcell",
+   "file": "Lymphoma - T-cell and Cutaneous.pdf",
+   "title": "T-cell and cutaneous lymphoma",
+   "pages": 1,
+   "size": 41626,
+   "sha1": "b79e8ed82d24334d6244692e28d5a1bcb71b9fe4",
    "updated": "2026-09-21"
   },
   {
