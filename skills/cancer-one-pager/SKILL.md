@@ -131,68 +131,70 @@ pages**. Prefer two pages over shrinking type below ~6.5pt. Ask the user which t
 ## Publish — the last step, every time
 
 Hub repo: `/Users/shankaraanand/Library/CloudStorage/GoogleDrive-shankara.k.anand@gmail.com/My Drive/Personal/projects/hemeonc/`
-(`HUB` below). Site: https://shankara-a.github.io/hemeonc/. The Notion "Clinical Trials" page is retired —
-trials live in `HUB/data/trials.json`.
+(`HUB` below). Site: https://shankara-a.github.io/hemeonc/. The Notion "Clinical Trials" page is
+retired — trials live in `HUB/data/trials.json`.
 
 **The Hub is on a different Drive account from the Encyclopedia**, so a Cowork session that only has
 the Encyclopedia folder connected cannot see it. Request it once with `request_cowork_directory`
 before starting step 1.
 
-0. **Copy the PDF into `HUB/pdfs/` FIRST.** `add_trial.py` validates `diseases.json`, and it
-   **rejects an `onepager` value whose file is not already in `pdfs/`** (`onepager file missing`).
-   If you hit that error the disease may still have been written while the trials were not — re-check
-   `diseases.json` before re-running, or you will add the disease twice.
+Publishing is **one command**. `scripts/publish.py` does the whole dance in the right order — PDFs
+into `pdfs/`, disease registered, trials filed, manifest rebuilt, validated, committed, pushed — and
+refuses to commit anything if a check fails. Do not call `sync_onepagers.py`, `add_trial.py` or `git`
+by hand; the ordering constraints that used to live in this section are now enforced by the script.
+
+1. **Write the trials the page names** — every one, from tables, pathway boxes, notes, footnotes and
+   `†` items. Grep `HUB/data/trials.json` first; a trial already filed under another disease (e.g.
+   KEYNOTE-158) does not need a duplicate. Write the missing ones as a JSON list to `/tmp/trials.json`
+   using the schema in the `add-trial` skill (`source: "onepager:<slug>"`, `verified: true`,
+   `reference` as `Author AB et al. Journal YYYY;vol:page` so the PMID resolves).
+
+   **Check every number against the primary abstract** (PubMed MCP `get_article_metadata`, or
+   `lookup_article_by_citation` to confirm the citation round-trips) before filing. The site shows no
+   "unverified" flag, so what goes in is presented as checked — and `publish.py` will reject any trial
+   whose `verified` is not `true`. Verification routinely turns up errors in what you *thought* you
+   knew: a trial's phase, its primary endpoint, its publication year, or numbers misattributed from a
+   neighbouring trial. File what the abstract says; if a famous figure isn't in the primary source,
+   leave it out. **Correct the one-pager too** when verification contradicts it — the PDF and the trial
+   card must not disagree.
+
+2. **Publish:**
    ```bash
-   cp "<...>/One Pagers/<Disease>.pdf" "$HUB/pdfs/"
+   cd "$HUB"
+   python3 scripts/publish.py --trials /tmp/trials.json --new-disease \
+     '{"slug":"gastric","name":"Gastric adenocarcinoma","short":"Gastric","group":"solid"}'
    ```
-1. **Register the disease** if it's new. Check `HUB/data/diseases.json` for a slug; if absent, add one
-   with the PDF filename so the sync links them:
-   ```bash
-   python3 "$HUB/scripts/add_trial.py" /tmp/trials.json --new-disease \
-     '{"slug":"gastric","name":"Gastric adenocarcinoma","short":"Gastric","group":"solid","onepager":"Gastric Cancer.pdf"}'
-   ```
-   (`group`: `solid` · `malignant-heme` · `benign-heme`.)
-   **A slug may already exist with `onepager: null`** — that is not "already done". Set the field:
-   the sync derives a slug from the *filename* (`Myelodysplastic Syndromes.pdf` → `myelodysplastic-syndromes`),
-   so without it you get a duplicate stub instead of a match to `mds`.
-2. **File every trial the page names** — tables, pathway boxes, notes, footnotes, `†` items. Grep
-   `HUB/data/trials.json` for each; write the missing ones as a JSON list to `/tmp/trials.json` using the
-   schema in the `add-trial` skill (`source: "onepager:<slug>"`, `verified: true`; `reference` as
-   `Author AB et al. Journal YYYY;vol:page` so the PMID resolves). **Check every number against the
-   primary abstract** (PubMed MCP `get_article_metadata`) before filing — the site shows no "unverified"
-   flag, so what goes in is presented as checked. Then `python3 "$HUB/scripts/add_trial.py" /tmp/trials.json`
-   (no `--push` yet — the sync pushes).
-   Trials already filed under another disease (e.g. KEYNOTE-158) don't need a duplicate.
-   Verification routinely turns up errors in what you *thought* you knew — a trial's phase, primary
-   endpoint, publication year, or numbers that are widely misattributed from a neighbouring trial.
-   File what the abstract says, and if a commonly quoted figure isn't in the primary source, leave
-   it out rather than repeating it.
-3. **Sync + push:**
-   ```bash
-   python3 "$HUB/scripts/sync_onepagers.py"
-   ```
-   Copies the PDF into `HUB/pdfs/`, rebuilds `data/onepagers.json`, prints a coverage report
-   ("tokens with no trial entry" = names it saw in the PDF that have no `trials.json` entry — add the real
-   trials among them and rerun), then commits and pushes. Pages redeploys in ~1 minute.
-   Most flagged tokens are false positives — section headings (TREATMENT, DOSING) and gene names
-   (ZRSR2, STAG2, MECOM). Scan for the occasional real one (e.g. CPX-351) and ignore the rest.
+   Drop `--new-disease` when the slug already exists (`group`: `solid` · `malignant-heme` ·
+   `benign-heme`). Omit `--trials` when you only changed a PDF. Add `--message "..."` for the commit
+   subject. Use `--check` for a dry run that writes nothing.
+
+   Do **not** put `"onepager"` in `--new-disease` — the sync sets it from the filename. A slug that
+   already exists with `onepager: null` is not "already done", but the sync fixes that too.
+
+3. **Read the coverage report** the sync prints. "tokens with no trial entry" are ALL-CAPS strings it
+   found in the PDF with no `trials.json` entry. Most are false positives — section headings
+   (TREATMENT, DOSING) and gene names (ZRSR2, STAG2, MECOM). Scan for the occasional real trial
+   (e.g. CPX-351, CARMENA), file it, and re-run.
+
 4. Report the link: `https://shankara-a.github.io/hemeonc/#reviews/<slug>`.
 
-### Sandbox limitations on the last step
+### What publish.py handles so you don't have to
 
-- **`--src` is required from a Cowork sandbox.** The script's default source is the *host* Stanford
-  Drive path, which the sandbox cannot see (`FileNotFoundError` / `Operation not permitted`). Pass the
-  sandbox mount instead: `--src "/sessions/<session>/mnt/Encyclopedia/One Pagers"`.
-- **The sandbox can commit but cannot push.** There is no network route to GitHub and no git identity,
-  so the script's final step fails with `could not read Username for 'https://github.com'`. Commit
-  under the user's own identity (read it from `git log -1 --format='%an <%ae>'` rather than inventing
-  one) and hand them the push:
-  ```bash
-  git -c user.name="..." -c user.email="..." commit -q -a -m "Add <Disease> one-pager; file N new trials"
-  ```
-  Then tell the user to run `cd "<HUB>" && git push`. Harmless
-  `unable to unlink ... Operation not permitted` warnings on `.git` lock files are expected on the
-  Drive mount — the commit still succeeds; confirm with `git log -1` and `git status --porcelain`.
+- **Ordering.** PDF into `pdfs/` before the disease references it, disease before its trials, manifest
+  after both. The old `onepager file missing` failure — which used to write the disease and *then*
+  fail on the trials, leaving a half-added slug — can no longer happen.
+- **Source path.** It finds the Encyclopedia "One Pagers" folder whether it's running on the Mac or in
+  a sandbox. No more `--src "/sessions/<id>/mnt/..."`.
+- **Git identity.** Set locally in the repo; if it's ever missing the script borrows it from the last
+  commit. No more `-c user.name=...`.
+- **Stale `.git/*.lock` files.** Drive mounts allow `rename()` but refuse `unlink()`, so an aborted git
+  command leaves a 0-byte lock that blocks everything after it. The script moves them aside; the
+  auto-push agent deletes them.
+- **Pushing.** A sandbox has no GitHub credentials, so `publish.py` treats a failed push as normal and
+  says "queued for the auto-push agent". A launchd agent on the Mac
+  (`com.shankara.hemeonc-autopush`, every 60s) ships it. **Don't ask the user to run `git push`** —
+  just tell them the change is live in about a minute. If they say it never appeared, have them check
+  `~/Library/Logs/hemeonc-autopush.log`; a "diverged" line there means a real conflict to resolve.
 
 ## Gotchas
 
@@ -206,10 +208,18 @@ before starting step 1.
   rendering. If a patch gets fiddly, rewrite the spec file instead — it's faster than debugging.
 - Some files in the user's Drive are cloud-only placeholders and fail with EPERM. Don't retry —
   tell the user to "Make available offline" in Finder.
+- **The `Write` tool can hit EPERM on the Drive mount** where bash heredocs succeed. If `Write` fails
+  on a spec file, write it to `/tmp` with a quoted heredoc, `compile()` it, then `cp` it into place.
+- **fitcheck's per-column number is measured from the top of the page's ink**, so a layout that has
+  overflowed onto page 2 (no header there) reports a *smaller* number than the same content did when
+  it fit on page 1. Don't read a falling number as progress — read the page count.
 
 ## Done so far
 
 Breast (2 pages), Colon, Rectal, Pancreatic, NSCLC, Prostate, Testicular, MPN (PV/ET/PMF), Melanoma (2 pages),
-NET (2 pages), MDS, AML (2 pages). All twelve are on the Hub with their trials filed.
+NET (2 pages), MDS, AML (2 pages), Renal cell. All thirteen are on the Hub with their trials filed.
 Keep the same visual grammar for new ones so the set reads as a series.
+
+Two specs were lost to a sandbox reset before `specs/` existed — **NSCLC and testicular have PDFs but
+no spec file**. Rebuild the spec from the PDF the next time either needs an edit.
 

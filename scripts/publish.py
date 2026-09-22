@@ -61,7 +61,7 @@ def find_src(explicit=None):
     die("cannot find the Encyclopedia 'One Pagers' folder — pass --src")
 
 
-def clear_stale_locks():
+def clear_stale_locks(force=False):
     """Google Drive mounts allow rename() but refuse unlink(), so an aborted git command
     leaves a 0-byte .lock behind that blocks every later command. Unlink if we can, else
     rename it out of the way. Only touch locks older than 30s so a live git isn't disturbed."""
@@ -71,7 +71,7 @@ def clear_stale_locks():
     now = time.time()
     for lock in list(gitdir.glob("*.lock")) + list(gitdir.glob("refs/**/*.lock")):
         try:
-            if now - lock.stat().st_mtime < 30:
+            if not force and now - lock.stat().st_mtime < 30:
                 continue
         except OSError:
             continue
@@ -94,6 +94,11 @@ def git(*args, check=True, quiet=False):
     if args and args[0] in ("add", "commit"):
         clear_stale_locks()
     r = subprocess.run(["git", *args], cwd=ROOT, text=True, capture_output=True)
+    if r.returncode and "File exists" in (r.stderr or "") and ".lock" in (r.stderr or ""):
+        # A lock younger than the staleness window blocked us. Nothing else runs git in this
+        # sandbox, so it is ours from a previous failed step — clear it and try once more.
+        clear_stale_locks(force=True)
+        r = subprocess.run(["git", *args], cwd=ROOT, text=True, capture_output=True)
     if check and r.returncode:
         err = (r.stderr or "").strip()
         # Drive mounts emit harmless lock-file warnings; only real failures matter.

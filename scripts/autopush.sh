@@ -8,6 +8,11 @@ LOG="$HOME/Library/Logs/hemeonc-autopush.log"
 cd "$REPO" 2>/dev/null || exit 0
 git rev-parse --git-dir >/dev/null 2>&1 || exit 0
 
+# Garbage-collect lock files a Cowork sandbox could not unlink (Drive mounts refuse unlink
+# but allow rename, so publish.py moves them into .git/.stale-locks for us to delete here).
+rm -rf .git/.stale-locks 2>/dev/null
+find .git -maxdepth 3 -name '*.lock' -mmin +5 -delete 2>/dev/null
+
 # Nothing local to ship? Cheapest possible exit — no network call.
 git rev-list --count @{u}..HEAD >/dev/null 2>&1 || exit 0
 [ "$(git rev-list --count @{u}..HEAD 2>/dev/null)" = "0" ] && exit 0

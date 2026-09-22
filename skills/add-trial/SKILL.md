@@ -5,8 +5,9 @@ description: "Add a landmark clinical trial (or several) to the Heme/Onc Hub tri
 
 # Add trial
 
-Writes entries into **`hemeonc/data/trials.json`** via `scripts/add_trial.py`, then pushes so the
-site updates. This replaced the Notion "Clinical Trials" page (2026-09) — do not add trials to Notion.
+Writes entries into **`hemeonc/data/trials.json`** via `scripts/publish.py`, which commits and
+publishes in one step. This replaced the Notion "Clinical Trials" page (2026-09) — do not add trials
+to Notion.
 
 Repo: `/Users/shankaraanand/Library/CloudStorage/GoogleDrive-shankara.k.anand@gmail.com/My Drive/Personal/projects/hemeonc/`
 
@@ -21,17 +22,39 @@ to the Encyclopedia folder cannot see it — request it with `request_cowork_dir
    exist, add it in the same command with `--new-disease '{"slug","name","short","group"}'`
    (group ∈ `solid` · `malignant-heme` · `benign-heme`).
 3. **Research the trial — and check it against the abstract.** Use the PubMed MCP tools
-   (`search_articles`, `get_article_metadata`) to pull the primary publication's abstract and confirm
-   every number you put in `results` (medians, HRs, rates). Prefer the primary-endpoint paper for
-   `reference`/`year`; quote the primary analysis first and mention updates (OS, 5-yr) after it.
-   Never add an entry whose numbers you couldn't check — the site shows no "unverified" flag, so what
-   goes in is presented as checked.
-4. **Write the JSON** (one object or a list) to a scratch file and run:
+   (`search_articles`, `get_article_metadata`, `lookup_article_by_citation`) to pull the primary
+   publication and confirm every number you put in `results` (medians, HRs, rates). Prefer the
+   primary-endpoint paper for `reference`/`year`; quote the primary analysis first and mention updates
+   (OS, 5-yr) after it. Never add an entry whose numbers you couldn't check — the site shows no
+   "unverified" flag, so what goes in is presented as checked.
+4. **Write the JSON** (one object or a list) to a scratch file and run one command:
    ```bash
-   python3 scripts/add_trial.py /tmp/trial.json --push
+   cd "<repo>"
+   python3 scripts/publish.py --trials /tmp/trial.json
    ```
-   The script validates, resolves the PMID from `reference`, sorts, commits and pushes.
-5. Reply with the trial name(s), the disease, and the deep link `https://shankara-a.github.io/hemeonc/#trial/<id>`.
+   That validates, resolves PMIDs from `reference`, sorts, rebuilds the one-pager manifest, commits and
+   pushes. Add `--new-disease '{...}'` for a new slug, `--update` to overwrite an existing id,
+   `--check` for a dry run that writes nothing.
+
+   `publish.py` is **strict on purpose** — it refuses to commit if `verified` isn't `true`, if a trial
+   has no PMID/NCT and isn't flagged as conference-only, or if `validate.py` reports anything. If it
+   stops, fix the entry rather than reaching for `--allow-unverified`.
+5. Reply with the trial name(s), the disease, and the deep link
+   `https://shankara-a.github.io/hemeonc/#trial/<id>`. **Don't ask the user to push** — see below.
+
+## Pushing is automatic
+
+A Cowork sandbox has no GitHub credentials, so `publish.py` commits and then reports
+"queued for the auto-push agent". A launchd agent on the Mac (`com.shankara.hemeonc-autopush`) polls
+the repo every 60 seconds and pushes; GitHub Pages redeploys about a minute later. Tell the user the
+change will be live shortly — do not hand them a `git push` command.
+
+If they say it never went live, the log is `~/Library/Logs/hemeonc-autopush.log`. A "diverged" line
+means the local and remote histories disagree and a human has to resolve it. No log at all means the
+agent isn't loaded:
+```bash
+launchctl load -w ~/Library/LaunchAgents/com.shankara.hemeonc-autopush.plist
+```
 
 ## Verify like you mean it
 
@@ -56,7 +79,7 @@ fields you left empty and why.
 
 For more than ~5 trials (e.g. every trial cited by a new one-pager):
 
-- Write a **single JSON array** to one scratch file and make one `add_trial.py` call. The script
+- Write a **single JSON array** to one scratch file and make one `publish.py --trials` call. It
   handles lists and reports `+N added`.
 - **Delegate the verification** to subagents — one per disease or per batch of ~10 — and have them
   return the finished JSON array plus a "verification notes" section listing anything unconfirmed.
@@ -101,22 +124,14 @@ expected to have been checked against the abstract before it is added.
   the PMID in yourself (`"pmid": "12345678"`).
 - Conference-only data (ASCO/ASH abstract, no paper yet): reference like `Sinicrope FA et al. ASCO 2025 LBA1`,
   leave `pmid` null; the site links a PubMed search instead. VERONA (SOHO 2025) is the current example.
-- **`--new-disease` writes the disease even when the trials then fail validation.** The script appends to
-  `diseases.json` and saves it *before* validating the trial objects, so a failed run leaves the disease
-  added and no trials filed. Re-check `diseases.json` before re-running or you will add it twice — and on
-  the retry drop `--new-disease`, since the slug now exists.
-- **`onepager` in `--new-disease` requires the PDF to already be in `pdfs/`.** Validation fails with
-  `onepager file missing`. Copy the PDF in first, or add the disease without `onepager` and set it later.
-- A slug can already exist with `"onepager": null` — that is not "already done". Set the field if a
-  one-pager now exists for it.
-- **From a Cowork sandbox the commit fails before the push does.** There is no git identity, so
-  `--push` dies with `unable to auto-detect email address`, and then `could not read Username for
-  'https://github.com'` because there is no network route to GitHub. Commit under the user's own
-  identity — read it from `git log -1 --format='%an <%ae>'`, don't invent one:
-  ```bash
-  git -c user.name="..." -c user.email="..." commit -q -a -m "Add trials: ..."
-  ```
-  Then tell the user to run `cd "<repo>" && git push`. Harmless `unable to unlink ... Operation not
-  permitted` warnings on `.git` lock files are expected on the Drive mount; confirm the commit landed
-  with `git log -1` and `git status --porcelain`.
+- **`onepager` does not belong in `--new-disease`.** The one-pager sync sets it from the PDF filename.
+  (Historically, passing it before the PDF was in `pdfs/` failed validation *after* the disease had
+  already been written. `publish.py` now orders the steps so this can't happen.)
+- A slug can already exist with `"onepager": null` — that is not "already done", but the sync fills it
+  in on the next run.
+- **Stale `.git/*.lock` files** appear because the Drive mount allows `rename()` but refuses
+  `unlink()`. `publish.py` moves them aside and the auto-push agent deletes them; the
+  `unable to unlink ... Operation not permitted` warnings are cosmetic.
+- **Don't call `add_trial.py`, `sync_onepagers.py` or `git` directly** unless you're debugging.
+  `publish.py` exists so the ordering and the identity/lock/push workarounds live in one place.
 
