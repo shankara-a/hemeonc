@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 .claude/
+
+# retired launchd auto-push agent (files linger on the Drive mount, which blocks unlink)
+scripts/autopush.sh
+scripts/com.shankara.hemeonc-autopush.plist

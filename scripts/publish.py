@@ -12,8 +12,8 @@ after both). It resolves the Encyclopedia source path and the git identity by it
 same command works from a Cowork sandbox and from the user's Mac.
 
 Pushing is best-effort. A sandbox has no GitHub credentials, so a failed push is NOT an
-error: the commit is left for the launchd auto-push agent on the Mac, which ships it within
-a minute. See scripts/autopush.sh.
+error — the commit is simply left for the user to push by hand. The script prints the exact
+command.
 
 STRICT BY DEFAULT — it refuses to commit if:
   * validate.py reports any problem
@@ -65,8 +65,13 @@ def clear_stale_locks(force=False):
     """Google Drive mounts allow rename() but refuse unlink(), so an aborted git command
     leaves a 0-byte .lock behind that blocks every later command. Unlink if we can, else
     rename it out of the way. Only touch locks older than 30s so a live git isn't disturbed."""
-    import time
+    import time, shutil
     gitdir = ROOT / ".git"
+    # Best-effort tidy of anything we renamed aside on an earlier run.
+    try:
+        shutil.rmtree(gitdir / ".stale-locks")
+    except OSError:
+        pass
     stale = gitdir / ".stale-locks"
     now = time.time()
     for lock in list(gitdir.glob("*.lock")) + list(gitdir.glob("refs/**/*.lock")):
@@ -267,8 +272,9 @@ def main():
         say("→ pushed — GitHub Pages redeploys in ~1 minute")
     else:
         ahead = git("rev-list", "--count", "@{u}..HEAD", check=False).stdout.strip() or "1"
-        say(f"→ no push credentials here — {ahead} commit(s) queued for the auto-push agent "
-            "(live within ~1 min)")
+        say(f"→ committed but NOT pushed — no GitHub credentials in this environment.")
+        say(f"   {ahead} commit(s) waiting. Run:")
+        say(f'   cd "{ROOT}" && git push')
 
 
 if __name__ == "__main__":
