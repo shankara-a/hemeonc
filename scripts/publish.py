@@ -196,19 +196,39 @@ def main():
 
     ensure_identity()
 
-    # 1. PDFs first — a disease may not reference a one-pager that isn't in pdfs/ yet.
+    # 1. Register a new disease BEFORE the sync. sync_onepagers derives a slug from the PDF
+    # filename and appends an "unassigned" stub for any PDF it can't match, so a slug that
+    # doesn't spell out exactly like its filename must already exist, carrying `onepager`.
+    if a.new_disease:
+        nd = json.loads(a.new_disease)
+        dz_path = DATA / "diseases.json"
+        dz = json.loads(dz_path.read_text())
+        if not any(x["slug"] == nd["slug"] for x in dz["diseases"]):
+            nd.setdefault("aliases", [nd["slug"]])
+            nd.setdefault("onepager", None)
+            dz["diseases"].append(nd)
+            dz_path.write_text(json.dumps(dz, indent=2, ensure_ascii=False) + "\n")
+            say(f"   disease registered ahead of the sync: {nd['slug']}")
+        a.new_disease = None  # already applied; don't pass it to add_trial.py
+
+    # 2. PDFs — a disease may not reference a one-pager that isn't in pdfs/ yet.
     if src:
         say("→ syncing one-pagers")
         run("sync_onepagers.py", "--src", src, "--no-commit")
+        stubs = [x["slug"] for x in json.loads((DATA / "diseases.json").read_text())["diseases"]
+                 if x.get("group") == "unassigned"]
+        if stubs:
+            die("the sync could not match a PDF to a disease and added stub(s): "
+                + ", ".join(stubs) + "\n"
+                "   Set `onepager` on the real slug (the sync matches on that field, not on the\n"
+                "   filename), delete the stub from diseases.json, and re-run.")
 
-    # 2. Disease + trials.
+    # 3. Trials.
     if a.trials:
         say("→ filing trials")
         args = [a.trials]
         if a.update:
             args.append("--update")
-        if a.new_disease:
-            args += ["--new-disease", a.new_disease]
         run("add_trial.py", *args)
 
     # 2b. The sync stamps a fresh "generated" time into onepagers.json every run. Left alone
@@ -225,11 +245,11 @@ def main():
         except (ValueError, OSError):
             pass
 
-    # 3. Gate.
+    # 4. Gate.
     say("→ validating")
     run("validate.py")
 
-    # 4. Commit.
+    # 5. Commit.
     st = git("status", "--porcelain").stdout.strip()
     if not st:
         say("→ nothing to commit — already up to date")
@@ -240,7 +260,7 @@ def main():
     git("commit", "-q", "-m", msg)
     say(f"→ committed: {msg}")
 
-    # 5. Push, best effort.
+    # 6. Push, best effort.
     r = subprocess.run(["git", "push", "-q"], cwd=ROOT, text=True, capture_output=True,
                        env={**os.environ, "GIT_TERMINAL_PROMPT": "0"})
     if r.returncode == 0:

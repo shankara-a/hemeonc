@@ -193,16 +193,6 @@
       ]
     },
     {
-      "slug": "lymphoma-aggressive-b-cell",
-      "name": "Lymphoma - Aggressive B-cell",
-      "short": "Lymphoma - Aggressive B-cell",
-      "group": "unassigned",
-      "onepager": "Lymphoma - Aggressive B-cell.pdf",
-      "aliases": [
-        "lymphoma-aggressive-b-cell"
-      ]
-    },
-    {
       "slug": "lymphoma-aggressive-bcell",
       "name": "Aggressive B-cell lymphoma",
       "short": "Aggressive B-cell",
@@ -214,7 +204,7 @@
         "hiv lymphoma",
         "aggressive b-cell"
       ],
-      "onepager": null
+      "onepager": "Lymphoma - Aggressive B-cell.pdf"
     }
   ]
 }

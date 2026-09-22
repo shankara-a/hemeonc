@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T22:05:08",
+ "generated": "2026-09-21T22:05:43",
  "onepagers": [
   {
    "disease": "aml",
@@ -29,9 +29,9 @@
    "updated": "2026-09-19"
   },
   {
-   "disease": "lymphoma-aggressive-b-cell",
+   "disease": "lymphoma-aggressive-bcell",
    "file": "Lymphoma - Aggressive B-cell.pdf",
-   "title": "Lymphoma - Aggressive B-cell",
+   "title": "Aggressive B-cell lymphoma",
    "pages": 2,
    "size": 58239,
    "sha1": "584bff6eeb2a5014cdc37ff223d79d8616b396ef",
