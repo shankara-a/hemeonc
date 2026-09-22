@@ -31,6 +31,16 @@ from validate import validate, bump_asset_version  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 
+# Where this repo lives on the user's Mac. In a Cowork sandbox ROOT is a mount path like
+# /sessions/<id>/mnt/hemeonc, which is meaningless in their terminal — so any command we
+# print for them to run has to use the real path.
+HOST_ROOT = ("/Users/shankaraanand/Library/CloudStorage/GoogleDrive-shankara.k.anand@gmail.com/"
+             "My Drive/Personal/projects/hemeonc")
+
+
+def host_path():
+    return str(ROOT) if str(ROOT).startswith("/Users/") else HOST_ROOT
+
 # The Encyclopedia "One Pagers" folder, as seen from the Mac and from a Cowork sandbox.
 SRC_CANDIDATES = [
     "/Users/shankaraanand/Library/CloudStorage/GoogleDrive-sanand94@stanford.edu/My Drive/"
@@ -274,7 +284,7 @@ def main():
         ahead = git("rev-list", "--count", "@{u}..HEAD", check=False).stdout.strip() or "1"
         say(f"→ committed but NOT pushed — no GitHub credentials in this environment.")
         say(f"   {ahead} commit(s) waiting. Run:")
-        say(f'   cd "{ROOT}" && git push')
+        say(f'   cd "{host_path()}" && git push')
 
 
 if __name__ == "__main__":
