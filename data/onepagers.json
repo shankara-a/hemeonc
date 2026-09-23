@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-22T22:16:42",
+ "generated": "2026-09-22T22:17:26",
  "onepagers": [
   {
    "disease": "aml",
    "file": "Acute Myeloid Leukemia.pdf",
    "title": "Acute myeloid leukemia",
    "pages": 3,
-   "size": 75797,
-   "sha1": "37bd2f39478e366812d5110530eb6c7d75abfeda",
+   "size": 75175,
+   "sha1": "b4a9daa274568a5e0cc2bc120972554fb11b4955",
    "updated": "2026-09-22"
   },
   {
