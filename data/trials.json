@@ -120,6 +120,39 @@
    "updated": "2026-09-20"
   },
   {
+   "id": "aml17-daunorubicin",
+   "name": "AML17 (daunorubicin dose)",
+   "disease": "aml",
+   "year": 2015,
+   "phase": "3",
+   "setting": "Newly diagnosed AML or high-risk MDS, first induction, mostly age <60",
+   "descriptor": "daunorubicin 90 vs 60 mg/m2 in induction - the comparison E1900 never made",
+   "population": "1,206 adults with untreated AML or high-risk MDS, most younger than 60, randomized within the UK NCRI AML17 trial",
+   "arms": "First induction course with daunorubicin 90 mg/m2 vs 60 mg/m2 on days 1, 3 and 5, each combined with cytarabine. All patients then received a second course containing daunorubicin 50 mg/m2 on days 1, 3 and 5",
+   "n": 1206,
+   "primary_endpoint": "Complete remission rate (with overall survival and 60-day mortality)",
+   "results": "No difference in CR: 73% (90 mg/m2) vs 75% (60 mg/m2); OR 1.07 (0.83-1.39), P=0.6 - and no subgroup showed benefit. 60-day mortality was HIGHER with 90 mg/m2: 10% vs 5%, HR 1.98 (1.30-3.02), P=0.001. No difference in 2-year OS: 59% vs 60%, HR 1.16 (0.95-1.43), P=0.15",
+   "toxicity": "The excess early death at 90 mg/m2 is the headline safety finding. An exploratory analysis showed a significant interaction by FLT3-ITD status, but no subgroup reached significant benefit",
+   "reference": "Burnett AK et al. Blood 2015;125:3878-3885",
+   "pmid": "25833957",
+   "nct": "ISRCTN55675535",
+   "highlights": [
+    "E1900 established daunorubicin 90 > 45 mg/m2, and 90 was widely adopted as standard - but 60 mg/m2 was what most centers actually used and had never been compared head to head",
+    "AML17 made that comparison and found no efficacy gain from 90 over 60, with double the 60-day mortality",
+    "Read the two trials together: the lesson is that 45 mg/m2 is too low, not that 90 is best. 60 mg/m2 is the modern standard dose in 7+3"
+   ],
+   "takeaway": "Daunorubicin 90 mg/m2 offers no remission or survival advantage over 60 mg/m2 and doubles 60-day mortality - 60 mg/m2 is the standard anthracycline dose in 7+3.",
+   "tags": [
+    "daunorubicin",
+    "7+3",
+    "induction",
+    "dose"
+   ],
+   "source": "onepager:aml",
+   "verified": true,
+   "updated": "2026-09-22"
+  },
+  {
    "id": "ratify",
    "name": "RATIFY (CALGB 10603)",
    "disease": "aml",
