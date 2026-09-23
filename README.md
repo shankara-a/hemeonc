@@ -74,6 +74,19 @@ Trial schema (required in bold):
 
 `python3 scripts/validate.py` checks everything; `python3 scripts/pubmed_lookup.py` fills missing PMIDs.
 
+## Search visibility
+
+`index.html` carries `<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">`,
+so the page is not indexed even though it is publicly reachable.
+
+**A `robots.txt` in this repo would do nothing** — crawlers only read it at the domain root, which is
+served by the `shankara-a.github.io` (al-folio) repo. The rules that block `/hemeonc/pdfs/` and
+`/hemeonc/data/` live in **that** repo's `robots.txt`. The page itself is deliberately left crawlable
+so the `noindex` above is actually seen and obeyed.
+
+Note that `github.com/shankara-a/hemeonc` (the repo page) is itself indexed and describes this site;
+none of the above affects that.
+
 ## Local preview
 
 ```bash
