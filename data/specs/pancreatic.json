@@ -1,0 +1,315 @@
+{
+ "disease": "pancreatic",
+ "spec_file": "pancreatic.py",
+ "pdf": "Pancreatic Cancer.pdf",
+ "title": "Pancreatic adenocarcinoma",
+ "subtitle": "&gt;90% of pancreatic cancers (PNET &lt;5%) &middot; median age 71 &middot; 60&ndash;70% arise in the head &middot; 5-yr relative survival &mdash; localized <b>44%</b>, regional <b>16%</b>, distant <b>3%</b>; <b>13%</b> all stages, <b>8%</b> for adenocarcinoma",
+ "source": "Stanford Oncology Handbook 2025, Pancreatic Cancer (Johnson T, Lee W) &middot; NCCN v2.2025 &middot; items marked &dagger; are outside the handbook chapter",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "29%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup &mdash; all patients",
+       "items": [
+        "<b>Pancreatic-protocol CT</b> chest/abdomen/pelvis &mdash; required for staging and resectability",
+        "<b>EUS with biopsy</b> if clinically indicated",
+        "MRI for indeterminate liver lesions or local extent",
+        "Labs: CBC, CMP, baseline <b>CA 19-9</b>",
+        "<b>Germline testing in ALL patients</b> regardless of family history &mdash; ~10% harbor a mutation",
+        "<b>Tumor genomic profiling</b> in all metastatic patients",
+        "Manage at a <b>high-volume center</b> with multidisciplinary input"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Presentation",
+       "items": [
+        "Early: <b>weight loss, nausea, bloating, abdominal pain</b>",
+        "&ldquo;Painless jaundice&rdquo; is common but <b>by no means universal</b>",
+        "&dagger; New-onset diabetes in an older adult; migratory thrombophlebitis",
+        "&dagger; <b>CA 19-9 pitfalls:</b> falsely elevated by biliary obstruction &mdash; recheck after decompression; <b>5&ndash;10% are Lewis-antigen negative</b> and never secrete it"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Staging &mdash; AJCC 8th",
+       "rows": [
+        [
+         "T1 / T2 / T3",
+         "&le;2 cm / &gt;2&ndash;4 cm / &gt;4 cm"
+        ],
+        [
+         "T4",
+         "<b>celiac axis, SMA, or common hepatic artery</b> &mdash; regardless of size"
+        ],
+        [
+         "N1 / N2",
+         "1&ndash;3 nodes / &ge;4 nodes"
+        ],
+        [
+         "Stage III / IV",
+         "T4 or N2 / M1"
+        ]
+       ],
+       "footnote": "<b>In practice resectability &mdash; not TNM &mdash; drives management:</b> resectable &middot; borderline &middot; unresectable localized &middot; metastatic. The call belongs to a hepatobiliary surgeon experienced with the Whipple."
+      },
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "rows": [
+        [
+         "PRODIGE-24",
+         "adjuvant mFOLFIRINOX &mdash; OS <b>54.4 vs 35.0 mo</b> (NEJM 2018)"
+        ],
+        [
+         "ESPAC-4",
+         "adjuvant gem + capecitabine (Lancet 2017)"
+        ],
+        [
+         "PRODIGE-4",
+         "FOLFIRINOX in metastatic disease (NEJM 2011)"
+        ],
+        [
+         "MPACT",
+         "gem + nab-paclitaxel (NEJM 2013)"
+        ],
+        [
+         "POLO",
+         "olaparib maintenance, germline BRCA (NEJM 2019)"
+        ],
+        [
+         "KEYNOTE-158",
+         "pembrolizumab in MSI-H (JCO 2020)"
+        ],
+        [
+         "<b>RASolute 302</b>",
+         "daraxonrasib, 2L metastatic &mdash; median OS <b>13.2 vs 6.6 mo</b> in RAS G12-mutant (NEJM 2026)"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Resectable or borderline",
+         "color": "teal",
+         "boxes": [
+          [
+           "Neoadjuvant chemotherapy",
+           [
+            "FOLFIRINOX strongly preferred",
+            "gem + nab-paclitaxel if PS limits",
+            "no RCT vs adjuvant &mdash; see note below"
+           ]
+          ],
+          [
+           "Surgery",
+           [
+            "resection at a high-volume center"
+           ]
+          ],
+          [
+           "Adjuvant chemotherapy",
+           [
+            "mFOLFIRINOX (PRODIGE-24) preferred",
+            "gem + capecitabine if moderate PS",
+            "start &le;12 wk; 6 months total perioperative"
+           ]
+          ],
+          [
+           "Surveillance",
+           [
+            "see surveillance panel at right"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Unresectable or metastatic",
+         "color": "purple",
+         "boxes": [
+          [
+           "First line by performance status",
+           [
+            "robust PS: FOLFIRINOX or NALIRIFOX",
+            "moderate PS: gem + nab-paclitaxel",
+            "poor PS: single agent gem, 5-FU, capecitabine"
+           ]
+          ],
+          [
+           "Maintenance",
+           [
+            "olaparib if germline BRCA1/2,",
+            "no progression after 16 wk platinum (POLO)"
+           ]
+          ],
+          [
+           "Second line",
+           [
+            "<b>RAS G12-mutant (~90%): daraxonrasib</b>",
+            "OS 13.2 vs 6.6 mo (RASolute 302)",
+            "otherwise switch backbone"
+           ]
+          ],
+          [
+           "Biomarker-directed therapy",
+           [
+            "see biomarker table at right"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "note",
+       "html": "<b>Neoadjuvant therapy has no RCT support.</b> No prospective trial shows it beats adjuvant therapy; use is extrapolated from PRODIGE-24 and justified because it identifies bad biology before a morbid operation and gives early systemic control.<br><br><b>Two comparisons never made head-to-head:</b> adjuvant mFOLFIRINOX vs gem/capecitabine, and first-line metastatic mFOLFIRINOX vs gem/nab-paclitaxel &mdash; <b>choose by performance status</b>."
+      }
+     ]
+    },
+    {
+     "width": "38%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimens &amp; dosing",
+       "headers": [
+        "Regimen",
+        "Dosing",
+        "Cycle"
+       ],
+       "widths": [
+        "27%",
+        "",
+        "15%"
+       ],
+       "rows": [
+        [
+         "FOLFIRINOX",
+         "oxaliplatin 85 &middot; irinotecan <b>150</b> &middot; 5-FU 1200/day CIV d1&ndash;2",
+         "q14d"
+        ],
+        [
+         "NALIRIFOX",
+         "5-FU 1200 d1&ndash;2 &middot; liposomal irinotecan 50 &middot; oxaliplatin 60",
+         "q14d"
+        ],
+        [
+         "Gem + nab-paclitaxel",
+         "gemcitabine 1000 + nab-paclitaxel 125, d1, 8, 15",
+         "q28d"
+        ],
+        [
+         "Gem + capecitabine",
+         "gemcitabine 1000 d1, 8, 15 + capecitabine 850 BID d1&ndash;21",
+         "q28d"
+        ],
+        [
+         "Gemcitabine",
+         "1000 mg/m&sup2; d1, 8, 15",
+         "q28d"
+        ],
+        [
+         "Capecitabine",
+         "1250 mg/m&sup2; PO BID d1&ndash;14",
+         "q21d"
+        ],
+        [
+         "5-FU",
+         "1200 mg/m&sup2;/day CIV d1&ndash;2",
+         "q14d"
+        ]
+       ],
+       "footnote": "All doses mg/m&sup2; unless stated. PRODIGE-24 used irinotecan 180 mg/m&sup2;, reduced to <b>150 mg/m&sup2;</b> &mdash; preplanned subgroup analysis showed <b>equal efficacy</b>."
+      },
+      {
+       "type": "table",
+       "heading": "Biomarker &rarr; therapy",
+       "headers": [
+        "Alteration",
+        "Therapy"
+       ],
+       "widths": [
+        "31%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>RAS G12 mutation</b> (~90% of PDAC)",
+         "<b>Daraxonrasib</b> &mdash; oral multi-selective RAS(ON) inhibitor; metastatic disease after &ge;1 prior line, or not a candidate for multiagent therapy"
+        ],
+        [
+         "Germline BRCA1/2",
+         "<b>Olaparib</b> 300 mg PO BID &mdash; maintenance after &ge;16 wk platinum (POLO)"
+        ],
+        [
+         "MSI-H / dMMR / TMB &gt;10",
+         "<b>Pembrolizumab</b> 200 mg q3wk or 400 mg q6wk"
+        ],
+        [
+         "NRG1 fusion",
+         "<b>Zenocutuzumab</b> (Bizengri) 750 mg IV q2wk"
+        ],
+        [
+         "BRAF V600E",
+         "<b>Dabrafenib</b> 150 mg BID + <b>trametinib</b> 2 mg daily"
+        ],
+        [
+         "NTRK fusion",
+         "Entrectinib 600 daily &middot; larotrectinib 100 BID &middot; repotrectinib 160"
+        ],
+        [
+         "RET fusion",
+         "<b>Selpercatinib</b> 120 mg BID (&lt;50 kg) or 160 mg BID (&ge;50 kg)"
+        ]
+       ],
+       "footnote": "Actionable alterations were historically rare &mdash; <b>daraxonrasib changes that</b>, since ~90% of PDAC is KRAS-mutant. Still profile every metastatic patient for the remainder."
+      },
+      {
+       "type": "bullets",
+       "heading": "Surveillance after resection",
+       "items": [
+        "H&amp;P <b>q3&ndash;6 months &times; 2 years</b>, then q6&ndash;12 months",
+        "CT chest/abdomen/pelvis with contrast q3&ndash;6 months &times; 2 years, then q6&ndash;12 months",
+        "<b>CA 19-9</b> q3&ndash;6 months &times; 2 years",
+        "<b>Signatera</b> or equivalent ctDNA q3&ndash;6 months if indicated"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Supportive care",
+       "items": [
+        "Nutrition referral &middot; palliative care for all metastatic patients &middot; hospice as appropriate",
+        "&dagger; <b>Pancreatic enzyme replacement (PERT)</b> &mdash; chronically underprescribed; exocrine insufficiency drives weight loss and treatment intolerance",
+        "&dagger; <b>VTE prophylaxis</b> &mdash; among the highest-risk malignancies for thrombosis",
+        "&dagger; Biliary stenting for obstruction &middot; celiac plexus neurolysis for refractory pain"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Workup &mdash; all patients",
+  "Presentation",
+  "Staging &mdash; AJCC 8th",
+  "Key trials",
+  "Treatment pathway",
+  "Regimens &amp; dosing",
+  "Biomarker &rarr; therapy",
+  "Surveillance after resection",
+  "Supportive care"
+ ],
+ "text": "Pancreatic adenocarcinoma >90% of pancreatic cancers (PNET <5%) · median age 71 · 60–70% arise in the head · 5-yr relative survival — localized 44% , regional 16% , distant 3% ; 13% all stages, 8% for adenocarcinoma Stanford Oncology Handbook 2025, Pancreatic Cancer (Johnson T, Lee W) · NCCN v2.2025 · items marked † are outside the handbook chapter Workup — all patients Pancreatic-protocol CT chest/abdomen/pelvis — required for staging and resectability EUS with biopsy if clinically indicated MRI for indeterminate liver lesions or local extent Labs: CBC, CMP, baseline CA 19-9 Germline testing in ALL patients regardless of family history — ~10% harbor a mutation Tumor genomic profiling in all metastatic patients Manage at a high-volume center with multidisciplinary input Presentation Early: weight loss, nausea, bloating, abdominal pain “Painless jaundice” is common but by no means universal † New-onset diabetes in an older adult; migratory thrombophlebitis † CA 19-9 pitfalls: falsely elevated by biliary obstruction — recheck after decompression; 5–10% are Lewis-antigen negative and never secrete it Staging — AJCC 8th T1 / T2 / T3 ≤2 cm / >2–4 cm / >4 cm T4 celiac axis, SMA, or common hepatic artery — regardless of size N1 / N2 1–3 nodes / ≥4 nodes Stage III / IV T4 or N2 / M1 In practice resectability — not TNM — drives management: resectable · borderline · unresectable localized · metastatic. The call belongs to a hepatobiliary surgeon experienced with the Whipple. Key trials PRODIGE-24 adjuvant mFOLFIRINOX — OS 54.4 vs 35.0 mo (NEJM 2018) ESPAC-4 adjuvant gem + capecitabine (Lancet 2017) PRODIGE-4 FOLFIRINOX in metastatic disease (NEJM 2011) MPACT gem + nab-paclitaxel (NEJM 2013) POLO olaparib maintenance, germline BRCA (NEJM 2019) KEYNOTE-158 pembrolizumab in MSI-H (JCO 2020) RASolute 302 daraxonrasib, 2L metastatic — median OS 13.2 vs 6.6 mo in RAS G12-mutant (NEJM 2026) Treatment pathway Resectable or borderline Neoadjuvant chemotherapy FOLFIRINOX strongly preferred gem + nab-paclitaxel if PS limits no RCT vs adjuvant — see note below Surgery resection at a high-volume center Adjuvant chemotherapy mFOLFIRINOX (PRODIGE-24) preferred gem + capecitabine if moderate PS start ≤12 wk; 6 months total perioperative Surveillance see surveillance panel at right Unresectable or metastatic First line by performance status robust PS: FOLFIRINOX or NALIRIFOX moderate PS: gem + nab-paclitaxel poor PS: single agent gem, 5-FU, capecitabine Maintenance olaparib if germline BRCA1/2, no progression after 16 wk platinum (POLO) Second line RAS G12-mutant (~90%): daraxonrasib OS 13.2 vs 6.6 mo (RASolute 302) otherwise switch backbone Biomarker-directed therapy see biomarker table at right Neoadjuvant therapy has no RCT support. No prospective trial shows it beats adjuvant therapy; use is extrapolated from PRODIGE-24 and justified because it identifies bad biology before a morbid operation and gives early systemic control. Two comparisons never made head-to-head: adjuvant mFOLFIRINOX vs gem/capecitabine, and first-line metastatic mFOLFIRINOX vs gem/nab-paclitaxel — choose by performance status . Regimens & dosing Regimen Dosing Cycle FOLFIRINOX oxaliplatin 85 · irinotecan 150 · 5-FU 1200/day CIV d1–2 q14d NALIRIFOX 5-FU 1200 d1–2 · liposomal irinotecan 50 · oxaliplatin 60 q14d Gem + nab-paclitaxel gemcitabine 1000 + nab-paclitaxel 125, d1, 8, 15 q28d Gem + capecitabine gemcitabine 1000 d1, 8, 15 + capecitabine 850 BID d1–21 q28d Gemcitabine 1000 mg/m² d1, 8, 15 q28d Capecitabine 1250 mg/m² PO BID d1–14 q21d 5-FU 1200 mg/m²/day CIV d1–2 q14d All doses mg/m² unless stated. PRODIGE-24 used irinotecan 180 mg/m², reduced to 150 mg/m² — preplanned subgroup analysis showed equal efficacy . Biomarker → therapy Alteration Therapy RAS G12 mutation (~90% of PDAC) Daraxonrasib — oral multi-selective RAS(ON) inhibitor; metastatic disease after ≥1 prior line, or not a candidate for multiagent therapy Germline BRCA1/2 Olaparib 300 mg PO BID — maintenance after ≥16 wk platinum (POLO) MSI-H / dMMR / TMB >10 Pembrolizumab 200 mg q3wk or 400 mg q6wk NRG1 fusion Zenocutuzumab (Bizengri) 750 mg IV q2wk BRAF V600E Dabrafenib 150 mg BID + trametinib 2 mg daily NTRK fusion Entrectinib 600 daily · larotrectinib 100 BID · repotrectinib 160 RET fusion Selpercatinib 120 mg BID (<50 kg) or 160 mg BID (≥50 kg) Actionable alterations were historically rare — daraxonrasib changes that , since ~90% of PDAC is KRAS-mutant. Still profile every metastatic patient for the remainder. Surveillance after resection H&P q3–6 months × 2 years , then q6–12 months CT chest/abdomen/pelvis with contrast q3–6 months × 2 years, then q6–12 months CA 19-9 q3–6 months × 2 years Signatera or equivalent ctDNA q3–6 months if indicated Supportive care Nutrition referral · palliative care for all metastatic patients · hospice as appropriate † Pancreatic enzyme replacement (PERT) — chronically underprescribed; exocrine insufficiency drives weight loss and treatment intolerance † VTE prophylaxis — among the highest-risk malignancies for thrombosis † Biliary stenting for obstruction · celiac plexus neurolysis for refractory pain"
+}

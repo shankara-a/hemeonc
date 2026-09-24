@@ -1,10 +1,16 @@
-/* Reviews tab: disease switcher in the top bar, full-width one-pager, trial list + summary on the right. */
+/* Reviews tab: disease tree on the left, one-pager in the middle (Card = PDF, Notes = HTML),
+   trials or the section TOC on the right. Searching filters the tree by content, not just name. */
 (function () {
   const HH = (window.HH = window.HH || {});
   let viewer = null;
   let currentSlug = null;
+  let view = "card";              // "card" | "notes"
   let sortMode = "new";
-  try { sortMode = localStorage.getItem("hh.trialsort") || "new"; } catch (_) { /* private mode */ }
+  let query = "";
+  try {
+    sortMode = localStorage.getItem("hh.trialsort") || "new";
+    view = localStorage.getItem("hh.rvview") || "card";
+  } catch (_) { /* private mode */ }
 
   const SORTS = {
     new: (a, b) => b.year - a.year || a.name.localeCompare(b.name),
@@ -12,151 +18,167 @@
     az: (a, b) => a.name.localeCompare(b.name),
   };
   const trialsFor = (slug) => HH.data.trials.filter((t) => t.disease === slug).sort(SORTS[sortMode] || SORTS.new);
-  const counts = () => {
-    const c = {};
-    HH.data.trials.forEach((t) => { c[t.disease] = (c[t.disease] || 0) + 1; });
-    return c;
-  };
   const pdfBy = () => Object.fromEntries(HH.data.onepagers.map((o) => [o.disease, o]));
   const pill = (t) => `<button class="trial-pill trial-row" data-id="${HH.esc(t.id)}"><span class="tp-n">${HH.esc(t.name)}</span><span class="tp-y">${t.year}</span></button>`;
 
-  /* ---------------- switcher + palette ---------------- */
-  const $sw = () => document.getElementById("dz-switch");
-  const $pal = () => document.getElementById("dz-palette");
-  const $q = () => document.getElementById("dz-q");
-  const $res = () => document.getElementById("dz-results");
-  let cursor = 0, matches = [];
+  /* ---------------- tree ---------------- */
+  const docFor = (slug) => HH.data.searchDocs?.[slug];
 
-  const rowsFor = (q) => {
-    const { groups, diseases } = HH.data;
-    const c = counts(), op = pdfBy();
+  /** Diseases matching the query, with why they matched. */
+  const matching = (q) => {
     const terms = q.trim().toLowerCase().split(/\s+/).filter(Boolean);
-    const hit = (d) => !terms.length || terms.every((w) =>
-      [d.name, d.short, ...(d.aliases || [])].join(" ").toLowerCase().includes(w));
-    const order = [...groups.map((g) => g.id), "unassigned"];
-    const out = [];
-    order.forEach((gid) => {
-      const list = diseases.filter((d) => (d.group || "unassigned") === gid && hit(d))
-        .sort((a, b) => (op[b.slug] ? 1 : 0) - (op[a.slug] ? 1 : 0) || a.name.localeCompare(b.name));
-      if (!list.length) return;
-      out.push({ group: (groups.find((x) => x.id === gid) || { name: "Other" }).name });
-      list.forEach((d) => out.push({ d, n: c[d.slug] || 0, pdf: !!op[d.slug] }));
+    const out = {};
+    HH.data.diseases.forEach((d) => {
+      if (!terms.length) { out[d.slug] = { hits: 0 }; return; }
+      const name = [d.name, d.short, ...(d.aliases || [])].join(" ").toLowerCase();
+      const doc = docFor(d.slug);
+      const body = (doc?.text || "").toLowerCase();
+      const trials = HH.data.trials.filter((t) => t.disease === d.slug)
+        .map((t) => `${t.name} ${t.takeaway} ${(t.tags || []).join(" ")}`).join(" ").toLowerCase();
+      if (!terms.every((w) => name.includes(w) || body.includes(w) || trials.includes(w))) return;
+      const inBody = terms.some((w) => body.includes(w));
+      out[d.slug] = {
+        hits: terms.reduce((n, w) => n + (body.split(w).length - 1), 0),
+        where: terms.every((w) => name.includes(w)) ? "name" : inBody ? "content" : "trials",
+        sections: inBody ? (doc?.headings || []).filter((h) => terms.some((w) => h.toLowerCase().includes(w))) : [],
+      };
     });
     return out;
   };
 
-  const drawPalette = () => {
-    const rows = rowsFor($q().value);
-    matches = rows.filter((r) => r.d);
-    if (cursor >= matches.length) cursor = Math.max(0, matches.length - 1);
-    if (!matches.length) { $res().innerHTML = `<div class="palette-empty">No disease matches.</div>`; return; }
-    let i = -1;
-    $res().innerHTML = rows.map((r) => {
-      if (r.group) return `<div class="palette-group">${HH.esc(r.group)}</div>`;
-      i++;
-      return `<button class="palette-item ${i === cursor ? "cursor" : ""}" role="option" data-slug="${r.d.slug}" aria-selected="${r.d.slug === currentSlug}">
-        <span class="pi-name">${HH.esc(r.d.name)}</span>
-        <span class="pi-meta">${r.pdf ? "📄 " : ""}${r.n ? `${r.n} trials` : "no trials"}</span>
-      </button>`;
+  HH.renderTree = function () {
+    const host = document.getElementById("dz-tree");
+    const { groups, diseases, trials } = HH.data;
+    const op = pdfBy();
+    const hits = matching(query);
+    const count = {};
+    trials.forEach((t) => { count[t.disease] = (count[t.disease] || 0) + 1; });
+
+    const order = [...groups.map((g) => g.id), "unassigned"];
+    let any = false;
+    host.innerHTML = order.map((gid) => {
+      const list = diseases.filter((d) => (d.group || "unassigned") === gid && hits[d.slug])
+        .sort((a, b) => (op[b.slug] ? 1 : 0) - (op[a.slug] ? 1 : 0) || a.name.localeCompare(b.name));
+      if (!list.length) return "";
+      any = true;
+      const g = groups.find((x) => x.id === gid) || { name: "Other" };
+      return `<div class="tree-group">
+        <div class="tree-group-head"><span>${HH.esc(g.name)}</span><span class="tree-n">${list.length}</span></div>
+        ${list.map((d) => {
+          const h = hits[d.slug];
+          const why = query && h.where === "content" ? `<span class="tree-why">${h.hits} in text</span>`
+                    : query && h.where === "trials" ? `<span class="tree-why">in trials</span>` : "";
+          return `<button class="tree-item ${d.slug === currentSlug ? "active" : ""} ${op[d.slug] ? "" : "nopdf"}"
+              data-slug="${d.slug}" title="${HH.esc(d.name)}">
+            <span class="ti-name">${HH.esc(d.short || d.name)}</span>
+            ${why || `<span class="ti-n">${count[d.slug] || 0}</span>`}
+          </button>`;
+        }).join("")}
+      </div>`;
     }).join("");
-    $res().querySelector(".cursor")?.scrollIntoView({ block: "nearest" });
+    if (!any) host.innerHTML = `<div class="empty small">Nothing matches “${HH.esc(query)}”.</div>`;
   };
 
-  const openPalette = () => {
-    $pal().hidden = false;
-    $sw().setAttribute("aria-expanded", "true");
-    $q().value = "";
-    cursor = 0;
-    drawPalette();
-    const at = matches.findIndex((m) => m.d.slug === currentSlug);
-    if (at > 0) { cursor = at; drawPalette(); }
-    $q().focus();
-  };
-  const closePalette = () => {
-    $pal().hidden = true;
-    $sw().setAttribute("aria-expanded", "false");
-  };
-  const choose = (slug) => { closePalette(); location.hash = `#reviews/${slug}`; };
-
-  HH.initSwitcher = function () {
-    $sw().addEventListener("click", () => ($pal().hidden ? openPalette() : closePalette()));
-    $q().addEventListener("input", () => { cursor = 0; drawPalette(); });
-    $q().addEventListener("keydown", (e) => {
-      if (e.key === "ArrowDown") { cursor = Math.min(cursor + 1, matches.length - 1); drawPalette(); e.preventDefault(); }
-      else if (e.key === "ArrowUp") { cursor = Math.max(cursor - 1, 0); drawPalette(); e.preventDefault(); }
-      else if (e.key === "Enter") { if (matches[cursor]) choose(matches[cursor].d.slug); e.preventDefault(); }
-      else if (e.key === "Escape") closePalette();
+  HH.initTree = function () {
+    document.getElementById("dz-tree").addEventListener("click", (e) => {
+      const b = e.target.closest(".tree-item");
+      if (b) location.hash = `#reviews/${b.dataset.slug}`;
     });
-    $res().addEventListener("click", (e) => {
-      const b = e.target.closest(".palette-item");
-      if (b) choose(b.dataset.slug);
+    const box = document.getElementById("rv-q");
+    box.addEventListener("input", () => {
+      query = box.value;
+      HH.renderTree();
+      document.getElementById("rv-clear").hidden = !query;
     });
-    $pal().addEventListener("click", (e) => { if (e.target === $pal()) closePalette(); });
-
-    window.addEventListener("keydown", (e) => {
-      const typing = e.target.matches("input, select, textarea");
-      if ((e.key === "k" && (e.metaKey || e.ctrlKey)) || (e.key === "/" && !typing)) {
-        if (!document.getElementById("reviews").classList.contains("active")) return;
-        e.preventDefault();
-        $pal().hidden ? openPalette() : closePalette();
-      }
+    document.getElementById("rv-clear").addEventListener("click", () => {
+      box.value = ""; query = ""; HH.renderTree();
+      document.getElementById("rv-clear").hidden = true;
+      box.focus();
     });
-  };
-
-  HH.setSwitcherLabel = (d, op, n) => {
-    const sw = $sw();
-    sw.querySelector(".dz-switch-name").textContent = d ? (d.short || d.name) : "Pick a disease";
-    sw.querySelector(".dz-switch-meta").textContent = d ? `${op ? "📄 " : ""}${n} trial${n === 1 ? "" : "s"}` : "";
   };
 
   /* ---------------- the page ---------------- */
-  HH.showDisease = function (slug) {
+  const setView = (v) => {
+    view = v;
+    try { localStorage.setItem("hh.rvview", v); } catch (_) { /* ignore */ }
+    if (currentSlug) HH.showDisease(currentSlug, { keepScroll: true });
+  };
+
+  HH.showDisease = async function (slug, { keepScroll = false } = {}) {
     const main = document.getElementById("rv-main");
     const d = HH.disease(slug);
-    if (!d) { main.innerHTML = `<div class="empty">Pick a disease from the switcher above (or press <kbd>/</kbd>).</div>`; return; }
+    if (!d) { main.innerHTML = `<div class="empty">Pick a disease on the left.</div>`; return; }
     if (viewer) { viewer.destroy(); viewer = null; }
     currentSlug = slug;
+    HH.renderTree();
 
     const op = HH.data.onepagers.find((o) => o.disease === slug);
     const trials = trialsFor(slug);
     const pdfUrl = op ? `pdfs/${encodeURIComponent(op.file)}` : null;
-    HH.setSwitcherLabel(d, op, trials.length);
+    const spec = op ? await HH.loadSpec(slug) : null;
+    if (currentSlug !== slug) return;                   // a later click won the race
+    const canNotes = !!spec;
+    const showNotes = canNotes && view === "notes";
 
     const sortBtns = [["new", "Newest"], ["old", "Oldest"], ["az", "A–Z"]]
       .map(([k, l]) => `<button class="seg ${sortMode === k ? "active" : ""}" data-sort="${k}">${l}</button>`).join("");
 
     main.innerHTML = `
-      <div class="rv-body ${op ? "" : "no-pdf"}">
-        ${op ? `<div class="rv-pdf card" id="rv-pdf"></div>`
-             : `<div class="card nopdf-note"><b>${HH.esc(d.name)}</b> — no one-pager yet. Run the <code>cancer-one-pager</code> skill; the PDF lands here automatically on the next sync.</div>`}
-        <aside class="rv-side" aria-label="Key trials">
-          <div class="rv-side-head">
-            <span class="rv-side-title">Key trials <span class="result-count">${trials.length}</span> · <a href="#trials/${slug}">all →</a></span>
-            <div class="segmented tiny rv-sort" role="group" aria-label="Sort trials">${sortBtns}</div>
-          </div>
-          <div class="rv-strip">${trials.map(pill).join("") || `<div class="empty small">None filed yet</div>`}</div>
+      <div class="rv-bar">
+        <div class="segmented rv-view" role="group" aria-label="View">
+          <button class="seg ${showNotes ? "" : "active"}" data-view="card">Card</button>
+          <button class="seg ${showNotes ? "active" : ""}" data-view="notes" ${canNotes ? "" : "disabled title='No text version for this one-pager yet'"}>Notes</button>
+        </div>
+        <span class="rv-meta">${op ? `${op.pages} page${op.pages === 1 ? "" : "s"} · updated ${HH.fmtDate(op.updated)}` : "No one-pager yet"}</span>
+        <span class="spacer"></span>
+        ${op ? `<a class="btn small" href="${pdfUrl}" target="_blank" rel="noopener">Open PDF ↗</a><a class="btn small" href="${pdfUrl}" download>Download</a>` : ""}
+      </div>
+      <div class="rv-body">
+        <div class="rv-doc">${op ? (showNotes ? `<div class="card nt-card" id="rv-notes"></div>` : `<div class="rv-pdf card" id="rv-pdf"></div>`)
+          : `<div class="card nopdf-note"><b>${HH.esc(d.name)}</b> — no one-pager yet. Run the <code>cancer-one-pager</code> skill; it lands here on the next sync.</div>`}</div>
+        <aside class="rv-rail" aria-label="${showNotes ? "Sections" : "Key trials"}">
+          ${showNotes ? `<div class="rail-head"><span class="rail-title">In this note</span></div><nav class="nt-toc" id="nt-toc"></nav>
+             <div class="rail-head trials-head"><span class="rail-title">Key trials <span class="result-count">${trials.length}</span></span></div>
+             <div class="rv-strip">${trials.map(pill).join("") || `<div class="empty small">None filed</div>`}</div>`
+            : `<div class="rail-head">
+                 <span class="rail-title">Key trials <span class="result-count">${trials.length}</span></span>
+                 <a class="rail-all" href="#trials/${slug}">all →</a>
+               </div>
+               <div class="segmented tiny rv-sort" role="group" aria-label="Sort trials">${sortBtns}</div>
+               <div class="rv-strip">${trials.map(pill).join("") || `<div class="empty small">None filed yet</div>`}</div>`}
         </aside>
-        <aside class="rv-detail card" aria-live="polite"><div class="empty small">Hover a trial for its takeaway · click to pin</div></aside>
       </div>`;
 
-    main.querySelector(".rv-sort").addEventListener("click", (e) => {
+    main.querySelector(".rv-view").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-view]");
+      if (b && !b.disabled && b.dataset.view !== view) setView(b.dataset.view);
+    });
+    main.querySelector(".rv-sort")?.addEventListener("click", (e) => {
       const b = e.target.closest("[data-sort]");
       if (!b || b.dataset.sort === sortMode) return;
       sortMode = b.dataset.sort;
       try { localStorage.setItem("hh.trialsort", sortMode); } catch (_) { /* ignore */ }
-      const strip = main.querySelector(".rv-strip");
-      strip.innerHTML = trialsFor(slug).map(pill).join("");
-      const pinnedId = main.querySelector(".rv-detail").dataset.pinned;
-      if (pinnedId) strip.querySelector(`[data-id="${CSS.escape(pinnedId)}"]`)?.classList.add("selected");
+      main.querySelector(".rv-strip").innerHTML = trialsFor(slug).map(pill).join("");
       main.querySelectorAll(".rv-sort .seg").forEach((x) => x.classList.toggle("active", x.dataset.sort === sortMode));
     });
 
-    if (op) {
+    if (showNotes) {
+      const toc = HH.renderNotes(document.getElementById("rv-notes"), spec);
+      document.getElementById("nt-toc").innerHTML =
+        toc.map((t) => `<a href="#nt-${t.id}" data-nt="${t.id}">${HH.esc(t.text)}</a>`).join("");
+      document.getElementById("nt-toc").addEventListener("click", (e) => {
+        const a = e.target.closest("[data-nt]");
+        if (!a) return;
+        e.preventDefault();
+        document.getElementById(`nt-${a.dataset.nt}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    } else if (op) {
       viewer = HH.mountPdf(document.getElementById("rv-pdf"), pdfUrl, {
         title: d.name,
-        meta: `${op.pages} page${op.pages === 1 ? "" : "s"} · updated ${HH.fmtDate(op.updated)}`,
+        meta: `${op.pages} page${op.pages === 1 ? "" : "s"}`,
       });
     }
+    if (!keepScroll) window.scrollTo({ top: 0 });
   };
 
   HH.currentDisease = () => currentSlug;

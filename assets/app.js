@@ -3,6 +3,14 @@
   const HH = (window.HH = window.HH || {});
   const $ = (id) => document.getElementById(id);
 
+  const focusSearch = () => {
+    const box = $("rv-q");
+    if (!box) return;
+    if (!document.getElementById("reviews").classList.contains("active")) location.hash = "#reviews";
+    box.focus();
+    box.select();
+  };
+
   const showTab = (name) => {
     document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b.dataset.tab === name));
     document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("active", p.id === name));
@@ -64,10 +72,19 @@
     HH.data.trials = tr.trials;
     HH.data.trialById = Object.fromEntries(tr.trials.map((t) => [t.id, t]));
     HH.data.onepagers = op.onepagers;
+    try {
+      const sr = await fetch("data/search.json?v=" + Date.now().toString(36).slice(0, 6)).then((r) => (r.ok ? r.json() : null));
+      HH.data.searchDocs = Object.fromEntries((sr?.docs || []).map((d) => [d.disease, d]));
+    } catch (_) { HH.data.searchDocs = {}; }          // search still works on names/trials
   };
 
   document.addEventListener("DOMContentLoaded", async () => {
     document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => { location.hash = "#" + b.dataset.tab; }));
+    $("dz-switch").addEventListener("click", focusSearch);
+    window.addEventListener("keydown", (e) => {
+      const typing = e.target.matches("input, select, textarea");
+      if ((e.key === "k" && (e.metaKey || e.ctrlKey)) || (e.key === "/" && !typing)) { e.preventDefault(); focusSearch(); }
+    });
     try {
       await load();
     } catch (err) {
@@ -75,7 +92,7 @@
       return;
     }
     renderHome();
-    HH.initSwitcher();
+    HH.initTree();
     HH.initTrials();
     window.addEventListener("hashchange", route);
     route();

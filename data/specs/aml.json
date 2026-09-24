@@ -1,0 +1,697 @@
+{
+ "disease": "aml",
+ "spec_file": "aml.py",
+ "pdf": "Acute Myeloid Leukemia.pdf",
+ "title": "Acute myeloid leukemia",
+ "subtitle": "<b>&ge;20% myeloid blasts &mdash; or any blast % with a defining genetic lesion</b> &middot; classification and treatment are now genetically driven &middot; every new diagnosis is triaged for the three emergencies before a regimen is chosen",
+ "source": "Compiled from the Encyclopedia AML review note and Fellowship Anki deck &middot; ELN 2022 &middot; WHO 2022 / ICC &middot; NCCN.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "28%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Diagnosis",
+       "items": [
+        "<b>&ge;20% myeloid blasts</b> &mdash; <b>or any blast % with a defining fusion</b>: t(8;21), inv(16)/t(16;16), PML::RARA. WHO 2022 also drops it for NPM1 but <b>keeps &ge;20% for CEBPA-bZIP</b>; <b>ICC sets &ge;10% for both</b>",
+        "Also AML at &lt;20%: <b>myeloid sarcoma</b> / extramedullary disease",
+        "&ldquo;Blasts&rdquo; on smear is morphologic &mdash; <b>confirm lineage by flow</b>",
+        "Workup: marrow aspirate + biopsy with <b>flow, karyotype + FISH, NGS</b>; CBC/smear (Auer rods); <b>coags + fibrinogen + D-dimer</b>; TLS labs; <b>baseline echo</b>; HLA typing early; LP only for CNS symptoms (consider if monocytic), after coags corrected",
+        "<b>Stat FISH/PCR for PML::RARA</b> on any suspicion of APL",
+        "Median age ~68. The three triage questions on every new AML: <b>Is it APL? Is there leukostasis? Is there tumor lysis?</b>"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "ELN 2022 genetic risk",
+       "headers": [
+        "Risk",
+        "Representative genetics"
+       ],
+       "widths": [
+        "20%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Favorable</b>",
+         "t(8;21) RUNX1::RUNX1T1 &middot; inv(16)/t(16;16) CBFB::MYH11 (<b>core-binding factor</b>) &middot; <b>mutated NPM1 without FLT3-ITD</b> &middot; in-frame bZIP CEBPA"
+        ],
+        [
+         "<b>Intermediate</b>",
+         "NPM1 + FLT3-ITD &middot; wild-type NPM1 + FLT3-ITD &middot; t(9;11) MLLT3::KMT2A &middot; anything not otherwise classified"
+        ],
+        [
+         "<b>Adverse</b>",
+         "Complex or monosomal karyotype &middot; &minus;5/del(5q), &minus;7, abn(17p) &middot; <b>TP53</b> &middot; MDS-related genes (ASXL1, BCOR, EZH2, RUNX1, SF3B1, SRSF2, STAG2, U2AF1, ZRSR2) &middot; KMT2A rearrangements <b>except t(9;11) and KMT2A-PTD</b> &middot; <b>t(6;9), inv(3)</b>"
+        ]
+       ],
+       "footnote": "<b>ELN 2022 changes worth knowing:</b> FLT3-ITD is intermediate <b>regardless of allelic ratio</b> (ratio dropped) &middot; only <b>in-frame bZIP</b> CEBPA is favorable &middot; <b>NPM1 with adverse cytogenetics is reclassified adverse</b>  &middot; <b>KIT co-mutation worsens CBF-AML prognostically, but ELN 2022 kept it favorable</b>."
+      },
+      {
+       "type": "table",
+       "heading": "Genotype &rarr; phenotype",
+       "rows": [
+        [
+         "<b>FLT3-ITD</b>",
+         "Hyperleukocytosis; normal karyotype. <b>&uarr; CNS risk</b>, most when <b>NPM1 co-mutated</b>"
+        ],
+        [
+         "<b>KMT2A / 11q23</b>",
+         "Monocytic &mdash; gum hypertrophy, leukemia cutis. <b>Highest multivariable odds for CNS disease</b> (OR ~7.6)"
+        ],
+        [
+         "<b>t(8;21)</b>",
+         "<b>Myeloid sarcoma</b>; aberrant <b>CD19 / CD56</b> by flow"
+        ],
+        [
+         "<b>inv(16)</b>",
+         "<b>Abnormal marrow eosinophils</b> with coarse basophilic granules (FAB M4Eo)"
+        ],
+        [
+         "<b>TP53</b>",
+         "Complex karyotype, t-AML; <b>venetoclax-resistant</b>, poor outcome even after allo"
+        ],
+        [
+         "<b>DTA</b>",
+         "<b>DNMT3A, TET2, ASXL1 persist in CR</b> as clonal hematopoiesis &mdash; <b>not MRD markers</b>"
+        ]
+       ],
+       "footnote": "CNS disease is uncommon &mdash; <b>~0.6% at diagnosis, ~3% at relapse</b>. Risk factors differ by series: SAL (n=3,261) found <b>FLT3-ITD &plusmn; NPM1</b>; another found <b>11q23 (OR 7.6)</b> and <b>WBC &ge;100k</b> on multivariable analysis."
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "First: exclude APL, then assess fitness",
+         "color": "amber",
+         "boxes": [
+          [
+           "Before committing to a regimen",
+           [
+            "<b>APL must be excluded</b> &mdash; ATRA cannot wait",
+            "7+3 may start while NGS pends, but <b>FLT3",
+            "status changes induction</b> &mdash; hold a day or two",
+            "if stable; instability forces faster action"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Fit for intensive therapy",
+         "color": "teal",
+         "boxes": [
+          [
+           "Induction &mdash; 7+3",
+           [
+            "cytarabine &times;7 days + anthracycline &times;3",
+            "<b>FLT3-mutated: add midostaurin</b> (RATIFY)",
+            "<b>CD33 / CBF: add gemtuzumab</b> (ALFA-0701)",
+            "secondary or t-AML: consider CPX-351"
+           ]
+          ],
+          [
+           "<b>PARADIGM (2026)</b>",
+           [
+            "<b>adverse risk and not FLT3-mutated</b>: aza+ven",
+            "<b>EFS 14.5 vs 6.2 mo</b>, HR 0.57. Less infection and",
+            "bleeding, and more patients reached allo",
+            "<b>phase 2, EFS endpoint &mdash; OS not significantly different</b>"
+           ]
+          ],
+          [
+           "Assess response",
+           [
+            "<b>day-14 marrow</b>; residual disease &rarr; re-induce",
+            "goal is CR: blasts &lt;5% with count recovery"
+           ]
+          ],
+          [
+           "Consolidation by ELN risk",
+           [
+            "<b>favorable</b> &rarr; HiDAC &times;3&ndash;4 cycles, no allo",
+            "<b>intermediate / adverse</b> &rarr; <b>allo-HSCT in CR1</b>",
+            "MRD-positive CR pushes toward transplant"
+           ]
+          ],
+          [
+           "If not going to transplant",
+           [
+            "<b>oral azacitidine (CC-486) maintenance</b>",
+            "QUAZAR: OS 24.7 vs 14.8 months"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Unfit for intensive therapy",
+         "color": "blue",
+         "boxes": [
+          [
+           "Venetoclax + azacitidine",
+           [
+            "<b>VIALE-A</b>: OS <b>14.7 vs 9.6 months</b> vs aza alone",
+            "<b>watch TLS on ramp-up</b>; reduce dose with azoles",
+            "IDH1-mutant alternative: ivosidenib + aza (AGILE)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Relapsed / refractory",
+         "color": "coral",
+         "boxes": [
+          [
+           "Target first, then salvage",
+           [
+            "<b>FLT3</b> &rarr; gilteritinib (ADMIRAL)",
+            "<b>IDH1/2</b> &rarr; ivosidenib / enasidenib",
+            "<b>KMT2A-r or NPM1</b> &rarr; menin inhibitor",
+            "salvage chemo: FLAG-IDA, MEC, CLAG-M"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "38%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimens &amp; agents",
+       "headers": [
+        "Regimen",
+        "Notes"
+       ],
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>7+3</b>",
+         "Cytarabine infusion &times;7 days + an anthracycline &times;3 &mdash; the backbone for fit patients. <b>Daunorubicin 60 mg/m&sup2; is the modern standard:</b> E1900 showed <b>90 &gt; 45</b>, but <b>AML17 found 90 vs 60 gave no CR or OS benefit and doubled 60-day mortality</b>"
+        ],
+        [
+         "+ midostaurin",
+         "FLT3-mutated (RATIFY). Quizartinib for FLT3-ITD (QuANTUM-First)"
+        ],
+        [
+         "+ gemtuzumab",
+         "Fractionated dosing (ALFA-0701 &mdash; no CD33 cutoff). <b>CBF benefit comes from the Hills meta-analysis</b>, not ALFA-0701"
+        ],
+        [
+         "<b>CPX-351</b>",
+         "Liposomal cytarabine + daunorubicin for t-AML / AML-MRC. <b>Caveat:</b> comparator was 7+3, not ven/aza &mdash; niche today is the fitter older adult bridging to allo"
+        ],
+        [
+         "<b>HiDAC</b>",
+         "3 g/m&sup2; q12h <b>on days 1, 3, 5</b> &times;3&ndash;4 cycles; best in CBF. <b>Age &gt;60 &rarr; IDAC 1.5 g/m&sup2;</b> &mdash; 3 g/m&sup2; is inappropriate (ocular, cerebellar, infectious toxicity). Renal dose-reduce"
+        ],
+        [
+         "<b>Venetoclax + azacitidine</b>",
+         "Unfit patients (VIALE-A). Ramp-up with TLS prophylaxis; <b>reduce venetoclax with CYP3A inhibitors</b>"
+        ]
+       ],
+       "footnote": "This table is <b>when and why</b>. <b>Every regimen's dosing lives on page 3</b> &mdash; the two HiDAC numbers stay here because the dose <i>is</i> the teaching point."
+      },
+      {
+       "type": "bullets",
+       "heading": "MRD and the transplant decision",
+       "items": [
+        "<b>Measure MRD at the end of every cycle</b> and again before transplant &mdash; order <b>HemeSTAMP MRD</b> (NGS) <b>+ multiparameter flow cytometry</b>; add <b>NPM1 PCR</b> where applicable",
+        "<b>MRD-positive CR is not CR for planning purposes</b> &mdash; it predicts relapse and moves an otherwise favorable-risk patient toward transplant",
+        "<b>Allo-HSCT in CR1:</b> generally <b>not</b> for favorable risk &middot; <b>yes</b> for intermediate and adverse risk &middot; modified by MRD, age, comorbidity, and donor availability",
+        "Allo cures through <b>graft-versus-leukemia</b>. <b>Auto-HSCT lacks GVL</b> and relapses more &mdash; niche for MRD-negative CR1 without a donor",
+        "Fitness for intensive therapy is a composite of age, performance status and comorbidity (HCT-CI) &mdash; not age alone"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; emergencies, drug toxicity and trial evidence",
+   "columns": [
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "The three emergencies",
+       "chains": [
+        {
+         "header": "APL",
+         "color": "coral",
+         "boxes": [
+          [
+           "Recognize",
+           [
+            "DIC + bleeding + hypergranular promyelocytes",
+            "<b>bundled Auer rods</b>",
+            "microgranular variant can look monocytic"
+           ]
+          ],
+          [
+           "<b>Start ATRA immediately</b>",
+           [
+            "do <b>not</b> wait for PML::RARA &mdash; hemorrhage is the",
+            "leading cause of APL death, and it is preventable",
+            "<b>45 mg/m&sup2;/day PO divided q12h</b> (22.5 mg/m&sup2; BID);",
+            "<b>a one-time dose overnight is fine</b>"
+           ]
+          ],
+          [
+           "Support aggressively",
+           [
+            "<b>fibrinogen &gt;100</b> (cryo), <b>platelets &gt;30k</b>, <b>INR &lt;2</b>",
+            "coags q6&ndash;8 h; avoid LP and central lines"
+           ]
+          ],
+          [
+           "Then treat",
+           [
+            "<b>ATRA + arsenic</b>, chemo-free, low/int risk",
+            "high risk (WBC &gt;10k): add anthracycline",
+            "cure &gt;90%; <b>do NOT leukapherese &mdash; worsens DIC</b>"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Leukostasis",
+         "color": "purple",
+         "boxes": [
+          [
+           "Hyperleukocytosis + symptoms",
+           [
+            "myeloid blasts are large and sticky &mdash; symptoms at",
+            "lower counts than ALL/CLL, often &gt;50&ndash;100k",
+            "<b>CNS</b> (headache, confusion, vision) + <b>pulmonary</b> (hypoxia)"
+           ]
+          ],
+          [
+           "Management &mdash; with doses",
+           [
+            "<b>hydroxyurea up to 2 g PO q6h</b>, goal <b>WBC &lt;20k</b>",
+            "literature 50&ndash;100 mg/kg/day; <b>mucositis &ge;75 mg/kg/day</b>",
+            "HU takes days &mdash; if too slow, <b>cytarabine 1 g &times;1</b>",
+            "<b>urgent induction is definitive</b>; <b>leukapheresis if severe</b>",
+            "&mdash; <b>never in APL</b>, no mortality benefit. <b>No RBC transfusion</b>",
+            "hydrate + TLS ppx. <b>dex 10 mg IV q6h</b> if monocytic + ARF"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Tumor lysis",
+         "color": "amber",
+         "boxes": [
+          [
+           "Cairo-Bishop",
+           [
+            "lab TLS = &ge;2 of &uarr;K, &uarr;phosphate, &uarr;uric acid, &darr;Ca",
+            "clinical TLS = lab TLS + AKI, arrhythmia or seizure"
+           ]
+          ],
+          [
+           "Prevent and treat",
+           [
+            "<b>aggressive IV hydration</b> is the cornerstone",
+            "allopurinol 300 mg BID standard risk",
+            "<b>rasburicase</b> if high risk or uric acid &gt;8 &mdash; <b>not in G6PD</b>",
+            "<b>no urinary alkalinization</b>"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Drug toxicity &amp; monitoring",
+       "headers": [
+        "Agent",
+        "Watch for"
+       ],
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Cytarabine</b>",
+         "Pyrimidine analog. High-dose: <b>cerebellar toxicity &mdash; cerebellar exam before every HiDAC dose, hold if abnormal</b>; <b>conjunctivitis &rarr; prophylactic steroid eye drops</b>; ara-C syndrome (fever, myalgia, rash)"
+        ],
+        [
+         "<b>Anthracyclines</b>",
+         "Cumulative, dose-dependent <b>cardiotoxicity</b> &mdash; track total dose, baseline &plusmn; serial LVEF. <b>Vesicant</b> &mdash; central access"
+        ],
+        [
+         "<b>Venetoclax</b>",
+         "<b>Tumor lysis on ramp-up</b>; neutropenia; <b>dose-reduce with azole antifungals</b> (CYP3A)"
+        ],
+        [
+         "Azacitidine vs decitabine",
+         "Both hypomethylating; <b>azacitidine incorporates into RNA and DNA</b>, decitabine DNA-only. Azacitidine: injection-site reactions"
+        ],
+        [
+         "<b>Gemtuzumab</b>",
+         "Anti-CD33 calicheamicin ADC &mdash; <b>hepatotoxicity and VOD/SOS</b>, especially peri-transplant; fractionated dosing lowers risk"
+        ],
+        [
+         "Arsenic trioxide",
+         "<b>QT prolongation</b> &mdash; monitor ECG, replete K and Mg"
+        ],
+        [
+         "<b>Differentiation syndrome</b>",
+         "ATRA/ATO <b>and also IDH and menin inhibitors</b>. Fever, dyspnea, hypoxia, infiltrates, effusions, weight gain, AKI &rarr; <b>dexamethasone 10 mg IV BID at first suspicion</b>"
+        ],
+        [
+         "Menin inhibitors",
+         "Revumenib, ziftomenib &mdash; differentiation syndrome + <b>QT prolongation</b>"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Trial evidence",
+       "rows": [
+        [
+         "<b>RATIFY</b>",
+         "Midostaurin + 7+3 in FLT3-mutated &mdash; survival benefit"
+        ],
+        [
+         "<b>QuANTUM-First</b>",
+         "Quizartinib + 7+3 in FLT3-ITD"
+        ],
+        [
+         "<b>ALFA-0701</b>",
+         "Fractionated gemtuzumab + 7+3 &mdash; EFS/RFS benefit held in the final analysis but <b>OS was no longer significant</b>. <b>Hills meta-analysis</b> (n=3,325) is what shows the <b>favorable-cytogenetics benefit: 5-yr OS +20.7%</b>"
+        ],
+        [
+         "<b>E1900</b>",
+         "Daunorubicin <b>90 vs 45 mg/m&sup2;</b> &mdash; better CR and OS in age &lt;60"
+        ],
+        [
+         "<b>AML17</b>",
+         "Daunorubicin <b>90 vs 60 mg/m&sup2;</b> &mdash; <b>no CR or OS difference</b>, and 60-day mortality <b>10% vs 5%</b> (HR 1.98). <b>Read with E1900: 60 is standard, not 90</b> (Burnett, Blood 2015)"
+        ],
+        [
+         "<b>VIALE-A</b>",
+         "Azacitidine + venetoclax vs azacitidine &mdash; OS <b>14.7 vs 9.6 months</b> (DiNardo, NEJM 2020)"
+        ],
+        [
+         "<b>PARADIGM</b>",
+         "<b>Aza+ven vs intensive induction in <i>fit</i> patients</b> (CBF/FLT3/NPM1&lt;60 excluded, 72% ELN adverse): EFS <b>14.5 vs 6.2 mo</b>, HR 0.57; less infection and bleeding. <b>Phase 2; OS not significant</b> (Fathi, NEJM 2026)"
+        ],
+        [
+         "<b>AGILE</b>",
+         "Ivosidenib + azacitidine in IDH1-mutant unfit patients"
+        ],
+        [
+         "<b>ADMIRAL</b>",
+         "Gilteritinib in relapsed FLT3-mutated AML &mdash; survival benefit"
+        ],
+        [
+         "<b>APL0406</b>",
+         "ATRA + arsenic beat ATRA + chemo in low/intermediate-risk APL (Lo-Coco, NEJM 2013)"
+        ],
+        [
+         "<b>QUAZAR AML-001</b>",
+         "Oral azacitidine (CC-486) maintenance in CR1 &mdash; OS <b>24.7 vs 14.8 months</b>"
+        ],
+        [
+         "AML15",
+         "IDAC vs HiDAC consolidation &mdash; no overall survival difference"
+        ],
+        [
+         "SWOG S1203",
+         "IA regimen showed no benefit and more toxicity &mdash; <b>7+3 remains standard</b>"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Genetics &mdash; fine points",
+       "rows": [
+        [
+         "<b>inv(3) / t(3;3)</b>",
+         "MECOM (EVI1, 3q26) activation; classically <b>normal or high platelets</b>; adverse and <b>venetoclax-resistant</b>"
+        ],
+        [
+         "<b>t(6;9)</b>",
+         "DEK::NUP214 &mdash; associates with <b>FLT3-ITD and basophilia</b>; adverse"
+        ],
+        [
+         "NPM1 flow mimic",
+         "NPM1-mutated AML can be <b>HLA-DR&minus; / CD34&minus;</b> and mimic APL &mdash; confirm PML::RARA"
+        ],
+        [
+         "Therapy-related",
+         "After <b>alkylators/RT</b>: del(5q)/del(7q) &plusmn; TP53, latency ~5&ndash;7 yr. After <b>topoisomerase-II</b>: <b>11q23 KMT2A</b>, latency ~2&ndash;3 yr"
+        ],
+        [
+         "Germline",
+         "<b>DDX41, RUNX1, CEBPA, GATA2</b>, telomere biology &mdash; send germline testing if young, family history, or multiple cytopenias; <b>it changes related-donor selection</b>"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 3 &mdash; the new acute leukemia call (.newaml) &middot; supportive care, institutional workflow and regimen dosing",
+   "columns": [
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Four ways an acute leukemic dies in the ED",
+       "items": [
+        "<b>1. Leukostasis</b> &mdash; CVA, MI, respiratory failure",
+        "<b>2. Bleeding / DIC / thrombosis</b>",
+        "<b>3. Infection</b> &mdash; <b>very low threshold for broad-spectrum antibiotics</b>",
+        "<b>4. Tumor lysis</b> &mdash; renal failure, electrolyte derangement"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Overnight decisions",
+       "items": [
+        "<b>1. Triage floor vs ICU</b> &mdash; <b>leukapheresis and CRRT both require ICU</b>",
+        "<b>2. Rule out APL</b> &mdash; <b>start ATRA on any suspicion</b>, do not wait for PML::RARA",
+        "<b>3. Cytoreduction</b> &mdash; see doses at right",
+        "<b>4. TLS</b> &mdash; start fluids + allopurinol, set lab frequency (<b>q4h to daily</b>). <b>Rasburicase if uric acid &gt;8:</b> <b>0.15&ndash;0.2 mg/kg IV</b>, in adults usually a <b>single dose capped at 6 mg</b> (label allows 0.2 mg/kg daily &times;5 days). <b>Check G6PD &mdash; contraindicated if deficient</b>"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Supportive care",
+       "items": [
+        "<b>Transfusion:</b> platelets &gt;10k (&gt;20&ndash;50k if bleeding, procedure, or APL); <b>irradiated and leukoreduced</b> products",
+        "<b>Prophylaxis during induction:</b> <b>levofloxacin 500 mg PO daily</b> &middot; <b>posaconazole DR 300 mg BID &times;1 day, then 300 mg daily</b> &middot; <b>acyclovir 400 mg PO BID</b> (HSV-seropositive)",
+        "<b>Posaconazole is a strong CYP3A4 inhibitor</b> &mdash; that is what forces the venetoclax reduction: <b>400 mg &rarr; 70 mg daily</b> with posaconazole (100 mg with other strong inhibitors such as voriconazole), during ramp-up and beyond",
+        "<b>Hepatitis B:</b> screen HBsAg + anti-HBc before therapy. <b>HBsAg-positive &rarr; entecavir or tenofovir</b> (preferred over lamivudine) for <b>any</b> systemic anticancer therapy, continued <b>&ge;12 months</b> past the last cycle. Isolated anti-HBc-positive &rarr; prophylax or monitor HBV DNA closely; AML chemotherapy carries reactivation risk similar to lymphoma",
+        "<b>Febrile neutropenia:</b> fever &ge;38.3&deg;C once (or &ge;38.0&deg;C for 1 h) with ANC &lt;500 &rarr; <b>cefepime 2 g IV q8h within 1 hour</b>. <b>Add vancomycin</b> for hemodynamic instability, line infection, skin/soft tissue infection, pneumonia or known MRSA. <b>Severe mucositis is a softer trigger than it looks</b> &mdash; IDSA lists it only when fluoroquinolone prophylaxis was used <i>and</i> ceftazidime is the empiric agent (viridans strep); <b>cefepime already covers viridans strep</b>. Antifungal if fever persists &gt;4&ndash;7 days",
+        "Fertility counseling before chemotherapy; central venous access; early palliative care in older or adverse-risk disease"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "What to send",
+       "headers": [
+        "Test",
+        "When"
+       ],
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Peripheral studies</b>",
+         "<b>Flow cytometry</b>, <b>AML prognosis assay</b> (NPM1, FLT3-ITD, FLT3-TKD), <b>IDH mutation analysis</b>. Send if <b>WBC &gt;10k</b> and marrow will be delayed, or the patient is old enough that you would rather not subject them to a marrow"
+        ],
+        [
+         "<b>Cytogenetics</b>",
+         "<b>FISH for PML::RARA and BCR::ABL1</b>. Send <b>from peripheral blood</b> if there is any concern for APL or a delay in getting marrow"
+        ],
+        [
+         "HLA typing",
+         "Send if the patient is a possible allogeneic transplant candidate"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Cytoreduction overnight",
+       "headers": [
+        "",
+        "Dose and trigger"
+       ],
+       "widths": [
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Hydroxyurea</b>",
+         "Consider if <b>WBC &gt;20k</b>. Overnight you can order a <b>one-time dose</b>. Typical range <b>500 mg&ndash;2 g</b>, <b>max 2 g q6h</b>. Literature range 50&ndash;100 mg/kg/day; <b>grade 3&ndash;4 mucositis rises at &ge;75 mg/kg/day</b>, so 2 g q6h is the ceiling, not the starting dose"
+        ],
+        [
+         "<b>Leukapheresis</b>",
+         "Consider for <b>evidence of leukostasis</b> &mdash; headache, blurry vision, dyspnea/hypoxia, chest pain &mdash; typically with <b>blasts &gt;50k in AML</b> (rare in ALL). <b>Page apheresis 12027.</b> Ask ER or the MICU triage fellow for a <b>trialysis line</b>; admit to MICU. Ask the apheresis RN to <b>save the product in the FGR fridge</b> and coordinate with the research team. <b>Never in APL</b>"
+        ],
+        [
+         "<b>Cytarabine</b>",
+         "<b>1 g &times;1</b> may be considered for leukostasis when apheresis will be delayed"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "APL overnight",
+       "items": [
+        "<b>Start ATRA on any concern for APL</b> &mdash; do not wait for PML::RARA",
+        "<b>Smear:</b> bilobed / folded nuclei &plusmn; Auer rods. <b>Page pathology on call (12005)</b> if unsure",
+        "<b>ATRA 45 mg/m&sup2;/day PO divided q12h</b> (= 22.5 mg/m&sup2; BID) &mdash; overnight you can give a one-time dose",
+        "<b>DIC labs q6&ndash;8h.</b> Transfuse <b>platelets &gt;30</b>, <b>fibrinogen &gt;100</b>, <b>INR &lt;2</b>"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimen dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>7+3</b>",
+         "Cytarabine <b>100&ndash;200 mg/m&sup2;/day</b> IV continuous infusion &times;7 days from day 1 (<b>SHC uses 100</b>) + daunorubicin <b>60 mg/m&sup2;</b> IV daily <b>days 1&ndash;3</b> <span class='r'>schedule E1900; 60 vs 90 from AML17</span>"
+        ],
+        [
+         "<b>7+3 + GO</b>",
+         "Add gemtuzumab ozogamicin <b>3 mg/m&sup2;</b> (max 4.5 mg) IV over 2 h on <b>days 1, 4, 7</b> <span class='r'>ALFA-0701 / Lambert 2019</span>"
+        ],
+        [
+         "<b>7+3 + midostaurin</b>",
+         "Add midostaurin <b>50 mg PO q12h on days 8&ndash;21</b> <span class='r'>RATIFY / Stone 2017</span>"
+        ],
+        [
+         "<b>CPX-351</b>",
+         "Liposomal daunorubicin <b>44 mg/m&sup2;</b> + cytarabine <b>100 mg/m&sup2;</b> IV on <b>days 1, 3, 5</b> <span class='r'>Lancet 2018</span>"
+        ],
+        [
+         "<b>FLAG-IDA-VEN</b>",
+         "Fludarabine <b>30 mg/m&sup2;</b> + cytarabine <b>1.5&ndash;2 g/m&sup2;</b> IV days 2&ndash;6; idarubicin IV (<b>ND-AML 8 mg/m&sup2; days 4&ndash;6</b>; <b>R/R 6 mg/m&sup2; days 4&ndash;5</b>); filgrastim 5 mcg/kg days 1&ndash;7; venetoclax ramp-up (100/200/400 mg) days 1&ndash;14 <span class='r'>DiNardo 2021</span>"
+        ],
+        [
+         "<b>CLAD / LDAC / VEN</b>",
+         "Cladribine <b>5 mg/m&sup2;</b> IV days 1&ndash;5 + cytarabine <b>20 mg/m&sup2;</b> (SQ BID days 1&ndash;10; <b>20 mg/m&sup2; IV daily preferred at SHC</b>) + venetoclax PO days 1&ndash;21, alternating with azacitidine <span class='r'>Kadia 2022</span>"
+        ],
+        [
+         "<b>MEC</b>",
+         "Mitoxantrone <b>6&ndash;8 mg/m&sup2;</b> + etoposide <b>80&ndash;100 mg/m&sup2;</b> + cytarabine <b>1 g/m&sup2;</b>, all daily <b>days 1&ndash;5</b> (some series run 6 days) &mdash; dosing varies by protocol, check yours <span class='r'>relapsed / refractory</span>"
+        ],
+        [
+         "<b>CLAG-M</b>",
+         "Cladribine <b>5 mg/m&sup2;</b> IV days 1&ndash;5 + cytarabine <b>2 g/m&sup2;</b> IV days 1&ndash;5 + mitoxantrone <b>10 mg/m&sup2;</b> IV days 1&ndash;3 + G-CSF <b>300 mcg</b> days 0&ndash;5 <span class='r'>relapsed / refractory</span>"
+        ],
+        [
+         "<b>HMA / VEN</b>",
+         "Venetoclax (ramp-up) daily &times;28 days + <b>decitabine 20 mg/m&sup2; days 1&ndash;5</b> or <b>azacitidine 75 mg/m&sup2; days 1&ndash;7</b> <span class='r'>VIALE-A / DiNardo 2020</span>"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "APL induction &mdash; dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>ATO / ATRA</b>",
+         "Arsenic trioxide <b>0.15 mg/kg</b> IV over 2 h daily from day 1 + ATRA <b>22.5 mg/m&sup2; PO BID</b> from day 1 &mdash; both until hematologic CR or <b>max 60 days</b> <span class='r'>APL0406 / Lo-Coco 2013</span>"
+        ],
+        [
+         "<b>ATO / ATRA / IDA</b>",
+         "ATO <b>0.15 mg/kg</b> IV days 9&ndash;36 + ATRA <b>22.5 mg/m&sup2; BID</b> days 1&ndash;36 + idarubicin on days 2, 4, 6, 8 by age: <b>&le;60 yr 12 mg/m&sup2;</b> &middot; <b>61&ndash;70 yr 9 mg/m&sup2;</b> &middot; <b>&gt;70 yr 6 mg/m&sup2;</b> <span class='r'>APML4 / Iland 2012</span>"
+        ],
+        [
+         "<b>ATO / ATRA / GO</b>",
+         "ATO <b>0.3 mg/kg</b> IV daily days 1&ndash;5, then <b>0.25 mg/kg twice weekly weeks 2&ndash;8</b> + ATRA <b>22.5 mg/m&sup2; BID</b> from day 1 until CR or max 60 days + gemtuzumab <b>6 mg/m&sup2;</b> IV once on day 1 <b>&mdash; high risk only (WBC &gt;10k)</b> <span class='r'>AML17 APL / Burnett 2015</span>"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Diagnosis",
+  "ELN 2022 genetic risk",
+  "Genotype &rarr; phenotype",
+  "Treatment pathway",
+  "Regimens &amp; agents",
+  "MRD and the transplant decision",
+  "The three emergencies",
+  "Drug toxicity &amp; monitoring",
+  "Trial evidence",
+  "Genetics &mdash; fine points",
+  "Four ways an acute leukemic dies in the ED",
+  "Overnight decisions",
+  "Supportive care",
+  "What to send",
+  "Cytoreduction overnight",
+  "APL overnight",
+  "Regimen dosing",
+  "APL induction &mdash; dosing"
+ ],
+ "text": "Acute myeloid leukemia ≥20% myeloid blasts — or any blast % with a defining genetic lesion · classification and treatment are now genetically driven · every new diagnosis is triaged for the three emergencies before a regimen is chosen Compiled from the Encyclopedia AML review note and Fellowship Anki deck · ELN 2022 · WHO 2022 / ICC · NCCN. Diagnosis ≥20% myeloid blasts — or any blast % with a defining fusion : t(8;21), inv(16)/t(16;16), PML::RARA. WHO 2022 also drops it for NPM1 but keeps ≥20% for CEBPA-bZIP ; ICC sets ≥10% for both Also AML at <20%: myeloid sarcoma / extramedullary disease “Blasts” on smear is morphologic — confirm lineage by flow Workup: marrow aspirate + biopsy with flow, karyotype + FISH, NGS ; CBC/smear (Auer rods); coags + fibrinogen + D-dimer ; TLS labs; baseline echo ; HLA typing early; LP only for CNS symptoms (consider if monocytic), after coags corrected Stat FISH/PCR for PML::RARA on any suspicion of APL Median age ~68. The three triage questions on every new AML: Is it APL? Is there leukostasis? Is there tumor lysis? ELN 2022 genetic risk Risk Representative genetics Favorable t(8;21) RUNX1::RUNX1T1 · inv(16)/t(16;16) CBFB::MYH11 ( core-binding factor ) · mutated NPM1 without FLT3-ITD · in-frame bZIP CEBPA Intermediate NPM1 + FLT3-ITD · wild-type NPM1 + FLT3-ITD · t(9;11) MLLT3::KMT2A · anything not otherwise classified Adverse Complex or monosomal karyotype · −5/del(5q), −7, abn(17p) · TP53 · MDS-related genes (ASXL1, BCOR, EZH2, RUNX1, SF3B1, SRSF2, STAG2, U2AF1, ZRSR2) · KMT2A rearrangements except t(9;11) and KMT2A-PTD · t(6;9), inv(3) ELN 2022 changes worth knowing: FLT3-ITD is intermediate regardless of allelic ratio (ratio dropped) · only in-frame bZIP CEBPA is favorable · NPM1 with adverse cytogenetics is reclassified adverse · KIT co-mutation worsens CBF-AML prognostically, but ELN 2022 kept it favorable . Genotype → phenotype FLT3-ITD Hyperleukocytosis; normal karyotype. &uarr; CNS risk , most when NPM1 co-mutated KMT2A / 11q23 Monocytic — gum hypertrophy, leukemia cutis. Highest multivariable odds for CNS disease (OR ~7.6) t(8;21) Myeloid sarcoma ; aberrant CD19 / CD56 by flow inv(16) Abnormal marrow eosinophils with coarse basophilic granules (FAB M4Eo) TP53 Complex karyotype, t-AML; venetoclax-resistant , poor outcome even after allo DTA DNMT3A, TET2, ASXL1 persist in CR as clonal hematopoiesis — not MRD markers CNS disease is uncommon — ~0.6% at diagnosis, ~3% at relapse . Risk factors differ by series: SAL (n=3,261) found FLT3-ITD ± NPM1 ; another found 11q23 (OR 7.6) and WBC ≥100k on multivariable analysis. Treatment pathway First: exclude APL, then assess fitness Before committing to a regimen APL must be excluded — ATRA cannot wait 7+3 may start while NGS pends, but FLT3 status changes induction — hold a day or two if stable; instability forces faster action Fit for intensive therapy Induction — 7+3 cytarabine ×7 days + anthracycline ×3 FLT3-mutated: add midostaurin (RATIFY) CD33 / CBF: add gemtuzumab (ALFA-0701) secondary or t-AML: consider CPX-351 PARADIGM (2026) adverse risk and not FLT3-mutated : aza+ven EFS 14.5 vs 6.2 mo , HR 0.57. Less infection and bleeding, and more patients reached allo phase 2, EFS endpoint — OS not significantly different Assess response day-14 marrow ; residual disease → re-induce goal is CR: blasts <5% with count recovery Consolidation by ELN risk favorable → HiDAC ×3–4 cycles, no allo intermediate / adverse → allo-HSCT in CR1 MRD-positive CR pushes toward transplant If not going to transplant oral azacitidine (CC-486) maintenance QUAZAR: OS 24.7 vs 14.8 months Unfit for intensive therapy Venetoclax + azacitidine VIALE-A : OS 14.7 vs 9.6 months vs aza alone watch TLS on ramp-up ; reduce dose with azoles IDH1-mutant alternative: ivosidenib + aza (AGILE) Relapsed / refractory Target first, then salvage FLT3 → gilteritinib (ADMIRAL) IDH1/2 → ivosidenib / enasidenib KMT2A-r or NPM1 → menin inhibitor salvage chemo: FLAG-IDA, MEC, CLAG-M Regimens & agents Regimen Notes 7+3 Cytarabine infusion ×7 days + an anthracycline ×3 — the backbone for fit patients. Daunorubicin 60 mg/m² is the modern standard: E1900 showed 90 > 45 , but AML17 found 90 vs 60 gave no CR or OS benefit and doubled 60-day mortality + midostaurin FLT3-mutated (RATIFY). Quizartinib for FLT3-ITD (QuANTUM-First) + gemtuzumab Fractionated dosing (ALFA-0701 — no CD33 cutoff). CBF benefit comes from the Hills meta-analysis , not ALFA-0701 CPX-351 Liposomal cytarabine + daunorubicin for t-AML / AML-MRC. Caveat: comparator was 7+3, not ven/aza — niche today is the fitter older adult bridging to allo HiDAC 3 g/m² q12h on days 1, 3, 5 ×3–4 cycles; best in CBF. Age >60 → IDAC 1.5 g/m² — 3 g/m² is inappropriate (ocular, cerebellar, infectious toxicity). Renal dose-reduce Venetoclax + azacitidine Unfit patients (VIALE-A). Ramp-up with TLS prophylaxis; reduce venetoclax with CYP3A inhibitors This table is when and why . Every regimen's dosing lives on page 3 — the two HiDAC numbers stay here because the dose is the teaching point. MRD and the transplant decision Measure MRD at the end of every cycle and again before transplant — order HemeSTAMP MRD (NGS) + multiparameter flow cytometry ; add NPM1 PCR where applicable MRD-positive CR is not CR for planning purposes — it predicts relapse and moves an otherwise favorable-risk patient toward transplant Allo-HSCT in CR1: generally not for favorable risk · yes for intermediate and adverse risk · modified by MRD, age, comorbidity, and donor availability Allo cures through graft-versus-leukemia . Auto-HSCT lacks GVL and relapses more — niche for MRD-negative CR1 without a donor Fitness for intensive therapy is a composite of age, performance status and comorbidity (HCT-CI) — not age alone The three emergencies APL Recognize DIC + bleeding + hypergranular promyelocytes bundled Auer rods microgranular variant can look monocytic Start ATRA immediately do not wait for PML::RARA — hemorrhage is the leading cause of APL death, and it is preventable 45 mg/m²/day PO divided q12h (22.5 mg/m² BID); a one-time dose overnight is fine Support aggressively fibrinogen >100 (cryo), platelets >30k , INR <2 coags q6–8 h; avoid LP and central lines Then treat ATRA + arsenic , chemo-free, low/int risk high risk (WBC >10k): add anthracycline cure >90%; do NOT leukapherese — worsens DIC Leukostasis Hyperleukocytosis + symptoms myeloid blasts are large and sticky — symptoms at lower counts than ALL/CLL, often >50–100k CNS (headache, confusion, vision) + pulmonary (hypoxia) Management — with doses hydroxyurea up to 2 g PO q6h , goal WBC <20k literature 50–100 mg/kg/day; mucositis ≥75 mg/kg/day HU takes days — if too slow, cytarabine 1 g ×1 urgent induction is definitive ; leukapheresis if severe — never in APL , no mortality benefit. No RBC transfusion hydrate + TLS ppx. dex 10 mg IV q6h if monocytic + ARF Tumor lysis Cairo-Bishop lab TLS = ≥2 of &uarr;K, &uarr;phosphate, &uarr;uric acid, &darr;Ca clinical TLS = lab TLS + AKI, arrhythmia or seizure Prevent and treat aggressive IV hydration is the cornerstone allopurinol 300 mg BID standard risk rasburicase if high risk or uric acid >8 — not in G6PD no urinary alkalinization Drug toxicity & monitoring Agent Watch for Cytarabine Pyrimidine analog. High-dose: cerebellar toxicity — cerebellar exam before every HiDAC dose, hold if abnormal ; conjunctivitis → prophylactic steroid eye drops ; ara-C syndrome (fever, myalgia, rash) Anthracyclines Cumulative, dose-dependent cardiotoxicity — track total dose, baseline ± serial LVEF. Vesicant — central access Venetoclax Tumor lysis on ramp-up ; neutropenia; dose-reduce with azole antifungals (CYP3A) Azacitidine vs decitabine Both hypomethylating; azacitidine incorporates into RNA and DNA , decitabine DNA-only. Azacitidine: injection-site reactions Gemtuzumab Anti-CD33 calicheamicin ADC — hepatotoxicity and VOD/SOS , especially peri-transplant; fractionated dosing lowers risk Arsenic trioxide QT prolongation — monitor ECG, replete K and Mg Differentiation syndrome ATRA/ATO and also IDH and menin inhibitors . Fever, dyspnea, hypoxia, infiltrates, effusions, weight gain, AKI → dexamethasone 10 mg IV BID at first suspicion Menin inhibitors Revumenib, ziftomenib — differentiation syndrome + QT prolongation Trial evidence RATIFY Midostaurin + 7+3 in FLT3-mutated — survival benefit QuANTUM-First Quizartinib + 7+3 in FLT3-ITD ALFA-0701 Fractionated gemtuzumab + 7+3 — EFS/RFS benefit held in the final analysis but OS was no longer significant . Hills meta-analysis (n=3,325) is what shows the favorable-cytogenetics benefit: 5-yr OS +20.7% E1900 Daunorubicin 90 vs 45 mg/m² — better CR and OS in age <60 AML17 Daunorubicin 90 vs 60 mg/m² — no CR or OS difference , and 60-day mortality 10% vs 5% (HR 1.98). Read with E1900: 60 is standard, not 90 (Burnett, Blood 2015) VIALE-A Azacitidine + venetoclax vs azacitidine — OS 14.7 vs 9.6 months (DiNardo, NEJM 2020) PARADIGM Aza+ven vs intensive induction in fit patients (CBF/FLT3/NPM1<60 excluded, 72% ELN adverse): EFS 14.5 vs 6.2 mo , HR 0.57; less infection and bleeding. Phase 2; OS not significant (Fathi, NEJM 2026) AGILE Ivosidenib + azacitidine in IDH1-mutant unfit patients ADMIRAL Gilteritinib in relapsed FLT3-mutated AML — survival benefit APL0406 ATRA + arsenic beat ATRA + chemo in low/intermediate-risk APL (Lo-Coco, NEJM 2013) QUAZAR AML-001 Oral azacitidine (CC-486) maintenance in CR1 — OS 24.7 vs 14.8 months AML15 IDAC vs HiDAC consolidation — no overall survival difference SWOG S1203 IA regimen showed no benefit and more toxicity — 7+3 remains standard Genetics — fine points inv(3) / t(3;3) MECOM (EVI1, 3q26) activation; classically normal or high platelets ; adverse and venetoclax-resistant t(6;9) DEK::NUP214 — associates with FLT3-ITD and basophilia ; adverse NPM1 flow mimic NPM1-mutated AML can be HLA-DR− / CD34− and mimic APL — confirm PML::RARA Therapy-related After alkylators/RT : del(5q)/del(7q) ± TP53, latency ~5–7 yr. After topoisomerase-II : 11q23 KMT2A , latency ~2–3 yr Germline DDX41, RUNX1, CEBPA, GATA2 , telomere biology — send germline testing if young, family history, or multiple cytopenias; it changes related-donor selection Four ways an acute leukemic dies in the ED 1. Leukostasis — CVA, MI, respiratory failure 2. Bleeding / DIC / thrombosis 3. Infection — very low threshold for broad-spectrum antibiotics 4. Tumor lysis — renal failure, electrolyte derangement Overnight decisions 1. Triage floor vs ICU — leukapheresis and CRRT both require ICU 2. Rule out APL — start ATRA on any suspicion , do not wait for PML::RARA 3. Cytoreduction — see doses at right 4. TLS — start fluids + allopurinol, set lab frequency ( q4h to daily ). Rasburicase if uric acid >8: 0.15–0.2 mg/kg IV , in adults usually a single dose capped at 6 mg (label allows 0.2 mg/kg daily ×5 days). Check G6PD — contraindicated if deficient Supportive care Transfusion: platelets >10k (>20–50k if bleeding, procedure, or APL); irradiated and leukoreduced products Prophylaxis during induction: levofloxacin 500 mg PO daily · posaconazole DR 300 mg BID ×1 day, then 300 mg daily · acyclovir 400 mg PO BID (HSV-seropositive) Posaconazole is a strong CYP3A4 inhibitor — that is what forces the venetoclax reduction: 400 mg → 70 mg daily with posaconazole (100 mg with other strong inhibitors such as voriconazole), during ramp-up and beyond Hepatitis B: screen HBsAg + anti-HBc before therapy. HBsAg-positive → entecavir or tenofovir (preferred over lamivudine) for any systemic anticancer therapy, continued ≥12 months past the last cycle. Isolated anti-HBc-positive → prophylax or monitor HBV DNA closely; AML chemotherapy carries reactivation risk similar to lymphoma Febrile neutropenia: fever ≥38.3&deg;C once (or ≥38.0&deg;C for 1 h) with ANC <500 → cefepime 2 g IV q8h within 1 hour . Add vancomycin for hemodynamic instability, line infection, skin/soft tissue infection, pneumonia or known MRSA. Severe mucositis is a softer trigger than it looks — IDSA lists it only when fluoroquinolone prophylaxis was used and ceftazidime is the empiric agent (viridans strep); cefepime already covers viridans strep . Antifungal if fever persists >4–7 days Fertility counseling before chemotherapy; central venous access; early palliative care in older or adverse-risk disease What to send Test When Peripheral studies Flow cytometry , AML prognosis assay (NPM1, FLT3-ITD, FLT3-TKD), IDH mutation analysis . Send if WBC >10k and marrow will be delayed, or the patient is old enough that you would rather not subject them to a marrow Cytogenetics FISH for PML::RARA and BCR::ABL1 . Send from peripheral blood if there is any concern for APL or a delay in getting marrow HLA typing Send if the patient is a possible allogeneic transplant candidate Cytoreduction overnight Dose and trigger Hydroxyurea Consider if WBC >20k . Overnight you can order a one-time dose . Typical range 500 mg–2 g , max 2 g q6h . Literature range 50–100 mg/kg/day; grade 3–4 mucositis rises at ≥75 mg/kg/day , so 2 g q6h is the ceiling, not the starting dose Leukapheresis Consider for evidence of leukostasis — headache, blurry vision, dyspnea/hypoxia, chest pain — typically with blasts >50k in AML (rare in ALL). Page apheresis 12027. Ask ER or the MICU triage fellow for a trialysis line ; admit to MICU. Ask the apheresis RN to save the product in the FGR fridge and coordinate with the research team. Never in APL Cytarabine 1 g ×1 may be considered for leukostasis when apheresis will be delayed APL overnight Start ATRA on any concern for APL — do not wait for PML::RARA Smear: bilobed / folded nuclei ± Auer rods. Page pathology on call (12005) if unsure ATRA 45 mg/m²/day PO divided q12h (= 22.5 mg/m² BID) — overnight you can give a one-time dose DIC labs q6–8h. Transfuse platelets >30 , fibrinogen >100 , INR <2 Regimen dosing Regimen Dosing 7+3 Cytarabine 100–200 mg/m²/day IV continuous infusion ×7 days from day 1 ( SHC uses 100 ) + daunorubicin 60 mg/m² IV daily days 1–3 schedule E1900; 60 vs 90 from AML17 7+3 + GO Add gemtuzumab ozogamicin 3 mg/m² (max 4.5 mg) IV over 2 h on days 1, 4, 7 ALFA-0701 / Lambert 2019 7+3 + midostaurin Add midostaurin 50 mg PO q12h on days 8–21 RATIFY / Stone 2017 CPX-351 Liposomal daunorubicin 44 mg/m² + cytarabine 100 mg/m² IV on days 1, 3, 5 Lancet 2018 FLAG-IDA-VEN Fludarabine 30 mg/m² + cytarabine 1.5–2 g/m² IV days 2–6; idarubicin IV ( ND-AML 8 mg/m² days 4–6 ; R/R 6 mg/m² days 4–5 ); filgrastim 5 mcg/kg days 1–7; venetoclax ramp-up (100/200/400 mg) days 1–14 DiNardo 2021 CLAD / LDAC / VEN Cladribine 5 mg/m² IV days 1–5 + cytarabine 20 mg/m² (SQ BID days 1–10; 20 mg/m² IV daily preferred at SHC ) + venetoclax PO days 1–21, alternating with azacitidine Kadia 2022 MEC Mitoxantrone 6–8 mg/m² + etoposide 80–100 mg/m² + cytarabine 1 g/m² , all daily days 1–5 (some series run 6 days) — dosing varies by protocol, check yours relapsed / refractory CLAG-M Cladribine 5 mg/m² IV days 1–5 + cytarabine 2 g/m² IV days 1–5 + mitoxantrone 10 mg/m² IV days 1–3 + G-CSF 300 mcg days 0–5 relapsed / refractory HMA / VEN Venetoclax (ramp-up) daily ×28 days + decitabine 20 mg/m² days 1–5 or azacitidine 75 mg/m² days 1–7 VIALE-A / DiNardo 2020 APL induction — dosing Regimen Dosing ATO / ATRA Arsenic trioxide 0.15 mg/kg IV over 2 h daily from day 1 + ATRA 22.5 mg/m² PO BID from day 1 — both until hematologic CR or max 60 days APL0406 / Lo-Coco 2013 ATO / ATRA / IDA ATO 0.15 mg/kg IV days 9–36 + ATRA 22.5 mg/m² BID days 1–36 + idarubicin on days 2, 4, 6, 8 by age: ≤60 yr 12 mg/m² · 61–70 yr 9 mg/m² · >70 yr 6 mg/m² APML4 / Iland 2012 ATO / ATRA / GO ATO 0.3 mg/kg IV daily days 1–5, then 0.25 mg/kg twice weekly weeks 2–8 + ATRA 22.5 mg/m² BID from day 1 until CR or max 60 days + gemtuzumab 6 mg/m² IV once on day 1 — high risk only (WBC >10k) AML17 APL / Burnett 2015"
+}

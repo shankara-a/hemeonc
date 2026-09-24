@@ -1,0 +1,310 @@
+{
+ "disease": "colon",
+ "spec_file": "colon.py",
+ "pdf": "Colon Adenocarcinoma.pdf",
+ "title": "Colon adenocarcinoma",
+ "subtitle": "2nd leading cause of cancer death &middot; ~106,590 new cases (2024) &middot; 5-yr survival &mdash; stage I <b>90%</b>, II <b>70&ndash;85%</b>, III <b>50&ndash;73%</b>, IV <b>12&ndash;14%</b>",
+ "source": "Stanford Oncology Handbook 2025, Colon Cancer (Johnson T, Miller D) &middot; NCCN &middot; items marked &dagger; are outside the handbook chapter",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "26%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "Colonoscopy with biopsy + pathology review",
+        "<b>MMR / MSI testing in ALL newly diagnosed</b> colon cancer",
+        "<b>KRAS, NRAS, BRAF</b> mutation + <b>HER2</b> amplification by NGS panel",
+        "CT C/A/P &middot; MRI liver if potentially resectable liver mets &middot; PET/CT in selected resectable M1",
+        "Labs: CBC, CMP, <b>CEA</b>",
+        "Genetics referral: all diagnosed <b>&lt;50 y</b>, or somatic finding with germline implications",
+        "BRAF V600E + MLH1 loss largely excludes Lynch &mdash; but <b>~1% of Lynch is BRAF V600E</b>"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Staging &mdash; AJCC 8th",
+       "rows": [
+        [
+         "T1 / T2 / T3",
+         "submucosa / through muscularis propria / into pericolorectal tissue"
+        ],
+        [
+         "T4a / T4b",
+         "through visceral peritoneum / invades adjacent organ"
+        ],
+        [
+         "N1 / N2",
+         "1&ndash;3 nodes (N1c = deposits only) / <b>&ge;4 nodes</b>"
+        ],
+        [
+         "M1a / b / c",
+         "1 site / &ge;2 sites / <b>peritoneal</b>"
+        ],
+        [
+         "Stage III",
+         "any node-positive, M0"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "rows": [
+        [
+         "IDEA",
+         "3 vs 6 mo adjuvant &mdash; <b>failed non-inferiority overall</b> (HR 1.07, margin 1.12), but <b>3 mo CAPOX non-inferior while FOLFOX favored 6 mo</b> (Grothey, NEJM 2018)"
+        ],
+        [
+         "ATOMIC",
+         "adding IO to adjuvant chemo in dMMR (ASCO 2025)"
+        ],
+        [
+         "KEYNOTE-177",
+         "1L pembrolizumab in dMMR: PFS <b>16.5 vs 8.2 mo</b>"
+        ],
+        [
+         "BREAKWATER",
+         "1L BRAF V600E: FOLFOX + encorafenib + cetuximab"
+        ],
+        [
+         "BEACON",
+         "BRAF V600E later line (Kopetz, NEJM 2019)"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Localized &mdash; stage I to III",
+         "color": "teal",
+         "boxes": [
+          [
+           "Surgery first",
+           [
+            "colon is resected upfront (unlike rectal)",
+            "pathology drives the adjuvant decision",
+            "no adjuvant therapy for stage I"
+           ]
+          ],
+          [
+           "Stage II (node-negative)",
+           [
+            "risk factors: T4, LVI, PNI, obstruction,",
+            "perforation, poor differentiation, &lt;12 nodes",
+            "low risk observe; RFs 5-FU &plusmn; oxaliplatin"
+           ]
+          ],
+          [
+           "Stage III",
+           [
+            "virtually all receive adjuvant chemotherapy",
+            "age &lt;75: fluoropyrimidine + oxaliplatin",
+            "age &gt;75: fluoropyrimidine alone",
+            "<b>IDEA: 3 mo CAPOX ok &mdash; FOLFOX needs 6 mo</b>",
+            "high risk (T4 and/or N2) favors 6 months"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "dMMR / MSI-H",
+         "color": "amber",
+         "boxes": [
+          [
+           "Immunotherapy-sensitive",
+           [
+            "consider neoadjuvant IO before resection",
+            "adjuvant: add IO to chemo (ATOMIC)",
+            "adjuvant 5-FU alone may be HARMFUL"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Metastatic",
+         "color": "purple",
+         "boxes": [
+          [
+           "Oligometastatic",
+           [
+            "liver/lung only: surgical consult upfront",
+            "FOLFOX or CAPEOX preferred &mdash; cure possible"
+           ]
+          ],
+          [
+           "1L by molecular subtype",
+           [
+            "dMMR: pembrolizumab (KEYNOTE-177)",
+            "BRAF V600E: FOLFOX + encorafenib + cetuximab",
+            "left-sided RAS/BRAF WT: doublet + anti-EGFR",
+            "right-sided or RAS-mut: FOLFOXIRI &plusmn; bev"
+           ]
+          ],
+          [
+           "Later lines",
+           [
+            "stop oxaliplatin at ~4 months (neuropathy)",
+            "swap backbone; HER2 matters in 2nd line"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "note",
+       "html": "<b>Oxaliplatin neuropathy is the dominant long-term toxicity.</b> Six months may raise the risk of permanent neuropathy as much as <b>tenfold</b> vs three months. Do not exceed ~4 months in initial metastatic therapy (OPTIMOX); never given as a single agent."
+      }
+     ]
+    },
+    {
+     "width": "38%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimens &amp; dosing",
+       "headers": [
+        "Regimen",
+        "Dosing",
+        "Cycle"
+       ],
+       "widths": [
+        "25%",
+        "",
+        "14%"
+       ],
+       "rows": [
+        [
+         "FOLFOX",
+         "oxaliplatin 85 d1 &middot; 5-FU 1200&ndash;1500/day CIV d1&ndash;2",
+         "q14d"
+        ],
+        [
+         "CAPEOX / XELOX",
+         "oxaliplatin 130 d1 &middot; capecitabine 1000 BID d1&ndash;14",
+         "q21d"
+        ],
+        [
+         "FOLFIRI",
+         "irinotecan 180 d1 &middot; 5-FU 1200&ndash;1400/day CIV d1&ndash;2",
+         "q14d"
+        ],
+        [
+         "FOLFOXIRI",
+         "oxaliplatin 85 &middot; irinotecan 165 &middot; 5-FU 1200&ndash;1400/day CIV d1&ndash;2",
+         "q14d"
+        ],
+        [
+         "Bevacizumab",
+         "7.5 mg/kg (q3wk) or 5 mg/kg (q2wk)",
+         "q21d / q14d"
+        ],
+        [
+         "Cetuximab / panitumumab",
+         "cetuximab 400 load then 250 weekly (or 500 q2wk) &middot; panitumumab 6 mg/kg",
+         "wkly / q2wk"
+        ],
+        [
+         "Regorafenib",
+         "ramp 80&rarr;120&rarr;160 mg weekly in C1; then 160 mg d1&ndash;21",
+         "q28d"
+        ],
+        [
+         "Trifluridine/tipiracil",
+         "35 mg/m&sup2; PO BID d1&ndash;5 and d8&ndash;12",
+         "q28d"
+        ],
+        [
+         "Fruquintinib",
+         "5 mg PO daily &times; 21 days",
+         "q28d"
+        ]
+       ],
+       "footnote": "All doses mg/m&sup2; unless stated. <b>Institutional preference: no 5-FU bolus</b> (higher toxicity) &mdash; which also removes the need for leucovorin as a stabilizer."
+      },
+      {
+       "type": "table",
+       "heading": "Biomarker &rarr; therapy",
+       "headers": [
+        "Alteration",
+        "Therapy"
+       ],
+       "widths": [
+        "28%",
+        ""
+       ],
+       "rows": [
+        [
+         "dMMR / MSI-H",
+         "<b>Pembrolizumab</b> 200 mg q3wk or 400 mg q6wk &mdash; 1L metastatic; also neoadjuvant/adjuvant"
+        ],
+        [
+         "BRAF V600E, 1L",
+         "FOLFOX + <b>encorafenib</b> 300 mg daily + <b>cetuximab</b>"
+        ],
+        [
+         "BRAF V600E, later",
+         "Encorafenib + cetuximab; triplet adds binimetinib"
+        ],
+        [
+         "RAS WT + <b>left-sided</b>",
+         "Cetuximab or panitumumab &mdash; <b>no benefit if right-sided or RAS-mutant</b>"
+        ],
+        [
+         "HER2 amplified",
+         "Trastuzumab + pertuzumab; <b>tucatinib</b> 300 BID + trastuzumab; <b>T-DXd</b>"
+        ],
+        [
+         "NTRK fusion",
+         "Larotrectinib 100 mg BID &middot; entrectinib 600 mg daily"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Surveillance",
+       "items": [
+        "H&amp;P + <b>CEA</b> q3&ndash;6 mo &times; 2 yr, then q6 mo &mdash; 5 years total",
+        "CT C/A/P: stage II&ndash;III q6&ndash;12 mo &times; 5 yr; stage IV q3&ndash;6 mo &times; 2 yr then q6&ndash;12 mo",
+        "Colonoscopy at <b>1 year</b> post-op; within 3&ndash;6 mo if no complete pre-op scope",
+        "If adenoma found repeat in 1 yr; otherwise 3 yr, then every 5 yr"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls &amp; cautions",
+       "items": [
+        "<b>Irinotecan</b> with great caution in the elderly, biliary obstruction, or hyperbilirubinemia",
+        "<b>Regorafenib</b> is very toxic &mdash; many do better at lower doses; <b>bevacizumab</b> benefit is modest",
+        "<b>ctDNA timing conflict:</b> results take 4&ndash;6 wk but adjuvant works best within 6 wk of surgery",
+        "Metastatic <b>rectal</b> regimens are identical to metastatic CRC"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Workup",
+  "Staging &mdash; AJCC 8th",
+  "Key trials",
+  "Treatment pathway",
+  "Regimens &amp; dosing",
+  "Biomarker &rarr; therapy",
+  "Surveillance",
+  "Pearls &amp; cautions"
+ ],
+ "text": "Colon adenocarcinoma 2nd leading cause of cancer death · ~106,590 new cases (2024) · 5-yr survival — stage I 90% , II 70–85% , III 50–73% , IV 12–14% Stanford Oncology Handbook 2025, Colon Cancer (Johnson T, Miller D) · NCCN · items marked † are outside the handbook chapter Workup Colonoscopy with biopsy + pathology review MMR / MSI testing in ALL newly diagnosed colon cancer KRAS, NRAS, BRAF mutation + HER2 amplification by NGS panel CT C/A/P · MRI liver if potentially resectable liver mets · PET/CT in selected resectable M1 Labs: CBC, CMP, CEA Genetics referral: all diagnosed <50 y , or somatic finding with germline implications BRAF V600E + MLH1 loss largely excludes Lynch — but ~1% of Lynch is BRAF V600E Staging — AJCC 8th T1 / T2 / T3 submucosa / through muscularis propria / into pericolorectal tissue T4a / T4b through visceral peritoneum / invades adjacent organ N1 / N2 1–3 nodes (N1c = deposits only) / ≥4 nodes M1a / b / c 1 site / ≥2 sites / peritoneal Stage III any node-positive, M0 Key trials IDEA 3 vs 6 mo adjuvant — failed non-inferiority overall (HR 1.07, margin 1.12), but 3 mo CAPOX non-inferior while FOLFOX favored 6 mo (Grothey, NEJM 2018) ATOMIC adding IO to adjuvant chemo in dMMR (ASCO 2025) KEYNOTE-177 1L pembrolizumab in dMMR: PFS 16.5 vs 8.2 mo BREAKWATER 1L BRAF V600E: FOLFOX + encorafenib + cetuximab BEACON BRAF V600E later line (Kopetz, NEJM 2019) Treatment pathway Localized — stage I to III Surgery first colon is resected upfront (unlike rectal) pathology drives the adjuvant decision no adjuvant therapy for stage I Stage II (node-negative) risk factors: T4, LVI, PNI, obstruction, perforation, poor differentiation, <12 nodes low risk observe; RFs 5-FU ± oxaliplatin Stage III virtually all receive adjuvant chemotherapy age <75: fluoropyrimidine + oxaliplatin age >75: fluoropyrimidine alone IDEA: 3 mo CAPOX ok — FOLFOX needs 6 mo high risk (T4 and/or N2) favors 6 months dMMR / MSI-H Immunotherapy-sensitive consider neoadjuvant IO before resection adjuvant: add IO to chemo (ATOMIC) adjuvant 5-FU alone may be HARMFUL Metastatic Oligometastatic liver/lung only: surgical consult upfront FOLFOX or CAPEOX preferred — cure possible 1L by molecular subtype dMMR: pembrolizumab (KEYNOTE-177) BRAF V600E: FOLFOX + encorafenib + cetuximab left-sided RAS/BRAF WT: doublet + anti-EGFR right-sided or RAS-mut: FOLFOXIRI ± bev Later lines stop oxaliplatin at ~4 months (neuropathy) swap backbone; HER2 matters in 2nd line Oxaliplatin neuropathy is the dominant long-term toxicity. Six months may raise the risk of permanent neuropathy as much as tenfold vs three months. Do not exceed ~4 months in initial metastatic therapy (OPTIMOX); never given as a single agent. Regimens & dosing Regimen Dosing Cycle FOLFOX oxaliplatin 85 d1 · 5-FU 1200–1500/day CIV d1–2 q14d CAPEOX / XELOX oxaliplatin 130 d1 · capecitabine 1000 BID d1–14 q21d FOLFIRI irinotecan 180 d1 · 5-FU 1200–1400/day CIV d1–2 q14d FOLFOXIRI oxaliplatin 85 · irinotecan 165 · 5-FU 1200–1400/day CIV d1–2 q14d Bevacizumab 7.5 mg/kg (q3wk) or 5 mg/kg (q2wk) q21d / q14d Cetuximab / panitumumab cetuximab 400 load then 250 weekly (or 500 q2wk) · panitumumab 6 mg/kg wkly / q2wk Regorafenib ramp 80→120→160 mg weekly in C1; then 160 mg d1–21 q28d Trifluridine/tipiracil 35 mg/m² PO BID d1–5 and d8–12 q28d Fruquintinib 5 mg PO daily × 21 days q28d All doses mg/m² unless stated. Institutional preference: no 5-FU bolus (higher toxicity) — which also removes the need for leucovorin as a stabilizer. Biomarker → therapy Alteration Therapy dMMR / MSI-H Pembrolizumab 200 mg q3wk or 400 mg q6wk — 1L metastatic; also neoadjuvant/adjuvant BRAF V600E, 1L FOLFOX + encorafenib 300 mg daily + cetuximab BRAF V600E, later Encorafenib + cetuximab; triplet adds binimetinib RAS WT + left-sided Cetuximab or panitumumab — no benefit if right-sided or RAS-mutant HER2 amplified Trastuzumab + pertuzumab; tucatinib 300 BID + trastuzumab; T-DXd NTRK fusion Larotrectinib 100 mg BID · entrectinib 600 mg daily Surveillance H&P + CEA q3–6 mo × 2 yr, then q6 mo — 5 years total CT C/A/P: stage II–III q6–12 mo × 5 yr; stage IV q3–6 mo × 2 yr then q6–12 mo Colonoscopy at 1 year post-op; within 3–6 mo if no complete pre-op scope If adenoma found repeat in 1 yr; otherwise 3 yr, then every 5 yr Pearls & cautions Irinotecan with great caution in the elderly, biliary obstruction, or hyperbilirubinemia Regorafenib is very toxic — many do better at lower doses; bevacizumab benefit is modest ctDNA timing conflict: results take 4–6 wk but adjuvant works best within 6 wk of surgery Metastatic rectal regimens are identical to metastatic CRC"
+}

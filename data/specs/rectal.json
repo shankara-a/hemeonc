@@ -1,0 +1,307 @@
+{
+ "disease": "rectal",
+ "spec_file": "rectal.py",
+ "pdf": "Rectal Adenocarcinoma.pdf",
+ "title": "Rectal adenocarcinoma",
+ "subtitle": "<b>Neoadjuvant chemoradiation is the hallmark deviation from the colon strategy</b> &mdash; metastatic regimens are otherwise the same. Staging, prognosis and most systemic therapy defer to the colon page",
+ "source": "Stanford Oncology Handbook 2025, Rectal Cancer (Tam AY, Shaheen S) &middot; NCCN &middot; items marked &dagger; are outside the handbook chapter",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "27%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "Colonoscopy + biopsy with <b>MMR / MSI testing</b> and pathology review",
+        "<b>MRI pelvis (3T)</b> &mdash; the rectal-specific study; rectal ultrasound if MRI contraindicated, inconclusive, or for superficial lesions",
+        "CT chest/abdomen/pelvis &middot; FDG-PET if potentially curable M1",
+        "Labs: CBC, CMP, <b>CEA</b>",
+        "<b>PIK3CA testing in stage II&ndash;III</b> &mdash; if mutated, aspirin 100&ndash;162 mg daily &times; 3 years post-op",
+        "If metastatic: KRAS, BRAF, HER2, POLE/POLD1, RET, NTRK",
+        "Genetics referral for all rectal cancer <b>&lt;50 y</b>, or a somatic finding with germline implications"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Risk definitions",
+       "rows": [
+        [
+         "<b>High-risk rectal</b>",
+         "cT4a or cT4b &middot; <b>extramural vascular invasion</b> &middot; cN2 &middot; <b>involved mesorectal fascia</b> &middot; enlarged lateral nodes considered metastatic"
+        ],
+        [
+         "High-risk path after local excision",
+         "positive margins &middot; lymphovascular invasion &middot; poorly differentiated &middot; submucosal invasion to the lower third"
+        ],
+        [
+         "T4 (rectal nuance)",
+         "direct extension through serosa into prostate, seminal vesicles, cervix or vagina"
+        ]
+       ],
+       "footnote": "TNM is otherwise identical to colon &mdash; see the colon one-pager for stage groups and for all metastatic systemic therapy."
+      },
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "rows": [
+        [
+         "PROSPECT",
+         "RT-sparing: FOLFOX/CAPEOX &times; 12&ndash;16 wk with radiation reserved for inadequate regression"
+        ],
+        [
+         "RAPIDO",
+         "short-course RT + chemo TNT: pCR <b>28% vs 14%</b>; lower distant relapse but <b>possible higher local recurrence</b> (Dijkstra, Ann Surg 2023)"
+        ],
+        [
+         "PRODIGE 23",
+         "induction mFOLFIRINOX: pCR <b>27.8% vs 12.1%</b> (Conroy)"
+        ],
+        [
+         "OPRA",
+         "watch-and-wait after clinical CR to TNT preserves the organ without compromising survival"
+        ],
+        [
+         "Cercek (NEJM 2025)",
+         "dostarlimab in <b>dMMR</b> rectal cancer &mdash; basis for immunotherapy over TNT"
+        ],
+        [
+         "SHORTFOX",
+         "ongoing &mdash; RT omission and course length"
+        ]
+       ]
+      },
+      {
+       "type": "note",
+       "html": "<b>Watch-and-wait requires a complete clinical response on all three of DRE, rectal MRI, and direct endoscopic evaluation</b> &mdash; and only in centers with experienced multidisciplinary teams, after careful discussion with the patient.<br><br><b>RAPIDO caveat:</b> short-course RT lowered distant relapse but may raise local recurrence, so high-risk patients get TNT as induction chemo followed by chemoradiation. Short-course candidacy is a multidisciplinary decision weighing downstaging against long-term toxicity."
+      }
+     ]
+    },
+    {
+     "width": "35%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Early &mdash; cT1&ndash;2 N0",
+         "color": "teal",
+         "boxes": [
+          [
+           "cT1 N0",
+           [
+            "endoscopic submucosal dissection, or",
+            "transanal local excision",
+            "pT1 without high-risk features &rarr; surveillance"
+           ]
+          ],
+          [
+           "pT1 high-risk or pT2",
+           [
+            "transabdominal resection preferred",
+            "then 6 months adjuvant chemoRT + chemo",
+            "or TNT, then restage &rarr; surgery"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Locally advanced &mdash; pMMR / MSS",
+         "color": "blue",
+         "boxes": [
+          [
+           "TNT is the standard",
+           [
+            "FOLFOX or CAPEOX + chemoRT",
+            "concurrent capecitabine during radiation",
+            "~6 months of total neoadjuvant therapy"
+           ]
+          ],
+          [
+           "High-risk disease sequencing",
+           [
+            "<b>induction chemo THEN chemoRT</b>",
+            "driven by the RAPIDO local-recurrence signal",
+            "induction mFOLFIRINOX an option (PRODIGE 23)"
+           ]
+          ],
+          [
+           "RT-sparing (PROSPECT-eligible)",
+           [
+            "non-T4, &le;4 nodes, sphincter-sparing candidate",
+            "FOLFOX/CAPEOX 12&ndash;16 wk &rarr; restage",
+            "add RT only if regression inadequate"
+           ]
+          ],
+          [
+           "After neoadjuvant therapy",
+           [
+            "restage &rarr; transabdominal resection",
+            "if clinical CR: <b>watch and wait</b> (see note)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "dMMR / MSI-H or POLE-POLD1",
+         "color": "amber",
+         "boxes": [
+          [
+           "Immunotherapy, preferred OVER TNT",
+           [
+            "dostarlimab, nivolumab, or pembrolizumab",
+            "up to 6 months; reassess every 2&ndash;3 months",
+            "(Cercek, NEJM 2025)"
+           ]
+          ],
+          [
+           "Then",
+           [
+            "clinical CR &rarr; surveillance, <b>no surgery</b>",
+            "persistent at 6 mo &rarr; chemoRT &rarr; surgery"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "38%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimens &amp; dosing",
+       "headers": [
+        "Regimen",
+        "Dosing",
+        "Schedule"
+       ],
+       "widths": [
+        "26%",
+        "",
+        "18%"
+       ],
+       "rows": [
+        [
+         "ChemoRT (infusional 5-FU)",
+         "5-FU <b>225 mg/m&sup2;</b> IV over 24 h, 5 days per week",
+         "with RT &times; 5 wk"
+        ],
+        [
+         "ChemoRT (capecitabine)",
+         "capecitabine <b>825 mg/m&sup2; PO BID</b> on days of radiation",
+         "concurrent with RT"
+        ],
+        [
+         "Long-course radiation",
+         "5&ndash;6 weeks",
+         "&mdash;"
+        ],
+        [
+         "Short-course radiation",
+         "5 days",
+         "&mdash;"
+        ],
+        [
+         "<b>Dostarlimab</b>",
+         "500 mg IV &times; 4 doses, then 1000 mg IV",
+         "q3wk &rarr; q6wk"
+        ],
+        [
+         "Nivolumab",
+         "240 mg (or 3 mg/kg if &lt;40 kg) &middot; or 480 mg",
+         "q2wk &middot; q4wk"
+        ],
+        [
+         "Nivolumab + ipilimumab",
+         "nivo 3 mg/kg + ipi 1 mg/kg &times; 4, then nivo maintenance",
+         "q3wk &rarr; q2&ndash;4wk"
+        ],
+        [
+         "Aspirin (PIK3CA-mutant)",
+         "100&ndash;162 mg PO daily &times; 3 years post-op",
+         "stage II&ndash;III"
+        ],
+        [
+         "FOLFOX &middot; CAPEOX &middot; mFOLFIRINOX",
+         "named only here &mdash; dosing on the colon page",
+         "&mdash;"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Biomarker &rarr; therapy",
+       "headers": [
+        "Alteration",
+        "Therapy"
+       ],
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>dMMR / MSI-H</b> or POLE-POLD1 (TMB &gt;50)",
+         "Neoadjuvant/definitive immunotherapy up to 6 months &mdash; <b>preferred over TNT</b>; dostarlimab, nivolumab or pembrolizumab"
+        ],
+        [
+         "Same, metastatic",
+         "ICI preferred if no prior exposure: nivolumab &plusmn; ipilimumab, pembrolizumab, dostarlimab, cemiplimab, retifanlimab, toripalimab, tislelizumab"
+        ],
+        [
+         "pMMR/MSS, TMB &ge;10",
+         "Pembrolizumab in the refractory setting (KEYNOTE-158)"
+        ],
+        [
+         "PIK3CA, stage II&ndash;III",
+         "Aspirin 100&ndash;162 mg daily &times; 3 years after surgery"
+        ],
+        [
+         "ctDNA",
+         "Prognostic only &mdash; <b>not</b> for treatment decisions outside a trial"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Surveillance",
+       "items": [
+        "Same as colon cancer for stage I&ndash;IV, <b>except after transanal local excision</b>",
+        "<b>Transanal local excision:</b> proctoscopy (with EUS or MRI) <b>q3&ndash;6 months &times; 2 years</b>, then q6 months to 5 years total",
+        "Colonoscopy at <b>1 year</b>; if advanced adenoma repeat in 1 year, otherwise 3 years then every 5 years",
+        "dMMR on immunotherapy: re-evaluate <b>q2&ndash;3 months</b>; MSS metastatic being converted to resectable: <b>q2 months</b>"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>FOLFOXIRI is not recommended</b> when resection is contraindicated after neoadjuvant therapy",
+        "Resection is <b>preferred over ablation or SBRT</b> for oligometastatic liver- or lung-only disease",
+        "Favorable pT3 N0 (well/moderately differentiated, &lt;2 mm mesorectal invasion, no lymphovascular involvement, upper rectum) may go to surveillance rather than adjuvant therapy",
+        "pT1&ndash;3 N1 can be treated with FOLFOX or CAPEOX alone, without radiation"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Workup",
+  "Risk definitions",
+  "Key trials",
+  "Treatment pathway",
+  "Regimens &amp; dosing",
+  "Biomarker &rarr; therapy",
+  "Surveillance",
+  "Pearls"
+ ],
+ "text": "Rectal adenocarcinoma Neoadjuvant chemoradiation is the hallmark deviation from the colon strategy — metastatic regimens are otherwise the same. Staging, prognosis and most systemic therapy defer to the colon page Stanford Oncology Handbook 2025, Rectal Cancer (Tam AY, Shaheen S) · NCCN · items marked † are outside the handbook chapter Workup Colonoscopy + biopsy with MMR / MSI testing and pathology review MRI pelvis (3T) — the rectal-specific study; rectal ultrasound if MRI contraindicated, inconclusive, or for superficial lesions CT chest/abdomen/pelvis · FDG-PET if potentially curable M1 Labs: CBC, CMP, CEA PIK3CA testing in stage II–III — if mutated, aspirin 100–162 mg daily × 3 years post-op If metastatic: KRAS, BRAF, HER2, POLE/POLD1, RET, NTRK Genetics referral for all rectal cancer <50 y , or a somatic finding with germline implications Risk definitions High-risk rectal cT4a or cT4b · extramural vascular invasion · cN2 · involved mesorectal fascia · enlarged lateral nodes considered metastatic High-risk path after local excision positive margins · lymphovascular invasion · poorly differentiated · submucosal invasion to the lower third T4 (rectal nuance) direct extension through serosa into prostate, seminal vesicles, cervix or vagina TNM is otherwise identical to colon — see the colon one-pager for stage groups and for all metastatic systemic therapy. Key trials PROSPECT RT-sparing: FOLFOX/CAPEOX × 12–16 wk with radiation reserved for inadequate regression RAPIDO short-course RT + chemo TNT: pCR 28% vs 14% ; lower distant relapse but possible higher local recurrence (Dijkstra, Ann Surg 2023) PRODIGE 23 induction mFOLFIRINOX: pCR 27.8% vs 12.1% (Conroy) OPRA watch-and-wait after clinical CR to TNT preserves the organ without compromising survival Cercek (NEJM 2025) dostarlimab in dMMR rectal cancer — basis for immunotherapy over TNT SHORTFOX ongoing — RT omission and course length Watch-and-wait requires a complete clinical response on all three of DRE, rectal MRI, and direct endoscopic evaluation — and only in centers with experienced multidisciplinary teams, after careful discussion with the patient. RAPIDO caveat: short-course RT lowered distant relapse but may raise local recurrence, so high-risk patients get TNT as induction chemo followed by chemoradiation. Short-course candidacy is a multidisciplinary decision weighing downstaging against long-term toxicity. Treatment pathway Early — cT1–2 N0 cT1 N0 endoscopic submucosal dissection, or transanal local excision pT1 without high-risk features → surveillance pT1 high-risk or pT2 transabdominal resection preferred then 6 months adjuvant chemoRT + chemo or TNT, then restage → surgery Locally advanced — pMMR / MSS TNT is the standard FOLFOX or CAPEOX + chemoRT concurrent capecitabine during radiation ~6 months of total neoadjuvant therapy High-risk disease sequencing induction chemo THEN chemoRT driven by the RAPIDO local-recurrence signal induction mFOLFIRINOX an option (PRODIGE 23) RT-sparing (PROSPECT-eligible) non-T4, ≤4 nodes, sphincter-sparing candidate FOLFOX/CAPEOX 12–16 wk → restage add RT only if regression inadequate After neoadjuvant therapy restage → transabdominal resection if clinical CR: watch and wait (see note) dMMR / MSI-H or POLE-POLD1 Immunotherapy, preferred OVER TNT dostarlimab, nivolumab, or pembrolizumab up to 6 months; reassess every 2–3 months (Cercek, NEJM 2025) Then clinical CR → surveillance, no surgery persistent at 6 mo → chemoRT → surgery Regimens & dosing Regimen Dosing Schedule ChemoRT (infusional 5-FU) 5-FU 225 mg/m² IV over 24 h, 5 days per week with RT × 5 wk ChemoRT (capecitabine) capecitabine 825 mg/m² PO BID on days of radiation concurrent with RT Long-course radiation 5–6 weeks — Short-course radiation 5 days — Dostarlimab 500 mg IV × 4 doses, then 1000 mg IV q3wk → q6wk Nivolumab 240 mg (or 3 mg/kg if <40 kg) · or 480 mg q2wk · q4wk Nivolumab + ipilimumab nivo 3 mg/kg + ipi 1 mg/kg × 4, then nivo maintenance q3wk → q2–4wk Aspirin (PIK3CA-mutant) 100–162 mg PO daily × 3 years post-op stage II–III FOLFOX · CAPEOX · mFOLFIRINOX named only here — dosing on the colon page — Biomarker → therapy Alteration Therapy dMMR / MSI-H or POLE-POLD1 (TMB >50) Neoadjuvant/definitive immunotherapy up to 6 months — preferred over TNT ; dostarlimab, nivolumab or pembrolizumab Same, metastatic ICI preferred if no prior exposure: nivolumab ± ipilimumab, pembrolizumab, dostarlimab, cemiplimab, retifanlimab, toripalimab, tislelizumab pMMR/MSS, TMB ≥10 Pembrolizumab in the refractory setting (KEYNOTE-158) PIK3CA, stage II–III Aspirin 100–162 mg daily × 3 years after surgery ctDNA Prognostic only — not for treatment decisions outside a trial Surveillance Same as colon cancer for stage I–IV, except after transanal local excision Transanal local excision: proctoscopy (with EUS or MRI) q3–6 months × 2 years , then q6 months to 5 years total Colonoscopy at 1 year ; if advanced adenoma repeat in 1 year, otherwise 3 years then every 5 years dMMR on immunotherapy: re-evaluate q2–3 months ; MSS metastatic being converted to resectable: q2 months Pearls FOLFOXIRI is not recommended when resection is contraindicated after neoadjuvant therapy Resection is preferred over ablation or SBRT for oligometastatic liver- or lung-only disease Favorable pT3 N0 (well/moderately differentiated, <2 mm mesorectal invasion, no lymphovascular involvement, upper rectum) may go to surveillance rather than adjuvant therapy pT1–3 N1 can be treated with FOLFOX or CAPEOX alone, without radiation"
+}

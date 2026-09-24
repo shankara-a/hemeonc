@@ -1,0 +1,401 @@
+{
+ "disease": "lymphoma-hodgkin",
+ "spec_file": "lymphoma_hodgkin.py",
+ "pdf": "Lymphoma - Hodgkin.pdf",
+ "title": "Hodgkin lymphoma",
+ "subtitle": "Highly curable, and managed by <b>interim PET</b> more than by anything else &mdash; the whole game is giving enough therapy to cure while withdrawing bleomycin and radiation from the people who don't need them",
+ "source": "Stanford Oncology Handbook 2025, Lymphoma: Hodgkin, pp.181&ndash;192 (Chou L, Schroers-Martin J) &middot; NCCN v2.2025 &middot; items marked &dagger; are outside the handbook chapter",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "29%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "History: B symptoms, <b>pruritus, alcohol intolerance</b>; exam of nodal regions, liver, spleen. <b>Marrow biopsy only</b> for focal bone lesions or unexplained cytopenias",
+        "<b>Excisional biopsy preferred</b>, core acceptable, <b>no FNA</b>",
+        "IHC &mdash; most critical: <b>CD30, CD15, PAX5, CD20, CD3</b>",
+        "Labs: CBC, CMP, <b>ESR</b>, LDH, HIV, hepatitis B and C",
+        "<b>PET-CT</b> for staging",
+        "<b>Echo/MUGA</b> before anthracycline &middot; <b>PFTs</b> before bleomycin &middot; before a checkpoint inhibitor: TSH, ACTH, cortisol, troponin",
+        "Fertility discussion &mdash; risk is <b>low with A(B)VD</b>, so preservation is not mandated frontline; bank before salvage"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Staging &mdash; Cotswolds-modified Ann Arbor",
+       "widths": [
+        "13%",
+        ""
+       ],
+       "rows": [
+        [
+         "I",
+         "<b>One</b> lymph node region or lymphoid structure (spleen, thymus, Waldeyer ring)"
+        ],
+        [
+         "II",
+         "<b>&ge;2</b> regions, <b>same side</b> of the diaphragm. Hilar nodes are lateralized &mdash; bilateral involvement is stage II"
+        ],
+        [
+         "III",
+         "Regions on <b>both sides</b> of the diaphragm"
+        ],
+        [
+         "IV",
+         "<b>Disseminated</b> &mdash; marrow, CNS, or <b>more than one</b> extranodal site"
+        ],
+        [
+         "A / B",
+         "B = weight loss &gt;10% over 6 mo, <b>or</b> unexplained fever &gt;38&deg;C in the past month, <b>or</b> recurrent drenching night sweats"
+        ],
+        [
+         "S &middot; X &middot; E",
+         "S splenic &middot; <b>X bulky: node &ge;10 cm</b>, or mediastinal mass &ge;&#8531; the transverse thoracic diameter at T5&ndash;6 &middot; E limited direct extranodal extension"
+        ]
+       ],
+       "footnote": "<b>A single extranodal site as the only disease is IE; more than one extranodal site is stage IV.</b> Hilar (bronchopulmonary) nodes sit outside the mediastinum."
+      },
+      {
+       "type": "table",
+       "heading": "Early-stage risk factors",
+       "headers": [
+        "Factor",
+        "EORTC",
+        "GHSG",
+        "NCCN"
+       ],
+       "widths": [
+        "31%",
+        "23%",
+        "23%",
+        ""
+       ],
+       "rows": [
+        [
+         "Mediastinal mass",
+         "<b>&gt;0.35</b> CXR",
+         "<b>&gt;&#8531;</b> CXR",
+         "&gt;&#8531; or &gt;10 cm"
+        ],
+        [
+         "Age &ge;50",
+         "<b>yes</b>",
+         "&mdash;",
+         "&mdash;"
+        ],
+        [
+         "ESR",
+         "&ge;50 (&ge;30 if B)",
+         "&ge;50 (&ge;30 if B)",
+         "&ge;50 <b>or any B</b>"
+        ],
+        [
+         "Extranodal disease",
+         "&mdash;",
+         "<b>yes</b>",
+         "&mdash;"
+        ],
+        [
+         "Nodal areas",
+         "&ge;3",
+         "<b>&ge;2</b>",
+         "&ge;3"
+        ]
+       ],
+       "footnote": "<b>Favorable = CS I&ndash;II with none of these.</b> GHSG counts nodal areas differently from Ann Arbor (infraclavicular with ipsilateral cervical, both hila with mediastinum, abdomen split in two)."
+      },
+      {
+       "type": "table",
+       "heading": "IPS &mdash; advanced stage",
+       "headers": [
+        "Factors",
+        "FFP Hasenclever",
+        "FFP Moccia"
+       ],
+       "widths": [
+        "30%",
+        "36%",
+        ""
+       ],
+       "rows": [
+        [
+         "0&ndash;1",
+         "84&ndash;77%",
+         "88&ndash;84%"
+        ],
+        [
+         "2&ndash;3",
+         "67&ndash;60%",
+         "80&ndash;74%"
+        ],
+        [
+         "&ge;4",
+         "<b>51&ndash;42%</b>",
+         "<b>67&ndash;62%</b>"
+        ]
+       ],
+       "footnote": "One point each: <b>albumin &lt;4 &middot; Hgb &lt;10.5 &middot; male &middot; stage IV &middot; age &ge;45 &middot; WBC &ge;15,000 &middot; lymphocytes &lt;600 or &lt;8%</b>. Hasenclever NEJM 1998; Moccia JCO 2012 is the modern-era revision."
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Early favorable (CS I&ndash;II, no risk factors)",
+         "color": "teal",
+         "boxes": [
+          [
+           "PET-adapted, two routes",
+           [
+            "GHSG-favorable: <b>ABVD &times;2 &rarr; 20 Gy ISRT</b> (HD16)",
+            "otherwise ABVD &times;3 &rarr; <b>30 Gy</b> if DS 1&ndash;2",
+            "chemo only: <b>ABVD &times;4</b> if DS 1&ndash;2",
+            "&nbsp;&nbsp;DS 3 &rarr; ABVD &times;2 then AVD &times;4 (RATHL)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Early unfavorable",
+         "color": "blue",
+         "boxes": [
+          [
+           "Combined modality or chemo alone",
+           [
+            "<b>ABVD &times;4 + 30 Gy ISRT</b> if DS 1&ndash;2",
+            "nivo-AVD &times;4 + 30 Gy (NIVAHL) &middot; BV-AVD (BREACH)",
+            "chemo only: ABVD &times;2 &rarr; AVD &times;4 &mdash; <b>drop bleomycin</b>",
+            "&nbsp;&nbsp;after cycle 2 if DS 1&ndash;3 (RATHL)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Advanced III&ndash;IV",
+         "color": "purple",
+         "boxes": [
+          [
+           "Two modern standards",
+           [
+            "<b>BrECADD &times;4&ndash;6</b> (HD21) &mdash; stop at 4 if DS 1&ndash;3",
+            "<b>nivolumab-AVD &times;6</b> (S1826)",
+            "selected: BV-AVD &times;6 (ECHELON-1), ABVD"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Relapsed / refractory",
+         "color": "coral",
+         "boxes": [
+          [
+           "Checkpoint combo is preferred first salvage",
+           [
+            "pembro-GVD &middot; pembro-ICE &middot; nivo-ICE &middot; BV-nivo",
+            "non-CPI: BeGEV, BV &plusmn; benda, BV-ICE, DHAP, GVD, ICE",
+            "<b>2&ndash;4 cycles then mobilize</b> if transplant-bound"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "NLPHL",
+         "color": "amber",
+         "boxes": [
+          [
+           "A different disease",
+           [
+            "I&ndash;IIA contiguous non-bulky: <b>ISRT 30&ndash;36 Gy</b>",
+            "I&ndash;IIB or bulky: R-ABVD/R-CHOP &times;4 + 30 Gy",
+            "III&ndash;IV: <b>R-CHOP &times;6</b> &plusmn; ISRT, or observe",
+            "transformation to THRLBCL &rarr; treat as DLBCL"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "&dagger; Deauville 5-point score",
+       "widths": [
+        "13%",
+        ""
+       ],
+       "rows": [
+        [
+         "1 &middot; 2",
+         "No uptake &middot; uptake <b>&le; mediastinum</b>"
+        ],
+        [
+         "3",
+         "Uptake <b>&gt; mediastinum but &le; liver</b> &mdash; usually adequate response"
+        ],
+        [
+         "4 &middot; 5",
+         "Moderately <b>&gt; liver</b> &middot; markedly &gt; liver or new lesions &mdash; <b>treatment failure</b>"
+        ]
+       ],
+       "footnote": "&dagger; Not in the handbook chapter, which specifies only PET/CT at completion (plus marrow biopsy if positive at diagnosis). Added because response is reported this way in practice and in every trial cited here."
+      }
+     ]
+    },
+    {
+     "width": "41%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Frontline regimens",
+       "headers": [
+        "Regimen",
+        "Dosing",
+        "Cycle"
+       ],
+       "widths": [
+        "19%",
+        "",
+        "14%"
+       ],
+       "rows": [
+        [
+         "<b>ABVD</b>",
+         "Doxorubicin 25 &middot; bleomycin 10 units/m&sup2; &middot; vinblastine 6 &middot; dacarbazine 375 &mdash; all d1 + d15",
+         "q28d"
+        ],
+        [
+         "<b>Nivolumab-AVD</b>",
+         "Nivolumab 240 mg &middot; doxorubicin 25 &middot; vinblastine 6 &middot; dacarbazine 375 &mdash; all d1 + d15. <b>G-CSF not required</b>",
+         "d1 + d15"
+        ],
+        [
+         "<b>BrECADD</b>",
+         "Brentuximab 1.8 d0 &middot; etoposide 150 d1&ndash;3 &middot; cyclophosphamide 1250 d1 &middot; doxorubicin 40 d1 &middot; vincristine 1.4 d8 &middot; dacarbazine 250 d2&ndash;3 &middot; dexamethasone 40 mg d1&ndash;4",
+         "q21d <b>with G-CSF</b>"
+        ],
+        [
+         "<b>BV-AVD</b>",
+         "Brentuximab 1.2 mg/kg &middot; doxorubicin 25 &middot; vinblastine 6 &middot; dacarbazine 375 &mdash; all d1 + d15; filgrastim d5&ndash;8 and d19&ndash;22",
+         "q28d"
+        ]
+       ],
+       "footnote": "mg/m&sup2; unless stated. <b>BrECADD starts at dose level 4</b> and de-escalates for toxicity. Antiviral + PJP prophylaxis with every brentuximab-containing regimen."
+      },
+      {
+       "type": "table",
+       "heading": "Salvage regimens",
+       "headers": [
+        "Regimen",
+        "Dosing",
+        "Cycle"
+       ],
+       "widths": [
+        "19%",
+        "",
+        "14%"
+       ],
+       "rows": [
+        [
+         "<b>Pembro-GVD</b>",
+         "Pembrolizumab 200 mg d1; gemcitabine 1000 (800 if post-HSCT) + vinorelbine 15 + liposomal doxorubicin 10 &mdash; all d1 + d8",
+         "q21d &times;2&ndash;4"
+        ],
+        [
+         "<b>Pembro-ICE</b> &middot; nivo-ICE",
+         "Checkpoint inhibitor d1 + ICE: ifosfamide 5000 + mesna 5000 CIV d2; carboplatin AUC 5 (max 800 mg) d2; etoposide 100 d1&ndash;3",
+         "q21d &times;2, then collect"
+        ],
+        [
+         "<b>BV + nivolumab</b>",
+         "Brentuximab 1.8 mg/kg (max 180 mg) d1; nivolumab 240 mg C1D8 then d1 of C2&ndash;4",
+         "q21d &times;4"
+        ],
+        [
+         "BV &plusmn; benda &middot; BeGEV",
+         "Brentuximab 1.8 mg/kg d1 &plusmn; bendamustine 90 d1&ndash;2 (BV alone &times;16 cycles) &middot; BeGEV = gemcitabine 800 d1+4, bendamustine 90 d2+3, vinorelbine 20 d1, prednisolone 100 mg d1&ndash;4",
+         "q21d"
+        ],
+        [
+         "GVD &middot; ICE &middot; DHAP",
+         "Gemcitabine/vinorelbine/liposomal doxorubicin &middot; ifosfamide-carbo-etoposide &middot; cisplatin + cytarabine 2000 q12h &times;2 + dexamethasone",
+         "q21&ndash;28d"
+        ]
+       ],
+       "footnote": "2&ndash;4 cycles then mobilization for transplant candidates, 4&ndash;6 otherwise. <b>Checkpoint monotherapy responds often but completes rarely</b> &mdash; combine it."
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>Do not give G-CSF with ABVD</b> &mdash; bleomycin pulmonary toxicity. Do not delay or dose-reduce for non-febrile neutropenia; if unavoidable (ANC &lt;200 or febrile neutropenia) give it day 5 or later &times;3&ndash;5 days",
+        "<b>Bilateral hilar involvement is stage II</b>, not III &mdash; hilar nodes are lateralized, and they sit outside the mediastinum",
+        "In relapse, give a <b>checkpoint combination first if the patient is CPI-naive</b> &mdash; post-ASCT outcomes are better",
+        "&dagger; The handbook defers survivorship to NCCN &mdash; cardiac late effects, second malignancy and <b>post-chest-RT breast screening</b> are not in it"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Trials behind the pathway",
+       "headers": [
+        "Trial",
+        "Role"
+       ],
+       "widths": [
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>HD16</b>",
+         "ABVD &times;2 + 20 Gy for GHSG-favorable early stage with a negative interim PET"
+        ],
+        [
+         "<b>RAPID</b> &middot; EORTC H10",
+         "PET-adapted radiation omission vs combined modality in early stage"
+        ],
+        [
+         "<b>RATHL</b>",
+         "<b>Drop bleomycin after 2 cycles</b> if interim PET is negative"
+        ],
+        [
+         "<b>HD21</b>",
+         "<b>BrECADD</b> vs eBEACOPP in advanced stage &mdash; the current European standard"
+        ],
+        [
+         "<b>SWOG S1826</b>",
+         "<b>Nivolumab-AVD vs BV-AVD</b> in advanced stage"
+        ],
+        [
+         "KEYNOTE-204",
+         "Pembrolizumab vs brentuximab, relapsed"
+        ]
+       ],
+       "footnote": "<b>HD16, RAPID and H10 all failed non-inferiority</b> &mdash; omitting RT costs ~4&ndash;7% PFS, though OS is unchanged."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Workup",
+  "Staging &mdash; Cotswolds-modified Ann Arbor",
+  "Early-stage risk factors",
+  "IPS &mdash; advanced stage",
+  "Treatment pathway",
+  "&dagger; Deauville 5-point score",
+  "Frontline regimens",
+  "Salvage regimens",
+  "Pearls",
+  "Trials behind the pathway"
+ ],
+ "text": "Hodgkin lymphoma Highly curable, and managed by interim PET more than by anything else — the whole game is giving enough therapy to cure while withdrawing bleomycin and radiation from the people who don't need them Stanford Oncology Handbook 2025, Lymphoma: Hodgkin, pp.181–192 (Chou L, Schroers-Martin J) · NCCN v2.2025 · items marked † are outside the handbook chapter Workup History: B symptoms, pruritus, alcohol intolerance ; exam of nodal regions, liver, spleen. Marrow biopsy only for focal bone lesions or unexplained cytopenias Excisional biopsy preferred , core acceptable, no FNA IHC — most critical: CD30, CD15, PAX5, CD20, CD3 Labs: CBC, CMP, ESR , LDH, HIV, hepatitis B and C PET-CT for staging Echo/MUGA before anthracycline · PFTs before bleomycin · before a checkpoint inhibitor: TSH, ACTH, cortisol, troponin Fertility discussion — risk is low with A(B)VD , so preservation is not mandated frontline; bank before salvage Staging — Cotswolds-modified Ann Arbor I One lymph node region or lymphoid structure (spleen, thymus, Waldeyer ring) II ≥2 regions, same side of the diaphragm. Hilar nodes are lateralized — bilateral involvement is stage II III Regions on both sides of the diaphragm IV Disseminated — marrow, CNS, or more than one extranodal site A / B B = weight loss >10% over 6 mo, or unexplained fever >38&deg;C in the past month, or recurrent drenching night sweats S · X · E S splenic · X bulky: node ≥10 cm , or mediastinal mass ≥&#8531; the transverse thoracic diameter at T5–6 · E limited direct extranodal extension A single extranodal site as the only disease is IE; more than one extranodal site is stage IV. Hilar (bronchopulmonary) nodes sit outside the mediastinum. Early-stage risk factors Factor EORTC GHSG NCCN Mediastinal mass >0.35 CXR >&#8531; CXR >&#8531; or >10 cm Age ≥50 yes — — ESR ≥50 (≥30 if B) ≥50 (≥30 if B) ≥50 or any B Extranodal disease — yes — Nodal areas ≥3 ≥2 ≥3 Favorable = CS I–II with none of these. GHSG counts nodal areas differently from Ann Arbor (infraclavicular with ipsilateral cervical, both hila with mediastinum, abdomen split in two). IPS — advanced stage Factors FFP Hasenclever FFP Moccia 0–1 84–77% 88–84% 2–3 67–60% 80–74% ≥4 51–42% 67–62% One point each: albumin <4 · Hgb <10.5 · male · stage IV · age ≥45 · WBC ≥15,000 · lymphocytes <600 or <8% . Hasenclever NEJM 1998; Moccia JCO 2012 is the modern-era revision. Treatment pathway Early favorable (CS I–II, no risk factors) PET-adapted, two routes GHSG-favorable: ABVD ×2 → 20 Gy ISRT (HD16) otherwise ABVD ×3 → 30 Gy if DS 1–2 chemo only: ABVD ×4 if DS 1–2 DS 3 → ABVD ×2 then AVD ×4 (RATHL) Early unfavorable Combined modality or chemo alone ABVD ×4 + 30 Gy ISRT if DS 1–2 nivo-AVD ×4 + 30 Gy (NIVAHL) · BV-AVD (BREACH) chemo only: ABVD ×2 → AVD ×4 — drop bleomycin after cycle 2 if DS 1–3 (RATHL) Advanced III–IV Two modern standards BrECADD ×4–6 (HD21) — stop at 4 if DS 1–3 nivolumab-AVD ×6 (S1826) selected: BV-AVD ×6 (ECHELON-1), ABVD Relapsed / refractory Checkpoint combo is preferred first salvage pembro-GVD · pembro-ICE · nivo-ICE · BV-nivo non-CPI: BeGEV, BV ± benda, BV-ICE, DHAP, GVD, ICE 2–4 cycles then mobilize if transplant-bound NLPHL A different disease I–IIA contiguous non-bulky: ISRT 30–36 Gy I–IIB or bulky: R-ABVD/R-CHOP ×4 + 30 Gy III–IV: R-CHOP ×6 ± ISRT, or observe transformation to THRLBCL → treat as DLBCL † Deauville 5-point score 1 · 2 No uptake · uptake ≤ mediastinum 3 Uptake > mediastinum but ≤ liver — usually adequate response 4 · 5 Moderately > liver · markedly > liver or new lesions — treatment failure † Not in the handbook chapter, which specifies only PET/CT at completion (plus marrow biopsy if positive at diagnosis). Added because response is reported this way in practice and in every trial cited here. Frontline regimens Regimen Dosing Cycle ABVD Doxorubicin 25 · bleomycin 10 units/m² · vinblastine 6 · dacarbazine 375 — all d1 + d15 q28d Nivolumab-AVD Nivolumab 240 mg · doxorubicin 25 · vinblastine 6 · dacarbazine 375 — all d1 + d15. G-CSF not required d1 + d15 BrECADD Brentuximab 1.8 d0 · etoposide 150 d1–3 · cyclophosphamide 1250 d1 · doxorubicin 40 d1 · vincristine 1.4 d8 · dacarbazine 250 d2–3 · dexamethasone 40 mg d1–4 q21d with G-CSF BV-AVD Brentuximab 1.2 mg/kg · doxorubicin 25 · vinblastine 6 · dacarbazine 375 — all d1 + d15; filgrastim d5–8 and d19–22 q28d mg/m² unless stated. BrECADD starts at dose level 4 and de-escalates for toxicity. Antiviral + PJP prophylaxis with every brentuximab-containing regimen. Salvage regimens Regimen Dosing Cycle Pembro-GVD Pembrolizumab 200 mg d1; gemcitabine 1000 (800 if post-HSCT) + vinorelbine 15 + liposomal doxorubicin 10 — all d1 + d8 q21d ×2–4 Pembro-ICE · nivo-ICE Checkpoint inhibitor d1 + ICE: ifosfamide 5000 + mesna 5000 CIV d2; carboplatin AUC 5 (max 800 mg) d2; etoposide 100 d1–3 q21d ×2, then collect BV + nivolumab Brentuximab 1.8 mg/kg (max 180 mg) d1; nivolumab 240 mg C1D8 then d1 of C2–4 q21d ×4 BV ± benda · BeGEV Brentuximab 1.8 mg/kg d1 ± bendamustine 90 d1–2 (BV alone ×16 cycles) · BeGEV = gemcitabine 800 d1+4, bendamustine 90 d2+3, vinorelbine 20 d1, prednisolone 100 mg d1–4 q21d GVD · ICE · DHAP Gemcitabine/vinorelbine/liposomal doxorubicin · ifosfamide-carbo-etoposide · cisplatin + cytarabine 2000 q12h ×2 + dexamethasone q21–28d 2–4 cycles then mobilization for transplant candidates, 4–6 otherwise. Checkpoint monotherapy responds often but completes rarely — combine it. Pearls Do not give G-CSF with ABVD — bleomycin pulmonary toxicity. Do not delay or dose-reduce for non-febrile neutropenia; if unavoidable (ANC <200 or febrile neutropenia) give it day 5 or later ×3–5 days Bilateral hilar involvement is stage II , not III — hilar nodes are lateralized, and they sit outside the mediastinum In relapse, give a checkpoint combination first if the patient is CPI-naive — post-ASCT outcomes are better † The handbook defers survivorship to NCCN — cardiac late effects, second malignancy and post-chest-RT breast screening are not in it Trials behind the pathway Trial Role HD16 ABVD ×2 + 20 Gy for GHSG-favorable early stage with a negative interim PET RAPID · EORTC H10 PET-adapted radiation omission vs combined modality in early stage RATHL Drop bleomycin after 2 cycles if interim PET is negative HD21 BrECADD vs eBEACOPP in advanced stage — the current European standard SWOG S1826 Nivolumab-AVD vs BV-AVD in advanced stage KEYNOTE-204 Pembrolizumab vs brentuximab, relapsed HD16, RAPID and H10 all failed non-inferiority — omitting RT costs ~4–7% PFS, though OS is unchanged."
+}

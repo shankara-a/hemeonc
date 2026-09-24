@@ -1,0 +1,439 @@
+{
+ "disease": "lymphoma-indolent-mantle",
+ "spec_file": "lymphoma_indolent_mantle.py",
+ "pdf": "Lymphoma - Indolent and Mantle.pdf",
+ "title": "Indolent and mantle B-cell lymphoma",
+ "subtitle": "<b>Follicular</b> and <b>mantle cell</b> &mdash; grouped because both are managed as chronic disease with BTK inhibitors, bendamustine and maintenance, not because mantle cell is indolent. <b>It is not</b>: it is biologically aggressive and behaves like a disease you manage rather than cure",
+ "source": "Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin, pp.223&ndash;232 &middot; NCCN B-Cell Lymphoma v2.2025 &middot; items marked &dagger; are outside the handbook chapter",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "28%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Follicular grade",
+       "headers": [
+        "Grade",
+        "Incidence",
+        "Histology and behavior"
+       ],
+       "widths": [
+        "12%",
+        "17%",
+        ""
+       ],
+       "rows": [
+        [
+         "I",
+         "40&ndash;45%",
+         "0&ndash;5 centroblasts/hpf &mdash; indolent, &ldquo;classic FL&rdquo; (WHO 2022)"
+        ],
+        [
+         "II",
+         "30%",
+         "6&ndash;15 centroblasts/hpf &mdash; indolent, classic FL"
+        ],
+        [
+         "IIIa",
+         "20%",
+         "&gt;15 centroblasts/hpf, <b>centrocytes present</b> &mdash; indolent or aggressive"
+        ],
+        [
+         "<b>IIIb</b>",
+         "&mdash;",
+         "&gt;15 centroblasts/hpf, <b>centrocytes absent</b>, sheets of centroblasts &mdash; <b>aggressive, behaves like DLBCL</b>"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "FLIPI &mdash; &ldquo;NoLASH&rdquo;, 1 point each",
+       "headers": [
+        "Risk",
+        "%",
+        "5-yr OS",
+        "10-yr OS"
+       ],
+       "widths": [
+        "36%",
+        "14%",
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "Low (0&ndash;1)",
+         "36",
+         "91%",
+         "71%"
+        ],
+        [
+         "Intermediate (2)",
+         "37",
+         "78%",
+         "51%"
+        ],
+        [
+         "High (3&ndash;5)",
+         "27",
+         "53%",
+         "<b>36%</b>"
+        ]
+       ],
+       "footnote": "<b>No</b>dal sites &gt;4 &middot; <b>L</b>DH elevated &middot; <b>A</b>ge &ge;60 &middot; <b>S</b>tage III&ndash;IV &middot; <b>H</b>gb &lt;12. FLIPI2 instead uses age &gt;60, &beta;2-microglobulin &gt; ULN, marrow involvement, Hgb &lt;12 and largest node &gt;6 cm &mdash; 5-yr PFS 80% / 51% / <b>19%</b>."
+      },
+      {
+       "type": "table",
+       "heading": "GELF &mdash; when to treat follicular",
+       "widths": [
+        "4%",
+        ""
+       ],
+       "rows": [
+        [
+         "&bull;",
+         "<b>&ge;3 nodal areas each &ge;3 cm</b>"
+        ],
+        [
+         "&bull;",
+         "Any nodal or extranodal mass <b>&ge;7 cm</b>"
+        ],
+        [
+         "&bull;",
+         "Symptoms attributable to disease, including B symptoms or effusions/ascites"
+        ],
+        [
+         "&bull;",
+         "<b>Cytopenias</b> from lymphoma (WBC &lt;1,000 and/or platelets &lt;100,000)"
+        ],
+        [
+         "&bull;",
+         "Leukemic phase &gt;5,000 cells/&micro;L"
+        ],
+        [
+         "&bull;",
+         "Splenomegaly"
+        ]
+       ],
+       "footnote": "<b>Meeting none of these is a reason to observe</b>, not to treat. Brice, JCO 1997 &middot; NCCN v2.2025."
+      },
+      {
+       "type": "table",
+       "heading": "MIPI &mdash; mantle cell",
+       "headers": [
+        "Points",
+        "Age",
+        "ECOG",
+        "LDH / ULN",
+        "WBC K/uL"
+       ],
+       "widths": [
+        "16%",
+        "20%",
+        "16%",
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "0",
+         "&lt;50",
+         "0&ndash;1",
+         "&lt;0.67",
+         "&lt;6.7"
+        ],
+        [
+         "1",
+         "50&ndash;59",
+         "&mdash;",
+         "0.67&ndash;0.99",
+         "6.7&ndash;9.99"
+        ],
+        [
+         "2",
+         "60&ndash;69",
+         "2&ndash;4",
+         "1.00&ndash;1.49",
+         "10&ndash;14.99"
+        ],
+        [
+         "3",
+         "&ge;70",
+         "&mdash;",
+         "&ge;1.50",
+         "&ge;15"
+        ]
+       ],
+       "footnote": "Hoster, Blood 2008. <b>The handbook prints the points table but not the risk-group cutoffs or their survival</b>."
+      },
+      {
+       "type": "note",
+       "html": "<b>TP53 in mantle cell.</b> Mutated in <b>~10%</b> and a strong predictor of poor outcome with chemotherapy <b>and</b> with autologous transplant, and also with ibrutinib. <b>Send NGS at diagnosis</b>; prefer a clinical trial. Deep responses have been seen with targeted combinations &mdash; <b>BOVen</b> (zanubrutinib/obinutuzumab/venetoclax) and OAsIs."
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Follicular pathway",
+       "chains": [
+        {
+         "header": "First line",
+         "color": "teal",
+         "boxes": [
+          [
+           "Low burden &mdash; no GELF criteria",
+           [
+            "<b>observe</b>, or rituximab weekly &times;4"
+           ]
+          ],
+          [
+           "High burden",
+           [
+            "bendamustine, CHOP or CVP + rituximab",
+            "&nbsp;&nbsp;<b>or obinutuzumab</b> &middot; or R&sup2;",
+            "older/unfit: rituximab &plusmn; chlorambucil"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Maintenance and beyond",
+         "color": "blue",
+         "boxes": [
+          [
+           "Maintenance, then relapse",
+           [
+            "rituximab q8&ndash;12 wk &times;2 yr (PRIMA) &mdash; <b>optional;</b>",
+            "<b>prolongs time to next treatment, no OS benefit</b>"
+           ]
+          ],
+          [
+           "Second and third line",
+           [
+            "2L: <b>any DLBCL second-line option</b>; auto-HCT",
+            "3L: <b>bispecifics</b> (epcoritamab, mosunetuzumab)",
+            "&nbsp;&nbsp;<b>CAR-T</b> (axi-cel, liso-cel, tisa-cel)",
+            "&nbsp;&nbsp;tazemetostat &middot; zanubrutinib + obinutuzumab"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "pathway",
+       "heading": "Mantle cell pathway",
+       "chains": [
+        {
+         "header": "Induction",
+         "color": "purple",
+         "boxes": [
+          [
+           "Fit, TP53 wild-type",
+           [
+            "<b>TRIANGLE</b>: alternating R-CHOP + ibrutinib / R-DHAP",
+            "Nordic (maxi-CHOP / R + HiDAC) &rarr; auto-HCT",
+            "LyMA &middot; R-hyperCVAD &middot; RBAC"
+           ]
+          ],
+          [
+           "Lower intensity, elderly or unfit",
+           [
+            "acalabrutinib + bendamustine + rituximab",
+            "BR &middot; VR-CAP &middot; R-CHOP &middot; R&sup2;"
+           ]
+          ],
+          [
+           "<b>TP53 mutant</b>",
+           [
+            "zanubrutinib/obinutuzumab/venetoclax (BOVen)",
+            "or the TRIANGLE regimen &mdash; <b>trial preferred</b>"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Maintenance and relapse",
+         "color": "coral",
+         "boxes": [
+          [
+           "Maintenance",
+           [
+            "after high intensity: <b>BTKi &times;2 yr</b> + rituximab q8wk &times;2&ndash;3 yr",
+            "after lower intensity: rituximab q8wk &times;3 yr"
+           ]
+          ],
+          [
+           "Relapsed",
+           [
+            "2L: <b>BTKi</b> &mdash; acalabrutinib or zanubrutinib",
+            "after BTKi: <b>CAR-T</b> (brexu-cel, liso-cel) or",
+            "&nbsp;&nbsp;<b>pirtobrutinib</b> (non-covalent BTKi)"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "note",
+       "html": "<b>The case for autologous transplant in mantle cell has collapsed.</b> The old PFS benefit predates BTKi and maintenance. <b>TRIANGLE</b> found no benefit once ibrutinib was added, and <b>EA4151</b> none for patients in <b>MRD-negative CR</b>."
+      }
+     ]
+    },
+    {
+     "width": "42%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimens",
+       "headers": [
+        "Regimen",
+        "Dosing",
+        "Cycle"
+       ],
+       "widths": [
+        "20%",
+        "",
+        "15%"
+       ],
+       "rows": [
+        [
+         "Rituximab alone",
+         "375 d1, 8, 15, 22",
+         "single course"
+        ],
+        [
+         "<b>R-bendamustine</b>",
+         "Rituximab 375 d1; bendamustine 90 d1+2",
+         "q28d &times;6"
+        ],
+        [
+         "R-CHOP &middot; R-CVP",
+         "Rituximab 375 &middot; cyclophosphamide 750 &middot; vincristine 1.4 (max 2 mg) d1 + prednisone 40/day d1&ndash;5, <b>with doxorubicin 50 (CHOP) or without (CVP)</b>",
+         "q21d &times;6&ndash;8"
+        ],
+        [
+         "<b>Maintenance rituximab</b>",
+         "375 <b>q2 months &times;2 years</b> (PRIMA). In MCL: 375 weekly &times;4 q6 mo &times;2 yr, or q3 mo &times;2 yr",
+         "&mdash;"
+        ],
+        [
+         "Obinutuzumab",
+         "1000 mg d1, 8, 15, then monthly C2&ndash;6/8, then bimonthly &times;2 yr",
+         "&mdash;"
+        ],
+        [
+         "R&sup2;",
+         "Rituximab 375 d1; lenalidomide 20 mg PO d1&ndash;21 + <b>ASA 81 mg</b>",
+         "q28d &times;12"
+        ],
+        [
+         "R-GemOx",
+         "Rituximab 375 &middot; gemcitabine 1000 &middot; oxaliplatin 100, all d1",
+         "q14d &times;6&ndash;8"
+        ],
+        [
+         "PEP-C (palliative, oral)",
+         "Prednisone 20 + cyclophosphamide 50 + etoposide 50 + procarbazine 50 mg, all PO <b>daily</b> until WBC &lt;3,000, then resume on a reduced schedule",
+         "continuous"
+        ],
+        [
+         "<b>Mod. R-hyperCVAD</b>",
+         "Rituximab 375 d1; cyclophosphamide 300 q12h d1&ndash;3 (6 doses); doxorubicin 25 CIV d1+2; vincristine 2 mg d3; dexamethasone 40 mg d1&ndash;4",
+         "q28d &times;6, then maintenance R"
+        ],
+        [
+         "R-DHAP",
+         "Rituximab 375 d1; cisplatin 100 CIV d1; cytarabine 2000 q12h &times;2 d2; dexamethasone 40 mg d1&ndash;4",
+         "q21d &times;3"
+        ],
+        [
+         "VR-CAP",
+         "Bortezomib 1.3 SQ d2, 5, 9, 12; rituximab 375 + cyclophosphamide 1000 d1; prednisone 100 mg d2&ndash;6",
+         "q21d &times;8"
+        ],
+        [
+         "<b>BTK inhibitors</b>",
+         "<b>Ibrutinib 560 mg daily &middot; acalabrutinib 100 mg BID &middot; zanubrutinib 160 mg BID</b> (or 320 mg daily) &mdash; continuous until progression",
+         "continuous"
+        ]
+       ],
+       "footnote": "mg/m&sup2; unless stated. Cytarabine &rarr; <b>1 g/m&sup2; if age &gt;60</b>, with prednisolone 1% eye drops. R-GemOx needs ANC &ge;1,000 and platelets &ge;100,000 to proceed. Consider aspirin with lenalidomide."
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>Follicular grade IIIb is not an indolent lymphoma</b> &mdash; centrocytes are absent and it is treated as DLBCL",
+        "<b>Maintenance rituximab buys time to next treatment, not survival</b> &mdash; worth saying out loud when consenting",
+        "<b>Mantle cell TP53 mutation changes the plan</b>, not just the prognosis &mdash; chemotherapy, transplant and ibrutinib all underperform; go to trial or a targeted combination",
+        "&dagger; The handbook covers no mantle cell biology &mdash; <b>cyclin D1, t(11;14), SOX11, Ki-67 and the blastoid variant are absent</b>, as is the indolent leukemic-non-nodal subset that can be observed"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Trials",
+       "headers": [
+        "Trial",
+        "Role"
+       ],
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>PRIMA</b>",
+         "Maintenance rituximab &times;2 yr after frontline immunochemotherapy in follicular"
+        ],
+        [
+         "StiL NHL1",
+         "<b>BR vs R-CHOP</b> &mdash; the basis for BR frontline"
+        ],
+        [
+         "GALLIUM",
+         "Obinutuzumab vs rituximab with chemotherapy in follicular"
+        ],
+        [
+         "<b>RELEVANCE</b>",
+         "R&sup2; vs R-chemo &mdash; <b>negative superiority trial</b>; R&sup2; is equivalent"
+        ],
+        [
+         "<b>TRIANGLE</b>",
+         "Ibrutinib in induction + maintenance &mdash; <b>no benefit from auto-HCT</b> (endpoint: FFS)"
+        ],
+        [
+         "<b>ECOG-ACRIN EA4151</b>",
+         "<b>No auto-HCT benefit</b> in MRD-negative complete remission"
+        ],
+        [
+         "SHINE &middot; ECHO",
+         "BTK inhibitor added to chemoimmunotherapy in older MCL"
+        ]
+       ],
+       "footnote": "Numbers on the Hub cards come from the primary publications &mdash; the handbook prints citations without results."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Follicular grade",
+  "FLIPI &mdash; &ldquo;NoLASH&rdquo;, 1 point each",
+  "GELF &mdash; when to treat follicular",
+  "MIPI &mdash; mantle cell",
+  "Follicular pathway",
+  "Mantle cell pathway",
+  "Regimens",
+  "Pearls",
+  "Trials"
+ ],
+ "text": "Indolent and mantle B-cell lymphoma Follicular and mantle cell — grouped because both are managed as chronic disease with BTK inhibitors, bendamustine and maintenance, not because mantle cell is indolent. It is not : it is biologically aggressive and behaves like a disease you manage rather than cure Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin, pp.223–232 · NCCN B-Cell Lymphoma v2.2025 · items marked † are outside the handbook chapter Follicular grade Grade Incidence Histology and behavior I 40–45% 0–5 centroblasts/hpf — indolent, “classic FL” (WHO 2022) II 30% 6–15 centroblasts/hpf — indolent, classic FL IIIa 20% >15 centroblasts/hpf, centrocytes present — indolent or aggressive IIIb — >15 centroblasts/hpf, centrocytes absent , sheets of centroblasts — aggressive, behaves like DLBCL FLIPI — “NoLASH”, 1 point each Risk % 5-yr OS 10-yr OS Low (0–1) 36 91% 71% Intermediate (2) 37 78% 51% High (3–5) 27 53% 36% No dal sites >4 · L DH elevated · A ge ≥60 · S tage III–IV · H gb <12. FLIPI2 instead uses age >60, &beta;2-microglobulin > ULN, marrow involvement, Hgb <12 and largest node >6 cm — 5-yr PFS 80% / 51% / 19% . GELF — when to treat follicular &bull; ≥3 nodal areas each ≥3 cm &bull; Any nodal or extranodal mass ≥7 cm &bull; Symptoms attributable to disease, including B symptoms or effusions/ascites &bull; Cytopenias from lymphoma (WBC <1,000 and/or platelets <100,000) &bull; Leukemic phase >5,000 cells/&micro;L &bull; Splenomegaly Meeting none of these is a reason to observe , not to treat. Brice, JCO 1997 · NCCN v2.2025. MIPI — mantle cell Points Age ECOG LDH / ULN WBC K/uL 0 <50 0–1 <0.67 <6.7 1 50–59 — 0.67–0.99 6.7–9.99 2 60–69 2–4 1.00–1.49 10–14.99 3 ≥70 — ≥1.50 ≥15 Hoster, Blood 2008. The handbook prints the points table but not the risk-group cutoffs or their survival . TP53 in mantle cell. Mutated in ~10% and a strong predictor of poor outcome with chemotherapy and with autologous transplant, and also with ibrutinib. Send NGS at diagnosis ; prefer a clinical trial. Deep responses have been seen with targeted combinations — BOVen (zanubrutinib/obinutuzumab/venetoclax) and OAsIs. Follicular pathway First line Low burden — no GELF criteria observe , or rituximab weekly ×4 High burden bendamustine, CHOP or CVP + rituximab or obinutuzumab · or R² older/unfit: rituximab ± chlorambucil Maintenance and beyond Maintenance, then relapse rituximab q8–12 wk ×2 yr (PRIMA) — optional; prolongs time to next treatment, no OS benefit Second and third line 2L: any DLBCL second-line option ; auto-HCT 3L: bispecifics (epcoritamab, mosunetuzumab) CAR-T (axi-cel, liso-cel, tisa-cel) tazemetostat · zanubrutinib + obinutuzumab Mantle cell pathway Induction Fit, TP53 wild-type TRIANGLE : alternating R-CHOP + ibrutinib / R-DHAP Nordic (maxi-CHOP / R + HiDAC) → auto-HCT LyMA · R-hyperCVAD · RBAC Lower intensity, elderly or unfit acalabrutinib + bendamustine + rituximab BR · VR-CAP · R-CHOP · R² TP53 mutant zanubrutinib/obinutuzumab/venetoclax (BOVen) or the TRIANGLE regimen — trial preferred Maintenance and relapse Maintenance after high intensity: BTKi ×2 yr + rituximab q8wk ×2–3 yr after lower intensity: rituximab q8wk ×3 yr Relapsed 2L: BTKi — acalabrutinib or zanubrutinib after BTKi: CAR-T (brexu-cel, liso-cel) or pirtobrutinib (non-covalent BTKi) The case for autologous transplant in mantle cell has collapsed. The old PFS benefit predates BTKi and maintenance. TRIANGLE found no benefit once ibrutinib was added, and EA4151 none for patients in MRD-negative CR . Regimens Regimen Dosing Cycle Rituximab alone 375 d1, 8, 15, 22 single course R-bendamustine Rituximab 375 d1; bendamustine 90 d1+2 q28d ×6 R-CHOP · R-CVP Rituximab 375 · cyclophosphamide 750 · vincristine 1.4 (max 2 mg) d1 + prednisone 40/day d1–5, with doxorubicin 50 (CHOP) or without (CVP) q21d ×6–8 Maintenance rituximab 375 q2 months ×2 years (PRIMA). In MCL: 375 weekly ×4 q6 mo ×2 yr, or q3 mo ×2 yr — Obinutuzumab 1000 mg d1, 8, 15, then monthly C2–6/8, then bimonthly ×2 yr — R² Rituximab 375 d1; lenalidomide 20 mg PO d1–21 + ASA 81 mg q28d ×12 R-GemOx Rituximab 375 · gemcitabine 1000 · oxaliplatin 100, all d1 q14d ×6–8 PEP-C (palliative, oral) Prednisone 20 + cyclophosphamide 50 + etoposide 50 + procarbazine 50 mg, all PO daily until WBC <3,000, then resume on a reduced schedule continuous Mod. R-hyperCVAD Rituximab 375 d1; cyclophosphamide 300 q12h d1–3 (6 doses); doxorubicin 25 CIV d1+2; vincristine 2 mg d3; dexamethasone 40 mg d1–4 q28d ×6, then maintenance R R-DHAP Rituximab 375 d1; cisplatin 100 CIV d1; cytarabine 2000 q12h ×2 d2; dexamethasone 40 mg d1–4 q21d ×3 VR-CAP Bortezomib 1.3 SQ d2, 5, 9, 12; rituximab 375 + cyclophosphamide 1000 d1; prednisone 100 mg d2–6 q21d ×8 BTK inhibitors Ibrutinib 560 mg daily · acalabrutinib 100 mg BID · zanubrutinib 160 mg BID (or 320 mg daily) — continuous until progression continuous mg/m² unless stated. Cytarabine → 1 g/m² if age >60 , with prednisolone 1% eye drops. R-GemOx needs ANC ≥1,000 and platelets ≥100,000 to proceed. Consider aspirin with lenalidomide. Pearls Follicular grade IIIb is not an indolent lymphoma — centrocytes are absent and it is treated as DLBCL Maintenance rituximab buys time to next treatment, not survival — worth saying out loud when consenting Mantle cell TP53 mutation changes the plan , not just the prognosis — chemotherapy, transplant and ibrutinib all underperform; go to trial or a targeted combination † The handbook covers no mantle cell biology — cyclin D1, t(11;14), SOX11, Ki-67 and the blastoid variant are absent , as is the indolent leukemic-non-nodal subset that can be observed Trials Trial Role PRIMA Maintenance rituximab ×2 yr after frontline immunochemotherapy in follicular StiL NHL1 BR vs R-CHOP — the basis for BR frontline GALLIUM Obinutuzumab vs rituximab with chemotherapy in follicular RELEVANCE R² vs R-chemo — negative superiority trial ; R² is equivalent TRIANGLE Ibrutinib in induction + maintenance — no benefit from auto-HCT (endpoint: FFS) ECOG-ACRIN EA4151 No auto-HCT benefit in MRD-negative complete remission SHINE · ECHO BTK inhibitor added to chemoimmunotherapy in older MCL Numbers on the Hub cards come from the primary publications — the handbook prints citations without results."
+}

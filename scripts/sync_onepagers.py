@@ -198,6 +198,19 @@ def main():
             (DATA / "diseases.json").write_text(json.dumps(diseases, indent=2, ensure_ascii=False) + "\n")
     print(f"   manifest: {len(manifest)} one-pager(s)")
 
+    # ---- 2b. spec export + search index ---------------------------------------------------
+    if not a.dry_run:
+        rc = subprocess.run([sys.executable, str(ROOT / "scripts" / "export_specs.py"), "--src",
+                             str(src.parent / "_assets" / "specs")], cwd=ROOT, text=True, capture_output=True)
+        print("   " + (rc.stdout.strip().replace("\n", "\n   ") or "(no spec output)"))
+        if rc.returncode:
+            print("   !! spec export failed — the Notes view will be stale:\n   " + rc.stderr.strip()[:400])
+        rc = subprocess.run([sys.executable, str(ROOT / "scripts" / "build_search.py")], cwd=ROOT,
+                            text=True, capture_output=True)
+        print("   " + (rc.stdout.strip() or "(no search output)"))
+        if rc.returncode:
+            print("   !! search index failed:\n   " + rc.stderr.strip()[:400])
+
     # ---- 3. trial coverage ----------------------------------------------------------------
     trials = json.loads((DATA / "trials.json").read_text())["trials"]
     for m in manifest:
@@ -246,9 +259,9 @@ def main():
             lk.unlink()
     from validate import bump_asset_version
     bump_asset_version()
-    if run(["git", "add", "pdfs", "data/onepagers.json", "data/diseases.json", "index.html"]):
+    if run(["git", "add", "pdfs", "data", "index.html"]):
         sys.exit("!! git add failed — fix the repo state and rerun (nothing was committed)")
-    status = subprocess.run(["git", "status", "--porcelain", "pdfs", "data/onepagers.json", "data/diseases.json"],
+    status = subprocess.run(["git", "status", "--porcelain", "pdfs", "data"],
                             cwd=ROOT, capture_output=True, text=True).stdout.strip()
     if not status:
         print("   nothing to commit — site already up to date")

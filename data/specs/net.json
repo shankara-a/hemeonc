@@ -1,0 +1,427 @@
+{
+ "disease": "net",
+ "spec_file": "net.py",
+ "pdf": "Neuroendocrine Tumors.pdf",
+ "title": "Neuroendocrine tumors &mdash; gastroenteropancreatic",
+ "subtitle": "Managed on two axes: <b>differentiation</b> (well-differentiated NET vs poorly differentiated NEC) and <b>grade</b> (Ki-67 / mitotic count) &middot; then modified by <b>primary site</b> and whether the tumor is <b>functional</b>",
+ "source": "Stanford Oncology Handbook 2025, Neuroendocrine Tumors (GI section) &middot; AJCC 8th &middot; items marked &dagger; are outside the handbook chapter",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "29%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "WHO classification",
+       "headers": [
+        "Grade",
+        "Differentiation",
+        "Ki-67",
+        "Mitoses /10 HPF"
+       ],
+       "widths": [
+        "19%",
+        "",
+        "18%",
+        "20%"
+       ],
+       "rows": [
+        [
+         "1 &mdash; low",
+         "Well-differentiated",
+         "0&ndash;&lt;3%",
+         "&lt;2"
+        ],
+        [
+         "2 &mdash; intermediate",
+         "Well-differentiated",
+         "3&ndash;20%",
+         "2&ndash;20"
+        ],
+        [
+         "3 &mdash; high",
+         "<b>Well-differentiated</b>",
+         "&gt;20%",
+         "&gt;20"
+        ],
+        [
+         "3 &mdash; high",
+         "<b>Poorly differentiated</b>",
+         "&gt;20%",
+         "&gt;20"
+        ]
+       ],
+       "footnote": "<b>Grade is the higher of Ki-67 or mitotic count.</b> Poorly differentiated = <b>neuroendocrine carcinoma (NEC)</b>; well differentiated = <b>NET</b>. <b>Well-differentiated G3 is a distinct sub-group</b> &mdash; well-differentiated histology with Ki-67 &gt;20%, and its behavior varies widely. It is <b>not</b> the same as NEC. Mixed neuroendocrine + adenocarcinoma = <b>MANEC</b>. &ldquo;Carcinoid&rdquo; is the older term for NET."
+      },
+      {
+       "type": "table",
+       "heading": "Gastric NET types",
+       "headers": [
+        "Type",
+        "Gastrin",
+        "%",
+        "Setting"
+       ],
+       "widths": [
+        "13%",
+        "13%",
+        "11%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>1</b>",
+         "&uarr;",
+         "70&ndash;80%",
+         "Autoimmune <b>atrophic gastritis</b>; elderly, female, pernicious anemia"
+        ],
+        [
+         "<b>2</b>",
+         "&uarr;",
+         "5&ndash;8%",
+         "Gastrin-secreting tumor &mdash; <b>MEN1, Zollinger-Ellison</b>"
+        ],
+        [
+         "<b>3</b>",
+         "normal",
+         "20%",
+         "Solitary nodule &gt;1.5 cm, <b>healthy gastric mucosa</b>; usually symptomatic"
+        ]
+       ],
+       "footnote": "Type applies to <b>gastric NETs only</b>. Check gastrin at baseline and on follow-up for gastric primaries."
+      },
+      {
+       "type": "bullets",
+       "heading": "Site-specific points",
+       "items": [
+        "Frequency: <b>GI tract &gt; lung &gt; other</b>. Most are sporadic; a minority arise in <b>MEN1/MEN2</b>",
+        "<b>Small bowel:</b> the classic carcinoid-syndrome primary (with lung); <b>consider resecting the mesenteric mass prophylactically</b> to avoid future complications",
+        "<b>Pancreatic:</b> broadest baseline hormone panel; <b>sunitinib is approved here only</b>; CAPTEM and temozolomide data are in pancreatic G1&ndash;G2",
+        "<b>Carcinoid syndrome:</b> small bowel and lung primaries with elevated serotonin &mdash; flushing is the archetypal functional symptom. If the tumor is functional, somatostatin analogue therapy is <b>indefinite</b>",
+        "&dagger; Telotristat and carcinoid crisis are not addressed in this chapter",
+        "Staging follows AJCC 8th by primary site (stomach, small bowel/ampulla, pancreas, colon/rectum)"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Localized / resectable",
+         "color": "teal",
+         "boxes": [
+          [
+           "Resect the primary if possible",
+           [
+            "<b>there is no role for adjuvant therapy in NETs</b>",
+            "small bowel: also resect the mesenteric mass"
+           ]
+          ],
+          [
+           "Low-burden, unresectable, non-functional",
+           [
+            "<b>watch and wait is acceptable</b>"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Advanced well-differentiated NET (G1&ndash;G2)",
+         "color": "blue",
+         "boxes": [
+          [
+           "Start with a somatostatin analogue",
+           [
+            "octreotide LAR 30 mg IM or lanreotide 120 mg SQ",
+            "every 4 weeks &mdash; PROMID, CLARINET",
+            "antitumor <i>and</i> hormonal control"
+           ]
+          ],
+          [
+           "Then by site and burden",
+           [
+            "<b>PRRT</b> Lu-177 dotatate (NETTER-1)",
+            "<b>everolimus</b> any site &middot; <b>sunitinib pancreatic only</b>",
+            "<b>cabozantinib</b> pancreatic and extrapancreatic"
+           ]
+          ],
+          [
+           "Pancreatic G1&ndash;G2",
+           [
+            "<b>CAPTEM</b> (PFS 23.2 mo) or temozolomide (15.1 mo)",
+            "cap at ~12 months"
+           ]
+          ],
+          [
+           "Liver-dominant disease",
+           [
+            "chemoembolization &middot; radioembolization",
+            "bland embolization &middot; microwave ablation"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Ki-67 &gt;20% &mdash; well-diff G3 or NEC",
+         "color": "coral",
+         "boxes": [
+          [
+           "Treat as an aggressive tumor",
+           [
+            "FOLFOX or CAPOX",
+            "cisplatin/etoposide or carboplatin/etoposide",
+            "ipilimumab + nivolumab is an option"
+           ]
+          ],
+          [
+           "But G3 NET is not NEC",
+           [
+            "well-differentiated G3 behaves variably",
+            "NETTER-2 enrolled high-risk <b>G2&ndash;G3</b> GEP-NETs"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "38%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimens &amp; dosing",
+       "headers": [
+        "Agent / regimen",
+        "Dosing",
+        "Schedule"
+       ],
+       "widths": [
+        "24%",
+        "",
+        "20%"
+       ],
+       "rows": [
+        [
+         "Octreotide LAR",
+         "30 mg IM",
+         "q4 weeks"
+        ],
+        [
+         "Lanreotide",
+         "120 mg deep subcutaneous",
+         "q4 weeks"
+        ],
+        [
+         "<b>Lu-177 dotatate</b> (Lutathera)",
+         "7.4 GBq (200 mCi) IV",
+         "q8 weeks &times; <b>4 doses</b>"
+        ],
+        [
+         "Everolimus",
+         "10 mg PO daily",
+         "continuous"
+        ],
+        [
+         "<b>Sunitinib</b>",
+         "37.5 mg PO daily &mdash; <b>pancreatic NET only</b>",
+         "continuous"
+        ],
+        [
+         "Cabozantinib",
+         "60 mg PO daily",
+         "continuous"
+        ],
+        [
+         "<b>CAPTEM</b>",
+         "capecitabine 750 mg/m&sup2; PO BID d1&ndash;14 + temozolomide 200 mg/m&sup2; PO d10&ndash;14",
+         "q28d, <b>&le;12 months</b>"
+        ],
+        [
+         "Temozolomide alone",
+         "200 mg/m&sup2; PO d1&ndash;5",
+         "q28d, &le;12 months"
+        ],
+        [
+         "FOLFOX",
+         "5-FU 1200 mg/m&sup2;/day CIV 48 h + oxaliplatin 85 mg/m&sup2; d1",
+         "q14d"
+        ],
+        [
+         "CAPOX",
+         "capecitabine 850 mg/m&sup2; PO BID d1&ndash;14 + oxaliplatin 130 mg/m&sup2; d1",
+         "q21d"
+        ],
+        [
+         "Cisplatin / etoposide",
+         "cisplatin 60 mg/m&sup2; d1 + etoposide 100 mg/m&sup2; d1&ndash;3",
+         "q21d"
+        ],
+        [
+         "Carboplatin / etoposide",
+         "carboplatin AUC 5 d1 + etoposide 100 mg/m&sup2; d1&ndash;3",
+         "q21d"
+        ],
+        [
+         "Ipilimumab + nivolumab",
+         "ipilimumab 1 mg/kg q6wk + nivolumab 240 mg q2wk",
+         "as above"
+        ]
+       ],
+       "footnote": "Pre-medicate temozolomide with <b>ondansetron 8 mg PO 30 minutes prior</b>. Temozolomide-containing regimens are typically capped at ~12 months."
+      },
+      {
+       "type": "bullets",
+       "heading": "Workup &mdash; imaging &amp; genetics",
+       "items": [
+        "Multiphasic CT or MRI; for liver metastases, <b>MRI with Eovist</b> may help",
+        "<b>Ga-68 DOTATATE PET at baseline, then every 2 years</b>, or for a specific clinical question &mdash; <b>not a routine restaging scan</b>",
+        "Endoscopy as indicated",
+        "<b>Brain MRI</b> only for poorly differentiated disease with symptoms or raised suspicion",
+        "<b>MR spine</b> for symptoms, or considered annually for axial bone metastases",
+        "<b>Genetics referral</b> if diagnosed <b>&lt;50 years</b>, family history suggesting <b>MEN1/MEN2</b>, or a somatic NGS finding with germline implications (BRCA1/2, MEN1, Lynch genes)"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; biochemical workup, trial evidence, monitoring and caveats",
+   "columns": [
+    {
+     "width": "49%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Biochemical workup by site",
+       "headers": [
+        "Primary",
+        "Baseline / pre-op",
+        "Follow-up"
+       ],
+       "widths": [
+        "16%",
+        "",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Pancreatic</b>",
+         "Chromogranin A &middot; gastrin &middot; glucagon &middot; insulin/proinsulin &middot; NSE &middot; pancreatic polypeptide &middot; VIP &middot; 24-h urine <b>5-HIAA</b>. As indicated: PTHrP, ACTH, GHRH",
+         "Chromogranin A, NSE, and <b>only those elevated at baseline</b>"
+        ],
+        [
+         "<b>Small bowel / other</b>",
+         "Chromogranin A &middot; NSE &middot; 24-h urine <b>5-HIAA</b> &middot; gastrin if gastric primary",
+         "Same panel"
+        ]
+       ],
+       "footnote": "All serum labs preferably <b>fasting</b>; metastatic follow-up interval is usually <b>q1&ndash;3 months</b> as clinically indicated. <b>Follow only the markers that were elevated at baseline.</b>"
+      },
+      {
+       "type": "note",
+       "html": "<b>24-hour urine 5-HIAA requires a 3-day serotonin-restricted diet</b>, before and during collection. Avoid: <b>bananas, plums, pineapple, kiwi, avocado, eggplant, tomato products, nuts (especially walnuts), coffee, tea and chocolate</b>.<br><br>Medications to avoid where feasible: cough and antihistamine preparations, antihypertensives, fluorouracil, MAO inhibitors, acetaminophen, aspirin, melphalan &mdash; <b>weigh risks and benefits before stopping anything essential</b>."
+      },
+      {
+       "type": "bullets",
+       "heading": "Monitoring on therapy",
+       "items": [
+        "<b>On somatostatin analogues:</b> check <b>vitamin B12, vitamin D and TSH at least annually</b>",
+        "SSA adverse effects: injection-site pain, abdominal pain, bloating, diarrhea, <b>gallstones</b>, hyper- or hypoglycemia, pancreatic exocrine insufficiency",
+        "<b>Everolimus:</b> stomatitis, rash, fatigue, diarrhea, infection, elevated lipids, <b>pneumonitis</b>",
+        "<b>Sunitinib:</b> diarrhea, nausea, fatigue, stomatitis, rash",
+        "<b>Cabozantinib:</b> hypertension, fatigue, diarrhea, hand-foot syndrome, <b>thromboembolic events</b>"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "51%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Trial evidence",
+       "rows": [
+        [
+         "<b>PROMID</b>",
+         "octreotide &mdash; TTP <b>14.3 vs 6 mo</b> vs placebo (Rinke, JCO 2009)"
+        ],
+        [
+         "<b>CLARINET</b>",
+         "lanreotide &mdash; PFS <b>38.5 mo</b> (Caplin, NEJM 2014)"
+        ],
+        [
+         "<b>NETTER-1</b>",
+         "Lu-177 dotatate, 2nd line+, G1/G2 &mdash; PFS not reached vs 8.5 mo; 2018 update median OS <b>NR vs 27.4 mo</b> (Strosberg, NEJM 2017)"
+        ],
+        [
+         "<b>NETTER-2</b>",
+         "Lu-177 dotatate <b>first line</b>, high-risk SSTR-positive G2&ndash;G3 GEP-NET &mdash; PFS <b>22.8 vs 8.5 mo</b> vs high-dose octreotide. <b>Not yet FDA approved</b> (Singh, Lancet 2024)"
+        ],
+        [
+         "<b>COMPETE</b>",
+         "Lu-177 edotreotide vs everolimus, G1/2 GEP-NET &mdash; PFS <b>23.9 vs 14.1 mo</b>; OS trending favorable, not yet significant"
+        ],
+        [
+         "<b>CABINET</b>",
+         "cabozantinib &mdash; extrapancreatic PFS <b>8.4 vs 3.9 mo</b>; pancreatic <b>13.8 vs 4.4 mo</b> (Chan, NEJM 2024)"
+        ],
+        [
+         "<b>RADIANT-3</b>",
+         "everolimus, pancreatic &mdash; PFS <b>11.0 vs 4.6 mo</b> (Yao, NEJM 2011)"
+        ],
+        [
+         "<b>RADIANT-4</b>",
+         "everolimus, non-functional GI/lung &mdash; PFS <b>11.0 vs 3.9 mo</b> (Yao, Lancet 2015)"
+        ],
+        [
+         "Sunitinib",
+         "pancreatic NET only &mdash; PFS <b>11.4 vs 5.5 mo</b> (Raymond, NEJM 2011)"
+        ],
+        [
+         "<b>CAPTEM</b> (E2211)",
+         "pancreatic G1/G2 &mdash; PFS <b>23.2 mo</b> vs temozolomide alone <b>15.1 mo</b> (Kunz, JCO 2022)"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls &amp; caveats",
+       "items": [
+        "<b>Grade is the higher of Ki-67 or mitotic count</b> &mdash; not an average, and not Ki-67 alone",
+        "<b>Well-differentiated G3 is not NEC.</b> Same Ki-67 threshold, different disease, and behavior varies widely",
+        "<b>There is no role for adjuvant therapy in NETs</b> &mdash; resect and observe",
+        "<b>Sunitinib is pancreatic-only.</b> CAPTEM and temozolomide data are also pancreatic G1&ndash;G2. Cabozantinib is the one with both pancreatic and extrapancreatic data",
+        "<b>Ga-68 DOTATATE PET is not a routine restaging scan</b> &mdash; baseline, q2 years, or a specific question",
+        "<b>Follow only the tumor markers that were elevated at baseline</b>",
+        "<b>NETTER-2 (first-line PRRT in G2&ndash;G3) is not FDA approved yet</b>; COMPETE's OS is not yet significant",
+        "&dagger; The chapter is GEP-NET focused &mdash; <b>lung/bronchial carcinoid, thymic NET and pheochromocytoma/paraganglioma are separate entities not covered here</b>"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "WHO classification",
+  "Gastric NET types",
+  "Site-specific points",
+  "Treatment pathway",
+  "Regimens &amp; dosing",
+  "Workup &mdash; imaging &amp; genetics",
+  "Biochemical workup by site",
+  "Monitoring on therapy",
+  "Trial evidence",
+  "Pearls &amp; caveats"
+ ],
+ "text": "Neuroendocrine tumors — gastroenteropancreatic Managed on two axes: differentiation (well-differentiated NET vs poorly differentiated NEC) and grade (Ki-67 / mitotic count) · then modified by primary site and whether the tumor is functional Stanford Oncology Handbook 2025, Neuroendocrine Tumors (GI section) · AJCC 8th · items marked † are outside the handbook chapter WHO classification Grade Differentiation Ki-67 Mitoses /10 HPF 1 — low Well-differentiated 0–<3% <2 2 — intermediate Well-differentiated 3–20% 2–20 3 — high Well-differentiated >20% >20 3 — high Poorly differentiated >20% >20 Grade is the higher of Ki-67 or mitotic count. Poorly differentiated = neuroendocrine carcinoma (NEC) ; well differentiated = NET . Well-differentiated G3 is a distinct sub-group — well-differentiated histology with Ki-67 >20%, and its behavior varies widely. It is not the same as NEC. Mixed neuroendocrine + adenocarcinoma = MANEC . “Carcinoid” is the older term for NET. Gastric NET types Type Gastrin % Setting 1 &uarr; 70–80% Autoimmune atrophic gastritis ; elderly, female, pernicious anemia 2 &uarr; 5–8% Gastrin-secreting tumor — MEN1, Zollinger-Ellison 3 normal 20% Solitary nodule >1.5 cm, healthy gastric mucosa ; usually symptomatic Type applies to gastric NETs only . Check gastrin at baseline and on follow-up for gastric primaries. Site-specific points Frequency: GI tract > lung > other . Most are sporadic; a minority arise in MEN1/MEN2 Small bowel: the classic carcinoid-syndrome primary (with lung); consider resecting the mesenteric mass prophylactically to avoid future complications Pancreatic: broadest baseline hormone panel; sunitinib is approved here only ; CAPTEM and temozolomide data are in pancreatic G1–G2 Carcinoid syndrome: small bowel and lung primaries with elevated serotonin — flushing is the archetypal functional symptom. If the tumor is functional, somatostatin analogue therapy is indefinite † Telotristat and carcinoid crisis are not addressed in this chapter Staging follows AJCC 8th by primary site (stomach, small bowel/ampulla, pancreas, colon/rectum) Treatment pathway Localized / resectable Resect the primary if possible there is no role for adjuvant therapy in NETs small bowel: also resect the mesenteric mass Low-burden, unresectable, non-functional watch and wait is acceptable Advanced well-differentiated NET (G1–G2) Start with a somatostatin analogue octreotide LAR 30 mg IM or lanreotide 120 mg SQ every 4 weeks — PROMID, CLARINET antitumor and hormonal control Then by site and burden PRRT Lu-177 dotatate (NETTER-1) everolimus any site · sunitinib pancreatic only cabozantinib pancreatic and extrapancreatic Pancreatic G1–G2 CAPTEM (PFS 23.2 mo) or temozolomide (15.1 mo) cap at ~12 months Liver-dominant disease chemoembolization · radioembolization bland embolization · microwave ablation Ki-67 >20% — well-diff G3 or NEC Treat as an aggressive tumor FOLFOX or CAPOX cisplatin/etoposide or carboplatin/etoposide ipilimumab + nivolumab is an option But G3 NET is not NEC well-differentiated G3 behaves variably NETTER-2 enrolled high-risk G2–G3 GEP-NETs Regimens & dosing Agent / regimen Dosing Schedule Octreotide LAR 30 mg IM q4 weeks Lanreotide 120 mg deep subcutaneous q4 weeks Lu-177 dotatate (Lutathera) 7.4 GBq (200 mCi) IV q8 weeks × 4 doses Everolimus 10 mg PO daily continuous Sunitinib 37.5 mg PO daily — pancreatic NET only continuous Cabozantinib 60 mg PO daily continuous CAPTEM capecitabine 750 mg/m² PO BID d1–14 + temozolomide 200 mg/m² PO d10–14 q28d, ≤12 months Temozolomide alone 200 mg/m² PO d1–5 q28d, ≤12 months FOLFOX 5-FU 1200 mg/m²/day CIV 48 h + oxaliplatin 85 mg/m² d1 q14d CAPOX capecitabine 850 mg/m² PO BID d1–14 + oxaliplatin 130 mg/m² d1 q21d Cisplatin / etoposide cisplatin 60 mg/m² d1 + etoposide 100 mg/m² d1–3 q21d Carboplatin / etoposide carboplatin AUC 5 d1 + etoposide 100 mg/m² d1–3 q21d Ipilimumab + nivolumab ipilimumab 1 mg/kg q6wk + nivolumab 240 mg q2wk as above Pre-medicate temozolomide with ondansetron 8 mg PO 30 minutes prior . Temozolomide-containing regimens are typically capped at ~12 months. Workup — imaging & genetics Multiphasic CT or MRI; for liver metastases, MRI with Eovist may help Ga-68 DOTATATE PET at baseline, then every 2 years , or for a specific clinical question — not a routine restaging scan Endoscopy as indicated Brain MRI only for poorly differentiated disease with symptoms or raised suspicion MR spine for symptoms, or considered annually for axial bone metastases Genetics referral if diagnosed <50 years , family history suggesting MEN1/MEN2 , or a somatic NGS finding with germline implications (BRCA1/2, MEN1, Lynch genes) Biochemical workup by site Primary Baseline / pre-op Follow-up Pancreatic Chromogranin A · gastrin · glucagon · insulin/proinsulin · NSE · pancreatic polypeptide · VIP · 24-h urine 5-HIAA . As indicated: PTHrP, ACTH, GHRH Chromogranin A, NSE, and only those elevated at baseline Small bowel / other Chromogranin A · NSE · 24-h urine 5-HIAA · gastrin if gastric primary Same panel All serum labs preferably fasting ; metastatic follow-up interval is usually q1–3 months as clinically indicated. Follow only the markers that were elevated at baseline. 24-hour urine 5-HIAA requires a 3-day serotonin-restricted diet , before and during collection. Avoid: bananas, plums, pineapple, kiwi, avocado, eggplant, tomato products, nuts (especially walnuts), coffee, tea and chocolate . Medications to avoid where feasible: cough and antihistamine preparations, antihypertensives, fluorouracil, MAO inhibitors, acetaminophen, aspirin, melphalan — weigh risks and benefits before stopping anything essential . Monitoring on therapy On somatostatin analogues: check vitamin B12, vitamin D and TSH at least annually SSA adverse effects: injection-site pain, abdominal pain, bloating, diarrhea, gallstones , hyper- or hypoglycemia, pancreatic exocrine insufficiency Everolimus: stomatitis, rash, fatigue, diarrhea, infection, elevated lipids, pneumonitis Sunitinib: diarrhea, nausea, fatigue, stomatitis, rash Cabozantinib: hypertension, fatigue, diarrhea, hand-foot syndrome, thromboembolic events Trial evidence PROMID octreotide — TTP 14.3 vs 6 mo vs placebo (Rinke, JCO 2009) CLARINET lanreotide — PFS 38.5 mo (Caplin, NEJM 2014) NETTER-1 Lu-177 dotatate, 2nd line+, G1/G2 — PFS not reached vs 8.5 mo; 2018 update median OS NR vs 27.4 mo (Strosberg, NEJM 2017) NETTER-2 Lu-177 dotatate first line , high-risk SSTR-positive G2–G3 GEP-NET — PFS 22.8 vs 8.5 mo vs high-dose octreotide. Not yet FDA approved (Singh, Lancet 2024) COMPETE Lu-177 edotreotide vs everolimus, G1/2 GEP-NET — PFS 23.9 vs 14.1 mo ; OS trending favorable, not yet significant CABINET cabozantinib — extrapancreatic PFS 8.4 vs 3.9 mo ; pancreatic 13.8 vs 4.4 mo (Chan, NEJM 2024) RADIANT-3 everolimus, pancreatic — PFS 11.0 vs 4.6 mo (Yao, NEJM 2011) RADIANT-4 everolimus, non-functional GI/lung — PFS 11.0 vs 3.9 mo (Yao, Lancet 2015) Sunitinib pancreatic NET only — PFS 11.4 vs 5.5 mo (Raymond, NEJM 2011) CAPTEM (E2211) pancreatic G1/G2 — PFS 23.2 mo vs temozolomide alone 15.1 mo (Kunz, JCO 2022) Pearls & caveats Grade is the higher of Ki-67 or mitotic count — not an average, and not Ki-67 alone Well-differentiated G3 is not NEC. Same Ki-67 threshold, different disease, and behavior varies widely There is no role for adjuvant therapy in NETs — resect and observe Sunitinib is pancreatic-only. CAPTEM and temozolomide data are also pancreatic G1–G2. Cabozantinib is the one with both pancreatic and extrapancreatic data Ga-68 DOTATATE PET is not a routine restaging scan — baseline, q2 years, or a specific question Follow only the tumor markers that were elevated at baseline NETTER-2 (first-line PRRT in G2–G3) is not FDA approved yet ; COMPETE's OS is not yet significant † The chapter is GEP-NET focused — lung/bronchial carcinoid, thymic NET and pheochromocytoma/paraganglioma are separate entities not covered here"
+}

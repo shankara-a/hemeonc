@@ -1,0 +1,521 @@
+{
+ "disease": "melanoma",
+ "spec_file": "melanoma.py",
+ "pdf": "Melanoma.pdf",
+ "title": "Melanoma",
+ "subtitle": "Staged by <b>Breslow thickness + ulceration</b>; <b>LDH is a staging modifier</b> in M1 disease &middot; ~50% of cutaneous melanomas carry <b>BRAF V600</b> &middot; the central modern question is <b>immunotherapy sequencing</b>, not whether to give it",
+ "source": "Stanford Oncology Handbook 2025, Melanoma &mdash; an <b>advanced-disease</b> chapter. Biopsy technique, excision margins, SLNB indications, dosing, surveillance and the variant/toxicity material are <b>not in it</b>; those are marked &dagger; and drawn from NCCN and product labeling.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "27%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "&dagger; <b>Excisional biopsy</b> with 1&ndash;3 mm margins, full thickness, oriented along lymphatic drainage &mdash; <b>avoid a superficial shave</b>, which compromises Breslow depth",
+        "Pathologic confirmation; report <b>Breslow thickness and ulceration</b> (&dagger; mitotic rate is still reported though no longer a staging criterion)",
+        "Imaging: CT chest/abdomen/pelvis (add neck if head-and-neck primary), or PET/CT",
+        "<b>MRI brain for stage III&ndash;IV</b>",
+        "Labs: CBC, CMP, <b>serum LDH</b>",
+        "<b>BRAF V600 testing in all advanced cutaneous melanoma</b>",
+        "If BRAF wild-type &rarr; <b>NGS</b>; in acral/mucosal look specifically for <b>KIT mutations or TRK fusions</b>"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Staging &mdash; AJCC 8th",
+       "rows": [
+        [
+         "T by thickness",
+         "T1 &le;1 mm &middot; T2 &gt;1&ndash;2 &middot; T3 &gt;2&ndash;4 &middot; T4 &gt;4 mm; suffix <b>a = no ulceration, b = ulcerated</b>"
+        ],
+        [
+         "T1a vs T1b",
+         "<b>T1a = &lt;0.8 mm without ulceration</b>; T1b = &lt;0.8 mm ulcerated, or 0.8&ndash;1.0 mm either way"
+        ],
+        [
+         "N",
+         "N1 = 1 node or in-transit/satellite alone &middot; N2 = 2&ndash;3 &middot; <b>N3 = &ge;4, or matted</b>"
+        ],
+        [
+         "M",
+         "M1a skin/soft tissue/non-regional node &middot; M1b lung &middot; M1c other visceral &middot; <b>M1d = CNS</b>"
+        ],
+        [
+         "<b>LDH</b>",
+         "Explicit M-category modifier: <b>(0) = normal, (1) = elevated</b>"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "&dagger; Localized management (NCCN)",
+       "headers": [
+        "Breslow depth",
+        "Excision margin"
+       ],
+       "widths": [
+        "42%",
+        ""
+       ],
+       "rows": [
+        [
+         "In situ",
+         "0.5&ndash;1.0 cm"
+        ],
+        [
+         "&le;1.0 mm",
+         "1 cm"
+        ],
+        [
+         "&gt;1.0&ndash;2.0 mm",
+         "1&ndash;2 cm"
+        ],
+        [
+         "&gt;2.0 mm",
+         "2 cm"
+        ]
+       ],
+       "footnote": "<b>&dagger; Sentinel lymph node biopsy:</b> not recommended for <b>T1a</b> (risk &lt;5%) &middot; discuss for <b>T1b</b> &middot; recommended for <b>T2 and above</b>. <b>Completion lymph node dissection is no longer routine</b> after a positive sentinel node (MSLT-II, DeCOG-SLT) &mdash; nodal ultrasound surveillance instead."
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Localized and resectable",
+         "color": "teal",
+         "boxes": [
+          [
+           "Surgery is potentially curative",
+           [
+            "wide local excision by Breslow depth",
+            "&dagger; SLNB for T1b and above"
+           ]
+          ],
+          [
+           "Adjuvant anti-PD-1",
+           [
+            "nivolumab or pembrolizumab &times; 1 year",
+            "for <b>resected stage IIB and higher</b>",
+            "&dagger; BRAF V600: dabrafenib + trametinib an option"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Resectable stage III &mdash; neoadjuvant preferred",
+         "color": "blue",
+         "boxes": [
+          [
+           "Give immunotherapy before surgery",
+           [
+            "<b>NADINA</b>: ipilimumab 1 + nivolumab 3 mg/kg",
+            "(&ldquo;flipped dose&rdquo;) &times;2 pre-op, then adjuvant nivo",
+            "<b>S1801</b>: pembrolizumab 200 mg &times;3 pre-op",
+            "improves EFS vs adjuvant therapy alone"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Unresectable stage III or IV",
+         "color": "purple",
+         "boxes": [
+          [
+           "First line &mdash; immunotherapy",
+           [
+            "<b>nivolumab + ipilimumab</b> (CheckMate-067)",
+            "<b>nivolumab + relatlimab</b> (RELATIVITY-047)",
+            "anti-PD-1 alone if not fit for a combination"
+           ]
+          ],
+          [
+           "BRAF V600-mutant sequencing",
+           [
+            "<b>immunotherapy FIRST, then BRAF/MEK</b>",
+            "DREAMseq 2-yr OS <b>72% vs 52%</b>",
+            "exception: visceral crisis, or steroid-dependent",
+            "brain mets &rarr; brief BRAF/MEK then switch (sandwich)"
+           ]
+          ],
+          [
+           "Later lines",
+           [
+            "<b>TIL therapy</b> after ICI (RR ~30%)",
+            "T-VEC for cutaneous/subcutaneous/nodal disease",
+            "chemotherapy last resort &mdash; RR &lt;20%"
+           ]
+          ],
+          [
+           "Oligometastatic",
+           [
+            "metastasectomy <b>not preferred alone</b> if fit",
+            "for systemic therapy &mdash; give adjuvant therapy",
+            "after complete resection"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Brain metastases",
+         "color": "coral",
+         "boxes": [
+          [
+           "Steroid requirement is the discriminator",
+           [
+            "asymptomatic, no steroids: <b>ipi/nivo</b>",
+            "intracranial ORR 53&ndash;57% (CheckMate-204)",
+            "symptomatic or on steroids: RR only ~17%",
+            "&rarr; add surgery + targeted therapy; SRS, not WBRT"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "39%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimens &amp; dosing",
+       "headers": [
+        "Regimen",
+        "Dosing",
+        "Setting"
+       ],
+       "widths": [
+        "26%",
+        "",
+        "22%"
+       ],
+       "rows": [
+        [
+         "Pembrolizumab",
+         "&dagger; 200 mg q3wk or 400 mg q6wk",
+         "adjuvant &times;1 yr; metastatic"
+        ],
+        [
+         "Nivolumab",
+         "&dagger; 240 mg q2wk or 480 mg q4wk",
+         "adjuvant &times;1 yr; metastatic"
+        ],
+        [
+         "<b>Ipilimumab + nivolumab</b>",
+         "&dagger; ipilimumab 3 mg/kg + nivolumab 1 mg/kg q3wk &times;4, then nivolumab maintenance",
+         "1L metastatic (CheckMate-067)"
+        ],
+        [
+         "&mdash; neoadjuvant &ldquo;flipped&rdquo;",
+         "<b>ipilimumab 1 mg/kg + nivolumab 3 mg/kg</b> &times; 2 cycles pre-op",
+         "resectable stage III (NADINA)"
+        ],
+        [
+         "<b>Nivolumab + relatlimab</b>",
+         "&dagger; 480 mg + 160 mg q4wk (Opdualag)",
+         "1L metastatic"
+        ],
+        [
+         "Dabrafenib + trametinib",
+         "&dagger; 150 mg BID + 2 mg daily",
+         "BRAF V600; also adjuvant"
+        ],
+        [
+         "Encorafenib + binimetinib",
+         "&dagger; 450 mg daily + 45 mg BID",
+         "BRAF V600"
+        ],
+        [
+         "Vemurafenib + cobimetinib",
+         "&dagger; 960 mg BID + 60 mg daily (21/7)",
+         "BRAF V600"
+        ],
+        [
+         "Imatinib",
+         "&dagger; for <b>activating</b> KIT mutations",
+         "acral / mucosal"
+        ],
+        [
+         "TIL therapy (lifileucel)",
+         "resect &rarr; expand <i>ex vivo</i> with IL-2 &rarr; lymphodepleting chemo &rarr; single infusion &rarr; high-dose IL-2",
+         "PD-1-refractory"
+        ],
+        [
+         "T-VEC",
+         "intralesional oncolytic HSV expressing GM-CSF",
+         "cutaneous, subcutaneous, nodal"
+        ],
+        [
+         "High-dose IL-2",
+         "largely replaced by checkpoint and targeted therapy",
+         "historical"
+        ],
+        [
+         "Chemotherapy",
+         "dacarbazine &middot; temozolomide &middot; carboplatin + paclitaxel",
+         "salvage; RR &lt;20%, 4&ndash;6 months"
+        ]
+       ],
+       "footnote": "&dagger; Doses are from product labeling &mdash; the handbook chapter states dosing only for the two neoadjuvant regimens. Cytotoxic chemotherapy &ldquo;no longer plays a well-defined role&rdquo; in metastatic melanoma."
+      },
+      {
+       "type": "table",
+       "heading": "Biomarker &rarr; therapy",
+       "headers": [
+        "Alteration",
+        "Therapy"
+       ],
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>BRAF V600</b> (~50%)",
+         "BRAF + MEK doublet &mdash; always dual, never single-agent BRAF (resistance, and BRAFi skin toxicity). Immunotherapy still works and generally comes <b>first</b>"
+        ],
+        [
+         "<b>KIT</b> (~15% of acral/mucosal)",
+         "Imatinib &mdash; responses with <b>activating mutations</b> (~1/3 respond); <b>KIT amplification alone typically does not respond</b>"
+        ],
+        [
+         "TRK fusion",
+         "Found on NGS in BRAF wild-type acral/mucosal disease"
+        ],
+        [
+         "&dagger; HLA-A*02:01",
+         "<b>Tebentafusp</b> in metastatic <b>uveal</b> melanoma; also eligibility for brenetafusp trials in cutaneous disease"
+        ],
+        [
+         "BRAF wild-type",
+         "Send NGS for other actionable drivers"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; trial evidence, staging detail, immune toxicity and variants",
+   "columns": [
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Trial evidence",
+       "rows": [
+        [
+         "<b>CheckMate-067</b> (10-yr)",
+         "ipi/nivo vs nivo vs ipi &mdash; median OS <b>72 / 37 / 20 months</b>; 10-yr OS <b>43% / 37% / 19%</b>. <b>If progression-free at 3 years, 10-yr melanoma-specific survival &gt;96%</b> (Wolchok, NEJM 2024)"
+        ],
+        [
+         "<b>CheckMate-204</b>",
+         "brain metastases on ipi/nivo &mdash; asymptomatic: intracranial ORR 53&ndash;57%, 36-mo iPFS ~54%, OS ~72%. Symptomatic or on steroids: RR ~17%, iPFS ~19%, OS ~37% (Long, JCO 2023)"
+        ],
+        [
+         "<b>RELATIVITY-047</b>",
+         "relatlimab + nivolumab vs nivolumab &mdash; median PFS <b>10.1 vs 4.6 months</b> (Tawbi, NEJM 2022)"
+        ],
+        [
+         "<b>NADINA</b>",
+         "neoadjuvant ipi/nivo &rarr; adjuvant nivolumab &mdash; EFS and distant-metastasis-free survival benefit; <b>major pathologic response 58%</b>; grade 3+ AEs ~30% (Rozeman, Nat Med 2024)"
+        ],
+        [
+         "<b>SWOG S1801</b>",
+         "neoadjuvant &rarr; adjuvant pembrolizumab &mdash; 2-yr EFS <b>72% vs 48%</b> with adjuvant alone; no added surgical complications (Patel, NEJM 2023)"
+        ],
+        [
+         "<b>DREAMseq</b>",
+         "BRAF V600: IO first then targeted vs the reverse &mdash; 2-yr OS <b>72% vs 52%</b> (Atkins, JCO 2023)"
+        ],
+        [
+         "<b>SECOMBIT</b>",
+         "at 4 years, IO-first or sandwich beats targeted-first for PFS and OS (Ascierto, JCO 2023)"
+        ],
+        [
+         "Dabrafenib + trametinib",
+         "pooled phase III: <b>34% alive at 5 years</b>, ~20% progression-free; better with normal LDH, good performance status, &lt;3 metastatic sites"
+        ],
+        [
+         "TIL therapy",
+         "RR ~30% with durable remissions; superior to ipilimumab in PD-1-refractory disease (Warner, Clin Cancer Res 2022)"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "&dagger; Adjuvant trials",
+       "rows": [
+        [
+         "<b>KEYNOTE-716</b>",
+         "pembrolizumab, resected <b>stage IIB/IIC</b> &mdash; 3-yr RFS <b>76.2% vs 63.4%</b> (HR 0.65)"
+        ],
+        [
+         "<b>CheckMate 76K</b>",
+         "nivolumab 480 mg q4wk &times; 12 months, resected <b>stage IIB/IIC</b> &mdash; RFS HR <b>0.42</b>, DMFS HR 0.47"
+        ],
+        [
+         "<b>KEYNOTE-054</b>",
+         "pembrolizumab, resected <b>stage III</b>"
+        ],
+        [
+         "<b>CheckMate 238</b>",
+         "nivolumab vs ipilimumab, resected stage IIIB/C&ndash;IV"
+        ],
+        [
+         "<b>COMBI-AD</b>",
+         "dabrafenib + trametinib &times; 12 months, resected stage III <b>BRAF V600</b>"
+        ]
+       ],
+       "footnote": "All are 1-year regimens. <b>The stage IIB/IIC trials have shown RFS and DMFS benefit but no definitive OS benefit yet</b> &mdash; worth saying out loud when consenting a patient with resected node-negative disease."
+      }
+     ]
+    },
+    {
+     "width": "32%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Stage groupings",
+       "rows": [
+        [
+         "Clinical",
+         "0 Tis &middot; IA T1a &middot; IB T1b or T2a &middot; IIA T2b/T3a &middot; IIB T3b/T4a &middot; IIC T4b &middot; <b>III = any N &ge;N1, M0</b> &middot; IV = M1"
+        ],
+        [
+         "Pathologic IIIA",
+         "T1a&ndash;T2a with N1a or N2a"
+        ],
+        [
+         "Pathologic IIIB",
+         "T0 with N1b/c &middot; T1a&ndash;T2a with N1b/c or N2b &middot; T2b/T3a with N1a&ndash;c or N2a/b"
+        ],
+        [
+         "Pathologic IIIC",
+         "T0 with N2b/c or N3b/c &middot; T1a&ndash;T3a with N2c or N3a&ndash;c &middot; T3b/T4a with any N &ge;N1 &middot; T4b with N1a&ndash;N2c"
+        ],
+        [
+         "Pathologic IIID",
+         "<b>T4b with N3a/b/c</b>"
+        ],
+        [
+         "N suffixes",
+         "<b>a</b> = clinically occult (found on SLNB) &middot; <b>b</b> = clinically detected &middot; <b>c</b> = in-transit, satellite or microsatellite disease present"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "&dagger; Immune-related adverse events",
+       "items": [
+        "<b>Grade 1:</b> usually continue with close monitoring. <b>Grade 2:</b> hold the checkpoint inhibitor; prednisone 0.5&ndash;1 mg/kg/day if persistent",
+        "<b>Grade 3&ndash;4:</b> hold or permanently discontinue; <b>prednisone or methylprednisolone 1&ndash;2 mg/kg/day</b>, tapered over at least 4&ndash;6 weeks",
+        "<b>Steroid-refractory colitis</b> &rarr; infliximab or vedolizumab. <b>Hepatitis</b> &rarr; mycophenolate, <b>not infliximab</b> (hepatotoxicity)",
+        "<b>Myocarditis</b> &rarr; urgent high-dose steroids and permanent discontinuation &mdash; rare but highly lethal",
+        "<b>Endocrine events are the exception:</b> hypophysitis, thyroiditis, adrenal insufficiency and type 1 diabetes are usually <b>irreversible</b>, but you replace the hormone and generally <b>continue</b> the checkpoint inhibitor",
+        "Monitor TSH and free T4 at baseline and every 4&ndash;6 weeks; check HBsAg and HBcAb before starting",
+        "Onset is typically weeks to months &mdash; <b>but can occur after discontinuation</b>. Ipilimumab-containing regimens carry the highest risk"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Variants &amp; special situations",
+       "rows": [
+        [
+         "<b>Acral</b> (~2&ndash;3%)",
+         "More common in darker skin. Lower TMB, lower BRAF rate, <b>lower immunotherapy response</b>, more aggressive &mdash; check KIT"
+        ],
+        [
+         "<b>Mucosal</b> (~1&ndash;2%)",
+         "Distinct genetics, low BRAF, poor immunotherapy response, presents late because the site is hidden; KIT actionable"
+        ],
+        [
+         "<b>Uveal</b>",
+         "Biologically distinct; metastasizes to <b>liver first</b>. Localized: plaque radiation or enucleation. Metastatic: liver-directed therapy (HAI, TACE, radioembolization, ablation); &dagger; <b>tebentafusp if HLA-A*02:01</b>"
+        ],
+        [
+         "&dagger; <b>Desmoplastic</b>",
+         "Usually BRAF wild-type with <b>very high TMB</b> &mdash; unusually responsive to anti-PD-1. SLNB value is debated in pure desmoplastic disease"
+        ],
+        [
+         "&dagger; <b>Lentigo maligna</b>",
+         "Margin assessment is difficult (subclinical extension); imiquimod or radiation if not a surgical candidate"
+        ],
+        [
+         "&dagger; <b>In-transit disease</b>",
+         "Isolated limb infusion or perfusion, T-VEC, intralesional therapy, or systemic therapy"
+        ],
+        [
+         "&dagger; <b>Unknown primary</b>",
+         "Treat by stage as though cutaneous &mdash; outcomes are similar or better"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "&dagger; Surveillance (NCCN)",
+       "items": [
+        "<b>Stage IA&ndash;IIA:</b> H&amp;P q6&ndash;12 months &times; 5 years, then annually; <b>no routine imaging</b>",
+        "<b>Stage IIB&ndash;IV:</b> H&amp;P q3&ndash;6 months &times; 2 years, then q3&ndash;12 months &times; 3 years; imaging q3&ndash;12 months for 2&ndash;3 years",
+        "<b>Annual skin examination for life</b>, plus education on skin self-examination and sun protection",
+        "<b>Pseudoprogression:</b> immunotherapy responses can be slow with transient worsening before shrinkage &mdash; especially with ipilimumab-containing regimens. &dagger; iRECIST requires confirmatory imaging before calling progression"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "&dagger; Hereditary predisposition",
+       "rows": [
+        [
+         "<b>CDKN2A / p16</b>",
+         "Familial melanoma &mdash; also confers pancreatic cancer risk"
+        ],
+        [
+         "<b>BAP1</b>",
+         "Uveal melanoma, mesothelioma, renal cell carcinoma, cutaneous melanocytic tumors"
+        ],
+        [
+         "MC1R variants",
+         "Red hair and fair skin phenotype; modest risk modifier"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Workup",
+  "Staging &mdash; AJCC 8th",
+  "&dagger; Localized management (NCCN)",
+  "Treatment pathway",
+  "Regimens &amp; dosing",
+  "Biomarker &rarr; therapy",
+  "Trial evidence",
+  "&dagger; Adjuvant trials",
+  "Stage groupings",
+  "&dagger; Immune-related adverse events",
+  "Variants &amp; special situations",
+  "&dagger; Surveillance (NCCN)",
+  "&dagger; Hereditary predisposition"
+ ],
+ "text": "Melanoma Staged by Breslow thickness + ulceration ; LDH is a staging modifier in M1 disease · ~50% of cutaneous melanomas carry BRAF V600 · the central modern question is immunotherapy sequencing , not whether to give it Stanford Oncology Handbook 2025, Melanoma — an advanced-disease chapter. Biopsy technique, excision margins, SLNB indications, dosing, surveillance and the variant/toxicity material are not in it ; those are marked † and drawn from NCCN and product labeling. Workup † Excisional biopsy with 1–3 mm margins, full thickness, oriented along lymphatic drainage — avoid a superficial shave , which compromises Breslow depth Pathologic confirmation; report Breslow thickness and ulceration († mitotic rate is still reported though no longer a staging criterion) Imaging: CT chest/abdomen/pelvis (add neck if head-and-neck primary), or PET/CT MRI brain for stage III–IV Labs: CBC, CMP, serum LDH BRAF V600 testing in all advanced cutaneous melanoma If BRAF wild-type → NGS ; in acral/mucosal look specifically for KIT mutations or TRK fusions Staging — AJCC 8th T by thickness T1 ≤1 mm · T2 >1–2 · T3 >2–4 · T4 >4 mm; suffix a = no ulceration, b = ulcerated T1a vs T1b T1a = <0.8 mm without ulceration ; T1b = <0.8 mm ulcerated, or 0.8–1.0 mm either way N N1 = 1 node or in-transit/satellite alone · N2 = 2–3 · N3 = ≥4, or matted M M1a skin/soft tissue/non-regional node · M1b lung · M1c other visceral · M1d = CNS LDH Explicit M-category modifier: (0) = normal, (1) = elevated † Localized management (NCCN) Breslow depth Excision margin In situ 0.5–1.0 cm ≤1.0 mm 1 cm >1.0–2.0 mm 1–2 cm >2.0 mm 2 cm † Sentinel lymph node biopsy: not recommended for T1a (risk <5%) · discuss for T1b · recommended for T2 and above . Completion lymph node dissection is no longer routine after a positive sentinel node (MSLT-II, DeCOG-SLT) — nodal ultrasound surveillance instead. Treatment pathway Localized and resectable Surgery is potentially curative wide local excision by Breslow depth † SLNB for T1b and above Adjuvant anti-PD-1 nivolumab or pembrolizumab × 1 year for resected stage IIB and higher † BRAF V600: dabrafenib + trametinib an option Resectable stage III — neoadjuvant preferred Give immunotherapy before surgery NADINA : ipilimumab 1 + nivolumab 3 mg/kg (“flipped dose”) ×2 pre-op, then adjuvant nivo S1801 : pembrolizumab 200 mg ×3 pre-op improves EFS vs adjuvant therapy alone Unresectable stage III or IV First line — immunotherapy nivolumab + ipilimumab (CheckMate-067) nivolumab + relatlimab (RELATIVITY-047) anti-PD-1 alone if not fit for a combination BRAF V600-mutant sequencing immunotherapy FIRST, then BRAF/MEK DREAMseq 2-yr OS 72% vs 52% exception: visceral crisis, or steroid-dependent brain mets → brief BRAF/MEK then switch (sandwich) Later lines TIL therapy after ICI (RR ~30%) T-VEC for cutaneous/subcutaneous/nodal disease chemotherapy last resort — RR <20% Oligometastatic metastasectomy not preferred alone if fit for systemic therapy — give adjuvant therapy after complete resection Brain metastases Steroid requirement is the discriminator asymptomatic, no steroids: ipi/nivo intracranial ORR 53–57% (CheckMate-204) symptomatic or on steroids: RR only ~17% → add surgery + targeted therapy; SRS, not WBRT Regimens & dosing Regimen Dosing Setting Pembrolizumab † 200 mg q3wk or 400 mg q6wk adjuvant ×1 yr; metastatic Nivolumab † 240 mg q2wk or 480 mg q4wk adjuvant ×1 yr; metastatic Ipilimumab + nivolumab † ipilimumab 3 mg/kg + nivolumab 1 mg/kg q3wk ×4, then nivolumab maintenance 1L metastatic (CheckMate-067) — neoadjuvant “flipped” ipilimumab 1 mg/kg + nivolumab 3 mg/kg × 2 cycles pre-op resectable stage III (NADINA) Nivolumab + relatlimab † 480 mg + 160 mg q4wk (Opdualag) 1L metastatic Dabrafenib + trametinib † 150 mg BID + 2 mg daily BRAF V600; also adjuvant Encorafenib + binimetinib † 450 mg daily + 45 mg BID BRAF V600 Vemurafenib + cobimetinib † 960 mg BID + 60 mg daily (21/7) BRAF V600 Imatinib † for activating KIT mutations acral / mucosal TIL therapy (lifileucel) resect → expand ex vivo with IL-2 → lymphodepleting chemo → single infusion → high-dose IL-2 PD-1-refractory T-VEC intralesional oncolytic HSV expressing GM-CSF cutaneous, subcutaneous, nodal High-dose IL-2 largely replaced by checkpoint and targeted therapy historical Chemotherapy dacarbazine · temozolomide · carboplatin + paclitaxel salvage; RR <20%, 4–6 months † Doses are from product labeling — the handbook chapter states dosing only for the two neoadjuvant regimens. Cytotoxic chemotherapy “no longer plays a well-defined role” in metastatic melanoma. Biomarker → therapy Alteration Therapy BRAF V600 (~50%) BRAF + MEK doublet — always dual, never single-agent BRAF (resistance, and BRAFi skin toxicity). Immunotherapy still works and generally comes first KIT (~15% of acral/mucosal) Imatinib — responses with activating mutations (~1/3 respond); KIT amplification alone typically does not respond TRK fusion Found on NGS in BRAF wild-type acral/mucosal disease † HLA-A*02:01 Tebentafusp in metastatic uveal melanoma; also eligibility for brenetafusp trials in cutaneous disease BRAF wild-type Send NGS for other actionable drivers Trial evidence CheckMate-067 (10-yr) ipi/nivo vs nivo vs ipi — median OS 72 / 37 / 20 months ; 10-yr OS 43% / 37% / 19% . If progression-free at 3 years, 10-yr melanoma-specific survival >96% (Wolchok, NEJM 2024) CheckMate-204 brain metastases on ipi/nivo — asymptomatic: intracranial ORR 53–57%, 36-mo iPFS ~54%, OS ~72%. Symptomatic or on steroids: RR ~17%, iPFS ~19%, OS ~37% (Long, JCO 2023) RELATIVITY-047 relatlimab + nivolumab vs nivolumab — median PFS 10.1 vs 4.6 months (Tawbi, NEJM 2022) NADINA neoadjuvant ipi/nivo → adjuvant nivolumab — EFS and distant-metastasis-free survival benefit; major pathologic response 58% ; grade 3+ AEs ~30% (Rozeman, Nat Med 2024) SWOG S1801 neoadjuvant → adjuvant pembrolizumab — 2-yr EFS 72% vs 48% with adjuvant alone; no added surgical complications (Patel, NEJM 2023) DREAMseq BRAF V600: IO first then targeted vs the reverse — 2-yr OS 72% vs 52% (Atkins, JCO 2023) SECOMBIT at 4 years, IO-first or sandwich beats targeted-first for PFS and OS (Ascierto, JCO 2023) Dabrafenib + trametinib pooled phase III: 34% alive at 5 years , ~20% progression-free; better with normal LDH, good performance status, <3 metastatic sites TIL therapy RR ~30% with durable remissions; superior to ipilimumab in PD-1-refractory disease (Warner, Clin Cancer Res 2022) † Adjuvant trials KEYNOTE-716 pembrolizumab, resected stage IIB/IIC — 3-yr RFS 76.2% vs 63.4% (HR 0.65) CheckMate 76K nivolumab 480 mg q4wk × 12 months, resected stage IIB/IIC — RFS HR 0.42 , DMFS HR 0.47 KEYNOTE-054 pembrolizumab, resected stage III CheckMate 238 nivolumab vs ipilimumab, resected stage IIIB/C–IV COMBI-AD dabrafenib + trametinib × 12 months, resected stage III BRAF V600 All are 1-year regimens. The stage IIB/IIC trials have shown RFS and DMFS benefit but no definitive OS benefit yet — worth saying out loud when consenting a patient with resected node-negative disease. Stage groupings Clinical 0 Tis · IA T1a · IB T1b or T2a · IIA T2b/T3a · IIB T3b/T4a · IIC T4b · III = any N ≥N1, M0 · IV = M1 Pathologic IIIA T1a–T2a with N1a or N2a Pathologic IIIB T0 with N1b/c · T1a–T2a with N1b/c or N2b · T2b/T3a with N1a–c or N2a/b Pathologic IIIC T0 with N2b/c or N3b/c · T1a–T3a with N2c or N3a–c · T3b/T4a with any N ≥N1 · T4b with N1a–N2c Pathologic IIID T4b with N3a/b/c N suffixes a = clinically occult (found on SLNB) · b = clinically detected · c = in-transit, satellite or microsatellite disease present † Immune-related adverse events Grade 1: usually continue with close monitoring. Grade 2: hold the checkpoint inhibitor; prednisone 0.5–1 mg/kg/day if persistent Grade 3–4: hold or permanently discontinue; prednisone or methylprednisolone 1–2 mg/kg/day , tapered over at least 4–6 weeks Steroid-refractory colitis → infliximab or vedolizumab. Hepatitis → mycophenolate, not infliximab (hepatotoxicity) Myocarditis → urgent high-dose steroids and permanent discontinuation — rare but highly lethal Endocrine events are the exception: hypophysitis, thyroiditis, adrenal insufficiency and type 1 diabetes are usually irreversible , but you replace the hormone and generally continue the checkpoint inhibitor Monitor TSH and free T4 at baseline and every 4–6 weeks; check HBsAg and HBcAb before starting Onset is typically weeks to months — but can occur after discontinuation . Ipilimumab-containing regimens carry the highest risk Variants & special situations Acral (~2–3%) More common in darker skin. Lower TMB, lower BRAF rate, lower immunotherapy response , more aggressive — check KIT Mucosal (~1–2%) Distinct genetics, low BRAF, poor immunotherapy response, presents late because the site is hidden; KIT actionable Uveal Biologically distinct; metastasizes to liver first . Localized: plaque radiation or enucleation. Metastatic: liver-directed therapy (HAI, TACE, radioembolization, ablation); † tebentafusp if HLA-A*02:01 † Desmoplastic Usually BRAF wild-type with very high TMB — unusually responsive to anti-PD-1. SLNB value is debated in pure desmoplastic disease † Lentigo maligna Margin assessment is difficult (subclinical extension); imiquimod or radiation if not a surgical candidate † In-transit disease Isolated limb infusion or perfusion, T-VEC, intralesional therapy, or systemic therapy † Unknown primary Treat by stage as though cutaneous — outcomes are similar or better † Surveillance (NCCN) Stage IA–IIA: H&P q6–12 months × 5 years, then annually; no routine imaging Stage IIB–IV: H&P q3–6 months × 2 years, then q3–12 months × 3 years; imaging q3–12 months for 2–3 years Annual skin examination for life , plus education on skin self-examination and sun protection Pseudoprogression: immunotherapy responses can be slow with transient worsening before shrinkage — especially with ipilimumab-containing regimens. † iRECIST requires confirmatory imaging before calling progression † Hereditary predisposition CDKN2A / p16 Familial melanoma — also confers pancreatic cancer risk BAP1 Uveal melanoma, mesothelioma, renal cell carcinoma, cutaneous melanocytic tumors MC1R variants Red hair and fair skin phenotype; modest risk modifier"
+}

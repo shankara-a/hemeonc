@@ -1,0 +1,292 @@
+{
+ "disease": "mpn",
+ "spec_file": "mpn.py",
+ "pdf": "Myeloproliferative Neoplasms.pdf",
+ "title": "Myeloproliferative neoplasms &mdash; PV, ET, PMF",
+ "subtitle": "Philadelphia-negative MPNs driven by constitutive JAK-STAT activation (<b>JAK2 V617F, CALR, MPL</b>) &middot; shared risks are <b>thrombosis</b>, progression to <b>myelofibrosis</b>, and <b>blast-phase transformation</b>",
+ "source": "No Stanford handbook chapter &mdash; compiled from WHO 2022 / ICC criteria, NCCN MPN guidelines, and landmark trials. Verify against primary sources before acting.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "28%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Driver mutations",
+       "headers": [
+        "Driver",
+        "PV",
+        "ET",
+        "PMF"
+       ],
+       "widths": [
+        "31%",
+        "",
+        "",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>JAK2</b> V617F",
+         "~95%",
+         "50&ndash;60%",
+         "~60%"
+        ],
+        [
+         "JAK2 exon 12",
+         "~3%",
+         "&mdash;",
+         "&mdash;"
+        ],
+        [
+         "<b>CALR</b>",
+         "&mdash;",
+         "20&ndash;25%",
+         "25&ndash;30%"
+        ],
+        [
+         "<b>MPL</b>",
+         "&mdash;",
+         "3&ndash;5%",
+         "5&ndash;8%"
+        ],
+        [
+         "Triple-negative",
+         "&mdash;",
+         "10&ndash;15%",
+         "~10%"
+        ]
+       ],
+       "footnote": "<b>PV is essentially always JAK2-mutated</b> &mdash; a JAK2-negative erythrocytosis should send you back to the differential, not to a PV diagnosis. In ET, <b>CALR</b> predicts higher platelets but <b>lower thrombosis risk</b> than JAK2."
+      },
+      {
+       "type": "bullets",
+       "heading": "Mutation biology",
+       "items": [
+        "<b>All three drivers converge on JAK-STAT</b> &mdash; JAK inhibitors work irrespective of which one is present",
+        "<b>JAK2 V617F</b> &mdash; exon 14 <b>pseudokinase (JH2) domain</b>; relieves autoinhibition &rarr; ligand-independent signaling. <b>Homozygosity via 9p uniparental disomy</b> is common in PV/PMF, rare in ET; higher allele burden tracks with PV phenotype, pruritus and fibrotic progression",
+        "<b>JAK2 exon 12</b> &mdash; ~3% of PV: <b>isolated erythrocytosis</b>, younger, very low EPO; outcomes similar to V617F",
+        "<b>CALR</b> &mdash; exon 9 frameshift; the mutant C-terminus loses the <b>KDEL ER-retention motif</b> and instead activates <b>MPL</b> &mdash; which is exactly why CALR occurs in ET and PMF but <b>never in PV</b>. <b>Type 1 (del52)</b> predominates in PMF and is favorable; <b>type 2 (ins5)</b> in ET",
+        "<b>MPL W515L/K</b> &mdash; exon 10 TPO receptor; ET and PMF only. <b>Triple-negative</b> &mdash; worst prognosis in PMF"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Diagnostic anchors (WHO 2022)",
+       "items": [
+        "<b>PV:</b> Hb &gt;16.5 (M) / &gt;16.0 (F) or Hct &gt;49% (M) / &gt;48% (F) + trilineage hypercellularity with pleomorphic megakaryocytes + JAK2 mutation; <b>subnormal EPO</b> is a minor criterion",
+        "<b>ET:</b> platelets <b>&ge;450</b> &times;10<sup>9</sup>/L + large hyperlobulated (&ldquo;staghorn&rdquo;) megakaryocytes + <b>reticulin &le; grade 1</b> + a clonal marker, having excluded other MPNs",
+        "<b>PMF:</b> megakaryocyte atypia with dense clustering + fibrosis grade (prefibrotic vs overt) + leukoerythroblastosis, anemia, splenomegaly, &uarr;LDH"
+       ]
+      },
+      {
+       "type": "note",
+       "html": "<b>The hardest and highest-stakes distinction is prefibrotic PMF vs ET.</b> They look alike on counts, but prefibrotic PMF has materially worse survival and higher transformation risk. It turns on <b>marrow morphology</b> &mdash; megakaryocyte clustering and atypia &mdash; not on the CBC.<br><br><b>Masked PV:</b> concurrent iron deficiency can normalize the hematocrit. If JAK2 is mutated with a &ldquo;normal&rdquo; Hct, think PV.<br><br><b>Splanchnic vein thrombosis</b> (Budd-Chiari, portal vein) &mdash; test JAK2 in everyone, even with normal counts; MPN is a leading occult cause."
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Polycythemia vera",
+         "color": "coral",
+         "boxes": [
+          [
+           "All patients",
+           [
+            "<b>phlebotomy to Hct &lt;45%</b> (CYTO-PV)",
+            "aspirin 81 mg + cardiovascular risk control",
+            "<b>do not replace iron</b> &mdash; it defeats the target"
+           ]
+          ],
+          [
+           "High risk &mdash; age &ge;60 or prior thrombosis",
+           [
+            "cytoreduce: <b>ropeginterferon</b> (NCCN-preferred)",
+            "or hydroxyurea; peg-IFN alfa-2a alternative",
+            "HU-resistant/intolerant: ruxolitinib (RESPONSE)",
+            "phlebotomy-dependent: rusfertide (VERIFY)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Essential thrombocythemia",
+         "color": "teal",
+         "boxes": [
+          [
+           "Low / very low risk",
+           [
+            "aspirin 81 mg &mdash; consider <b>BID</b> if JAK2+ or CV RFs",
+            "observation reasonable if very low risk",
+            "<b>check vWF activity if platelets &gt;1000</b>"
+           ]
+          ],
+          [
+           "High risk &mdash; prior thrombosis, or &gt;60 + JAK2+",
+           [
+            "cytoreduce: <b>hydroxyurea</b> first line",
+            "anagrelide second line (PT-1)",
+            "interferon preferred in pregnancy / young"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Primary myelofibrosis",
+         "color": "purple",
+         "boxes": [
+          [
+           "Risk-stratify first",
+           [
+            "DIPSS / DIPSS-plus, MIPSS70+ v2, GIPSS",
+            "<b>allogeneic transplant is the only cure</b>",
+            "refer intermediate-2 / high risk if eligible"
+           ]
+          ],
+          [
+           "Spleen and symptom directed",
+           [
+            "<b>ruxolitinib</b> first line &mdash; most survival data",
+            "platelets &lt;50: <b>pacritinib</b>",
+            "anemia / transfusion-dependent: <b>momelotinib</b>",
+            "after ruxolitinib: fedratinib"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "38%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Risk stratification",
+       "headers": [
+        "Disease",
+        "Scheme"
+       ],
+       "widths": [
+        "16%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>PV</b>",
+         "<b>High risk = age &ge;60 OR prior thrombosis</b>; low risk = neither. High risk (or symptomatic/progressive) triggers cytoreduction"
+        ],
+        [
+         "<b>ET</b>",
+         "<b>IPSET-thrombosis (revised):</b> very low = &le;60, no thrombosis, JAK2 WT &middot; low = &le;60, no thrombosis, JAK2-mutant &middot; intermediate = &gt;60, no thrombosis, JAK2 WT &middot; <b>high = prior thrombosis, or &gt;60 AND JAK2-mutant</b>"
+        ],
+        [
+         "<b>PMF</b>",
+         "IPSS (at diagnosis) &middot; DIPSS / DIPSS-plus (any time) &middot; <b>MIPSS70 / MIPSS70+ v2</b> (molecular; transplant candidates) &middot; GIPSS (genetic only)"
+        ]
+       ],
+       "footnote": "<b>Non-driver mutations set prognosis, not diagnosis.</b> High-molecular-risk in PMF: <b>ASXL1, SRSF2, EZH2, IDH1/2, U2AF1 Q157</b> &mdash; these drive the MIPSS scores and push toward transplant. <b>TP53</b> drives blast-phase transformation."
+      },
+      {
+       "type": "table",
+       "heading": "Agents &amp; dosing",
+       "headers": [
+        "Agent",
+        "Dose",
+        "Setting"
+       ],
+       "widths": [
+        "24%",
+        "",
+        "26%"
+       ],
+       "rows": [
+        [
+         "Aspirin",
+         "81 mg daily; <b>BID</b> if JAK2+ or high-risk ET",
+         "all PV, most ET"
+        ],
+        [
+         "Hydroxyurea",
+         "500&ndash;1000 mg daily, titrated to counts",
+         "1st-line cytoreduction"
+        ],
+        [
+         "<b>Ropeginterferon alfa-2b</b>",
+         "100 &micro;g SQ q2wk (50 if switching from HU); titrate by 50 to max 500",
+         "NCCN-preferred 1st-line PV"
+        ],
+        [
+         "Peginterferon alfa-2a",
+         "45&ndash;180 &micro;g SQ weekly",
+         "alternative; <b>pregnancy</b>"
+        ],
+        [
+         "<b>Rusfertide</b> (Mimrylo)",
+         "weekly SQ, dose-titrated",
+         "PV erythrocytosis, phlebotomy-dependent"
+        ],
+        [
+         "Anagrelide",
+         "0.5 mg BID, titrate",
+         "2nd-line ET"
+        ],
+        [
+         "<b>Ruxolitinib</b>",
+         "PV 10 mg BID &middot; MF 5&ndash;20 mg BID by platelet count",
+         "HU-resistant PV; 1st-line MF"
+        ],
+        [
+         "Fedratinib",
+         "400 mg daily",
+         "MF after ruxolitinib"
+        ],
+        [
+         "Pacritinib",
+         "200 mg BID",
+         "MF, <b>platelets &lt;50</b>"
+        ],
+        [
+         "Momelotinib",
+         "200 mg daily",
+         "MF with <b>anemia</b> (also anti-ACVR1)"
+        ]
+       ],
+       "footnote": "<b>Fedratinib requires thiamine</b> &mdash; check and replete before and during treatment (Wernicke encephalopathy). <b>Never stop ruxolitinib abruptly</b> &mdash; cytokine rebound/withdrawal syndrome; taper."
+      },
+      {
+       "type": "bullets",
+       "heading": "Complications &amp; pearls",
+       "items": [
+        "<b>Acquired von Willebrand syndrome</b> with extreme thrombocytosis (&gt;1000&ndash;1500) &mdash; paradoxical <b>bleeding</b>. Check ristocetin cofactor before starting aspirin; hold aspirin if severely reduced",
+        "<b>CYTO-PV:</b> Hct target &lt;45% gave ~4&times; fewer cardiovascular deaths and major thromboses than a 45&ndash;50% target &mdash; the number to defend",
+        "<b>Post-PV / post-ET myelofibrosis</b> (IWG-MRT criteria) &mdash; suspect with rising LDH, falling counts, enlarging spleen, new constitutional symptoms",
+        "<b>Blast phase (&ge;20% blasts)</b> is dismal and chemo-refractory &mdash; allogeneic transplant is the only meaningful option",
+        "<b>Aquagenic pruritus</b> in PV &mdash; antihistamines, SSRIs, interferon, or ruxolitinib (a genuine quality-of-life issue, not a nuisance)",
+        "Anemia in MF: ESAs if EPO &lt;500, danazol, luspatercept, or switch to momelotinib"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Driver mutations",
+  "Mutation biology",
+  "Diagnostic anchors (WHO 2022)",
+  "Treatment pathway",
+  "Risk stratification",
+  "Agents &amp; dosing",
+  "Complications &amp; pearls"
+ ],
+ "text": "Myeloproliferative neoplasms — PV, ET, PMF Philadelphia-negative MPNs driven by constitutive JAK-STAT activation ( JAK2 V617F, CALR, MPL ) · shared risks are thrombosis , progression to myelofibrosis , and blast-phase transformation No Stanford handbook chapter — compiled from WHO 2022 / ICC criteria, NCCN MPN guidelines, and landmark trials. Verify against primary sources before acting. Driver mutations Driver PV ET PMF JAK2 V617F ~95% 50–60% ~60% JAK2 exon 12 ~3% — — CALR — 20–25% 25–30% MPL — 3–5% 5–8% Triple-negative — 10–15% ~10% PV is essentially always JAK2-mutated — a JAK2-negative erythrocytosis should send you back to the differential, not to a PV diagnosis. In ET, CALR predicts higher platelets but lower thrombosis risk than JAK2. Mutation biology All three drivers converge on JAK-STAT — JAK inhibitors work irrespective of which one is present JAK2 V617F — exon 14 pseudokinase (JH2) domain ; relieves autoinhibition → ligand-independent signaling. Homozygosity via 9p uniparental disomy is common in PV/PMF, rare in ET; higher allele burden tracks with PV phenotype, pruritus and fibrotic progression JAK2 exon 12 — ~3% of PV: isolated erythrocytosis , younger, very low EPO; outcomes similar to V617F CALR — exon 9 frameshift; the mutant C-terminus loses the KDEL ER-retention motif and instead activates MPL — which is exactly why CALR occurs in ET and PMF but never in PV . Type 1 (del52) predominates in PMF and is favorable; type 2 (ins5) in ET MPL W515L/K — exon 10 TPO receptor; ET and PMF only. Triple-negative — worst prognosis in PMF Diagnostic anchors (WHO 2022) PV: Hb >16.5 (M) / >16.0 (F) or Hct >49% (M) / >48% (F) + trilineage hypercellularity with pleomorphic megakaryocytes + JAK2 mutation; subnormal EPO is a minor criterion ET: platelets ≥450 ×10 9 /L + large hyperlobulated (“staghorn”) megakaryocytes + reticulin ≤ grade 1 + a clonal marker, having excluded other MPNs PMF: megakaryocyte atypia with dense clustering + fibrosis grade (prefibrotic vs overt) + leukoerythroblastosis, anemia, splenomegaly, &uarr;LDH The hardest and highest-stakes distinction is prefibrotic PMF vs ET. They look alike on counts, but prefibrotic PMF has materially worse survival and higher transformation risk. It turns on marrow morphology — megakaryocyte clustering and atypia — not on the CBC. Masked PV: concurrent iron deficiency can normalize the hematocrit. If JAK2 is mutated with a “normal” Hct, think PV. Splanchnic vein thrombosis (Budd-Chiari, portal vein) — test JAK2 in everyone, even with normal counts; MPN is a leading occult cause. Treatment pathway Polycythemia vera All patients phlebotomy to Hct <45% (CYTO-PV) aspirin 81 mg + cardiovascular risk control do not replace iron — it defeats the target High risk — age ≥60 or prior thrombosis cytoreduce: ropeginterferon (NCCN-preferred) or hydroxyurea; peg-IFN alfa-2a alternative HU-resistant/intolerant: ruxolitinib (RESPONSE) phlebotomy-dependent: rusfertide (VERIFY) Essential thrombocythemia Low / very low risk aspirin 81 mg — consider BID if JAK2+ or CV RFs observation reasonable if very low risk check vWF activity if platelets >1000 High risk — prior thrombosis, or >60 + JAK2+ cytoreduce: hydroxyurea first line anagrelide second line (PT-1) interferon preferred in pregnancy / young Primary myelofibrosis Risk-stratify first DIPSS / DIPSS-plus, MIPSS70+ v2, GIPSS allogeneic transplant is the only cure refer intermediate-2 / high risk if eligible Spleen and symptom directed ruxolitinib first line — most survival data platelets <50: pacritinib anemia / transfusion-dependent: momelotinib after ruxolitinib: fedratinib Risk stratification Disease Scheme PV High risk = age ≥60 OR prior thrombosis ; low risk = neither. High risk (or symptomatic/progressive) triggers cytoreduction ET IPSET-thrombosis (revised): very low = ≤60, no thrombosis, JAK2 WT · low = ≤60, no thrombosis, JAK2-mutant · intermediate = >60, no thrombosis, JAK2 WT · high = prior thrombosis, or >60 AND JAK2-mutant PMF IPSS (at diagnosis) · DIPSS / DIPSS-plus (any time) · MIPSS70 / MIPSS70+ v2 (molecular; transplant candidates) · GIPSS (genetic only) Non-driver mutations set prognosis, not diagnosis. High-molecular-risk in PMF: ASXL1, SRSF2, EZH2, IDH1/2, U2AF1 Q157 — these drive the MIPSS scores and push toward transplant. TP53 drives blast-phase transformation. Agents & dosing Agent Dose Setting Aspirin 81 mg daily; BID if JAK2+ or high-risk ET all PV, most ET Hydroxyurea 500–1000 mg daily, titrated to counts 1st-line cytoreduction Ropeginterferon alfa-2b 100 &micro;g SQ q2wk (50 if switching from HU); titrate by 50 to max 500 NCCN-preferred 1st-line PV Peginterferon alfa-2a 45–180 &micro;g SQ weekly alternative; pregnancy Rusfertide (Mimrylo) weekly SQ, dose-titrated PV erythrocytosis, phlebotomy-dependent Anagrelide 0.5 mg BID, titrate 2nd-line ET Ruxolitinib PV 10 mg BID · MF 5–20 mg BID by platelet count HU-resistant PV; 1st-line MF Fedratinib 400 mg daily MF after ruxolitinib Pacritinib 200 mg BID MF, platelets <50 Momelotinib 200 mg daily MF with anemia (also anti-ACVR1) Fedratinib requires thiamine — check and replete before and during treatment (Wernicke encephalopathy). Never stop ruxolitinib abruptly — cytokine rebound/withdrawal syndrome; taper. Complications & pearls Acquired von Willebrand syndrome with extreme thrombocytosis (>1000–1500) — paradoxical bleeding . Check ristocetin cofactor before starting aspirin; hold aspirin if severely reduced CYTO-PV: Hct target <45% gave ~4× fewer cardiovascular deaths and major thromboses than a 45–50% target — the number to defend Post-PV / post-ET myelofibrosis (IWG-MRT criteria) — suspect with rising LDH, falling counts, enlarging spleen, new constitutional symptoms Blast phase (≥20% blasts) is dismal and chemo-refractory — allogeneic transplant is the only meaningful option Aquagenic pruritus in PV — antihistamines, SSRIs, interferon, or ruxolitinib (a genuine quality-of-life issue, not a nuisance) Anemia in MF: ESAs if EPO <500, danazol, luspatercept, or switch to momelotinib"
+}

@@ -5,6 +5,13 @@
 
   HH.esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
+  /* Strip tags + decode entities — for text contexts (TOC, titles, search). */
+  const _dec = document.createElement("textarea");
+  HH.plain = (s) => {
+    _dec.innerHTML = String(s ?? "").replace(/<[^>]+>/g, "");
+    return _dec.value.replace(/\s+/g, " ").trim();
+  };
+
   HH.fmtDate = (iso) => {
     if (!iso) return "";
     const d = new Date(iso + (iso.length === 10 ? "T00:00:00" : ""));
@@ -63,8 +70,8 @@
   /* ---------- Detail panes (Trials tab: #tr-detail · Reviews: .rv-detail) ---------- */
   const paneFor = (row) => {
     if (!window.matchMedia("(min-width: 901px)").matches) return null;
-    const pane = row.closest("#tr-list") ? document.getElementById("tr-detail")
-               : row.closest(".rv-body") ? row.closest(".rv-body").querySelector(".rv-detail") : null;
+    if (!row.closest("#tr-list")) return null;          // only the Trials tab has a detail pane
+    const pane = document.getElementById("tr-detail");
     return pane && pane.offsetParent !== null ? pane : null;
   };
   HH.renderDetail = (pane, t, { isPinned = false } = {}) => {
@@ -79,7 +86,7 @@
   };
   HH.pinTrial = (row, pane = paneFor(row)) => {
     if (!pane) return;
-    const list = row.closest("#tr-list, .rv-side");
+    const list = row.closest("#tr-list");
     const t = HH.data.trialById[row.dataset.id];
     if (pane.dataset.pinned === row.dataset.id) {
       delete pane.dataset.pinned;
@@ -101,7 +108,7 @@
     const pane = paneFor(row);
     if (pane) {                                             // a detail pane exists: fill it, no popover
       if (!pane.dataset.pinned) HH.renderDetail(pane, t);
-      row.closest("#tr-list, .rv-side").querySelectorAll(".trial-row.hovered").forEach((r) => r !== row && r.classList.remove("hovered"));
+      document.querySelectorAll("#tr-list .trial-row.hovered").forEach((r) => r !== row && r.classList.remove("hovered"));
       row.classList.add("hovered");
       return;
     }
@@ -110,7 +117,13 @@
     if (current !== row) {
       current = row;
       const dz = HH.disease(t.disease);
-      el.innerHTML = `
+      const small = !!row.closest(".rv-rail");              // Reviews: takeaway only
+      el.classList.toggle("small", small);
+      el.innerHTML = small ? `
+        <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span><span class="chip year">${t.year}</span></div>
+        <div class="tp-desc">${HH.esc(t.descriptor || "")}</div>
+        ${t.takeaway ? `<div class="tp-take">${HH.esc(t.takeaway)}</div>` : ""}
+        <div class="tp-hint">Click to open the full trial →</div>` : `
         <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t, { disease: true })}</div>
         <div class="tp-desc">${HH.esc(t.descriptor || "")}${t.setting ? ` · ${HH.esc(t.setting)}` : ""}</div>
         ${HH.trialBody(t)}
@@ -155,9 +168,9 @@
     if (e.target.closest("a") || e.target.closest(".tr-more")) return; // let links & selection work
     const pane = paneFor(row);
     if (pane) { HH.pinTrial(row, pane); return; }
-    if (row.classList.contains("trial-pill")) {               // phone: pill tap shows the card inline
-      const body = row.closest(".rv-body"), rvPane = body && body.querySelector(".rv-detail");
-      if (rvPane) { HH.pinTrial(row, rvPane); rvPane.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
+    if (row.closest(".rv-rail")) {                            // Reviews: open the full trial
+      HH.hidePop(0);
+      location.hash = `#trial/${row.dataset.id}`;
       return;
     }
     row.classList.toggle("open");

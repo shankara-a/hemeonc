@@ -1,0 +1,665 @@
+{
+ "disease": "lymphoma-aggressive-bcell",
+ "spec_file": "lymphoma_aggressive_bcell.py",
+ "pdf": "Lymphoma - Aggressive B-cell.pdf",
+ "title": "Aggressive B-cell lymphoma",
+ "subtitle": "<b>DLBCL</b> and the three situations that change the plan &mdash; <b>Burkitt</b>, <b>primary CNS lymphoma</b>, and <b>HIV-associated</b> disease. The recurring questions are cell of origin, double-hit status, cardiac fitness, and whether the CNS needs covering",
+ "source": "Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin, pp.194&ndash;222 &middot; items marked &dagger; are outside the handbook chapter",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "28%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "<b>Excisional lymph node biopsy preferred</b>, core acceptable, <b>no FNA</b>; hematopathology review",
+        "IHC: CD20, CD10, CD30, CD5, BCL2, BCL6, MUM1, MYC, EBV + <b>Ki-67</b>. Cell of origin by <b>Hans algorithm</b> (GCB vs non-GCB/ABC)",
+        "<b>Cytogenetics for MYC, BCL2, BCL6</b> &mdash; defines double/triple hit (HGBCL)",
+        "Labs: CBC, CMP, <b>LDH</b>, uric acid, <b>hepatitis B and C serologies, HIV</b>",
+        "<b>PET/CT + bone marrow biopsy</b>; baseline <b>echo or MUGA</b>",
+        "Situational: LP if CNS concern &middot; endoscopy if GI concern &middot; <b>fertility preservation</b>",
+        "Response: PET/CT at completion, marrow biopsy if positive at diagnosis"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "IPI &mdash; age &gt;60 &middot; PS &ge;2 &middot; LDH &uarr; &middot; &ge;2 extranodal &middot; stage III&ndash;IV",
+       "headers": [
+        "Risk",
+        "5-yr OS pre-R",
+        "3-yr OS post-R"
+       ],
+       "widths": [
+        "44%",
+        "28%",
+        ""
+       ],
+       "rows": [
+        [
+         "Low (0&ndash;1)",
+         "73%",
+         "<b>91.4%</b>"
+        ],
+        [
+         "Low-intermediate (2)",
+         "51%",
+         "80.9%"
+        ],
+        [
+         "High-intermediate (3)",
+         "43%",
+         "65.1%"
+        ],
+        [
+         "High (4&ndash;5)",
+         "26%",
+         "<b>59%</b>"
+        ]
+       ],
+       "footnote": "Mnemonic <b>APLES</b>, one point each. Shipp, NEJM 1993 &middot; Ziepert, JCO 2010. <b>The handbook gives neither R-IPI nor NCCN-IPI.</b>"
+      },
+      {
+       "type": "table",
+       "heading": "CNS risk and prophylaxis",
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>CNS-IPI</b>",
+         "IPI + <b>kidney and/or adrenal</b> (0&ndash;6). 2-yr CNS relapse: <b>0&ndash;1 = 0.6%</b> &middot; 2&ndash;3 = 3.4% &middot; <b>4&ndash;6 = 10.2%</b>"
+        ],
+        [
+         "Who gets it",
+         "<b>Mandatory:</b> Burkitt/ALL, testicular. <b>High risk:</b> CNS-IPI 4&ndash;6 &middot; double/triple hit <b>and</b> non-GCB &middot; epidural, paranasal sinus or base of skull &middot; breast or uterine"
+        ],
+        [
+         "Regimen",
+         "<b>Systemic HD-MTX 3&ndash;3.5 g/m&sup2; &times;2&ndash;4 after completing systemic therapy</b> &mdash; preferred in fit patients with adequate renal function for parenchymal penetration. Or IT MTX &plusmn; cytarabine &times;4&ndash;8"
+        ]
+       ],
+       "footnote": "<b>The handbook calls the benefit controversial</b> (Wilson, Blood 2022) &mdash; consider in selected high-risk patients, not routinely."
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Frontline",
+         "color": "teal",
+         "boxes": [
+          [
+           "Limited stage I&ndash;II",
+           [
+            "<b>R-CHOP &times;3 + ISRT 30&ndash;36 Gy</b> (SWOG 8736), or",
+            "<b>R-CHOP &times;4</b> (FLYER) &mdash; &times;6 if bulky",
+            "<i>SWOG 8736 was pre-rituximab; its advantage</i>",
+            "<i>was lost on long follow-up</i>"
+           ]
+          ],
+          [
+           "Advanced: II smIPI 2+, or III&ndash;IV",
+           [
+            "<b>R-CHOP &times;6</b> or <b>Pola-R-CHP &times;6</b> + 2 rituximab",
+            "<b>DA-EPOCH-R instead if double hit or PMBCL</b>"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Cardiac dysfunction",
+         "color": "amber",
+         "boxes": [
+          [
+           "Anthracycline-sparing",
+           [
+            "DA-EPOCH-R + dexrazoxane &middot; R-CDOP",
+            "R-CEPP &middot; R-CEOP &middot; R-GCVP",
+            "<b>borderline: R-CHOP + dexrazoxane + TTE</b>"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Second line",
+         "color": "purple",
+         "boxes": [
+          [
+           "Relapse &lt;1 yr or transplant-ineligible",
+           [
+            "<b>CAR-T is standard &mdash; axi-cel or liso-cel</b>",
+            "bridge: R-DHAP/DHAX, R-GemOx, Pola-R-GemOx, R-ICE",
+            "neither CAR-T nor ASCT: bispecific + GemOx,",
+            "&nbsp;&nbsp;Pola-BR, or tafasitamab + lenalidomide"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Third line and beyond",
+         "color": "coral",
+         "boxes": [
+          [
+           "Trial first",
+           [
+            "CAR-T if not already given",
+            "<b>bispecifics: &ge;2 lines AND post-cellular therapy</b>",
+            "loncastuximab &middot; selinexor &middot; R&sup2;"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "note",
+       "html": "<b>Recurring supportive care.</b> Antiviral + PJP prophylaxis with nearly every regimen: <b>acyclovir 400 mg BID + Bactrim DS three times weekly</b> (or SS daily). <b>G-CSF</b> with R-CHOP if age &ge;60, required with Pola-R-CHP. <b>Cytarabine &rarr; prednisolone 1% eye drops</b> 2 gtt OU BID from 12 h before until 48 h after; reduce cytarabine to 1 g/m&sup2; if age &gt;60. <b>Mesna with every ifosfamide.</b>"
+      }
+     ]
+    },
+    {
+     "width": "42%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Frontline regimens",
+       "headers": [
+        "Regimen",
+        "Dosing",
+        "Cycle"
+       ],
+       "widths": [
+        "19%",
+        "",
+        "15%"
+       ],
+       "rows": [
+        [
+         "<b>R-CHOP</b>",
+         "Rituximab 375 &middot; cyclophosphamide 750 &middot; doxorubicin 50 &middot; vincristine 1.4 (max 2 mg) all d1; prednisone 40/day PO d1&ndash;5",
+         "q21d &times;6"
+        ],
+        [
+         "<b>Pola-R-CHP</b>",
+         "Polatuzumab vedotin 1.8 mg/kg &middot; rituximab 375 &middot; cyclophosphamide 750 &middot; doxorubicin 50 all d1; prednisone 100 mg PO d1&ndash;5",
+         "q21d &times;6, +2 rituximab"
+        ],
+        [
+         "<b>DA-EPOCH-R</b>",
+         "Rituximab 375 d1; doxorubicin 10/day + etoposide 50/day + vincristine 0.4/day (max 2 mg) all CIV d1&ndash;4; cyclophosphamide 750 d5; prednisone 60/day PO d1&ndash;5",
+         "q21d &times;6"
+        ],
+        [
+         "R-CEOP",
+         "Cyclophosphamide 750 + vincristine 1.4 d1; etoposide 50 IV d1 then 100 PO d2&ndash;3; prednisone 40/day d1&ndash;5",
+         "q21d &times;4&ndash;6"
+        ],
+        [
+         "R-CEPP",
+         "Cyclophosphamide 600 d1; etoposide 70 d1&ndash;3; prednisone 60 + procarbazine 60 PO d1&ndash;10",
+         "q28d &times;6"
+        ],
+        [
+         "R-GCVP",
+         "Gemcitabine 1000 d1+8; cyclophosphamide 750 + vincristine 1&ndash;1.4 d1; prednisolone 100 mg PO d1&ndash;5",
+         "q21d"
+        ]
+       ],
+       "footnote": "All mg/m&sup2; unless stated. <b>DA-EPOCH-R escalation</b> (etoposide, doxorubicin, cyclophosphamide; CBC twice weekly): ANC nadir &ge;500 throughout &rarr; <b>+20%</b>; &lt;500 on 1&ndash;2 checks &rarr; same; &lt;500 on 3 checks or platelets &lt;25k &rarr; <b>&minus;20%</b>."
+      },
+      {
+       "type": "table",
+       "heading": "Salvage and later-line",
+       "headers": [
+        "Regimen",
+        "Dosing",
+        "Cycle"
+       ],
+       "widths": [
+        "19%",
+        "",
+        "15%"
+       ],
+       "rows": [
+        [
+         "R-ICE",
+         "Ifosfamide 5000 + mesna 5000 CIV d2; carboplatin AUC 5 (max 800 mg) d2; etoposide 100 d1&ndash;3",
+         "q14&ndash;21d"
+        ],
+        [
+         "R-DHAP &middot; R-DHAX",
+         "Cytarabine 2000 q12h &times;2 d2 + dexamethasone 40 mg d1&ndash;4, with <b>cisplatin 100</b> (DHAP) or <b>oxaliplatin 100</b> (DHAX) d1",
+         "q21&ndash;28d"
+        ],
+        [
+         "R-ESHAP",
+         "Methylprednisolone 500 mg d1&ndash;5; etoposide 40 d1&ndash;4; cisplatin 25/day CIV d1&ndash;4; cytarabine 2000 d5",
+         "q21&ndash;28d"
+        ],
+        [
+         "R-GDP &middot; R-GCD",
+         "Gemcitabine 1000 d1+8; dexamethasone 40 mg PO d1&ndash;4; <b>cisplatin 75 d1</b> (GDP) or <b>carboplatin AUC 5</b> (GCD)",
+         "q21d"
+        ],
+        [
+         "R-GemOx",
+         "Gemcitabine 1000 + oxaliplatin 100 d1",
+         "q14&ndash;21d &times;6"
+        ],
+        [
+         "Pola-BR",
+         "Polatuzumab 1.8 mg/kg + rituximab 375 d1; bendamustine 90 d1+2",
+         "q21d &times;6"
+        ],
+        [
+         "Tafasitamab + len",
+         "Tafasitamab 12 mg/kg d1; lenalidomide 25 mg PO d1&ndash;21",
+         "q28d &times;12"
+        ],
+        [
+         "<b>Epcoritamab</b>",
+         "SQ step-up: <b>0.16 mg C1D1 &rarr; 0.8 mg C1D8 &rarr; 48 mg C1D15</b>, then weekly to C3, q2wk C4&ndash;9, q4wk C10+",
+         "q28d"
+        ],
+        [
+         "<b>Glofitamab</b>",
+         "Obinutuzumab 1000 mg C1D1 pretreatment, then <b>2.5 mg C1D8 &rarr; 10 mg C1D15 &rarr; 30 mg C2D1</b>",
+         "q21d &times;12"
+        ]
+       ],
+       "footnote": "Transplant candidates get 2&ndash;3 cycles of platinum salvage; non-transplant 4&ndash;6. <b>Cytarabine &rarr; 1 g/m&sup2; if age &gt;60.</b> Either bispecific may be given with GemOx."
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>DA-EPOCH-R, not R-CHOP, for double-hit HGBCL and primary mediastinal B-cell lymphoma</b>",
+        "<b>R-CEOP outcomes appear inferior to R-CHOP</b> (Puckrin 2022) &mdash; for borderline cardiomyopathy prefer R-CHOP + dexrazoxane with echo surveillance over switching regimen",
+        "<b>CAR-T now precedes transplant</b> in second line for early relapse &mdash; platinum salvage is bridging, not destination therapy",
+        "<b>No MTX with effusions or ascites</b>, or with PPIs, penicillins, TMP-SMX, salicylates, probenecid or NSAIDs"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; staging, Burkitt lymphoma, primary CNS lymphoma, HIV-associated lymphoma, and the trials behind both pages",
+   "columns": [
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Staging &mdash; Cotswolds-modified Ann Arbor",
+       "widths": [
+        "13%",
+        ""
+       ],
+       "rows": [
+        [
+         "I",
+         "<b>One</b> lymph node region or lymphoid structure (spleen, thymus, Waldeyer ring)"
+        ],
+        [
+         "II",
+         "<b>&ge;2</b> regions, <b>same side</b> of the diaphragm. Hilar nodes are lateralized &mdash; bilateral involvement is stage II"
+        ],
+        [
+         "III",
+         "Regions on <b>both sides</b> of the diaphragm"
+        ],
+        [
+         "IV",
+         "<b>Disseminated</b> &mdash; marrow, CNS, or <b>more than one</b> extranodal site"
+        ],
+        [
+         "A / B",
+         "B = weight loss &gt;10% over 6 mo, <b>or</b> unexplained fever &gt;38&deg;C in the past month, <b>or</b> recurrent drenching night sweats"
+        ],
+        [
+         "S &middot; X &middot; E",
+         "S splenic &middot; <b>X bulky: node &ge;10 cm</b>, or mediastinal mass &ge;&#8531; the transverse thoracic diameter at T5&ndash;6 &middot; E limited direct extranodal extension"
+        ]
+       ],
+       "footnote": "<b>A single extranodal site as the only disease is IE; more than one extranodal site is stage IV.</b> Hilar (bronchopulmonary) nodes sit outside the mediastinum."
+      },
+      {
+       "type": "table",
+       "heading": "Burkitt &mdash; risk and parameters",
+       "widths": [
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Low risk</b>",
+         "<b>ALL of:</b> normal LDH, ECOG 0&ndash;1, stage I&ndash;II, no mass &ge;10 cm, &le;1 extranodal site"
+        ],
+        [
+         "<b>High risk</b>",
+         "Everything else"
+        ],
+        [
+         "Baseline",
+         "HIV, HBsAg, HBcAb, HBsAb, HCV Ab &middot; echocardiogram for EF"
+        ],
+        [
+         "To start a cycle",
+         "ANC &gt;1000, platelets &gt;75,000, direct bili &lt;1.4, Cr &lt;1.2 &mdash; <b>does not apply to cycle 1, nor to the day-10 HD-MTX, which is given regardless of counts</b>"
+        ]
+       ],
+       "footnote": "Also staged by St. Jude/Murphy. <b>Every Burkitt patient gets CNS prophylaxis.</b>"
+      },
+      {
+       "type": "pathway",
+       "heading": "Burkitt pathway",
+       "chains": [
+        {
+         "header": "Modified Magrath",
+         "color": "teal",
+         "boxes": [
+          [
+           "Low risk",
+           [
+            "<b>R-CODOX-M &times;3</b> (A-A-A), q3wk"
+           ]
+          ],
+          [
+           "High risk, CNS negative",
+           [
+            "<b>A-B-A-B &times;4</b> &mdash; R-CODOX-M / R-IVAC"
+           ]
+          ],
+          [
+           "High risk, CNS positive",
+           [
+            "A-B-A-B &times;4 + extra IT each cycle",
+            "<b>16 intrathecal treatments total</b>"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Alternatives",
+         "color": "blue",
+         "boxes": [
+          [
+           "Listed in the chapter",
+           [
+            "R-hyperCVAD, alternating A/B &times;6&ndash;8",
+            "<b>DA-EPOCH-R</b>: low risk &times;3 <b>no</b> IT;",
+            "&nbsp;&nbsp;high risk &times;6 <b>with</b> IT",
+            "CALGB 10002"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "note",
+       "html": "<b>Burkitt TLS (cycle 1).</b> Allopurinol 300 mg BID &middot; labs q8h (K, Phos, Ca, Cr, LDH, uric acid) &middot; NS 2 L/m&sup2;/day &middot; strict I/O with goal output 100 mL/h &mdash; <b>continue &ge;72 h after chemotherapy</b>. <b>Rasburicase 6 mg IV &times;1</b> for WBC &ge;100,000, uric acid &gt;7.5, or renal dysfunction; <b>contraindicated in G6PD deficiency</b>; the confirmatory uric acid at 4 h must go in a <b>pre-chilled heparin tube on ice</b>. <b>No LP if circulating blasts or platelets &lt;50,000.</b>"
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Modified Magrath (Mead, Blood 2008)",
+       "headers": [
+        "Cycle",
+        "Dosing"
+       ],
+       "widths": [
+        "17%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>A &mdash; R-CODOX-M</b>",
+         "Rituximab 375 d1 &middot; cyclophosphamide 800 d1 + 200 d2&ndash;5 (first A cycle; later A cycles 800 d1+2) &middot; doxorubicin 40 d1 &middot; vincristine 1.5 (cap 2 mg) d1+8 &middot; <b>MTX 3000 total over 24 h on d10</b> (300 over 1 h, then 2700 over 23 h) &middot; IT cytarabine 70 mg d1+3 &middot; IT MTX 12 mg d15"
+        ],
+        [
+         "<b>B &mdash; R-IVAC</b>",
+         "Rituximab 375 d1 &middot; etoposide 60 d1&ndash;5 &middot; ifosfamide 1500 d1&ndash;5 + mesna &middot; cytarabine 2000 q12h &times;4 doses d1&ndash;2 &middot; IT MTX 12 mg d5"
+        ],
+        [
+         "<b>Age &gt;65</b>",
+         "MTX <b>1000</b> total (100 over 1 h, then 900 over 23 h) &middot; ifosfamide 1000 &middot; cytarabine <b>1000</b>"
+        ],
+        [
+         "If CNS positive",
+         "Add IT cytarabine 70 mg d5 and IT MTX 12 mg d17 (cycle A); IT cytarabine 70 mg d7 and d9 (cycle B)"
+        ]
+       ],
+       "footnote": "Leucovorin 15 mg PO 24 h after each IT MTX. <b>Start G-CSF only after the MTX level is &lt;0.02.</b>"
+      },
+      {
+       "type": "table",
+       "heading": "High-dose MTX administration",
+       "widths": [
+        "27%",
+        ""
+       ],
+       "rows": [
+        [
+         "Before starting",
+         "Hydrate/alkalinize: &frac12;NS + 100 mEq NaHCO&#8323; at 500 mL/h &times;2 h then 125 mL/h. <b>Do not start until urine pH &gt;7 and output &gt;100 mL/h</b>"
+        ],
+        [
+         "Do not give if",
+         "<b>Pleural effusion, ascites or any fluid collection</b> &mdash; or concurrently with PPIs, penicillins, TMP-SMX, salicylates, probenecid, NSAIDs"
+        ],
+        [
+         "Renal dosing",
+         "<b>50% if CrCl 10&ndash;50</b>; omit if &lt;10; 25&ndash;50% for prior delayed excretion, nephrotoxicity or grade III&ndash;IV mucositis"
+        ],
+        [
+         "Leucovorin rescue",
+         "25 mg IV q6h &times;4 <b>starting 36 h after the START of MTX</b>, then 25 mg PO q6h until level &lt;0.02"
+        ],
+        [
+         "Escalate rescue",
+         "<b>24 h:</b> Cr up &gt;50% or level &gt;20 &micro;M &middot; <b>48 h:</b> level &gt;1 &micro;M &middot; <b>72 h:</b> level &gt;0.1 &micro;M &rarr; leucovorin <b>100 mg/m&sup2; IV q6h</b>"
+        ]
+       ],
+       "footnote": "Keep urine pH &gt;7 until the level clears; check levels q24h. <b>Glucarpidase is not mentioned in the chapter.</b>"
+      },
+      {
+       "type": "table",
+       "heading": "Trials the chapter cites",
+       "headers": [
+        "Trial",
+        "Supports"
+       ],
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>FLYER</b> (Poeschel, Lancet 2019)",
+         "R-CHOP &times;4 for favorable limited stage"
+        ],
+        [
+         "<b>POLARIX</b> (Tilly, NEJM 2022)",
+         "Pola-R-CHP vs R-CHOP frontline"
+        ],
+        [
+         "<b>L-MIND</b> (Salles, Lancet Oncol 2020)",
+         "Tafasitamab + lenalidomide, ASCT-ineligible"
+        ],
+        [
+         "Thieblemont JCO 2023 &middot; Dickinson NEJM 2022",
+         "Epcoritamab and glofitamab monotherapy"
+        ],
+        [
+         "Roschewski, JCO 2020",
+         "Risk-adapted DA-EPOCH-R in Burkitt"
+        ],
+        [
+         "<b>CALGB 50202</b> (Rubenstein, JCO 2013)",
+         "MT-R induction + EA consolidation in PCNSL"
+        ],
+        [
+         "<b>IELSG32 / MATRIX</b> (Ferreri, Lancet Haem 2016)",
+         "MTX/cytarabine/thiotepa/rituximab"
+        ],
+        [
+         "Schmitz, JCO 2016",
+         "CNS-IPI"
+        ]
+       ],
+       "footnote": "The handbook cites by author with no acronyms or results. Names, numbers and endpoints were verified against the primary publications &mdash; full cards on the Hub."
+      }
+     ]
+    },
+    {
+     "width": "37%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "PCNSL",
+       "widths": [
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>IELSG index</b>",
+         "1 point each: age &gt;60 &middot; PS &gt;1 &middot; elevated LDH &middot; high CSF protein &middot; <b>deep brain involvement</b>. 2-yr OS <b>0&ndash;1: 80%</b> &middot; 2&ndash;3: 48% &middot; <b>4&ndash;5: 15%</b>"
+        ],
+        [
+         "MSKCC model",
+         "&lt;50 yr: median OS 5.2 yr &middot; &ge;50 + KPS &ge;70: 2.1 yr &middot; &ge;50 + KPS &lt;70: 0.8 yr"
+        ],
+        [
+         "Induction",
+         "Trial, or an <b>HD-MTX backbone</b>: MT-R (CALGB 50202) &middot; R-MPV &middot; HD-MTX alone &middot; R-MTX-AraC &middot; <b>MATRIX</b>. MTX-ineligible: rituximab + temozolomide"
+        ],
+        [
+         "MT-R",
+         "MTX <b>8000</b> over 4 h d1; rituximab 375 d3 (first 6 doses); temozolomide 150 PO d7&ndash;11 every other cycle. q14d &times;8"
+        ],
+        [
+         "R-MPV",
+         "<b>Rituximab 500</b> (not 375) &middot; MTX 3500 over 4 h &middot; vincristine 1.4 (max 2.8 mg) d1 &middot; procarbazine 100 PO d1&ndash;7 odd cycles. q14d &times;5"
+        ],
+        [
+         "MATRIX",
+         "Rituximab 375 d&minus;5 and d0 &middot; MTX 3500 d1 &middot; cytarabine 2000 q12h &times;4 d2&ndash;3 &middot; <b>thiotepa 30 d4</b>. q21d"
+        ],
+        [
+         "Consolidation",
+         "CR &rarr; HD therapy + stem-cell rescue &middot; <b>cytarabine 3000 d1+2 monthly &times;2</b> &plusmn; etoposide &middot; lenalidomide 15 mg or BTKi maintenance"
+        ],
+        [
+         "R-MPV &rarr; WBRT",
+         "<b>CR &rarr; 23.4 Gy</b>; PR &rarr; 2 more cycles then 23.4 Gy if CR, <b>45 Gy</b> if persistent; SD/PD &rarr; 45 Gy"
+        ],
+        [
+         "Relapse",
+         "Trial &middot; HD cytarabine &plusmn; etoposide &middot; <b>CAR-T</b> &middot; lenalidomide &middot; BTKi &middot; WBRT &middot; best supportive care"
+        ]
+       ],
+       "footnote": "Leucovorin starts <b>24 h</b> after the MTX start in PCNSL protocols, vs 36 h in the Burkitt guidelines above. PCP prophylaxis TMP-SMX DS BID Sat/Sun throughout. <b>The chapter's workup sits in a figure that did not survive text extraction</b> &mdash; biopsy, steroid timing, slit-lamp and CSF are not in the text."
+      },
+      {
+       "type": "table",
+       "heading": "HIV-associated lymphoma",
+       "widths": [
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "Also in immunocompetent",
+         "Burkitt &middot; DLBCL &middot; PCNSL &middot; MALT &middot; peripheral T-cell &middot; classical Hodgkin"
+        ],
+        [
+         "<b>More specific to HIV</b>",
+         "<b>Primary effusion lymphoma &middot; plasmablastic lymphoma</b>"
+        ],
+        [
+         "Other immunodeficiency",
+         "Polymorphic B-cell lymphoma (PTLD-like)"
+        ],
+        [
+         "Treatment",
+         "<b>R-CHOP</b> q21d &times;4&ndash;6 &middot; <b>DA-EPOCH-R</b> q21d &times;6 &middot; modified Magrath (see Burkitt). <b>The chapter does not map regimen to category</b>"
+        ],
+        [
+         "Antiretrovirals",
+         "<b>Continue HAART through chemotherapy, or start it if not already on treatment.</b> No interaction table is given"
+        ],
+        [
+         "CNS prophylaxis",
+         "For small non-cleaved histology, or marrow, paranasal sinus, testicular or epidural involvement &mdash; IT MTX 12 mg d1+5 of cycles 3&ndash;5 (6 doses), or weekly IT &times;4 during cycle 1"
+        ],
+        [
+         "Prophylaxis",
+         "PCP TMP-SMX DS BID Sat/Sun &middot; <b>MAC azithromycin 1200 mg weekly if CD4 &lt;100</b> &middot; fluconazole 100 mg daily &middot; acyclovir 400 mg BID"
+        ]
+       ],
+       "footnote": "<b>No CD4 threshold for withholding rituximab appears anywhere in the chapter</b> &mdash; CD4 &lt;100 is cited only as the trigger for MAC and quinolone prophylaxis."
+      },
+      {
+       "type": "table",
+       "heading": "&dagger; Deauville 5-point score",
+       "widths": [
+        "13%",
+        ""
+       ],
+       "rows": [
+        [
+         "1 &middot; 2",
+         "No uptake &middot; uptake <b>&le; mediastinum</b>"
+        ],
+        [
+         "3",
+         "Uptake <b>&gt; mediastinum but &le; liver</b> &mdash; usually adequate response"
+        ],
+        [
+         "4 &middot; 5",
+         "Moderately <b>&gt; liver</b> &middot; markedly &gt; liver or new lesions &mdash; <b>treatment failure</b>"
+        ]
+       ],
+       "footnote": "&dagger; Not in the handbook chapter, which specifies only PET/CT at completion (plus marrow biopsy if positive at diagnosis). Added because response is reported this way in practice and in every trial cited here."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Workup",
+  "IPI &mdash; age &gt;60 &middot; PS &ge;2 &middot; LDH &uarr; &middot; &ge;2 extranodal &middot; stage III&ndash;IV",
+  "CNS risk and prophylaxis",
+  "Treatment pathway",
+  "Frontline regimens",
+  "Salvage and later-line",
+  "Pearls",
+  "Staging &mdash; Cotswolds-modified Ann Arbor",
+  "Burkitt &mdash; risk and parameters",
+  "Burkitt pathway",
+  "Modified Magrath (Mead, Blood 2008)",
+  "High-dose MTX administration",
+  "Trials the chapter cites",
+  "PCNSL",
+  "HIV-associated lymphoma",
+  "&dagger; Deauville 5-point score"
+ ],
+ "text": "Aggressive B-cell lymphoma DLBCL and the three situations that change the plan — Burkitt , primary CNS lymphoma , and HIV-associated disease. The recurring questions are cell of origin, double-hit status, cardiac fitness, and whether the CNS needs covering Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin, pp.194–222 · items marked † are outside the handbook chapter Workup Excisional lymph node biopsy preferred , core acceptable, no FNA ; hematopathology review IHC: CD20, CD10, CD30, CD5, BCL2, BCL6, MUM1, MYC, EBV + Ki-67 . Cell of origin by Hans algorithm (GCB vs non-GCB/ABC) Cytogenetics for MYC, BCL2, BCL6 — defines double/triple hit (HGBCL) Labs: CBC, CMP, LDH , uric acid, hepatitis B and C serologies, HIV PET/CT + bone marrow biopsy ; baseline echo or MUGA Situational: LP if CNS concern · endoscopy if GI concern · fertility preservation Response: PET/CT at completion, marrow biopsy if positive at diagnosis IPI — age >60 · PS ≥2 · LDH &uarr; · ≥2 extranodal · stage III–IV Risk 5-yr OS pre-R 3-yr OS post-R Low (0–1) 73% 91.4% Low-intermediate (2) 51% 80.9% High-intermediate (3) 43% 65.1% High (4–5) 26% 59% Mnemonic APLES , one point each. Shipp, NEJM 1993 · Ziepert, JCO 2010. The handbook gives neither R-IPI nor NCCN-IPI. CNS risk and prophylaxis CNS-IPI IPI + kidney and/or adrenal (0–6). 2-yr CNS relapse: 0–1 = 0.6% · 2–3 = 3.4% · 4–6 = 10.2% Who gets it Mandatory: Burkitt/ALL, testicular. High risk: CNS-IPI 4–6 · double/triple hit and non-GCB · epidural, paranasal sinus or base of skull · breast or uterine Regimen Systemic HD-MTX 3–3.5 g/m² ×2–4 after completing systemic therapy — preferred in fit patients with adequate renal function for parenchymal penetration. Or IT MTX ± cytarabine ×4–8 The handbook calls the benefit controversial (Wilson, Blood 2022) — consider in selected high-risk patients, not routinely. Treatment pathway Frontline Limited stage I–II R-CHOP ×3 + ISRT 30–36 Gy (SWOG 8736), or R-CHOP ×4 (FLYER) — ×6 if bulky SWOG 8736 was pre-rituximab; its advantage was lost on long follow-up Advanced: II smIPI 2+, or III–IV R-CHOP ×6 or Pola-R-CHP ×6 + 2 rituximab DA-EPOCH-R instead if double hit or PMBCL Cardiac dysfunction Anthracycline-sparing DA-EPOCH-R + dexrazoxane · R-CDOP R-CEPP · R-CEOP · R-GCVP borderline: R-CHOP + dexrazoxane + TTE Second line Relapse <1 yr or transplant-ineligible CAR-T is standard — axi-cel or liso-cel bridge: R-DHAP/DHAX, R-GemOx, Pola-R-GemOx, R-ICE neither CAR-T nor ASCT: bispecific + GemOx, Pola-BR, or tafasitamab + lenalidomide Third line and beyond Trial first CAR-T if not already given bispecifics: ≥2 lines AND post-cellular therapy loncastuximab · selinexor · R² Recurring supportive care. Antiviral + PJP prophylaxis with nearly every regimen: acyclovir 400 mg BID + Bactrim DS three times weekly (or SS daily). G-CSF with R-CHOP if age ≥60, required with Pola-R-CHP. Cytarabine → prednisolone 1% eye drops 2 gtt OU BID from 12 h before until 48 h after; reduce cytarabine to 1 g/m² if age >60. Mesna with every ifosfamide. Frontline regimens Regimen Dosing Cycle R-CHOP Rituximab 375 · cyclophosphamide 750 · doxorubicin 50 · vincristine 1.4 (max 2 mg) all d1; prednisone 40/day PO d1–5 q21d ×6 Pola-R-CHP Polatuzumab vedotin 1.8 mg/kg · rituximab 375 · cyclophosphamide 750 · doxorubicin 50 all d1; prednisone 100 mg PO d1–5 q21d ×6, +2 rituximab DA-EPOCH-R Rituximab 375 d1; doxorubicin 10/day + etoposide 50/day + vincristine 0.4/day (max 2 mg) all CIV d1–4; cyclophosphamide 750 d5; prednisone 60/day PO d1–5 q21d ×6 R-CEOP Cyclophosphamide 750 + vincristine 1.4 d1; etoposide 50 IV d1 then 100 PO d2–3; prednisone 40/day d1–5 q21d ×4–6 R-CEPP Cyclophosphamide 600 d1; etoposide 70 d1–3; prednisone 60 + procarbazine 60 PO d1–10 q28d ×6 R-GCVP Gemcitabine 1000 d1+8; cyclophosphamide 750 + vincristine 1–1.4 d1; prednisolone 100 mg PO d1–5 q21d All mg/m² unless stated. DA-EPOCH-R escalation (etoposide, doxorubicin, cyclophosphamide; CBC twice weekly): ANC nadir ≥500 throughout → +20% ; <500 on 1–2 checks → same; <500 on 3 checks or platelets <25k → −20% . Salvage and later-line Regimen Dosing Cycle R-ICE Ifosfamide 5000 + mesna 5000 CIV d2; carboplatin AUC 5 (max 800 mg) d2; etoposide 100 d1–3 q14–21d R-DHAP · R-DHAX Cytarabine 2000 q12h ×2 d2 + dexamethasone 40 mg d1–4, with cisplatin 100 (DHAP) or oxaliplatin 100 (DHAX) d1 q21–28d R-ESHAP Methylprednisolone 500 mg d1–5; etoposide 40 d1–4; cisplatin 25/day CIV d1–4; cytarabine 2000 d5 q21–28d R-GDP · R-GCD Gemcitabine 1000 d1+8; dexamethasone 40 mg PO d1–4; cisplatin 75 d1 (GDP) or carboplatin AUC 5 (GCD) q21d R-GemOx Gemcitabine 1000 + oxaliplatin 100 d1 q14–21d ×6 Pola-BR Polatuzumab 1.8 mg/kg + rituximab 375 d1; bendamustine 90 d1+2 q21d ×6 Tafasitamab + len Tafasitamab 12 mg/kg d1; lenalidomide 25 mg PO d1–21 q28d ×12 Epcoritamab SQ step-up: 0.16 mg C1D1 → 0.8 mg C1D8 → 48 mg C1D15 , then weekly to C3, q2wk C4–9, q4wk C10+ q28d Glofitamab Obinutuzumab 1000 mg C1D1 pretreatment, then 2.5 mg C1D8 → 10 mg C1D15 → 30 mg C2D1 q21d ×12 Transplant candidates get 2–3 cycles of platinum salvage; non-transplant 4–6. Cytarabine → 1 g/m² if age >60. Either bispecific may be given with GemOx. Pearls DA-EPOCH-R, not R-CHOP, for double-hit HGBCL and primary mediastinal B-cell lymphoma R-CEOP outcomes appear inferior to R-CHOP (Puckrin 2022) — for borderline cardiomyopathy prefer R-CHOP + dexrazoxane with echo surveillance over switching regimen CAR-T now precedes transplant in second line for early relapse — platinum salvage is bridging, not destination therapy No MTX with effusions or ascites , or with PPIs, penicillins, TMP-SMX, salicylates, probenecid or NSAIDs Staging — Cotswolds-modified Ann Arbor I One lymph node region or lymphoid structure (spleen, thymus, Waldeyer ring) II ≥2 regions, same side of the diaphragm. Hilar nodes are lateralized — bilateral involvement is stage II III Regions on both sides of the diaphragm IV Disseminated — marrow, CNS, or more than one extranodal site A / B B = weight loss >10% over 6 mo, or unexplained fever >38&deg;C in the past month, or recurrent drenching night sweats S · X · E S splenic · X bulky: node ≥10 cm , or mediastinal mass ≥&#8531; the transverse thoracic diameter at T5–6 · E limited direct extranodal extension A single extranodal site as the only disease is IE; more than one extranodal site is stage IV. Hilar (bronchopulmonary) nodes sit outside the mediastinum. Burkitt — risk and parameters Low risk ALL of: normal LDH, ECOG 0–1, stage I–II, no mass ≥10 cm, ≤1 extranodal site High risk Everything else Baseline HIV, HBsAg, HBcAb, HBsAb, HCV Ab · echocardiogram for EF To start a cycle ANC >1000, platelets >75,000, direct bili <1.4, Cr <1.2 — does not apply to cycle 1, nor to the day-10 HD-MTX, which is given regardless of counts Also staged by St. Jude/Murphy. Every Burkitt patient gets CNS prophylaxis. Burkitt pathway Modified Magrath Low risk R-CODOX-M ×3 (A-A-A), q3wk High risk, CNS negative A-B-A-B ×4 — R-CODOX-M / R-IVAC High risk, CNS positive A-B-A-B ×4 + extra IT each cycle 16 intrathecal treatments total Alternatives Listed in the chapter R-hyperCVAD, alternating A/B ×6–8 DA-EPOCH-R : low risk ×3 no IT; high risk ×6 with IT CALGB 10002 Burkitt TLS (cycle 1). Allopurinol 300 mg BID · labs q8h (K, Phos, Ca, Cr, LDH, uric acid) · NS 2 L/m²/day · strict I/O with goal output 100 mL/h — continue ≥72 h after chemotherapy . Rasburicase 6 mg IV ×1 for WBC ≥100,000, uric acid >7.5, or renal dysfunction; contraindicated in G6PD deficiency ; the confirmatory uric acid at 4 h must go in a pre-chilled heparin tube on ice . No LP if circulating blasts or platelets <50,000. Modified Magrath (Mead, Blood 2008) Cycle Dosing A — R-CODOX-M Rituximab 375 d1 · cyclophosphamide 800 d1 + 200 d2–5 (first A cycle; later A cycles 800 d1+2) · doxorubicin 40 d1 · vincristine 1.5 (cap 2 mg) d1+8 · MTX 3000 total over 24 h on d10 (300 over 1 h, then 2700 over 23 h) · IT cytarabine 70 mg d1+3 · IT MTX 12 mg d15 B — R-IVAC Rituximab 375 d1 · etoposide 60 d1–5 · ifosfamide 1500 d1–5 + mesna · cytarabine 2000 q12h ×4 doses d1–2 · IT MTX 12 mg d5 Age >65 MTX 1000 total (100 over 1 h, then 900 over 23 h) · ifosfamide 1000 · cytarabine 1000 If CNS positive Add IT cytarabine 70 mg d5 and IT MTX 12 mg d17 (cycle A); IT cytarabine 70 mg d7 and d9 (cycle B) Leucovorin 15 mg PO 24 h after each IT MTX. Start G-CSF only after the MTX level is <0.02. High-dose MTX administration Before starting Hydrate/alkalinize: &frac12;NS + 100 mEq NaHCO&#8323; at 500 mL/h ×2 h then 125 mL/h. Do not start until urine pH >7 and output >100 mL/h Do not give if Pleural effusion, ascites or any fluid collection — or concurrently with PPIs, penicillins, TMP-SMX, salicylates, probenecid, NSAIDs Renal dosing 50% if CrCl 10–50 ; omit if <10; 25–50% for prior delayed excretion, nephrotoxicity or grade III–IV mucositis Leucovorin rescue 25 mg IV q6h ×4 starting 36 h after the START of MTX , then 25 mg PO q6h until level <0.02 Escalate rescue 24 h: Cr up >50% or level >20 &micro;M · 48 h: level >1 &micro;M · 72 h: level >0.1 &micro;M → leucovorin 100 mg/m² IV q6h Keep urine pH >7 until the level clears; check levels q24h. Glucarpidase is not mentioned in the chapter. Trials the chapter cites Trial Supports FLYER (Poeschel, Lancet 2019) R-CHOP ×4 for favorable limited stage POLARIX (Tilly, NEJM 2022) Pola-R-CHP vs R-CHOP frontline L-MIND (Salles, Lancet Oncol 2020) Tafasitamab + lenalidomide, ASCT-ineligible Thieblemont JCO 2023 · Dickinson NEJM 2022 Epcoritamab and glofitamab monotherapy Roschewski, JCO 2020 Risk-adapted DA-EPOCH-R in Burkitt CALGB 50202 (Rubenstein, JCO 2013) MT-R induction + EA consolidation in PCNSL IELSG32 / MATRIX (Ferreri, Lancet Haem 2016) MTX/cytarabine/thiotepa/rituximab Schmitz, JCO 2016 CNS-IPI The handbook cites by author with no acronyms or results. Names, numbers and endpoints were verified against the primary publications — full cards on the Hub. PCNSL IELSG index 1 point each: age >60 · PS >1 · elevated LDH · high CSF protein · deep brain involvement . 2-yr OS 0–1: 80% · 2–3: 48% · 4–5: 15% MSKCC model <50 yr: median OS 5.2 yr · ≥50 + KPS ≥70: 2.1 yr · ≥50 + KPS <70: 0.8 yr Induction Trial, or an HD-MTX backbone : MT-R (CALGB 50202) · R-MPV · HD-MTX alone · R-MTX-AraC · MATRIX . MTX-ineligible: rituximab + temozolomide MT-R MTX 8000 over 4 h d1; rituximab 375 d3 (first 6 doses); temozolomide 150 PO d7–11 every other cycle. q14d ×8 R-MPV Rituximab 500 (not 375) · MTX 3500 over 4 h · vincristine 1.4 (max 2.8 mg) d1 · procarbazine 100 PO d1–7 odd cycles. q14d ×5 MATRIX Rituximab 375 d−5 and d0 · MTX 3500 d1 · cytarabine 2000 q12h ×4 d2–3 · thiotepa 30 d4 . q21d Consolidation CR → HD therapy + stem-cell rescue · cytarabine 3000 d1+2 monthly ×2 ± etoposide · lenalidomide 15 mg or BTKi maintenance R-MPV → WBRT CR → 23.4 Gy ; PR → 2 more cycles then 23.4 Gy if CR, 45 Gy if persistent; SD/PD → 45 Gy Relapse Trial · HD cytarabine ± etoposide · CAR-T · lenalidomide · BTKi · WBRT · best supportive care Leucovorin starts 24 h after the MTX start in PCNSL protocols, vs 36 h in the Burkitt guidelines above. PCP prophylaxis TMP-SMX DS BID Sat/Sun throughout. The chapter's workup sits in a figure that did not survive text extraction — biopsy, steroid timing, slit-lamp and CSF are not in the text. HIV-associated lymphoma Also in immunocompetent Burkitt · DLBCL · PCNSL · MALT · peripheral T-cell · classical Hodgkin More specific to HIV Primary effusion lymphoma · plasmablastic lymphoma Other immunodeficiency Polymorphic B-cell lymphoma (PTLD-like) Treatment R-CHOP q21d ×4–6 · DA-EPOCH-R q21d ×6 · modified Magrath (see Burkitt). The chapter does not map regimen to category Antiretrovirals Continue HAART through chemotherapy, or start it if not already on treatment. No interaction table is given CNS prophylaxis For small non-cleaved histology, or marrow, paranasal sinus, testicular or epidural involvement — IT MTX 12 mg d1+5 of cycles 3–5 (6 doses), or weekly IT ×4 during cycle 1 Prophylaxis PCP TMP-SMX DS BID Sat/Sun · MAC azithromycin 1200 mg weekly if CD4 <100 · fluconazole 100 mg daily · acyclovir 400 mg BID No CD4 threshold for withholding rituximab appears anywhere in the chapter — CD4 <100 is cited only as the trigger for MAC and quinolone prophylaxis. † Deauville 5-point score 1 · 2 No uptake · uptake ≤ mediastinum 3 Uptake > mediastinum but ≤ liver — usually adequate response 4 · 5 Moderately > liver · markedly > liver or new lesions — treatment failure † Not in the handbook chapter, which specifies only PET/CT at completion (plus marrow biopsy if positive at diagnosis). Added because response is reported this way in practice and in every trial cited here."
+}

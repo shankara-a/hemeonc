@@ -7,7 +7,7 @@
 <meta name="description" content="One-pager reference cards and landmark clinical trials for hematology-oncology, plus links to the PubMed tracker, K-Hub and job board." />
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦀</text></svg>" />
-<link rel="stylesheet" href="assets/styles.css?v=47" />
+<link rel="stylesheet" href="assets/styles.css?v=48" />
 </head>
 <body>
 
@@ -22,7 +22,7 @@
     </nav>
 
     <button class="dz-switch" id="dz-switch" hidden aria-haspopup="dialog" aria-expanded="false"
-            title="Switch disease (⌘K or /)">
+            title="Find a disease (⌘K or /)">
       <span class="dz-switch-name">Pick a disease</span>
       <span class="dz-switch-meta"></span>
       <span class="caret" aria-hidden="true">▾</span>
@@ -88,8 +88,17 @@
 
 <!-- ===================== REVIEWS ===================== -->
 <section id="reviews" class="panel">
-  <div class="rv-main" id="rv-main">
-    <div class="empty">Pick a disease from the switcher above (or press <kbd>/</kbd>).</div>
+  <div class="rv-layout">
+    <aside class="rv-nav" aria-label="Diseases">
+      <div class="rv-search">
+        <input type="search" id="rv-q" placeholder="Search notes &amp; trials…" autocomplete="off" spellcheck="false" />
+        <button type="button" id="rv-clear" aria-label="Clear search" hidden>&times;</button>
+      </div>
+      <nav class="tree" id="dz-tree"></nav>
+    </aside>
+    <div class="rv-main" id="rv-main">
+      <div class="empty">Pick a disease on the left.</div>
+    </div>
   </div>
 </section>
 
@@ -128,19 +137,13 @@
   <span>Trial entries are checked against the primary publication; PubMed links go to the paper cited.</span>
 </footer>
 
-<div id="dz-palette" class="palette" hidden>
-  <div class="palette-box" role="dialog" aria-modal="true" aria-label="Switch disease">
-    <input type="search" id="dz-q" placeholder="Search diseases…" autocomplete="off" spellcheck="false" aria-controls="dz-results" />
-    <div id="dz-results" class="palette-results" role="listbox" aria-label="Diseases"></div>
-  </div>
-</div>
-
 <div id="trial-pop" class="trial-pop" role="tooltip" hidden></div>
 
-<script src="assets/util.js?v=47"></script>
-<script src="assets/pdfviewer.js?v=47"></script>
-<script src="assets/reviews.js?v=47"></script>
-<script src="assets/trials.js?v=47"></script>
-<script src="assets/app.js?v=47"></script>
+<script src="assets/util.js?v=48"></script>
+<script src="assets/pdfviewer.js?v=48"></script>
+<script src="assets/notes.js?v=48"></script>
+<script src="assets/reviews.js?v=48"></script>
+<script src="assets/trials.js?v=48"></script>
+<script src="assets/app.js?v=48"></script>
 </body>
 </html>

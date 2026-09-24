@@ -1,0 +1,502 @@
+{
+ "disease": "breast",
+ "spec_file": "breast.py",
+ "pdf": "Breast Cancer.pdf",
+ "title": "Breast cancer",
+ "subtitle": "Every decision runs off <b>subtype</b> (HR+/HER2&minus;, HER2+, TNBC) crossed with <b>stage</b> &middot; AJCC 8th adds grade + ER/PR/HER2 as <b>prognostic staging</b> (does not apply pathologically after neoadjuvant therapy)",
+ "source": "Stanford Oncology Handbook 2025, Breast Cancer (Schultz C, Khan S, Sidhu K, Yang M, Dalal N, Tsai J) &middot; NCCN 5.2025 &middot; items marked &dagger; are outside the handbook chapter",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "27%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "Bilateral mammography + ultrasound; MRI or contrast-enhanced mammogram if indicated",
+        "Core biopsy with <b>clip placement</b>",
+        "Pathology: ER/PR, <b>HER2 (IHC &plusmn; DISH &mdash; must do DISH if IHC 2+)</b>, grade, Ki-67",
+        "&ldquo;High risk&rdquo;: HR weak/negative, HER2+, TNBC, high grade, <b>Ki-67 &gt;20%</b>, inflammatory, angiosarcoma, malignant phyllodes",
+        "<b>Genetic testing</b>: dx age <b>&le;50 (NCCN) or &le;65 (ASCO)</b>, bilateral at any age, or TNBC",
+        "<b>Stage I&ndash;IIB: no routine staging imaging</b> &mdash; only if directed by signs, symptoms or labs",
+        "Stage III: CT chest/abdomen &plusmn; pelvis + bone scan, or PET/CT",
+        "Stage IV or recurrent: brain MRI if CNS symptoms, spine MRI if cord-compression symptoms, and <b>biopsy the first recurrence</b> &mdash; ideally a metastatic site"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Staging, margins &amp; in-situ disease",
+       "rows": [
+        [
+         "T1 / T2 / T3",
+         "&le;20 mm / &gt;20&ndash;50 mm / &gt;50 mm"
+        ],
+        [
+         "T4",
+         "chest wall (4a) &middot; skin edema, ulceration, satellite nodules (4b) &middot; both (4c) &middot; <b>4d = inflammatory</b>"
+        ],
+        [
+         "pN1 / pN2 / pN3",
+         "1&ndash;3 / 4&ndash;9 / <b>&ge;10 axillary nodes</b>; pN1mi = &gt;0.2&ndash;2 mm; pN0(i+) = isolated tumor cells"
+        ],
+        [
+         "<b>Negative margin</b>",
+         "<b>&ge;2 mm</b> for DCIS and invasive; positive or close &rarr; discuss re-excision"
+        ],
+        [
+         "Post-neoadjuvant",
+         "prefix <b>yc / yp</b>; pathologic complete response = <b>ypT0 ypN0 cM0</b>"
+        ],
+        [
+         "DCIS",
+         "lumpectomy + whole-breast RT &middot; or mastectomy &plusmn; SLN &middot; or <b>lumpectomy alone if small and age &gt;70</b>. If ER+, tamoxifen &times; 5 yr (NSABP B-24)"
+        ],
+        [
+         "LCIS",
+         "<b>florid / pleomorphic</b> &rarr; excise to negative margins; <b>classical</b> does not need negative margins"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Curative-intent pathway",
+       "chains": [
+        {
+         "header": "Local-regional and sequencing",
+         "color": "teal",
+         "boxes": [
+          [
+           "Standard sequence",
+           [
+            "neoadjuvant (if indicated) &rarr; surgery &rarr;",
+            "adjuvant chemo &rarr; radiation (&plusmn; HER2 therapy)",
+            "&rarr; endocrine therapy; may overlap"
+           ]
+          ],
+          [
+           "Surgery choice",
+           [
+            "BCS if clear margins + acceptable cosmesis",
+            "mastectomy if not BCS-suitable, gene mutation,",
+            "prior mantle RT, or patient preference"
+           ]
+          ],
+          [
+           "Axilla",
+           [
+            "omit SLNB if &lt;2 cm, normal US, age &ge;70 (SOUND)",
+            "ALND if &ge;3 positive nodes (Z0011), matted,",
+            "inflammatory, or node-positive after neoadjuvant"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Adjuvant systemic by subtype",
+         "color": "blue",
+         "boxes": [
+          [
+           "HR+ / HER2&minus;",
+           [
+            "Oncotype DX on the surgical specimen",
+            "chemo by recurrence score + menopausal status",
+            "endocrine therapy for all"
+           ]
+          ],
+          [
+           "HER2+",
+           [
+            "TCHP or TCH &times;6; TH &times;12 wk; AC&rarr;TH(P)",
+            "complete <b>1 year (52 weeks)</b> of trastuzumab",
+            "residual disease &rarr; T-DM1 &times;14 (KATHERINE)"
+           ]
+          ],
+          [
+           "TNBC",
+           [
+            "stage &ge;II: KEYNOTE-522 regimen",
+            "residual disease &rarr; capecitabine (CREATE-X)",
+            "gBRCA + HER2&minus;: olaparib &times; 1 yr (OlympiA)"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "39%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Neoadjuvant therapy &mdash; local-regional disease",
+       "headers": [
+        "Subtype",
+        "Neoadjuvant regimen",
+        "If residual disease"
+       ],
+       "widths": [
+        "17%",
+        "",
+        "28%"
+       ],
+       "rows": [
+        [
+         "HR+ / HER2&minus;",
+         "<b>ddAC &rarr; T</b>, or <b>TC</b> &times;4 &mdash; the same regimens used adjuvantly",
+         "continue endocrine therapy &plusmn; CDK4/6 escalation"
+        ],
+        [
+         "HER2+",
+         "<b>TCHP &times;6</b> (preferred), or AC &rarr; THP",
+         "<b>T-DM1</b> 3.6 mg/kg q21d &times;14 (KATHERINE)"
+        ],
+        [
+         "TNBC, stage &ge;II",
+         "<b>KEYNOTE-522</b>: carboplatin + paclitaxel + pembrolizumab &rarr; AC + pembrolizumab",
+         "<b>capecitabine</b> &times;6&ndash;8 (CREATE-X); if gBRCA, olaparib &times; 1 yr"
+        ]
+       ],
+       "footnote": "<b>Indications:</b> inflammatory or inoperable disease &middot; T4 or N2&ndash;3 &middot; TNBC or HER2+ with T2 or N1 &middot; to downsize for breast conservation or downstage the axilla. <b>T2/T3 meeting BCS criteria except for size</b> &rarr; consider neoadjuvant. Response guides post-operative escalation &mdash; the main argument for treating first."
+      },
+      {
+       "type": "table",
+       "heading": "&dagger; Oncotype DX &mdash; when to add chemotherapy",
+       "headers": [
+        "Setting",
+        "Recurrence score &rarr; recommendation"
+       ],
+       "widths": [
+        "31%",
+        ""
+       ],
+       "rows": [
+        [
+         "Node-negative, any age",
+         "<b>RS 0&ndash;10</b> &rarr; endocrine therapy alone"
+        ],
+        [
+         "Node-negative, <b>age &gt;50</b>",
+         "<b>RS 11&ndash;25</b> &rarr; endocrine therapy alone; chemotherapy adds nothing"
+        ],
+        [
+         "Node-negative, <b>age &le;50</b>",
+         "<b>RS 16&ndash;25</b> &rarr; consider adding chemotherapy &mdash; a real benefit in this group"
+        ],
+        [
+         "Node-negative, any age",
+         "<b>RS &ge;26</b> &rarr; chemotherapy + endocrine therapy"
+        ],
+        [
+         "<b>1&ndash;3 nodes, postmenopausal</b>",
+         "<b>RS &le;25</b> &rarr; endocrine therapy alone &mdash; <b>no chemotherapy benefit</b>"
+        ],
+        [
+         "<b>1&ndash;3 nodes, premenopausal</b>",
+         "<b>RS &le;25</b> &rarr; chemotherapy still benefits"
+        ],
+        [
+         "1&ndash;3 nodes, any",
+         "<b>RS &gt;25</b> &rarr; chemotherapy + endocrine therapy"
+        ]
+       ],
+       "footnote": "Node-negative cutoffs from <b>TAILORx</b> (Sparano, NEJM 2018); node-positive from <b>RxPONDER</b>. Applies to <b>ER/PR-positive, HER2-negative</b> disease with up to 3 positive nodes; sent on the surgical specimen. <b>&dagger; The handbook does not state these cutoffs</b> &mdash; it defers to NCCN."
+      },
+      {
+       "type": "table",
+       "heading": "Adjuvant escalation &mdash; HR+/HER2&minus;",
+       "headers": [
+        "Agent",
+        "Regimen and eligibility"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Abemaciclib</b> (monarchE)",
+         "150 mg BID &times; <b>2 years</b> with endocrine therapy &mdash; <b>&ge;4 positive nodes</b>, OR 1&ndash;3 nodes plus grade 3, tumor &ge;5 cm, or Ki-67 &ge;20%"
+        ],
+        [
+         "<b>Ribociclib</b> (NATALEE)",
+         "400 mg daily, 21 days on / 7 off &times; <b>3 years</b> with endocrine therapy &mdash; any stage IIB or III, or stage IIA with grade 3 (or grade 2 with high genomic risk or Ki-67 &ge;20%)"
+        ],
+        [
+         "<b>Olaparib</b> (OlympiA)",
+         "300 mg BID &times; <b>1 year</b> &mdash; high-risk <b>HER2-negative</b> disease with a germline BRCA1/2 pathogenic variant"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; regimens, endocrine therapy, metastatic disease and supportive care",
+   "columns": [
+    {
+     "width": "35%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimens &amp; dosing",
+       "headers": [
+        "Regimen",
+        "Dosing",
+        "Cycle"
+       ],
+       "widths": [
+        "21%",
+        "",
+        "20%"
+       ],
+       "rows": [
+        [
+         "<b>ddAC &rarr; T</b>",
+         "doxorubicin 60 + cyclophosphamide 600 d1 &rarr; then paclitaxel 175 (or 80). Filgrastim d3&ndash;10 or pegfilgrastim d2",
+         "AC q14d &times;4; then T q14d &times;4 or q7d &times;12"
+        ],
+        [
+         "<b>TC</b>",
+         "docetaxel 75 + cyclophosphamide 600 d1",
+         "q21d &times;4"
+        ],
+        [
+         "<b>KEYNOTE-522</b>",
+         "carboplatin AUC 5 d1 + paclitaxel 80 d1, 8, 15 + <b>pembrolizumab 200</b> d1 &rarr; then doxorubicin 60 + cyclophosphamide 600 d1",
+         "q21d &times;4 each; pembrolizumab &times; 1 year"
+        ],
+        [
+         "Capecitabine",
+         "1000&ndash;1250 mg/m&sup2; PO BID d1&ndash;14",
+         "q21d &times;6&ndash;8"
+        ],
+        [
+         "Trastuzumab",
+         "4 &rarr; 2 mg/kg weekly, or 8 &rarr; 6 mg/kg q3wk",
+         "complete 52 weeks"
+        ],
+        [
+         "<b>TCHP</b> / TCH",
+         "docetaxel 75 + carboplatin AUC 6 + trastuzumab 8&rarr;6 mg/kg (&plusmn; pertuzumab 840&rarr;420) d1",
+         "q21d &times;6"
+        ],
+        [
+         "TH",
+         "paclitaxel 80 weekly &times;12 + trastuzumab 4&rarr;2 mg/kg weekly, then 6 mg/kg q3wk to 1 year",
+         "q7d &times;12"
+        ],
+        [
+         "AC &rarr; TH(P)",
+         "AC q14d &times;4 &rarr; paclitaxel 80 weekly &times;12 + trastuzumab &plusmn; pertuzumab to 1 year",
+         "AC q14d &times;4"
+        ],
+        [
+         "<b>T-DM1</b>",
+         "3.6 mg/kg IV d1 &mdash; residual disease after preoperative therapy",
+         "q21d &times;14"
+        ]
+       ],
+       "footnote": "All doses mg/m&sup2; unless stated. <b>Avoid concurrent trastuzumab &mdash; especially trastuzumab + pertuzumab &mdash; with an anthracycline</b>: significant cardiotoxicity. Cardiac monitoring every 3 months on trastuzumab. If T-DM1 is stopped for toxicity, give trastuzumab &plusmn; pertuzumab to complete 1 year."
+      },
+      {
+       "type": "table",
+       "heading": "Bone-directed therapy",
+       "headers": [
+        "Setting",
+        "Agent and dose"
+       ],
+       "widths": [
+        "28%",
+        ""
+       ],
+       "rows": [
+        [
+         "Bone metastases",
+         "zoledronic acid 4 mg IV q4wk (may extend to q12wk after 12 months) &middot; pamidronate 90 mg IV q3&ndash;4wk &middot; denosumab 120 mg SQ q4wk"
+        ],
+        [
+         "Osteoporosis prevention",
+         "denosumab 60 mg SQ q6 months &middot; zoledronic acid 5 mg IV yearly &middot; alendronate 70 mg PO weekly &middot; calcium 1000 mg + vitamin D 800 IU daily"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Surveillance",
+       "items": [
+        "H&amp;P every 6&ndash;12 months &times; 5 years, then annually",
+        "<b>Annual mammogram</b>; consider annual screening ultrasound if dense breast tissue, or CEM in lieu of mammogram + ultrasound",
+        "<b>Annual gynecologic assessment</b> if on tamoxifen with a uterus",
+        "<b>Baseline DEXA before starting an aromatase inhibitor</b> or after ovarian ablation, then every 1&ndash;2 years",
+        "Assess and actively encourage <b>adherence to endocrine therapy</b>",
+        "Lifestyle: alcohol &lt;3 drinks/week, &ge;150 min moderate exercise weekly, healthy BMI, Mediterranean diet",
+        "DCIS: H&amp;P + clinical breast exam q6 months &times; 5 years, mammogram q12 months"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "32%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Adjuvant endocrine therapy",
+       "items": [
+        "<b>Premenopausal:</b> tamoxifen 20 mg/d &times; <b>5&ndash;10 years</b> &mdash; 5 years cuts recurrence 40% and death 30%; extending to 10 years cuts recurrence a further 25% and mortality 29%",
+        "Add <b>ovarian suppression</b> if high risk &mdash; goserelin 3.6 mg SQ q4wk, leuprolide 3.75 mg monthly, or oophorectomy (SOFT)",
+        "<b>Postmenopausal:</b> aromatase inhibitor &times; 5&ndash;10 years &mdash; anastrozole 1 mg, letrozole 2.5 mg (non-steroidal), exemestane 25 mg (steroidal) daily. <b>Switch class if intolerant</b>; tamoxifen if AI contraindicated",
+        "<b>Tamoxifen is a CYP2D6 prodrug</b> &mdash; avoid <b>paroxetine and fluoxetine</b> (also quinidine, cimetidine); citalopram and venlafaxine are acceptable. <b>CYP2D6 genotyping is not recommended</b>",
+        "Menopause = prior bilateral oophorectomy, age &ge;60, or &lt;60 with amenorrhea &ge;12 months off chemo/tamoxifen/ovarian suppression <i>and</i> postmenopausal FSH + estradiol"
+       ]
+      },
+      {
+       "type": "pathway",
+       "heading": "Metastatic pathway",
+       "chains": [
+        {
+         "header": "Metastatic by subtype",
+         "color": "purple",
+         "boxes": [
+          [
+           "HR+ / HER2&minus;",
+           [
+            "1L: aromatase inhibitor + CDK4/6 inhibitor",
+            "progression on adjuvant ET &rarr; <b>send NGS</b>",
+            "premenopausal: add ovarian suppression"
+           ]
+          ],
+          [
+           "HER2+",
+           [
+            "1L: pertuzumab + trastuzumab + taxane",
+            "then T-DXd; T-DM1",
+            "<b>brain mets: tucatinib combos (HER2CLIMB)</b>"
+           ]
+          ],
+          [
+           "TNBC",
+           [
+            "pembrolizumab + chemo if PD-L1-positive",
+            "gBRCA: olaparib or talazoparib",
+            "sacituzumab govitecan; T-DXd if HER2-low"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Biomarker &rarr; therapy",
+       "headers": [
+        "Alteration",
+        "Therapy"
+       ],
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "Germline BRCA1/2",
+         "Olaparib or talazoparib"
+        ],
+        [
+         "PD-L1-positive TNBC",
+         "Pembrolizumab + chemotherapy"
+        ],
+        [
+         "<b>PIK3CA</b>",
+         "Inavolisib + palbociclib + fulvestrant &middot; alpelisib &middot; capivasertib"
+        ],
+        [
+         "AKT1 / PTEN",
+         "Capivasertib + fulvestrant"
+        ],
+        [
+         "<b>ESR1</b>",
+         "Elacestrant"
+        ],
+        [
+         "<b>HER2-low or ultralow</b>",
+         "Trastuzumab deruxtecan (T-DXd)"
+        ],
+        [
+         "MSI-H / dMMR",
+         "Pembrolizumab, dostarlimab"
+        ],
+        [
+         "TMB &ge;10 mut/Mb",
+         "Pembrolizumab"
+        ],
+        [
+         "NTRK fusion",
+         "Larotrectinib, entrectinib, repotrectinib"
+        ],
+        [
+         "RET",
+         "Selpercatinib"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Metastatic HR+/HER2&minus; sequencing",
+       "items": [
+        "<b>First line</b> &mdash; de novo metastatic, or progression &gt;12 months after endocrine therapy: <b>aromatase inhibitor + CDK4/6 inhibitor</b>",
+        "<b>Progression on adjuvant ET, or relapse within 12 months of it &rarr; check NGS.</b> PIK3CA-mutant: inavolisib + palbociclib + fulvestrant. Wild-type: fulvestrant 500 mg IM d0, 14, 28 then q28d + a CDK4/6 inhibitor",
+        "<b>Progression on CDK4/6i + ET &rarr; switch CDK4/6 inhibitor</b> &mdash; ribociclib with alternative ET (MAINTAIN) or abemaciclib + fulvestrant (postMONARCH)",
+        "Endocrine-resistant: <b>everolimus 10 mg + exemestane 25 mg daily</b>, then chemotherapy",
+        "<b>ADCs:</b> T-DXd if HER2-low or ultralow &middot; sacituzumab govitecan &middot; datopotamab deruxtecan"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Surgical &amp; radiation pearls",
+       "items": [
+        "<b>Inflammatory breast cancer:</b> staging work-up &rarr; neoadjuvant chemotherapy &rarr; modified radical mastectomy &rarr; postoperative chest wall + regional nodal radiation &mdash; <b>even with a pathologic complete response</b>. Delayed reconstruction; BCS contraindicated; ALND indicated",
+        "<b>Relative contraindications to BCS radiation:</b> Li-Fraumeni, active connective tissue disease involving skin (scleroderma, lupus), prior chest radiation, large tumor-to-breast-volume ratio",
+        "<b>Reconstruction with planned radiation:</b> preferred is immediate tissue expander &rarr; expansion &rarr; radiation &rarr; exchange to implant, or delayed autologous",
+        "Nipple-sparing mastectomy: ischemia and necrosis risk with high BMI, large or ptotic breasts, prior radiation or breast surgery",
+        "<b>Lymphedema</b> ~5% after SLNB, highest after ALND + radiation &mdash; screen at visits; consider LYMPHA at nodal dissection; class I compression sleeve; PT referral",
+        "<b>BIA-ALCL</b> &mdash; associated with textured implants; very rare; diagnosed on cytology; requires complete resection of capsule, implant and any mass"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Workup",
+  "Staging, margins &amp; in-situ disease",
+  "Curative-intent pathway",
+  "Neoadjuvant therapy &mdash; local-regional disease",
+  "&dagger; Oncotype DX &mdash; when to add chemotherapy",
+  "Adjuvant escalation &mdash; HR+/HER2&minus;",
+  "Regimens &amp; dosing",
+  "Bone-directed therapy",
+  "Surveillance",
+  "Adjuvant endocrine therapy",
+  "Metastatic pathway",
+  "Biomarker &rarr; therapy",
+  "Metastatic HR+/HER2&minus; sequencing",
+  "Surgical &amp; radiation pearls"
+ ],
+ "text": "Breast cancer Every decision runs off subtype (HR+/HER2−, HER2+, TNBC) crossed with stage · AJCC 8th adds grade + ER/PR/HER2 as prognostic staging (does not apply pathologically after neoadjuvant therapy) Stanford Oncology Handbook 2025, Breast Cancer (Schultz C, Khan S, Sidhu K, Yang M, Dalal N, Tsai J) · NCCN 5.2025 · items marked † are outside the handbook chapter Workup Bilateral mammography + ultrasound; MRI or contrast-enhanced mammogram if indicated Core biopsy with clip placement Pathology: ER/PR, HER2 (IHC ± DISH — must do DISH if IHC 2+) , grade, Ki-67 “High risk”: HR weak/negative, HER2+, TNBC, high grade, Ki-67 >20% , inflammatory, angiosarcoma, malignant phyllodes Genetic testing : dx age ≤50 (NCCN) or ≤65 (ASCO) , bilateral at any age, or TNBC Stage I–IIB: no routine staging imaging — only if directed by signs, symptoms or labs Stage III: CT chest/abdomen ± pelvis + bone scan, or PET/CT Stage IV or recurrent: brain MRI if CNS symptoms, spine MRI if cord-compression symptoms, and biopsy the first recurrence — ideally a metastatic site Staging, margins & in-situ disease T1 / T2 / T3 ≤20 mm / >20–50 mm / >50 mm T4 chest wall (4a) · skin edema, ulceration, satellite nodules (4b) · both (4c) · 4d = inflammatory pN1 / pN2 / pN3 1–3 / 4–9 / ≥10 axillary nodes ; pN1mi = >0.2–2 mm; pN0(i+) = isolated tumor cells Negative margin ≥2 mm for DCIS and invasive; positive or close → discuss re-excision Post-neoadjuvant prefix yc / yp ; pathologic complete response = ypT0 ypN0 cM0 DCIS lumpectomy + whole-breast RT · or mastectomy ± SLN · or lumpectomy alone if small and age >70 . If ER+, tamoxifen × 5 yr (NSABP B-24) LCIS florid / pleomorphic → excise to negative margins; classical does not need negative margins Curative-intent pathway Local-regional and sequencing Standard sequence neoadjuvant (if indicated) → surgery → adjuvant chemo → radiation (± HER2 therapy) → endocrine therapy; may overlap Surgery choice BCS if clear margins + acceptable cosmesis mastectomy if not BCS-suitable, gene mutation, prior mantle RT, or patient preference Axilla omit SLNB if <2 cm, normal US, age ≥70 (SOUND) ALND if ≥3 positive nodes (Z0011), matted, inflammatory, or node-positive after neoadjuvant Adjuvant systemic by subtype HR+ / HER2− Oncotype DX on the surgical specimen chemo by recurrence score + menopausal status endocrine therapy for all HER2+ TCHP or TCH ×6; TH ×12 wk; AC→TH(P) complete 1 year (52 weeks) of trastuzumab residual disease → T-DM1 ×14 (KATHERINE) TNBC stage ≥II: KEYNOTE-522 regimen residual disease → capecitabine (CREATE-X) gBRCA + HER2−: olaparib × 1 yr (OlympiA) Neoadjuvant therapy — local-regional disease Subtype Neoadjuvant regimen If residual disease HR+ / HER2− ddAC → T , or TC ×4 — the same regimens used adjuvantly continue endocrine therapy ± CDK4/6 escalation HER2+ TCHP ×6 (preferred), or AC → THP T-DM1 3.6 mg/kg q21d ×14 (KATHERINE) TNBC, stage ≥II KEYNOTE-522 : carboplatin + paclitaxel + pembrolizumab → AC + pembrolizumab capecitabine ×6–8 (CREATE-X); if gBRCA, olaparib × 1 yr Indications: inflammatory or inoperable disease · T4 or N2–3 · TNBC or HER2+ with T2 or N1 · to downsize for breast conservation or downstage the axilla. T2/T3 meeting BCS criteria except for size → consider neoadjuvant. Response guides post-operative escalation — the main argument for treating first. † Oncotype DX — when to add chemotherapy Setting Recurrence score → recommendation Node-negative, any age RS 0–10 → endocrine therapy alone Node-negative, age >50 RS 11–25 → endocrine therapy alone; chemotherapy adds nothing Node-negative, age ≤50 RS 16–25 → consider adding chemotherapy — a real benefit in this group Node-negative, any age RS ≥26 → chemotherapy + endocrine therapy 1–3 nodes, postmenopausal RS ≤25 → endocrine therapy alone — no chemotherapy benefit 1–3 nodes, premenopausal RS ≤25 → chemotherapy still benefits 1–3 nodes, any RS >25 → chemotherapy + endocrine therapy Node-negative cutoffs from TAILORx (Sparano, NEJM 2018); node-positive from RxPONDER . Applies to ER/PR-positive, HER2-negative disease with up to 3 positive nodes; sent on the surgical specimen. † The handbook does not state these cutoffs — it defers to NCCN. Adjuvant escalation — HR+/HER2− Agent Regimen and eligibility Abemaciclib (monarchE) 150 mg BID × 2 years with endocrine therapy — ≥4 positive nodes , OR 1–3 nodes plus grade 3, tumor ≥5 cm, or Ki-67 ≥20% Ribociclib (NATALEE) 400 mg daily, 21 days on / 7 off × 3 years with endocrine therapy — any stage IIB or III, or stage IIA with grade 3 (or grade 2 with high genomic risk or Ki-67 ≥20%) Olaparib (OlympiA) 300 mg BID × 1 year — high-risk HER2-negative disease with a germline BRCA1/2 pathogenic variant Regimens & dosing Regimen Dosing Cycle ddAC → T doxorubicin 60 + cyclophosphamide 600 d1 → then paclitaxel 175 (or 80). Filgrastim d3–10 or pegfilgrastim d2 AC q14d ×4; then T q14d ×4 or q7d ×12 TC docetaxel 75 + cyclophosphamide 600 d1 q21d ×4 KEYNOTE-522 carboplatin AUC 5 d1 + paclitaxel 80 d1, 8, 15 + pembrolizumab 200 d1 → then doxorubicin 60 + cyclophosphamide 600 d1 q21d ×4 each; pembrolizumab × 1 year Capecitabine 1000–1250 mg/m² PO BID d1–14 q21d ×6–8 Trastuzumab 4 → 2 mg/kg weekly, or 8 → 6 mg/kg q3wk complete 52 weeks TCHP / TCH docetaxel 75 + carboplatin AUC 6 + trastuzumab 8→6 mg/kg (± pertuzumab 840→420) d1 q21d ×6 TH paclitaxel 80 weekly ×12 + trastuzumab 4→2 mg/kg weekly, then 6 mg/kg q3wk to 1 year q7d ×12 AC → TH(P) AC q14d ×4 → paclitaxel 80 weekly ×12 + trastuzumab ± pertuzumab to 1 year AC q14d ×4 T-DM1 3.6 mg/kg IV d1 — residual disease after preoperative therapy q21d ×14 All doses mg/m² unless stated. Avoid concurrent trastuzumab — especially trastuzumab + pertuzumab — with an anthracycline : significant cardiotoxicity. Cardiac monitoring every 3 months on trastuzumab. If T-DM1 is stopped for toxicity, give trastuzumab ± pertuzumab to complete 1 year. Bone-directed therapy Setting Agent and dose Bone metastases zoledronic acid 4 mg IV q4wk (may extend to q12wk after 12 months) · pamidronate 90 mg IV q3–4wk · denosumab 120 mg SQ q4wk Osteoporosis prevention denosumab 60 mg SQ q6 months · zoledronic acid 5 mg IV yearly · alendronate 70 mg PO weekly · calcium 1000 mg + vitamin D 800 IU daily Surveillance H&P every 6–12 months × 5 years, then annually Annual mammogram ; consider annual screening ultrasound if dense breast tissue, or CEM in lieu of mammogram + ultrasound Annual gynecologic assessment if on tamoxifen with a uterus Baseline DEXA before starting an aromatase inhibitor or after ovarian ablation, then every 1–2 years Assess and actively encourage adherence to endocrine therapy Lifestyle: alcohol <3 drinks/week, ≥150 min moderate exercise weekly, healthy BMI, Mediterranean diet DCIS: H&P + clinical breast exam q6 months × 5 years, mammogram q12 months Adjuvant endocrine therapy Premenopausal: tamoxifen 20 mg/d × 5–10 years — 5 years cuts recurrence 40% and death 30%; extending to 10 years cuts recurrence a further 25% and mortality 29% Add ovarian suppression if high risk — goserelin 3.6 mg SQ q4wk, leuprolide 3.75 mg monthly, or oophorectomy (SOFT) Postmenopausal: aromatase inhibitor × 5–10 years — anastrozole 1 mg, letrozole 2.5 mg (non-steroidal), exemestane 25 mg (steroidal) daily. Switch class if intolerant ; tamoxifen if AI contraindicated Tamoxifen is a CYP2D6 prodrug — avoid paroxetine and fluoxetine (also quinidine, cimetidine); citalopram and venlafaxine are acceptable. CYP2D6 genotyping is not recommended Menopause = prior bilateral oophorectomy, age ≥60, or <60 with amenorrhea ≥12 months off chemo/tamoxifen/ovarian suppression and postmenopausal FSH + estradiol Metastatic pathway Metastatic by subtype HR+ / HER2− 1L: aromatase inhibitor + CDK4/6 inhibitor progression on adjuvant ET → send NGS premenopausal: add ovarian suppression HER2+ 1L: pertuzumab + trastuzumab + taxane then T-DXd; T-DM1 brain mets: tucatinib combos (HER2CLIMB) TNBC pembrolizumab + chemo if PD-L1-positive gBRCA: olaparib or talazoparib sacituzumab govitecan; T-DXd if HER2-low Biomarker → therapy Alteration Therapy Germline BRCA1/2 Olaparib or talazoparib PD-L1-positive TNBC Pembrolizumab + chemotherapy PIK3CA Inavolisib + palbociclib + fulvestrant · alpelisib · capivasertib AKT1 / PTEN Capivasertib + fulvestrant ESR1 Elacestrant HER2-low or ultralow Trastuzumab deruxtecan (T-DXd) MSI-H / dMMR Pembrolizumab, dostarlimab TMB ≥10 mut/Mb Pembrolizumab NTRK fusion Larotrectinib, entrectinib, repotrectinib RET Selpercatinib Metastatic HR+/HER2− sequencing First line — de novo metastatic, or progression >12 months after endocrine therapy: aromatase inhibitor + CDK4/6 inhibitor Progression on adjuvant ET, or relapse within 12 months of it → check NGS. PIK3CA-mutant: inavolisib + palbociclib + fulvestrant. Wild-type: fulvestrant 500 mg IM d0, 14, 28 then q28d + a CDK4/6 inhibitor Progression on CDK4/6i + ET → switch CDK4/6 inhibitor — ribociclib with alternative ET (MAINTAIN) or abemaciclib + fulvestrant (postMONARCH) Endocrine-resistant: everolimus 10 mg + exemestane 25 mg daily , then chemotherapy ADCs: T-DXd if HER2-low or ultralow · sacituzumab govitecan · datopotamab deruxtecan Surgical & radiation pearls Inflammatory breast cancer: staging work-up → neoadjuvant chemotherapy → modified radical mastectomy → postoperative chest wall + regional nodal radiation — even with a pathologic complete response . Delayed reconstruction; BCS contraindicated; ALND indicated Relative contraindications to BCS radiation: Li-Fraumeni, active connective tissue disease involving skin (scleroderma, lupus), prior chest radiation, large tumor-to-breast-volume ratio Reconstruction with planned radiation: preferred is immediate tissue expander → expansion → radiation → exchange to implant, or delayed autologous Nipple-sparing mastectomy: ischemia and necrosis risk with high BMI, large or ptotic breasts, prior radiation or breast surgery Lymphedema ~5% after SLNB, highest after ALND + radiation — screen at visits; consider LYMPHA at nodal dissection; class I compression sleeve; PT referral BIA-ALCL — associated with textured implants; very rare; diagnosed on cytology; requires complete resection of capsule, implant and any mass"
+}

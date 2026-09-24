@@ -1,0 +1,349 @@
+{
+ "disease": "lymphoma-tcell",
+ "spec_file": "lymphoma_tcell.py",
+ "pdf": "Lymphoma - T-cell and Cutaneous.pdf",
+ "title": "T-cell and cutaneous lymphoma",
+ "subtitle": "Outcomes well behind B-cell disease &mdash; <b>PTCL is consolidated with transplant in first remission</b>, while <b>mycosis fungoides is managed for decades</b>. CD30 and blood involvement are the findings that change the plan",
+ "source": "Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin, pp.233&ndash;246 &middot; NCCN Primary Cutaneous Lymphoma v2.2025 &middot; items marked &dagger; are outside the handbook chapter",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "29%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Where T/NK neoplasms live",
+       "widths": [
+        "21%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Nodal</b>",
+         "<b>PTCL-NOS</b> &middot; <b>AITL</b> and nodal TFH lymphomas &middot; <b>ALCL, ALK+ or ALK&minus;</b> (DUSP22 / TP63 / NOS) &middot; EBV+ nodal T-cell"
+        ],
+        [
+         "<b>Extranodal</b>",
+         "<b>Extranodal NK/T, nasal type</b> &middot; enteropathy-associated (EATL) &middot; monomorphic epitheliotropic intestinal (MEITL) &middot; hepatosplenic &middot; subcutaneous panniculitis-like"
+        ],
+        [
+         "<b>Cutaneous</b>",
+         "<b>Mycosis fungoides</b> &middot; primary cutaneous CD30+ LPDs (lymphomatoid papulosis, C-ALCL) &middot; primary cutaneous gamma/delta"
+        ],
+        [
+         "<b>Leukemic</b>",
+         "<b>Sezary syndrome</b> &middot; ATLL &middot; T-PLL &middot; T-LGL &middot; aggressive NK-cell leukemia"
+        ]
+       ],
+       "footnote": "WHO 5th edition 2024. <b>Sezary syndrome sits in both the cutaneous and leukemic columns</b> &mdash; that duality is the point: it is mycosis fungoides with blood involvement."
+      },
+      {
+       "type": "table",
+       "heading": "PIT &mdash; peripheral T-cell lymphoma",
+       "headers": [
+        "Factors",
+        "5-yr OS",
+        "10-yr OS"
+       ],
+       "widths": [
+        "40%",
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "0",
+         "62.3%",
+         "54.9%"
+        ],
+        [
+         "1",
+         "52.9%",
+         "38.8%"
+        ],
+        [
+         "2",
+         "32.9%",
+         "18.0%"
+        ],
+        [
+         "3&ndash;4",
+         "<b>18.3%</b>",
+         "<b>12.6%</b>"
+        ]
+       ],
+       "footnote": "One point each: <b>age &gt;60 &middot; LDH &gt; normal &middot; ECOG 2&ndash;4 &middot; marrow involvement</b>. Gallamini, Blood 2004. Staging otherwise uses Ann Arbor. <b>Compare these numbers with aggressive B-cell disease</b> &mdash; even no-risk-factor PTCL does worse than high-risk DLBCL."
+      },
+      {
+       "type": "table",
+       "heading": "MF/SS &mdash; ISCL/EORTC TNMB",
+       "widths": [
+        "13%",
+        ""
+       ],
+       "rows": [
+        [
+         "T1 &middot; T2",
+         "Patches/plaques <b>&lt;10%</b> BSA &middot; <b>&gt;10%</b> BSA (T2a patch only, T2b plaque)"
+        ],
+        [
+         "T3 &middot; T4",
+         "One or more <b>tumors &gt;1 cm</b> &middot; <b>erythroderma &ge;80%</b> BSA"
+        ],
+        [
+         "N1&ndash;N3",
+         "Clinically abnormal nodes by Dutch grade 1 / 2 / 3&ndash;4 (NCI LN 0&ndash;2 / 3 / 4)"
+        ],
+        [
+         "<b>B0</b>",
+         "&le;5% of lymphocytes are Sezary cells, or &lt;250/&micro;L, and &lt;15% CD4+CD26&minus; or CD4+CD7&minus;"
+        ],
+        [
+         "<b>B1</b>",
+         "&gt;5% Sezary cells or &gt;15% CD4+CD26&minus;/CD7&minus;, but not B2"
+        ],
+        [
+         "<b>B2</b>",
+         "<b>&gt;1,000/&micro;L Sezary cells</b> or &gt;1,000 CD4+CD26&minus;/CD7&minus; cells/&micro;L <b>with a blood clone matching the skin</b>"
+        ]
+       ],
+       "footnote": "Stage <b>IA</b> T1 &middot; <b>IB</b> T2 &middot; <b>IIA</b> T1&ndash;2 N1&ndash;2 &middot; <b>IIB</b> T3 &middot; <b>IIIA/B</b> T4 with B0/B1 &middot; <b>IVA1 = Sezary syndrome (any T, B2)</b> &middot; IVA2 N3 &middot; IVB M1. Olsen, Blood 2022."
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>Auto-HCT in first remission is the default for PTCL</b> &mdash; the exception is ALCL with an ALK or DUSP22 rearrangement, which does well without it",
+        "<b>Allogeneic transplant is potentially curative in advanced MF/SS</b> &mdash; 1-yr and 3-yr OS 51% and 40%, PFS 42% and 33%, with acute and chronic GVHD 45% and 40%",
+        "&dagger; <b>Sezary syndrome requires all three:</b> erythroderma (T4, &ge;80% BSA), <b>B2</b> blood burden, and a <b>T-cell clone in blood matching the skin</b>. The older ISCL adjuncts &mdash; <b>CD4:CD8 &ge;10</b> and loss of CD7 or CD26 &mdash; no longer stand alone; modified ISCL/USCLC/EORTC criteria need the clone <b>plus</b> an absolute count. The handbook prints none of this, giving only stage IVA1"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "29%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "PTCL frontline",
+         "color": "teal",
+         "boxes": [
+          [
+           "Subtype and CD30 drive the choice",
+           [
+            "<b>ALCL: BV-CHP preferred</b>",
+            "PTCL-NOS, AITL, TFH: <b>BV-CHP if CD30+</b>, else",
+            "&nbsp;&nbsp;CHOP / CHOEP / DA-EPOCH &middot; EATL: IVE/MTX",
+            "then <b>auto-HCT if transplant-eligible &mdash; except</b>",
+            "&nbsp;&nbsp;<b>ALCL with ALK or DUSP22 rearrangement</b>"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "PTCL relapsed",
+         "color": "coral",
+         "boxes": [
+          [
+           "Single agents, then combinations",
+           [
+            "belinostat &middot; romidepsin &middot; pralatrexate &middot; duvelisib",
+            "<b>BV if CD30+</b> &middot; gemcitabine &middot; bendamustine",
+            "<b>ALK+ ALCL: an ALK inhibitor</b> (alectinib, crizotinib...)",
+            "combos: DHAP &middot; ESHAP &middot; GDP &middot; GVD &middot; GemOx &middot; ICE"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "NK/T-cell, nasal type",
+         "color": "amber",
+         "boxes": [
+          [
+           "Asparaginase + radiation",
+           [
+            "<b>DEVIC q21d &times;3 + concurrent RT 50 Gy</b>, or",
+            "<b>modified SMILE q28d &times;2&ndash;6</b>"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Mycosis fungoides / Sezary",
+         "color": "purple",
+         "boxes": [
+          [
+           "Stage IA&ndash;IIB",
+           [
+            "IA&ndash;IIA: <b>skin-directed therapy</b>, alone or combined",
+            "IIB: local RT if limited, <b>TSEBT</b> if generalized,",
+            "&nbsp;&nbsp;&plusmn; systemic"
+           ]
+          ],
+          [
+           "Erythrodermic III, Sezary IV, and LCT",
+           [
+            "<b>&lt;5K/mm&sup3;</b>: ECP + interferon or retinoids, TSEBT + ECP",
+            "<b>&gt;5K/mm&sup3;</b>: mogamulizumab, romidepsin, alemtuzumab",
+            "<b>LCT</b>: BV, gemcitabine, liposomal doxorubicin,",
+            "&nbsp;&nbsp;pralatrexate, romidepsin, mogamulizumab"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "42%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "PTCL and NK/T regimens",
+       "headers": [
+        "Regimen",
+        "Dosing",
+        "Cycle"
+       ],
+       "widths": [
+        "19%",
+        "",
+        "15%"
+       ],
+       "rows": [
+        [
+         "<b>Pralatrexate</b>",
+         "30 mg/m&sup2; IV weekly &times;6 &mdash; <b>folic acid 1&ndash;1.25 mg daily from 7&ndash;10 d before until 30 d after, B12 1 mg IM q8&ndash;10 wk</b>",
+         "q7 wk"
+        ],
+        [
+         "<b>Romidepsin &middot; belinostat</b>",
+         "Romidepsin 14 mg/m&sup2; over 4 h d1, 8, 15 q28d &times;6 &middot; belinostat 1,000 mg/m&sup2; over 30 min d1&ndash;5 q21d &times;8",
+         "&mdash;"
+        ],
+        [
+         "<b>Duvelisib</b>",
+         "75 mg PO BID &times;2 cycles, <b>then 25 mg PO BID</b>",
+         "q28d, continuous"
+        ],
+        [
+         "Gemcitabine &middot; brentuximab",
+         "Gemcitabine 1,200 mg/m&sup2; d1, 8, 15 q28d &middot; brentuximab 1.8 mg/kg d1 (max 180 mg) q21d &times;16 if CD30+",
+         "&mdash;"
+        ],
+        [
+         "<b>DEVIC</b>",
+         "Dexamethasone 40 mg + ifosfamide 1,000 + mesna + etoposide 67, all d1&ndash;3; carboplatin 200 d1",
+         "q21d &times;3 <b>+ RT 50 Gy</b>"
+        ],
+        [
+         "<b>Modified SMILE</b>",
+         "MTX 2,000 d1 &middot; ifosfamide 1,500 + mesna + dexamethasone 40 mg + etoposide 100 d2&ndash;4 &middot; <b>pegaspargase 2,000 U/m&sup2; d7</b>, hold until MTX &lt;0.04. Leucovorin from 24 h. <b>TMP-SMX DS BID Sat/Sun</b>",
+         "q28d &times;2&ndash;6"
+        ]
+       ],
+       "footnote": "CHOP/CHOEP/BV-CHP/DA-EPOCH dosing is <b>not in this chapter</b> &mdash; see the aggressive B-cell card. <b>EATL</b>: CHOP &times;1 then IVE (ifosfamide 3,000 + etoposide 200 d1&ndash;3, epirubicin 50 d1) alternating with MTX 1,500 d22, q28d &times;3, then auto-HCT."
+      },
+      {
+       "type": "table",
+       "heading": "MF/SS therapies",
+       "headers": [
+        "Therapy",
+        "Dosing and notes"
+       ],
+       "widths": [
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Skin-directed</b>",
+         "Topical corticosteroids &middot; imiquimod &middot; <b>mechlorethamine</b> (often compounded) &middot; topical retinoids &middot; <b>local ISRT 8&ndash;12 Gy</b> (24&ndash;30 Gy if unilesional) &middot; <b>TSEBT 12&ndash;36 Gy</b> &middot; PUVA for thicker plaques, NB-UVB for thinner"
+        ],
+        [
+         "Bexarotene",
+         "300 mg/m&sup2; PO daily &mdash; <b>causes central hypothyroidism: follow free T4, not TSH</b>; check lipids. Vorinostat 400 mg PO daily &middot; IFN alfa-2a 3&ndash;6 MU daily or TIW &middot; ECP"
+        ],
+        [
+         "<b>Mogamulizumab</b>",
+         "1 mg/kg IV d1, 8, 15, 22 then q28d &mdash; CCR4 antibody, <b>best in Sezary/blood disease</b>. Mogamulizumab-associated rash is delayed, <b>median onset 119 days</b>"
+        ],
+        [
+         "Romidepsin &middot; brentuximab",
+         "Romidepsin 14 mg/m&sup2; d1, 8, 15 q28d &mdash; <b>QTc prolongation, replete Mg each infusion</b>. Brentuximab 1.8 mg/kg q3wk &mdash; thicker skin disease and <b>LCT only</b>; watch neuropathy"
+        ],
+        [
+         "Methotrexate &rarr; pralatrexate",
+         "MTX 25 mg PO weekly (start 10&ndash;15, titrate); if higher doses are needed switch to pralatrexate <b>15 mg/m&sup2;</b> d1, 8, 15 q28d &mdash; <b>half the PTCL dose</b>; mucositis is dose-limiting"
+        ],
+        [
+         "<b>Alemtuzumab</b>",
+         "3 mg d1 then 10 mg SQ on alternating days, TIW, max 12 wk &mdash; <b>stage III/T4 or Sezary only</b>; <b>CMV PCR q2&ndash;3 wk</b>, Bactrim + acyclovir"
+        ],
+        [
+         "Pembrolizumab",
+         "200 mg IV q3wk &mdash; <b>continue indefinitely; stopping can lose the response</b>"
+        ]
+       ],
+       "footnote": "<b>Maximise skin-directed therapy and supportive care first</b> &mdash; it lengthens time to the next systemic treatment. Check compatibility with TSEBT/phototherapy first, and recycle agents that previously worked."
+      },
+      {
+       "type": "table",
+       "heading": "Trials",
+       "headers": [
+        "Trial",
+        "Role"
+       ],
+       "widths": [
+        "28%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>ECHELON-2</b>",
+         "BV-CHP vs CHOP in CD30+ PTCL &mdash; the reason ALCL gets brentuximab frontline"
+        ],
+        [
+         "<b>PROPEL</b>",
+         "Pralatrexate in relapsed PTCL"
+        ],
+        [
+         "<b>BELIEF</b>",
+         "Belinostat in relapsed/refractory PTCL"
+        ],
+        [
+         "<b>ALCANZA</b>",
+         "Brentuximab vs physician's choice in CD30+ CTCL"
+        ],
+        [
+         "<b>MAVORIC</b>",
+         "Mogamulizumab vs vorinostat in MF/SS &mdash; the registrational trial"
+        ],
+        [
+         "Yamaguchi JCO 2009",
+         "DEVIC + concurrent RT in NK/T nasal type"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Where T/NK neoplasms live",
+  "PIT &mdash; peripheral T-cell lymphoma",
+  "MF/SS &mdash; ISCL/EORTC TNMB",
+  "Pearls",
+  "Treatment pathway",
+  "PTCL and NK/T regimens",
+  "MF/SS therapies",
+  "Trials"
+ ],
+ "text": "T-cell and cutaneous lymphoma Outcomes well behind B-cell disease — PTCL is consolidated with transplant in first remission , while mycosis fungoides is managed for decades . CD30 and blood involvement are the findings that change the plan Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin, pp.233–246 · NCCN Primary Cutaneous Lymphoma v2.2025 · items marked † are outside the handbook chapter Where T/NK neoplasms live Nodal PTCL-NOS · AITL and nodal TFH lymphomas · ALCL, ALK+ or ALK− (DUSP22 / TP63 / NOS) · EBV+ nodal T-cell Extranodal Extranodal NK/T, nasal type · enteropathy-associated (EATL) · monomorphic epitheliotropic intestinal (MEITL) · hepatosplenic · subcutaneous panniculitis-like Cutaneous Mycosis fungoides · primary cutaneous CD30+ LPDs (lymphomatoid papulosis, C-ALCL) · primary cutaneous gamma/delta Leukemic Sezary syndrome · ATLL · T-PLL · T-LGL · aggressive NK-cell leukemia WHO 5th edition 2024. Sezary syndrome sits in both the cutaneous and leukemic columns — that duality is the point: it is mycosis fungoides with blood involvement. PIT — peripheral T-cell lymphoma Factors 5-yr OS 10-yr OS 0 62.3% 54.9% 1 52.9% 38.8% 2 32.9% 18.0% 3–4 18.3% 12.6% One point each: age >60 · LDH > normal · ECOG 2–4 · marrow involvement . Gallamini, Blood 2004. Staging otherwise uses Ann Arbor. Compare these numbers with aggressive B-cell disease — even no-risk-factor PTCL does worse than high-risk DLBCL. MF/SS — ISCL/EORTC TNMB T1 · T2 Patches/plaques <10% BSA · >10% BSA (T2a patch only, T2b plaque) T3 · T4 One or more tumors >1 cm · erythroderma ≥80% BSA N1–N3 Clinically abnormal nodes by Dutch grade 1 / 2 / 3–4 (NCI LN 0–2 / 3 / 4) B0 ≤5% of lymphocytes are Sezary cells, or <250/&micro;L, and <15% CD4+CD26− or CD4+CD7− B1 >5% Sezary cells or >15% CD4+CD26−/CD7−, but not B2 B2 >1,000/&micro;L Sezary cells or >1,000 CD4+CD26−/CD7− cells/&micro;L with a blood clone matching the skin Stage IA T1 · IB T2 · IIA T1–2 N1–2 · IIB T3 · IIIA/B T4 with B0/B1 · IVA1 = Sezary syndrome (any T, B2) · IVA2 N3 · IVB M1. Olsen, Blood 2022. Pearls Auto-HCT in first remission is the default for PTCL — the exception is ALCL with an ALK or DUSP22 rearrangement, which does well without it Allogeneic transplant is potentially curative in advanced MF/SS — 1-yr and 3-yr OS 51% and 40%, PFS 42% and 33%, with acute and chronic GVHD 45% and 40% † Sezary syndrome requires all three: erythroderma (T4, ≥80% BSA), B2 blood burden, and a T-cell clone in blood matching the skin . The older ISCL adjuncts — CD4:CD8 ≥10 and loss of CD7 or CD26 — no longer stand alone; modified ISCL/USCLC/EORTC criteria need the clone plus an absolute count. The handbook prints none of this, giving only stage IVA1 Treatment pathway PTCL frontline Subtype and CD30 drive the choice ALCL: BV-CHP preferred PTCL-NOS, AITL, TFH: BV-CHP if CD30+ , else CHOP / CHOEP / DA-EPOCH · EATL: IVE/MTX then auto-HCT if transplant-eligible — except ALCL with ALK or DUSP22 rearrangement PTCL relapsed Single agents, then combinations belinostat · romidepsin · pralatrexate · duvelisib BV if CD30+ · gemcitabine · bendamustine ALK+ ALCL: an ALK inhibitor (alectinib, crizotinib...) combos: DHAP · ESHAP · GDP · GVD · GemOx · ICE NK/T-cell, nasal type Asparaginase + radiation DEVIC q21d ×3 + concurrent RT 50 Gy , or modified SMILE q28d ×2–6 Mycosis fungoides / Sezary Stage IA–IIB IA–IIA: skin-directed therapy , alone or combined IIB: local RT if limited, TSEBT if generalized, ± systemic Erythrodermic III, Sezary IV, and LCT <5K/mm&sup3; : ECP + interferon or retinoids, TSEBT + ECP >5K/mm&sup3; : mogamulizumab, romidepsin, alemtuzumab LCT : BV, gemcitabine, liposomal doxorubicin, pralatrexate, romidepsin, mogamulizumab PTCL and NK/T regimens Regimen Dosing Cycle Pralatrexate 30 mg/m² IV weekly ×6 — folic acid 1–1.25 mg daily from 7–10 d before until 30 d after, B12 1 mg IM q8–10 wk q7 wk Romidepsin · belinostat Romidepsin 14 mg/m² over 4 h d1, 8, 15 q28d ×6 · belinostat 1,000 mg/m² over 30 min d1–5 q21d ×8 — Duvelisib 75 mg PO BID ×2 cycles, then 25 mg PO BID q28d, continuous Gemcitabine · brentuximab Gemcitabine 1,200 mg/m² d1, 8, 15 q28d · brentuximab 1.8 mg/kg d1 (max 180 mg) q21d ×16 if CD30+ — DEVIC Dexamethasone 40 mg + ifosfamide 1,000 + mesna + etoposide 67, all d1–3; carboplatin 200 d1 q21d ×3 + RT 50 Gy Modified SMILE MTX 2,000 d1 · ifosfamide 1,500 + mesna + dexamethasone 40 mg + etoposide 100 d2–4 · pegaspargase 2,000 U/m² d7 , hold until MTX <0.04. Leucovorin from 24 h. TMP-SMX DS BID Sat/Sun q28d ×2–6 CHOP/CHOEP/BV-CHP/DA-EPOCH dosing is not in this chapter — see the aggressive B-cell card. EATL : CHOP ×1 then IVE (ifosfamide 3,000 + etoposide 200 d1–3, epirubicin 50 d1) alternating with MTX 1,500 d22, q28d ×3, then auto-HCT. MF/SS therapies Therapy Dosing and notes Skin-directed Topical corticosteroids · imiquimod · mechlorethamine (often compounded) · topical retinoids · local ISRT 8–12 Gy (24–30 Gy if unilesional) · TSEBT 12–36 Gy · PUVA for thicker plaques, NB-UVB for thinner Bexarotene 300 mg/m² PO daily — causes central hypothyroidism: follow free T4, not TSH ; check lipids. Vorinostat 400 mg PO daily · IFN alfa-2a 3–6 MU daily or TIW · ECP Mogamulizumab 1 mg/kg IV d1, 8, 15, 22 then q28d — CCR4 antibody, best in Sezary/blood disease . Mogamulizumab-associated rash is delayed, median onset 119 days Romidepsin · brentuximab Romidepsin 14 mg/m² d1, 8, 15 q28d — QTc prolongation, replete Mg each infusion . Brentuximab 1.8 mg/kg q3wk — thicker skin disease and LCT only ; watch neuropathy Methotrexate → pralatrexate MTX 25 mg PO weekly (start 10–15, titrate); if higher doses are needed switch to pralatrexate 15 mg/m² d1, 8, 15 q28d — half the PTCL dose ; mucositis is dose-limiting Alemtuzumab 3 mg d1 then 10 mg SQ on alternating days, TIW, max 12 wk — stage III/T4 or Sezary only ; CMV PCR q2–3 wk , Bactrim + acyclovir Pembrolizumab 200 mg IV q3wk — continue indefinitely; stopping can lose the response Maximise skin-directed therapy and supportive care first — it lengthens time to the next systemic treatment. Check compatibility with TSEBT/phototherapy first, and recycle agents that previously worked. Trials Trial Role ECHELON-2 BV-CHP vs CHOP in CD30+ PTCL — the reason ALCL gets brentuximab frontline PROPEL Pralatrexate in relapsed PTCL BELIEF Belinostat in relapsed/refractory PTCL ALCANZA Brentuximab vs physician's choice in CD30+ CTCL MAVORIC Mogamulizumab vs vorinostat in MF/SS — the registrational trial Yamaguchi JCO 2009 DEVIC + concurrent RT in NK/T nasal type"
+}

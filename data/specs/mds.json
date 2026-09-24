@@ -1,0 +1,269 @@
+{
+ "disease": "mds",
+ "spec_file": "mds.py",
+ "pdf": "Myelodysplastic Syndromes.pdf",
+ "title": "Myelodysplastic syndromes",
+ "subtitle": "Clonal stem-cell disorders with <b>ineffective hematopoiesis</b> &rarr; cytopenias, dysplasia, and variable AML risk &middot; blasts <b>&lt;20%</b> &middot; everything collapses to <b>lower risk</b> (fix the cytopenias) vs <b>higher risk</b> (alter the natural history)",
+ "source": "Compiled from the Encyclopedia MDS review note and Fellowship Anki deck &middot; WHO 2022 / ICC &middot; IPSS-M (Bernard, NEJM Evid 2022) &middot; Bernard/Papaemmanuil molecular taxonomy (Blood 2024)",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "28%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Diagnosis",
+       "items": [
+        "<b>Triad:</b> (1) cytopenia + (2) morphologic <b>dysplasia in &gt;10%</b> of a lineage + (3) <b>clonality</b> (cytogenetic or molecular). &gt;90% show clonality on karyotype/NGS",
+        "Normal marrow cellularity &asymp; <b>100 &minus; age</b>. Most MDS is <b>hypercellular</b> with ineffective hematopoiesis; a hypoplastic variant overlaps aplastic anemia",
+        "<b>Dysplasia is not MDS without clonality.</b> Exclude mimics first: <b>B12, folate, copper</b> deficiency, HIV, alcohol, medications, post-chemotherapy marrow recovery",
+        "&dagger; Hypoplastic MDS overlaps <b>aplastic anemia and PNH</b> &mdash; send flow for a PNH clone",
+        "&dagger; Consider <b>VEXAS</b> (somatic <b>UBA1</b>) in older men with inflammatory features, macrocytic anemia and <b>vacuoles in myeloid and erythroid precursors</b>"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Classification (WHO 2022 / ICC)",
+       "rows": [
+        [
+         "Genetically defined",
+         "<b>SF3B1</b> (favorable, ring sideroblasts) &middot; <b>isolated del(5q)</b> (lenalidomide-responsive) &middot; <b>biallelic TP53</b> (poor)"
+        ],
+        [
+         "Blast categories",
+         "<b>MDS-IB1 = 5&ndash;9%</b> blasts &middot; <b>MDS-IB2 = 10&ndash;19%</b>"
+        ],
+        [
+         "<b>The AML border</b>",
+         "At <b>10&ndash;19% blasts with a defining lesion</b>, <b>ICC calls it MDS/AML</b> (managed as AML) while <b>WHO calls it MDS-IB2</b>"
+        ],
+        [
+         "&dagger; del(5q) phenotype",
+         "Macrocytic anemia, <b>normal or high platelets</b>, hypolobated megakaryocytes, female predominance"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Risk stratification",
+       "rows": [
+        [
+         "<b>IPSS-R</b> (2012)",
+         "Cytogenetic risk, marrow blast %, hemoglobin, platelets, <b>ANC</b> &rarr; 5 groups"
+        ],
+        [
+         "<b>IPSS-M</b> (2022)",
+         "Keeps blasts, Hgb, platelets, cytogenetics &middot; <b>drops ANC</b> &middot; <b>adds 31 gene mutations</b> &rarr; 6 groups"
+        ],
+        [
+         "Mutation weights",
+         "<b>TP53-multihit</b> highest risk &middot; <b>SF3B1</b> favorable &middot; adverse: ASXL1, RUNX1, SRSF2, U2AF1, EZH2, FLT3, KMT2A-PTD"
+        ]
+       ],
+       "footnote": "Calculator at mds-risk-model.com. IPSS-M still outperforms a purely molecular-subgroup model, so use it for risk scoring."
+      },
+      {
+       "type": "note",
+       "html": "<b>Molecular taxonomy (Bernard/Papaemmanuil, Blood 2024).</b> 3,233 patients, 152-gene panel &rarr; <b>16 molecular groups</b> covering 86%, median OS ranging <b>0.9&ndash;8.2 years</b>.<br><br><b>Favorable:</b> SF3B1 (14%, most common, OS ~6 yr) &middot; del(5q) &middot; CCUS-like &middot; ZRSR2 &middot; driver-negative. <b>Monocytic:</b> bi-TET2 (13%, CMML overlap). <b>Aggressive:</b> AML-like (OS ~0.9 yr, 40% 2-yr AML transformation) &middot; TP53-complex &middot; IDH-STAG2 &middot; &minus;7/SETBP1 &middot; EZH2-ASXL1 &middot; BCOR. <b>DDX41:</b> high blasts and high transformation <b>but no excess mortality</b>.<br><br>Take-home: the prognostic weight of <b>blast %</b> depends on genetic subtype &mdash; but <b>IPSS-M still outperforms</b> a groups-only model, so the taxonomy informs biology rather than replacing risk scoring."
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Lower risk &mdash; goal is fixing cytopenias",
+         "color": "teal",
+         "boxes": [
+          [
+           "Symptomatic anemia",
+           [
+            "<b>serum EPO &lt;500</b> + low transfusion burden",
+            "&rarr; erythropoiesis-stimulating agent",
+            "(epoetin or darbepoetin)"
+           ]
+          ],
+          [
+           "By biomarker",
+           [
+            "<b>isolated del(5q)</b> &rarr; lenalidomide",
+            "<b>ring sideroblasts / SF3B1</b> &rarr; luspatercept",
+            "ESA-refractory non-del(5q) &rarr; imetelstat"
+           ]
+          ],
+          [
+           "Hypoplastic or younger",
+           [
+            "immunosuppression: ATG &plusmn; cyclosporine"
+           ]
+          ],
+          [
+           "Throughout",
+           [
+            "transfusions; <b>iron chelation</b> if chronically",
+            "transfused; infection prophylaxis"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Higher risk &mdash; goal is altering natural history",
+         "color": "coral",
+         "boxes": [
+          [
+           "Hypomethylating agent",
+           [
+            "<b>azacitidine</b> (or decitabine)",
+            "&dagger; give <b>&ge;4&ndash;6 cycles before judging response</b>",
+            "AZA-001: OS 24.5 vs 15 months"
+           ]
+          ],
+          [
+           "Transplant-eligible",
+           [
+            "<b>allogeneic HSCT is the only cure</b>",
+            "&dagger; timing driven by IPSS-M &mdash; do not wait for",
+            "AML transformation in higher-risk disease"
+           ]
+          ],
+          [
+           "TP53-multihit",
+           [
+            "poor with all standard therapy",
+            "&rarr; prioritize clinical trial or transplant"
+           ]
+          ],
+          [
+           "&dagger; After HMA failure",
+           [
+            "dismal &mdash; clinical trial or transplant;",
+            "no established standard salvage"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "39%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Biomarker / setting &rarr; therapy",
+       "headers": [
+        "Setting",
+        "Therapy",
+        "Key trial"
+       ],
+       "widths": [
+        "30%",
+        "",
+        "24%"
+       ],
+       "rows": [
+        [
+         "Lower risk, EPO &lt;500, low transfusion burden",
+         "Erythropoiesis-stimulating agent",
+         "&mdash;"
+        ],
+        [
+         "Lower risk, <b>isolated del(5q)</b>",
+         "<b>Lenalidomide</b>",
+         "MDS-003 / MDS-004"
+        ],
+        [
+         "Lower risk, transfusion-dependent, <b>ring sideroblasts / SF3B1</b>",
+         "<b>Luspatercept</b> &mdash; activin receptor II ligand trap, improves late-stage erythropoiesis",
+         "MEDALIST; <b>COMMANDS</b> (beat epoetin alfa first-line)"
+        ],
+        [
+         "Lower risk, ESA-refractory, <b>non-del(5q)</b>",
+         "<b>Imetelstat</b> &mdash; telomerase inhibitor",
+         "IMerge (FDA-approved 2024)"
+        ],
+        [
+         "Hypoplastic / younger lower risk",
+         "Immunosuppression (ATG &plusmn; cyclosporine)",
+         "&mdash;"
+        ],
+        [
+         "<b>Higher risk</b>",
+         "<b>Azacitidine</b> or decitabine",
+         "<b>AZA-001</b> &mdash; OS benefit"
+        ],
+        [
+         "Higher risk, transplant-eligible",
+         "<b>Allogeneic HSCT</b> &mdash; the only curative option",
+         "&mdash;"
+        ],
+        [
+         "<b>TP53-multihit</b>",
+         "Poor with everything &rarr; trial or transplant",
+         "&mdash;"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Trials",
+       "rows": [
+        [
+         "<b>CALGB 9221</b> (2002)",
+         "The <b>first RCT</b> of azacitidine vs supportive care &mdash; higher response and <b>delayed transformation to AML or death</b>. The disease-modifying signal (Silverman, JCO)"
+        ],
+        [
+         "<b>AZA-001</b> (2009)",
+         "Practice-defining &mdash; <b>overall survival benefit</b> in higher-risk MDS, median OS <b>24.5 vs 15 months</b> (Fenaux, Lancet Oncol)"
+        ],
+        [
+         "&dagger; <b>Decitabine</b> (D-0007, EORTC 06011)",
+         "Improved response and delayed AML progression but <b>no OS benefit</b>. Caveat: decitabine was capped at 6 cycles (median 4) while azacitidine continued to progression (median 9). Practically, <b>azacitidine is the HMA with an OS benefit</b>"
+        ],
+        [
+         "<b>MDS-003 / MDS-004</b>",
+         "Lenalidomide in transfusion-dependent lower-risk <b>del(5q)</b> &mdash; ~67% transfusion independence (List, NEJM 2006)"
+        ],
+        [
+         "<b>MEDALIST</b> (2020)",
+         "Luspatercept after ESA failure, ring sideroblasts / SF3B1 &mdash; transfusion independence <b>38% vs 13%</b>"
+        ],
+        [
+         "<b>COMMANDS</b> (2023)",
+         "Luspatercept <b>beat epoetin alfa first-line</b> &mdash; ~59% vs ~31%"
+        ],
+        [
+         "<b>IMerge</b> (2024)",
+         "Imetelstat in ESA-refractory non-del(5q) &mdash; 8-week transfusion independence <b>40% vs 15%</b>"
+        ],
+        [
+         "&dagger; <b>BMT CTN 1102</b>",
+         "Donor vs no-donor in higher-risk MDS age 50&ndash;75 &mdash; 3-yr OS <b>47.9% vs 26.6%</b>. The evidence for transplanting older patients (Nakamura, JCO 2021)"
+        ],
+        [
+         "&dagger; <b>VERONA</b> (2025)",
+         "Venetoclax + azacitidine in higher-risk MDS <b>missed its OS endpoint</b> (22.2 vs 21.7 mo, HR 0.91) despite higher response rates &mdash; <b>ven/aza is standard in AML but not MDS</b>"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Diagnosis",
+  "Classification (WHO 2022 / ICC)",
+  "Risk stratification",
+  "Treatment pathway",
+  "Biomarker / setting &rarr; therapy",
+  "Trials"
+ ],
+ "text": "Myelodysplastic syndromes Clonal stem-cell disorders with ineffective hematopoiesis → cytopenias, dysplasia, and variable AML risk · blasts <20% · everything collapses to lower risk (fix the cytopenias) vs higher risk (alter the natural history) Compiled from the Encyclopedia MDS review note and Fellowship Anki deck · WHO 2022 / ICC · IPSS-M (Bernard, NEJM Evid 2022) · Bernard/Papaemmanuil molecular taxonomy (Blood 2024) Diagnosis Triad: (1) cytopenia + (2) morphologic dysplasia in >10% of a lineage + (3) clonality (cytogenetic or molecular). >90% show clonality on karyotype/NGS Normal marrow cellularity &asymp; 100 − age . Most MDS is hypercellular with ineffective hematopoiesis; a hypoplastic variant overlaps aplastic anemia Dysplasia is not MDS without clonality. Exclude mimics first: B12, folate, copper deficiency, HIV, alcohol, medications, post-chemotherapy marrow recovery † Hypoplastic MDS overlaps aplastic anemia and PNH — send flow for a PNH clone † Consider VEXAS (somatic UBA1 ) in older men with inflammatory features, macrocytic anemia and vacuoles in myeloid and erythroid precursors Classification (WHO 2022 / ICC) Genetically defined SF3B1 (favorable, ring sideroblasts) · isolated del(5q) (lenalidomide-responsive) · biallelic TP53 (poor) Blast categories MDS-IB1 = 5–9% blasts · MDS-IB2 = 10–19% The AML border At 10–19% blasts with a defining lesion , ICC calls it MDS/AML (managed as AML) while WHO calls it MDS-IB2 † del(5q) phenotype Macrocytic anemia, normal or high platelets , hypolobated megakaryocytes, female predominance Risk stratification IPSS-R (2012) Cytogenetic risk, marrow blast %, hemoglobin, platelets, ANC → 5 groups IPSS-M (2022) Keeps blasts, Hgb, platelets, cytogenetics · drops ANC · adds 31 gene mutations → 6 groups Mutation weights TP53-multihit highest risk · SF3B1 favorable · adverse: ASXL1, RUNX1, SRSF2, U2AF1, EZH2, FLT3, KMT2A-PTD Calculator at mds-risk-model.com. IPSS-M still outperforms a purely molecular-subgroup model, so use it for risk scoring. Molecular taxonomy (Bernard/Papaemmanuil, Blood 2024). 3,233 patients, 152-gene panel → 16 molecular groups covering 86%, median OS ranging 0.9–8.2 years . Favorable: SF3B1 (14%, most common, OS ~6 yr) · del(5q) · CCUS-like · ZRSR2 · driver-negative. Monocytic: bi-TET2 (13%, CMML overlap). Aggressive: AML-like (OS ~0.9 yr, 40% 2-yr AML transformation) · TP53-complex · IDH-STAG2 · −7/SETBP1 · EZH2-ASXL1 · BCOR. DDX41: high blasts and high transformation but no excess mortality . Take-home: the prognostic weight of blast % depends on genetic subtype — but IPSS-M still outperforms a groups-only model, so the taxonomy informs biology rather than replacing risk scoring. Treatment pathway Lower risk — goal is fixing cytopenias Symptomatic anemia serum EPO <500 + low transfusion burden → erythropoiesis-stimulating agent (epoetin or darbepoetin) By biomarker isolated del(5q) → lenalidomide ring sideroblasts / SF3B1 → luspatercept ESA-refractory non-del(5q) → imetelstat Hypoplastic or younger immunosuppression: ATG ± cyclosporine Throughout transfusions; iron chelation if chronically transfused; infection prophylaxis Higher risk — goal is altering natural history Hypomethylating agent azacitidine (or decitabine) † give ≥4–6 cycles before judging response AZA-001: OS 24.5 vs 15 months Transplant-eligible allogeneic HSCT is the only cure † timing driven by IPSS-M — do not wait for AML transformation in higher-risk disease TP53-multihit poor with all standard therapy → prioritize clinical trial or transplant † After HMA failure dismal — clinical trial or transplant; no established standard salvage Biomarker / setting → therapy Setting Therapy Key trial Lower risk, EPO <500, low transfusion burden Erythropoiesis-stimulating agent — Lower risk, isolated del(5q) Lenalidomide MDS-003 / MDS-004 Lower risk, transfusion-dependent, ring sideroblasts / SF3B1 Luspatercept — activin receptor II ligand trap, improves late-stage erythropoiesis MEDALIST; COMMANDS (beat epoetin alfa first-line) Lower risk, ESA-refractory, non-del(5q) Imetelstat — telomerase inhibitor IMerge (FDA-approved 2024) Hypoplastic / younger lower risk Immunosuppression (ATG ± cyclosporine) — Higher risk Azacitidine or decitabine AZA-001 — OS benefit Higher risk, transplant-eligible Allogeneic HSCT — the only curative option — TP53-multihit Poor with everything → trial or transplant — Trials CALGB 9221 (2002) The first RCT of azacitidine vs supportive care — higher response and delayed transformation to AML or death . The disease-modifying signal (Silverman, JCO) AZA-001 (2009) Practice-defining — overall survival benefit in higher-risk MDS, median OS 24.5 vs 15 months (Fenaux, Lancet Oncol) † Decitabine (D-0007, EORTC 06011) Improved response and delayed AML progression but no OS benefit . Caveat: decitabine was capped at 6 cycles (median 4) while azacitidine continued to progression (median 9). Practically, azacitidine is the HMA with an OS benefit MDS-003 / MDS-004 Lenalidomide in transfusion-dependent lower-risk del(5q) — ~67% transfusion independence (List, NEJM 2006) MEDALIST (2020) Luspatercept after ESA failure, ring sideroblasts / SF3B1 — transfusion independence 38% vs 13% COMMANDS (2023) Luspatercept beat epoetin alfa first-line — ~59% vs ~31% IMerge (2024) Imetelstat in ESA-refractory non-del(5q) — 8-week transfusion independence 40% vs 15% † BMT CTN 1102 Donor vs no-donor in higher-risk MDS age 50–75 — 3-yr OS 47.9% vs 26.6% . The evidence for transplanting older patients (Nakamura, JCO 2021) † VERONA (2025) Venetoclax + azacitidine in higher-risk MDS missed its OS endpoint (22.2 vs 21.7 mo, HR 0.91) despite higher response rates — ven/aza is standard in AML but not MDS"
+}

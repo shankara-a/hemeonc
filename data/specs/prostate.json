@@ -1,0 +1,313 @@
+{
+ "disease": "prostate",
+ "spec_file": "prostate.py",
+ "pdf": "Prostate Cancer.pdf",
+ "title": "Prostate cancer",
+ "subtitle": "Managed on two axes &mdash; <b>extent</b> (M0 vs M1) crossed with <b>castration status</b> (sensitive vs resistant). Castration-resistant = progression despite testosterone &lt;50 ng/dL &mdash; <b>always confirm a castrate level before applying the label</b>",
+ "source": "Stanford Oncology Handbook 2025, Prostate Cancer (Chien J, Parikh D, Srinivas S) &middot; NCCN &middot; items marked &dagger; are outside the handbook chapter",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "27%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "Risk inputs: <b>cT stage, Grade Group, PSA</b>, number/% positive cores, PSA density",
+        "Imaging by risk: <b>none</b> for very low / low / favorable intermediate &middot; soft-tissue &plusmn; bone for unfavorable intermediate &middot; <b>bone AND soft-tissue for high / very high</b>",
+        "<b>Germline</b> (ATM, BRCA1/2, CHEK2, HOXB13, TP53): metastatic or node+, high/very-high risk, Ashkenazi ancestry, family history; consider if age &le;55",
+        "<b>Somatic</b>: HRR in metastatic disease; MSI-H/dMMR and TMB in mCRPC"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Grade group &amp; risk",
+       "rows": [
+        [
+         "Grade Group",
+         "GG1 &le;6 &middot; GG2 <b>3+4</b> &middot; GG3 <b>4+3</b> &middot; GG4 = 8 &middot; GG5 = 9&ndash;10"
+        ],
+        [
+         "Very low / low",
+         "T1c + GG1 + PSA&lt;10 + &lt;3 cores &le;50% + PSAd &lt;0.15 &nbsp;/&nbsp; cT1&ndash;T2a + GG1 + PSA &lt;10"
+        ],
+        [
+         "Favorable interm.",
+         "1 IRF + GG1&ndash;2 + &lt;50% cores positive"
+        ],
+        [
+         "Unfavorable interm.",
+         "2&ndash;3 IRFs, <b>or</b> GG3, <b>or</b> &ge;50% cores positive"
+        ],
+        [
+         "High",
+         "cT3&ndash;T4, <b>or</b> GG4&ndash;5, <b>or</b> PSA &gt;20"
+        ],
+        [
+         "Very high",
+         "&ge;2 of: cT3&ndash;T4, GG4&ndash;5, PSA &gt;40"
+        ]
+       ],
+       "footnote": "IRF (intermediate risk factor) = cT2b&ndash;cT2c, GG2 or 3, PSA 10&ndash;20."
+      },
+      {
+       "type": "table",
+       "heading": "ADT duration with RT &mdash; the evidence",
+       "rows": [
+        [
+         "RTOG 9408",
+         "RT &plusmn; <b>4 mo</b> ADT, mostly intermediate risk &mdash; OS + cause-specific benefit; <b>established short course</b>"
+        ],
+        [
+         "EORTC 22863",
+         "RT &plusmn; <b>3 yr</b> ADT, locally advanced &mdash; 10-yr OS <b>58% vs 40%</b>"
+        ],
+        [
+         "EORTC 22961 &middot; RTOG 9202 &middot; DART",
+         "<b>6 mo vs 3 yr</b> &mdash; 6 mo <b>not non-inferior</b> (5-yr OS 81% vs 85%); RTOG 9202 and DART likewise favor the long course, especially <b>Gleason 8&ndash;10</b>"
+        ],
+        [
+         "PCS IV (Nabid)",
+         "<b>18 vs 36 mo</b> in high risk &mdash; <b>18 mo non-inferior</b>"
+        ],
+        [
+         "&dagger; JAMA Oncol 2026",
+         "IPD meta-analysis, 13 trials, n=10,266 &mdash; benefit is <b>non-linear and plateaus after ~12 mo</b>: intermediate &lt;6 mo, high ~12 mo for most"
+        ]
+       ],
+       "footnote": "PCS IV and the 2026 meta-analysis both argue the shorter end of 18&ndash;36 months is usually enough."
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>ADT continues indefinitely</b> &mdash; castration resistance means the AR pathway is still active, not abandoned",
+        "&dagger; Rapid progression with a <b>disproportionately low PSA</b> &rarr; suspect neuroendocrine transformation; biopsy and consider platinum"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Localized",
+         "color": "teal",
+         "boxes": [
+          [
+           "ADT duration with radiation",
+           [
+            "unfavorable intermediate: <b>4&ndash;6 mo</b> (RTOG 9408)",
+            "high / very high + EBRT: <b>18&ndash;36 mo</b> (EORTC 22961)",
+            "EBRT + brachytherapy boost: ~12 months",
+            "very high or node+: add abiraterone &times; 2 yr"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "M0 &mdash; BCR and nmCRPC",
+         "color": "blue",
+         "boxes": [
+          [
+           "Castrate or rising PSA, no mets",
+           [
+            "BCR: enzalutamide 160 mg &plusmn; ADT (EMBARK)",
+            "nmCRPC: apalutamide, darolutamide, enza",
+            "(SPARTAN / ARAMIS / PROSPER) &mdash; endpoint is MFS"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "M1 castration-sensitive",
+         "color": "purple",
+         "boxes": [
+          [
+           "ADT alone is never enough",
+           [
+            "low volume: ADT + ARPI + RT to the primary",
+            "<b>high volume: add docetaxel &times;6 (CHAARTED)</b>",
+            "&rarr; triplet: PEACE-1 (abi), ARASENS (daro)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "M1 castration-resistant",
+         "color": "coral",
+         "boxes": [
+          [
+           "Rotate mechanisms",
+           [
+            "ARPI &rarr; docetaxel &rarr; cabazitaxel",
+            "<b>do not follow one ARPI with another</b>",
+            "BRCA/HRR: PARP &middot; bone only: radium-223",
+            "PSMA-positive: Lu-PSMA &middot; MSI-H: pembro"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "39%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "ADT and hormonal agents",
+       "headers": [
+        "Agent",
+        "Dosing",
+        "Schedule"
+       ],
+       "widths": [
+        "26%",
+        "",
+        "20%"
+       ],
+       "rows": [
+        [
+         "Leuprolide",
+         "7.5 / 22.5 / 30 / 45 mg IM or SQ",
+         "q4 / 12 / 16 / 24 wk"
+        ],
+        [
+         "Goserelin &middot; triptorelin",
+         "3.8 or 10.6 mg IM &middot; 3.75 or 11.25 mg IM",
+         "q4 / q12 wk"
+        ],
+        [
+         "<b>Degarelix</b> (antagonist)",
+         "240 mg SQ load, then 80 mg SQ",
+         "q4 wk"
+        ],
+        [
+         "<b>Relugolix</b> (oral antagonist)",
+         "360 mg PO load, then 120 mg PO (HERO)",
+         "daily"
+        ],
+        [
+         "Bicalutamide",
+         "50 mg PO (150 mg high-dose)",
+         "daily"
+        ],
+        [
+         "Abiraterone",
+         "1000 mg + prednisone 5 mg daily (M1 CSPC) or 5 mg BID (CRPC)",
+         "daily"
+        ],
+        [
+         "Enzalutamide &middot; apalutamide &middot; darolutamide",
+         "160 mg daily &middot; 240 mg daily &middot; 600 mg BID",
+         "PO"
+        ]
+       ],
+       "footnote": "<b>LHRH agonists cause a testosterone flare</b> &mdash; cover with bicalutamide started 7 days prior, or use an antagonist. Antagonists reach castrate levels in ~3 days. Low-cost option: abiraterone 250 mg with a low-fat breakfast."
+      },
+      {
+       "type": "table",
+       "heading": "Chemotherapy, radiopharmaceuticals, immunotherapy",
+       "headers": [
+        "Agent",
+        "Dosing",
+        "Schedule"
+       ],
+       "widths": [
+        "26%",
+        "",
+        "20%"
+       ],
+       "rows": [
+        [
+         "Docetaxel (M1 CSPC)",
+         "75 mg/m&sup2; IV &mdash; <b>without</b> prednisone, 6 doses (CHAARTED)",
+         "q3wk"
+        ],
+        [
+         "Docetaxel (mCRPC)",
+         "75 mg/m&sup2; IV + prednisone 5 mg BID",
+         "q3wk"
+        ],
+        [
+         "Cabazitaxel",
+         "20 or 25 mg/m&sup2; + prednisone (G-CSF if 25)",
+         "q3wk"
+        ],
+        [
+         "<b>Radium-223</b>",
+         "50 kBq/kg IV &times; 6 &mdash; symptomatic bone mets, no visceral (ALSYMPCA)",
+         "q4wk"
+        ],
+        [
+         "<b>Lu-177-PSMA-617</b>",
+         "7.4 GBq IV &times; 4&ndash;6 &mdash; PSMA-positive on PET (VISION)",
+         "q6wk"
+        ],
+        [
+         "Sipuleucel-T",
+         "IV &times; 3 doses &mdash; minimally symptomatic mCRPC",
+         "q2wk"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Biomarker &rarr; therapy",
+       "headers": [
+        "Alteration",
+        "Therapy"
+       ],
+       "widths": [
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "BRCA, 1L mCRPC",
+         "Niraparib 200 + abiraterone (MAGNITUDE) &middot; olaparib 300 BID + abiraterone (PROpel)"
+        ],
+        [
+         "HRR, 1L mCRPC",
+         "Talazoparib 0.5 mg + enzalutamide (TALAPRO-2)"
+        ],
+        [
+         "HRR, <b>post-ARPI</b>",
+         "Olaparib 300 mg BID (PROfound) &middot; rucaparib 600 mg BID (TRITON2)"
+        ],
+        [
+         "MSI-H / dMMR / TMB &gt;10",
+         "Pembrolizumab 200 mg q3wk"
+        ]
+       ],
+       "footnote": "PARP <b>monotherapy</b> belongs in the post-ARPI setting; PARP <b>+ ARPI combinations</b> are first-line."
+      },
+      {
+       "type": "note",
+       "html": "&dagger; <b>Bone health:</b> baseline DEXA before starting long-term ADT; bone-protective agent for CRPC bone metastases. <b>Do not combine radium-223 with abiraterone</b> &mdash; ERA-223 showed more fractures and deaths."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Workup",
+  "Grade group &amp; risk",
+  "ADT duration with RT &mdash; the evidence",
+  "Pearls",
+  "Treatment pathway",
+  "ADT and hormonal agents",
+  "Chemotherapy, radiopharmaceuticals, immunotherapy",
+  "Biomarker &rarr; therapy"
+ ],
+ "text": "Prostate cancer Managed on two axes — extent (M0 vs M1) crossed with castration status (sensitive vs resistant). Castration-resistant = progression despite testosterone <50 ng/dL — always confirm a castrate level before applying the label Stanford Oncology Handbook 2025, Prostate Cancer (Chien J, Parikh D, Srinivas S) · NCCN · items marked † are outside the handbook chapter Workup Risk inputs: cT stage, Grade Group, PSA , number/% positive cores, PSA density Imaging by risk: none for very low / low / favorable intermediate · soft-tissue ± bone for unfavorable intermediate · bone AND soft-tissue for high / very high Germline (ATM, BRCA1/2, CHEK2, HOXB13, TP53): metastatic or node+, high/very-high risk, Ashkenazi ancestry, family history; consider if age ≤55 Somatic : HRR in metastatic disease; MSI-H/dMMR and TMB in mCRPC Grade group & risk Grade Group GG1 ≤6 · GG2 3+4 · GG3 4+3 · GG4 = 8 · GG5 = 9–10 Very low / low T1c + GG1 + PSA<10 + <3 cores ≤50% + PSAd <0.15 / cT1–T2a + GG1 + PSA <10 Favorable interm. 1 IRF + GG1–2 + <50% cores positive Unfavorable interm. 2–3 IRFs, or GG3, or ≥50% cores positive High cT3–T4, or GG4–5, or PSA >20 Very high ≥2 of: cT3–T4, GG4–5, PSA >40 IRF (intermediate risk factor) = cT2b–cT2c, GG2 or 3, PSA 10–20. ADT duration with RT — the evidence RTOG 9408 RT ± 4 mo ADT, mostly intermediate risk — OS + cause-specific benefit; established short course EORTC 22863 RT ± 3 yr ADT, locally advanced — 10-yr OS 58% vs 40% EORTC 22961 · RTOG 9202 · DART 6 mo vs 3 yr — 6 mo not non-inferior (5-yr OS 81% vs 85%); RTOG 9202 and DART likewise favor the long course, especially Gleason 8–10 PCS IV (Nabid) 18 vs 36 mo in high risk — 18 mo non-inferior † JAMA Oncol 2026 IPD meta-analysis, 13 trials, n=10,266 — benefit is non-linear and plateaus after ~12 mo : intermediate <6 mo, high ~12 mo for most PCS IV and the 2026 meta-analysis both argue the shorter end of 18–36 months is usually enough. Pearls ADT continues indefinitely — castration resistance means the AR pathway is still active, not abandoned † Rapid progression with a disproportionately low PSA → suspect neuroendocrine transformation; biopsy and consider platinum Treatment pathway Localized ADT duration with radiation unfavorable intermediate: 4–6 mo (RTOG 9408) high / very high + EBRT: 18–36 mo (EORTC 22961) EBRT + brachytherapy boost: ~12 months very high or node+: add abiraterone × 2 yr M0 — BCR and nmCRPC Castrate or rising PSA, no mets BCR: enzalutamide 160 mg ± ADT (EMBARK) nmCRPC: apalutamide, darolutamide, enza (SPARTAN / ARAMIS / PROSPER) — endpoint is MFS M1 castration-sensitive ADT alone is never enough low volume: ADT + ARPI + RT to the primary high volume: add docetaxel ×6 (CHAARTED) → triplet: PEACE-1 (abi), ARASENS (daro) M1 castration-resistant Rotate mechanisms ARPI → docetaxel → cabazitaxel do not follow one ARPI with another BRCA/HRR: PARP · bone only: radium-223 PSMA-positive: Lu-PSMA · MSI-H: pembro ADT and hormonal agents Agent Dosing Schedule Leuprolide 7.5 / 22.5 / 30 / 45 mg IM or SQ q4 / 12 / 16 / 24 wk Goserelin · triptorelin 3.8 or 10.6 mg IM · 3.75 or 11.25 mg IM q4 / q12 wk Degarelix (antagonist) 240 mg SQ load, then 80 mg SQ q4 wk Relugolix (oral antagonist) 360 mg PO load, then 120 mg PO (HERO) daily Bicalutamide 50 mg PO (150 mg high-dose) daily Abiraterone 1000 mg + prednisone 5 mg daily (M1 CSPC) or 5 mg BID (CRPC) daily Enzalutamide · apalutamide · darolutamide 160 mg daily · 240 mg daily · 600 mg BID PO LHRH agonists cause a testosterone flare — cover with bicalutamide started 7 days prior, or use an antagonist. Antagonists reach castrate levels in ~3 days. Low-cost option: abiraterone 250 mg with a low-fat breakfast. Chemotherapy, radiopharmaceuticals, immunotherapy Agent Dosing Schedule Docetaxel (M1 CSPC) 75 mg/m² IV — without prednisone, 6 doses (CHAARTED) q3wk Docetaxel (mCRPC) 75 mg/m² IV + prednisone 5 mg BID q3wk Cabazitaxel 20 or 25 mg/m² + prednisone (G-CSF if 25) q3wk Radium-223 50 kBq/kg IV × 6 — symptomatic bone mets, no visceral (ALSYMPCA) q4wk Lu-177-PSMA-617 7.4 GBq IV × 4–6 — PSMA-positive on PET (VISION) q6wk Sipuleucel-T IV × 3 doses — minimally symptomatic mCRPC q2wk Biomarker → therapy Alteration Therapy BRCA, 1L mCRPC Niraparib 200 + abiraterone (MAGNITUDE) · olaparib 300 BID + abiraterone (PROpel) HRR, 1L mCRPC Talazoparib 0.5 mg + enzalutamide (TALAPRO-2) HRR, post-ARPI Olaparib 300 mg BID (PROfound) · rucaparib 600 mg BID (TRITON2) MSI-H / dMMR / TMB >10 Pembrolizumab 200 mg q3wk PARP monotherapy belongs in the post-ARPI setting; PARP + ARPI combinations are first-line. † Bone health: baseline DEXA before starting long-term ADT; bone-protective agent for CRPC bone metastases. Do not combine radium-223 with abiraterone — ERA-223 showed more fractures and deaths."
+}

@@ -1,0 +1,345 @@
+{
+ "disease": "testicular",
+ "spec_file": "testicular.py",
+ "pdf": "Testicular Cancer.pdf",
+ "title": "Testicular germ cell tumor",
+ "subtitle": "Most common solid malignancy in males 15&ndash;35 &middot; &gt;90% cure, &gt;95% 5-yr survival &mdash; chemotherapy is curative even in advanced disease &middot; lung is the commonest met site (62%); liver (16%) and brain (7%) are negative prognostic factors",
+ "source": "Stanford Oncology Handbook 2025, Testicular Cancer (Moore K, Glover M, Shah S) &middot; NCCN v1.2025 &middot; trial data verified against the primary publications",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "28%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "Suspicious mass: H&amp;P, AFP, bHCG, LDH, chemistry, testicular ultrasound",
+        "<b>Repeat all markers after orchiectomy</b> &mdash; TNM staging uses post-orchiectomy values",
+        "<b>Pure seminoma</b> (seminoma histology + normal AFP; bHCG may be elevated): abdominal/pelvic CT + chest X-ray; chest CT only if abdominal CT positive or CXR abnormal",
+        "<b>Non-seminoma</b> (incl. mixed, and seminoma histology with elevated AFP): chest/abdominal/pelvic CT up front",
+        "Both: brain MRI if clinically indicated &middot; <b>sperm banking</b>",
+        "Nodal spread is predictable &mdash; right-sided to inter-aortocaval, left-sided to para-aortic"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Histology &rarr; marker pattern",
+       "headers": [
+        "Subtype",
+        "Markers"
+       ],
+       "widths": [
+        "31%",
+        ""
+       ],
+       "rows": [
+        [
+         "Seminoma",
+         "AFP <b>always normal</b>; hCG &uarr; in ~15&ndash;20%"
+        ],
+        [
+         "Embryonal carcinoma",
+         "AFP and/or hCG; commonest mixed component"
+        ],
+        [
+         "Yolk sac tumor",
+         "<b>AFP</b> &mdash; the classic AFP producer"
+        ],
+        [
+         "Choriocarcinoma",
+         "hCG, often &gt;50,000; hemorrhage, brain mets"
+        ],
+        [
+         "Teratoma",
+         "<b>neither</b> &mdash; marker-negative, chemoresistant"
+        ],
+        [
+         "Mixed germ cell tumor",
+         "reflects whichever components are present"
+        ]
+       ],
+       "footnote": "Seminoma hCG comes from syncytiotrophoblasts and is compatible with pure seminoma &mdash; <b>only AFP reclassifies</b>. Very high hCG in choriocarcinoma can cause hyperthyroidism (TSH receptor cross-reactivity) and gynecomastia. LDH is non-specific and tracks tumor bulk. Teratoma is marker-negative and chemoresistant &mdash; the reason post-chemotherapy masses must be resected."
+      },
+      {
+       "type": "table",
+       "heading": "Serum tumor markers (S)",
+       "headers": [
+        "S",
+        "LDH",
+        "hCG",
+        "AFP"
+       ],
+       "widths": [
+        "12%",
+        "28%",
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "S1",
+         "&lt;1.5&times; N",
+         "&lt;5,000",
+         "&lt;1,000"
+        ],
+        [
+         "S2",
+         "1.5&ndash;10&times; N",
+         "5,000&ndash;50,000",
+         "1,000&ndash;10,000"
+        ],
+        [
+         "S3",
+         "&gt;10&times; N",
+         "&gt;50,000",
+         "&gt;10,000"
+        ]
+       ],
+       "footnote": "hCG mIU/mL, AFP ng/mL. pT1a/pT1b (&lt;3 vs &ge;3 cm) applies to pure seminoma only. cN1 &le;2 cm &middot; cN2 &gt;2&ndash;5 cm &middot; cN3 &gt;5 cm. M1a nodal/pulmonary &middot; M1b non-pulmonary visceral."
+      },
+      {
+       "type": "table",
+       "heading": "IGCCCG risk &mdash; the asymmetry",
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "Non-seminoma",
+         "<b>Good:</b> testis/retroperitoneal primary, no non-pulmonary visceral mets, AFP&lt;1,000 + hCG&lt;5,000 + LDH&lt;1.5&times;. <b>Intermediate:</b> markers in the middle band. <b>Poor:</b> mediastinal primary, non-pulmonary visceral mets, or AFP&gt;10,000 / hCG&gt;50,000 / LDH&gt;10&times;"
+        ],
+        [
+         "Seminoma",
+         "<b>Good:</b> any primary, no non-pulmonary visceral mets, normal AFP. <b>Intermediate:</b> non-pulmonary visceral mets. <b>There is no poor-risk category</b> &mdash; only AFP matters, not hCG or LDH"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Stage I",
+         "color": "teal",
+         "boxes": [
+          [
+           "Seminoma",
+           [
+            "~85% cured by orchiectomy alone",
+            "<b>surveillance strongly preferred</b>",
+            "alt: carboplatin &times;1&ndash;2 or RT (risk factor &gt;4 cm)"
+           ]
+          ],
+          [
+           "Non-seminoma",
+           [
+            "orchiectomy cures ~70%; relapses highly curable",
+            "surveillance if no risk factors",
+            "RFs (LVI, cord/scrotal, embryonal): <b>BEP &times;1</b>"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Stage IIA&ndash;IIB",
+         "color": "blue",
+         "boxes": [
+          [
+           "Both histologies",
+           [
+            "<b>BEP &times;3 or EP &times;4</b>",
+            "seminoma: RT or RPLND if IIA / non-bulky IIB",
+            "non-seminoma: or nerve-sparing RPLND"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Stage IIC&ndash;III",
+         "color": "purple",
+         "boxes": [
+          [
+           "By IGCCCG risk",
+           [
+            "good risk: <b>BEP &times;3 or EP &times;4</b>",
+            "intermediate or poor: <b>BEP &times;4 or VIP &times;4</b>",
+            "seminoma IIC treated as BEP &times;3 / EP &times;4"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Residual mass and relapse",
+         "color": "coral",
+         "boxes": [
+          [
+           "Rules differ by histology",
+           [
+            "seminoma &gt;3 cm: <b>PET</b> &mdash; avid resect, non-avid observe",
+            "non-seminoma: <b>resect ALL masses &gt;1 cm</b>",
+            "~10% viable cancer, 40% teratoma, 50% necrosis",
+            "relapse: resect, else TIP/VeIP &times;4 or HDCT"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>The AFP rule overrides histology.</b> Pure seminoma requires seminoma histology <b>and</b> a normal AFP; seminoma histology with an elevated AFP is worked up and treated as a non-seminoma. Elevated bHCG is compatible with pure seminoma",
+        "<b>Dose holds and reductions are discouraged in the curative (1st and 2nd line) setting</b> &mdash; delay only for severe active infection or illness. The one stated exception: hold or reduce cisplatin for creatinine &gt;1.5 (EP)",
+        "<b>Residual mass rules differ by histology</b> &mdash; PET works for seminoma but not non-seminoma, because teratoma is not FDG-avid yet is chemoresistant and must be resected",
+        "Non-pulmonary visceral metastases define <b>intermediate-risk seminoma</b> and <b>poor-risk non-seminoma</b>",
+        "RT or RPLND remains an option only for stage IIA and non-bulky IIB seminoma (nodes &lt;3 cm)",
+        "Sperm banking before treatment; restage markers after orchiectomy"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "42%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimens &amp; dosing",
+       "headers": [
+        "Regimen",
+        "Dosing",
+        "Cycle"
+       ],
+       "widths": [
+        "17%",
+        "",
+        "14%"
+       ],
+       "rows": [
+        [
+         "BEP (Einhorn)",
+         "cisplatin 20/day d1&ndash;5 &middot; etoposide 100/day d1&ndash;5 &middot; bleomycin 30 units d1, 8, 15 &middot; filgrastim d6&ndash;12",
+         "q21d"
+        ],
+        [
+         "EP",
+         "etoposide 100/day d1&ndash;5 &middot; cisplatin 20/day d1&ndash;5 &middot; pegfilgrastim d5&rarr;6",
+         "q21d"
+        ],
+        [
+         "VIP",
+         "etoposide 75 &middot; ifosfamide 1200 &middot; cisplatin 20, all d1&ndash;5 &middot; mesna &middot; pegfilgrastim d6",
+         "q21d"
+        ],
+        [
+         "TIP (2L)",
+         "paclitaxel 250 d1 &middot; ifosfamide 1500 d2&ndash;5 &middot; cisplatin 25 d2&ndash;5 &middot; mesna",
+         "q21d"
+        ],
+        [
+         "VeIP (2L)",
+         "vinblastine 0.11 mg/kg d1&ndash;2 &middot; ifosfamide 1200 d1&ndash;5 &middot; cisplatin 20 d1&ndash;5 &middot; mesna",
+         "q21d"
+        ],
+        [
+         "HDCT",
+         "carboplatin 700 + etoposide 750 &mdash; days &minus;5, &minus;4, &minus;3 before stem-cell infusion, &times;2 cycles",
+         "with PBSC rescue"
+        ],
+        [
+         "3L options",
+         "gemcitabine + paclitaxel &plusmn; oxaliplatin &middot; oxaliplatin + irinotecan &middot; oral etoposide 50&ndash;100 mg d1&ndash;21",
+         ""
+        ],
+        [
+         "Pembrolizumab",
+         "200 mg q3wk (or 400 mg q6wk) &mdash; MSI-H, dMMR, or TMB &gt;10",
+         "q3wk"
+        ]
+       ],
+       "footnote": "All doses mg/m&sup2; unless stated. Growth factor support is built into every first- and second-line regimen; mesna with every ifosfamide-containing regimen."
+      },
+      {
+       "type": "table",
+       "heading": "Landmark trials",
+       "headers": [
+        "Trial",
+        "Result"
+       ],
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "IGCCCG 1997 &middot; upd. 2021",
+         "2021 (n=9,728): 5-yr OS good <b>96%</b> / int 89% / poor <b>67%</b> (was 91/79/48); adds LDH &gt;2.5&times; ULN"
+        ],
+        [
+         "Einhorn 1989 (SECSG)",
+         "<b>3 vs 4 BEP</b>, favorable risk &mdash; NED 98% vs 97%. n=184"
+        ],
+        [
+         "EORTC 30941 / TE20",
+         "<b>3 vs 4 BEP</b> and 5- vs 3-day &mdash; 2-yr PFS 90.4% vs 89.4%, equivalent"
+        ],
+        [
+         "Kondagunta 4&times;EP",
+         "Single-arm n=289, good risk &mdash; CR <b>98%</b>. Bleomycin-free option"
+        ],
+        [
+         "MRC TE19 / EORTC 30982",
+         "Stage I seminoma: <b>carboplatin AUC7 &times;1 non-inferior to RT</b> (5-yr RFS 94.7% vs 96.0%)"
+        ],
+        [
+         "MRC TE18 / EORTC 30942",
+         "Seminoma RT <b>20 Gy = 30 Gy</b>, less lethargy"
+        ],
+        [
+         "SWENOTECA",
+         "CS I non-sem <b>1&times;BEP</b>: 5-yr relapse <b>3.2% LVI+ / 1.6% LVI&minus;</b> vs 41.7% / 13.2% surveillance"
+        ],
+        [
+         "Kondagunta TIP",
+         "First salvage n=46 &mdash; durable CR <b>63%</b>"
+        ],
+        [
+         "TI-CE (Feldman)",
+         "High-dose + PBSC, n=107 &mdash; CR 50%, <b>5-yr DFS 47%</b>"
+        ],
+        [
+         "TIGER (A031102)",
+         "Ongoing phase 3, <b>TIP vs TI-CE</b> at first salvage, primary OS"
+        ]
+       ],
+       "footnote": "Phase 3 only for the BEP-cycle and seminoma-RT questions. SWENOTECA is population-based; Kondagunta TIP (ph 2), 4&times;EP and TI-CE (ph 1/2) are single-arm."
+      },
+      {
+       "type": "note",
+       "html": "<b>Biomarkers:</b> testicular cancer is <b>marker-driven, not biomarker-driven</b> &mdash; AFP, bHCG and LDH determine stage, risk group and response. The only biomarker-selected therapy in the chapter is pembrolizumab for MSI-H, dMMR, or TMB &gt;10."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Workup",
+  "Histology &rarr; marker pattern",
+  "Serum tumor markers (S)",
+  "IGCCCG risk &mdash; the asymmetry",
+  "Treatment pathway",
+  "Pearls",
+  "Regimens &amp; dosing",
+  "Landmark trials"
+ ],
+ "text": "Testicular germ cell tumor Most common solid malignancy in males 15–35 · >90% cure, >95% 5-yr survival — chemotherapy is curative even in advanced disease · lung is the commonest met site (62%); liver (16%) and brain (7%) are negative prognostic factors Stanford Oncology Handbook 2025, Testicular Cancer (Moore K, Glover M, Shah S) · NCCN v1.2025 · trial data verified against the primary publications Workup Suspicious mass: H&P, AFP, bHCG, LDH, chemistry, testicular ultrasound Repeat all markers after orchiectomy — TNM staging uses post-orchiectomy values Pure seminoma (seminoma histology + normal AFP; bHCG may be elevated): abdominal/pelvic CT + chest X-ray; chest CT only if abdominal CT positive or CXR abnormal Non-seminoma (incl. mixed, and seminoma histology with elevated AFP): chest/abdominal/pelvic CT up front Both: brain MRI if clinically indicated · sperm banking Nodal spread is predictable — right-sided to inter-aortocaval, left-sided to para-aortic Histology → marker pattern Subtype Markers Seminoma AFP always normal ; hCG &uarr; in ~15–20% Embryonal carcinoma AFP and/or hCG; commonest mixed component Yolk sac tumor AFP — the classic AFP producer Choriocarcinoma hCG, often >50,000; hemorrhage, brain mets Teratoma neither — marker-negative, chemoresistant Mixed germ cell tumor reflects whichever components are present Seminoma hCG comes from syncytiotrophoblasts and is compatible with pure seminoma — only AFP reclassifies . Very high hCG in choriocarcinoma can cause hyperthyroidism (TSH receptor cross-reactivity) and gynecomastia. LDH is non-specific and tracks tumor bulk. Teratoma is marker-negative and chemoresistant — the reason post-chemotherapy masses must be resected. Serum tumor markers (S) S LDH hCG AFP S1 <1.5× N <5,000 <1,000 S2 1.5–10× N 5,000–50,000 1,000–10,000 S3 >10× N >50,000 >10,000 hCG mIU/mL, AFP ng/mL. pT1a/pT1b (<3 vs ≥3 cm) applies to pure seminoma only. cN1 ≤2 cm · cN2 >2–5 cm · cN3 >5 cm. M1a nodal/pulmonary · M1b non-pulmonary visceral. IGCCCG risk — the asymmetry Non-seminoma Good: testis/retroperitoneal primary, no non-pulmonary visceral mets, AFP<1,000 + hCG<5,000 + LDH<1.5×. Intermediate: markers in the middle band. Poor: mediastinal primary, non-pulmonary visceral mets, or AFP>10,000 / hCG>50,000 / LDH>10× Seminoma Good: any primary, no non-pulmonary visceral mets, normal AFP. Intermediate: non-pulmonary visceral mets. There is no poor-risk category — only AFP matters, not hCG or LDH Treatment pathway Stage I Seminoma ~85% cured by orchiectomy alone surveillance strongly preferred alt: carboplatin ×1–2 or RT (risk factor >4 cm) Non-seminoma orchiectomy cures ~70%; relapses highly curable surveillance if no risk factors RFs (LVI, cord/scrotal, embryonal): BEP ×1 Stage IIA–IIB Both histologies BEP ×3 or EP ×4 seminoma: RT or RPLND if IIA / non-bulky IIB non-seminoma: or nerve-sparing RPLND Stage IIC–III By IGCCCG risk good risk: BEP ×3 or EP ×4 intermediate or poor: BEP ×4 or VIP ×4 seminoma IIC treated as BEP ×3 / EP ×4 Residual mass and relapse Rules differ by histology seminoma >3 cm: PET — avid resect, non-avid observe non-seminoma: resect ALL masses >1 cm ~10% viable cancer, 40% teratoma, 50% necrosis relapse: resect, else TIP/VeIP ×4 or HDCT Pearls The AFP rule overrides histology. Pure seminoma requires seminoma histology and a normal AFP; seminoma histology with an elevated AFP is worked up and treated as a non-seminoma. Elevated bHCG is compatible with pure seminoma Dose holds and reductions are discouraged in the curative (1st and 2nd line) setting — delay only for severe active infection or illness. The one stated exception: hold or reduce cisplatin for creatinine >1.5 (EP) Residual mass rules differ by histology — PET works for seminoma but not non-seminoma, because teratoma is not FDG-avid yet is chemoresistant and must be resected Non-pulmonary visceral metastases define intermediate-risk seminoma and poor-risk non-seminoma RT or RPLND remains an option only for stage IIA and non-bulky IIB seminoma (nodes <3 cm) Sperm banking before treatment; restage markers after orchiectomy Regimens & dosing Regimen Dosing Cycle BEP (Einhorn) cisplatin 20/day d1–5 · etoposide 100/day d1–5 · bleomycin 30 units d1, 8, 15 · filgrastim d6–12 q21d EP etoposide 100/day d1–5 · cisplatin 20/day d1–5 · pegfilgrastim d5→6 q21d VIP etoposide 75 · ifosfamide 1200 · cisplatin 20, all d1–5 · mesna · pegfilgrastim d6 q21d TIP (2L) paclitaxel 250 d1 · ifosfamide 1500 d2–5 · cisplatin 25 d2–5 · mesna q21d VeIP (2L) vinblastine 0.11 mg/kg d1–2 · ifosfamide 1200 d1–5 · cisplatin 20 d1–5 · mesna q21d HDCT carboplatin 700 + etoposide 750 — days −5, −4, −3 before stem-cell infusion, ×2 cycles with PBSC rescue 3L options gemcitabine + paclitaxel ± oxaliplatin · oxaliplatin + irinotecan · oral etoposide 50–100 mg d1–21 Pembrolizumab 200 mg q3wk (or 400 mg q6wk) — MSI-H, dMMR, or TMB >10 q3wk All doses mg/m² unless stated. Growth factor support is built into every first- and second-line regimen; mesna with every ifosfamide-containing regimen. Landmark trials Trial Result IGCCCG 1997 · upd. 2021 2021 (n=9,728): 5-yr OS good 96% / int 89% / poor 67% (was 91/79/48); adds LDH >2.5× ULN Einhorn 1989 (SECSG) 3 vs 4 BEP , favorable risk — NED 98% vs 97%. n=184 EORTC 30941 / TE20 3 vs 4 BEP and 5- vs 3-day — 2-yr PFS 90.4% vs 89.4%, equivalent Kondagunta 4×EP Single-arm n=289, good risk — CR 98% . Bleomycin-free option MRC TE19 / EORTC 30982 Stage I seminoma: carboplatin AUC7 ×1 non-inferior to RT (5-yr RFS 94.7% vs 96.0%) MRC TE18 / EORTC 30942 Seminoma RT 20 Gy = 30 Gy , less lethargy SWENOTECA CS I non-sem 1×BEP : 5-yr relapse 3.2% LVI+ / 1.6% LVI− vs 41.7% / 13.2% surveillance Kondagunta TIP First salvage n=46 — durable CR 63% TI-CE (Feldman) High-dose + PBSC, n=107 — CR 50%, 5-yr DFS 47% TIGER (A031102) Ongoing phase 3, TIP vs TI-CE at first salvage, primary OS Phase 3 only for the BEP-cycle and seminoma-RT questions. SWENOTECA is population-based; Kondagunta TIP (ph 2), 4×EP and TI-CE (ph 1/2) are single-arm. Biomarkers: testicular cancer is marker-driven, not biomarker-driven — AFP, bHCG and LDH determine stage, risk group and response. The only biomarker-selected therapy in the chapter is pembrolizumab for MSI-H, dMMR, or TMB >10."
+}
