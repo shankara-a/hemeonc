@@ -23,7 +23,10 @@
   };
   const trialsFor = (slug) => HH.data.trials.filter((t) => t.disease === slug).sort(SORTS[sortMode] || SORTS.new);
   const pdfBy = () => Object.fromEntries(HH.data.onepagers.map((o) => [o.disease, o]));
-  const pill = (t) => `<button class="trial-pill trial-row" data-id="${HH.esc(t.id)}"><span class="tp-n">${HH.esc(t.name)}</span><span class="tp-y">${t.year}</span></button>`;
+  const pill = (t) => `<div class="trial-item">
+      <button class="trial-pill trial-row" data-id="${HH.esc(t.id)}"><span class="tp-n">${HH.esc(t.name)}</span><span class="tp-y">${t.year}</span></button>
+      <div class="trial-inline" hidden></div>
+    </div>`;
 
   /* ---------------- tree ---------------- */
   const docFor = (slug) => HH.data.searchDocs?.[slug];

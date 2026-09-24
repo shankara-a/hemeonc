@@ -53,6 +53,12 @@
     return `<div class="tcard">${withTakeaway && t.takeaway ? `<div class="tp-take">${HH.esc(t.takeaway)}</div>` : ""}<dl>${dl}</dl>${hl}${ref}${flags}</div>`;
   };
 
+  /* The block that expands under a trial pill in the Reviews rail. */
+  HH.inlineTrial = (t) => `
+    ${t.descriptor ? `<div class="ti-desc">${HH.esc(t.descriptor)}${t.setting ? ` \u00b7 ${HH.esc(t.setting)}` : ""}</div>` : ""}
+    ${t.takeaway ? `<div class="ti-take">${HH.esc(t.takeaway)}</div>` : ""}
+    <div class="ti-foot">${HH.chips(t)}<a href="#trial/${HH.esc(t.id)}">Full trial \u2192</a></div>`;
+
   /* Compact row used in both the Reviews side list and the Trials tab. */
   HH.trialRow = (t, { disease = false } = {}) => `
     <div class="trial-row" data-id="${HH.esc(t.id)}" id="trial-${HH.esc(t.id)}">
@@ -104,6 +110,7 @@
     if (!canHover()) return;
     const t = HH.data.trialById[row.dataset.id];
     if (!t || row.classList.contains("open")) return;
+    if (row.closest(".rv-rail")) return;                    // Reviews: the pill expands in place
     const pane = paneFor(row);
     if (pane) {                                             // a detail pane exists: fill it, no popover
       if (!pane.dataset.pinned) HH.renderDetail(pane, t);
@@ -116,13 +123,7 @@
     if (current !== row) {
       current = row;
       const dz = HH.disease(t.disease);
-      const brief = !!row.closest(".rv-rail");             // Reviews: takeaway, not the full card
-      el.classList.toggle("brief", brief);
-      el.innerHTML = brief ? `
-        <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t)}</div>
-        <div class="tp-desc">${HH.esc(t.descriptor || "")}${t.setting ? ` · ${HH.esc(t.setting)}` : ""}</div>
-        ${t.takeaway ? `<div class="tp-take">${HH.esc(t.takeaway)}</div>` : ""}
-        <div class="tp-hint">Click to open the full trial →</div>` : `
+      el.innerHTML = `
         <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t, { disease: true })}</div>
         <div class="tp-desc">${HH.esc(t.descriptor || "")}${t.setting ? ` · ${HH.esc(t.setting)}` : ""}</div>
         ${HH.trialBody(t)}
@@ -167,9 +168,21 @@
     if (e.target.closest("a") || e.target.closest(".tr-more")) return; // let links & selection work
     const pane = paneFor(row);
     if (pane) { HH.pinTrial(row, pane); return; }
-    if (row.closest(".rv-rail")) {                            // Reviews: open the full trial
-      HH.hidePop(0);
-      location.hash = `#trial/${row.dataset.id}`;
+    if (row.closest(".rv-rail")) {                          // Reviews: expand under the pill
+      const t = HH.data.trialById[row.dataset.id];
+      const item = row.closest(".trial-item");
+      const box = item?.querySelector(".trial-inline");
+      if (!t || !box) return;
+      const wasOpen = !box.hidden;
+      const strip = row.closest(".rv-strip");
+      strip.querySelectorAll(".trial-inline").forEach((b) => { b.hidden = true; });
+      strip.querySelectorAll(".trial-pill.open").forEach((b) => b.classList.remove("open"));
+      if (!wasOpen) {
+        box.innerHTML = HH.inlineTrial(t);
+        box.hidden = false;
+        row.classList.add("open");
+        requestAnimationFrame(() => item.scrollIntoView({ block: "nearest", behavior: "smooth" }));
+      }
       return;
     }
     row.classList.toggle("open");
