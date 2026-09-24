@@ -198,9 +198,9 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
   border-radius: 10px; overflow: hidden; background: #fff;
   border: 2px solid var(--primary); box-shadow: var(--shadow-lg);
 }
+.lensing .pdf-pages canvas { cursor: none; }   /* the lens itself is the pointer */
 .pdf-lens[hidden] { display: none; }
 .pdf-lens canvas { display: block; }
-.lensing .pdf-pages canvas { cursor: crosshair; }
 [data-lens].on { background: var(--primary); border-color: var(--primary); color: #fff; }
 [data-lens].on:hover { background: var(--primary-dark); color: #fff; }
 
@@ -222,16 +222,6 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
 .trial-pill:hover, .trial-pill.hovered { border-color: var(--accent); background: var(--accent-soft); }
 .trial-pill .tp-n { font-weight: 700; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .trial-pill .tp-y { color: var(--muted); font-size: .7rem; font-variant-numeric: tabular-nums; }
-
-.rv-preview {
-  flex: none; margin-top: 10px; padding: 11px 12px; font-size: .82rem;
-  max-height: 46vh; overflow-y: auto;
-}
-.rv-preview .tp-head { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-.rv-preview .tp-name { font-weight: 700; font-size: .9rem; }
-.rv-preview .tp-desc { color: var(--muted); font-size: .78rem; margin-top: 2px; }
-.rv-preview .tp-take { margin-top: 7px; padding: 7px 9px; background: var(--accent-soft); border-radius: 7px; font-weight: 600; font-size: .82rem; }
-.rv-preview .tp-open { display: inline-block; margin-top: 7px; font-size: .76rem; font-weight: 600; }
 
 /* in-note table of contents */
 .nt-toc { display: flex; flex-direction: column; gap: 1px; overflow-y: auto; min-height: 0; }
@@ -329,9 +319,9 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
 .trial-pop .tp-take { margin: 8px 0 0; padding: 8px 10px; background: var(--accent-soft); border-radius: 8px; font-weight: 600; font-size: .88rem; }
 .trial-pop dl { grid-template-columns: 96px 1fr; }
 .trial-pop .tp-hint { margin-top: 8px; font-size: .74rem; color: var(--muted); }
-.trial-pop.small { width: min(340px, calc(100vw - 32px)); padding: 11px 13px; }
-.trial-pop.small .tp-name { font-size: .92rem; }
-.trial-pop.small .tp-take { margin-top: 7px; font-size: .84rem; }
+.trial-pop.brief { width: min(440px, calc(100vw - 32px)); padding: 14px 16px; }
+.trial-pop.brief .tp-name { font-size: 1rem; }
+.trial-pop.brief .tp-take { margin-top: 9px; padding: 9px 11px; font-size: .9rem; line-height: 1.45; }
 
 /* ---------- trials tab: list | detail pane ---------- */
 .tr-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
@@ -379,7 +369,6 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
   .rv-rail { position: static; max-height: none; }
   .rv-strip { flex-direction: row; flex-wrap: wrap; }
   .trial-pill { width: auto; }
-  .rv-preview { display: none; }        /* no hover on touch — tapping opens the trial */
   .pdf-lens, [data-lens] { display: none; }
   .nt-card { padding: 18px 16px; }
   .pdf-pages { max-height: 75vh; }

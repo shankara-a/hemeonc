@@ -70,22 +70,13 @@
   /* ---------- Detail panes (Trials tab: #tr-detail · Reviews: .rv-detail) ---------- */
   const paneFor = (row) => {
     if (!window.matchMedia("(min-width: 901px)").matches) return null;
-    let pane = null;
-    if (row.closest("#tr-list")) pane = document.getElementById("tr-detail");
-    else if (row.closest(".rv-rail")) pane = document.querySelector(".rv-preview");
+    if (!row.closest("#tr-list")) return null;          // Reviews uses the floating bubble
+    const pane = document.getElementById("tr-detail");
     return pane && pane.offsetParent !== null ? pane : null;
   };
   HH.renderDetail = (pane, t, { isPinned = false } = {}) => {
     if (!pane || !t) return;
     const dz = HH.disease(t.disease);
-    if (pane.classList.contains("rv-preview")) {          // Reviews rail: takeaway only
-      pane.innerHTML = `
-        <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span><span class="chip year">${t.year}</span></div>
-        <div class="tp-desc">${HH.esc(t.descriptor || "")}</div>
-        ${t.takeaway ? `<div class="tp-take">${HH.esc(t.takeaway)}</div>` : ""}
-        <a class="tp-open" href="#trial/${HH.esc(t.id)}">Open the full trial →</a>`;
-      return;
-    }
     pane.innerHTML = `
       <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t, { disease: true })}</div>
       <div class="tp-desc">${HH.esc(t.descriptor || "")}${t.setting ? ` · ${HH.esc(t.setting)}` : ""}</div>
@@ -125,11 +116,11 @@
     if (current !== row) {
       current = row;
       const dz = HH.disease(t.disease);
-      const small = !!row.closest(".rv-rail");              // Reviews: takeaway only
-      el.classList.toggle("small", small);
-      el.innerHTML = small ? `
-        <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span><span class="chip year">${t.year}</span></div>
-        <div class="tp-desc">${HH.esc(t.descriptor || "")}</div>
+      const brief = !!row.closest(".rv-rail");             // Reviews: takeaway, not the full card
+      el.classList.toggle("brief", brief);
+      el.innerHTML = brief ? `
+        <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t)}</div>
+        <div class="tp-desc">${HH.esc(t.descriptor || "")}${t.setting ? ` · ${HH.esc(t.setting)}` : ""}</div>
         ${t.takeaway ? `<div class="tp-take">${HH.esc(t.takeaway)}</div>` : ""}
         <div class="tp-hint">Click to open the full trial →</div>` : `
         <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t, { disease: true })}</div>

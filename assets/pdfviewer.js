@@ -42,7 +42,12 @@
     let doc = null, zoom = 1, fit = true, page = 1, destroyed = false, rendering = null;
 
     /* ---- magnifier: a second render of the page at LENS_ZOOM, sampled under the cursor ---- */
-    const LENS_ZOOM = 2.6, LENS_SIZE = 260;
+    const LENS_ZOOM = 2.6, LENS_COLS = 3;   // the cards are laid out in three columns
+    const lensSize = () => {
+      const cv = pages.querySelector("canvas");
+      // roughly one column wide, so the lens frames a readable unit of the card
+      return Math.max(180, Math.min(360, Math.round((cv ? cv.getBoundingClientRect().width : 780) / LENS_COLS)));
+    };
     const lensEl = host.querySelector(".pdf-lens");
     const lensCv = lensEl.querySelector("canvas");
     let lensOn = false, hi = null, hiFor = "", hiBusy = false;
@@ -70,19 +75,24 @@
       const r = cv.getBoundingClientRect();
       const inside = e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
       if (!inside) { lensEl.hidden = true; return; }
-      // `hi` is the page at LENS_ZOOM x the on-screen scale, so copying a LENS_SIZE-wide
-      // square of it 1:1 into the lens magnifies by exactly LENS_ZOOM. Derive the source
-      // size from the real ratio rather than assuming it, to absorb rounding.
+
+      const size = lensSize();
+      // `hi` is the page at LENS_ZOOM x the on-screen scale, so copying a `size`-wide square
+      // of it 1:1 magnifies by exactly LENS_ZOOM. Derive from the real ratio to absorb rounding.
+      const src = size * (hi.width / r.width) / LENS_ZOOM;
       const fx = (e.clientX - r.left) / r.width, fy = (e.clientY - r.top) / r.height;
-      const src = LENS_SIZE * (hi.width / r.width) / LENS_ZOOM;
       const sx = fx * hi.width - src / 2, sy = fy * hi.height - src / 2;
+
       const ctx = lensCv.getContext("2d");
-      lensCv.width = LENS_SIZE; lensCv.height = LENS_SIZE;
-      ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, LENS_SIZE, LENS_SIZE);
-      ctx.drawImage(hi, sx, sy, src, src, 0, 0, LENS_SIZE, LENS_SIZE);
+      lensCv.width = size; lensCv.height = size;
+      ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, size, size);
+      ctx.drawImage(hi, sx, sy, src, src, 0, 0, size, size);
+
+      // centred on the cursor, like a real magnifier held over the page
       const hr = host.getBoundingClientRect();
-      lensEl.style.left = `${e.clientX - hr.left + 18}px`;
-      lensEl.style.top = `${e.clientY - hr.top - LENS_SIZE - 12 < 0 ? e.clientY - hr.top + 18 : e.clientY - hr.top - LENS_SIZE - 12}px`;
+      lensEl.style.width = lensEl.style.height = `${size}px`;
+      lensEl.style.left = `${e.clientX - hr.left - size / 2}px`;
+      lensEl.style.top = `${e.clientY - hr.top - size / 2}px`;
       lensEl.hidden = false;
     };
 
