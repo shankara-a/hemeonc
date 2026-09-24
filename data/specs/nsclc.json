@@ -1,0 +1,511 @@
+{
+ "disease": "nsclc",
+ "spec_file": "nsclc.py",
+ "pdf": "Non-Small Cell Lung Cancer.pdf",
+ "title": "Non-small cell lung cancer",
+ "subtitle": "Adenocarcinoma &middot; squamous &middot; large cell &middot; <b>TNM 9th edition (Jan 2025)</b> &middot; the driver landscape moves faster than any printed card &mdash; <b>re-check NCCN at every new diagnosis</b>",
+ "source": "Compiled from the Stanford Oncology Handbook 2025, NSCLC (Salter A, Roy M) &middot; NCCN &middot; primary trial reports verified against PubMed, September 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "<b>Chest CT with contrast</b> (nodes are far easier to call with contrast)",
+        "<b>Brain MRI with contrast for every stage except IA</b> &mdash; PET never substitutes for it",
+        "<b>PET/CT</b> for distant disease (or CT C/A/P + bone scan if unavailable)",
+        "Biopsy: EBUS, CT-guided transthoracic, metastatic site, or pleural cytology. <b>Non-decalcified cores preferred for molecular</b>",
+        "<b>Pathologic mediastinal nodal evaluation</b> for non-metastatic disease, especially stage II&ndash;III. EBUS reaches 2R/2L, 4R/4L, 7, 10, 11; <b>mediastinoscopy cannot reach stations 5&ndash;6</b> (needs a Chamberlain procedure)",
+        "<b>PD-L1 in every case.</b> Molecular sequencing in all adenocarcinoma; add for squamous if never/light smoker, small biopsy, or adenosquamous",
+        "<b>Stage IIIB or IV: concurrent tissue + liquid molecular testing</b> (ctDNA ~7-day turnaround). <b>A negative liquid biopsy does not rule out a driver</b> &mdash; confirm on tissue"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Staging &mdash; TNM 9th (Jan 2025)",
+       "headers": [
+        "",
+        "Definition"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "T1 / T2",
+         "&le;3 cm / &gt;3&ndash;5 cm, or visceral pleura, adjacent lobe, or main bronchus"
+        ],
+        [
+         "T3 / T4",
+         "&gt;5&ndash;7 cm or chest wall, phrenic nerve, same-lobe nodule / <b>&gt;7 cm</b> or mediastinum, great vessels, carina, esophagus, spine, different ipsilateral lobe"
+        ],
+        [
+         "N1 / N2 / N3",
+         "Ipsilateral hilar (stations 10&ndash;14) / ipsilateral mediastinal or subcarinal &mdash; <b>N2a single station, N2b multiple</b> / contralateral or any supraclavicular"
+        ],
+        [
+         "M1a / M1b",
+         "Pleural-pericardial effusion or nodules, or contralateral lung nodule / <b>single</b> extrathoracic met"
+        ],
+        [
+         "M1c1 / M1c2",
+         "Multiple mets, <b>single organ system</b> / <b>multiple organ systems</b>"
+        ]
+       ],
+       "footnote": "<b>What changed from the 8th edition:</b> N2 split into N2a/N2b and M1c split into M1c1/M1c2. <b>T descriptors are unchanged.</b>"
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Resectable &mdash; stage I to III",
+         "color": "teal",
+         "boxes": [
+          [
+           "Decide resectability FIRST",
+           [
+            "<b>before</b> any neoadjuvant therapy, at tumor board",
+            "systemic therapy if <b>stage I &gt;4 cm, stage II, stage III</b>"
+           ]
+          ],
+          [
+           "Perioperative immunotherapy",
+           [
+            "CheckMate 816 (neoadjuvant only) &middot; KEYNOTE-671",
+            "AEGEAN &middot; CheckMate 77T (perioperative)",
+            "<b>omit IO if EGFR / ALK / RET / ROS1 altered</b>"
+           ]
+          ],
+          [
+           "Adjuvant (no neoadjuvant given)",
+           [
+            "<b>retest the specimen: EGFR, ALK, PD-L1</b>",
+            "platinum doublet &times;4, then IO if PD-L1 &ge;1%",
+            "<b>EGFR &rarr; osimertinib &times;36 mo</b> (ADAURA)",
+            "<b>ALK &rarr; alectinib &times;24 mo</b> (ALINA)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Unresectable stage III",
+         "color": "blue",
+         "boxes": [
+          [
+           "Concurrent chemoradiation",
+           [
+            "non-squamous: carboplatin AUC 5 + pemetrexed",
+            "squamous: cisplatin/etoposide or weekly carbo/paclitaxel"
+           ]
+          ],
+          [
+           "Consolidation",
+           [
+            "<b>durvalumab within 6 weeks, &times;12 months</b> (PACIFIC)",
+            "<b>EGFR-mutant: osimertinib instead</b> (LAURA) &mdash;",
+            "PFS <b>39.1 vs 5.6 months</b>, HR 0.16"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Metastatic",
+         "color": "coral",
+         "boxes": [
+          [
+           "Wait for molecular results",
+           [
+            "<b>do not start systemic therapy until they return</b>",
+            "IO before excluding a driver worsens outcomes",
+            "if severely symptomatic: 1&ndash;2 cycles platinum, then tailor"
+           ]
+          ],
+          [
+           "Then treat by result",
+           [
+            "<b>driver positive &rarr; targeted therapy</b>, whatever the PD-L1",
+            "<b>PD-L1 &ge;50%, no driver &rarr;</b> single-agent IO",
+            "<b>any PD-L1 &rarr;</b> platinum doublet + pembrolizumab"
+           ]
+          ],
+          [
+           "Oligometastatic (&le;3&ndash;5 sites)",
+           [
+            "<b>local consolidative therapy</b> (SBRT or surgery) to all",
+            "sites, plus systemic therapy &mdash; improves PFS and OS"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Screening",
+       "items": [
+        "<b>USPSTF 2021 (Grade B):</b> annual <b>low-dose CT</b>, age <b>50&ndash;80</b>, <b>&ge;20 pack-years</b>, currently smoking <b>or quit within 15 years</b>",
+        "Stop at <b>15 years since cessation</b>, or when comorbidity would preclude curative surgery",
+        "<b>NLST:</b> 20% reduction in lung-cancer mortality vs chest radiography &middot; <b>NELSON:</b> 24% in men (the women's subgroup did not reach significance)",
+        "<b>Smoking cessation remains the highest-yield intervention</b> &mdash; duration of smoking matters more than pack count"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Histology",
+       "headers": [
+        "Type",
+        "Features"
+       ],
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Adenocarcinoma</b>",
+         "~50%; peripheral, non/light smokers. <b>TTF-1, napsin A, CK7</b> positive. <b>Highest yield for actionable drivers.</b> Mucinous (TTF-1&minus;) is KRAS-enriched and EGFR-poor"
+        ],
+        [
+         "<b>Squamous</b>",
+         "~25%; central, cavitating, heavy smokers. <b>CK5/6, p40 / p63</b>; keratin pearls and intercellular bridges. <b>Pemetrexed and bevacizumab are both contraindicated</b>"
+        ],
+        [
+         "Large cell",
+         "Diagnosis of exclusion &mdash; treat as non-squamous"
+        ],
+        [
+         "Adenosquamous",
+         "Both components, each &ge;10% of the tumor"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Early stage &mdash; surgery and radiation",
+       "items": [
+        "<b>Lobectomy + mediastinal nodal sampling or dissection</b> is the standard; VATS preferred over thoracotomy",
+        "<b>Sublobar resection is acceptable for peripheral cT1aN0 &le;2 cm</b>, after intraoperative nodal confirmation. <b>CALGB 140503:</b> non-inferior DFS (HR 1.01). <b>JCOG0802:</b> segmentectomy gave superior 5-yr OS (94.3% vs 91.1%) <b>but doubled local relapse</b> (10.5% vs 5.4%), and the survival gain came from non-lung-cancer deaths &mdash; <b>read it as tolerability, not better cancer control</b>",
+        "<b>SBRT</b> for medically inoperable stage I. <b>Avoid central SBRT within 2 cm of the proximal bronchial tree</b>",
+        "Preoperative assessment: <b>predicted postoperative FEV1 and DLCO</b>; &lt;30% predicted flags high surgical risk"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; molecular drivers, resistance, and driver-negative disease",
+   "columns": [
+    {
+     "width": "52%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Driver &rarr; therapy",
+       "headers": [
+        "Alteration",
+        "First line and beyond"
+       ],
+       "widths": [
+        "18%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>EGFR</b> ex19del / L858R <span class='r'>~15% US adeno</span>",
+         "<b>Osimertinib 80 mg daily</b> (FLAURA). <b>Add carbo/pemetrexed &times;4</b> for higher-risk disease &mdash; CNS involvement, L858R, TP53 co-mutation (FLAURA2: mPFS <b>25.5 vs 16.7 mo</b>; OS 47.5 vs 37.6). <b>Or amivantamab + lazertinib</b> (MARIPOSA: mPFS <b>23.7 vs 16.6 mo</b>, HR 0.70; <b>OS HR 0.75</b>) &mdash; but grade &ge;3 AEs <b>80% vs 52%</b>, and it needs <b>VTE prophylaxis for 4 months</b>"
+        ],
+        [
+         "<b>EGFR exon 20 ins</b> <span class='r'>~10% of EGFR</span>",
+         "<b>Resistant to osimertinib and the classic TKIs.</b> 1L <b>amivantamab + carboplatin/pemetrexed</b> (PAPILLON: mPFS <b>11.4 vs 6.7 mo</b>, HR 0.40). Post-platinum: <b>sunvozertinib</b> (accelerated, <b>2L+ only</b>). <b>Mobocertinib was withdrawn</b> in 2023"
+        ],
+        [
+         "<b>ALK</b> <span class='r'>~3&ndash;7%</span>",
+         "<b>Lorlatinib 100 mg daily</b> (CROWN: 5-yr PFS <b>60% vs 8%</b> vs crizotinib, median not reached &mdash; the longest single-agent PFS reported in any solid tumor). Watch <b>CNS effects</b> (mood, cognition, seizures) and <b>hyperlipidemia</b>. Alternatives: alectinib, brigatinib, ensartinib"
+        ],
+        [
+         "<b>ROS1</b> <span class='r'>~1&ndash;2%</span>",
+         "<b>Four co-preferred 1L agents:</b> crizotinib, entrectinib, repotrectinib, taletrectinib. <b>Prefer entrectinib / repotrectinib / taletrectinib if brain metastases</b> &mdash; crizotinib has no CNS activity. Repotrectinib TKI-naive ORR 79%, mPFS 35.7 mo. <b>Alectinib has no ROS1 activity</b> despite its ALK potency"
+        ],
+        [
+         "<b>RET</b> <span class='r'>~1&ndash;2%</span>",
+         "<b>Selpercatinib</b> &mdash; the only randomized 1L evidence (LIBRETTO-431: mPFS <b>24.8 vs 11.2 mo</b> vs chemo &plusmn; pembrolizumab, HR 0.47; intracranial ORR 82%). Pralsetinib is an alternative with more pneumonitis. Watch hypertension and transaminitis"
+        ],
+        [
+         "<b>MET exon 14</b> <span class='r'>~3&ndash;4%, older never-smokers</span>",
+         "<b>Capmatinib</b> (1L ORR 68%) or <b>tepotinib</b> (1L ORR ~57%) &mdash; <b>both single-arm, so those two numbers are not comparable</b>. Tepotinib: watch peripheral edema"
+        ],
+        [
+         "<b>BRAF V600E</b> <span class='r'>~2%, smokers</span>",
+         "<b>Encorafenib + binimetinib</b> (PHAROS, treatment-naive ORR 75%) or <b>dabrafenib + trametinib</b> (ORR 64%, mPFS 10.9 mo). <b>Pyrexia is the classic combination toxicity</b> &mdash; hold and dose-modify"
+        ],
+        [
+         "<b>KRAS G12C</b> <span class='r'>~13% of adeno</span>",
+         "<b>Not a first-line target</b> &mdash; 1L is chemo-IO. <b>2L after platinum + anti-PD-(L)1:</b> <b>adagrasib</b> (KRYSTAL-12: mPFS 5.5 vs 3.8 mo, HR 0.58) or <b>sotorasib</b> (CodeBreaK 200: 5.6 vs 4.5 mo, <b>no OS difference</b>; still on accelerated approval after a failed confirmatory filing &mdash; the weakest evidence base on this page)"
+        ],
+        [
+         "<b>HER2 (ERBB2)</b> mutant <span class='r'>~2&ndash;3%, non-smoker women</span>",
+         "Mostly exon 20 insertions; <b>high rate of brain metastases at presentation</b>. <b>Zongertinib</b> &mdash; oral, and as of <b>Feb 2026 it carries a 1L indication</b> (treatment-naive ORR 76%). <b>T-DXd 5.4 mg/kg q3wk</b> (DESTINY-Lung02: ORR 49%) &mdash; <b>ILD in 13&ndash;15%, including fatal cases</b>; monitor with serial imaging"
+        ],
+        [
+         "<b>NTRK</b> fusion <span class='r'>&lt;1%</span>",
+         "Larotrectinib, entrectinib or repotrectinib &mdash; all tumor-agnostic approvals"
+        ],
+        [
+         "<b>NRG1</b> fusion",
+         "<b>Zenocutuzumab</b> &mdash; accelerated approval, <b>after progression on prior systemic therapy</b>, for NSCLC and pancreatic adenocarcinoma only"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "48%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Progression on osimertinib",
+       "items": [
+        "<b>Rebiopsy</b> &mdash; resistance is heterogeneous, with no single dominant mechanism",
+        "<b>On-target:</b> EGFR <b>C797S</b>. <b>Off-target:</b> MET amplification, HER2 amplification, acquired fusions",
+        "<b>Histologic transformation is the one you cannot afford to miss:</b> <b>SCLC transformation</b> (with RB1 and TP53 loss) or squamous transformation. <b>Treat SCLC transformation as SCLC</b> &mdash; platinum/etoposide",
+        "<b>Standard next step is platinum-doublet chemotherapy</b>",
+        "<b>Amivantamab + chemotherapy</b> (MARIPOSA-2: mPFS 6.3 vs 4.2 mo, HR 0.48). <b>The approved regimen is amivantamab + chemo only</b> &mdash; the lazertinib triplet was not approved, for excess hematologic toxicity",
+        "<b>Datopotamab deruxtecan</b> &mdash; TROP2 ADC on accelerated approval. <b>The label is EGFR-mutant-specific</b>: the all-comers trial met PFS but missed OS"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Driver-negative metastatic",
+       "items": [
+        "<b>PD-L1 &ge;50%:</b> <b>pembrolizumab</b> monotherapy (KEYNOTE-024: OS 30 vs 14 months); atezolizumab or cemiplimab are alternatives. <b>Use chemo-IO instead if the burden is high or the patient is symptomatic</b>",
+        "<b>PD-L1 1&ndash;49% or &lt;1%:</b> chemo-IO doublet. <b>Non-squamous</b> &rarr; pembrolizumab + carboplatin + pemetrexed (KEYNOTE-189). <b>Squamous</b> &rarr; pembrolizumab + carboplatin + paclitaxel (KEYNOTE-407)",
+        "<b>Dual IO</b> &mdash; ipilimumab/nivolumab (CheckMate 227, 9LA) or durvalumab/tremelimumab (POSEIDON): chemo-sparing but more toxic, <b>most attractive at PD-L1 &lt;1% and in squamous</b>",
+        "<b>Second line:</b> <b>docetaxel 35 mg/m&sup2; days 1+8</b> &mdash; split dosing is better tolerated than 75 q3wk &mdash; <b>&plusmn; ramucirumab</b>"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Adjuvant therapy",
+       "items": [
+        "<b>Cisplatin doublet &times;4</b> for stage II&ndash;IIIA (LACE: ~5% absolute 5-yr OS gain). <b>Stage IB only if &ge;4 cm or high-risk features</b>; <b>no benefit and possible harm in stage IA</b>",
+        "<b>EGFR &rarr; osimertinib &times;36 months</b> (ADAURA: DFS HR 0.17, OS HR 0.49). <b>ALK &rarr; alectinib &times;24 months</b> (ALINA: DFS HR 0.24). <b>Omit IO in both</b>",
+        "<b>Atezolizumab</b> (IMpower010) is approved for <b>stage II&ndash;IIIA with PD-L1 &ge;1%</b>, EGFR/ALK wild-type &mdash; but <b>the 2025 update showed no significant OS benefit overall</b>, with the signal concentrated at PD-L1 &ge;50%",
+        "<b>Pembrolizumab</b> (KEYNOTE-091) after adjuvant chemotherapy, <b>no PD-L1 restriction</b>: DFS HR 0.76 overall &mdash; <b>yet the PD-L1 &ge;50% subgroup was not significant</b>, the reverse of what you would predict"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 3 &mdash; regimen dosing, monitoring and trial evidence",
+   "columns": [
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Perioperative and adjuvant dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "27%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>CheckMate 816</b> <span class='r'>neoadjuvant only</span>",
+         "Cisplatin <b>75 mg/m&sup2;</b> + pemetrexed <b>500 mg/m&sup2;</b> (or gemcitabine <b>1250</b> d1+8) + <b>nivolumab 360 mg</b> on day 1 &mdash; <b>q21d &times;3</b>, then surgery"
+        ],
+        [
+         "<b>KEYNOTE-671</b> <span class='r'>perioperative</span>",
+         "Cisplatin 75 + pemetrexed 500 (or gemcitabine 1000 d1+8) + <b>pembrolizumab 200 mg</b> q21d &times;4 &rarr; surgery &rarr; within 12 weeks, <b>pembrolizumab 200 mg q21d &times;13</b>"
+        ],
+        [
+         "<b>AEGEAN</b> <span class='r'>perioperative</span>",
+         "Cisplatin 75 + pemetrexed 500 (or gemcitabine 1250 d1+8) + <b>durvalumab 1500 mg</b> q21d &times;4 &rarr; surgery &rarr; <b>durvalumab 1500 mg q28d &times;12</b>"
+        ],
+        [
+         "<b>CheckMate 77T</b> <span class='r'>perioperative</span>",
+         "Cisplatin 75 + pemetrexed 500 (or docetaxel 75) + <b>nivolumab 360 mg</b> q21d &times;4 &rarr; surgery &rarr; within 90 days, <b>nivolumab 360 mg q28d &times;1 year</b>"
+        ],
+        [
+         "<b>Adjuvant chemo</b>",
+         "Cisplatin <b>75 mg/m&sup2;</b> + pemetrexed 500 (non-squamous), gemcitabine 1250 d1+8, or docetaxel 75 &mdash; <b>q21d &times;4</b>. Growth factor support if using docetaxel"
+        ],
+        [
+         "<b>Adjuvant IO</b>",
+         "<b>Atezolizumab 1680 mg q4wk</b> or <b>pembrolizumab 200 mg q3wk</b>, after adjuvant chemotherapy"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Chemoradiation and metastatic dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "27%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>ChemoRT non-squamous</b>",
+         "Carboplatin <b>AUC 5</b> + pemetrexed <b>500 mg/m&sup2;</b> q21d &times;4, with daily RT"
+        ],
+        [
+         "<b>ChemoRT squamous</b>",
+         "Cisplatin <b>50 mg/m&sup2; days 1, 8, 29, 36</b> + etoposide <b>50 mg/m&sup2; days 1&ndash;5 and 29&ndash;33</b>; or carboplatin <b>AUC 2</b> + paclitaxel <b>45 mg/m&sup2;</b> weekly &mdash; with daily RT"
+        ],
+        [
+         "<b>Consolidation durvalumab</b>",
+         "<b>10 mg/kg q14d &times;12 months</b> (or 1500 mg q4wk). <b>Start within 6 weeks</b> of finishing chemoRT"
+        ],
+        [
+         "<b>Platinum doublet + IO</b>",
+         "Carboplatin <b>AUC 5&ndash;6</b> + pemetrexed 500 (non-squamous) or paclitaxel 200 (squamous) + <b>pembrolizumab 200 mg</b> q21d &times;4 &rarr; pemetrexed + pembrolizumab maintenance"
+        ],
+        [
+         "<b>Single-agent IO</b>",
+         "Pembrolizumab <b>200 mg q3wk</b> (or 400 q6wk) &middot; atezolizumab <b>1200 mg q3wk</b> &middot; cemiplimab <b>350 mg q3wk</b>"
+        ],
+        [
+         "<b>Osimertinib + chemo</b> <span class='r'>FLAURA2</span>",
+         "Carboplatin <b>AUC 6</b> + pemetrexed <b>500</b> q21d &times;4, with <b>osimertinib 80 mg daily continuously</b>, then pemetrexed maintenance"
+        ],
+        [
+         "<b>Amivantamab + lazertinib</b>",
+         "Amivantamab weight-based (<b>&lt;80 kg 1050 mg</b>, <b>&ge;80 kg 1400 mg</b>) &mdash; split over days 1&ndash;2 in week 1, weekly through week 5, then <b>q2wk from week 7</b>; + <b>lazertinib 240 mg PO daily</b>. <b>VTE prophylaxis &times;4 months</b>"
+        ],
+        [
+         "<b>Docetaxel, 2L</b>",
+         "<b>35 mg/m&sup2; days 1+8 q21d</b> &mdash; preferred over 75 q21d; reduce to 30 or 25 if heavily pretreated. <b>&plusmn; ramucirumab 10 mg/kg</b>"
+        ],
+        [
+         "<b>Pemetrexed maintenance</b>",
+         "<b>500 mg/m&sup2; q21d</b> &mdash; non-squamous only"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "32%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Monitoring and cautions",
+       "items": [
+        "<b>Baseline HBsAg + anti-HBc before any immunosuppressive therapy</b>; consider quantitative TB testing by risk",
+        "<b>Pemetrexed:</b> folic acid from &ge;1 week before until 3 weeks after &middot; B12 1000 mcg q9wk &middot; dexamethasone 4 mg BID the day before and after, for rash. <b>Never in squamous</b>",
+        "<b>Bevacizumab:</b> contraindicated in <b>squamous</b> histology, significant hemoptysis, and large cavitary tumors. Urine protein every other cycle; treat hypertension",
+        "<b>Cisplatin:</b> avoid with hearing loss, CrCl &lt;30, severe neuropathy, or poor performance status. Extensive hydration and aprepitant-containing antiemetics",
+        "<b>Osimertinib:</b> echo at baseline and q3 months &times;6 months; ECG at baseline, 2 weeks, 6 weeks, and with any QT-prolonging drug",
+        "<b>Alectinib:</b> CK at baseline, 2 weeks, then q3 months &middot; LFTs q2 weeks &times;3 months. <b>Lorlatinib:</b> CNS effects and hyperlipidemia &mdash; median onset <b>15 days</b>; rosuvastatin first-line",
+        "<b>Immunotherapy:</b> TSH and free T4 at baseline then q4&ndash;6 weeks. Prednisone <b>1&ndash;1.5 mg/kg</b> for irAEs with a slow taper",
+        "<b>Do not start a targeted agent &mdash; osimertinib and crizotinib above all &mdash; within 3 months of immunotherapy</b>; the toxicity is additive. IO is also less effective in EGFR/ALK-driven disease"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "rows": [
+        [
+         "<b>CheckMate 816</b>",
+         "Neoadjuvant platinum + nivolumab &times;3 &mdash; pCR 24% vs 2%, EFS HR 0.63, OS HR 0.62"
+        ],
+        [
+         "<b>KEYNOTE-671</b>",
+         "Perioperative pembrolizumab &mdash; EFS HR 0.58; the first perioperative IO trial with a confirmed OS benefit"
+        ],
+        [
+         "<b>AEGEAN / 77T</b>",
+         "Perioperative durvalumab (EFS HR 0.68) / nivolumab (EFS HR 0.58)"
+        ],
+        [
+         "<b>ADAURA / ALINA</b>",
+         "Adjuvant osimertinib &times;36 mo (DFS HR 0.17, OS HR 0.49) / alectinib &times;24 mo (DFS HR 0.24)"
+        ],
+        [
+         "<b>PACIFIC</b>",
+         "Consolidation durvalumab after chemoRT &mdash; 5-yr OS <b>43% vs 33%</b>"
+        ],
+        [
+         "<b>LAURA</b>",
+         "Consolidation osimertinib, EGFR-mutant stage III &mdash; PFS <b>39.1 vs 5.6 mo</b>, HR 0.16"
+        ],
+        [
+         "<b>FLAURA / FLAURA2</b>",
+         "Osimertinib 1L; adding chemo gives mPFS 25.5 vs 16.7 mo and OS 47.5 vs 37.6"
+        ],
+        [
+         "<b>MARIPOSA</b>",
+         "Amivantamab + lazertinib vs osimertinib &mdash; mPFS 23.7 vs 16.6 mo, <b>OS HR 0.75</b>, at a real toxicity cost"
+        ],
+        [
+         "<b>CROWN</b>",
+         "Lorlatinib 1L in ALK &mdash; <b>5-yr PFS 60% vs 8%</b>"
+        ],
+        [
+         "<b>PAPILLON</b>",
+         "Amivantamab + chemo 1L for EGFR exon 20 &mdash; mPFS 11.4 vs 6.7 mo"
+        ],
+        [
+         "<b>LIBRETTO-431</b>",
+         "Selpercatinib vs chemo &plusmn; pembrolizumab in RET &mdash; mPFS 24.8 vs 11.2 mo"
+        ],
+        [
+         "<b>CALGB 140503</b>",
+         "Sublobar resection non-inferior for peripheral cT1aN0 &le;2 cm &mdash; DFS HR 1.01"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Workup",
+  "Staging &mdash; TNM 9th (Jan 2025)",
+  "Treatment pathway",
+  "Screening",
+  "Histology",
+  "Early stage &mdash; surgery and radiation",
+  "Driver &rarr; therapy",
+  "Progression on osimertinib",
+  "Driver-negative metastatic",
+  "Adjuvant therapy",
+  "Perioperative and adjuvant dosing",
+  "Chemoradiation and metastatic dosing",
+  "Monitoring and cautions",
+  "Key trials"
+ ],
+ "text": "Non-small cell lung cancer Adenocarcinoma · squamous · large cell · TNM 9th edition (Jan 2025) · the driver landscape moves faster than any printed card — re-check NCCN at every new diagnosis Compiled from the Stanford Oncology Handbook 2025, NSCLC (Salter A, Roy M) · NCCN · primary trial reports verified against PubMed, September 2026. Workup Chest CT with contrast (nodes are far easier to call with contrast) Brain MRI with contrast for every stage except IA — PET never substitutes for it PET/CT for distant disease (or CT C/A/P + bone scan if unavailable) Biopsy: EBUS, CT-guided transthoracic, metastatic site, or pleural cytology. Non-decalcified cores preferred for molecular Pathologic mediastinal nodal evaluation for non-metastatic disease, especially stage II–III. EBUS reaches 2R/2L, 4R/4L, 7, 10, 11; mediastinoscopy cannot reach stations 5–6 (needs a Chamberlain procedure) PD-L1 in every case. Molecular sequencing in all adenocarcinoma; add for squamous if never/light smoker, small biopsy, or adenosquamous Stage IIIB or IV: concurrent tissue + liquid molecular testing (ctDNA ~7-day turnaround). A negative liquid biopsy does not rule out a driver — confirm on tissue Staging — TNM 9th (Jan 2025) Definition T1 / T2 ≤3 cm / >3–5 cm, or visceral pleura, adjacent lobe, or main bronchus T3 / T4 >5–7 cm or chest wall, phrenic nerve, same-lobe nodule / >7 cm or mediastinum, great vessels, carina, esophagus, spine, different ipsilateral lobe N1 / N2 / N3 Ipsilateral hilar (stations 10–14) / ipsilateral mediastinal or subcarinal — N2a single station, N2b multiple / contralateral or any supraclavicular M1a / M1b Pleural-pericardial effusion or nodules, or contralateral lung nodule / single extrathoracic met M1c1 / M1c2 Multiple mets, single organ system / multiple organ systems What changed from the 8th edition: N2 split into N2a/N2b and M1c split into M1c1/M1c2. T descriptors are unchanged. Treatment pathway Resectable — stage I to III Decide resectability FIRST before any neoadjuvant therapy, at tumor board systemic therapy if stage I >4 cm, stage II, stage III Perioperative immunotherapy CheckMate 816 (neoadjuvant only) · KEYNOTE-671 AEGEAN · CheckMate 77T (perioperative) omit IO if EGFR / ALK / RET / ROS1 altered Adjuvant (no neoadjuvant given) retest the specimen: EGFR, ALK, PD-L1 platinum doublet ×4, then IO if PD-L1 ≥1% EGFR → osimertinib ×36 mo (ADAURA) ALK → alectinib ×24 mo (ALINA) Unresectable stage III Concurrent chemoradiation non-squamous: carboplatin AUC 5 + pemetrexed squamous: cisplatin/etoposide or weekly carbo/paclitaxel Consolidation durvalumab within 6 weeks, ×12 months (PACIFIC) EGFR-mutant: osimertinib instead (LAURA) — PFS 39.1 vs 5.6 months , HR 0.16 Metastatic Wait for molecular results do not start systemic therapy until they return IO before excluding a driver worsens outcomes if severely symptomatic: 1–2 cycles platinum, then tailor Then treat by result driver positive → targeted therapy , whatever the PD-L1 PD-L1 ≥50%, no driver → single-agent IO any PD-L1 → platinum doublet + pembrolizumab Oligometastatic (≤3–5 sites) local consolidative therapy (SBRT or surgery) to all sites, plus systemic therapy — improves PFS and OS Screening USPSTF 2021 (Grade B): annual low-dose CT , age 50–80 , ≥20 pack-years , currently smoking or quit within 15 years Stop at 15 years since cessation , or when comorbidity would preclude curative surgery NLST: 20% reduction in lung-cancer mortality vs chest radiography · NELSON: 24% in men (the women's subgroup did not reach significance) Smoking cessation remains the highest-yield intervention — duration of smoking matters more than pack count Histology Type Features Adenocarcinoma ~50%; peripheral, non/light smokers. TTF-1, napsin A, CK7 positive. Highest yield for actionable drivers. Mucinous (TTF-1−) is KRAS-enriched and EGFR-poor Squamous ~25%; central, cavitating, heavy smokers. CK5/6, p40 / p63 ; keratin pearls and intercellular bridges. Pemetrexed and bevacizumab are both contraindicated Large cell Diagnosis of exclusion — treat as non-squamous Adenosquamous Both components, each ≥10% of the tumor Early stage — surgery and radiation Lobectomy + mediastinal nodal sampling or dissection is the standard; VATS preferred over thoracotomy Sublobar resection is acceptable for peripheral cT1aN0 ≤2 cm , after intraoperative nodal confirmation. CALGB 140503: non-inferior DFS (HR 1.01). JCOG0802: segmentectomy gave superior 5-yr OS (94.3% vs 91.1%) but doubled local relapse (10.5% vs 5.4%), and the survival gain came from non-lung-cancer deaths — read it as tolerability, not better cancer control SBRT for medically inoperable stage I. Avoid central SBRT within 2 cm of the proximal bronchial tree Preoperative assessment: predicted postoperative FEV1 and DLCO ; <30% predicted flags high surgical risk Driver → therapy Alteration First line and beyond EGFR ex19del / L858R ~15% US adeno Osimertinib 80 mg daily (FLAURA). Add carbo/pemetrexed ×4 for higher-risk disease — CNS involvement, L858R, TP53 co-mutation (FLAURA2: mPFS 25.5 vs 16.7 mo ; OS 47.5 vs 37.6). Or amivantamab + lazertinib (MARIPOSA: mPFS 23.7 vs 16.6 mo , HR 0.70; OS HR 0.75 ) — but grade ≥3 AEs 80% vs 52% , and it needs VTE prophylaxis for 4 months EGFR exon 20 ins ~10% of EGFR Resistant to osimertinib and the classic TKIs. 1L amivantamab + carboplatin/pemetrexed (PAPILLON: mPFS 11.4 vs 6.7 mo , HR 0.40). Post-platinum: sunvozertinib (accelerated, 2L+ only ). Mobocertinib was withdrawn in 2023 ALK ~3–7% Lorlatinib 100 mg daily (CROWN: 5-yr PFS 60% vs 8% vs crizotinib, median not reached — the longest single-agent PFS reported in any solid tumor). Watch CNS effects (mood, cognition, seizures) and hyperlipidemia . Alternatives: alectinib, brigatinib, ensartinib ROS1 ~1–2% Four co-preferred 1L agents: crizotinib, entrectinib, repotrectinib, taletrectinib. Prefer entrectinib / repotrectinib / taletrectinib if brain metastases — crizotinib has no CNS activity. Repotrectinib TKI-naive ORR 79%, mPFS 35.7 mo. Alectinib has no ROS1 activity despite its ALK potency RET ~1–2% Selpercatinib — the only randomized 1L evidence (LIBRETTO-431: mPFS 24.8 vs 11.2 mo vs chemo ± pembrolizumab, HR 0.47; intracranial ORR 82%). Pralsetinib is an alternative with more pneumonitis. Watch hypertension and transaminitis MET exon 14 ~3–4%, older never-smokers Capmatinib (1L ORR 68%) or tepotinib (1L ORR ~57%) — both single-arm, so those two numbers are not comparable . Tepotinib: watch peripheral edema BRAF V600E ~2%, smokers Encorafenib + binimetinib (PHAROS, treatment-naive ORR 75%) or dabrafenib + trametinib (ORR 64%, mPFS 10.9 mo). Pyrexia is the classic combination toxicity — hold and dose-modify KRAS G12C ~13% of adeno Not a first-line target — 1L is chemo-IO. 2L after platinum + anti-PD-(L)1: adagrasib (KRYSTAL-12: mPFS 5.5 vs 3.8 mo, HR 0.58) or sotorasib (CodeBreaK 200: 5.6 vs 4.5 mo, no OS difference ; still on accelerated approval after a failed confirmatory filing — the weakest evidence base on this page) HER2 (ERBB2) mutant ~2–3%, non-smoker women Mostly exon 20 insertions; high rate of brain metastases at presentation . Zongertinib — oral, and as of Feb 2026 it carries a 1L indication (treatment-naive ORR 76%). T-DXd 5.4 mg/kg q3wk (DESTINY-Lung02: ORR 49%) — ILD in 13–15%, including fatal cases ; monitor with serial imaging NTRK fusion <1% Larotrectinib, entrectinib or repotrectinib — all tumor-agnostic approvals NRG1 fusion Zenocutuzumab — accelerated approval, after progression on prior systemic therapy , for NSCLC and pancreatic adenocarcinoma only Progression on osimertinib Rebiopsy — resistance is heterogeneous, with no single dominant mechanism On-target: EGFR C797S . Off-target: MET amplification, HER2 amplification, acquired fusions Histologic transformation is the one you cannot afford to miss: SCLC transformation (with RB1 and TP53 loss) or squamous transformation. Treat SCLC transformation as SCLC — platinum/etoposide Standard next step is platinum-doublet chemotherapy Amivantamab + chemotherapy (MARIPOSA-2: mPFS 6.3 vs 4.2 mo, HR 0.48). The approved regimen is amivantamab + chemo only — the lazertinib triplet was not approved, for excess hematologic toxicity Datopotamab deruxtecan — TROP2 ADC on accelerated approval. The label is EGFR-mutant-specific : the all-comers trial met PFS but missed OS Driver-negative metastatic PD-L1 ≥50%: pembrolizumab monotherapy (KEYNOTE-024: OS 30 vs 14 months); atezolizumab or cemiplimab are alternatives. Use chemo-IO instead if the burden is high or the patient is symptomatic PD-L1 1–49% or <1%: chemo-IO doublet. Non-squamous → pembrolizumab + carboplatin + pemetrexed (KEYNOTE-189). Squamous → pembrolizumab + carboplatin + paclitaxel (KEYNOTE-407) Dual IO — ipilimumab/nivolumab (CheckMate 227, 9LA) or durvalumab/tremelimumab (POSEIDON): chemo-sparing but more toxic, most attractive at PD-L1 <1% and in squamous Second line: docetaxel 35 mg/m² days 1+8 — split dosing is better tolerated than 75 q3wk — ± ramucirumab Adjuvant therapy Cisplatin doublet ×4 for stage II–IIIA (LACE: ~5% absolute 5-yr OS gain). Stage IB only if ≥4 cm or high-risk features ; no benefit and possible harm in stage IA EGFR → osimertinib ×36 months (ADAURA: DFS HR 0.17, OS HR 0.49). ALK → alectinib ×24 months (ALINA: DFS HR 0.24). Omit IO in both Atezolizumab (IMpower010) is approved for stage II–IIIA with PD-L1 ≥1% , EGFR/ALK wild-type — but the 2025 update showed no significant OS benefit overall , with the signal concentrated at PD-L1 ≥50% Pembrolizumab (KEYNOTE-091) after adjuvant chemotherapy, no PD-L1 restriction : DFS HR 0.76 overall — yet the PD-L1 ≥50% subgroup was not significant , the reverse of what you would predict Perioperative and adjuvant dosing Regimen Dosing CheckMate 816 neoadjuvant only Cisplatin 75 mg/m² + pemetrexed 500 mg/m² (or gemcitabine 1250 d1+8) + nivolumab 360 mg on day 1 — q21d ×3 , then surgery KEYNOTE-671 perioperative Cisplatin 75 + pemetrexed 500 (or gemcitabine 1000 d1+8) + pembrolizumab 200 mg q21d ×4 → surgery → within 12 weeks, pembrolizumab 200 mg q21d ×13 AEGEAN perioperative Cisplatin 75 + pemetrexed 500 (or gemcitabine 1250 d1+8) + durvalumab 1500 mg q21d ×4 → surgery → durvalumab 1500 mg q28d ×12 CheckMate 77T perioperative Cisplatin 75 + pemetrexed 500 (or docetaxel 75) + nivolumab 360 mg q21d ×4 → surgery → within 90 days, nivolumab 360 mg q28d ×1 year Adjuvant chemo Cisplatin 75 mg/m² + pemetrexed 500 (non-squamous), gemcitabine 1250 d1+8, or docetaxel 75 — q21d ×4 . Growth factor support if using docetaxel Adjuvant IO Atezolizumab 1680 mg q4wk or pembrolizumab 200 mg q3wk , after adjuvant chemotherapy Chemoradiation and metastatic dosing Regimen Dosing ChemoRT non-squamous Carboplatin AUC 5 + pemetrexed 500 mg/m² q21d ×4, with daily RT ChemoRT squamous Cisplatin 50 mg/m² days 1, 8, 29, 36 + etoposide 50 mg/m² days 1–5 and 29–33 ; or carboplatin AUC 2 + paclitaxel 45 mg/m² weekly — with daily RT Consolidation durvalumab 10 mg/kg q14d ×12 months (or 1500 mg q4wk). Start within 6 weeks of finishing chemoRT Platinum doublet + IO Carboplatin AUC 5–6 + pemetrexed 500 (non-squamous) or paclitaxel 200 (squamous) + pembrolizumab 200 mg q21d ×4 → pemetrexed + pembrolizumab maintenance Single-agent IO Pembrolizumab 200 mg q3wk (or 400 q6wk) · atezolizumab 1200 mg q3wk · cemiplimab 350 mg q3wk Osimertinib + chemo FLAURA2 Carboplatin AUC 6 + pemetrexed 500 q21d ×4, with osimertinib 80 mg daily continuously , then pemetrexed maintenance Amivantamab + lazertinib Amivantamab weight-based ( <80 kg 1050 mg , ≥80 kg 1400 mg ) — split over days 1–2 in week 1, weekly through week 5, then q2wk from week 7 ; + lazertinib 240 mg PO daily . VTE prophylaxis ×4 months Docetaxel, 2L 35 mg/m² days 1+8 q21d — preferred over 75 q21d; reduce to 30 or 25 if heavily pretreated. ± ramucirumab 10 mg/kg Pemetrexed maintenance 500 mg/m² q21d — non-squamous only Monitoring and cautions Baseline HBsAg + anti-HBc before any immunosuppressive therapy ; consider quantitative TB testing by risk Pemetrexed: folic acid from ≥1 week before until 3 weeks after · B12 1000 mcg q9wk · dexamethasone 4 mg BID the day before and after, for rash. Never in squamous Bevacizumab: contraindicated in squamous histology, significant hemoptysis, and large cavitary tumors. Urine protein every other cycle; treat hypertension Cisplatin: avoid with hearing loss, CrCl <30, severe neuropathy, or poor performance status. Extensive hydration and aprepitant-containing antiemetics Osimertinib: echo at baseline and q3 months ×6 months; ECG at baseline, 2 weeks, 6 weeks, and with any QT-prolonging drug Alectinib: CK at baseline, 2 weeks, then q3 months · LFTs q2 weeks ×3 months. Lorlatinib: CNS effects and hyperlipidemia — median onset 15 days ; rosuvastatin first-line Immunotherapy: TSH and free T4 at baseline then q4–6 weeks. Prednisone 1–1.5 mg/kg for irAEs with a slow taper Do not start a targeted agent — osimertinib and crizotinib above all — within 3 months of immunotherapy ; the toxicity is additive. IO is also less effective in EGFR/ALK-driven disease Key trials CheckMate 816 Neoadjuvant platinum + nivolumab ×3 — pCR 24% vs 2%, EFS HR 0.63, OS HR 0.62 KEYNOTE-671 Perioperative pembrolizumab — EFS HR 0.58; the first perioperative IO trial with a confirmed OS benefit AEGEAN / 77T Perioperative durvalumab (EFS HR 0.68) / nivolumab (EFS HR 0.58) ADAURA / ALINA Adjuvant osimertinib ×36 mo (DFS HR 0.17, OS HR 0.49) / alectinib ×24 mo (DFS HR 0.24) PACIFIC Consolidation durvalumab after chemoRT — 5-yr OS 43% vs 33% LAURA Consolidation osimertinib, EGFR-mutant stage III — PFS 39.1 vs 5.6 mo , HR 0.16 FLAURA / FLAURA2 Osimertinib 1L; adding chemo gives mPFS 25.5 vs 16.7 mo and OS 47.5 vs 37.6 MARIPOSA Amivantamab + lazertinib vs osimertinib — mPFS 23.7 vs 16.6 mo, OS HR 0.75 , at a real toxicity cost CROWN Lorlatinib 1L in ALK — 5-yr PFS 60% vs 8% PAPILLON Amivantamab + chemo 1L for EGFR exon 20 — mPFS 11.4 vs 6.7 mo LIBRETTO-431 Selpercatinib vs chemo ± pembrolizumab in RET — mPFS 24.8 vs 11.2 mo CALGB 140503 Sublobar resection non-inferior for peripheral cT1aN0 ≤2 cm — DFS HR 1.01"
+}
