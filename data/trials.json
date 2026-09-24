@@ -1183,9 +1183,9 @@
    "arms": "Tamoxifen alone vs tamoxifen + ovarian suppression vs exemestane + ovarian suppression (× 5 years)",
    "n": 3066,
    "primary_endpoint": "Disease-free survival (tamoxifen + OFS vs tamoxifen)",
-   "results": "Primary (5-yr): DFS 86.6% vs 84.7% (HR 0.83, NS overall); in women who had chemotherapy 82.5% vs 78.0% (HR 0.78). 8-yr update: DFS 83.2% vs 78.9% (HR 0.76), OS 93.3% vs 91.5%; exemestane + OFS 8-yr DFS 85.9%. Largest benefit in women <35 and those needing chemotherapy",
+   "results": "Primary (5-yr): DFS 86.6% vs 84.7% (HR 0.83, NS overall); in women who had chemotherapy 82.5% vs 78.0% (HR 0.78). 8-yr update: DFS 83.2% vs 78.9% (HR 0.76), OS 93.3% vs 91.5%; exemestane + OFS 8-yr DFS 85.9%. Largest benefit in women <35 and those needing chemotherapy. Final 15-yr (Francis Ann Oncol 2026): 15-yr BCFI 78.6% E+OFS vs 75.7% T+OFS vs 72.1% T alone (T+OFS vs T HR 0.82, 0.69-0.98, P=0.03). No-chemo cohort: OFS reduced breast cancer events but DRFI and OS high regardless of arm. Prior chemo, HER2-negative (n=1257): 15-yr OS 81.0% E+OFS vs 77.1% T+OFS vs 76.8% T. Age <35 HER2-negative (n=241): 15-yr OS 82.5% vs 77.9% vs 68.1%. Meaningful OS benefit limited to high-risk premenopausal subgroups.",
    "toxicity": "Menopausal symptoms, osteoporosis, depression, hypertension, sexual dysfunction with OFS",
-   "reference": "Francis PA et al. NEJM 2015;372:436; NEJM 2018;379:122 (8-yr, with TEXT)",
+   "reference": "Francis PA et al. NEJM 2015;372:436; NEJM 2018;379:122 (8-yr, with TEXT); Francis PA et al. Final outcomes of the SOFT and TEXT phase III trials. Ann Oncol 2026;37:1367-1385 (PMID 42229584)",
    "pmid": "25495490",
    "nct": null,
    "highlights": [
@@ -1201,7 +1201,7 @@
    ],
    "source": "onepager:breast",
    "verified": true,
-   "updated": "2026-09-20"
+   "updated": "2026-09-23"
   },
   {
    "id": "extenet",
@@ -1794,16 +1794,17 @@
    "arms": "Abemaciclib 150 mg BID × 2 years + endocrine therapy vs endocrine therapy alone",
    "n": 5637,
    "primary_endpoint": "Invasive disease-free survival",
-   "results": "2-yr iDFS 92.2% vs 88.7% (HR 0.75) at primary analysis; 4-yr iDFS 85.8% vs 79.4% (HR 0.66); 5-yr iDFS 83.6% vs 76.0% — benefit deepens after abemaciclib stops; OS immature",
+   "results": "2-yr iDFS 92.2% vs 88.7% (HR 0.75) at primary analysis; 5-yr iDFS 83.6% vs 76.0%. Primary OS analysis (Johnston Ann Oncol 2025, median 76.2 mo, ITT 5637): OS HR 0.842 (95% CI 0.722-0.981), P=0.027 - statistically significant; 7-yr OS 86.8% vs 85.0% (absolute +1.8%). Fewer patients living with metastatic disease (6.4% vs 9.4%). 7-yr IDFS 77.4% vs 70.9% (HR 0.734, 0.657-0.820; +6.5%); 7-yr DRFS 80.0% vs 74.9% (HR 0.746, 0.662-0.840; +5.1%). No delayed toxicity signal.",
    "toxicity": "Diarrhea (84%, mostly grade 1–2), neutropenia, fatigue, VTE (2.5%), ILD (rare)",
-   "reference": "Johnston SRD et al. JCO 2020;38:3987; Lancet Oncol 2023;24:77 (4-yr); Rastogi P et al. JCO 2024 (5-yr)",
+   "reference": "Johnston SRD et al. JCO 2020;38:3987; Lancet Oncol 2023;24:77 (4-yr); Rastogi P et al. JCO 2024 (5-yr); Johnston S et al. Overall survival with abemaciclib in early breast cancer. Ann Oncol 2026;37:155-165 (epub Oct 2025; PMID 41110697)",
    "pmid": "32954927",
    "nct": null,
    "highlights": [
     "The first CDK4/6 inhibitor to succeed in the adjuvant setting (PALLAS and PENELOPE-B with palbociclib were negative).",
-    "Two-year course; the absolute benefit keeps widening after treatment ends (carry-over effect)."
+    "Two-year course; the absolute benefit keeps widening after treatment ends (carry-over effect).",
+    "Now the first adjuvant CDK4/6 inhibitor with a statistically significant OS benefit (HR 0.84; 7-yr OS 86.8% vs 85.0%)."
    ],
-   "takeaway": "2 years of adjuvant abemaciclib improves iDFS in node-positive high-risk HR+/HER2− breast cancer",
+   "takeaway": "2 years of adjuvant abemaciclib improves iDFS and OS in node-positive high-risk HR+/HER2- breast cancer",
    "tags": [
     "abemaciclib",
     "CDK4/6",
@@ -1812,7 +1813,7 @@
    ],
    "source": "onepager:breast",
    "verified": true,
-   "updated": "2026-09-20"
+   "updated": "2026-09-23"
   },
   {
    "id": "ascent",
@@ -1895,9 +1896,9 @@
    "arms": "Olaparib 300 mg BID × 1 year vs placebo",
    "n": 1836,
    "primary_endpoint": "Invasive disease-free survival",
-   "results": "3-yr iDFS 85.9% vs 77.1% (HR 0.58); 4-yr OS 89.8% vs 86.4% (HR 0.68)",
+   "results": "3-yr iDFS 85.9% vs 77.1% (HR 0.58); 4-yr OS 89.8% vs 86.4% (HR 0.68). 6-yr update (Garber Ann Oncol 2026, median follow-up 6.1 yr): OS 87.5% vs 83.2% (HR 0.72, 95% CI 0.56-0.93); IDFS HR 0.65; DDFS HR 0.65; MDS/AML 0.4% vs 0.7% (no excess)",
    "toxicity": "Anemia, nausea, fatigue; no excess MDS/AML at 3.5 yr",
-   "reference": "Tutt ANJ et al. NEJM 2021;384:2394; Geyer CE et al. Ann Oncol 2022 (OS)",
+   "reference": "Tutt ANJ et al. NEJM 2021;384:2394; Geyer CE et al. Ann Oncol 2022 (OS); Garber JE et al. Ann Oncol 2026 (6-yr, PMID 42636977)",
    "pmid": "34081848",
    "nct": null,
    "highlights": [
@@ -1913,7 +1914,7 @@
    ],
    "source": "onepager:breast",
    "verified": true,
-   "updated": "2026-09-20"
+   "updated": "2026-09-23"
   },
   {
    "id": "rxponder",
@@ -2336,9 +2337,9 @@
    "arms": "Ribociclib 400 mg daily 3 wk on/1 off × 3 years + NSAI (± ovarian suppression) vs NSAI alone",
    "n": 5101,
    "primary_endpoint": "Invasive disease-free survival",
-   "results": "3-yr iDFS 90.4% vs 87.1% (HR 0.75); 4-yr iDFS 88.5% vs 83.6% (HR 0.72); OS immature",
+   "results": "3-yr iDFS 90.4% vs 87.1% (HR 0.75); 4-yr iDFS 88.5% vs 83.6% (HR 0.72). 5-yr follow-up (Crown ESMO Open 2025, median iDFS follow-up 55.4 mo): iDFS HR 0.716 (95% CI 0.618-0.829), nominal P<0.0001; absolute iDFS gain grew from 2.7% at 3 y to 4.5% at 5 y; N0 subgroup HR 0.606 (0.372-0.986). OS still maturing: HR 0.800 (0.637-1.003), nominal one-sided P=0.026 - not yet statistically significant.",
    "toxicity": "Neutropenia, arthralgia, LFT elevation; QTc prolongation (400 mg dose lowers this vs 600 mg)",
-   "reference": "Slamon D et al. NEJM 2024;390:1080; Fasching PA et al. Ann Oncol 2025 (4-yr)",
+   "reference": "Slamon D et al. NEJM 2024;390:1080; Fasching PA et al. Ann Oncol 2025 (4-yr); Crown J et al. ESMO Open 2025;10:105858 (PMID 41320342)",
    "pmid": "38507751",
    "nct": null,
    "highlights": [
@@ -2354,7 +2355,7 @@
    ],
    "source": "onepager:breast",
    "verified": true,
-   "updated": "2026-09-20"
+   "updated": "2026-09-23"
   },
   {
    "id": "postmonarch",
@@ -6509,15 +6510,16 @@
    "descriptor": "enzalutamide in non-metastatic CRPC",
    "population": "M0 CRPC with PSA doubling time ≤10 months",
    "arms": "Enzalutamide 160 mg daily vs placebo, both + ADT",
-   "n": null,
+   "n": 1401,
    "primary_endpoint": "Metastasis-free survival",
-   "results": "MFS 36.6 vs 14.7 mo (HR 0.29)",
+   "results": "MFS 36.6 vs 14.7 mo (HR 0.29). Final OS (Sternberg CN et al. NEJM 2020;382:2197): 67.0 vs 56.3 mo, HR 0.73 (0.61-0.89), P=0.001",
    "toxicity": null,
-   "reference": "Hussain M et al. NEJM 2018;378:2465",
+   "reference": "Hussain M et al. NEJM 2018;378:2465; final OS Sternberg CN et al. NEJM 2020;382:2197",
    "pmid": "29949494",
-   "nct": null,
+   "nct": "NCT02003924",
    "highlights": [
-    "Second of the \"MFS trio\" (SPARTAN / PROSPER / ARAMIS) — all roughly doubled metastasis-free survival."
+    "Second of the \"MFS trio\" (SPARTAN / PROSPER / ARAMIS) — all roughly doubled metastasis-free survival.",
+    "Overall survival benefit confirmed at final analysis (OS HR 0.69-0.78 across the three nmCRPC trials)"
    ],
    "takeaway": "Enzalutamide more than doubles MFS in nmCRPC",
    "tags": [
@@ -6525,9 +6527,9 @@
     "ARPI",
     "MFS"
    ],
-   "source": "notion",
+   "source": "onepager:prostate",
    "verified": true,
-   "updated": "2026-09-19"
+   "updated": "2026-09-23"
   },
   {
    "id": "spartan",
@@ -6539,15 +6541,16 @@
    "descriptor": "apalutamide in non-metastatic CRPC",
    "population": "M0 CRPC with PSA doubling time ≤10 months",
    "arms": "Apalutamide 240 mg daily vs placebo, both + ADT",
-   "n": null,
+   "n": 1207,
    "primary_endpoint": "Metastasis-free survival (MFS)",
-   "results": "MFS 40.5 vs 16.2 mo (HR 0.28)",
+   "results": "MFS 40.5 vs 16.2 mo (HR 0.28). Final OS (Smith MR et al. Eur Urol 2021;79:150): 73.9 vs 59.9 mo, HR 0.78 (0.64-0.96), P=0.016",
    "toxicity": null,
-   "reference": "Smith MR et al. NEJM 2018;378:1408",
+   "reference": "Smith MR et al. NEJM 2018;378:1408; final OS Eur Urol 2021;79:150",
    "pmid": "29420164",
    "nct": null,
    "highlights": [
-    "One of the three M0 CRPC trials that made MFS an accepted registrational endpoint."
+    "One of the three M0 CRPC trials that made MFS an accepted registrational endpoint.",
+    "Overall survival benefit confirmed at final analysis (OS HR 0.69-0.78 across the three nmCRPC trials)"
    ],
    "takeaway": "Apalutamide more than doubles MFS in nmCRPC",
    "tags": [
@@ -6555,9 +6558,9 @@
     "ARPI",
     "MFS"
    ],
-   "source": "notion",
+   "source": "onepager:prostate",
    "verified": true,
-   "updated": "2026-09-19"
+   "updated": "2026-09-23"
   },
   {
    "id": "aramis",
@@ -6569,15 +6572,16 @@
    "descriptor": "darolutamide in non-metastatic CRPC",
    "population": "M0 CRPC with PSA doubling time ≤10 months",
    "arms": "Darolutamide 600 mg BID vs placebo, both + ADT",
-   "n": null,
+   "n": 1509,
    "primary_endpoint": "Metastasis-free survival",
-   "results": "MFS 40.4 vs 18.4 mo (HR 0.41)",
+   "results": "MFS 40.4 vs 18.4 mo (HR 0.41). Final OS (Fizazi K et al. NEJM 2020;383:1040): HR 0.69 (0.53-0.88), P=0.003; 3-yr OS 83% vs 77%",
    "toxicity": null,
-   "reference": "Fizazi K et al. NEJM 2019;380:1235",
+   "reference": "Fizazi K et al. NEJM 2019;380:1235; final OS NEJM 2020;383:1040",
    "pmid": "30763142",
-   "nct": null,
+   "nct": "NCT02200614",
    "highlights": [
-    "Darolutamide's distinct structure gives minimal blood-brain barrier penetration → fewer CNS effects (fatigue, falls, seizures) than enzalutamide or apalutamide."
+    "Darolutamide's distinct structure gives minimal blood-brain barrier penetration → fewer CNS effects (fatigue, falls, seizures) than enzalutamide or apalutamide.",
+    "Overall survival benefit confirmed at final analysis (OS HR 0.69-0.78 across the three nmCRPC trials)"
    ],
    "takeaway": "Darolutamide doubles MFS in nmCRPC with fewer CNS side effects",
    "tags": [
@@ -6585,9 +6589,9 @@
     "ARPI",
     "MFS"
    ],
-   "source": "notion",
+   "source": "onepager:prostate",
    "verified": true,
-   "updated": "2026-09-19"
+   "updated": "2026-09-23"
   },
   {
    "id": "arches",
@@ -7101,18 +7105,22 @@
    "name": "MAGNITUDE",
    "disease": "prostate",
    "year": 2023,
+   "phase": "3",
    "setting": "1L mCRPC, HRR-mutated",
-   "n": 423,
    "descriptor": "niraparib + abiraterone first-line, HRR-mutated mCRPC",
    "population": "First-line mCRPC with HRR gene alterations (BRCA1/2 cohort prespecified); an HRR-negative cohort was closed for futility",
    "arms": "Niraparib 200 mg + abiraterone/prednisone vs placebo + abiraterone/prednisone",
+   "n": 423,
    "primary_endpoint": "Radiographic PFS (BRCA1/2, then all HRR+)",
    "results": "BRCA1/2: rPFS 16.6 vs 10.9 mo (HR 0.53, updated 19.5 vs 10.9); all HRR+: rPFS 16.5 vs 13.7 mo (HR 0.73); no benefit in HRR-negative disease; OS (BRCA) HR 0.79",
    "toxicity": "Anemia (grade ≥3 ~28%), hypertension, thrombocytopenia",
    "reference": "Chi KN et al. JCO 2023;41:3339",
+   "pmid": "36952634",
+   "nct": null,
    "highlights": [
-    "Niraparib + abiraterone (Akeega) is approved for BRCA-mutated 1L mCRPC — the benefit is essentially confined to BRCA1/2, not the broader HRR set.",
-    "Contrast with TALAPRO-2 (all-comers benefit) and PROpel (unselected enrollment); biomarker testing is required before using MAGNITUDE's regimen."
+    "Niraparib + abiraterone (Akeega) is approved for BRCA-mutated 1L mCRPC - the benefit is essentially confined to BRCA1/2, not the broader HRR set.",
+    "Contrast with PROpel (all-comers enrollment, BRCA-only label) and TALAPRO-2 (all-comers enrollment, HRR-only label after FDA declined an all-comers expansion in 2025); biomarker testing is required before any first-line PARP combination.",
+    "The same combination moved into castration-sensitive disease with AMPLITUDE (FDA Dec 2025, BRCA2 only)."
    ],
    "takeaway": "Niraparib + abiraterone improves rPFS in BRCA-mutated first-line mCRPC, with no benefit in HRR-negative disease",
    "tags": [
@@ -7124,10 +7132,7 @@
    ],
    "source": "onepager:prostate",
    "verified": true,
-   "pmid": "36952634",
-   "nct": null,
-   "phase": "3",
-   "updated": "2026-09-20"
+   "updated": "2026-09-23"
   },
   {
    "id": "talapro-2",
@@ -7137,29 +7142,30 @@
    "phase": "3",
    "setting": "1L mCRPC",
    "descriptor": "talazoparib + enzalutamide, first-line mCRPC",
-   "population": "First-line mCRPC — all-comers cohort plus an HRR-mutated cohort",
+   "population": "805 men in the all-comers cohort (first-line mCRPC, ARPI-naive for CRPC) plus a separate HRR-deficient cohort of 399",
    "arms": "Talazoparib 0.5 mg + enzalutamide vs placebo + enzalutamide",
-   "n": null,
+   "n": 805,
    "primary_endpoint": "Radiographic PFS",
-   "results": "rPFS not reached vs 21.9 mo (HR 0.63) in all-comers; OS 45.8 vs 37.0 mo; benefit greatest in BRCA-mutated disease",
-   "toxicity": null,
-   "reference": "Agarwal N et al. Lancet 2023;402:291; OS update Lancet 2025",
+   "results": "All-comers: rPFS HR 0.63 at primary analysis (updated 33.1 vs 19.5 mo, HR 0.67). Final OS 45.8 vs 37.0 mo, HR 0.80 (0.66-0.96), P=0.016; HRR-deficient subgroup HR 0.55, HRR-non-deficient/unknown HR 0.88 (0.71-1.08), NS. HRR-deficient cohort (n=399): OS 45.1 vs 31.1 mo, HR 0.62 (0.48-0.81); BRCA OS HR 0.50; non-BRCA HR 0.73 (0.52-1.02)",
+   "toxicity": "Grade >=3 anemia 49% (all-comers) / 43% (HRR cohort); neutropenia 19-20%",
+   "reference": "Agarwal N et al. Lancet 2023;402:291; final OS Agarwal N et al. Lancet 2025;406:447 and Fizazi K et al. Lancet 2025;406:461",
    "pmid": "37285865",
-   "nct": null,
+   "nct": "NCT03395197",
    "highlights": [
-    "Anchors the first-line PARP + ARPI combination strategy, alongside MAGNITUDE (niraparib + abiraterone) and PROpel (olaparib + abiraterone).",
-    "Contrast with PROfound — PARP monotherapy belongs in the post-ARPI setting."
+    "Final OS positive in both cohorts, but the survival effect is concentrated in HRR-deficient, especially BRCA, disease",
+    "US label remains HRR gene-mutated mCRPC only: ODAC voted 8-0 against the non-HRR population (May 2025) and FDA declined to expand",
+    "Contrast with PROfound - PARP monotherapy belongs in the post-ARPI setting; anemia is the dominant toxicity"
    ],
-   "takeaway": "Talazoparib + enzalutamide improves rPFS and OS in 1L mCRPC, most in BRCA-mutated",
+   "takeaway": "Talazoparib plus enzalutamide improves overall survival in first-line mCRPC, with the benefit concentrated in HRR-deficient disease; the US label is HRR-mutated only.",
    "tags": [
     "talazoparib",
     "enzalutamide",
     "PARP",
     "HRR"
    ],
-   "source": "notion",
+   "source": "onepager:prostate",
    "verified": true,
-   "updated": "2026-09-19"
+   "updated": "2026-09-23"
   },
   {
    "id": "triton3",
@@ -7881,14 +7887,15 @@
    "arms": "Pembrolizumab 200 mg IV q3w + axitinib 5 mg PO BID vs sunitinib 50 mg PO daily, 4 wk of each 6-wk cycle",
    "n": 861,
    "primary_endpoint": "Dual primary — overall survival AND progression-free survival (ITT)",
-   "results": "At 12.8 mo: 12-mo OS 89.9% vs 78.3%, HR 0.53 (0.38-0.74), P<0.0001; PFS 15.1 vs 11.1 mo, HR 0.69 (0.57-0.84), P<0.001; ORR 59.3% vs 35.7%, P<0.001. Benefit across all IMDC risk groups and regardless of PD-L1",
+   "results": "At 12.8 mo: 12-mo OS 89.9% vs 78.3%, HR 0.53 (0.38-0.74), P<0.0001; PFS 15.1 vs 11.1 mo, HR 0.69 (0.57-0.84), P<0.001; ORR 59.3% vs 35.7%, P<0.001. Benefit across all IMDC risk groups and regardless of PD-L1. Final analysis at 43 mo (Plimack, Eur Urol 2023): OS HR 0.73 (0.60-0.88), PFS HR 0.68 (0.58-0.80), ORR 60% vs 40%; median DOR 24 vs 15 mo",
    "toxicity": "Grade ≥3 AEs 75.8% vs 70.6%; overlapping hepatotoxicity complicates attribution between the two drugs",
    "reference": "Rini BI et al. NEJM 2019;380:1116",
    "pmid": "30779529",
    "nct": null,
    "highlights": [
-    "First IO/TKI combination to beat sunitinib on both OS and PFS — made IO/TKI a 1L standard including favorable-risk disease",
-    "Only 12.8 months median follow-up at the reported primary analysis"
+    "First IO/TKI combination to beat sunitinib on both OS and PFS - made IO/TKI a 1L standard including favorable-risk disease",
+    "OS benefit maintained at the final 43-month analysis (HR 0.73), attenuated from the early HR 0.53",
+    "Overlapping hepatotoxicity: hold both drugs and give steroids if ALT does not fall"
    ],
    "takeaway": "Pembrolizumab + axitinib improved OS, PFS and response rate over sunitinib in untreated advanced ccRCC across all risk groups.",
    "tags": [
@@ -7899,7 +7906,7 @@
    ],
    "source": "onepager:rcc",
    "verified": true,
-   "updated": "2026-09-21"
+   "updated": "2026-09-23"
   },
   {
    "id": "surtime",
@@ -7976,14 +7983,15 @@
    "arms": "Nivolumab 240 mg IV q2w + cabozantinib 40 mg PO daily vs sunitinib 50 mg PO daily, 4 wk of each 6-wk cycle",
    "n": 651,
    "primary_endpoint": "Progression-free survival by blinded independent central review",
-   "results": "At 18.1 mo: PFS 16.6 vs 8.3 mo, HR 0.51 (0.41-0.64), P<0.001; 12-mo OS 85.7% vs 75.6%, HR 0.60 (98.89% CI 0.40-0.89), P=0.001; ORR 55.7% vs 27.1%, P<0.001. Health-related quality of life favored the combination",
+   "results": "At 18.1 mo: PFS 16.6 vs 8.3 mo, HR 0.51 (0.41-0.64), P<0.001; 12-mo OS 85.7% vs 75.6%, HR 0.60 (98.89% CI 0.40-0.89), P=0.001; ORR 55.7% vs 27.1%, P<0.001. Health-related quality of life favored the combination. Final analysis at 5.6 yr (Motzer, Ann Oncol 2025): PFS 16.4 vs 8.3 mo, HR 0.58 (0.49-0.70); OS 46.5 vs 35.5 mo, HR 0.79 (0.65-0.96); ORR 55.7% vs 27.4%, CR 13.9% vs 4.6%; 60-mo OS 40.9% vs 35.4%",
    "toxicity": "Grade ≥3 AEs 75.3% vs 70.6%; 19.7% discontinued ≥1 drug for AEs, 5.6% discontinued both",
    "reference": "Choueiri TK et al. NEJM 2021;384:829",
    "pmid": "33657295",
    "nct": null,
    "highlights": [
     "IO/TKI option with the best reported quality-of-life data; cabozantinib is dosed at 40 mg here, not the 60 mg monotherapy dose",
-    "Primary endpoint was PFS alone; OS was secondary, reported with a 98.89% CI at short follow-up"
+    "Primary endpoint was PFS alone; OS was secondary, reported with a 98.89% CI at short follow-up",
+    "Final 5.6-year analysis confirmed OS benefit (HR 0.79), attenuated from the early HR 0.60"
    ],
    "takeaway": "Nivolumab + cabozantinib doubled PFS and improved OS and response rate versus sunitinib in untreated advanced ccRCC.",
    "tags": [
@@ -7994,7 +8002,7 @@
    ],
    "source": "onepager:rcc",
    "verified": true,
-   "updated": "2026-09-21"
+   "updated": "2026-09-23"
   },
   {
    "id": "clear-rcc",
@@ -8008,14 +8016,15 @@
    "arms": "Lenvatinib 20 mg PO daily + pembrolizumab 200 mg IV q3w; lenvatinib 18 mg + everolimus 5 mg PO daily; sunitinib 50 mg PO daily 4-on/2-off",
    "n": 1069,
    "primary_endpoint": "Progression-free survival by independent review (RECIST 1.1)",
-   "results": "Lenvatinib+pembrolizumab vs sunitinib: PFS 23.9 vs 9.2 mo, HR 0.39 (0.32-0.49), P<0.001; OS HR 0.66 (0.49-0.88), P=0.005; ORR 71.0% vs 36.1%. Lenvatinib+everolimus vs sunitinib: PFS 14.7 vs 9.2 mo, HR 0.65; OS HR 1.15 (0.88-1.50), P=0.30 — no OS benefit",
+   "results": "Lenvatinib+pembrolizumab vs sunitinib: PFS 23.9 vs 9.2 mo, HR 0.39 (0.32-0.49), P<0.001; OS HR 0.66 (0.49-0.88), P=0.005; ORR 71.0% vs 36.1%. Lenvatinib+everolimus vs sunitinib: PFS 14.7 vs 9.2 mo, HR 0.65; OS HR 1.15 (0.88-1.50), P=0.30 — no OS benefit. Final prespecified OS (Motzer, JCO 2024): OS HR 0.79 (0.63-0.99), median 53.7 vs 54.3 mo; PFS 23.9 vs 9.2 mo, HR 0.47; ORR 71.3% vs 36.7%",
    "toxicity": "Grade ≥3 AEs 82.4% (len+pembro), 83.1% (len+eve), 71.8% (sunitinib); hypertension, diarrhea, lipase elevation",
    "reference": "Motzer R et al. NEJM 2021;384:1289",
    "pmid": "33616314",
    "nct": null,
    "highlights": [
     "Longest median PFS reported for any 1L RCC regimen (23.9 mo) — a preferred IO/TKI option across IMDC risk groups",
-    "Primary endpoint was PFS only; the lenvatinib+everolimus arm showed no OS benefit and is not a 1L standard"
+    "Primary endpoint was PFS only; the lenvatinib+everolimus arm showed no OS benefit and is not a 1L standard",
+    "At the final OS analysis the HR still favored lenvatinib + pembrolizumab (0.79) but median OS was identical (53.7 vs 54.3 mo)"
    ],
    "takeaway": "Lenvatinib + pembrolizumab roughly doubles PFS and improves OS versus sunitinib in untreated advanced RCC, at the cost of high-grade toxicity.",
    "tags": [
@@ -8026,7 +8035,7 @@
    ],
    "source": "onepager:rcc",
    "verified": true,
-   "updated": "2026-09-21"
+   "updated": "2026-09-23"
   },
   {
    "id": "keynote-427-cohort-b",
