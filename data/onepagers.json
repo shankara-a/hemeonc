@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T20:03:30",
+ "generated": "2026-09-23T23:23:55",
  "onepagers": [
   {
    "disease": "aml",
@@ -8,6 +8,15 @@
    "pages": 3,
    "size": 77422,
    "sha1": "f8c714daa27e93687ff80933eed156b271151a32",
+   "updated": "2026-09-23"
+  },
+  {
+   "disease": "biliary",
+   "file": "Biliary Tract Cancer.pdf",
+   "title": "Biliary tract cancer",
+   "pages": 3,
+   "size": 57073,
+   "sha1": "594165a9fc7c6cc166dc7069c1429664d7024012",
    "updated": "2026-09-23"
   },
   {

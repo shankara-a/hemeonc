@@ -1,252 +1,281 @@
 {
-  "groups": [
-    {
-      "id": "solid",
-      "name": "Solid tumors"
-    },
-    {
-      "id": "malignant-heme",
-      "name": "Malignant hematology"
-    },
-    {
-      "id": "lymphoma",
-      "name": "Lymphoma"
-    },
-    {
-      "id": "benign-heme",
-      "name": "Classical hematology"
-    }
-  ],
-  "diseases": [
-    {
-      "slug": "breast",
-      "name": "Breast cancer",
-      "short": "Breast",
-      "group": "solid",
-      "onepager": "Breast Cancer.pdf",
-      "aliases": [
-        "breast"
-      ]
-    },
-    {
-      "slug": "colon",
-      "name": "Colon adenocarcinoma",
-      "short": "Colon",
-      "group": "solid",
-      "onepager": "Colon Adenocarcinoma.pdf",
-      "aliases": [
-        "colon",
-        "colorectal",
-        "crc"
-      ]
-    },
-    {
-      "slug": "rectal",
-      "name": "Rectal adenocarcinoma",
-      "short": "Rectal",
-      "group": "solid",
-      "onepager": "Rectal Adenocarcinoma.pdf",
-      "aliases": [
-        "rectal",
-        "rectum"
-      ]
-    },
-    {
-      "slug": "pancreatic",
-      "name": "Pancreatic adenocarcinoma",
-      "short": "Pancreatic",
-      "group": "solid",
-      "onepager": "Pancreatic Cancer.pdf",
-      "aliases": [
-        "pancreatic",
-        "pancreas",
-        "pdac"
-      ]
-    },
-    {
-      "slug": "nsclc",
-      "name": "Non-small cell lung cancer",
-      "short": "NSCLC",
-      "group": "solid",
-      "onepager": "Non-Small Cell Lung Cancer.pdf",
-      "aliases": [
-        "nsclc",
-        "lung",
-        "lung cancer"
-      ]
-    },
-    {
-      "slug": "prostate",
-      "name": "Prostate cancer",
-      "short": "Prostate",
-      "group": "solid",
-      "onepager": "Prostate Cancer.pdf",
-      "aliases": [
-        "prostate"
-      ]
-    },
-    {
-      "slug": "testicular",
-      "name": "Testicular cancer",
-      "short": "Testicular",
-      "group": "solid",
-      "onepager": "Testicular Cancer.pdf",
-      "aliases": [
-        "testicular",
-        "germ cell",
-        "gct"
-      ]
-    },
-    {
-      "slug": "melanoma",
-      "name": "Melanoma",
-      "short": "Melanoma",
-      "group": "solid",
-      "onepager": "Melanoma.pdf",
-      "aliases": [
-        "melanoma"
-      ]
-    },
-    {
-      "slug": "net",
-      "name": "Neuroendocrine tumors (GEP-NET)",
-      "short": "NET",
-      "group": "solid",
-      "onepager": "Neuroendocrine Tumors.pdf",
-      "aliases": [
-        "net",
-        "neuroendocrine",
-        "gep-net",
-        "carcinoid"
-      ]
-    },
-    {
-      "slug": "head-neck",
-      "name": "Head & neck squamous cell carcinoma",
-      "short": "Head & neck",
-      "group": "solid",
-      "onepager": null,
-      "aliases": [
-        "head and neck",
-        "hnscc",
-        "h&n"
-      ]
-    },
-    {
-      "slug": "thyroid",
-      "name": "Thyroid cancer",
-      "short": "Thyroid",
-      "group": "solid",
-      "onepager": null,
-      "aliases": [
-        "thyroid",
-        "dtc"
-      ]
-    },
-    {
-      "slug": "mpn",
-      "name": "Myeloproliferative neoplasms (PV / ET / PMF)",
-      "short": "MPN",
-      "group": "malignant-heme",
-      "onepager": "Myeloproliferative Neoplasms.pdf",
-      "aliases": [
-        "mpn",
-        "polycythemia",
-        "pv",
-        "et",
-        "myelofibrosis",
-        "pmf"
-      ]
-    },
-    {
-      "slug": "mds",
-      "name": "Myelodysplastic syndromes",
-      "short": "MDS",
-      "group": "malignant-heme",
-      "onepager": "Myelodysplastic Syndromes.pdf",
-      "aliases": [
-        "mds",
-        "myelodysplastic"
-      ]
-    },
-    {
-      "slug": "aml",
-      "name": "Acute myeloid leukemia",
-      "short": "AML",
-      "group": "malignant-heme",
-      "onepager": "Acute Myeloid Leukemia.pdf",
-      "aliases": [
-        "aml"
-      ]
-    },
-    {
-      "slug": "rcc",
-      "name": "Renal cell carcinoma",
-      "short": "RCC",
-      "group": "solid",
-      "onepager": "Renal Cell Carcinoma.pdf",
-      "aliases": [
-        "rcc",
-        "renal",
-        "kidney",
-        "renal cell"
-      ]
-    },
-    {
-      "slug": "lymphoma-aggressive-bcell",
-      "name": "Aggressive B-cell lymphoma",
-      "short": "Aggressive B-cell",
-      "group": "lymphoma",
-      "aliases": [
-        "dlbcl",
-        "burkitt",
-        "pcnsl",
-        "hiv lymphoma",
-        "aggressive b-cell"
-      ],
-      "onepager": "Lymphoma - Aggressive B-cell.pdf"
-    },
-    {
-      "slug": "lymphoma-hodgkin",
-      "name": "Hodgkin lymphoma",
-      "short": "Hodgkin",
-      "group": "lymphoma",
-      "aliases": [
-        "hodgkin",
-        "hl",
-        "nlphl",
-        "classic hodgkin"
-      ],
-      "onepager": "Lymphoma - Hodgkin.pdf"
-    },
-    {
-      "slug": "lymphoma-indolent-mantle",
-      "name": "Indolent and mantle B-cell lymphoma",
-      "short": "Indolent & mantle",
-      "group": "lymphoma",
-      "aliases": [
-        "follicular",
-        "mantle cell",
-        "mcl",
-        "fl",
-        "indolent"
-      ],
-      "onepager": "Lymphoma - Indolent and Mantle.pdf"
-    },
-    {
-      "slug": "lymphoma-tcell",
-      "name": "T-cell and cutaneous lymphoma",
-      "short": "T-cell & cutaneous",
-      "group": "lymphoma",
-      "aliases": [
-        "ptcl",
-        "t-cell",
-        "mycosis fungoides",
-        "sezary",
-        "ctcl",
-        "nk/t"
-      ],
-      "onepager": "Lymphoma - T-cell and Cutaneous.pdf"
-    }
-  ]
+ "groups": [
+  {
+   "id": "solid",
+   "name": "Solid tumors"
+  },
+  {
+   "id": "malignant-heme",
+   "name": "Malignant hematology"
+  },
+  {
+   "id": "lymphoma",
+   "name": "Lymphoma"
+  },
+  {
+   "id": "benign-heme",
+   "name": "Classical hematology"
+  }
+ ],
+ "diseases": [
+  {
+   "slug": "aml",
+   "name": "Acute myeloid leukemia",
+   "short": "AML",
+   "group": "malignant-heme",
+   "onepager": "Acute Myeloid Leukemia.pdf",
+   "aliases": [
+    "aml"
+   ]
+  },
+  {
+   "slug": "biliary",
+   "name": "Biliary tract cancer",
+   "short": "Biliary",
+   "group": "solid",
+   "onepager": "Biliary Tract Cancer.pdf",
+   "aliases": [
+    "biliary",
+    "cholangiocarcinoma",
+    "gallbladder",
+    "btc",
+    "cca"
+   ]
+  },
+  {
+   "slug": "biliary",
+   "name": "Biliary tract cancer",
+   "short": "Biliary",
+   "group": "solid",
+   "onepager": "Biliary Tract Cancer.pdf",
+   "aliases": [
+    "biliary",
+    "cholangiocarcinoma",
+    "gallbladder",
+    "btc",
+    "cca",
+    "biliary-tract-cancer"
+   ]
+  },
+  {
+   "slug": "breast",
+   "name": "Breast cancer",
+   "short": "Breast",
+   "group": "solid",
+   "onepager": "Breast Cancer.pdf",
+   "aliases": [
+    "breast"
+   ]
+  },
+  {
+   "slug": "colon",
+   "name": "Colon adenocarcinoma",
+   "short": "Colon",
+   "group": "solid",
+   "onepager": "Colon Adenocarcinoma.pdf",
+   "aliases": [
+    "colon",
+    "colorectal",
+    "crc"
+   ]
+  },
+  {
+   "slug": "head-neck",
+   "name": "Head & neck squamous cell carcinoma",
+   "short": "Head & neck",
+   "group": "solid",
+   "onepager": null,
+   "aliases": [
+    "head and neck",
+    "hnscc",
+    "h&n"
+   ]
+  },
+  {
+   "slug": "lymphoma-aggressive-bcell",
+   "name": "Aggressive B-cell lymphoma",
+   "short": "Aggressive B-cell",
+   "group": "lymphoma",
+   "aliases": [
+    "dlbcl",
+    "burkitt",
+    "pcnsl",
+    "hiv lymphoma",
+    "aggressive b-cell"
+   ],
+   "onepager": "Lymphoma - Aggressive B-cell.pdf"
+  },
+  {
+   "slug": "lymphoma-hodgkin",
+   "name": "Hodgkin lymphoma",
+   "short": "Hodgkin",
+   "group": "lymphoma",
+   "aliases": [
+    "hodgkin",
+    "hl",
+    "nlphl",
+    "classic hodgkin"
+   ],
+   "onepager": "Lymphoma - Hodgkin.pdf"
+  },
+  {
+   "slug": "lymphoma-indolent-mantle",
+   "name": "Indolent and mantle B-cell lymphoma",
+   "short": "Indolent & mantle",
+   "group": "lymphoma",
+   "aliases": [
+    "follicular",
+    "mantle cell",
+    "mcl",
+    "fl",
+    "indolent"
+   ],
+   "onepager": "Lymphoma - Indolent and Mantle.pdf"
+  },
+  {
+   "slug": "lymphoma-tcell",
+   "name": "T-cell and cutaneous lymphoma",
+   "short": "T-cell & cutaneous",
+   "group": "lymphoma",
+   "aliases": [
+    "ptcl",
+    "t-cell",
+    "mycosis fungoides",
+    "sezary",
+    "ctcl",
+    "nk/t"
+   ],
+   "onepager": "Lymphoma - T-cell and Cutaneous.pdf"
+  },
+  {
+   "slug": "mds",
+   "name": "Myelodysplastic syndromes",
+   "short": "MDS",
+   "group": "malignant-heme",
+   "onepager": "Myelodysplastic Syndromes.pdf",
+   "aliases": [
+    "mds",
+    "myelodysplastic"
+   ]
+  },
+  {
+   "slug": "melanoma",
+   "name": "Melanoma",
+   "short": "Melanoma",
+   "group": "solid",
+   "onepager": "Melanoma.pdf",
+   "aliases": [
+    "melanoma"
+   ]
+  },
+  {
+   "slug": "mpn",
+   "name": "Myeloproliferative neoplasms (PV / ET / PMF)",
+   "short": "MPN",
+   "group": "malignant-heme",
+   "onepager": "Myeloproliferative Neoplasms.pdf",
+   "aliases": [
+    "mpn",
+    "polycythemia",
+    "pv",
+    "et",
+    "myelofibrosis",
+    "pmf"
+   ]
+  },
+  {
+   "slug": "net",
+   "name": "Neuroendocrine tumors (GEP-NET)",
+   "short": "NET",
+   "group": "solid",
+   "onepager": "Neuroendocrine Tumors.pdf",
+   "aliases": [
+    "net",
+    "neuroendocrine",
+    "gep-net",
+    "carcinoid"
+   ]
+  },
+  {
+   "slug": "nsclc",
+   "name": "Non-small cell lung cancer",
+   "short": "NSCLC",
+   "group": "solid",
+   "onepager": "Non-Small Cell Lung Cancer.pdf",
+   "aliases": [
+    "nsclc",
+    "lung",
+    "lung cancer"
+   ]
+  },
+  {
+   "slug": "pancreatic",
+   "name": "Pancreatic adenocarcinoma",
+   "short": "Pancreatic",
+   "group": "solid",
+   "onepager": "Pancreatic Cancer.pdf",
+   "aliases": [
+    "pancreatic",
+    "pancreas",
+    "pdac"
+   ]
+  },
+  {
+   "slug": "prostate",
+   "name": "Prostate cancer",
+   "short": "Prostate",
+   "group": "solid",
+   "onepager": "Prostate Cancer.pdf",
+   "aliases": [
+    "prostate"
+   ]
+  },
+  {
+   "slug": "rcc",
+   "name": "Renal cell carcinoma",
+   "short": "RCC",
+   "group": "solid",
+   "onepager": "Renal Cell Carcinoma.pdf",
+   "aliases": [
+    "rcc",
+    "renal",
+    "kidney",
+    "renal cell"
+   ]
+  },
+  {
+   "slug": "rectal",
+   "name": "Rectal adenocarcinoma",
+   "short": "Rectal",
+   "group": "solid",
+   "onepager": "Rectal Adenocarcinoma.pdf",
+   "aliases": [
+    "rectal",
+    "rectum"
+   ]
+  },
+  {
+   "slug": "testicular",
+   "name": "Testicular cancer",
+   "short": "Testicular",
+   "group": "solid",
+   "onepager": "Testicular Cancer.pdf",
+   "aliases": [
+    "testicular",
+    "germ cell",
+    "gct"
+   ]
+  },
+  {
+   "slug": "thyroid",
+   "name": "Thyroid cancer",
+   "short": "Thyroid",
+   "group": "solid",
+   "onepager": null,
+   "aliases": [
+    "thyroid",
+    "dtc"
+   ]
+  }
+ ]
 }
