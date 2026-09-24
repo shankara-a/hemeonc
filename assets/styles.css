@@ -187,20 +187,6 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
 .btn.small { padding: 4px 9px; font-size: .78rem; }
 
 .rv-body { display: grid; grid-template-columns: minmax(0, 1fr) 210px; gap: 16px; align-items: start; }
-.rv-body.has-trial { grid-template-columns: minmax(0, 1fr) 190px 290px; }
-.rv-trialcol { position: sticky; top: calc(var(--topbar) + var(--rvbar) + 12px); min-width: 0; }
-.rv-trialcol[hidden] { display: none; }
-.tcol-card { position: relative; padding: 14px 16px; font-size: .86rem; }
-.tcol-close {
-  position: absolute; top: 6px; right: 8px; border: none; background: none; cursor: pointer;
-  color: var(--muted); font-size: 1.2rem; line-height: 1; padding: 2px 5px; border-radius: 6px;
-}
-.tcol-close:hover { background: var(--bg); color: var(--ink); }
-.tcol-card .tp-head { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; padding-right: 20px; }
-.tcol-card .tp-name { font-weight: 700; font-size: 1rem; }
-.tcol-card .tp-desc { color: var(--muted); font-size: .8rem; margin-top: 3px; }
-.tcol-card .tp-take { margin-top: 9px; padding: 9px 11px; background: var(--accent-soft); border-radius: 8px; font-weight: 600; font-size: .86rem; line-height: 1.45; }
-.tcol-card .tp-open { display: inline-block; margin-top: 9px; font-size: .78rem; font-weight: 600; }
 .rv-doc { min-width: 0; }
 .rv-pdf { padding: 0; }
 .pdf-toolbar { display: flex; align-items: center; gap: 6px; padding: 7px 10px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
@@ -380,11 +366,9 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
 @media (max-width: 1200px) {
   .rv-layout { grid-template-columns: 180px minmax(0, 1fr); }
   .rv-body { grid-template-columns: minmax(0, 1fr) 180px; }
-  .rv-body.has-trial { grid-template-columns: minmax(0, 1fr) 170px 260px; }
 }
 @media (max-width: 900px) {
-  .rv-layout, .rv-body, .rv-body.has-trial { grid-template-columns: 1fr; }
-  .rv-trialcol { position: static; }
+  .rv-layout, .rv-body { grid-template-columns: 1fr; }
   .tree-items { display: block; }              /* groups always open when they wrap as pills */
   .rv-nav { position: static; max-height: none; }
   .tree { display: flex; flex-wrap: wrap; gap: 4px; }

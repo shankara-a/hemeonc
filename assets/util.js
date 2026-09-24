@@ -70,36 +70,13 @@
   /* ---------- Detail panes (Trials tab: #tr-detail · Reviews: .rv-detail) ---------- */
   const paneFor = (row) => {
     if (!window.matchMedia("(min-width: 901px)").matches) return null;
-    if (row.closest("#tr-list")) {
-      const p = document.getElementById("tr-detail");
-      return p && p.offsetParent !== null ? p : null;
-    }
-    if (row.closest(".rv-rail")) {
-      const col = document.querySelector(".rv-trialcol");
-      if (!col) return null;
-      if (col.hidden) {                                  // open the column, then let the PDF reflow
-        col.hidden = false;
-        col.closest(".rv-body")?.classList.add("has-trial");
-        HH.refitPdf?.();
-      }
-      return col;
-    }
-    return null;
+    if (!row.closest("#tr-list")) return null;          // Reviews uses the floating bubble
+    const pane = document.getElementById("tr-detail");
+    return pane && pane.offsetParent !== null ? pane : null;
   };
   HH.renderDetail = (pane, t, { isPinned = false } = {}) => {
     if (!pane || !t) return;
     const dz = HH.disease(t.disease);
-    if (pane.classList.contains("rv-trialcol")) {          // Reviews: its own column, takeaway only
-      pane.innerHTML = `
-        <div class="card tcol-card">
-          <button class="tcol-close" aria-label="Close">\u00d7</button>
-          <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t)}</div>
-          <div class="tp-desc">${HH.esc(t.descriptor || "")}${t.setting ? ` \u00b7 ${HH.esc(t.setting)}` : ""}</div>
-          ${t.takeaway ? `<div class="tp-take">${HH.esc(t.takeaway)}</div>` : ""}
-          <a class="tp-open" href="#trial/${HH.esc(t.id)}">Open the full trial \u2192</a>
-        </div>`;
-      return;
-    }
     pane.innerHTML = `
       <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t, { disease: true })}</div>
       <div class="tp-desc">${HH.esc(t.descriptor || "")}${t.setting ? ` · ${HH.esc(t.setting)}` : ""}</div>
@@ -185,14 +162,6 @@
     if (e.target.closest(".trial-row") || e.target.closest("#trial-pop")) HH.hidePop();
   });
   document.addEventListener("click", (e) => {
-    if (e.target.closest(".tcol-close")) {
-      const col = document.querySelector(".rv-trialcol");
-      col.hidden = true;
-      col.closest(".rv-body")?.classList.remove("has-trial");
-      document.querySelectorAll(".rv-rail .trial-row.hovered").forEach((r) => r.classList.remove("hovered"));
-      HH.refitPdf?.();
-      return;
-    }
     const row = e.target.closest(".trial-row");
     if (!row) return;
     if (e.target.closest("a") || e.target.closest(".tr-more")) return; // let links & selection work

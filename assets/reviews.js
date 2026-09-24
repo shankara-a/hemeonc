@@ -165,7 +165,6 @@
                <div class="segmented tiny rv-sort" role="group" aria-label="Sort trials">${sortBtns}</div>
                <div class="rv-strip">${trials.map(pill).join("") || `<div class="empty small">None filed yet</div>`}</div>`}
         </aside>
-        <aside class="rv-trialcol" aria-label="Selected trial" hidden></aside>
       </div>`;
 
     main.querySelector(".rv-view").addEventListener("click", (e) => {
