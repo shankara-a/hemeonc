@@ -45,14 +45,24 @@ def validate(trials_db, diseases_db, onepagers_db=None):
 
 
 def bump_asset_version():
-    """Rewrite ?v=N on asset tags in index.html to the current commit count (cache-busting)."""
+    """Stamp ?v=<hash of assets/> on the asset tags in index.html so browsers refetch on change.
+
+    A content hash (not a commit count) — several edits between commits each get their own
+    version, which a counter could not do, and an unchanged asset keeps its version.
+    """
+    import hashlib
     idx = ROOT / "index.html"
-    n = subprocess.run(["git", "rev-list", "--count", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip() or "0"
+    h = hashlib.sha1()
+    for f in sorted((ROOT / "assets").iterdir()):
+        if f.suffix in (".js", ".css"):
+            h.update(f.name.encode())
+            h.update(f.read_bytes())
+    v = h.hexdigest()[:8]
     s = idx.read_text()
-    new = re.sub(r"(assets/[a-z]+\.(?:js|css))(\?v=\d+)?", lambda m: f"{m.group(1)}?v={int(n) + 1}", s)
+    new = re.sub(r"(assets/[a-z]+\.(?:js|css))(\?v=[0-9a-z]+)?", lambda m: f"{m.group(1)}?v={v}", s)
     if new != s:
         idx.write_text(new)
-
+    return v
 
 def main():
     trials = json.loads((DATA / "trials.json").read_text())

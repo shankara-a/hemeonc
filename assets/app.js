@@ -3,6 +3,29 @@
   const HH = (window.HH = window.HH || {});
   const $ = (id) => document.getElementById(id);
 
+  /* Keep the sticky offsets honest: the header and the Reviews toolbar change height
+     with the breakpoint and with how the toolbar wraps, so measure instead of guessing. */
+  const syncOffsets = () => {
+    const root = document.documentElement.style;
+    const head = document.querySelector(".site-header");
+    if (head) root.setProperty("--topbar", `${Math.round(head.getBoundingClientRect().height)}px`);
+    const bar = document.querySelector("#reviews.active .rv-bar");
+    if (bar) root.setProperty("--rvbar", `${Math.round(bar.getBoundingClientRect().height)}px`);
+  };
+  HH.syncOffsets = syncOffsets;
+  window.addEventListener("resize", syncOffsets);
+  if (window.ResizeObserver) {
+    const ro = new ResizeObserver(syncOffsets);
+    document.addEventListener("DOMContentLoaded", () => {
+      const head = document.querySelector(".site-header");
+      if (head) ro.observe(head);
+      new MutationObserver(() => {
+        const bar = document.querySelector("#reviews.active .rv-bar");
+        if (bar) { ro.observe(bar); syncOffsets(); }
+      }).observe(document.getElementById("rv-main"), { childList: true, subtree: false });
+    });
+  }
+
   const focusSearch = () => {
     const box = $("rv-q");
     if (!box) return;
@@ -92,6 +115,7 @@
       return;
     }
     renderHome();
+    syncOffsets();
     HH.initTree();
     HH.initTrials();
     window.addEventListener("hashchange", route);

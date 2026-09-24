@@ -14,6 +14,8 @@
   --shadow: 0 1px 3px rgba(16, 24, 40, .08), 0 1px 2px rgba(16, 24, 40, .06);
   --shadow-lg: 0 12px 32px rgba(16, 24, 40, .18), 0 2px 6px rgba(16, 24, 40, .08);
   --radius: 10px;
+  --topbar: 48px;      /* height of the sticky site header */
+  --rvbar: 42px;       /* height of the Reviews toolbar that sticks under it */
   font-synthesis: none;
 }
 
@@ -127,7 +129,7 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
 
 /* ---------- reviews: tree | document | rail ---------- */
 .rv-layout { display: grid; grid-template-columns: 208px minmax(0, 1fr); gap: 16px; align-items: start; }
-.rv-nav { position: sticky; top: 60px; max-height: calc(100vh - 76px); display: flex; flex-direction: column; gap: 8px; }
+.rv-nav { position: sticky; top: calc(var(--topbar) + 8px); max-height: calc(100vh - var(--topbar) - 24px); display: flex; flex-direction: column; gap: 8px; }
 .rv-search { position: relative; flex: none; }
 .rv-search input {
   width: 100%; font: inherit; font-size: .86rem; padding: 7px 26px 7px 10px;
@@ -159,7 +161,12 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
 .tree-item.active .ti-n, .tree-item.active .tree-why { color: var(--primary-dark); }
 
 .rv-main { min-width: 0; }
-.rv-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.rv-bar {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  position: sticky; top: var(--topbar); z-index: 15;
+  background: var(--bg); padding: 8px 0; margin-bottom: 4px;
+  box-shadow: 0 6px 6px -6px rgba(16, 24, 40, .10);
+}
 .rv-bar .spacer { flex: 1; }
 .rv-meta { color: var(--muted); font-size: .82rem; }
 .btn {
@@ -188,7 +195,7 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
 .pdf-status { color: var(--muted); font-size: .85rem; padding: 24px; text-align: center; }
 .nopdf-note { border-style: dashed; color: var(--muted); font-size: .9rem; }
 
-.rv-rail { position: sticky; top: 60px; max-height: calc(100vh - 76px); display: flex; flex-direction: column; min-width: 0; }
+.rv-rail { position: sticky; top: calc(var(--topbar) + var(--rvbar) + 12px); max-height: calc(100vh - var(--topbar) - var(--rvbar) - 28px); display: flex; flex-direction: column; min-width: 0; }
 .rail-head { display: flex; align-items: baseline; justify-content: space-between; gap: 6px; margin-bottom: 6px; flex: none; }
 .rail-head.trials-head { margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--line); }
 .rail-title { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
@@ -221,7 +228,7 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
 .nt-sec { margin-bottom: 20px; }
 .nt-h {
   margin: 0 0 7px; font-size: .84rem; text-transform: uppercase; letter-spacing: .06em; color: var(--primary);
-  border-bottom: 1px solid var(--line); padding-bottom: 3px; scroll-margin-top: 70px;
+  border-bottom: 1px solid var(--line); padding-bottom: 3px; scroll-margin-top: calc(var(--topbar) + var(--rvbar) + 16px);
 }
 .nt-body ul { margin: 0; padding-left: 18px; }
 .nt-body li { margin-bottom: 4px; font-size: .92rem; }
