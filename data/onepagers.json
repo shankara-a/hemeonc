@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T23:23:55",
+ "generated": "2026-09-23T23:52:06",
  "onepagers": [
   {
    "disease": "aml",
@@ -23,10 +23,10 @@
    "disease": "breast",
    "file": "Breast Cancer.pdf",
    "title": "Breast cancer",
-   "pages": 2,
-   "size": 50119,
-   "sha1": "2e90fb2e864a50d79fe5d239fab664488cccf80b",
-   "updated": "2026-09-19"
+   "pages": 3,
+   "size": 71883,
+   "sha1": "0f6a7ad63a853d946ee49c65b56ede0d0dac71af",
+   "updated": "2026-09-23"
   },
   {
    "disease": "colon",
@@ -131,10 +131,10 @@
    "disease": "prostate",
    "file": "Prostate Cancer.pdf",
    "title": "Prostate cancer",
-   "pages": 1,
-   "size": 37515,
-   "sha1": "a4bc62aa5dcf8b2b8ae7bdc75b08c6bb33322328",
-   "updated": "2026-09-19"
+   "pages": 3,
+   "size": 66063,
+   "sha1": "b93dc08d1d8977db7ff75f58979bac1b141c4bf0",
+   "updated": "2026-09-23"
   },
   {
    "disease": "rectal",
@@ -149,10 +149,10 @@
    "disease": "rcc",
    "file": "Renal Cell Carcinoma.pdf",
    "title": "Renal cell carcinoma",
-   "pages": 1,
-   "size": 39007,
-   "sha1": "19e2eaf1cc8a23fae2cd39ca2d04c7664752cdd2",
-   "updated": "2026-09-21"
+   "pages": 3,
+   "size": 70562,
+   "sha1": "27ec2dd226601cdb1ae136e5d4d29eaf884e57e7",
+   "updated": "2026-09-23"
   },
   {
    "disease": "testicular",
