@@ -43,21 +43,6 @@
    ]
   },
   {
-   "slug": "biliary",
-   "name": "Biliary tract cancer",
-   "short": "Biliary",
-   "group": "solid",
-   "onepager": "Biliary Tract Cancer.pdf",
-   "aliases": [
-    "biliary",
-    "cholangiocarcinoma",
-    "gallbladder",
-    "btc",
-    "cca",
-    "biliary-tract-cancer"
-   ]
-  },
-  {
    "slug": "breast",
    "name": "Breast cancer",
    "short": "Breast",
