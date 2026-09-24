@@ -42,11 +42,15 @@
     let doc = null, zoom = 1, fit = true, page = 1, destroyed = false, rendering = null;
 
     /* ---- magnifier: a second render of the page at LENS_ZOOM, sampled under the cursor ---- */
-    const LENS_ZOOM = 2.6, LENS_COLS = 3;   // the cards are laid out in three columns
-    const lensSize = () => {
+    const LENS_ZOOM = 2, LENS_COLS = 3;     // the cards are laid out in three columns
+    /* To *see* a whole column magnified, the lens has to be a column wide TIMES the zoom —
+       a lens merely as wide as the column would show only 1/zoom of it. */
+    const lensBox = () => {
       const cv = pages.querySelector("canvas");
-      // roughly one column wide, so the lens frames a readable unit of the card
-      return Math.max(180, Math.min(360, Math.round((cv ? cv.getBoundingClientRect().width : 780) / LENS_COLS)));
+      const pageW = cv ? cv.getBoundingClientRect().width : 780;
+      const avail = pages.clientWidth - 16;
+      const w = Math.round(Math.min((pageW / LENS_COLS) * LENS_ZOOM, avail));
+      return { w, h: Math.round(Math.min(w * 0.85, (pages.clientHeight || 600) - 16)) };
     };
     const lensEl = host.querySelector(".pdf-lens");
     const lensCv = lensEl.querySelector("canvas");
@@ -55,6 +59,7 @@
 
     const buildHi = async () => {
       if (!doc || !lensOn || hiBusy) return;
+      if (rendering) await rendering;            // never render the same page twice at once
       const key = `${page}@${Math.round(zoom * 1000)}`;
       if (hiFor === key && hi) return;
       hiBusy = true;
@@ -76,32 +81,35 @@
       const inside = e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
       if (!inside) { lensEl.hidden = true; return; }
 
-      const size = lensSize();
-      // `hi` is the page at LENS_ZOOM x the on-screen scale, so copying a `size`-wide square
-      // of it 1:1 magnifies by exactly LENS_ZOOM. Derive from the real ratio to absorb rounding.
-      const src = size * (hi.width / r.width) / LENS_ZOOM;
+      const { w, h } = lensBox();
+      // `hi` is the page at LENS_ZOOM x the on-screen scale, so copying a w-by-h slab of it
+      // 1:1 magnifies by exactly LENS_ZOOM. Derive from the real ratio to absorb rounding.
+      const k = (hi.width / r.width) / LENS_ZOOM;
+      const sw = w * k, sh = h * k;
       const fx = (e.clientX - r.left) / r.width, fy = (e.clientY - r.top) / r.height;
-      const sx = fx * hi.width - src / 2, sy = fy * hi.height - src / 2;
+      const sx = fx * hi.width - sw / 2, sy = fy * hi.height - sh / 2;
 
       const ctx = lensCv.getContext("2d");
-      lensCv.width = size; lensCv.height = size;
-      ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, size, size);
-      ctx.drawImage(hi, sx, sy, src, src, 0, 0, size, size);
+      lensCv.width = w; lensCv.height = h;
+      ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, w, h);
+      ctx.drawImage(hi, sx, sy, sw, sh, 0, 0, w, h);
 
-      // centred on the cursor, like a real magnifier held over the page
-      const hr = host.getBoundingClientRect();
-      lensEl.style.width = lensEl.style.height = `${size}px`;
-      lensEl.style.left = `${e.clientX - hr.left - size / 2}px`;
-      lensEl.style.top = `${e.clientY - hr.top - size / 2}px`;
+      // centred on the cursor, like a real magnifier, but kept inside the page area
+      const hr = host.getBoundingClientRect(), pr = pages.getBoundingClientRect();
+      const left = Math.min(Math.max(e.clientX - w / 2, pr.left + 4), pr.right - w - 4);
+      const top = Math.min(Math.max(e.clientY - h / 2, pr.top + 4), pr.bottom - h - 4);
+      lensEl.style.width = `${w}px`; lensEl.style.height = `${h}px`;
+      lensEl.style.left = `${left - hr.left}px`;
+      lensEl.style.top = `${top - hr.top}px`;
       lensEl.hidden = false;
     };
 
-    const setLens = (on) => {
+    const setLens = (on, { build = true } = {}) => {
       lensOn = on;
       try { localStorage.setItem("hh.lens", on ? "1" : "0"); } catch (_) { /* ignore */ }
       host.querySelector("[data-lens]")?.classList.toggle("on", on);
       host.classList.toggle("lensing", on);
-      if (!on) { lensEl.hidden = true; hi = null; hiFor = ""; } else buildHi();
+      if (!on) { lensEl.hidden = true; hi = null; hiFor = ""; } else if (build) buildHi();
     };
     pages.addEventListener("mousemove", moveLens);
     pages.addEventListener("mouseleave", () => { lensEl.hidden = true; });
@@ -165,7 +173,7 @@
     lib().then((pdfjs) => pdfjs.getDocument({ url }).promise).then((d) => {
       if (destroyed) return;
       doc = d;
-      setLens(lensOn);
+      setLens(lensOn, { build: false });          // render first; the lens copy follows
       return render();
     }).catch((err) => {
       pages.innerHTML = `<div class="pdf-status">Couldn't render inline (${HH.esc(err.message)}). <a href="${url}" target="_blank" rel="noopener">Open the PDF ↗</a></div>`;

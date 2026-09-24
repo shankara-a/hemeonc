@@ -7,6 +7,10 @@
   let view = "card";              // "card" | "notes"
   let sortMode = "new";
   let query = "";
+  let collapsed = new Set();
+  try {
+    collapsed = new Set(JSON.parse(localStorage.getItem("hh.collapsed") || "[]"));
+  } catch (_) { /* ignore */ }
   try {
     sortMode = localStorage.getItem("hh.trialsort") || "new";
     view = localStorage.getItem("hh.rvview") || "card";
@@ -62,9 +66,15 @@
       if (!list.length) return "";
       any = true;
       const g = groups.find((x) => x.id === gid) || { name: "Other" };
-      return `<div class="tree-group">
-        <div class="tree-group-head"><span>${HH.esc(g.name)}</span><span class="tree-n">${list.length}</span></div>
-        ${list.map((d) => {
+      // a group opens when it holds the current disease, or when a search matched inside it
+      const open = !collapsed.has(gid) || query || list.some((d) => d.slug === currentSlug);
+      return `<div class="tree-group ${open ? "open" : ""}">
+        <button class="tree-group-head" data-group="${gid}" aria-expanded="${open ? "true" : "false"}">
+          <span class="tg-caret" aria-hidden="true">\u203a</span>
+          <span class="tg-name">${HH.esc(g.name)}</span>
+          <span class="tree-n">${list.length}</span>
+        </button>
+        <div class="tree-items">${list.map((d) => {
           const h = hits[d.slug];
           const why = query && h.where === "content" ? `<span class="tree-why">${h.hits} in text</span>`
                     : query && h.where === "trials" ? `<span class="tree-why">in trials</span>` : "";
@@ -73,7 +83,7 @@
             <span class="ti-name">${HH.esc(d.short || d.name)}</span>
             ${why || `<span class="ti-n">${count[d.slug] || 0}</span>`}
           </button>`;
-        }).join("")}
+        }).join("")}</div>
       </div>`;
     }).join("");
     if (!any) host.innerHTML = `<div class="empty small">Nothing matches “${HH.esc(query)}”.</div>`;
@@ -81,6 +91,14 @@
 
   HH.initTree = function () {
     document.getElementById("dz-tree").addEventListener("click", (e) => {
+      const g = e.target.closest(".tree-group-head");
+      if (g) {
+        const id = g.dataset.group;
+        collapsed.has(id) ? collapsed.delete(id) : collapsed.add(id);
+        try { localStorage.setItem("hh.collapsed", JSON.stringify([...collapsed])); } catch (_) { /* ignore */ }
+        HH.renderTree();
+        return;
+      }
       const b = e.target.closest(".tree-item");
       if (b) location.hash = `#reviews/${b.dataset.slug}`;
     });
@@ -147,6 +165,7 @@
                <div class="segmented tiny rv-sort" role="group" aria-label="Sort trials">${sortBtns}</div>
                <div class="rv-strip">${trials.map(pill).join("") || `<div class="empty small">None filed yet</div>`}</div>`}
         </aside>
+        <aside class="rv-trialcol" aria-label="Selected trial" hidden></aside>
       </div>`;
 
     main.querySelector(".rv-view").addEventListener("click", (e) => {
@@ -181,5 +200,6 @@
     if (!keepScroll) window.scrollTo({ top: 0 });
   };
 
+  HH.refitPdf = () => viewer?.refit();
   HH.currentDisease = () => currentSlug;
 })();
