@@ -29,15 +29,72 @@
         <button class="btn small" data-zoom="out" title="Zoom out">−</button>
         <button class="btn small" data-zoom="fit" title="Fit width">Fit</button>
         <button class="btn small" data-zoom="in" title="Zoom in">+</button>
+        <button class="btn small" data-lens title="Magnifier — hover the page to zoom (L)">⌕ Lens</button>
         <span class="spacer"></span>
         <a class="btn small" href="${url}" target="_blank" rel="noopener">Open ↗</a>
         <a class="btn small" href="${url}" download>Download</a>
       </div>
-      <div class="pdf-pages"><div class="pdf-status">Loading PDF…</div></div>`;
+      <div class="pdf-pages"><div class="pdf-status">Loading PDF…</div></div>
+      <div class="pdf-lens" hidden><canvas></canvas></div>`;
     const pages = host.querySelector(".pdf-pages");
     const pg = host.querySelector(".pg");
     const nav = { prev: host.querySelector('[data-nav="prev"]'), next: host.querySelector('[data-nav="next"]') };
     let doc = null, zoom = 1, fit = true, page = 1, destroyed = false, rendering = null;
+
+    /* ---- magnifier: a second render of the page at LENS_ZOOM, sampled under the cursor ---- */
+    const LENS_ZOOM = 2.6, LENS_SIZE = 260;
+    const lensEl = host.querySelector(".pdf-lens");
+    const lensCv = lensEl.querySelector("canvas");
+    let lensOn = false, hi = null, hiFor = "", hiBusy = false;
+    try { lensOn = localStorage.getItem("hh.lens") === "1"; } catch (_) { /* ignore */ }
+
+    const buildHi = async () => {
+      if (!doc || !lensOn || hiBusy) return;
+      const key = `${page}@${Math.round(zoom * 1000)}`;
+      if (hiFor === key && hi) return;
+      hiBusy = true;
+      try {
+        const pg = await doc.getPage(page);
+        const vp = pg.getViewport({ scale: zoom * LENS_ZOOM });
+        const c = document.createElement("canvas");
+        c.width = Math.floor(vp.width); c.height = Math.floor(vp.height);
+        await pg.render({ canvasContext: c.getContext("2d"), viewport: vp }).promise;
+        if (destroyed) return;
+        hi = c; hiFor = key;
+      } catch (_) { hi = null; } finally { hiBusy = false; }
+    };
+
+    const moveLens = (e) => {
+      const cv = pages.querySelector("canvas");
+      if (!lensOn || !cv || !hi) return;
+      const r = cv.getBoundingClientRect();
+      const inside = e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
+      if (!inside) { lensEl.hidden = true; return; }
+      // `hi` is the page at LENS_ZOOM x the on-screen scale, so copying a LENS_SIZE-wide
+      // square of it 1:1 into the lens magnifies by exactly LENS_ZOOM. Derive the source
+      // size from the real ratio rather than assuming it, to absorb rounding.
+      const fx = (e.clientX - r.left) / r.width, fy = (e.clientY - r.top) / r.height;
+      const src = LENS_SIZE * (hi.width / r.width) / LENS_ZOOM;
+      const sx = fx * hi.width - src / 2, sy = fy * hi.height - src / 2;
+      const ctx = lensCv.getContext("2d");
+      lensCv.width = LENS_SIZE; lensCv.height = LENS_SIZE;
+      ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, LENS_SIZE, LENS_SIZE);
+      ctx.drawImage(hi, sx, sy, src, src, 0, 0, LENS_SIZE, LENS_SIZE);
+      const hr = host.getBoundingClientRect();
+      lensEl.style.left = `${e.clientX - hr.left + 18}px`;
+      lensEl.style.top = `${e.clientY - hr.top - LENS_SIZE - 12 < 0 ? e.clientY - hr.top + 18 : e.clientY - hr.top - LENS_SIZE - 12}px`;
+      lensEl.hidden = false;
+    };
+
+    const setLens = (on) => {
+      lensOn = on;
+      try { localStorage.setItem("hh.lens", on ? "1" : "0"); } catch (_) { /* ignore */ }
+      host.querySelector("[data-lens]")?.classList.toggle("on", on);
+      host.classList.toggle("lensing", on);
+      if (!on) { lensEl.hidden = true; hi = null; hiFor = ""; } else buildHi();
+    };
+    pages.addEventListener("mousemove", moveLens);
+    pages.addEventListener("mouseleave", () => { lensEl.hidden = true; });
 
     const render = async () => {
       if (!doc || destroyed) return;
@@ -66,6 +123,8 @@
         nav.prev.disabled = page <= 1;
         nav.next.disabled = page >= doc.numPages;
         host.classList.toggle("single-page", doc.numPages === 1);
+        hi = null; hiFor = "";
+        if (lensOn) buildHi();
       })();
       await rendering;
       rendering = null;
@@ -74,6 +133,7 @@
 
     host.querySelector(".pdf-toolbar").addEventListener("click", (e) => {
       const z = e.target.closest("[data-zoom]"), n = e.target.closest("[data-nav]");
+      if (e.target.closest("[data-lens]")) return setLens(!lensOn);
       if (n) return go(n.dataset.nav === "next" ? 1 : -1);
       if (!z) return;
       if (z.dataset.zoom === "fit") fit = true;
@@ -88,12 +148,14 @@
       if (e.target.matches("input, select, textarea")) return;
       if (e.key === "ArrowRight") go(1);
       else if (e.key === "ArrowLeft") go(-1);
+      else if (e.key === "l" && !e.metaKey && !e.ctrlKey) setLens(!lensOn);
     };
     window.addEventListener("keydown", onKey);
 
     lib().then((pdfjs) => pdfjs.getDocument({ url }).promise).then((d) => {
       if (destroyed) return;
       doc = d;
+      setLens(lensOn);
       return render();
     }).catch((err) => {
       pages.innerHTML = `<div class="pdf-status">Couldn't render inline (${HH.esc(err.message)}). <a href="${url}" target="_blank" rel="noopener">Open the PDF ↗</a></div>`;

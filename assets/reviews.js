@@ -146,6 +146,7 @@
                </div>
                <div class="segmented tiny rv-sort" role="group" aria-label="Sort trials">${sortBtns}</div>
                <div class="rv-strip">${trials.map(pill).join("") || `<div class="empty small">None filed yet</div>`}</div>`}
+          ${trials.length ? `<div class="rv-preview card"><div class="empty small">Hover a trial for its takeaway</div></div>` : ""}
         </aside>
       </div>`;
 

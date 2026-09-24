@@ -192,6 +192,18 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
 .single-page [data-nav], .single-page .sep { display: none; }
 .pdf-pages { background: #d9dee5; padding: 12px; overflow: auto; border-radius: 0 0 var(--radius) var(--radius); }
 .pdf-pages canvas { display: block; margin: 0 auto; box-shadow: 0 2px 10px rgba(0,0,0,.25); background: #fff; max-width: none; }
+.rv-pdf { position: relative; }                       /* anchors the magnifier */
+.pdf-lens {
+  position: absolute; z-index: 20; pointer-events: none;
+  border-radius: 10px; overflow: hidden; background: #fff;
+  border: 2px solid var(--primary); box-shadow: var(--shadow-lg);
+}
+.pdf-lens[hidden] { display: none; }
+.pdf-lens canvas { display: block; }
+.lensing .pdf-pages canvas { cursor: crosshair; }
+[data-lens].on { background: var(--primary); border-color: var(--primary); color: #fff; }
+[data-lens].on:hover { background: var(--primary-dark); color: #fff; }
+
 .pdf-status { color: var(--muted); font-size: .85rem; padding: 24px; text-align: center; }
 .nopdf-note { border-style: dashed; color: var(--muted); font-size: .9rem; }
 
@@ -210,6 +222,16 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
 .trial-pill:hover, .trial-pill.hovered { border-color: var(--accent); background: var(--accent-soft); }
 .trial-pill .tp-n { font-weight: 700; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .trial-pill .tp-y { color: var(--muted); font-size: .7rem; font-variant-numeric: tabular-nums; }
+
+.rv-preview {
+  flex: none; margin-top: 10px; padding: 11px 12px; font-size: .82rem;
+  max-height: 46vh; overflow-y: auto;
+}
+.rv-preview .tp-head { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.rv-preview .tp-name { font-weight: 700; font-size: .9rem; }
+.rv-preview .tp-desc { color: var(--muted); font-size: .78rem; margin-top: 2px; }
+.rv-preview .tp-take { margin-top: 7px; padding: 7px 9px; background: var(--accent-soft); border-radius: 7px; font-weight: 600; font-size: .82rem; }
+.rv-preview .tp-open { display: inline-block; margin-top: 7px; font-size: .76rem; font-weight: 600; }
 
 /* in-note table of contents */
 .nt-toc { display: flex; flex-direction: column; gap: 1px; overflow-y: auto; min-height: 0; }
@@ -357,6 +379,8 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
   .rv-rail { position: static; max-height: none; }
   .rv-strip { flex-direction: row; flex-wrap: wrap; }
   .trial-pill { width: auto; }
+  .rv-preview { display: none; }        /* no hover on touch — tapping opens the trial */
+  .pdf-lens, [data-lens] { display: none; }
   .nt-card { padding: 18px 16px; }
   .pdf-pages { max-height: 75vh; }
 }

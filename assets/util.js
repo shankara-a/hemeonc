@@ -70,19 +70,27 @@
   /* ---------- Detail panes (Trials tab: #tr-detail · Reviews: .rv-detail) ---------- */
   const paneFor = (row) => {
     if (!window.matchMedia("(min-width: 901px)").matches) return null;
-    if (!row.closest("#tr-list")) return null;          // only the Trials tab has a detail pane
-    const pane = document.getElementById("tr-detail");
+    let pane = null;
+    if (row.closest("#tr-list")) pane = document.getElementById("tr-detail");
+    else if (row.closest(".rv-rail")) pane = document.querySelector(".rv-preview");
     return pane && pane.offsetParent !== null ? pane : null;
   };
   HH.renderDetail = (pane, t, { isPinned = false } = {}) => {
     if (!pane || !t) return;
     const dz = HH.disease(t.disease);
-    const inReviews = pane.classList.contains("rv-detail");
+    if (pane.classList.contains("rv-preview")) {          // Reviews rail: takeaway only
+      pane.innerHTML = `
+        <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span><span class="chip year">${t.year}</span></div>
+        <div class="tp-desc">${HH.esc(t.descriptor || "")}</div>
+        ${t.takeaway ? `<div class="tp-take">${HH.esc(t.takeaway)}</div>` : ""}
+        <a class="tp-open" href="#trial/${HH.esc(t.id)}">Open the full trial →</a>`;
+      return;
+    }
     pane.innerHTML = `
-      <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t, { disease: !inReviews })}</div>
+      <div class="tp-head"><span class="tp-name">${HH.esc(t.name)}</span>${HH.chips(t, { disease: true })}</div>
       <div class="tp-desc">${HH.esc(t.descriptor || "")}${t.setting ? ` · ${HH.esc(t.setting)}` : ""}</div>
       ${HH.trialBody(t)}
-      <div class="tp-hint">${isPinned ? "Pinned — click again to unpin" : "Click to pin"}${dz && !inReviews ? ` · <a href="#reviews/${dz.slug}">${HH.esc(dz.short)} review →</a>` : ""}</div>`;
+      <div class="tp-hint">${isPinned ? "Pinned — click again to unpin" : "Click to pin"}${dz ? ` · <a href="#reviews/${dz.slug}">${HH.esc(dz.short)} review →</a>` : ""}</div>`;
   };
   HH.pinTrial = (row, pane = paneFor(row)) => {
     if (!pane) return;
@@ -108,7 +116,7 @@
     const pane = paneFor(row);
     if (pane) {                                             // a detail pane exists: fill it, no popover
       if (!pane.dataset.pinned) HH.renderDetail(pane, t);
-      document.querySelectorAll("#tr-list .trial-row.hovered").forEach((r) => r !== row && r.classList.remove("hovered"));
+      (row.closest("#tr-list, .rv-rail") || document).querySelectorAll(".trial-row.hovered").forEach((r) => r !== row && r.classList.remove("hovered"));
       row.classList.add("hovered");
       return;
     }
