@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-09-22",
+ "updated": "2026-09-23",
  "trials": [
   {
    "id": "e1900",
@@ -3636,6 +3636,38 @@
    "updated": "2026-09-20"
   },
   {
+   "id": "calgb-140503",
+   "name": "CALGB/Alliance 140503",
+   "disease": "nsclc",
+   "year": 2023,
+   "phase": "3",
+   "setting": "Peripheral clinical T1aN0 NSCLC 2 cm or smaller",
+   "descriptor": "sublobar resection vs lobectomy for small peripheral node-negative NSCLC",
+   "population": "697 patients with peripheral NSCLC clinically staged T1aN0 and 2 cm or smaller. Randomization occurred intraoperatively, only after nodal involvement was excluded by frozen section",
+   "arms": "Sublobar resection - wedge resection or segmentectomy, with wedge predominating - vs lobectomy",
+   "n": 697,
+   "primary_endpoint": "Disease-free survival, non-inferiority design",
+   "results": "DFS HR 1.01 (90% CI 0.83-1.24) - non-inferior. 5-year DFS 63.6% vs 64.1%; 5-year OS 80.3% vs 78.9% (OS HR 0.95). No difference in locoregional or distant recurrence",
+   "toxicity": "Pulmonary function at 6 months modestly favored sublobar resection. Perioperative morbidity and mortality were similar",
+   "reference": "Altorki N et al. N Engl J Med 2023;388:489-498",
+   "pmid": "36780674",
+   "nct": "NCT00499330",
+   "highlights": [
+    "Overturned lobectomy as the automatic answer for small peripheral node-negative NSCLC, a standard that had stood since 1995",
+    "The intraoperative randomization matters: these patients had pathologically confirmed node-negative disease, so do not extrapolate to anyone staged radiographically alone",
+    "Read alongside JCOG0802, which found segmentectomy gave superior overall survival but doubled local relapse - the two trials used different operations and different endpoints"
+   ],
+   "takeaway": "Sublobar resection is non-inferior to lobectomy for peripheral node-negative NSCLC 2 cm or smaller, after intraoperative nodal confirmation.",
+   "tags": [
+    "surgery",
+    "sublobar resection",
+    "early stage"
+   ],
+   "source": "onepager:nsclc",
+   "verified": true,
+   "updated": "2026-09-23"
+  },
+  {
    "id": "flaura2",
    "name": "FLAURA2",
    "disease": "nsclc",
@@ -3698,6 +3730,70 @@
    "updated": "2026-09-20"
   },
   {
+   "id": "libretto-431",
+   "name": "LIBRETTO-431",
+   "disease": "nsclc",
+   "year": 2023,
+   "phase": "3",
+   "setting": "Previously untreated advanced RET fusion-positive NSCLC",
+   "descriptor": "selpercatinib vs platinum chemotherapy with or without pembrolizumab in RET fusion-positive disease",
+   "population": "261 patients with advanced RET fusion-positive NSCLC and no prior systemic therapy, randomized 2:1",
+   "arms": "Selpercatinib 160 mg PO twice daily vs investigator's choice of platinum-based chemotherapy with or without pembrolizumab",
+   "n": 261,
+   "primary_endpoint": "Progression-free survival by blinded independent central review",
+   "results": "Median PFS 24.8 vs 11.2 months; HR 0.465 (95% CI 0.309-0.699), P<0.001. Intracranial ORR 82.4% vs 58.3%",
+   "toxicity": "Hypertension, transaminase elevation, QT prolongation, diarrhea. Generally more tolerable than chemotherapy plus pembrolizumab",
+   "reference": "Zhou C et al. N Engl J Med 2023;389:1839-1850",
+   "pmid": "37870973",
+   "nct": "NCT04194944",
+   "highlights": [
+    "The only randomized frontline evidence in RET fusion-positive NSCLC - most driver approvals in this space rest on single-arm data",
+    "Beat chemo-IO, not just chemotherapy, which settles the question of whether a driver-positive patient should get immunotherapy first",
+    "Strong intracranial activity, relevant because RET fusion NSCLC has a high rate of brain metastases"
+   ],
+   "takeaway": "Selpercatinib more than doubles progression-free survival versus chemotherapy with or without pembrolizumab in untreated RET fusion-positive NSCLC.",
+   "tags": [
+    "selpercatinib",
+    "RET",
+    "first-line"
+   ],
+   "source": "onepager:nsclc",
+   "verified": true,
+   "updated": "2026-09-23"
+  },
+  {
+   "id": "papillon",
+   "name": "PAPILLON",
+   "disease": "nsclc",
+   "year": 2023,
+   "phase": "3",
+   "setting": "Previously untreated advanced NSCLC with EGFR exon 20 insertion",
+   "descriptor": "amivantamab plus chemotherapy as first-line therapy for EGFR exon 20 insertion disease",
+   "population": "308 patients with advanced NSCLC harboring an EGFR exon 20 insertion, no prior systemic therapy for advanced disease",
+   "arms": "Amivantamab (weight-based) + carboplatin AUC 5 + pemetrexed 500 mg/m2, vs carboplatin + pemetrexed alone",
+   "n": 308,
+   "primary_endpoint": "Progression-free survival by blinded independent central review",
+   "results": "Median PFS 11.4 vs 6.7 months; HR 0.40 (95% CI 0.30-0.53), P<0.001. ORR 73% vs 47%",
+   "toxicity": "Predominantly EGFR- and MET-related: rash, paronychia, hypoalbuminemia, infusion reactions. Venous thromboembolism is the notable risk - prophylactic anticoagulation for the first 4 months",
+   "reference": "Zhou C et al. N Engl J Med 2023;389:2039-2051",
+   "pmid": "37870976",
+   "nct": "NCT04538664",
+   "highlights": [
+    "EGFR exon 20 insertions are resistant to osimertinib and the classic EGFR TKIs - this established the first effective frontline regimen",
+    "Contrast with mobocertinib, which was withdrawn worldwide in 2023 after EXCLAIM-2 missed its endpoint",
+    "Sunvozertinib is an option after platinum but carries only an accelerated, second-line-and-beyond approval"
+   ],
+   "takeaway": "Amivantamab plus carboplatin-pemetrexed nearly doubles progression-free survival in untreated EGFR exon 20 insertion NSCLC and is the frontline standard.",
+   "tags": [
+    "amivantamab",
+    "EGFR exon 20",
+    "first-line"
+   ],
+   "source": "onepager:nsclc",
+   "verified": true,
+   "updated": "2026-09-23"
+  },
+  {
    "id": "alina",
    "name": "ALINA",
    "disease": "nsclc",
@@ -3727,6 +3823,39 @@
    "source": "onepager:nsclc",
    "verified": true,
    "updated": "2026-09-20"
+  },
+  {
+   "id": "checkmate-77t",
+   "name": "CheckMate 77T",
+   "disease": "nsclc",
+   "year": 2024,
+   "phase": "3",
+   "setting": "Resectable stage IIA-IIIB NSCLC",
+   "descriptor": "perioperative nivolumab - neoadjuvant chemo-IO followed by adjuvant nivolumab",
+   "population": "452 patients with resectable stage IIA-IIIB NSCLC, no EGFR or ALK alterations",
+   "arms": "Neoadjuvant nivolumab 360 mg + platinum doublet q3w x4 then surgery then adjuvant nivolumab 480 mg q4w x1 year, vs neoadjuvant placebo + chemotherapy then surgery then placebo",
+   "n": 452,
+   "primary_endpoint": "Event-free survival",
+   "results": "EFS HR 0.58 (97.36% CI 0.42-0.81, P<0.001); 18-month EFS 70.2% vs 50.0%. pCR 25.3% vs 4.7%; major pathologic response 35.4% vs 12.1%",
+   "toxicity": "Grade 3-4 treatment-related adverse events 32% vs 25%. Surgery was not delayed or cancelled more often in the nivolumab arm",
+   "reference": "Cascone T et al. N Engl J Med 2024;390:1756-1769",
+   "pmid": "38749033",
+   "nct": "NCT04025879",
+   "highlights": [
+    "Completes the perioperative quartet alongside KEYNOTE-671 and AEGEAN, with EFS benefit of the same magnitude",
+    "Unlike CheckMate 816, which gave neoadjuvant therapy only, this continues IO after surgery - the perioperative-versus-neoadjuvant-only question is still unresolved",
+    "Do not use in EGFR- or ALK-altered disease"
+   ],
+   "takeaway": "Perioperative nivolumab improves event-free survival in resectable NSCLC, matching the other perioperative chemo-IO regimens.",
+   "tags": [
+    "nivolumab",
+    "perioperative",
+    "resectable",
+    "immunotherapy"
+   ],
+   "source": "onepager:nsclc",
+   "verified": true,
+   "updated": "2026-09-23"
   },
   {
    "id": "laura",
