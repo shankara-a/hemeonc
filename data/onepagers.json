@@ -1,32 +1,32 @@
 {
- "generated": "2026-09-25T08:50:14",
+ "generated": "2026-09-25T09:01:28",
  "onepagers": [
   {
    "disease": "aml",
    "file": "Acute Myeloid Leukemia.pdf",
    "title": "Acute myeloid leukemia",
    "pages": 3,
-   "size": 77422,
-   "sha1": "f8c714daa27e93687ff80933eed156b271151a32",
-   "updated": "2026-09-23"
+   "size": 76602,
+   "sha1": "47c2c74614a130ded2f0d261652798b7ee09e5af",
+   "updated": "2026-09-25"
   },
   {
    "disease": "biliary",
    "file": "Biliary Tract Cancer.pdf",
    "title": "Biliary tract cancer",
-   "pages": 3,
-   "size": 57073,
-   "sha1": "594165a9fc7c6cc166dc7069c1429664d7024012",
-   "updated": "2026-09-23"
+   "pages": 2,
+   "size": 53511,
+   "sha1": "075f42b825647b012e5bd37b7c0d605b5ad6b784",
+   "updated": "2026-09-25"
   },
   {
    "disease": "breast",
    "file": "Breast Cancer.pdf",
    "title": "Breast cancer",
    "pages": 3,
-   "size": 71883,
-   "sha1": "0f6a7ad63a853d946ee49c65b56ede0d0dac71af",
-   "updated": "2026-09-23"
+   "size": 71475,
+   "sha1": "4d1a3d1e3258b5129652e4bbf1b295d323581dd2",
+   "updated": "2026-09-25"
   },
   {
    "disease": "colon",
@@ -51,9 +51,9 @@
    "file": "Lymphoma - Burkitt.pdf",
    "title": "Burkitt lymphoma",
    "pages": 2,
-   "size": 59938,
-   "sha1": "fdc179eb5c656a39529da9fb6eab5c1fadd8713d",
-   "updated": "2026-09-24"
+   "size": 59774,
+   "sha1": "83981a51c261d61001338699faa507c4adcab849",
+   "updated": "2026-09-25"
   },
   {
    "disease": "lymphoma-ctcl",
@@ -69,36 +69,36 @@
    "file": "Lymphoma - DLBCL.pdf",
    "title": "Diffuse large B-cell lymphoma",
    "pages": 3,
-   "size": 67417,
-   "sha1": "56e2ae675811a19d0dd833f0427eed7dab81730e",
-   "updated": "2026-09-24"
+   "size": 66400,
+   "sha1": "9b4902191a2bcd1de38e9e0d689f5107f876b377",
+   "updated": "2026-09-25"
   },
   {
    "disease": "lymphoma-follicular",
    "file": "Lymphoma - Follicular.pdf",
    "title": "Follicular lymphoma",
    "pages": 2,
-   "size": 60159,
-   "sha1": "38e36e2a86cb8da7fc534f0aa4aa719712262c9a",
-   "updated": "2026-09-24"
+   "size": 60012,
+   "sha1": "cf6a706798465bbc364c92a844fb3e60cf3864be",
+   "updated": "2026-09-25"
   },
   {
    "disease": "lymphoma-hodgkin",
    "file": "Lymphoma - Hodgkin.pdf",
    "title": "Hodgkin lymphoma",
    "pages": 3,
-   "size": 70893,
-   "sha1": "199f097f53c2a84fd421bd03b67c49d787022eef",
-   "updated": "2026-09-24"
+   "size": 68948,
+   "sha1": "e3c6dfdd1f2b890a653b85dbc732842860801107",
+   "updated": "2026-09-25"
   },
   {
    "disease": "lymphoma-mantle",
    "file": "Lymphoma - Mantle Cell.pdf",
    "title": "Mantle cell lymphoma",
    "pages": 2,
-   "size": 61650,
-   "sha1": "0b4ebf72c3b6b94d6a0247f51b529f3f61bf0c2b",
-   "updated": "2026-09-24"
+   "size": 61390,
+   "sha1": "1875afb811fcfde8ddcef2cd81179aa96cf10f07",
+   "updated": "2026-09-25"
   },
   {
    "disease": "lymphoma-marginal-zone",
@@ -114,9 +114,9 @@
    "file": "Lymphoma - Peripheral T-cell.pdf",
    "title": "Peripheral T-cell lymphoma",
    "pages": 3,
-   "size": 72870,
-   "sha1": "b5e4e033f40a03d0a615f655f945967c047828bd",
-   "updated": "2026-09-24"
+   "size": 71719,
+   "sha1": "8b41599e7b2693927a8b819e1f60167cae9b54e4",
+   "updated": "2026-09-25"
   },
   {
    "disease": "lymphoma-pcnsl",
@@ -168,9 +168,9 @@
    "file": "Non-Small Cell Lung Cancer.pdf",
    "title": "Non-small cell lung cancer",
    "pages": 3,
-   "size": 60897,
-   "sha1": "2407d33a6445be1e13b1266aa2d791e6f0c4db0a",
-   "updated": "2026-09-23"
+   "size": 60233,
+   "sha1": "f0681bebf4b6bb01a76aacee188d56930cd89b43",
+   "updated": "2026-09-25"
   },
   {
    "disease": "pancreatic",
@@ -186,9 +186,9 @@
    "file": "Prostate Cancer.pdf",
    "title": "Prostate cancer",
    "pages": 3,
-   "size": 66063,
-   "sha1": "b93dc08d1d8977db7ff75f58979bac1b141c4bf0",
-   "updated": "2026-09-23"
+   "size": 65841,
+   "sha1": "444f95724c4ef812e250e4fa668f485620e3b36e",
+   "updated": "2026-09-25"
   },
   {
    "disease": "rectal",

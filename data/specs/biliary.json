@@ -104,9 +104,8 @@
           [
            "Then consider local therapy",
            [
-            "<b>no randomized evidence of survival benefit</b>",
-            "ablative RT gives excellent local control; <b>ABC-07 was negative</b>",
-            "HAI floxuridine and Y-90 rest on single-arm phase 2 data"
+            "HAI floxuridine, Y-90 or ablative RT",
+            "at experienced centers &mdash; <b>none randomized-proven</b>"
            ]
           ]
          ]
@@ -187,10 +186,10 @@
    ]
   },
   {
-   "subtitle": "Page 2 &mdash; molecular profiling, which is where biliary cancer is won or lost",
+   "subtitle": "Page 2 &mdash; molecular profiling, dosing, adjuvant and liver-directed therapy, key trials",
    "columns": [
     {
-     "width": "30%",
+     "width": "27%",
      "blocks": [
       {
        "type": "table",
@@ -278,7 +277,7 @@
      ]
     },
     {
-     "width": "70%",
+     "width": "40%",
      "blocks": [
       {
        "type": "table",
@@ -325,16 +324,25 @@
          "<b>No approved option in biliary cancer.</b> Adagrasib showed activity in a small pan-tumor cohort (5/12); trial or off-label only"
         ]
        ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Adjuvant therapy",
+       "items": [
+        "<b>Capecitabine &times;6 months (BILCAP) is the standard</b>; <b>S-1</b> (ASCOT) where available (Japan; not in the US). <b>Add chemoradiation (SWOG S0809) for node-positive or margin-positive</b> extrahepatic CCA or gallbladder cancer"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Liver-directed therapy",
+       "items": [
+        "<b>HAI floxuridine, Y-90 and ablative RT/SBRT</b> are options at experienced centers for liver-dominant disease &mdash; <b>none is randomized-proven</b>"
+       ]
       }
      ]
-    }
-   ]
-  },
-  {
-   "subtitle": "Page 3 &mdash; regimen dosing, the evidence behind adjuvant and local therapy, and trials",
-   "columns": [
+    },
     {
-     "width": "36%",
+     "width": "33%",
      "blocks": [
       {
        "type": "table",
@@ -362,7 +370,7 @@
         ],
         [
          "<b>Gem + nab-paclitaxel</b>",
-         "Nab-paclitaxel <b>125 mg/m&sup2;</b> then gemcitabine <b>1000 mg/m&sup2;</b>, <b>days 1, 8, 15 of a 28-day cycle</b>. Single-arm phase 2 that <b>missed its primary endpoint</b> &mdash; an alternative, not a standard"
+         "Nab-paclitaxel <b>125 mg/m&sup2;</b> then gemcitabine <b>1000 mg/m&sup2;</b>, <b>days 1, 8, 15 of a 28-day cycle</b>. An alternative, not a standard"
         ],
         [
          "<b>Adjuvant capecitabine</b> <span class='r'>BILCAP</span>",
@@ -381,37 +389,7 @@
          "<b>70 mg PO daily</b> &mdash; FGFR2 fusion/rearrangement, previously treated, FGFR-inhibitor-naive"
         ]
        ]
-      }
-     ]
-    },
-    {
-     "width": "32%",
-     "blocks": [
-      {
-       "type": "bullets",
-       "heading": "Reading the adjuvant evidence honestly",
-       "items": [
-        "<b>BILCAP is the standard of care but was a formally negative trial.</b> ITT median OS 51.1 vs 36.4 months, <b>HR 0.81, p=0.097 &mdash; the primary endpoint was not met</b>. It became practice on the per-protocol analysis (HR 0.75) and a prespecified sensitivity analysis (HR 0.71). Worth knowing when someone asks why capecitabine",
-        "<b>SWOG S0809 is single-arm</b> &mdash; 2-year OS 65% in resected extrahepatic CCA or gallbladder cancer with pT2-4, node-positive or margin-positive disease. Benchmark data, not a randomized comparison",
-        "<b>Negative adjuvant trials:</b> PRODIGE-12 (GEMOX) and BCAT (gemcitabine) both failed. <b>ASCOT</b> showed adjuvant <b>S-1</b> improves 3-year OS (77.1% vs 67.6%) in an all-Japanese population &mdash; but <b>S-1 is not available in the US</b>",
-        "<b>ACTICCA-1</b> (gem/cis vs capecitabine) has closed accrual and <b>has not yet read out</b> &mdash; it is the trial that may finally settle this"
-       ]
       },
-      {
-       "type": "bullets",
-       "heading": "Liver-directed therapy &mdash; what is actually supported",
-       "items": [
-        "<b>Nothing randomized.</b> Every option below rests on single-arm phase 2 or retrospective data",
-        "<b>HAI floxuridine</b> via implanted pump (partial response 58%, median OS 25 months in a single-institution phase 2) &mdash; requires an experienced hepatobiliary program",
-        "<b>Y-90 / TARE</b> concurrent with first-line chemotherapy: ORR 39%, median OS 22 months, 22% downstaged to surgery &mdash; but grade 3&ndash;4 toxicity was 71%, and <b>the one randomized trial, SIRCCA, was terminated</b>",
-        "<b>Ablative radiation</b> gives excellent local control, but <b>ABC-07 randomized SBRT after chemotherapy and missed its PFS endpoint</b> (8.6 vs 9.0 months). The frequently quoted dose-escalation survival figures come from a retrospective series with heavy selection bias"
-       ]
-      }
-     ]
-    },
-    {
-     "width": "32%",
-     "blocks": [
       {
        "type": "table",
        "heading": "Key trials",
@@ -430,15 +408,15 @@
         ],
         [
          "<b>ABC-06</b>",
-         "<b>FOLFOX</b> after gem/cis &mdash; OS 6.2 vs 5.3 mo. Median gain is under a month; the honest number is <b>12-mo OS 25.9% vs 11.4%</b>"
+         "<b>FOLFOX</b> after gem/cis &mdash; OS 6.2 vs 5.3 mo; <b>12-mo OS 25.9% vs 11.4%</b>"
         ],
         [
          "<b>SWOG S1815</b>",
-         "Adding <b>nab-paclitaxel</b> to gem/cis &mdash; <b>negative</b>. OS 14.0 vs 13.6 mo. Responses rose, survival did not"
+         "<b>Do not add nab-paclitaxel</b> to gem/cis &mdash; no OS gain"
         ],
         [
          "<b>BILCAP</b>",
-         "Adjuvant capecitabine &mdash; <b>ITT p=0.097, primary endpoint not met</b>; standard of care on secondary analyses"
+         "Adjuvant capecitabine &mdash; OS 51.1 vs 36.4 mo; <b>standard of care</b>"
         ],
         [
          "<b>ASCOT</b>",
@@ -480,10 +458,10 @@
   "Alteration by site &mdash; why site matters",
   "Living with an FGFR inhibitor",
   "Driver &rarr; therapy",
+  "Adjuvant therapy",
+  "Liver-directed therapy",
   "Regimen dosing",
-  "Reading the adjuvant evidence honestly",
-  "Liver-directed therapy &mdash; what is actually supported",
   "Key trials"
  ],
- "text": "Biliary tract cancer Gallbladder · intrahepatic, perihilar and distal cholangiocarcinoma · one systemic backbone, four different operations, and a molecular profile that depends entirely on where the tumor sits Compiled from the Stanford Oncology Handbook 2025, Gallbladder Cancer and Cholangiocarcinoma (Northness A, Heestand G) · NCCN · primary trial reports and FDA actions verified against PubMed, September 2026. Four diseases in one name Site Notes Intrahepatic CCA ~10% of CCA Arises proximal to the second-order ducts. The molecularly rich one — FGFR2 and IDH1 live here Perihilar (Klatskin) ~40% of CCA At the confluence of the right and left hepatic ducts. Resection planned by Bismuth-Corlette class Distal CCA ~50% of CCA Common bile duct up to, but not including, the ampulla Gallbladder cancer <5,000 cases/yr US; fundus 60% > body 30% > neck 10%. 1–2% are found incidentally at cholecystectomy for stones ~8,000 cholangiocarcinomas/yr in the US, median age ~70. The subtypes share systemic therapy but differ in staging system, operation, and molecular profile — which is why anatomic site has to be stated before anything else. Risk: CCA — PSC, HBV/HCV, liver flukes, male sex, obesity, diabetes, alcohol. GBC — cholelithiasis, gallbladder calcification, female sex, chronic Salmonella or H. pylori infection. Workup Labs: CBC with differential, CMP, PT/INR, CA 19-9 , HBV and HCV serologies Imaging: triphasic CT abdomen/pelvis or liver-protocol MRI + CT chest to complete staging. PET/CT to exclude occult disease when the plan is resection Gallbladder: start with ultrasound — go to triphasic CT or MRI for a polyp >10 mm or wall thickening not explained by cholecystitis MRCP to plan biopsy and stenting. ERCP to stent, decompress and brush — brushings are often non-diagnostic, so go to EUS-FNA when they are Genomically profile every tumor , and send MMR, HER2 IHC and PD-L1 . This is not optional in biliary cancer — roughly a third of patients have a level 1/2 actionable alteration If perihilar CCA might go to transplant, do NOT perform a transperitoneal biopsy — tumor seeding disqualifies the patient from the protocol Treatment pathway Resectable Resection by anatomic site gallbladder T1a: cholecystectomy alone everything else: formal resection + lymphadenectomy Adjuvant therapy capecitabine ×8 cycles (BILCAP) is the default node-positive or margin-positive derive the clearest benefit — consider adding chemoradiation (SWOG S0809) Surveillance exam, CA 19-9 and triphasic CT C/A/P q3 months ×2 years , then q6 months Locally advanced, unresectable Systemic therapy first treat as metastatic — gem/cis + durvalumab or pembrolizumab Then consider local therapy no randomized evidence of survival benefit ablative RT gives excellent local control; ABC-07 was negative HAI floxuridine and Y-90 rest on single-arm phase 2 data Metastatic Start chemo-IO and profile in parallel gem/cis + durvalumab (TOPAZ-1) or + pembrolizumab (KEYNOTE-966) — near-identical benefit, no biomarker send NGS, MMR and HER2 IHC on day one Second line targeted therapy if an alteration was found — see page 2 otherwise FOLFOX (ABC-06) Staging — three separate AJCC systems Site T staging hinges on Intrahepatic Size and vascular invasion: T1a ≤5 cm / T1b >5 cm, both without vascular invasion · T2 vascular invasion or multiple tumors · T3 perforates visceral peritoneum · T4 direct extrahepatic invasion. N is simply N0 / N1 Perihilar Depth then vessels: T1 confined to the duct · T2a into surrounding fat, T2b into hepatic parenchyma · T3 unilateral portal vein or hepatic artery branch · T4 main portal vein bilaterally, common hepatic artery, or second-order radicals with contralateral vessel Distal Millimetres of duct-wall invasion: T1 <5 mm · T2 5–12 mm · T3 >12 mm · T4 celiac axis, SMA or common hepatic artery Gallbladder Which side of the wall: T1a lamina propria, T1b muscularis · T2a peritoneal side, T2b hepatic side — the distinction drives the operation · T3 serosa, liver or one adjacent organ · T4 main portal vein / hepatic artery or ≥2 organs Nodes: perihilar, distal and gallbladder all use N1 = 1–3 nodes, N2 = ≥4 . Intrahepatic uses N0/N1 only. Surgery — the only curative option Most patients are unresectable at presentation, and most resected patients still recur Resectability requires: no retropancreatic or paraceliac nodes, no distant liver metastases, no main portal vein or hepatic artery invasion, no adjacent-organ invasion, no dissemination Intrahepatic → hepatic lobectomy; 5-yr OS 11–40%. Perihilar → en bloc resection by Bismuth-Corlette class. Distal → Whipple + extrahepatic duct; 5-yr OS 10–40% Gallbladder: T1a is cured by simple cholecystectomy alone. T1b and above need en bloc cholecystectomy + resection of liver segments 4a/4b + regional lymphadenectomy Incidentally discovered gallbladder cancer beyond T1a must go back to the operating room for the 4a/4b bed resection and lymphadenectomy Liver transplant is an option for highly selected perihilar CCA (Mayo protocol: mass ≤3 cm, no transperitoneal biopsy, no metastases) — intention-to-treat 5-yr survival ~53% Alteration by site — why site matters iCCA eCCA GBC FGFR2 fusion / rearrangement ~12% ~1% ~1–2% IDH1 ~20% ~1% ~1% IDH2 ~6% 0% ~0.5% HER2 / ERBB2 ~4% ~9% ~11–14% BRAF V600E ~3% ~0% ~0% KRAS, any ~12% ~38% ~10% MSI-H / dMMR ~1.5% ~4% ~2% BAP1 ~19% ~2% ~1% TP53 ~21% ~44% ~60% FGFR2 and IDH1 are intrahepatic diseases and are mutually exclusive. HER2 is a gallbladder and extrahepatic disease. Roughly a third of all biliary cancers carry a level 1/2 actionable alteration — but that is ~40% of intrahepatic versus ~15% of extrahepatic . Western cohorts (AACR GENIE); in East Asian series IDH1 and FGFR2 fall and KRAS rises. Living with an FGFR inhibitor Hyperphosphatemia is on-target , not idiosyncratic — FGFR1 blockade removes the FGF23 phosphaturic signal. It is a marker that the drug is working. Pemigatinib ~60%, futibatinib ~85%, lirafugratinib ~21% . Manage with a low-phosphate diet, sevelamer , and dose holds Ocular toxicity: serous retinopathy / retinal pigment epithelial detachment, plus dry eye in over 20%. Baseline and serial ophthalmology with OCT — roughly q2 months for 6 months, then q3 months Nail and hair: onycholysis in ~47%, alopecia in a third. Stomatitis, arthralgia and diarrhea are common Resistance arrives at ~6–9 months as polyclonal secondary FGFR2 kinase-domain mutations , classically the gatekeeper V564F . The covalent agents (futibatinib, lirafugratinib) retain activity against some but not all of these Driver → therapy Alteration Therapy FGFR2 fusion or rearrangement ~12% of iCCA All second-line and beyond. Lirafugratinib (FGFR2-selective; approved 23 Sep 2026 ) — ORR 46%, DOR 11.8 mo, and notably less hyperphosphatemia (~21%) . Futibatinib ORR 42% (accelerated; label is intrahepatic only ). Pemigatinib ORR 37% (accelerated, any site). Only fusions and rearrangements qualify — point mutations do not. FIGHT-302 moved pemigatinib to 1L on PFS but showed no OS gain , and the 1L indication is not approved. Infigratinib was withdrawn in 2024 IDH1 ~20% of iCCA Ivosidenib after 1–2 prior lines (regular approval). PFS 2.7 vs 1.4 months, HR 0.37 — statistically emphatic, clinically modest. Unadjusted OS was not significant (10.3 vs 7.5 mo) because 70% crossed over ; crossover-adjusted HR 0.49 HER2 GBC ~11–14%, eCCA ~9% Zanidatamab — the only BTC-specific approval (accelerated, Nov 2024), IHC 3+ only , 2L+: ORR 52% in IHC 3+, DOR 14.9 mo. T-DXd is covered by the tumor-agnostic IHC 3+ approval, but ILD reached 17% in the biliary cohort — higher than in most tumor types. Trastuzumab + pertuzumab is NCCN-listed but not FDA-approved here BRAF V600E ~3% of iCCA Dabrafenib + trametinib — tumor-agnostic accelerated approval. ROAR biliary cohort ORR 47–53%, PFS 9.0 mo MSI-H / dMMR ~1–3% Pembrolizumab (tumor-agnostic, now regular approval) — KEYNOTE-158 cholangiocarcinoma cohort ORR 41% , median OS 24.3 months. Dostarlimab is an alternative TMB ≥10 mut/Mb ~4% Pembrolizumab, tumor-agnostic accelerated approval NTRK or RET fusion <1% each Larotrectinib / entrectinib / repotrectinib for NTRK; selpercatinib for RET (tumor-agnostic, converted to traditional approval in 2026). Pralsetinib has no tumor-agnostic approval KRAS G12C ~1% No approved option in biliary cancer. Adagrasib showed activity in a small pan-tumor cohort (5/12); trial or off-label only Regimen dosing Regimen Dosing Gem/cis + durvalumab TOPAZ-1, 1L Gemcitabine 1000 mg/m² + cisplatin 25 mg/m² on days 1 and 8 , with durvalumab 1500 mg day 1 — q21d . Chemotherapy for up to 8 cycles, durvalumab continues Gem/cis + pembrolizumab KEYNOTE-966, 1L Same gem/cis backbone with pembrolizumab 200 mg day 1, q21d FOLFOX ABC-06, 2L Oxaliplatin 85 mg/m² day 1 + 5-FU 1200 mg/m²/day ×48 h continuous infusion from day 1 — q14d Gem + nab-paclitaxel Nab-paclitaxel 125 mg/m² then gemcitabine 1000 mg/m² , days 1, 8, 15 of a 28-day cycle . Single-arm phase 2 that missed its primary endpoint — an alternative, not a standard Adjuvant capecitabine BILCAP 1250 mg/m² PO twice daily, days 1–14 of a 21-day cycle, ×8 cycles (6 months). Grade 3 hand-foot in ~20% Adjuvant chemoRT SWOG S0809 Gemcitabine + capecitabine ×4 cycles, then capecitabine with radiation ×6 weeks (45 Gy nodal, 54–59.4 Gy tumor bed) Ivosidenib 500 mg PO daily — IDH1-mutant, after 1–2 prior lines Lirafugratinib 70 mg PO daily — FGFR2 fusion/rearrangement, previously treated, FGFR-inhibitor-naive Reading the adjuvant evidence honestly BILCAP is the standard of care but was a formally negative trial. ITT median OS 51.1 vs 36.4 months, HR 0.81, p=0.097 — the primary endpoint was not met . It became practice on the per-protocol analysis (HR 0.75) and a prespecified sensitivity analysis (HR 0.71). Worth knowing when someone asks why capecitabine SWOG S0809 is single-arm — 2-year OS 65% in resected extrahepatic CCA or gallbladder cancer with pT2-4, node-positive or margin-positive disease. Benchmark data, not a randomized comparison Negative adjuvant trials: PRODIGE-12 (GEMOX) and BCAT (gemcitabine) both failed. ASCOT showed adjuvant S-1 improves 3-year OS (77.1% vs 67.6%) in an all-Japanese population — but S-1 is not available in the US ACTICCA-1 (gem/cis vs capecitabine) has closed accrual and has not yet read out — it is the trial that may finally settle this Liver-directed therapy — what is actually supported Nothing randomized. Every option below rests on single-arm phase 2 or retrospective data HAI floxuridine via implanted pump (partial response 58%, median OS 25 months in a single-institution phase 2) — requires an experienced hepatobiliary program Y-90 / TARE concurrent with first-line chemotherapy: ORR 39%, median OS 22 months, 22% downstaged to surgery — but grade 3–4 toxicity was 71%, and the one randomized trial, SIRCCA, was terminated Ablative radiation gives excellent local control, but ABC-07 randomized SBRT after chemotherapy and missed its PFS endpoint (8.6 vs 9.0 months). The frequently quoted dose-escalation survival figures come from a retrospective series with heavy selection bias Key trials ABC-02 Gemcitabine + cisplatin vs gemcitabine — OS 11.7 vs 8.1 mo , HR 0.64. The backbone, since 2010 TOPAZ-1 Add durvalumab to gem/cis — OS 12.8 vs 11.5 mo, HR 0.80; 24-mo OS 24.9% vs 10.4% KEYNOTE-966 Add pembrolizumab to gem/cis — OS 12.7 vs 10.9 mo, HR 0.83. Effectively interchangeable with TOPAZ-1 ABC-06 FOLFOX after gem/cis — OS 6.2 vs 5.3 mo. Median gain is under a month; the honest number is 12-mo OS 25.9% vs 11.4% SWOG S1815 Adding nab-paclitaxel to gem/cis — negative . OS 14.0 vs 13.6 mo. Responses rose, survival did not BILCAP Adjuvant capecitabine — ITT p=0.097, primary endpoint not met ; standard of care on secondary analyses ASCOT Adjuvant S-1 , Japan — 3-yr OS 77.1% vs 67.6%. Not applicable in the US FIGHT-202 / FOENIX-CCA2 Pemigatinib (ORR 37%) and futibatinib (ORR 42%) in FGFR2-altered disease ReFocus Lirafugratinib — ORR 46%, DOR 11.8 mo, far less hyperphosphatemia. Approved 23 Sep 2026 ClarIDHy Ivosidenib in IDH1-mutant — PFS 2.7 vs 1.4 mo, HR 0.37 HERIZON-BTC-01 Zanidatamab in HER2 IHC 3+ — ORR 52%, DOR 14.9 mo ROAR Dabrafenib + trametinib in BRAF V600E — ORR 47–53%"
+ "text": "Biliary tract cancer Gallbladder · intrahepatic, perihilar and distal cholangiocarcinoma · one systemic backbone, four different operations, and a molecular profile that depends entirely on where the tumor sits Compiled from the Stanford Oncology Handbook 2025, Gallbladder Cancer and Cholangiocarcinoma (Northness A, Heestand G) · NCCN · primary trial reports and FDA actions verified against PubMed, September 2026. Four diseases in one name Site Notes Intrahepatic CCA ~10% of CCA Arises proximal to the second-order ducts. The molecularly rich one — FGFR2 and IDH1 live here Perihilar (Klatskin) ~40% of CCA At the confluence of the right and left hepatic ducts. Resection planned by Bismuth-Corlette class Distal CCA ~50% of CCA Common bile duct up to, but not including, the ampulla Gallbladder cancer <5,000 cases/yr US; fundus 60% > body 30% > neck 10%. 1–2% are found incidentally at cholecystectomy for stones ~8,000 cholangiocarcinomas/yr in the US, median age ~70. The subtypes share systemic therapy but differ in staging system, operation, and molecular profile — which is why anatomic site has to be stated before anything else. Risk: CCA — PSC, HBV/HCV, liver flukes, male sex, obesity, diabetes, alcohol. GBC — cholelithiasis, gallbladder calcification, female sex, chronic Salmonella or H. pylori infection. Workup Labs: CBC with differential, CMP, PT/INR, CA 19-9 , HBV and HCV serologies Imaging: triphasic CT abdomen/pelvis or liver-protocol MRI + CT chest to complete staging. PET/CT to exclude occult disease when the plan is resection Gallbladder: start with ultrasound — go to triphasic CT or MRI for a polyp >10 mm or wall thickening not explained by cholecystitis MRCP to plan biopsy and stenting. ERCP to stent, decompress and brush — brushings are often non-diagnostic, so go to EUS-FNA when they are Genomically profile every tumor , and send MMR, HER2 IHC and PD-L1 . This is not optional in biliary cancer — roughly a third of patients have a level 1/2 actionable alteration If perihilar CCA might go to transplant, do NOT perform a transperitoneal biopsy — tumor seeding disqualifies the patient from the protocol Treatment pathway Resectable Resection by anatomic site gallbladder T1a: cholecystectomy alone everything else: formal resection + lymphadenectomy Adjuvant therapy capecitabine ×8 cycles (BILCAP) is the default node-positive or margin-positive derive the clearest benefit — consider adding chemoradiation (SWOG S0809) Surveillance exam, CA 19-9 and triphasic CT C/A/P q3 months ×2 years , then q6 months Locally advanced, unresectable Systemic therapy first treat as metastatic — gem/cis + durvalumab or pembrolizumab Then consider local therapy HAI floxuridine, Y-90 or ablative RT at experienced centers — none randomized-proven Metastatic Start chemo-IO and profile in parallel gem/cis + durvalumab (TOPAZ-1) or + pembrolizumab (KEYNOTE-966) — near-identical benefit, no biomarker send NGS, MMR and HER2 IHC on day one Second line targeted therapy if an alteration was found — see page 2 otherwise FOLFOX (ABC-06) Staging — three separate AJCC systems Site T staging hinges on Intrahepatic Size and vascular invasion: T1a ≤5 cm / T1b >5 cm, both without vascular invasion · T2 vascular invasion or multiple tumors · T3 perforates visceral peritoneum · T4 direct extrahepatic invasion. N is simply N0 / N1 Perihilar Depth then vessels: T1 confined to the duct · T2a into surrounding fat, T2b into hepatic parenchyma · T3 unilateral portal vein or hepatic artery branch · T4 main portal vein bilaterally, common hepatic artery, or second-order radicals with contralateral vessel Distal Millimetres of duct-wall invasion: T1 <5 mm · T2 5–12 mm · T3 >12 mm · T4 celiac axis, SMA or common hepatic artery Gallbladder Which side of the wall: T1a lamina propria, T1b muscularis · T2a peritoneal side, T2b hepatic side — the distinction drives the operation · T3 serosa, liver or one adjacent organ · T4 main portal vein / hepatic artery or ≥2 organs Nodes: perihilar, distal and gallbladder all use N1 = 1–3 nodes, N2 = ≥4 . Intrahepatic uses N0/N1 only. Surgery — the only curative option Most patients are unresectable at presentation, and most resected patients still recur Resectability requires: no retropancreatic or paraceliac nodes, no distant liver metastases, no main portal vein or hepatic artery invasion, no adjacent-organ invasion, no dissemination Intrahepatic → hepatic lobectomy; 5-yr OS 11–40%. Perihilar → en bloc resection by Bismuth-Corlette class. Distal → Whipple + extrahepatic duct; 5-yr OS 10–40% Gallbladder: T1a is cured by simple cholecystectomy alone. T1b and above need en bloc cholecystectomy + resection of liver segments 4a/4b + regional lymphadenectomy Incidentally discovered gallbladder cancer beyond T1a must go back to the operating room for the 4a/4b bed resection and lymphadenectomy Liver transplant is an option for highly selected perihilar CCA (Mayo protocol: mass ≤3 cm, no transperitoneal biopsy, no metastases) — intention-to-treat 5-yr survival ~53% Alteration by site — why site matters iCCA eCCA GBC FGFR2 fusion / rearrangement ~12% ~1% ~1–2% IDH1 ~20% ~1% ~1% IDH2 ~6% 0% ~0.5% HER2 / ERBB2 ~4% ~9% ~11–14% BRAF V600E ~3% ~0% ~0% KRAS, any ~12% ~38% ~10% MSI-H / dMMR ~1.5% ~4% ~2% BAP1 ~19% ~2% ~1% TP53 ~21% ~44% ~60% FGFR2 and IDH1 are intrahepatic diseases and are mutually exclusive. HER2 is a gallbladder and extrahepatic disease. Roughly a third of all biliary cancers carry a level 1/2 actionable alteration — but that is ~40% of intrahepatic versus ~15% of extrahepatic . Western cohorts (AACR GENIE); in East Asian series IDH1 and FGFR2 fall and KRAS rises. Living with an FGFR inhibitor Hyperphosphatemia is on-target , not idiosyncratic — FGFR1 blockade removes the FGF23 phosphaturic signal. It is a marker that the drug is working. Pemigatinib ~60%, futibatinib ~85%, lirafugratinib ~21% . Manage with a low-phosphate diet, sevelamer , and dose holds Ocular toxicity: serous retinopathy / retinal pigment epithelial detachment, plus dry eye in over 20%. Baseline and serial ophthalmology with OCT — roughly q2 months for 6 months, then q3 months Nail and hair: onycholysis in ~47%, alopecia in a third. Stomatitis, arthralgia and diarrhea are common Resistance arrives at ~6–9 months as polyclonal secondary FGFR2 kinase-domain mutations , classically the gatekeeper V564F . The covalent agents (futibatinib, lirafugratinib) retain activity against some but not all of these Driver → therapy Alteration Therapy FGFR2 fusion or rearrangement ~12% of iCCA All second-line and beyond. Lirafugratinib (FGFR2-selective; approved 23 Sep 2026 ) — ORR 46%, DOR 11.8 mo, and notably less hyperphosphatemia (~21%) . Futibatinib ORR 42% (accelerated; label is intrahepatic only ). Pemigatinib ORR 37% (accelerated, any site). Only fusions and rearrangements qualify — point mutations do not. FIGHT-302 moved pemigatinib to 1L on PFS but showed no OS gain , and the 1L indication is not approved. Infigratinib was withdrawn in 2024 IDH1 ~20% of iCCA Ivosidenib after 1–2 prior lines (regular approval). PFS 2.7 vs 1.4 months, HR 0.37 — statistically emphatic, clinically modest. Unadjusted OS was not significant (10.3 vs 7.5 mo) because 70% crossed over ; crossover-adjusted HR 0.49 HER2 GBC ~11–14%, eCCA ~9% Zanidatamab — the only BTC-specific approval (accelerated, Nov 2024), IHC 3+ only , 2L+: ORR 52% in IHC 3+, DOR 14.9 mo. T-DXd is covered by the tumor-agnostic IHC 3+ approval, but ILD reached 17% in the biliary cohort — higher than in most tumor types. Trastuzumab + pertuzumab is NCCN-listed but not FDA-approved here BRAF V600E ~3% of iCCA Dabrafenib + trametinib — tumor-agnostic accelerated approval. ROAR biliary cohort ORR 47–53%, PFS 9.0 mo MSI-H / dMMR ~1–3% Pembrolizumab (tumor-agnostic, now regular approval) — KEYNOTE-158 cholangiocarcinoma cohort ORR 41% , median OS 24.3 months. Dostarlimab is an alternative TMB ≥10 mut/Mb ~4% Pembrolizumab, tumor-agnostic accelerated approval NTRK or RET fusion <1% each Larotrectinib / entrectinib / repotrectinib for NTRK; selpercatinib for RET (tumor-agnostic, converted to traditional approval in 2026). Pralsetinib has no tumor-agnostic approval KRAS G12C ~1% No approved option in biliary cancer. Adagrasib showed activity in a small pan-tumor cohort (5/12); trial or off-label only Adjuvant therapy Capecitabine ×6 months (BILCAP) is the standard ; S-1 (ASCOT) where available (Japan; not in the US). Add chemoradiation (SWOG S0809) for node-positive or margin-positive extrahepatic CCA or gallbladder cancer Liver-directed therapy HAI floxuridine, Y-90 and ablative RT/SBRT are options at experienced centers for liver-dominant disease — none is randomized-proven Regimen dosing Regimen Dosing Gem/cis + durvalumab TOPAZ-1, 1L Gemcitabine 1000 mg/m² + cisplatin 25 mg/m² on days 1 and 8 , with durvalumab 1500 mg day 1 — q21d . Chemotherapy for up to 8 cycles, durvalumab continues Gem/cis + pembrolizumab KEYNOTE-966, 1L Same gem/cis backbone with pembrolizumab 200 mg day 1, q21d FOLFOX ABC-06, 2L Oxaliplatin 85 mg/m² day 1 + 5-FU 1200 mg/m²/day ×48 h continuous infusion from day 1 — q14d Gem + nab-paclitaxel Nab-paclitaxel 125 mg/m² then gemcitabine 1000 mg/m² , days 1, 8, 15 of a 28-day cycle . An alternative, not a standard Adjuvant capecitabine BILCAP 1250 mg/m² PO twice daily, days 1–14 of a 21-day cycle, ×8 cycles (6 months). Grade 3 hand-foot in ~20% Adjuvant chemoRT SWOG S0809 Gemcitabine + capecitabine ×4 cycles, then capecitabine with radiation ×6 weeks (45 Gy nodal, 54–59.4 Gy tumor bed) Ivosidenib 500 mg PO daily — IDH1-mutant, after 1–2 prior lines Lirafugratinib 70 mg PO daily — FGFR2 fusion/rearrangement, previously treated, FGFR-inhibitor-naive Key trials ABC-02 Gemcitabine + cisplatin vs gemcitabine — OS 11.7 vs 8.1 mo , HR 0.64. The backbone, since 2010 TOPAZ-1 Add durvalumab to gem/cis — OS 12.8 vs 11.5 mo, HR 0.80; 24-mo OS 24.9% vs 10.4% KEYNOTE-966 Add pembrolizumab to gem/cis — OS 12.7 vs 10.9 mo, HR 0.83. Effectively interchangeable with TOPAZ-1 ABC-06 FOLFOX after gem/cis — OS 6.2 vs 5.3 mo; 12-mo OS 25.9% vs 11.4% SWOG S1815 Do not add nab-paclitaxel to gem/cis — no OS gain BILCAP Adjuvant capecitabine — OS 51.1 vs 36.4 mo; standard of care ASCOT Adjuvant S-1 , Japan — 3-yr OS 77.1% vs 67.6%. Not applicable in the US FIGHT-202 / FOENIX-CCA2 Pemigatinib (ORR 37%) and futibatinib (ORR 42%) in FGFR2-altered disease ReFocus Lirafugratinib — ORR 46%, DOR 11.8 mo, far less hyperphosphatemia. Approved 23 Sep 2026 ClarIDHy Ivosidenib in IDH1-mutant — PFS 2.7 vs 1.4 mo, HR 0.37 HERIZON-BTC-01 Zanidatamab in HER2 IHC 3+ — ORR 52%, DOR 14.9 mo ROAR Dabrafenib + trametinib in BRAF V600E — ORR 47–53%"
 }
