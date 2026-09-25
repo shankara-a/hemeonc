@@ -65,6 +65,19 @@
    ]
   },
   {
+   "slug": "hairy-cell-leukemia",
+   "name": "Hairy cell leukemia",
+   "short": "Hairy cell",
+   "group": "lymphoma",
+   "onepager": "Hairy Cell Leukemia.pdf",
+   "aliases": [
+    "hairy cell",
+    "hcl",
+    "sblpn",
+    "hcl-v"
+   ]
+  },
+  {
    "slug": "head-neck",
    "name": "Head & neck squamous cell carcinoma",
    "short": "Head & neck",
@@ -77,18 +90,63 @@
    ]
   },
   {
-   "slug": "lymphoma-aggressive-bcell",
-   "name": "Aggressive B-cell lymphoma",
-   "short": "Aggressive B-cell",
+   "slug": "lymphoma-burkitt",
+   "name": "Burkitt lymphoma",
+   "short": "Burkitt",
    "group": "lymphoma",
+   "onepager": "Lymphoma - Burkitt.pdf",
+   "aliases": [
+    "burkitt",
+    "bl"
+   ]
+  },
+  {
+   "slug": "lymphoma-ctcl",
+   "name": "Cutaneous T-cell lymphoma",
+   "short": "CTCL",
+   "group": "lymphoma",
+   "onepager": "Lymphoma - Cutaneous T-cell.pdf",
+   "aliases": [
+    "ctcl",
+    "mycosis fungoides",
+    "mf",
+    "sezary",
+    "lymphomatoid papulosis"
+   ]
+  },
+  {
+   "slug": "lymphoma-dlbcl",
+   "name": "Diffuse large B-cell lymphoma",
+   "short": "DLBCL",
+   "group": "lymphoma",
+   "onepager": "Lymphoma - DLBCL.pdf",
    "aliases": [
     "dlbcl",
-    "burkitt",
-    "pcnsl",
+    "large b-cell",
+    "pmbl",
+    "pmbcl",
+    "hgbl",
+    "double hit",
+    "transformed",
     "hiv lymphoma",
+    "plasmablastic",
+    "pel",
+    "lymphoma-aggressive-bcell",
     "aggressive b-cell"
-   ],
-   "onepager": "Lymphoma - Aggressive B-cell.pdf"
+   ]
+  },
+  {
+   "slug": "lymphoma-follicular",
+   "name": "Follicular lymphoma",
+   "short": "Follicular",
+   "group": "lymphoma",
+   "onepager": "Lymphoma - Follicular.pdf",
+   "aliases": [
+    "follicular",
+    "fl",
+    "lymphoma-indolent-mantle",
+    "indolent"
+   ]
   },
   {
    "slug": "lymphoma-hodgkin",
@@ -104,33 +162,59 @@
    "onepager": "Lymphoma - Hodgkin.pdf"
   },
   {
-   "slug": "lymphoma-indolent-mantle",
-   "name": "Indolent and mantle B-cell lymphoma",
-   "short": "Indolent & mantle",
+   "slug": "lymphoma-mantle",
+   "name": "Mantle cell lymphoma",
+   "short": "Mantle cell",
    "group": "lymphoma",
+   "onepager": "Lymphoma - Mantle Cell.pdf",
    "aliases": [
-    "follicular",
     "mantle cell",
     "mcl",
-    "fl",
-    "indolent"
-   ],
-   "onepager": "Lymphoma - Indolent and Mantle.pdf"
+    "mantle"
+   ]
   },
   {
-   "slug": "lymphoma-tcell",
-   "name": "T-cell and cutaneous lymphoma",
-   "short": "T-cell & cutaneous",
+   "slug": "lymphoma-marginal-zone",
+   "name": "Marginal zone lymphoma",
+   "short": "Marginal zone",
    "group": "lymphoma",
+   "onepager": "Lymphoma - Marginal Zone.pdf",
+   "aliases": [
+    "marginal zone",
+    "mzl",
+    "malt",
+    "maltoma",
+    "splenic marginal zone",
+    "smzl"
+   ]
+  },
+  {
+   "slug": "lymphoma-pcnsl",
+   "name": "Primary CNS lymphoma",
+   "short": "PCNSL",
+   "group": "lymphoma",
+   "onepager": "Lymphoma - Primary CNS.pdf",
+   "aliases": [
+    "pcnsl",
+    "cns lymphoma",
+    "primary cns"
+   ]
+  },
+  {
+   "slug": "lymphoma-ptcl",
+   "name": "Peripheral T-cell lymphoma",
+   "short": "PTCL",
+   "group": "lymphoma",
+   "onepager": "Lymphoma - Peripheral T-cell.pdf",
    "aliases": [
     "ptcl",
     "t-cell",
-    "mycosis fungoides",
-    "sezary",
-    "ctcl",
-    "nk/t"
-   ],
-   "onepager": "Lymphoma - T-cell and Cutaneous.pdf"
+    "aitl",
+    "alcl",
+    "nk/t",
+    "atll",
+    "lymphoma-tcell"
+   ]
   },
   {
    "slug": "mds",
@@ -260,6 +344,20 @@
    "aliases": [
     "thyroid",
     "dtc"
+   ]
+  },
+  {
+   "slug": "waldenstrom",
+   "name": "Waldenström macroglobulinemia",
+   "short": "Waldenström",
+   "group": "lymphoma",
+   "onepager": "Waldenstrom Macroglobulinemia.pdf",
+   "aliases": [
+    "waldenstrom",
+    "wm",
+    "lpl",
+    "lymphoplasmacytic",
+    "igm"
    ]
   }
  ]

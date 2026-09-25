@@ -166,7 +166,15 @@ def main():
                 print(f"   remove {dst.name} (no longer in SRC)")
                 changed.append(dst.name)
                 if not a.dry_run:
-                    dst.unlink()
+                    try:
+                        dst.unlink()
+                    except PermissionError:
+                        # Drive-synced mounts (e.g. a Cowork sandbox) refuse unlink but allow rename.
+                        # Park the file in .git/.stale-locks; autopush.sh deletes that folder on the Mac.
+                        park = ROOT / ".git" / ".stale-locks"
+                        park.mkdir(parents=True, exist_ok=True)
+                        dst.rename(park / f"removed-pdf-{dst.name}")
+                        print(f"   (unlink refused; parked in .git/.stale-locks for autopush to delete)")
 
     # ---- 2. manifest ----------------------------------------------------------------------
     diseases = json.loads((DATA / "diseases.json").read_text())

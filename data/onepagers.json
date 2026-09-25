@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T23:52:06",
+ "generated": "2026-09-24T22:04:05",
  "onepagers": [
   {
    "disease": "aml",
@@ -38,40 +38,94 @@
    "updated": "2026-09-19"
   },
   {
-   "disease": "lymphoma-aggressive-bcell",
-   "file": "Lymphoma - Aggressive B-cell.pdf",
-   "title": "Aggressive B-cell lymphoma",
+   "disease": "hairy-cell-leukemia",
+   "file": "Hairy Cell Leukemia.pdf",
+   "title": "Hairy cell leukemia",
    "pages": 2,
-   "size": 58239,
-   "sha1": "584bff6eeb2a5014cdc37ff223d79d8616b396ef",
-   "updated": "2026-09-21"
+   "size": 50446,
+   "sha1": "684334603c753e297cc07ddcbe9bfcf3c75a2f59",
+   "updated": "2026-09-24"
+  },
+  {
+   "disease": "lymphoma-burkitt",
+   "file": "Lymphoma - Burkitt.pdf",
+   "title": "Burkitt lymphoma",
+   "pages": 2,
+   "size": 59938,
+   "sha1": "fdc179eb5c656a39529da9fb6eab5c1fadd8713d",
+   "updated": "2026-09-24"
+  },
+  {
+   "disease": "lymphoma-ctcl",
+   "file": "Lymphoma - Cutaneous T-cell.pdf",
+   "title": "Cutaneous T-cell lymphoma",
+   "pages": 2,
+   "size": 56528,
+   "sha1": "58667a74886172836d05a4828654c4e32b39b425",
+   "updated": "2026-09-24"
+  },
+  {
+   "disease": "lymphoma-dlbcl",
+   "file": "Lymphoma - DLBCL.pdf",
+   "title": "Diffuse large B-cell lymphoma",
+   "pages": 3,
+   "size": 67417,
+   "sha1": "56e2ae675811a19d0dd833f0427eed7dab81730e",
+   "updated": "2026-09-24"
+  },
+  {
+   "disease": "lymphoma-follicular",
+   "file": "Lymphoma - Follicular.pdf",
+   "title": "Follicular lymphoma",
+   "pages": 2,
+   "size": 60159,
+   "sha1": "38e36e2a86cb8da7fc534f0aa4aa719712262c9a",
+   "updated": "2026-09-24"
   },
   {
    "disease": "lymphoma-hodgkin",
    "file": "Lymphoma - Hodgkin.pdf",
    "title": "Hodgkin lymphoma",
-   "pages": 1,
-   "size": 45298,
-   "sha1": "6bd0c328a20c560cf4d5999b8964d3207cfcafa4",
-   "updated": "2026-09-21"
+   "pages": 3,
+   "size": 70893,
+   "sha1": "199f097f53c2a84fd421bd03b67c49d787022eef",
+   "updated": "2026-09-24"
   },
   {
-   "disease": "lymphoma-indolent-mantle",
-   "file": "Lymphoma - Indolent and Mantle.pdf",
-   "title": "Indolent and mantle B-cell lymphoma",
-   "pages": 1,
-   "size": 43936,
-   "sha1": "4d6e9a4af956351f24f877897431120bdb4698e8",
-   "updated": "2026-09-21"
+   "disease": "lymphoma-mantle",
+   "file": "Lymphoma - Mantle Cell.pdf",
+   "title": "Mantle cell lymphoma",
+   "pages": 2,
+   "size": 61650,
+   "sha1": "0b4ebf72c3b6b94d6a0247f51b529f3f61bf0c2b",
+   "updated": "2026-09-24"
   },
   {
-   "disease": "lymphoma-tcell",
-   "file": "Lymphoma - T-cell and Cutaneous.pdf",
-   "title": "T-cell and cutaneous lymphoma",
-   "pages": 1,
-   "size": 41982,
-   "sha1": "2e186b84e2f15f6f73bddc8c1bcb71113f1ebd88",
-   "updated": "2026-09-22"
+   "disease": "lymphoma-marginal-zone",
+   "file": "Lymphoma - Marginal Zone.pdf",
+   "title": "Marginal zone lymphoma",
+   "pages": 2,
+   "size": 58011,
+   "sha1": "dd81ba2c434dd1cbf4fd92170b854784481076b6",
+   "updated": "2026-09-24"
+  },
+  {
+   "disease": "lymphoma-ptcl",
+   "file": "Lymphoma - Peripheral T-cell.pdf",
+   "title": "Peripheral T-cell lymphoma",
+   "pages": 3,
+   "size": 72870,
+   "sha1": "b5e4e033f40a03d0a615f655f945967c047828bd",
+   "updated": "2026-09-24"
+  },
+  {
+   "disease": "lymphoma-pcnsl",
+   "file": "Lymphoma - Primary CNS.pdf",
+   "title": "Primary CNS lymphoma",
+   "pages": 2,
+   "size": 56209,
+   "sha1": "551d9321868e8618fa658b3ba08c082a12bf09b9",
+   "updated": "2026-09-24"
   },
   {
    "disease": "melanoma",
@@ -162,6 +216,15 @@
    "size": 38939,
    "sha1": "c37de6274aa7c1dbe4d491e4a5117b3bc9954b60",
    "updated": "2026-09-21"
+  },
+  {
+   "disease": "waldenstrom",
+   "file": "Waldenstrom Macroglobulinemia.pdf",
+   "title": "Waldenström macroglobulinemia",
+   "pages": 2,
+   "size": 57870,
+   "sha1": "1f65edc93a3c37764fc5b9eefac81c3881f7e3aa",
+   "updated": "2026-09-24"
   }
  ]
 }
