@@ -1,0 +1,432 @@
+{
+ "disease": "lymphoma-pcnsl",
+ "spec_file": "lymphoma_pcnsl.py",
+ "pdf": "Lymphoma - Primary CNS.pdf",
+ "title": "Primary CNS lymphoma",
+ "subtitle": "<b>A curable brain tumour if you get a clean diagnosis</b> &mdash; no steroids before biopsy, a high-dose methotrexate backbone, and thiotepa-based transplant consolidation for the fit. The recurring trade-off is <b>cure versus neurotoxicity</b>",
+ "source": "Compiled from the Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin &mdash; primary CNS and HIV-associated lymphoma &middot; NCCN &middot; IPCG &middot; primary trial reports verified against PubMed, September 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "What it is",
+       "items": [
+        "<b>DLBCL confined to brain, leptomeninges, spinal cord or eyes</b>, no systemic disease. Almost all are <b>non-GCB / ABC-type</b>, with <b>MYD88 L265P and CD79B</b> mutations &mdash; the reason BTK inhibitors and lenalidomide work",
+        "WHO-HAEM5 groups it as <b>primary large B-cell lymphoma of immune-privileged sites</b> (with vitreoretinal and testicular); ICC keeps <b>primary DLBCL of the CNS</b>",
+        "Median age late 60s. <b>Immunodeficiency (HIV, transplant) &rarr; EBV-driven</b> disease, often multifocal and ring-enhancing",
+        "Classic MRI: <b>homogeneously enhancing periventricular / deep lesion</b>, restricted diffusion. Presents with focal deficits, personality change, raised ICP"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Diagnosis",
+       "items": [
+        "<b>AVOID CORTICOSTEROIDS BEFORE BIOPSY</b> unless herniation is imminent &mdash; steroids lyse lymphoma cells and the lesion can vanish (&ldquo;ghost tumor&rdquo;), leaving a non-diagnostic biopsy. If already given and biopsy is negative, stop them and re-image",
+        "<b>Stereotactic needle biopsy</b> is the procedure &mdash; resection adds nothing and is not the goal",
+        "Tissue substitutes if biopsy is unsafe: <b>CSF cytology + flow cytometry</b> (and MYD88 L265P) or <b>vitrectomy</b> for vitreous involvement"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Staging &mdash; IPCG extent-of-disease workup",
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Brain</b>",
+         "MRI with gadolinium (+ spine MRI if symptoms or CSF+)"
+        ],
+        [
+         "<b>Eyes</b>",
+         "<b>Slit-lamp + dilated fundus exam</b> by ophthalmology &mdash; vitreoretinal disease changes local therapy and follow-up"
+        ],
+        [
+         "<b>CSF</b>",
+         "LP if safe (no mass effect): <b>cytology, flow, protein</b> (protein feeds the IELSG score)"
+        ],
+        [
+         "<b>Exclude systemic</b>",
+         "<b>PET/CT</b> (or CT C/A/P) &middot; <b>testicular exam &plusmn; ultrasound in men</b> &middot; marrow biopsy selectively"
+        ],
+        [
+         "<b>Labs</b>",
+         "<b>HIV</b>, HBV/HCV, LDH, <b>creatinine clearance</b> (MTX eligibility), albumin, and look for effusions/ascites"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Fit, transplant-eligible (to ~70)",
+         "color": "teal",
+         "boxes": [
+          [
+           "Induction: HD-MTX backbone &ge;3 g/m&sup2;",
+           [
+            "<b>MATRix &times;4</b> (MTX + cytarabine + thiotepa + R)",
+            "or R-MPV &times;5&ndash;7, or MT-R (CALGB 50202)",
+            "MRI after every 2 cycles"
+           ]
+          ],
+          [
+           "Consolidation if CR / PR",
+           [
+            "<b>thiotepa-based HDC-ASCT</b> (IELSG43: PFS + OS)",
+            "not ASCT-fit: EA / HD-cytarabine, or",
+            "&nbsp;&nbsp;reduced-dose WBRT 23.4 Gy (after R-MPV CR)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Older / unfit for MATRix",
+         "color": "blue",
+         "boxes": [
+          [
+           "HD-MTX-based, gentler partners",
+           [
+            "R-MPV, MT-R, R-MP, or <b>HD-MTX + R</b>",
+            "fit &gt;65 years: ASCT on trial (PRIMA-CNS)"
+           ]
+          ],
+          [
+           "Then maintain",
+           [
+            "procarbazine, temozolomide or <b>lenalidomide</b>",
+            "avoid WBRT &mdash; neurotoxicity worst in elderly"
+           ]
+          ],
+          [
+           "MTX not possible",
+           [
+            "rituximab + temozolomide &middot; WBRT &middot; BTKi",
+            "best supportive care with steroids"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Relapsed / refractory",
+         "color": "coral",
+         "boxes": [
+          [
+           "Clinical trial first",
+           [
+            "late relapse (&gt;12 mo): <b>re-challenge HD-MTX</b>",
+            "<b>ibrutinib</b> or lenalidomide &plusmn; R; HD-cytarabine",
+            "ASCT if chemosensitive and not done &middot; WBRT",
+            "CAR-T on trial &middot; tirabrutinib (PDUFA Dec 2026)"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Prognostic scores",
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>IELSG</b> <span class='r'>Ferreri, JCO 2003</span>",
+         "1 point each: <b>age &gt;60 &middot; ECOG &gt;1 &middot; LDH &uarr; &middot; CSF protein &uarr; &middot; deep brain</b> (periventricular, basal ganglia, brainstem, cerebellum). 2-yr OS <b>0&ndash;1: 80%</b> &middot; 2&ndash;3: 48% &middot; <b>4&ndash;5: 15%</b>"
+        ],
+        [
+         "<b>MSKCC</b> <span class='r'>Abrey, JCO 2006</span>",
+         "Class 1 <b>age &lt;50</b> &middot; class 2 &ge;50 + KPS &ge;70 &middot; class 3 &ge;50 + KPS &lt;70 &mdash; survival falls stepwise; needs only age and KPS"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "39%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Consolidation &mdash; the transplant vs radiation question",
+       "headers": [
+        "Trial",
+        "Result"
+       ],
+       "widths": [
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>IELSG32</b> 2nd rand. <span class='r'>Lancet Haem 2017</span>",
+         "WBRT vs thiotepa-ASCT after the induction randomization: 2-yr PFS <b>80% vs 69%, P=0.17</b> &mdash; equivalent disease control, but <b>cognitive decline after WBRT</b>"
+        ],
+        [
+         "<b>PRECIS</b> <span class='r'>Houillier, JCO 2019</span>",
+         "Age &le;60, randomized phase 2: 2-yr PFS <b>63% WBRT vs 87% ASCT</b>; cognition impaired after WBRT, preserved after ASCT; toxic deaths 1 vs 5"
+        ],
+        [
+         "<b>Alliance 51101</b> <span class='r'>Batchelor, Blood Adv 2024</span>",
+         "MT-R-A then thiotepa/BCNU-ASCT vs EA: 2-yr PFS <b>73% vs 51%</b> (P=0.02), but 28% of the EA arm progressed/died in induction; landmark from consolidation 86% vs 71%, NS"
+        ],
+        [
+         "<b>IELSG43</b> <span class='r'>Illerhaus, Lancet 2026</span>",
+         "<b>Phase 3</b>, n=229, MATRix &times;4 then ASCT vs R-DeVIC: 3-yr PFS <b>78% vs 51%</b>, HR 0.43; <b>OS HR 0.46</b> (5-yr 84% vs 63%). Fatal events 5 vs 2 &mdash; <b>settles ASCT as the standard for fit patients</b>"
+        ]
+       ],
+       "footnote": "<b>WBRT remains effective</b> but the late leukoencephalopathy, ataxia and dementia make it the last choice for anyone likely to be cured &mdash; if used after CR, <b>reduced-dose 23.4 Gy</b> (R-MPV protocol)."
+      },
+      {
+       "type": "table",
+       "heading": "Elderly and unfit &mdash; what is known",
+       "widths": [
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>ANOCEF-GOELAMS</b> <span class='r'>Omuro, Lancet Haem 2015</span>",
+         "&ge;60 yr, randomized phase 2 (non-comparative): MPV-A vs MTX-temozolomide &mdash; 1-yr PFS <b>36% in both</b>; median OS 31 vs 14 mo; <b>no late neurotoxicity</b> without WBRT"
+        ],
+        [
+         "<b>PRIMAIN</b> <span class='r'>Fritsch, Leukemia 2017</span>",
+         "&ge;65 yr, R-MP(L) + <b>procarbazine maintenance</b>: CR 36%, 2-yr PFS 37%, OS 47%"
+        ],
+        [
+         "<b>US real-world</b> <span class='r'>David, AJH 2023</span>",
+         "539 patients &ge;60: combination HD-MTX beat MTX &plusmn; R (3-yr PFS 55% with MT-R vs 30%); <b>maintenance</b> 3-yr PFS 65% vs 45% &mdash; retrospective"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Relapsed / refractory agents",
+       "widths": [
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Ibrutinib</b> 560 mg",
+         "<b>iLOC</b> phase 2 (n=52): response 52% ITT (CR 19%) at 2 mo, median PFS <b>4.8 mo</b>; reaches CSF. <b>Invasive aspergillosis</b> reported (1 fatal). MSKCC phase 1: 10/13 responded. <b>Off-label in the US</b>"
+        ],
+        [
+         "<b>Tirabrutinib</b>",
+         "PROSPECT phase 2 (n=48): ORR 67%, CR 44%, median PFS 6.0 mo (ASCO 2025 abstract). Approved in Japan; <b>US NDA under accelerated review, PDUFA 18 Dec 2026</b> &mdash; would be the first US-approved BTKi for PCNSL"
+        ],
+        [
+         "<b>Lenalidomide &plusmn; R</b>",
+         "<b>REVRI</b> phase 2 (n=50): ORR 36% at end of induction, median PFS <b>7.8 mo</b>. Lenalidomide maintenance after salvage prolonged response (UCSF, Blood Adv 2018)"
+        ],
+        [
+         "<b>Re-challenge HD-MTX</b>",
+         "Reasonable if the prior response lasted &gt;12 months"
+        ]
+       ],
+       "footnote": "R/R responses are frequent but short &mdash; <b>consolidate a second remission</b> (ASCT if not yet done, or maintenance) wherever possible."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; regimen dosing, high-dose methotrexate administration, supportive care, and the trials",
+   "columns": [
+    {
+     "width": "35%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimen dosing (mg/m&sup2; unless stated)",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "19%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>MATRix</b> <span class='r'>IELSG32/43</span>",
+         "Rituximab 375 d&minus;5 and d0 &middot; <b>MTX 3500 d1</b> (over 3&ndash;4 h) &middot; cytarabine 2000 q12h &times;4 d2&ndash;3 &middot; <b>thiotepa 30 d4</b> &mdash; q21d &times;4, G-CSF. Age 18&ndash;70"
+        ],
+        [
+         "<b>R-MPV</b> <span class='r'>Shah, JCO 2007</span>",
+         "<b>Rituximab 500</b> d1 &middot; MTX 3500 + vincristine 1.4 (handbook cap 2.8 mg) d2 &middot; procarbazine 100 PO d1&ndash;7 odd cycles (low-tyramine diet) &mdash; q14d &times;5; PR &rarr; 7 cycles. CR &rarr; WBRT 23.4 Gy, then cytarabine 3000 d1&ndash;2 &times;2"
+        ],
+        [
+         "<b>MT-R</b> <span class='r'>CALGB 50202</span>",
+         "<b>MTX 8000 over 4 h</b> d1 q14d &times;8 &middot; rituximab 375 &times;6 doses &middot; temozolomide 150 PO d7&ndash;11 every other cycle. Then <b>EA</b>: etoposide 40 mg/kg CIV over 96 h + cytarabine 2000 q12h &times;8 d1&ndash;4"
+        ],
+        [
+         "<b>HD-MTX + R</b>",
+         "MTX 3500&ndash;8000 over 4 h q14d + rituximab 375 &mdash; elderly / frail backbone"
+        ],
+        [
+         "<b>HDC-ASCT</b>",
+         "<b>Thiotepa-based</b> conditioning: carmustine + thiotepa (IELSG32/43, Alliance 51101) or thiotepa + busulfan + cyclophosphamide (PRECIS, MSKCC)"
+        ],
+        [
+         "<b>Maintenance</b>",
+         "Lenalidomide 15 mg daily (handbook) &middot; procarbazine 100 mg/day &times;5 d q4wk (PRIMAIN) &middot; temozolomide 150 d1&ndash;5 q28d (Reni)"
+        ],
+        [
+         "<b>MTX-ineligible</b>",
+         "Rituximab 375 + temozolomide (handbook) &middot; temozolomide alone 150 d1&ndash;5 q28d &middot; WBRT"
+        ]
+       ],
+       "footnote": "MT-R and EA dosing per CALGB 50202 (handbook lists EA etoposide as 10 mg/kg/day CIV d1&ndash;4, i.e. the same 40 mg/kg total). Prednisolone 1% eye drops with every HD-cytarabine."
+      },
+      {
+       "type": "bullets",
+       "heading": "Supportive care",
+       "items": [
+        "<b>After the biopsy, dexamethasone freely</b> for edema, then taper; <b>PJP prophylaxis</b> on prolonged steroids (atovaquone around MTX)",
+        "<b>Antiseizure drugs only if seizures</b> &mdash; no prophylaxis; prefer non-enzyme-inducing agents",
+        "<b>VTE is common</b> in PCNSL; weigh anticoagulation against the post-biopsy bleeding window",
+        "<b>Neurocognitive baseline</b> and follow-up; MRI q3 mo &times;2 yr, then less often (late relapses happen)"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "35%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "High-dose methotrexate &mdash; administration",
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Eligibility</b>",
+         "<b>CrCl &ge;50 mL/min</b> for full dose (50% if 10&ndash;50; omit &lt;10). <b>No third-space fluid</b> &mdash; drain or avoid with <b>pleural effusion, ascites, edema</b> (MTX sequesters and leaks back, prolonging exposure)"
+        ],
+        [
+         "<b>Stop interacting drugs</b>",
+         "<b>PPIs &middot; TMP-SMX &middot; NSAIDs / salicylates &middot; penicillins &middot; probenecid</b> (and levetiracetam has case reports) &mdash; hold PJP TMP-SMX until the level clears"
+        ],
+        [
+         "<b>Hydrate + ALKALINIZE</b>",
+         "Half-normal saline + 100 mEq NaHCO&#8323;/L at 500 mL/h &times;2 h, then 125 mL/h. <b>Do not start until urine pH &ge;7</b> and UOP &gt;100 mL/h; <b>keep pH &ge;7 until level &lt;0.05&ndash;0.1 &micro;M</b> (MTX precipitates in acid urine). Rescue: NaHCO&#8323; bolus or acetazolamide"
+        ],
+        [
+         "<b>Leucovorin</b>",
+         "PCNSL protocols start <b>24 h after MTX start</b> (25 mg IV q6h, or 100 mg/m&sup2; after 8 g/m&sup2; MT-R) &mdash; vs 36 h after the 24-h Burkitt infusion. Continue until MTX &lt;0.05 &micro;M"
+        ],
+        [
+         "<b>Levels</b>",
+         "Daily from 24 h, with Cr and UOP. <b>Escalate leucovorin</b> (100 mg/m&sup2; q6h) for a Cr rise &gt;50% or levels above the protocol curve &mdash; handbook thresholds (24-h infusion): &gt;20 &micro;M at 24 h, &gt;1 at 48 h, &gt;0.1 at 72 h; <b>4-h PCNSL infusions run on their own nomogram</b>"
+        ],
+        [
+         "<b>Glucarpidase</b>",
+         "<b>50 U/kg IV</b> once for level &gt;1 &micro;M with delayed clearance from renal failure. <b>No leucovorin within 2 h</b> either side; <b>immunoassay unreliable for 48 h</b> (DAMPA cross-reacts) &mdash; use chromatographic assay"
+        ],
+        [
+         "<b>Watch</b>",
+         "AKI &middot; transaminitis (common, transient) &middot; mucositis &middot; myelosuppression &middot; <b>acute / subacute encephalopathy</b> (stroke-like; consider aminophylline, dextromethorphan)"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Special situations",
+       "items": [
+        "<b>HIV-associated PCNSL</b> is EBV-driven and arises with advanced immunosuppression. Differential is <b>toxoplasmosis</b> &mdash; toxo serology, <b>CSF EBV PCR</b>, and biopsy if lesions fail to shrink on empiric anti-toxoplasma therapy. Treat with <b>ART + HD-MTX-based therapy</b> with curative intent (handbook: continue or start ART during chemotherapy)",
+        "<b>Vitreoretinal involvement:</b> systemic HD-MTX reaches the eye inconsistently &mdash; add <b>intravitreal MTX or rituximab, or ocular RT</b> if it persists (handbook: orbital RT or ophthalmology referral for intra-ocular therapy)",
+        "<b>Response (IPCG):</b> CR requires no enhancing disease, <b>off steroids &ge;2 weeks</b>, a normal eye exam and negative CSF cytology &mdash; steroid-driven shrinkage is not a response"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "rows": [
+        [
+         "<b>IELSG20</b> <span class='r'>Ferreri, Lancet 2009</span>",
+         "MTX &plusmn; HD-cytarabine: CR <b>46% vs 18%</b> &mdash; established the doublet"
+        ],
+        [
+         "<b>IELSG32 / MATRix</b> <span class='r'>Lancet Haem 2016</span>",
+         "+ rituximab + thiotepa: CR <b>49% vs 23%</b>; 7-yr OS 56% vs 21%; 6% toxic deaths. Randomized phase 2"
+        ],
+        [
+         "<b>CALGB 50202</b> <span class='r'>Rubenstein, JCO 2013</span>",
+         "MT-R &rarr; EA, no WBRT, single arm: CR 66%, 2-yr PFS 57%"
+        ],
+        [
+         "<b>IELSG43</b> <span class='r'>Illerhaus, Lancet 2026</span>",
+         "ASCT vs R-DeVIC after MATRix: 3-yr PFS <b>78% vs 51%</b>; OS HR 0.46. Phase 3"
+        ],
+        [
+         "<b>PRECIS</b> &middot; <b>Alliance 51101</b>",
+         "ASCT &ge; WBRT or EA for disease control; WBRT costs cognition"
+        ],
+        [
+         "<b>HOVON 105 / ALLG</b> <span class='r'>Bromberg, Lancet Oncol 2019</span>",
+         "MBVP &plusmn; rituximab, phase 3: <b>no EFS benefit</b> (HR 1.00)"
+        ],
+        [
+         "<b>ANOCEF elderly</b> &middot; <b>PRIMAIN</b>",
+         "Outcomes &ge;60&ndash;65 remain poor: 1&ndash;2 yr PFS ~35%"
+        ],
+        [
+         "<b>iLOC</b> &middot; <b>REVRI</b> &middot; <b>PROSPECT</b>",
+         "Ibrutinib, R2 and tirabrutinib in R/R disease"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>Steroids before biopsy are the #1 avoidable diagnostic failure</b>",
+        "<b>Urine alkalinization is mandatory for HD-MTX</b> (the opposite of TLS, where it is harmful)",
+        "<b>Intrathecal chemotherapy is generally omitted</b> when systemic MTX &ge;3 g/m&sup2; is given &mdash; no benefit shown in retrospective series (R-MPV adds Ommaya MTX only for positive CSF)",
+        "<b>Testicular exam in every man</b> &mdash; testicular DLBCL can seed the CNS and changes the diagnosis",
+        "<b>Rituximab is contested:</b> it raised CR in IELSG32, but <b>HOVON 105/ALLG NHL 24 (phase 3, n=199) found no EFS benefit</b> (1-yr EFS 52% vs 49%, HR 1.00) &mdash; it stays in most regimens anyway"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "What it is",
+  "Diagnosis",
+  "Staging &mdash; IPCG extent-of-disease workup",
+  "Treatment pathway",
+  "Prognostic scores",
+  "Consolidation &mdash; the transplant vs radiation question",
+  "Elderly and unfit &mdash; what is known",
+  "Relapsed / refractory agents",
+  "Regimen dosing (mg/m&sup2; unless stated)",
+  "Supportive care",
+  "High-dose methotrexate &mdash; administration",
+  "Special situations",
+  "Key trials",
+  "Pearls"
+ ],
+ "text": "Primary CNS lymphoma A curable brain tumour if you get a clean diagnosis — no steroids before biopsy, a high-dose methotrexate backbone, and thiotepa-based transplant consolidation for the fit. The recurring trade-off is cure versus neurotoxicity Compiled from the Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin — primary CNS and HIV-associated lymphoma · NCCN · IPCG · primary trial reports verified against PubMed, September 2026. What it is DLBCL confined to brain, leptomeninges, spinal cord or eyes , no systemic disease. Almost all are non-GCB / ABC-type , with MYD88 L265P and CD79B mutations — the reason BTK inhibitors and lenalidomide work WHO-HAEM5 groups it as primary large B-cell lymphoma of immune-privileged sites (with vitreoretinal and testicular); ICC keeps primary DLBCL of the CNS Median age late 60s. Immunodeficiency (HIV, transplant) → EBV-driven disease, often multifocal and ring-enhancing Classic MRI: homogeneously enhancing periventricular / deep lesion , restricted diffusion. Presents with focal deficits, personality change, raised ICP Diagnosis AVOID CORTICOSTEROIDS BEFORE BIOPSY unless herniation is imminent — steroids lyse lymphoma cells and the lesion can vanish (“ghost tumor”), leaving a non-diagnostic biopsy. If already given and biopsy is negative, stop them and re-image Stereotactic needle biopsy is the procedure — resection adds nothing and is not the goal Tissue substitutes if biopsy is unsafe: CSF cytology + flow cytometry (and MYD88 L265P) or vitrectomy for vitreous involvement Staging — IPCG extent-of-disease workup Brain MRI with gadolinium (+ spine MRI if symptoms or CSF+) Eyes Slit-lamp + dilated fundus exam by ophthalmology — vitreoretinal disease changes local therapy and follow-up CSF LP if safe (no mass effect): cytology, flow, protein (protein feeds the IELSG score) Exclude systemic PET/CT (or CT C/A/P) · testicular exam ± ultrasound in men · marrow biopsy selectively Labs HIV , HBV/HCV, LDH, creatinine clearance (MTX eligibility), albumin, and look for effusions/ascites Treatment pathway Fit, transplant-eligible (to ~70) Induction: HD-MTX backbone ≥3 g/m² MATRix ×4 (MTX + cytarabine + thiotepa + R) or R-MPV ×5–7, or MT-R (CALGB 50202) MRI after every 2 cycles Consolidation if CR / PR thiotepa-based HDC-ASCT (IELSG43: PFS + OS) not ASCT-fit: EA / HD-cytarabine, or reduced-dose WBRT 23.4 Gy (after R-MPV CR) Older / unfit for MATRix HD-MTX-based, gentler partners R-MPV, MT-R, R-MP, or HD-MTX + R fit >65 years: ASCT on trial (PRIMA-CNS) Then maintain procarbazine, temozolomide or lenalidomide avoid WBRT — neurotoxicity worst in elderly MTX not possible rituximab + temozolomide · WBRT · BTKi best supportive care with steroids Relapsed / refractory Clinical trial first late relapse (>12 mo): re-challenge HD-MTX ibrutinib or lenalidomide ± R; HD-cytarabine ASCT if chemosensitive and not done · WBRT CAR-T on trial · tirabrutinib (PDUFA Dec 2026) Prognostic scores IELSG Ferreri, JCO 2003 1 point each: age >60 · ECOG >1 · LDH &uarr; · CSF protein &uarr; · deep brain (periventricular, basal ganglia, brainstem, cerebellum). 2-yr OS 0–1: 80% · 2–3: 48% · 4–5: 15% MSKCC Abrey, JCO 2006 Class 1 age <50 · class 2 ≥50 + KPS ≥70 · class 3 ≥50 + KPS <70 — survival falls stepwise; needs only age and KPS Consolidation — the transplant vs radiation question Trial Result IELSG32 2nd rand. Lancet Haem 2017 WBRT vs thiotepa-ASCT after the induction randomization: 2-yr PFS 80% vs 69%, P=0.17 — equivalent disease control, but cognitive decline after WBRT PRECIS Houillier, JCO 2019 Age ≤60, randomized phase 2: 2-yr PFS 63% WBRT vs 87% ASCT ; cognition impaired after WBRT, preserved after ASCT; toxic deaths 1 vs 5 Alliance 51101 Batchelor, Blood Adv 2024 MT-R-A then thiotepa/BCNU-ASCT vs EA: 2-yr PFS 73% vs 51% (P=0.02), but 28% of the EA arm progressed/died in induction; landmark from consolidation 86% vs 71%, NS IELSG43 Illerhaus, Lancet 2026 Phase 3 , n=229, MATRix ×4 then ASCT vs R-DeVIC: 3-yr PFS 78% vs 51% , HR 0.43; OS HR 0.46 (5-yr 84% vs 63%). Fatal events 5 vs 2 — settles ASCT as the standard for fit patients WBRT remains effective but the late leukoencephalopathy, ataxia and dementia make it the last choice for anyone likely to be cured — if used after CR, reduced-dose 23.4 Gy (R-MPV protocol). Elderly and unfit — what is known ANOCEF-GOELAMS Omuro, Lancet Haem 2015 ≥60 yr, randomized phase 2 (non-comparative): MPV-A vs MTX-temozolomide — 1-yr PFS 36% in both ; median OS 31 vs 14 mo; no late neurotoxicity without WBRT PRIMAIN Fritsch, Leukemia 2017 ≥65 yr, R-MP(L) + procarbazine maintenance : CR 36%, 2-yr PFS 37%, OS 47% US real-world David, AJH 2023 539 patients ≥60: combination HD-MTX beat MTX ± R (3-yr PFS 55% with MT-R vs 30%); maintenance 3-yr PFS 65% vs 45% — retrospective Relapsed / refractory agents Ibrutinib 560 mg iLOC phase 2 (n=52): response 52% ITT (CR 19%) at 2 mo, median PFS 4.8 mo ; reaches CSF. Invasive aspergillosis reported (1 fatal). MSKCC phase 1: 10/13 responded. Off-label in the US Tirabrutinib PROSPECT phase 2 (n=48): ORR 67%, CR 44%, median PFS 6.0 mo (ASCO 2025 abstract). Approved in Japan; US NDA under accelerated review, PDUFA 18 Dec 2026 — would be the first US-approved BTKi for PCNSL Lenalidomide ± R REVRI phase 2 (n=50): ORR 36% at end of induction, median PFS 7.8 mo . Lenalidomide maintenance after salvage prolonged response (UCSF, Blood Adv 2018) Re-challenge HD-MTX Reasonable if the prior response lasted >12 months R/R responses are frequent but short — consolidate a second remission (ASCT if not yet done, or maintenance) wherever possible. Regimen dosing (mg/m² unless stated) Regimen Dosing MATRix IELSG32/43 Rituximab 375 d−5 and d0 · MTX 3500 d1 (over 3–4 h) · cytarabine 2000 q12h ×4 d2–3 · thiotepa 30 d4 — q21d ×4, G-CSF. Age 18–70 R-MPV Shah, JCO 2007 Rituximab 500 d1 · MTX 3500 + vincristine 1.4 (handbook cap 2.8 mg) d2 · procarbazine 100 PO d1–7 odd cycles (low-tyramine diet) — q14d ×5; PR → 7 cycles. CR → WBRT 23.4 Gy, then cytarabine 3000 d1–2 ×2 MT-R CALGB 50202 MTX 8000 over 4 h d1 q14d ×8 · rituximab 375 ×6 doses · temozolomide 150 PO d7–11 every other cycle. Then EA : etoposide 40 mg/kg CIV over 96 h + cytarabine 2000 q12h ×8 d1–4 HD-MTX + R MTX 3500–8000 over 4 h q14d + rituximab 375 — elderly / frail backbone HDC-ASCT Thiotepa-based conditioning: carmustine + thiotepa (IELSG32/43, Alliance 51101) or thiotepa + busulfan + cyclophosphamide (PRECIS, MSKCC) Maintenance Lenalidomide 15 mg daily (handbook) · procarbazine 100 mg/day ×5 d q4wk (PRIMAIN) · temozolomide 150 d1–5 q28d (Reni) MTX-ineligible Rituximab 375 + temozolomide (handbook) · temozolomide alone 150 d1–5 q28d · WBRT MT-R and EA dosing per CALGB 50202 (handbook lists EA etoposide as 10 mg/kg/day CIV d1–4, i.e. the same 40 mg/kg total). Prednisolone 1% eye drops with every HD-cytarabine. Supportive care After the biopsy, dexamethasone freely for edema, then taper; PJP prophylaxis on prolonged steroids (atovaquone around MTX) Antiseizure drugs only if seizures — no prophylaxis; prefer non-enzyme-inducing agents VTE is common in PCNSL; weigh anticoagulation against the post-biopsy bleeding window Neurocognitive baseline and follow-up; MRI q3 mo ×2 yr, then less often (late relapses happen) High-dose methotrexate — administration Eligibility CrCl ≥50 mL/min for full dose (50% if 10–50; omit <10). No third-space fluid — drain or avoid with pleural effusion, ascites, edema (MTX sequesters and leaks back, prolonging exposure) Stop interacting drugs PPIs · TMP-SMX · NSAIDs / salicylates · penicillins · probenecid (and levetiracetam has case reports) — hold PJP TMP-SMX until the level clears Hydrate + ALKALINIZE Half-normal saline + 100 mEq NaHCO&#8323;/L at 500 mL/h ×2 h, then 125 mL/h. Do not start until urine pH ≥7 and UOP >100 mL/h; keep pH ≥7 until level <0.05–0.1 &micro;M (MTX precipitates in acid urine). Rescue: NaHCO&#8323; bolus or acetazolamide Leucovorin PCNSL protocols start 24 h after MTX start (25 mg IV q6h, or 100 mg/m² after 8 g/m² MT-R) — vs 36 h after the 24-h Burkitt infusion. Continue until MTX <0.05 &micro;M Levels Daily from 24 h, with Cr and UOP. Escalate leucovorin (100 mg/m² q6h) for a Cr rise >50% or levels above the protocol curve — handbook thresholds (24-h infusion): >20 &micro;M at 24 h, >1 at 48 h, >0.1 at 72 h; 4-h PCNSL infusions run on their own nomogram Glucarpidase 50 U/kg IV once for level >1 &micro;M with delayed clearance from renal failure. No leucovorin within 2 h either side; immunoassay unreliable for 48 h (DAMPA cross-reacts) — use chromatographic assay Watch AKI · transaminitis (common, transient) · mucositis · myelosuppression · acute / subacute encephalopathy (stroke-like; consider aminophylline, dextromethorphan) Special situations HIV-associated PCNSL is EBV-driven and arises with advanced immunosuppression. Differential is toxoplasmosis — toxo serology, CSF EBV PCR , and biopsy if lesions fail to shrink on empiric anti-toxoplasma therapy. Treat with ART + HD-MTX-based therapy with curative intent (handbook: continue or start ART during chemotherapy) Vitreoretinal involvement: systemic HD-MTX reaches the eye inconsistently — add intravitreal MTX or rituximab, or ocular RT if it persists (handbook: orbital RT or ophthalmology referral for intra-ocular therapy) Response (IPCG): CR requires no enhancing disease, off steroids ≥2 weeks , a normal eye exam and negative CSF cytology — steroid-driven shrinkage is not a response Key trials IELSG20 Ferreri, Lancet 2009 MTX ± HD-cytarabine: CR 46% vs 18% — established the doublet IELSG32 / MATRix Lancet Haem 2016 + rituximab + thiotepa: CR 49% vs 23% ; 7-yr OS 56% vs 21%; 6% toxic deaths. Randomized phase 2 CALGB 50202 Rubenstein, JCO 2013 MT-R → EA, no WBRT, single arm: CR 66%, 2-yr PFS 57% IELSG43 Illerhaus, Lancet 2026 ASCT vs R-DeVIC after MATRix: 3-yr PFS 78% vs 51% ; OS HR 0.46. Phase 3 PRECIS · Alliance 51101 ASCT ≥ WBRT or EA for disease control; WBRT costs cognition HOVON 105 / ALLG Bromberg, Lancet Oncol 2019 MBVP ± rituximab, phase 3: no EFS benefit (HR 1.00) ANOCEF elderly · PRIMAIN Outcomes ≥60–65 remain poor: 1–2 yr PFS ~35% iLOC · REVRI · PROSPECT Ibrutinib, R2 and tirabrutinib in R/R disease Pearls Steroids before biopsy are the #1 avoidable diagnostic failure Urine alkalinization is mandatory for HD-MTX (the opposite of TLS, where it is harmful) Intrathecal chemotherapy is generally omitted when systemic MTX ≥3 g/m² is given — no benefit shown in retrospective series (R-MPV adds Ommaya MTX only for positive CSF) Testicular exam in every man — testicular DLBCL can seed the CNS and changes the diagnosis Rituximab is contested: it raised CR in IELSG32, but HOVON 105/ALLG NHL 24 (phase 3, n=199) found no EFS benefit (1-yr EFS 52% vs 49%, HR 1.00) — it stays in most regimens anyway"
+}

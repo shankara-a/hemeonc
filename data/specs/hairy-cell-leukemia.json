@@ -1,0 +1,398 @@
+{
+ "disease": "hairy-cell-leukemia",
+ "spec_file": "hairy_cell.py",
+ "pdf": "Hairy Cell Leukemia.pdf",
+ "title": "Hairy cell leukemia",
+ "subtitle": "<b>Indolent B-cell leukemia defined by BRAF V600E</b> &middot; splenomegaly with pancytopenia and monocytopenia &middot; <b>one course of a purine analog buys most patients a decade or more</b>; the old &ldquo;variant&rdquo; (now SBLPN) is a different, BRAF wild-type disease",
+ "source": "Compiled from primary trial reports and consensus guidelines (Hairy Cell Leukemia Foundation consensus, Grever 2017 and 2026 update; NCCN) verified against PubMed, September 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Presentation",
+       "items": [
+        "<b>Rare: &lt;2% of leukemias</b>; middle-aged adults, strong male predominance",
+        "<b>Splenomegaly</b> (often massive) <b>without adenopathy</b>, and <b>pancytopenia with monocytopenia</b> &mdash; the monocytopenia is the clue on a routine CBC",
+        "<b>Dry tap:</b> reticulin fibrosis defeats the aspirate &mdash; diagnose on the <b>core biopsy</b> (interstitial &ldquo;fried-egg&rdquo; infiltrate) + <b>peripheral blood flow</b>, which finds the few circulating cells",
+        "<b>Infections</b> are the cause of morbidity: bacterial, fungal and <b>atypical mycobacteria</b> (monocytopenia + neutropenia)",
+        "<b>Smear:</b> small-to-medium cells with oval nuclei and <b>circumferential hairy cytoplasmic projections</b>"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Classic HCL vs its look-alikes",
+       "headers": [
+        "",
+        "Classic HCL",
+        "SBLPN (ex-HCL-v)"
+       ],
+       "widths": [
+        "26%",
+        "37%",
+        ""
+       ],
+       "rows": [
+        [
+         "CD11c &middot; CD103",
+         "<b>Bright +</b> &middot; +",
+         "+ &middot; +"
+        ],
+        [
+         "<b>CD25</b>",
+         "<b>+</b>",
+         "<b>&minus;</b>"
+        ],
+        [
+         "CD123",
+         "<b>+ (bright)</b>",
+         "usually &minus;"
+        ],
+        [
+         "<b>Annexin A1</b> (IHC)",
+         "<b>+ &mdash; 100% specific</b> <span class='r'>Falini, Lancet 2004</span>",
+         "&minus;"
+        ],
+        [
+         "TRAP",
+         "+ (historical stain)",
+         "variable"
+        ],
+        [
+         "<b>BRAF V600E</b>",
+         "<b>~All</b> (48/48; &gt;95% in 2026 consensus)",
+         "<b>Wild-type</b>"
+        ],
+        [
+         "Other driver",
+         "&mdash;",
+         "<b>MAP2K1 in ~50%</b> <span class='r'>Waterfall 2014</span>"
+        ],
+        [
+         "Blood count",
+         "Pancytopenia, <b>low monocytes</b>",
+         "Leukocytosis, monocytes preserved"
+        ],
+        [
+         "Purine analog",
+         "<b>Excellent, durable</b>",
+         "Poorer, less durable"
+        ]
+       ],
+       "footnote": "<b>HCL score</b> (CD11c, CD103, CD123, CD25): 3&ndash;4 = classic. <b>WHO-HAEM5 dropped &ldquo;HCL-variant&rdquo;</b> and folded it into <b>splenic B-cell lymphoma/leukemia with prominent nucleoli (SBLPN)</b>; <b>ICC 2022 keeps HCL-v as a provisional entity</b>."
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "When to treat &mdash; consensus",
+       "items": [
+        "<b>Any of: Hb &lt;11 g/dL, platelets &lt;100,000/&micro;L, ANC &lt;1,000/&micro;L</b>",
+        "<b>Symptomatic splenomegaly</b>, progressive cytopenias, recurrent infection or constitutional symptoms",
+        "<b>None of these &rarr; observe</b>; many patients sit for years",
+        "<b>CR:</b> Hb &gt;11 without transfusion, platelets &gt;100,000, ANC &gt;1,500, no hairy cells on marrow or blood, spleen regressed. MRD by IHC or flow is prognostic but not yet a treatment target",
+        "<b>Relapse cutoff is 2 years</b> (raised from 1): relapse &ge;2 yr after CR &rarr; retreat with purine analog; &lt;2 yr &rarr; switch class"
+       ]
+      },
+      {
+       "type": "note",
+       "html": "<b>IGHV4-34 &mdash; the trap.</b> Classic-looking HCL that is <b>BRAF wild-type</b>: all 13 IGHV4-34+ cases were wild-type <span class='r'>Xi, Blood 2012</span>. Usually unmutated, higher WBC, <b>poor response to cladribine</b> and shorter PFS and OS <span class='r'>Arons, Blood 2009</span>; MAP2K1 mutations cluster here too. <b>A BRAF-negative &ldquo;HCL&rdquo; should prompt a second look</b>."
+      },
+      {
+       "type": "note",
+       "html": "<b>Treat the infection first.</b> Cladribine and pentostatin deepen neutropenia for weeks, and post-cladribine fever is common &mdash; so <b>defer the purine analog during active infection</b>. If counts are too low for the infection to clear, a <b>BRAF inhibitor (vemurafenib &plusmn; rituximab) restores counts without myelosuppression</b> and can bridge to definitive therapy &mdash; off-label."
+      }
+     ]
+    },
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Newly diagnosed classic HCL",
+         "color": "teal",
+         "boxes": [
+          [
+           "Indication to treat?",
+           [
+            "Hb &lt;11, plt &lt;100k, ANC &lt;1,000, or symptoms",
+            "none &rarr; <b>observe</b>"
+           ]
+          ],
+          [
+           "Active infection?",
+           [
+            "<b>control it first</b> &mdash; defer the purine analog",
+            "bridge: vemurafenib &plusmn; rituximab (off-label)"
+           ]
+          ],
+          [
+           "First line",
+           [
+            "<b>cladribine &times;1 course</b> or <b>pentostatin</b>",
+            "<b>+ rituximab</b>: concurrent &rarr; MRD-free CR 97%",
+            "(delayed R also acceptable; see trial below)"
+           ]
+          ],
+          [
+           "Restage ~6 months",
+           [
+            "marrow biopsy + counts &rarr; CR / PR / MRD"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Relapse",
+         "color": "coral",
+         "boxes": [
+          [
+           "&ge;2 yr after CR",
+           [
+            "<b>repeat purine analog</b> (same or the other)",
+            "<b>&plusmn; rituximab</b>"
+           ]
+          ],
+          [
+           "&lt;2 yr, or refractory",
+           [
+            "<b>vemurafenib + rituximab</b> (CR 87%)",
+            "dabrafenib + trametinib (off-label in HCL)",
+            "ibrutinib &middot; pentostatin + R &middot; trial"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "SBLPN (HCL-v) &middot; IGHV4-34 HCL",
+         "color": "amber",
+         "boxes": [
+          [
+           "BRAF wild-type &mdash; a different disease",
+           [
+            "cladribine + <b>concurrent rituximab</b> (CR 95%)",
+            "<b>BRAF inhibitors have no target</b>",
+            "relapse: ibrutinib, trials"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; the evidence, dosing and supportive care",
+   "columns": [
+    {
+     "width": "52%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Key evidence",
+       "headers": [
+        "Study",
+        "Result",
+        "Read it this way"
+       ],
+       "widths": [
+        "19%",
+        "46%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Scripps cladribine</b> <span class='r'>n=358</span>",
+         "Single 7-day infusion: <b>CR 91%</b>; 26% relapsed at a median 29 mo; <b>retreatment CR 62%</b>",
+         "The regimen that made HCL a one-course disease"
+        ],
+        [
+         "Else, long-term <span class='r'>n=233, 16 yr f/u</span>",
+         "Pentostatin or cladribine: CR 80%, <b>median RFS 16 yr</b>; no difference between drugs",
+         "Relapse continues late &mdash; 25% of 5-yr CRs relapse by 15 yr"
+        ],
+        [
+         "<b>Intergroup</b> <span class='r'>Grever 1995</span>",
+         "<b>Pentostatin vs interferon-&alpha;:</b> CR <b>76% vs 11%</b>. 10-yr OS 81% (Flinn 2000)",
+         "Pentostatin is equivalent to cladribine; no excess second cancers"
+        ],
+        [
+         "SAKK 32/98 <span class='r'>n=100, randomized</span>",
+         "Cladribine <b>daily &times;5 vs weekly &times;5</b>: response 86% in both",
+         "<b>Weekly is not less toxic</b> (grade 3&ndash;4 neutropenia 90% vs 80%)"
+        ],
+        [
+         "<b>NIH, Chihara</b> <span class='r'>n=68, randomized ph2</span>",
+         "Cladribine + <b>concurrent vs delayed (&ge;6 mo) rituximab</b>: CR 100% vs 88% (NS); <b>MRD-free CR 97% vs 24%</b>; at 8 yr <b>94% vs 12%</b> still MRD-free",
+         "Concurrent R buys deep, lasting MRD negativity at the cost of grade 3&ndash;4 thrombocytopenia <b>59% vs 9%</b>. Survival benefit not shown"
+        ],
+        [
+         "MDACC <span class='r'>n=139, single-arm</span>",
+         "Cladribine &rarr; rituximab: <b>CR 97%</b>, 10-yr EFS <b>87%</b>, OS <b>91%</b>",
+         "Frontline classic HCL relapse only 3.6%"
+        ],
+        [
+         "<b>Vemurafenib</b> <span class='r'>Tiacci 2015</span>",
+         "Relapsed: ORR <b>96&ndash;100%</b>, CR 35&ndash;42%; RFS <b>19 mo</b> in CR, 6 mo in PR",
+         "High response, short remission alone"
+        ],
+        [
+         "<b>Vem + R</b> <span class='r'>Tiacci NEJM 2021, n=30</span>",
+         "Median 3 prior lines: <b>CR 87%</b> (65% MRD-negative); <b>PFS 78%</b> at median 37 mo",
+         "The preferred non-purine regimen at relapse"
+        ],
+        [
+         "Vem + obinutuzumab <span class='r'>frontline, n=30</span>",
+         "<b>CR 90%</b>, 96% of CRs MRD-negative; no relapse at 35 mo",
+         "Chemo-free frontline option; single-arm"
+        ],
+        [
+         "<b>Dab + tram</b> <span class='r'>ROAR, n=55</span>",
+         "Relapsed: ORR <b>89%</b>, CR <b>66%</b>; 24-mo PFS 94%",
+         "<b>Not FDA-approved for HCL</b> &mdash; the tumor-agnostic label covers solid tumors only"
+        ],
+        [
+         "Ibrutinib <span class='r'>n=37</span>",
+         "Best ORR <b>54%</b>; 36-mo PFS 73%",
+         "<b>Primary endpoint not met</b>; modest"
+        ],
+        [
+         "Moxetumomab <span class='r'>n=80</span>",
+         "Anti-CD22 immunotoxin: CR 41%, durable CR 30%; HUS 7.5%, capillary leak 5%",
+         "<b>Withdrawn from the US market in 2023</b> (commercial decision)"
+        ],
+        [
+         "SBLPN: clad + R <span class='r'>n=20</span>",
+         "Concurrent rituximab: <b>CR 95%</b>, 5-yr PFS <b>63%</b>",
+         "TP53-mutant cases fare worse"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "48%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Cladribine</b>",
+         "<b>0.14 mg/kg/day IV over 2 h, days 1&ndash;5</b> (NIH: 0.15 mg/kg), <b>or 0.1 mg/kg/day continuous IV &times;7 days</b>, or 0.14 mg/kg weekly &times;5 &mdash; <b>one course</b>"
+        ],
+        [
+         "<b>Clad + rituximab</b>",
+         "Cladribine 0.15 mg/kg days 1&ndash;5 + <b>rituximab 375 mg/m&sup2; weekly &times;8</b>, concurrent from day 1 (or delayed &ge;6 mo)"
+        ],
+        [
+         "<b>Pentostatin</b>",
+         "<b>4 mg/m&sup2; IV every 2 weeks</b> until best response; hydrate; hold for renal dysfunction"
+        ],
+        [
+         "<b>Vemurafenib + R</b>",
+         "<b>Vemurafenib 960 mg PO BID &times;8 weeks</b> + <b>rituximab 375 mg/m&sup2; &times;8 doses over 18 weeks</b>"
+        ],
+        [
+         "Dabrafenib + trametinib",
+         "Dabrafenib 150 mg BID + trametinib 2 mg daily"
+        ],
+        [
+         "Ibrutinib",
+         "420 mg daily"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Monitoring and supportive care",
+       "items": [
+        "<b>Prolonged CD4 lymphopenia</b> after purine analogs &mdash; median <b>~40 months</b> to recover &rarr; <b>PJP and HSV/VZV prophylaxis</b>",
+        "<b>Irradiated blood products indefinitely</b> after a purine analog (transfusion-associated GVHD) <span class='r'>BSH 2020</span>",
+        "<b>Neutropenic fever in ~42%</b> after cladribine. <b>Routine G-CSF not recommended</b>: it shortened neutropenia (9 vs 22 days) but did not cut fever or admissions",
+        "<b>Vemurafenib:</b> rash, photosensitivity, arthralgia, <b>cutaneous SCC / keratoacanthoma</b> &mdash; dermatology checks. <b>Dab/tram:</b> pyrexia",
+        "Inactivated vaccines before therapy; <b>no live vaccines</b>"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Splenic small B-cell differential",
+       "headers": [
+        "Entity",
+        "Distinguishing features"
+       ],
+       "widths": [
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Classic HCL</b>",
+         "CD25+ CD103+ CD123+ CD11c bright, <b>annexin A1+</b>, <b>BRAF V600E</b>; monocytopenia"
+        ],
+        [
+         "<b>SBLPN (HCL-v)</b>",
+         "CD103+ but <b>CD25&minus;</b>, annexin A1&minus;, BRAF wild-type, MAP2K1; leukocytosis, prominent nucleoli"
+        ],
+        [
+         "Splenic marginal zone",
+         "<b>Polar (villous) projections</b>, CD103 usually &minus;, CD25 variable, annexin A1&minus;; <b>NOTCH2 / KLF2</b>; may have a small IgM paraprotein"
+        ],
+        [
+         "Splenic diffuse red pulp",
+         "Villous cells, red-pulp pattern, CD25&minus;, annexin A1&minus;; <b>CCND3</b> mutations; BRAF wild-type"
+        ],
+        [
+         "CLL &middot; MCL",
+         "CD5+ &mdash; CD23+ (CLL) or cyclin D1+ (MCL) &mdash; HCL and its look-alikes are CD5&minus;"
+        ]
+       ],
+       "footnote": "<b>Annexin A1 + BRAF V600E</b> together settle classic HCL; everything else in this list is negative for both."
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>Splenomegaly + monocytopenia + dry tap = HCL</b> until proven otherwise",
+        "<b>BRAF V600E is the diagnosis and the target.</b> Wild-type &rarr; think SBLPN or IGHV4-34",
+        "<b>Cure-like, not cure:</b> relapse keeps happening late but responds to retreatment",
+        "<b>Moxetumomab is gone</b> (2023) &mdash; don't list it as an option"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Presentation",
+  "Classic HCL vs its look-alikes",
+  "When to treat &mdash; consensus",
+  "Treatment pathway",
+  "Key evidence",
+  "Dosing",
+  "Monitoring and supportive care",
+  "Splenic small B-cell differential",
+  "Pearls"
+ ],
+ "text": "Hairy cell leukemia Indolent B-cell leukemia defined by BRAF V600E · splenomegaly with pancytopenia and monocytopenia · one course of a purine analog buys most patients a decade or more ; the old “variant” (now SBLPN) is a different, BRAF wild-type disease Compiled from primary trial reports and consensus guidelines (Hairy Cell Leukemia Foundation consensus, Grever 2017 and 2026 update; NCCN) verified against PubMed, September 2026. Presentation Rare: <2% of leukemias ; middle-aged adults, strong male predominance Splenomegaly (often massive) without adenopathy , and pancytopenia with monocytopenia — the monocytopenia is the clue on a routine CBC Dry tap: reticulin fibrosis defeats the aspirate — diagnose on the core biopsy (interstitial “fried-egg” infiltrate) + peripheral blood flow , which finds the few circulating cells Infections are the cause of morbidity: bacterial, fungal and atypical mycobacteria (monocytopenia + neutropenia) Smear: small-to-medium cells with oval nuclei and circumferential hairy cytoplasmic projections Classic HCL vs its look-alikes Classic HCL SBLPN (ex-HCL-v) CD11c · CD103 Bright + · + + · + CD25 + − CD123 + (bright) usually − Annexin A1 (IHC) + — 100% specific Falini, Lancet 2004 − TRAP + (historical stain) variable BRAF V600E ~All (48/48; >95% in 2026 consensus) Wild-type Other driver — MAP2K1 in ~50% Waterfall 2014 Blood count Pancytopenia, low monocytes Leukocytosis, monocytes preserved Purine analog Excellent, durable Poorer, less durable HCL score (CD11c, CD103, CD123, CD25): 3–4 = classic. WHO-HAEM5 dropped “HCL-variant” and folded it into splenic B-cell lymphoma/leukemia with prominent nucleoli (SBLPN) ; ICC 2022 keeps HCL-v as a provisional entity . When to treat — consensus Any of: Hb <11 g/dL, platelets <100,000/&micro;L, ANC <1,000/&micro;L Symptomatic splenomegaly , progressive cytopenias, recurrent infection or constitutional symptoms None of these → observe ; many patients sit for years CR: Hb >11 without transfusion, platelets >100,000, ANC >1,500, no hairy cells on marrow or blood, spleen regressed. MRD by IHC or flow is prognostic but not yet a treatment target Relapse cutoff is 2 years (raised from 1): relapse ≥2 yr after CR → retreat with purine analog; <2 yr → switch class IGHV4-34 — the trap. Classic-looking HCL that is BRAF wild-type : all 13 IGHV4-34+ cases were wild-type Xi, Blood 2012 . Usually unmutated, higher WBC, poor response to cladribine and shorter PFS and OS Arons, Blood 2009 ; MAP2K1 mutations cluster here too. A BRAF-negative “HCL” should prompt a second look . Treat the infection first. Cladribine and pentostatin deepen neutropenia for weeks, and post-cladribine fever is common — so defer the purine analog during active infection . If counts are too low for the infection to clear, a BRAF inhibitor (vemurafenib ± rituximab) restores counts without myelosuppression and can bridge to definitive therapy — off-label. Treatment pathway Newly diagnosed classic HCL Indication to treat? Hb <11, plt <100k, ANC <1,000, or symptoms none → observe Active infection? control it first — defer the purine analog bridge: vemurafenib ± rituximab (off-label) First line cladribine ×1 course or pentostatin + rituximab : concurrent → MRD-free CR 97% (delayed R also acceptable; see trial below) Restage ~6 months marrow biopsy + counts → CR / PR / MRD Relapse ≥2 yr after CR repeat purine analog (same or the other) ± rituximab <2 yr, or refractory vemurafenib + rituximab (CR 87%) dabrafenib + trametinib (off-label in HCL) ibrutinib · pentostatin + R · trial SBLPN (HCL-v) · IGHV4-34 HCL BRAF wild-type — a different disease cladribine + concurrent rituximab (CR 95%) BRAF inhibitors have no target relapse: ibrutinib, trials Key evidence Study Result Read it this way Scripps cladribine n=358 Single 7-day infusion: CR 91% ; 26% relapsed at a median 29 mo; retreatment CR 62% The regimen that made HCL a one-course disease Else, long-term n=233, 16 yr f/u Pentostatin or cladribine: CR 80%, median RFS 16 yr ; no difference between drugs Relapse continues late — 25% of 5-yr CRs relapse by 15 yr Intergroup Grever 1995 Pentostatin vs interferon-&alpha;: CR 76% vs 11% . 10-yr OS 81% (Flinn 2000) Pentostatin is equivalent to cladribine; no excess second cancers SAKK 32/98 n=100, randomized Cladribine daily ×5 vs weekly ×5 : response 86% in both Weekly is not less toxic (grade 3–4 neutropenia 90% vs 80%) NIH, Chihara n=68, randomized ph2 Cladribine + concurrent vs delayed (≥6 mo) rituximab : CR 100% vs 88% (NS); MRD-free CR 97% vs 24% ; at 8 yr 94% vs 12% still MRD-free Concurrent R buys deep, lasting MRD negativity at the cost of grade 3–4 thrombocytopenia 59% vs 9% . Survival benefit not shown MDACC n=139, single-arm Cladribine → rituximab: CR 97% , 10-yr EFS 87% , OS 91% Frontline classic HCL relapse only 3.6% Vemurafenib Tiacci 2015 Relapsed: ORR 96–100% , CR 35–42%; RFS 19 mo in CR, 6 mo in PR High response, short remission alone Vem + R Tiacci NEJM 2021, n=30 Median 3 prior lines: CR 87% (65% MRD-negative); PFS 78% at median 37 mo The preferred non-purine regimen at relapse Vem + obinutuzumab frontline, n=30 CR 90% , 96% of CRs MRD-negative; no relapse at 35 mo Chemo-free frontline option; single-arm Dab + tram ROAR, n=55 Relapsed: ORR 89% , CR 66% ; 24-mo PFS 94% Not FDA-approved for HCL — the tumor-agnostic label covers solid tumors only Ibrutinib n=37 Best ORR 54% ; 36-mo PFS 73% Primary endpoint not met ; modest Moxetumomab n=80 Anti-CD22 immunotoxin: CR 41%, durable CR 30%; HUS 7.5%, capillary leak 5% Withdrawn from the US market in 2023 (commercial decision) SBLPN: clad + R n=20 Concurrent rituximab: CR 95% , 5-yr PFS 63% TP53-mutant cases fare worse Dosing Regimen Dosing Cladribine 0.14 mg/kg/day IV over 2 h, days 1–5 (NIH: 0.15 mg/kg), or 0.1 mg/kg/day continuous IV ×7 days , or 0.14 mg/kg weekly ×5 — one course Clad + rituximab Cladribine 0.15 mg/kg days 1–5 + rituximab 375 mg/m² weekly ×8 , concurrent from day 1 (or delayed ≥6 mo) Pentostatin 4 mg/m² IV every 2 weeks until best response; hydrate; hold for renal dysfunction Vemurafenib + R Vemurafenib 960 mg PO BID ×8 weeks + rituximab 375 mg/m² ×8 doses over 18 weeks Dabrafenib + trametinib Dabrafenib 150 mg BID + trametinib 2 mg daily Ibrutinib 420 mg daily Monitoring and supportive care Prolonged CD4 lymphopenia after purine analogs — median ~40 months to recover → PJP and HSV/VZV prophylaxis Irradiated blood products indefinitely after a purine analog (transfusion-associated GVHD) BSH 2020 Neutropenic fever in ~42% after cladribine. Routine G-CSF not recommended : it shortened neutropenia (9 vs 22 days) but did not cut fever or admissions Vemurafenib: rash, photosensitivity, arthralgia, cutaneous SCC / keratoacanthoma — dermatology checks. Dab/tram: pyrexia Inactivated vaccines before therapy; no live vaccines Splenic small B-cell differential Entity Distinguishing features Classic HCL CD25+ CD103+ CD123+ CD11c bright, annexin A1+ , BRAF V600E ; monocytopenia SBLPN (HCL-v) CD103+ but CD25− , annexin A1−, BRAF wild-type, MAP2K1; leukocytosis, prominent nucleoli Splenic marginal zone Polar (villous) projections , CD103 usually −, CD25 variable, annexin A1−; NOTCH2 / KLF2 ; may have a small IgM paraprotein Splenic diffuse red pulp Villous cells, red-pulp pattern, CD25−, annexin A1−; CCND3 mutations; BRAF wild-type CLL · MCL CD5+ — CD23+ (CLL) or cyclin D1+ (MCL) — HCL and its look-alikes are CD5− Annexin A1 + BRAF V600E together settle classic HCL; everything else in this list is negative for both. Pearls Splenomegaly + monocytopenia + dry tap = HCL until proven otherwise BRAF V600E is the diagnosis and the target. Wild-type → think SBLPN or IGHV4-34 Cure-like, not cure: relapse keeps happening late but responds to retreatment Moxetumomab is gone (2023) — don't list it as an option"
+}

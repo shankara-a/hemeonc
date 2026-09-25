@@ -1,0 +1,751 @@
+{
+ "disease": "lymphoma-dlbcl",
+ "spec_file": "lymphoma_dlbcl.py",
+ "pdf": "Lymphoma - DLBCL.pdf",
+ "title": "Diffuse large B-cell lymphoma",
+ "subtitle": "DLBCL NOS &middot; HGBCL with MYC + BCL2 rearrangements &middot; PMBL &middot; transformed &middot; HIV-associated. <b>~60&ndash;70% are cured with first-line R-CHOP-based therapy</b> &mdash; the questions are double-hit status, IPI, CNS risk, fitness for anthracycline, and at relapse, timing (&lt;12 vs &ge;12 months) and CAR-T eligibility",
+ "source": "Compiled from the Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin (Chou L, Schroers-Martin J, Gupta NK) and HIV-associated lymphoma &middot; NCCN &middot; primary trial reports and FDA actions verified against PubMed, September 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "What the pathologist has to tell you",
+       "headers": [
+        "Call",
+        "Why it matters"
+       ],
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Cell of origin</b> (Hans IHC)",
+         "<b>GCB</b> = CD10+, or CD10&minus; BCL6+ MUM1&minus;. Everything else is <b>non-GCB (ABC-like)</b> &mdash; worse on R-CHOP, and the group where Pola-R-CHP gained most. GEP is more accurate than IHC"
+        ],
+        [
+         "<b>MYC / BCL2 / BCL6 FISH</b>",
+         "MYC-rearranged in <b>~10%</b> of aggressive B-NHL, half with BCL2. <b>MYC + BCL2 rearranged = HGBCL / DLBCL with MYC and BCL2 rearrangements</b> (formerly &ldquo;double hit&rdquo;). WHO-HAEM5 folds MYC + BCL6 back into DLBCL NOS / HGBL NOS; ICC keeps it provisional"
+        ],
+        [
+         "<b>Double expressor</b> (IHC)",
+         "MYC &ge;40% + BCL2 &ge;50% protein <b>without</b> rearrangement &mdash; ~20&ndash;25%, intermediate prognosis, <b>treated as DLBCL NOS</b>. Not the same as double hit"
+        ],
+        [
+         "<b>CD30, EBER, CD5</b>",
+         "CD30 &rarr; BV option at relapse &middot; EBV+ DLBCL (any age, worse) &middot; CD5+ enriched for CNS relapse"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "<b>Excisional or core biopsy &mdash; never FNA</b>; hematopathology review",
+        "<b>PET/CT</b> (staging + Deauville response); marrow biopsy only if it changes management &mdash; PET detects most marrow disease",
+        "Labs: CBC, CMP, <b>LDH</b>, uric acid; <b>HBsAg + anti-HBc</b>, HCV, <b>HIV</b>",
+        "<b>Echo or MUGA before anthracycline</b> &middot; fertility counselling &middot; pregnancy test",
+        "<b>LP (cytology + flow) if CNS-IPI high</b> or high-risk site; MRI brain if symptomatic"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "IPI &mdash; APLES: age &gt;60 &middot; PS &ge;2 &middot; LDH &uarr; &middot; &ge;2 extranodal &middot; stage III&ndash;IV",
+       "headers": [
+        "Score",
+        "5-yr OS pre-R",
+        "3-yr OS R-CHOP"
+       ],
+       "widths": [
+        "40%",
+        "28%",
+        ""
+       ],
+       "rows": [
+        [
+         "Low (0&ndash;1)",
+         "73%",
+         "<b>91%</b>"
+        ],
+        [
+         "Low-intermediate (2)",
+         "51%",
+         "81%"
+        ],
+        [
+         "High-intermediate (3)",
+         "43%",
+         "65%"
+        ],
+        [
+         "High (4&ndash;5)",
+         "26%",
+         "<b>59%</b>"
+        ]
+       ],
+       "footnote": "Shipp NEJM 1993 &middot; Ziepert JCO 2010. <b>CNS-IPI</b> = IPI + kidney/adrenal (0&ndash;6): 2-yr CNS relapse <b>0&ndash;1: 0.6%</b> &middot; 2&ndash;3: 3.4% &middot; <b>4&ndash;6: 10.2%</b> (Schmitz JCO 2016)."
+      }
+     ]
+    },
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Limited stage (I&ndash;II, non-bulky)",
+         "color": "teal",
+         "boxes": [
+          [
+           "<b>R-CHOP &times;4</b> is the backbone",
+           [
+            "FLYER: age &le;60, aaIPI 0, &lt;7.5 cm &rarr; 4 R-CHOP + 2 R",
+            "S1001: R-CHOP &times;3 &rarr; iPET; neg &rarr; 1 more (no RT)",
+            "iPET-positive (~11%) &rarr; ISRT",
+            "bulky or IPI-risk &rarr; treat as advanced"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Advanced (III&ndash;IV, bulky, or IPI &ge;2)",
+         "color": "blue",
+         "boxes": [
+          [
+           "R-CHOP &times;6 or <b>Pola-R-CHP &times;6</b>",
+           [
+            "Pola-R-CHP for IPI &ge;2 (POLARIX): PFS gain,",
+            "<b>still no significant OS gain at 5 yr</b>",
+            "HGBCL MYC+BCL2: DA-EPOCH-R (see p2)",
+            "PMBL: DA-EPOCH-R, or R-CHOP &plusmn; RT (see p2)"
+           ]
+          ],
+          [
+           "End-of-treatment PET/CT",
+           [
+            "Deauville 1&ndash;3 = CMR &rarr; observe",
+            "<b>no maintenance, no consolidative ASCT in CR</b>",
+            "Deauville 4&ndash;5 &rarr; <b>biopsy</b> before calling failure"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Unfit for full R-CHOP",
+         "color": "amber",
+         "boxes": [
+          [
+           "Age &gt;80 or frail",
+           [
+            "<b>R-mini-CHOP</b> (2-yr OS 59%) &mdash; single-arm",
+            "do a geriatric assessment, prephase prednisone"
+           ]
+          ],
+          [
+           "LVEF low / prior anthracycline",
+           [
+            "R-CHOP + dexrazoxane + serial TTE (borderline)",
+            "R-GCVP &middot; R-CEOP (inferior to R-CHOP) &middot; R-CEPP",
+            "R-CDOP (liposomal doxorubicin)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Relapsed / refractory",
+         "color": "coral",
+         "boxes": [
+          [
+           "Early (&lt;12 mo) or primary refractory",
+           [
+            "<b>CAR-T: axi-cel or liso-cel</b> (ZUMA-7, TRANSFORM)",
+            "bridge with R-chemo, pola, or RT"
+           ]
+          ],
+          [
+           "Late (&ge;12 mo), transplant-fit",
+           [
+            "salvage R-ICE / R-DHAP / R-GDP &rarr; ASCT if CMR/PR",
+            "CAR-T is also reasonable &mdash; data are from &lt;12 mo"
+           ]
+          ],
+          [
+           "Transplant-ineligible or 3L+",
+           [
+            "liso-cel (PILOT) &middot; bispecific &middot; pola-BR &middot; tafa-len",
+            "BV-R&sup2; &middot; loncastuximab &middot; <b>trial</b> &mdash; see page 2"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "38%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Limited stage &mdash; the evidence",
+       "items": [
+        "<b>FLYER</b>: 4 R-CHOP + 2 rituximab non-inferior to 6 R-CHOP &mdash; 3-yr PFS <b>96% vs 93%</b>, a third less toxicity. <b>Only for age 18&ndash;60, aaIPI 0, bulk &lt;7.5 cm</b>",
+        "<b>SWOG S1001</b> (single-arm phase 2): R-CHOP &times;3 &rarr; interim PET; <b>89% were PET-negative and got just 1 more cycle, no RT</b>. 5-yr PFS 87%, OS 89%; iPET-positive patients (RT) did as well",
+        "<b>SWOG 8736</b> (CHOP &times;3 + RT beat CHOP &times;8) is pre-rituximab, and <b>its advantage vanished on long follow-up</b>. RT now: bulk, PET-positive residual, or when chemo must be short"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Advanced stage &mdash; the evidence",
+       "items": [
+        "<b>R-CHOP is 20+ years old</b> (GELA LNH-98.5: 10-yr OS 43.5% vs 27.6% over CHOP). Many add-ons failed: ibrutinib (PHOENIX), obinutuzumab (GOYA), venetoclax (CAVALLI), R-CHOP vs DA-EPOCH-R (CALGB 50303)",
+        "<b>POLARIX (Pola-R-CHP)</b>: 2-yr PFS 76.7% vs 70.2%, HR 0.73. <b>5-yr update: PFS HR 0.77 (64.9% vs 59.1%), OS HR 0.85 &mdash; not significant</b>. Benefit concentrated in <b>ABC/non-GCB, IPI 3&ndash;5, age &gt;60</b>. Needs G-CSF. Standard option for IPI &ge;2",
+        "<b>frontMIND</b> (tafasitamab + lenalidomide + R-CHOP, IPI 3&ndash;5): PFS HR 0.75, 2-yr 71.1% vs 62.9%; OS immature (HR 0.85). <b>More grade &ge;3 AEs (87% vs 76%) and fatal AEs (6% vs 4%)</b>. <b>Not FDA-approved</b> &mdash; sBLA filed 2026"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "CNS prophylaxis &mdash; the case against HD-MTX",
+       "items": [
+        "<b>Who is high risk:</b> CNS-IPI 4&ndash;6 &middot; kidney/adrenal &middot; <b>testicular</b> &middot; breast, uterine &middot; epidural / paranasal / skull base &middot; HGBCL MYC+BCL2",
+        "<b>HD-MTX does not clearly prevent CNS relapse.</b> 1,923 ultra-high-risk patients (Wilson JCO 2026): 3-yr CNS relapse <b>8.1% with vs 9.3% without HD-MTX</b>, adjusted HR 1.13 &mdash; no benefit in any subgroup. Alberta cohort: 11.2% vs 12.2%",
+        "End-of-treatment timing is no worse than intercalated (5.8% vs 5.7%) and avoids R-CHOP delays. <b>Adding IT did not lower CNS relapse</b>",
+        "<b>Practical:</b> image/LP high-risk patients at diagnosis; <b>testicular DLBCL still gets CNS-directed therapy + contralateral testis RT</b>; otherwise HD-MTX 3&ndash;3.5 g/m&sup2; &times;2&ndash;4 is a shared-decision, not a default"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Staging &mdash; Cotswolds-modified Ann Arbor",
+       "widths": [
+        "13%",
+        ""
+       ],
+       "rows": [
+        [
+         "I",
+         "<b>One</b> lymph node region or lymphoid structure (spleen, thymus, Waldeyer ring)"
+        ],
+        [
+         "II",
+         "<b>&ge;2</b> regions, <b>same side</b> of the diaphragm. Hilar nodes are lateralized &mdash; bilateral involvement is stage II"
+        ],
+        [
+         "III",
+         "Regions on <b>both sides</b> of the diaphragm"
+        ],
+        [
+         "IV",
+         "<b>Disseminated</b> &mdash; marrow, CNS, or <b>more than one</b> extranodal site"
+        ],
+        [
+         "A / B",
+         "B = weight loss &gt;10% over 6 mo, <b>or</b> unexplained fever &gt;38&deg;C in the past month, <b>or</b> recurrent drenching night sweats"
+        ],
+        [
+         "S &middot; X &middot; E",
+         "S splenic &middot; <b>X bulky: node &ge;10 cm</b>, or mediastinal mass &ge;&#8531; the transverse thoracic diameter at T5&ndash;6 &middot; E limited direct extranodal extension"
+        ]
+       ],
+       "footnote": "<b>A single extranodal site as the only disease is IE; more than one extranodal site is stage IV.</b> Hilar (bronchopulmonary) nodes sit outside the mediastinum."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; high-grade and mediastinal variants, special populations, and relapsed / refractory disease",
+   "columns": [
+    {
+     "width": "37%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "HGBCL with MYC + BCL2 rearrangements",
+       "items": [
+        "<b>FISH every new DLBCL</b> &mdash; morphology and COO do not predict it. Often high LDH, marrow and CNS involvement",
+        "<b>DA-EPOCH-R &times;6</b> is the usual choice (single-arm, MYC-rearranged: 4-yr EFS 71%, OS 77%; Dunleavy 2018) &mdash; <b>no randomized proof it beats R-CHOP</b>; Pola-R-CHP is used by some (small POLARIX subset). <b>Evaluate the CNS</b> at diagnosis",
+        "<b>No consolidative ASCT in first CR.</b> Relapse &rarr; CAR-T"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Primary mediastinal B-cell lymphoma (PMBL)",
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Who</b>",
+         "Young (median ~30s), <b>women</b>, bulky anterior mediastinal mass &plusmn; SVC syndrome. Biology overlaps nodular-sclerosis cHL: <b>9p24.1 amplification &rarr; PD-L1/PD-L2</b>; CD30 often weakly +"
+        ],
+        [
+         "<b>DA-EPOCH-R &times;6</b>",
+         "NCI phase 2 (n=51): EFS <b>93%</b>, OS <b>97%</b> at 5 yr; only 2 of 51 needed RT. Avoids mediastinal RT (breast cancer, cardiac disease) in young women"
+        ],
+        [
+         "<b>R-CHOP &times;6 &plusmn; RT</b>",
+         "Accepted alternative. <b>IELSG37</b>: if end-of-chemo PET is <b>CMR (Deauville 1&ndash;3), omit RT</b> &mdash; 30-mo PFS 96.2% observation vs 98.5% RT, 5-yr OS 99% both. Deauville 5 does poorly (5-yr PFS 60%)"
+        ],
+        [
+         "<b>Relapsed</b>",
+         "<b>Pembrolizumab</b> (KEYNOTE-170: ORR 45%, CR 13%; accelerated approval) &middot; <b>nivolumab + BV</b> (CheckMate 436: ORR 73%, CR 37%; not FDA-approved for PMBL) &middot; CAR-T (included in LBCL labels) &middot; salvage + ASCT if chemosensitive"
+        ]
+       ],
+       "footnote": "Mediastinal gray-zone lymphoma (PMBL/cHL features, often CD15+, CD20 variable): worse than either; DA-EPOCH-R, ISRT if localized."
+      },
+      {
+       "type": "table",
+       "heading": "HIV-associated aggressive B-cell lymphoma",
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Principles</b>",
+         "<b>Continue or start ART through chemotherapy</b> (check interactions &mdash; avoid boosted PIs/cobicistat with vincristine). PJP (TMP-SMX), <b>MAC prophylaxis if CD4 &lt;100</b>, fluconazole, acyclovir; consider quinolone at nadir if CD4 &lt;100"
+        ],
+        [
+         "<b>DLBCL</b>",
+         "<b>R-CHOP or DA-EPOCH-R &times;6</b> (with ART, outcomes approach HIV-negative). AMC-034: concurrent R-EPOCH CR <b>73%</b> vs sequential 55%. <b>Rituximab caveat: CD4 &lt;50</b> &mdash; AMC-010 infectious deaths 14% vs 2% (60% of them at CD4 &lt;50)"
+        ],
+        [
+         "<b>Plasmablastic</b>",
+         "<b>CD20&minus;</b>, CD138+, MUM1+, EBV+ in most, MYC often rearranged; oral cavity. <b>Rituximab useless</b> &mdash; DA-EPOCH (&plusmn; bortezomib, small series); poor outcomes"
+        ],
+        [
+         "<b>PEL</b>",
+         "<b>HHV8+</b> (most EBV+), <b>effusions without a mass</b>, CD20&minus;, CD30+, CD138+. Modified EPOCH (NCI: median OS 22 mo); IL-6 high = worse. Exclude KSHV-MCD/KS"
+        ],
+        [
+         "<b>CNS prophylaxis</b>",
+         "IT MTX for marrow, paranasal sinus, testicular or epidural involvement (handbook): 12 mg d1+5 of cycles 3&ndash;5, or weekly &times;4 in cycle 1"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "63%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Relapsed / refractory DLBCL &mdash; agents, evidence, status (Sept 2026)",
+       "headers": [
+        "Setting &middot; agent",
+        "Evidence",
+        "Status / caveat"
+       ],
+       "widths": [
+        "19%",
+        "46%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>2L, early relapse</b><br>axi-cel",
+         "<b>ZUMA-7</b> vs salvage + ASCT: EFS 8.3 vs 2.0 mo (HR 0.40); <b>4-yr OS 54.6% vs 46.0%, HR 0.73 &mdash; the only 2L CAR-T OS win</b>",
+         "Regular approval (Apr 2022). Gr &ge;3 CRS 6%, neuro 21%"
+        ],
+        [
+         "liso-cel",
+         "<b>TRANSFORM</b>: EFS NR vs 2.4 mo, CR 74% vs 43%; <b>OS HR 0.72, NS</b> (crossover-adjusted HR 0.42)",
+         "Approved 2L (Jun 2022), incl. transplant-ineligible (PILOT ORR 80%, median age 74). Gr 3 CRS 1%"
+        ],
+        [
+         "tisa-cel",
+         "<b>BELINDA negative</b>: EFS 3.0 vs 3.0 mo, HR 1.07",
+         "<b>3L+ only</b>. Lowest CR of the three (JULIET CR 40%)"
+        ],
+        [
+         "<b>2L, late relapse</b><br>salvage + ASCT",
+         "PARMA (pre-R): ASCT 5-yr EFS 46% vs 12%. <b>CORAL</b>: R-ICE = R-DHAP (ORR ~63%); 3-yr EFS <b>20% if relapse &lt;12 mo</b> vs 45% if later",
+         "Standard for chemosensitive late relapse; 2&ndash;3 cycles then BEAM-ASCT"
+        ],
+        [
+         "<b>Transplant-ineligible</b><br>glofit-GemOx",
+         "<b>STARGLO</b>: OS 25.5 vs 12.9 mo (HR 0.62) vs R-GemOx; enrollment largely ex-US",
+         "<b>FDA CRL Jul 2025 &mdash; not approved in US</b> (US applicability); still a handbook/NCCN option"
+        ],
+        [
+         "epco-GemOx",
+         "EPCORE NHL-2 (single-arm): ORR 85%, CR 61%, median OS 21.6 mo",
+         "Not FDA-approved. <b>EPCORE DLBCL-4</b> (epco + len vs R-GemOx) PFS positive, topline Jun 2026"
+        ],
+        [
+         "pola-BR",
+         "GO29365: CR 40% vs 18%; OS 12.4 vs 4.7 mo &mdash; <b>only 40 per arm</b>",
+         "Approved 2019. <b>Bendamustine impairs later T-cell collection</b> &mdash; avoid before CAR-T apheresis"
+        ],
+        [
+         "tafa-len",
+         "L-MIND single-arm: ORR 57.5%, CR 41%, mPFS 11.6 mo (5-yr) &mdash; best after 1 prior line",
+         "<b>Still accelerated</b>; CD19 &mdash; not before CD19 CAR-T is a real concern"
+        ],
+        [
+         "BV + R&sup2;",
+         "<b>ECHELON-3</b> vs placebo + R&sup2;: OS 13.8 vs 8.5 mo, HR 0.63 &mdash; benefit regardless of CD30",
+         "Approved Feb 2025, 3L+, <b>CAR-T and ASCT-ineligible</b>"
+        ],
+        [
+         "<b>3L+</b><br>CAR-T",
+         "ZUMA-1 (axi-cel) ORR 82%, CR 54% &middot; TRANSCEND (liso-cel) ORR 73%, CR 53% &middot; JULIET (tisa-cel) ORR 52%, CR 40%",
+         "All approved 3L+; high-risk, chemo-refractory populations"
+        ],
+        [
+         "glofitamab",
+         "NP30179: CR 39% (35% post-CAR-T), <b>fixed 12 cycles</b>; median CR duration ~30 mo",
+         "<b>Accelerated</b>, &ge;2 lines. Obinutuzumab pretreatment"
+        ],
+        [
+         "epcoritamab",
+         "EPCORE NHL-1: ORR 63%, CR 39%, SC, until progression. <b>EPCORE DLBCL-1</b> vs R-GemOx/BR: PFS HR 0.74 (3.5 vs 3.0 mo) but <b>OS HR 0.96 &mdash; US primary endpoint missed</b>",
+         "<b>Accelerated</b>, &ge;2 lines; confirmatory trial missed OS (EHA Jun 2026)"
+        ],
+        [
+         "loncastuximab",
+         "CD19-PBD ADC. LOTIS-2: ORR 48%, CR 24%. <b>LOTIS-5</b> (lonca-R vs R-GemOx): PFS 6.1 vs 4.7 mo, HR 0.73; OS HR 0.96",
+         "Accelerated; confirmatory positive on PFS (Jun 2026). Edema/effusions, photosensitivity, GGT"
+        ],
+        [
+         "selinexor",
+         "SADAL: ORR 28%, single-arm",
+         "<b>DLBCL indication withdrawn Apr 30, 2026</b> (myeloma unaffected)"
+        ]
+       ],
+       "footnote": "<b>Sequencing:</b> CAR-T first when feasible &mdash; bispecifics work after CAR-T (glofit CR 35%), but CAR-T after CD19-directed therapy (tafasitamab, lonca) is less certain; confirm CD19 by IHC. Avoid bendamustine before apheresis."
+      },
+      {
+       "type": "bullets",
+       "heading": "Choosing therapy at first relapse",
+       "items": [
+        "<b>Biopsy the relapse</b> &mdash; confirm LBCL, check CD19 (before CD19-directed agents) and CD20 (lost in some after anti-CD20 therapy)",
+        "<b>Timing is the strongest predictor.</b> In CORAL, relapse &lt;12 months after rituximab-containing therapy gave 3-yr EFS of only 20% with salvage + ASCT &mdash; this is why CAR-T replaced ASCT for early relapse",
+        "<b>CAR-T eligibility is about organ function and performance status more than age</b> &mdash; PILOT treated a median age of 74. Refer at relapse, not after failed salvage",
+        "<b>Bridging:</b> steroids, RT to bulky sites, pola-R &plusmn; bendamustine-free chemo; avoid bendamustine before apheresis",
+        "<b>After CAR-T failure:</b> bispecific (glofitamab fixed-duration, epcoritamab continuous), BV-R&sup2;, loncastuximab, allo-HCT in fit chemosensitive patients, trial"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Transformed indolent lymphoma",
+       "items": [
+        "<b>Biopsy the fastest-growing / highest-SUV site</b> (SUV discordance, rising LDH, B symptoms)",
+        "<b>Anthracycline-naive &rarr; treat as de novo DLBCL</b> (R-CHOP or Pola-R-CHP). Anthracycline-exposed &rarr; manage as R/R DLBCL",
+        "<b>CAR-T and bispecific labels include DLBCL arising from follicular/indolent lymphoma</b>. Richter (from CLL) is different &mdash; see the CLL card"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 3 &mdash; regimen dosing, CRS/ICANS, toxicity and key trials",
+   "columns": [
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Frontline dosing",
+       "headers": [
+        "Regimen",
+        "Dosing (mg/m&sup2; unless stated)"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>R-CHOP</b> q21d &times;6",
+         "Rituximab 375 &middot; cyclophosphamide 750 &middot; doxorubicin 50 &middot; vincristine 1.4 (cap 2 mg) &mdash; all d1; prednisone <b>100 mg</b> d1&ndash;5 (handbook: 40 mg/m&sup2;). G-CSF if age &ge;60"
+        ],
+        [
+         "<b>Pola-R-CHP</b> q21d &times;6 (+2 R)",
+         "<b>Polatuzumab 1.8 mg/kg</b> replaces vincristine; R 375 &middot; C 750 &middot; H 50 d1; prednisone 100 mg d1&ndash;5. <b>G-CSF required</b>"
+        ],
+        [
+         "<b>DA-EPOCH-R</b> q21d &times;6",
+         "R 375 d1; <b>etoposide 50 + doxorubicin 10 + vincristine 0.4 /day CIV d1&ndash;4</b> (96 h); cyclophosphamide 750 d5; prednisone 60 <b>BID</b> d1&ndash;5 (NCI protocol; handbook lists 60/day); G-CSF from d6. CBC twice weekly: ANC nadir &ge;500 &rarr; <b>+20%</b> (E, H, C); &lt;500 on 3 checks or plt &lt;25k &rarr; &minus;20%"
+        ],
+        [
+         "<b>R-mini-CHOP</b> q21d &times;6",
+         "R 375 &middot; C <b>400</b> &middot; H <b>25</b> &middot; V <b>1 mg flat</b> d1; prednisone 40 d1&ndash;5"
+        ],
+        [
+         "<b>R-GCVP</b> q21d",
+         "R 375 d1; gemcitabine 1000 d1+8; C 750 + V 1&ndash;1.4 d1; prednisolone 100 mg d1&ndash;5 &mdash; anthracycline-free"
+        ],
+        [
+         "<b>HD-MTX</b> (if used)",
+         "3&ndash;3.5 g/m&sup2; &times;2&ndash;4 after R-CHOP; alkalinize urine pH &gt;7, leucovorin rescue, levels to &lt;0.1 &micro;M; no third-spacing, no PPI/NSAID/TMP-SMX"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Deauville 5-point score",
+       "widths": [
+        "13%",
+        ""
+       ],
+       "rows": [
+        [
+         "1 &middot; 2",
+         "No uptake &middot; uptake <b>&le; mediastinum</b>"
+        ],
+        [
+         "3",
+         "Uptake <b>&gt; mediastinum but &le; liver</b> &mdash; usually adequate response"
+        ],
+        [
+         "4 &middot; 5",
+         "Moderately <b>&gt; liver</b> &middot; markedly &gt; liver or new lesions &mdash; <b>treatment failure</b>"
+        ]
+       ],
+       "footnote": "Response is reported this way in practice and in every trial cited. (The handbook itself specifies only PET/CT at completion, plus marrow biopsy if positive at diagnosis.)"
+      },
+      {
+       "type": "table",
+       "heading": "CRS and ICANS (ASTCT 2019)",
+       "headers": [
+        "Grade",
+        "CRS (fever &ge;38 + &hellip;)",
+        "ICANS (ICE score)"
+       ],
+       "widths": [
+        "9%",
+        "50%",
+        ""
+       ],
+       "rows": [
+        [
+         "1",
+         "Fever alone",
+         "ICE 7&ndash;9, awakens spontaneously"
+        ],
+        [
+         "2",
+         "Hypotension without pressors and/or O&#8322; &lt;6 L NC",
+         "ICE 3&ndash;6, wakes to voice"
+        ],
+        [
+         "3",
+         "One pressor and/or high-flow / face-mask O&#8322;",
+         "ICE 0&ndash;2, wakes to touch; focal edema, seizure resolving"
+        ],
+        [
+         "4",
+         "Multiple pressors and/or positive pressure",
+         "Unarousable, status, diffuse edema"
+        ]
+       ],
+       "footnote": "<b>CRS:</b> tocilizumab 8 mg/kg (max 800 mg) from grade 2 (earlier for CAR-T), add dexamethasone 10 mg q6h if refractory or grade 3+. <b>ICANS:</b> dexamethasone 10 mg q6h from grade 2; <b>tocilizumab does not treat isolated ICANS</b> (may worsen it); levetiracetam, neuro checks. Bispecific CRS clusters in cycle 1 after step-up doses."
+      }
+     ]
+    },
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Salvage and R/R dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>R-ICE</b> q14&ndash;21d",
+         "R 375 d1; <b>ifosfamide 5000 + mesna 5000 CIV 24 h d2</b>; carboplatin AUC 5 (max 800 mg) d2; etoposide 100 d1&ndash;3"
+        ],
+        [
+         "<b>R-DHAP</b> q21d",
+         "R 375 d1; cisplatin 100 CIV d1; <b>cytarabine 2000 q12h &times;2 d2</b> (1000 if &gt;60; steroid eye drops); dexamethasone 40 mg d1&ndash;4. (R-DHAX: oxaliplatin 100)"
+        ],
+        [
+         "<b>R-GDP</b> q21d",
+         "R 375 d1; gemcitabine 1000 d1+8; dexamethasone 40 mg d1&ndash;4; cisplatin 75 d1 &mdash; outpatient, non-inferior to R-DHAP (LY.12)"
+        ],
+        [
+         "<b>Pola-BR</b> q21d &times;6",
+         "Polatuzumab 1.8 mg/kg + R 375 d1; bendamustine 90 d1+2"
+        ],
+        [
+         "<b>Tafa-len</b> q28d",
+         "Tafasitamab 12 mg/kg C1 d1, 4, 8, 15, 22 &rarr; C2&ndash;3 weekly &rarr; C4+ d1+15; lenalidomide 25 mg d1&ndash;21 &times;12 cycles, then tafasitamab alone"
+        ],
+        [
+         "<b>Loncastuximab</b> q21d",
+         "<b>0.15 mg/kg &times;2 cycles, then 0.075 mg/kg</b>; dexamethasone 4 mg BID d&minus;1 to d1"
+        ],
+        [
+         "<b>BV-R&sup2;</b> q21d",
+         "BV 1.2 mg/kg (max 120 mg) + rituximab q3wk + lenalidomide 20 mg daily"
+        ],
+        [
+         "<b>Glofitamab</b> IV q21d &times;12",
+         "<b>Obinutuzumab 1000 mg C1D1</b> &rarr; <b>2.5 mg C1D8</b> (inpatient 24 h) &rarr; 10 mg C1D15 &rarr; 30 mg C2&ndash;12. Dexamethasone 20 mg IV before C1&ndash;3 doses"
+        ],
+        [
+         "<b>Epcoritamab</b> SC q28d",
+         "<b>0.16 mg C1D1 &rarr; 0.8 mg C1D8 &rarr; 48 mg C1D15, D22</b>; weekly C2&ndash;3, q2wk C4&ndash;9, q4wk C10+. Dexamethasone 15 mg (or prednisolone 100) on dosing day + 3 days after in C1. C1D15: <b>outpatient monitoring allowed since Apr 2026</b>"
+        ],
+        [
+         "<b>CAR-T</b> (single infusion)",
+         "<b>Axi-cel</b> 2&times;10&#8310;/kg (max 2&times;10&#8312;) after flu 30 + cy 500 &times;3 d &middot; <b>Liso-cel</b> 90&ndash;110&times;10&#8310; (2L) after flu 30 + cy 300 &times;3 d &middot; <b>Tisa-cel</b> 0.6&ndash;6&times;10&#8312; after flu 25 + cy 250 &times;3 d"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Toxicity and monitoring",
+       "items": [
+        "<b>Hepatitis B with every anti-CD20</b> (and bispecifics): HBsAg+ &rarr; entecavir/tenofovir; <b>HBsAg&minus; anti-HBc+ &rarr; prophylaxis</b> (or monthly DNA); continue <b>&ge;12 months after the last dose</b>",
+        "<b>Cardiac:</b> baseline echo; R-CHOP &times;6 = doxorubicin 300 mg/m&sup2;. Risk rises steeply past 400&ndash;450 mg/m&sup2; &mdash; dexrazoxane or anthracycline-free regimen when EF borderline",
+        "<b>Tumor flare</b> with bispecifics (and lenalidomide): painful node swelling, can compress airway/organs &mdash; steroids, antihistamine, hold",
+        "<b>Infection:</b> acyclovir + PJP prophylaxis with bispecifics, CAR-T, pola-BR, EPOCH; <b>IVIG if IgG &lt;400</b> with infections; CMV monitoring on bispecifics",
+        "<b>CAR-T:</b> REMS removed Jun 2025 &mdash; stay near center <b>2 weeks</b>, no driving 2 weeks. Prolonged cytopenias; <b>secondary T-cell malignancy</b> boxed warning",
+        "<b>Neuropathy</b> from vincristine (cap 2 mg) and polatuzumab; <b>TLS</b> prophylaxis for bulky disease or high LDH"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "rows": [
+        [
+         "<b>GELA LNH-98.5</b>",
+         "R-CHOP vs CHOP, age 60&ndash;80 &mdash; 10-yr OS 43.5% vs 27.6%"
+        ],
+        [
+         "<b>POLARIX</b>",
+         "Pola-R-CHP: PFS HR 0.73 &rarr; 0.77 at 5 yr; <b>OS HR 0.85, NS</b>"
+        ],
+        [
+         "<b>frontMIND</b>",
+         "Tafa-len-R-CHOP: PFS HR 0.75; more fatal AEs; OS immature"
+        ],
+        [
+         "<b>FLYER / S1001</b>",
+         "Limited stage: 4 cycles enough; PET-adapted, RT for iPET+ only"
+        ],
+        [
+         "<b>ZUMA-7</b>",
+         "Axi-cel 2L: EFS HR 0.40, <b>OS HR 0.73</b>"
+        ],
+        [
+         "<b>TRANSFORM / BELINDA</b>",
+         "Liso-cel 2L EFS HR 0.35 (OS NS) / tisa-cel 2L negative"
+        ],
+        [
+         "<b>STARGLO</b>",
+         "Glofit-GemOx OS HR 0.62 &mdash; US CRL (applicability)"
+        ],
+        [
+         "<b>EPCORE DLBCL-1</b>",
+         "Epcoritamab vs chemo: PFS HR 0.74, OS HR 0.96 (NS)"
+        ],
+        [
+         "<b>ECHELON-3</b>",
+         "BV + R&sup2;: OS 13.8 vs 8.5 mo"
+        ],
+        [
+         "<b>IELSG37</b>",
+         "PMBL in CMR: RT omission non-inferior"
+        ],
+        [
+         "<b>Wilson 2026</b>",
+         "HD-MTX: no CNS-relapse reduction in 1,923 ultra-high-risk"
+        ],
+        [
+         "<b>SWOG 8736</b>",
+         "CHOP &times;3 + RT vs CHOP &times;8 &mdash; early edge lost with time"
+        ],
+        [
+         "<b>R-mini-CHOP</b>",
+         "Age &gt;80, single-arm: 2-yr OS 59%"
+        ],
+        [
+         "<b>NCI DA-EPOCH-R</b>",
+         "PMBL EFS 93% without RT &middot; MYC-rearranged 4-yr EFS 71%"
+        ],
+        [
+         "<b>PARMA / CORAL</b>",
+         "ASCT beats salvage alone / R-ICE = R-DHAP; early relapse fares poorly"
+        ],
+        [
+         "<b>ZUMA-1 / JULIET / TRANSCEND</b>",
+         "3L+ CAR-T: CR 54% / 40% / 53%"
+        ],
+        [
+         "<b>PILOT</b>",
+         "Liso-cel 2L, transplant-ineligible: ORR 80%"
+        ],
+        [
+         "<b>NP30179 / EPCORE NHL-1</b>",
+         "Glofitamab CR 39% (fixed) / epcoritamab CR 39% (continuous)"
+        ],
+        [
+         "<b>GO29365 / L-MIND</b>",
+         "Pola-BR OS 12.4 vs 4.7 mo / tafa-len ORR 58%, CR 41%"
+        ],
+        [
+         "<b>LOTIS-2 / LOTIS-5</b>",
+         "Lonca ORR 48% / lonca-R vs R-GemOx PFS HR 0.73"
+        ],
+        [
+         "<b>KEYNOTE-170 / CM436</b>",
+         "R/R PMBL: pembro ORR 45% / nivo-BV ORR 73%"
+        ],
+        [
+         "<b>AMC-010 / AMC-034</b>",
+         "HIV: rituximab deaths at CD4 &lt;50 / concurrent R-EPOCH CR 73%"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "What the pathologist has to tell you",
+  "Workup",
+  "IPI &mdash; APLES: age &gt;60 &middot; PS &ge;2 &middot; LDH &uarr; &middot; &ge;2 extranodal &middot; stage III&ndash;IV",
+  "Treatment pathway",
+  "Limited stage &mdash; the evidence",
+  "Advanced stage &mdash; the evidence",
+  "CNS prophylaxis &mdash; the case against HD-MTX",
+  "Staging &mdash; Cotswolds-modified Ann Arbor",
+  "HGBCL with MYC + BCL2 rearrangements",
+  "Primary mediastinal B-cell lymphoma (PMBL)",
+  "HIV-associated aggressive B-cell lymphoma",
+  "Relapsed / refractory DLBCL &mdash; agents, evidence, status (Sept 2026)",
+  "Choosing therapy at first relapse",
+  "Transformed indolent lymphoma",
+  "Frontline dosing",
+  "Deauville 5-point score",
+  "CRS and ICANS (ASTCT 2019)",
+  "Salvage and R/R dosing",
+  "Toxicity and monitoring",
+  "Key trials"
+ ],
+ "text": "Diffuse large B-cell lymphoma DLBCL NOS · HGBCL with MYC + BCL2 rearrangements · PMBL · transformed · HIV-associated. ~60–70% are cured with first-line R-CHOP-based therapy — the questions are double-hit status, IPI, CNS risk, fitness for anthracycline, and at relapse, timing (<12 vs ≥12 months) and CAR-T eligibility Compiled from the Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin (Chou L, Schroers-Martin J, Gupta NK) and HIV-associated lymphoma · NCCN · primary trial reports and FDA actions verified against PubMed, September 2026. What the pathologist has to tell you Call Why it matters Cell of origin (Hans IHC) GCB = CD10+, or CD10− BCL6+ MUM1−. Everything else is non-GCB (ABC-like) — worse on R-CHOP, and the group where Pola-R-CHP gained most. GEP is more accurate than IHC MYC / BCL2 / BCL6 FISH MYC-rearranged in ~10% of aggressive B-NHL, half with BCL2. MYC + BCL2 rearranged = HGBCL / DLBCL with MYC and BCL2 rearrangements (formerly “double hit”). WHO-HAEM5 folds MYC + BCL6 back into DLBCL NOS / HGBL NOS; ICC keeps it provisional Double expressor (IHC) MYC ≥40% + BCL2 ≥50% protein without rearrangement — ~20–25%, intermediate prognosis, treated as DLBCL NOS . Not the same as double hit CD30, EBER, CD5 CD30 → BV option at relapse · EBV+ DLBCL (any age, worse) · CD5+ enriched for CNS relapse Workup Excisional or core biopsy — never FNA ; hematopathology review PET/CT (staging + Deauville response); marrow biopsy only if it changes management — PET detects most marrow disease Labs: CBC, CMP, LDH , uric acid; HBsAg + anti-HBc , HCV, HIV Echo or MUGA before anthracycline · fertility counselling · pregnancy test LP (cytology + flow) if CNS-IPI high or high-risk site; MRI brain if symptomatic IPI — APLES: age >60 · PS ≥2 · LDH &uarr; · ≥2 extranodal · stage III–IV Score 5-yr OS pre-R 3-yr OS R-CHOP Low (0–1) 73% 91% Low-intermediate (2) 51% 81% High-intermediate (3) 43% 65% High (4–5) 26% 59% Shipp NEJM 1993 · Ziepert JCO 2010. CNS-IPI = IPI + kidney/adrenal (0–6): 2-yr CNS relapse 0–1: 0.6% · 2–3: 3.4% · 4–6: 10.2% (Schmitz JCO 2016). Treatment pathway Limited stage (I–II, non-bulky) R-CHOP ×4 is the backbone FLYER: age ≤60, aaIPI 0, <7.5 cm → 4 R-CHOP + 2 R S1001: R-CHOP ×3 → iPET; neg → 1 more (no RT) iPET-positive (~11%) → ISRT bulky or IPI-risk → treat as advanced Advanced (III–IV, bulky, or IPI ≥2) R-CHOP ×6 or Pola-R-CHP ×6 Pola-R-CHP for IPI ≥2 (POLARIX): PFS gain, still no significant OS gain at 5 yr HGBCL MYC+BCL2: DA-EPOCH-R (see p2) PMBL: DA-EPOCH-R, or R-CHOP ± RT (see p2) End-of-treatment PET/CT Deauville 1–3 = CMR → observe no maintenance, no consolidative ASCT in CR Deauville 4–5 → biopsy before calling failure Unfit for full R-CHOP Age >80 or frail R-mini-CHOP (2-yr OS 59%) — single-arm do a geriatric assessment, prephase prednisone LVEF low / prior anthracycline R-CHOP + dexrazoxane + serial TTE (borderline) R-GCVP · R-CEOP (inferior to R-CHOP) · R-CEPP R-CDOP (liposomal doxorubicin) Relapsed / refractory Early (<12 mo) or primary refractory CAR-T: axi-cel or liso-cel (ZUMA-7, TRANSFORM) bridge with R-chemo, pola, or RT Late (≥12 mo), transplant-fit salvage R-ICE / R-DHAP / R-GDP → ASCT if CMR/PR CAR-T is also reasonable — data are from <12 mo Transplant-ineligible or 3L+ liso-cel (PILOT) · bispecific · pola-BR · tafa-len BV-R² · loncastuximab · trial — see page 2 Limited stage — the evidence FLYER : 4 R-CHOP + 2 rituximab non-inferior to 6 R-CHOP — 3-yr PFS 96% vs 93% , a third less toxicity. Only for age 18–60, aaIPI 0, bulk <7.5 cm SWOG S1001 (single-arm phase 2): R-CHOP ×3 → interim PET; 89% were PET-negative and got just 1 more cycle, no RT . 5-yr PFS 87%, OS 89%; iPET-positive patients (RT) did as well SWOG 8736 (CHOP ×3 + RT beat CHOP ×8) is pre-rituximab, and its advantage vanished on long follow-up . RT now: bulk, PET-positive residual, or when chemo must be short Advanced stage — the evidence R-CHOP is 20+ years old (GELA LNH-98.5: 10-yr OS 43.5% vs 27.6% over CHOP). Many add-ons failed: ibrutinib (PHOENIX), obinutuzumab (GOYA), venetoclax (CAVALLI), R-CHOP vs DA-EPOCH-R (CALGB 50303) POLARIX (Pola-R-CHP) : 2-yr PFS 76.7% vs 70.2%, HR 0.73. 5-yr update: PFS HR 0.77 (64.9% vs 59.1%), OS HR 0.85 — not significant . Benefit concentrated in ABC/non-GCB, IPI 3–5, age >60 . Needs G-CSF. Standard option for IPI ≥2 frontMIND (tafasitamab + lenalidomide + R-CHOP, IPI 3–5): PFS HR 0.75, 2-yr 71.1% vs 62.9%; OS immature (HR 0.85). More grade ≥3 AEs (87% vs 76%) and fatal AEs (6% vs 4%) . Not FDA-approved — sBLA filed 2026 CNS prophylaxis — the case against HD-MTX Who is high risk: CNS-IPI 4–6 · kidney/adrenal · testicular · breast, uterine · epidural / paranasal / skull base · HGBCL MYC+BCL2 HD-MTX does not clearly prevent CNS relapse. 1,923 ultra-high-risk patients (Wilson JCO 2026): 3-yr CNS relapse 8.1% with vs 9.3% without HD-MTX , adjusted HR 1.13 — no benefit in any subgroup. Alberta cohort: 11.2% vs 12.2% End-of-treatment timing is no worse than intercalated (5.8% vs 5.7%) and avoids R-CHOP delays. Adding IT did not lower CNS relapse Practical: image/LP high-risk patients at diagnosis; testicular DLBCL still gets CNS-directed therapy + contralateral testis RT ; otherwise HD-MTX 3–3.5 g/m² ×2–4 is a shared-decision, not a default Staging — Cotswolds-modified Ann Arbor I One lymph node region or lymphoid structure (spleen, thymus, Waldeyer ring) II ≥2 regions, same side of the diaphragm. Hilar nodes are lateralized — bilateral involvement is stage II III Regions on both sides of the diaphragm IV Disseminated — marrow, CNS, or more than one extranodal site A / B B = weight loss >10% over 6 mo, or unexplained fever >38&deg;C in the past month, or recurrent drenching night sweats S · X · E S splenic · X bulky: node ≥10 cm , or mediastinal mass ≥&#8531; the transverse thoracic diameter at T5–6 · E limited direct extranodal extension A single extranodal site as the only disease is IE; more than one extranodal site is stage IV. Hilar (bronchopulmonary) nodes sit outside the mediastinum. HGBCL with MYC + BCL2 rearrangements FISH every new DLBCL — morphology and COO do not predict it. Often high LDH, marrow and CNS involvement DA-EPOCH-R ×6 is the usual choice (single-arm, MYC-rearranged: 4-yr EFS 71%, OS 77%; Dunleavy 2018) — no randomized proof it beats R-CHOP ; Pola-R-CHP is used by some (small POLARIX subset). Evaluate the CNS at diagnosis No consolidative ASCT in first CR. Relapse → CAR-T Primary mediastinal B-cell lymphoma (PMBL) Who Young (median ~30s), women , bulky anterior mediastinal mass ± SVC syndrome. Biology overlaps nodular-sclerosis cHL: 9p24.1 amplification → PD-L1/PD-L2 ; CD30 often weakly + DA-EPOCH-R ×6 NCI phase 2 (n=51): EFS 93% , OS 97% at 5 yr; only 2 of 51 needed RT. Avoids mediastinal RT (breast cancer, cardiac disease) in young women R-CHOP ×6 ± RT Accepted alternative. IELSG37 : if end-of-chemo PET is CMR (Deauville 1–3), omit RT — 30-mo PFS 96.2% observation vs 98.5% RT, 5-yr OS 99% both. Deauville 5 does poorly (5-yr PFS 60%) Relapsed Pembrolizumab (KEYNOTE-170: ORR 45%, CR 13%; accelerated approval) · nivolumab + BV (CheckMate 436: ORR 73%, CR 37%; not FDA-approved for PMBL) · CAR-T (included in LBCL labels) · salvage + ASCT if chemosensitive Mediastinal gray-zone lymphoma (PMBL/cHL features, often CD15+, CD20 variable): worse than either; DA-EPOCH-R, ISRT if localized. HIV-associated aggressive B-cell lymphoma Principles Continue or start ART through chemotherapy (check interactions — avoid boosted PIs/cobicistat with vincristine). PJP (TMP-SMX), MAC prophylaxis if CD4 <100 , fluconazole, acyclovir; consider quinolone at nadir if CD4 <100 DLBCL R-CHOP or DA-EPOCH-R ×6 (with ART, outcomes approach HIV-negative). AMC-034: concurrent R-EPOCH CR 73% vs sequential 55%. Rituximab caveat: CD4 <50 — AMC-010 infectious deaths 14% vs 2% (60% of them at CD4 <50) Plasmablastic CD20− , CD138+, MUM1+, EBV+ in most, MYC often rearranged; oral cavity. Rituximab useless — DA-EPOCH (± bortezomib, small series); poor outcomes PEL HHV8+ (most EBV+), effusions without a mass , CD20−, CD30+, CD138+. Modified EPOCH (NCI: median OS 22 mo); IL-6 high = worse. Exclude KSHV-MCD/KS CNS prophylaxis IT MTX for marrow, paranasal sinus, testicular or epidural involvement (handbook): 12 mg d1+5 of cycles 3–5, or weekly ×4 in cycle 1 Relapsed / refractory DLBCL — agents, evidence, status (Sept 2026) Setting · agent Evidence Status / caveat 2L, early relapse axi-cel ZUMA-7 vs salvage + ASCT: EFS 8.3 vs 2.0 mo (HR 0.40); 4-yr OS 54.6% vs 46.0%, HR 0.73 — the only 2L CAR-T OS win Regular approval (Apr 2022). Gr ≥3 CRS 6%, neuro 21% liso-cel TRANSFORM : EFS NR vs 2.4 mo, CR 74% vs 43%; OS HR 0.72, NS (crossover-adjusted HR 0.42) Approved 2L (Jun 2022), incl. transplant-ineligible (PILOT ORR 80%, median age 74). Gr 3 CRS 1% tisa-cel BELINDA negative : EFS 3.0 vs 3.0 mo, HR 1.07 3L+ only . Lowest CR of the three (JULIET CR 40%) 2L, late relapse salvage + ASCT PARMA (pre-R): ASCT 5-yr EFS 46% vs 12%. CORAL : R-ICE = R-DHAP (ORR ~63%); 3-yr EFS 20% if relapse <12 mo vs 45% if later Standard for chemosensitive late relapse; 2–3 cycles then BEAM-ASCT Transplant-ineligible glofit-GemOx STARGLO : OS 25.5 vs 12.9 mo (HR 0.62) vs R-GemOx; enrollment largely ex-US FDA CRL Jul 2025 — not approved in US (US applicability); still a handbook/NCCN option epco-GemOx EPCORE NHL-2 (single-arm): ORR 85%, CR 61%, median OS 21.6 mo Not FDA-approved. EPCORE DLBCL-4 (epco + len vs R-GemOx) PFS positive, topline Jun 2026 pola-BR GO29365: CR 40% vs 18%; OS 12.4 vs 4.7 mo — only 40 per arm Approved 2019. Bendamustine impairs later T-cell collection — avoid before CAR-T apheresis tafa-len L-MIND single-arm: ORR 57.5%, CR 41%, mPFS 11.6 mo (5-yr) — best after 1 prior line Still accelerated ; CD19 — not before CD19 CAR-T is a real concern BV + R² ECHELON-3 vs placebo + R²: OS 13.8 vs 8.5 mo, HR 0.63 — benefit regardless of CD30 Approved Feb 2025, 3L+, CAR-T and ASCT-ineligible 3L+ CAR-T ZUMA-1 (axi-cel) ORR 82%, CR 54% · TRANSCEND (liso-cel) ORR 73%, CR 53% · JULIET (tisa-cel) ORR 52%, CR 40% All approved 3L+; high-risk, chemo-refractory populations glofitamab NP30179: CR 39% (35% post-CAR-T), fixed 12 cycles ; median CR duration ~30 mo Accelerated , ≥2 lines. Obinutuzumab pretreatment epcoritamab EPCORE NHL-1: ORR 63%, CR 39%, SC, until progression. EPCORE DLBCL-1 vs R-GemOx/BR: PFS HR 0.74 (3.5 vs 3.0 mo) but OS HR 0.96 — US primary endpoint missed Accelerated , ≥2 lines; confirmatory trial missed OS (EHA Jun 2026) loncastuximab CD19-PBD ADC. LOTIS-2: ORR 48%, CR 24%. LOTIS-5 (lonca-R vs R-GemOx): PFS 6.1 vs 4.7 mo, HR 0.73; OS HR 0.96 Accelerated; confirmatory positive on PFS (Jun 2026). Edema/effusions, photosensitivity, GGT selinexor SADAL: ORR 28%, single-arm DLBCL indication withdrawn Apr 30, 2026 (myeloma unaffected) Sequencing: CAR-T first when feasible — bispecifics work after CAR-T (glofit CR 35%), but CAR-T after CD19-directed therapy (tafasitamab, lonca) is less certain; confirm CD19 by IHC. Avoid bendamustine before apheresis. Choosing therapy at first relapse Biopsy the relapse — confirm LBCL, check CD19 (before CD19-directed agents) and CD20 (lost in some after anti-CD20 therapy) Timing is the strongest predictor. In CORAL, relapse <12 months after rituximab-containing therapy gave 3-yr EFS of only 20% with salvage + ASCT — this is why CAR-T replaced ASCT for early relapse CAR-T eligibility is about organ function and performance status more than age — PILOT treated a median age of 74. Refer at relapse, not after failed salvage Bridging: steroids, RT to bulky sites, pola-R ± bendamustine-free chemo; avoid bendamustine before apheresis After CAR-T failure: bispecific (glofitamab fixed-duration, epcoritamab continuous), BV-R², loncastuximab, allo-HCT in fit chemosensitive patients, trial Transformed indolent lymphoma Biopsy the fastest-growing / highest-SUV site (SUV discordance, rising LDH, B symptoms) Anthracycline-naive → treat as de novo DLBCL (R-CHOP or Pola-R-CHP). Anthracycline-exposed → manage as R/R DLBCL CAR-T and bispecific labels include DLBCL arising from follicular/indolent lymphoma . Richter (from CLL) is different — see the CLL card Frontline dosing Regimen Dosing (mg/m² unless stated) R-CHOP q21d ×6 Rituximab 375 · cyclophosphamide 750 · doxorubicin 50 · vincristine 1.4 (cap 2 mg) — all d1; prednisone 100 mg d1–5 (handbook: 40 mg/m²). G-CSF if age ≥60 Pola-R-CHP q21d ×6 (+2 R) Polatuzumab 1.8 mg/kg replaces vincristine; R 375 · C 750 · H 50 d1; prednisone 100 mg d1–5. G-CSF required DA-EPOCH-R q21d ×6 R 375 d1; etoposide 50 + doxorubicin 10 + vincristine 0.4 /day CIV d1–4 (96 h); cyclophosphamide 750 d5; prednisone 60 BID d1–5 (NCI protocol; handbook lists 60/day); G-CSF from d6. CBC twice weekly: ANC nadir ≥500 → +20% (E, H, C); <500 on 3 checks or plt <25k → −20% R-mini-CHOP q21d ×6 R 375 · C 400 · H 25 · V 1 mg flat d1; prednisone 40 d1–5 R-GCVP q21d R 375 d1; gemcitabine 1000 d1+8; C 750 + V 1–1.4 d1; prednisolone 100 mg d1–5 — anthracycline-free HD-MTX (if used) 3–3.5 g/m² ×2–4 after R-CHOP; alkalinize urine pH >7, leucovorin rescue, levels to <0.1 &micro;M; no third-spacing, no PPI/NSAID/TMP-SMX Deauville 5-point score 1 · 2 No uptake · uptake ≤ mediastinum 3 Uptake > mediastinum but ≤ liver — usually adequate response 4 · 5 Moderately > liver · markedly > liver or new lesions — treatment failure Response is reported this way in practice and in every trial cited. (The handbook itself specifies only PET/CT at completion, plus marrow biopsy if positive at diagnosis.) CRS and ICANS (ASTCT 2019) Grade CRS (fever ≥38 + &hellip;) ICANS (ICE score) 1 Fever alone ICE 7–9, awakens spontaneously 2 Hypotension without pressors and/or O&#8322; <6 L NC ICE 3–6, wakes to voice 3 One pressor and/or high-flow / face-mask O&#8322; ICE 0–2, wakes to touch; focal edema, seizure resolving 4 Multiple pressors and/or positive pressure Unarousable, status, diffuse edema CRS: tocilizumab 8 mg/kg (max 800 mg) from grade 2 (earlier for CAR-T), add dexamethasone 10 mg q6h if refractory or grade 3+. ICANS: dexamethasone 10 mg q6h from grade 2; tocilizumab does not treat isolated ICANS (may worsen it); levetiracetam, neuro checks. Bispecific CRS clusters in cycle 1 after step-up doses. Salvage and R/R dosing Regimen Dosing R-ICE q14–21d R 375 d1; ifosfamide 5000 + mesna 5000 CIV 24 h d2 ; carboplatin AUC 5 (max 800 mg) d2; etoposide 100 d1–3 R-DHAP q21d R 375 d1; cisplatin 100 CIV d1; cytarabine 2000 q12h ×2 d2 (1000 if >60; steroid eye drops); dexamethasone 40 mg d1–4. (R-DHAX: oxaliplatin 100) R-GDP q21d R 375 d1; gemcitabine 1000 d1+8; dexamethasone 40 mg d1–4; cisplatin 75 d1 — outpatient, non-inferior to R-DHAP (LY.12) Pola-BR q21d ×6 Polatuzumab 1.8 mg/kg + R 375 d1; bendamustine 90 d1+2 Tafa-len q28d Tafasitamab 12 mg/kg C1 d1, 4, 8, 15, 22 → C2–3 weekly → C4+ d1+15; lenalidomide 25 mg d1–21 ×12 cycles, then tafasitamab alone Loncastuximab q21d 0.15 mg/kg ×2 cycles, then 0.075 mg/kg ; dexamethasone 4 mg BID d−1 to d1 BV-R² q21d BV 1.2 mg/kg (max 120 mg) + rituximab q3wk + lenalidomide 20 mg daily Glofitamab IV q21d ×12 Obinutuzumab 1000 mg C1D1 → 2.5 mg C1D8 (inpatient 24 h) → 10 mg C1D15 → 30 mg C2–12. Dexamethasone 20 mg IV before C1–3 doses Epcoritamab SC q28d 0.16 mg C1D1 → 0.8 mg C1D8 → 48 mg C1D15, D22 ; weekly C2–3, q2wk C4–9, q4wk C10+. Dexamethasone 15 mg (or prednisolone 100) on dosing day + 3 days after in C1. C1D15: outpatient monitoring allowed since Apr 2026 CAR-T (single infusion) Axi-cel 2×10&#8310;/kg (max 2×10&#8312;) after flu 30 + cy 500 ×3 d · Liso-cel 90–110×10&#8310; (2L) after flu 30 + cy 300 ×3 d · Tisa-cel 0.6–6×10&#8312; after flu 25 + cy 250 ×3 d Toxicity and monitoring Hepatitis B with every anti-CD20 (and bispecifics): HBsAg+ → entecavir/tenofovir; HBsAg− anti-HBc+ → prophylaxis (or monthly DNA); continue ≥12 months after the last dose Cardiac: baseline echo; R-CHOP ×6 = doxorubicin 300 mg/m². Risk rises steeply past 400–450 mg/m² — dexrazoxane or anthracycline-free regimen when EF borderline Tumor flare with bispecifics (and lenalidomide): painful node swelling, can compress airway/organs — steroids, antihistamine, hold Infection: acyclovir + PJP prophylaxis with bispecifics, CAR-T, pola-BR, EPOCH; IVIG if IgG <400 with infections; CMV monitoring on bispecifics CAR-T: REMS removed Jun 2025 — stay near center 2 weeks , no driving 2 weeks. Prolonged cytopenias; secondary T-cell malignancy boxed warning Neuropathy from vincristine (cap 2 mg) and polatuzumab; TLS prophylaxis for bulky disease or high LDH Key trials GELA LNH-98.5 R-CHOP vs CHOP, age 60–80 — 10-yr OS 43.5% vs 27.6% POLARIX Pola-R-CHP: PFS HR 0.73 → 0.77 at 5 yr; OS HR 0.85, NS frontMIND Tafa-len-R-CHOP: PFS HR 0.75; more fatal AEs; OS immature FLYER / S1001 Limited stage: 4 cycles enough; PET-adapted, RT for iPET+ only ZUMA-7 Axi-cel 2L: EFS HR 0.40, OS HR 0.73 TRANSFORM / BELINDA Liso-cel 2L EFS HR 0.35 (OS NS) / tisa-cel 2L negative STARGLO Glofit-GemOx OS HR 0.62 — US CRL (applicability) EPCORE DLBCL-1 Epcoritamab vs chemo: PFS HR 0.74, OS HR 0.96 (NS) ECHELON-3 BV + R²: OS 13.8 vs 8.5 mo IELSG37 PMBL in CMR: RT omission non-inferior Wilson 2026 HD-MTX: no CNS-relapse reduction in 1,923 ultra-high-risk SWOG 8736 CHOP ×3 + RT vs CHOP ×8 — early edge lost with time R-mini-CHOP Age >80, single-arm: 2-yr OS 59% NCI DA-EPOCH-R PMBL EFS 93% without RT · MYC-rearranged 4-yr EFS 71% PARMA / CORAL ASCT beats salvage alone / R-ICE = R-DHAP; early relapse fares poorly ZUMA-1 / JULIET / TRANSCEND 3L+ CAR-T: CR 54% / 40% / 53% PILOT Liso-cel 2L, transplant-ineligible: ORR 80% NP30179 / EPCORE NHL-1 Glofitamab CR 39% (fixed) / epcoritamab CR 39% (continuous) GO29365 / L-MIND Pola-BR OS 12.4 vs 4.7 mo / tafa-len ORR 58%, CR 41% LOTIS-2 / LOTIS-5 Lonca ORR 48% / lonca-R vs R-GemOx PFS HR 0.73 KEYNOTE-170 / CM436 R/R PMBL: pembro ORR 45% / nivo-BV ORR 73% AMC-010 / AMC-034 HIV: rituximab deaths at CD4 <50 / concurrent R-EPOCH CR 73%"
+}

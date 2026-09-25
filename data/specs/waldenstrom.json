@@ -1,0 +1,455 @@
+{
+ "disease": "waldenstrom",
+ "spec_file": "waldenstrom.py",
+ "pdf": "Waldenstrom Macroglobulinemia.pdf",
+ "title": "Waldenstr&ouml;m macroglobulinemia",
+ "subtitle": "Lymphoplasmacytic lymphoma with an IgM paraprotein &middot; <b>MYD88 L265P in ~90%+</b> &middot; treat symptoms and IgM complications, not the IgM number &middot; genotype (MYD88/CXCR4) steers BTKi vs chemoimmunotherapy",
+ "source": "Compiled from primary trial reports and consensus guidelines (NCCN; IWWM-2, IWWM-11 and IWWM-12 consensus panels) verified against PubMed, September 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Definitions and the IgM differential",
+       "headers": [
+        "Entity",
+        "Defining features"
+       ],
+       "widths": [
+        "27%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>WM</b>",
+         "<b>Lymphoplasmacytic lymphoma (LPL) in the marrow + an IgM monoclonal protein of any size.</b> IWWM-2 and IWWM-11: <b>no IgM or marrow-% cutoff</b> separates WM from IgM MGUS &mdash; the diagnosis rests on marrow histology + immunophenotype"
+        ],
+        [
+         "<b>IgM MGUS</b>",
+         "IgM M-protein, no LPL on marrow, no symptoms. Progresses to lymphoma/WM at <b>~1.5%/yr</b>. IWWM-11 splits it: <b>plasma-cell type</b> (MYD88 wild-type &mdash; myeloma/AL lineage) vs <b>B-cell type</b> (may be MYD88-mutant)"
+        ],
+        [
+         "<b>Asymptomatic (smoldering) WM</b>",
+         "Meets WM criteria, no treatment indication &rarr; <b>observe</b>. <b>72%</b> progress (median follow-up 7.8 yr). Progression risk: <b>IgM &ge;4,500 mg/dL, marrow &ge;70%, &beta;2M &ge;4 mg/L, albumin &le;3.5</b>; MYD88 wild-type HR 2.7"
+        ],
+        [
+         "<b>IgM myeloma</b>",
+         "<b>CD138+ plasma cells without a B-cell/LPL component, t(11;14), MYD88 wild-type, lytic lesions.</b> Treat as myeloma &mdash; not WM"
+        ],
+        [
+         "<b>Marginal zone</b>",
+         "Can make IgM and show plasmacytic differentiation. <b>MYD88 L265P absent or rare</b> &mdash; the most useful discriminator"
+        ],
+        [
+         "<b>IgM-related disorder</b>",
+         "Symptoms from the IgM itself (neuropathy, cryo, CAD, amyloid) <b>without overt lymphoma</b> &mdash; still may need clone-directed therapy"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "<b>SPEP + immunofixation, quantitative IgM</b> (SPEP M-spike and nephelometric IgM are not interchangeable &mdash; follow one method), free light chains, &beta;2-microglobulin, albumin, LDH, CBC, CMP",
+        "<b>Marrow biopsy</b>: intertrabecular LPL infiltrate; surface IgM+, CD19+, CD20+, CD22+, with CD138+ plasma cells; usually CD5&minus; CD10&minus; CD23&minus; (variants do not exclude WM)",
+        "<b>Molecular on marrow before any therapy</b> (IWWM-11): <b>AS-PCR for MYD88 L265P and CXCR4 S338X on whole marrow</b>; CXCR4 + TP53 sequencing and 6q/17p FISH on CD19-selected cells",
+        "<b>CT chest/abdomen/pelvis</b> for nodes/spleen. <b>Serum viscosity + fundoscopy if IgM is high or any HVS symptom</b>",
+        "Targeted: <b>cryoglobulins</b> (draw and transport at 37&deg;C), <b>DAT + cold agglutinin titer</b>, <b>anti-MAG</b> + EMG if neuropathy, <b>NT-proBNP/troponin, urine protein, fat pad</b> if amyloid suspected, <b>MRI brain/spine + CSF</b> if CNS symptoms",
+        "<b>Prognosis:</b> IPSSWM &mdash; age &gt;65, Hb &le;11.5, plt &le;100, &beta;2M &gt;3 mg/L, M-protein &gt;7 g/dL; 5-yr OS <b>87% / 68% / 36%</b> (low/int/high). <b>Not a treatment trigger</b>"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Diagnosis",
+         "color": "gray",
+         "boxes": [
+          [
+           "Asymptomatic &rarr; watch and wait",
+           [
+            "IWWM: <b>IgM level alone is NOT an indication</b>",
+            "clinic + labs q3&ndash;6 mo; IgM MGUS yearly SPEP"
+           ]
+          ],
+          [
+           "Treat when a criterion is met",
+           [
+            "Hb &le;10 or plt &lt;100 from marrow infiltration",
+            "B symptoms, bulky/symptomatic nodes or spleen",
+            "HVS, neuropathy, amyloid, cryo, CAD, renal"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Emergencies first",
+         "color": "coral",
+         "boxes": [
+          [
+           "Symptomatic hyperviscosity",
+           [
+            "<b>plasmapheresis FIRST</b>, then start therapy",
+            "<b>no RBC transfusion before pheresis</b>"
+           ]
+          ],
+          [
+           "High IgM + rituximab planned",
+           [
+            "<b>hold rituximab</b> until IgM falls, or pheresis",
+            "first &mdash; the IgM flare can precipitate HVS"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "First line &mdash; genotype + patient",
+         "color": "teal",
+         "boxes": [
+          [
+           "Fixed-duration chemoimmunotherapy",
+           [
+            "<b>BR &times;6</b> or <b>DRC &times;6</b> &mdash; IWWM default, affordable",
+            "<b>MYD88-WT</b>, CXCR4-mutant, fit, want time off"
+           ]
+          ],
+          [
+           "Bortezomib-based (BDR / B-DRC)",
+           [
+            "rapid IgM control: HVS, cryo, amyloid, renal",
+            "avoid with pre-existing neuropathy"
+           ]
+          ],
+          [
+           "Continuous covalent BTKi",
+           [
+            "<b>zanubrutinib</b> preferred (ASPEN); ibrutinib &plusmn; R",
+            "MYD88-mutant, CXCR4-WT, frail, CNS disease",
+            "<b>not for AL amyloid</b> (IWWM-11)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Relapse",
+         "color": "purple",
+         "boxes": [
+          [
+           "Switch class; reuse only after a long remission",
+           [
+            "after chemo &rarr; cBTKi; after cBTKi &rarr; BR/DRC/BDR",
+            "<b>pirtobrutinib</b> or <b>venetoclax</b> (off-label)",
+            "<b>bridge &mdash; don't stop a BTKi until next Rx</b>"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "37%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "IgM-mediated complications &mdash; each managed differently",
+       "headers": [
+        "Syndrome",
+        "Recognize &rarr; manage"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Hyperviscosity</b> <span class='r'>large pentameric IgM</span>",
+         "Blurred vision, headache, epistaxis/oronasal bleeding, dizziness, confusion, heart failure. <b>Fundoscopy:</b> dilated &ldquo;sausage&rdquo; veins, hemorrhages, papilledema. Viscosity poorly predicts symptoms per patient. <b>Plasmapheresis first</b> (IgM is ~80% intravascular, so it clears efficiently), <b>then cytoreduce</b> &mdash; pheresis alone is a bridge. <b>Avoid RBC transfusion until pheresed</b>"
+        ],
+        [
+         "<b>Anti-MAG neuropathy</b>",
+         "Slowly progressive, distal, <b>symmetric sensory-predominant demyelinating</b> neuropathy with ataxia/tremor. EMG + anti-MAG titer; joint heme-neuro care. <b>Rituximab-based therapy</b>; stabilization is the realistic goal. <b>Avoid bortezomib</b> (and vincristine)"
+        ],
+        [
+         "<b>Cryoglobulinemia</b> <span class='r'>type I or II</span>",
+         "Raynaud's, acral necrosis, purpura, vasculitic neuropathy, GN. <b>Draw at 37&deg;C</b> or it is missed. Keep warm; <b>plasmapheresis for severe</b>; rapid cytoreduction (BR, BDR)"
+        ],
+        [
+         "<b>Cold agglutinin disease</b>",
+         "Chronic hemolysis with cold acrocyanosis; DAT C3d+, IgM&kappa; titer. <b>Keep warm, warm IV fluids/blood</b>. Rituximab-based (BR most active); <b>sutimlimab</b> blocks C1s for hemolysis"
+        ],
+        [
+         "<b>AL amyloidosis</b>",
+         "Lambda light chain, cardiac/renal/nerve. <b>Treat as AL</b>: bortezomib- or bendamustine-based; daratumumab. <b>cBTKi not recommended</b> (IWWM-11)"
+        ],
+        [
+         "<b>Bing-Neel</b> <span class='r'>CNS WM</span>",
+         "Headache, cognitive change, cranial nerve palsies, gait. <b>MRI brain + spine with gadolinium, CSF cytology/flow + MYD88 PCR.</b> <b>BTKi cross the BBB</b>: ibrutinib (n=28: 85% symptom improvement, 2-yr EFS 80%); IWWM-12 made <b>zanubrutinib a standard</b>. Alternatives: HD-MTX / HD-araC, fludarabine"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Genotype drives BTKi choice",
+       "headers": [
+        "Lesion",
+        "Why it matters"
+       ],
+       "widths": [
+        "27%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>MYD88 L265P</b> <span class='r'>~90%+</span>",
+         "Drives NF-&kappa;B via IRAK/BTK. <b>Supports the diagnosis</b> (rare in MZL, absent in myeloma). <b>MYD88 wild-type:</b> weaker BTKi response (ibrutinib major response 29%), worse OS &mdash; favor chemoimmunotherapy"
+        ],
+        [
+         "<b>CXCR4 WHIM-like</b> <span class='r'>~30&ndash;40%</span>",
+         "Nonsense/frameshift C-tail mutations; higher IgM + marrow burden, more hyperviscosity. <b>Slower, shallower BTKi responses</b>: TN ibrutinib major response 71% vs 94%, VGPR 7% vs 31%, time to major response 7.3 vs 1.8 mo"
+        ],
+        [
+         "<b>TP53</b>, del6q, del17p",
+         "Adverse; IWWM-11 counts TP53 and 6q/17p among essential pre-treatment tests"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; first-line evidence, relapse, response, dosing and trials",
+   "columns": [
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "First-line options &mdash; the evidence",
+       "headers": [
+        "Regimen",
+        "Evidence and the catch"
+       ],
+       "widths": [
+        "21%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Bendamustine-rituximab</b>",
+         "IWWM/NCCN preferred chemoimmunotherapy. Randomized evidence is <b>StiL NHL1</b> (BR beat R-CHOP in indolent NHL, WM a small subgroup). <b>Rituximab maintenance after BR: no benefit</b> overall (StiL NHL7-MAINTAIN)"
+        ],
+        [
+         "<b>DRC</b>",
+         "Phase 2, n=72: ORR <b>83%</b> (CR 7%), 2-yr PFS 67%; grade 3&ndash;4 neutropenia only 9%. Slow: median time to response <b>4.1 mo</b>. <b>ECWM-1: adding bortezomib (B-DRC) did not improve PFS</b> (24-mo 80.6% vs 72.8%, P=0.32) but responses came faster (3.0 vs 5.5 mo)"
+        ],
+        [
+         "<b>BDR</b>",
+         "Weekly-bortezomib EMN regimen: ORR <b>85%</b>, median PFS <b>42 mo</b>; neuropathy <b>46%</b> (grade &ge;3 7%). Bortezomib lead-in blunts rituximab flare. <b>Zoster prophylaxis mandatory</b>"
+        ],
+        [
+         "<b>Ibrutinib &plusmn; rituximab</b>",
+         "<b>iNNOVATE</b> (phase 3, n=150): IR vs placebo-R &mdash; final median PFS <b>NR vs 20.3 mo</b>, HR 0.25; benefit <b>regardless of MYD88/CXCR4</b>. Adding ibrutinib cut rituximab IgM flare (8% vs 47%). Grade &ge;3 <b>AF 12% vs 1%</b>, HTN 13% vs 4%"
+        ],
+        [
+         "<b>Zanubrutinib</b>",
+         "<b>ASPEN</b> (phase 3, n=201 MYD88-mutant): primary endpoint VGPR+CR <b>28% vs 19%, P=0.09 &mdash; not met</b>. Final (44 mo): VGPR+CR 36% vs 25%; CXCR4-mutant 21% vs 10%. <b>Less AF (7.9% vs 23.5%), HTN, bleeding, diarrhea</b>; more neutropenia. FDA-approved Aug 2021"
+        ],
+        [
+         "<b>Acalabrutinib</b>",
+         "Single-arm phase 2, n=106: ORR <b>93%</b> TN and R/R; grade 3&ndash;4 AF 1%. <b>Not FDA-approved for WM</b>"
+        ],
+        [
+         "<b>Ibrutinib + venetoclax</b>",
+         "Fixed-duration TN trial: VGPR 42% but <b>ventricular arrhythmia 9% incl. 2 deaths &rarr; stopped early</b>. Not a standard"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Fixed-duration vs continuous &mdash; how to choose",
+       "items": [
+        "<b>Chemoimmunotherapy:</b> finite (~6 mo), then time off therapy; myelosuppression, infections; the <b>better fit for MYD88 wild-type</b> and a reasonable one for CXCR4-mutant disease",
+        "<b>cBTKi:</b> oral, rapid Hb recovery, <b>indefinite</b> &mdash; cost, cumulative AF/HTN/bleeding, and <b>IgM rebound if stopped</b>. Best in MYD88-mutant/CXCR4-WT; zanubrutinib over ibrutinib for tolerability",
+        "<b>IgM lags the marrow:</b> IgM can plateau or rise transiently (rituximab flare; <b>bortezomib/rituximab-era discordance</b>) &mdash; do not call progression on IgM alone; confirm, check marrow/Hb/nodes. BR/DRC responses deepen for months after the last cycle"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Relapsed / refractory",
+       "items": [
+        "<b>Durable first remission &rarr; the same regimen can be reused</b>; early relapse or refractory &rarr; switch class",
+        "<b>Ibrutinib withdrawal:</b> IgM rebound (&ge;25%) in <b>73%</b> of discontinuations, half within 4 weeks, some with HVS; salvage works better if started within 2 weeks. <b>Continue the BTKi until the next therapy starts</b>; hold only ~3&ndash;7 days peri-procedure",
+        "<b>Pirtobrutinib</b> (non-covalent; binds C481-mutant BTK): BRUIN WM n=80 (79% cBTKi-exposed) &mdash; ORR <b>82.5%</b> (81% post-cBTKi), major response ~72%. <b>Not FDA-approved for WM</b> (MCL/CLL only) &mdash; single-arm, off-label",
+        "<b>Venetoclax</b> 200&rarr;800 mg daily &times;2 yr: ORR 84%, major 81%, median PFS <b>30 mo</b>; slower after BTKi (4.5 vs 1.4 mo); <b>CXCR4 did not matter</b>. Neutropenia 45%. Off-label",
+        "Also: bortezomib/carfilzomib-based, BR after BTKi, clinical trials (BTK degraders, CXCR4 antagonists, bispecifics). <b>Autologous SCT</b> for select chemosensitive young patients. Transformation to DLBCL &rarr; treat as DLBCL"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Response (IWWM-6 / simplified IWWM-11)",
+       "widths": [
+        "18%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>CR</b>",
+         "Normal IgM, <b>negative immunofixation</b>, no marrow disease, resolved nodes/spleen"
+        ],
+        [
+         "<b>VGPR</b>",
+         "&ge;90% IgM reduction"
+        ],
+        [
+         "<b>PR</b>",
+         "50&ndash;89% IgM reduction &nbsp;&middot;&nbsp; <b>major response = PR or better</b>"
+        ],
+        [
+         "<b>MR</b>",
+         "25&ndash;49% IgM reduction (counts in &ldquo;overall&rdquo; response)"
+        ],
+        [
+         "<b>PD</b>",
+         "&ge;25% IgM rise from nadir (confirmed) or new disease/complication"
+        ]
+       ],
+       "footnote": "IWWM-11 lets PR/VGPR be called on serum IgM alone, with guidance for flare/rebound. <b>ORR in WM trials includes minor responses</b> &mdash; compare major response rates across studies."
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimen dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>BR</b>",
+         "Bendamustine <b>90 mg/m&sup2; d1&ndash;2</b> + rituximab <b>375 mg/m&sup2;</b> d1, <b>q28d &times;6</b>"
+        ],
+        [
+         "<b>DRC</b>",
+         "Dexamethasone <b>20 mg IV</b> + rituximab <b>375 mg/m&sup2;</b> d1 + cyclophosphamide <b>100 mg/m&sup2; PO BID d1&ndash;5</b>, q21d &times;6"
+        ],
+        [
+         "<b>BDR</b> <span class='r'>EMN</span>",
+         "Cycle 1 bortezomib alone 1.3 mg/m&sup2; d1,4,8,11; then <b>1.6 mg/m&sup2; weekly d1,8,15,22 q35d &times;4</b>; dex 40 mg + rituximab 375 in cycles 2 and 5. SC bortezomib in practice"
+        ],
+        [
+         "<b>Zanubrutinib</b>",
+         "<b>160 mg BID or 320 mg daily</b>, continuous"
+        ],
+        [
+         "<b>Ibrutinib &plusmn; R</b>",
+         "<b>420 mg daily</b>, continuous; iNNOVATE rituximab 375 mg/m&sup2; weekly, <b>weeks 1&ndash;4 and 17&ndash;20</b>"
+        ],
+        [
+         "<b>Acalabrutinib</b>",
+         "100 mg BID, continuous"
+        ],
+        [
+         "<b>Pirtobrutinib</b>",
+         "200 mg daily, continuous"
+        ],
+        [
+         "<b>Venetoclax</b>",
+         "Ramp 200 &rarr; <b>800 mg daily</b>, up to 2 yr; TLS precautions"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Monitoring and prophylaxis",
+       "items": [
+        "<b>HBsAg + anti-HBc before any anti-CD20</b> &mdash; entecavir if core-Ab positive. <b>Acyclovir/valacyclovir with bortezomib</b> (zoster in 4 of the first 7 BDR patients) and commonly with BR and BTKi",
+        "<b>BTKi:</b> baseline ECG and BP; ask about palpitations; <b>treat HTN</b>. AF &rarr; rate control, weigh anticoagulation with bleeding; switch ibrutinib &rarr; zanubrutinib. <b>No warfarin; avoid fish oil/vit E</b>; hold ~3&ndash;7 days around surgery. Strong CYP3A inhibitors &rarr; dose-adjust",
+        "<b>Bortezomib:</b> neuropathy check every cycle; <b>weekly + SC</b> dosing lowers it; dose-reduce at grade 2 with pain",
+        "<b>Rituximab:</b> IgM before each dose; <b>hold or pre-pherese if IgM is high</b> (commonly &ge;4,000 mg/dL); a rising IgM in the first months is often flare, not progression",
+        "IgM + CBC q1&ndash;3 mo on therapy; SPEP/IgM q3&ndash;6 mo in remission. <b>Same lab, same method</b>"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "rows": [
+        [
+         "<b>iNNOVATE</b>",
+         "Ibrutinib-R vs placebo-R &mdash; median PFS NR vs 20.3 mo, HR 0.25, genotype-independent"
+        ],
+        [
+         "<b>ASPEN</b>",
+         "Zanubrutinib vs ibrutinib &mdash; VGPR+CR primary <b>not met</b> (28 vs 19%); far less AF"
+        ],
+        [
+         "<b>ECWM-1</b>",
+         "B-DRC vs DRC &mdash; no PFS gain; faster response"
+        ],
+        [
+         "<b>DRC (Dimopoulos)</b>",
+         "Phase 2 &mdash; ORR 83%, 2-yr PFS 67%"
+        ],
+        [
+         "<b>BDR (EMN)</b>",
+         "Phase 2 &mdash; ORR 85%, median PFS 42 mo, weekly bortezomib"
+        ],
+        [
+         "<b>Ibrutinib TN / R/R</b>",
+         "Phase 2 &mdash; CXCR4 and MYD88 genotype set depth and speed"
+        ],
+        [
+         "<b>BRUIN WM</b>",
+         "Pirtobrutinib R/R &mdash; ORR 82.5%, active post-cBTKi"
+        ],
+        [
+         "<b>Venetoclax (Castillo)</b>",
+         "R/R &mdash; major response 81%, median PFS 30 mo"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Definitions and the IgM differential",
+  "Workup",
+  "Treatment pathway",
+  "IgM-mediated complications &mdash; each managed differently",
+  "Genotype drives BTKi choice",
+  "First-line options &mdash; the evidence",
+  "Fixed-duration vs continuous &mdash; how to choose",
+  "Relapsed / refractory",
+  "Response (IWWM-6 / simplified IWWM-11)",
+  "Regimen dosing",
+  "Monitoring and prophylaxis",
+  "Key trials"
+ ],
+ "text": "Waldenstr&ouml;m macroglobulinemia Lymphoplasmacytic lymphoma with an IgM paraprotein · MYD88 L265P in ~90%+ · treat symptoms and IgM complications, not the IgM number · genotype (MYD88/CXCR4) steers BTKi vs chemoimmunotherapy Compiled from primary trial reports and consensus guidelines (NCCN; IWWM-2, IWWM-11 and IWWM-12 consensus panels) verified against PubMed, September 2026. Definitions and the IgM differential Entity Defining features WM Lymphoplasmacytic lymphoma (LPL) in the marrow + an IgM monoclonal protein of any size. IWWM-2 and IWWM-11: no IgM or marrow-% cutoff separates WM from IgM MGUS — the diagnosis rests on marrow histology + immunophenotype IgM MGUS IgM M-protein, no LPL on marrow, no symptoms. Progresses to lymphoma/WM at ~1.5%/yr . IWWM-11 splits it: plasma-cell type (MYD88 wild-type — myeloma/AL lineage) vs B-cell type (may be MYD88-mutant) Asymptomatic (smoldering) WM Meets WM criteria, no treatment indication → observe . 72% progress (median follow-up 7.8 yr). Progression risk: IgM ≥4,500 mg/dL, marrow ≥70%, &beta;2M ≥4 mg/L, albumin ≤3.5 ; MYD88 wild-type HR 2.7 IgM myeloma CD138+ plasma cells without a B-cell/LPL component, t(11;14), MYD88 wild-type, lytic lesions. Treat as myeloma — not WM Marginal zone Can make IgM and show plasmacytic differentiation. MYD88 L265P absent or rare — the most useful discriminator IgM-related disorder Symptoms from the IgM itself (neuropathy, cryo, CAD, amyloid) without overt lymphoma — still may need clone-directed therapy Workup SPEP + immunofixation, quantitative IgM (SPEP M-spike and nephelometric IgM are not interchangeable — follow one method), free light chains, &beta;2-microglobulin, albumin, LDH, CBC, CMP Marrow biopsy : intertrabecular LPL infiltrate; surface IgM+, CD19+, CD20+, CD22+, with CD138+ plasma cells; usually CD5− CD10− CD23− (variants do not exclude WM) Molecular on marrow before any therapy (IWWM-11): AS-PCR for MYD88 L265P and CXCR4 S338X on whole marrow ; CXCR4 + TP53 sequencing and 6q/17p FISH on CD19-selected cells CT chest/abdomen/pelvis for nodes/spleen. Serum viscosity + fundoscopy if IgM is high or any HVS symptom Targeted: cryoglobulins (draw and transport at 37&deg;C), DAT + cold agglutinin titer , anti-MAG + EMG if neuropathy, NT-proBNP/troponin, urine protein, fat pad if amyloid suspected, MRI brain/spine + CSF if CNS symptoms Prognosis: IPSSWM — age >65, Hb ≤11.5, plt ≤100, &beta;2M >3 mg/L, M-protein >7 g/dL; 5-yr OS 87% / 68% / 36% (low/int/high). Not a treatment trigger Treatment pathway Diagnosis Asymptomatic → watch and wait IWWM: IgM level alone is NOT an indication clinic + labs q3–6 mo; IgM MGUS yearly SPEP Treat when a criterion is met Hb ≤10 or plt <100 from marrow infiltration B symptoms, bulky/symptomatic nodes or spleen HVS, neuropathy, amyloid, cryo, CAD, renal Emergencies first Symptomatic hyperviscosity plasmapheresis FIRST , then start therapy no RBC transfusion before pheresis High IgM + rituximab planned hold rituximab until IgM falls, or pheresis first — the IgM flare can precipitate HVS First line — genotype + patient Fixed-duration chemoimmunotherapy BR ×6 or DRC ×6 — IWWM default, affordable MYD88-WT , CXCR4-mutant, fit, want time off Bortezomib-based (BDR / B-DRC) rapid IgM control: HVS, cryo, amyloid, renal avoid with pre-existing neuropathy Continuous covalent BTKi zanubrutinib preferred (ASPEN); ibrutinib ± R MYD88-mutant, CXCR4-WT, frail, CNS disease not for AL amyloid (IWWM-11) Relapse Switch class; reuse only after a long remission after chemo → cBTKi; after cBTKi → BR/DRC/BDR pirtobrutinib or venetoclax (off-label) bridge — don't stop a BTKi until next Rx IgM-mediated complications — each managed differently Syndrome Recognize → manage Hyperviscosity large pentameric IgM Blurred vision, headache, epistaxis/oronasal bleeding, dizziness, confusion, heart failure. Fundoscopy: dilated “sausage” veins, hemorrhages, papilledema. Viscosity poorly predicts symptoms per patient. Plasmapheresis first (IgM is ~80% intravascular, so it clears efficiently), then cytoreduce — pheresis alone is a bridge. Avoid RBC transfusion until pheresed Anti-MAG neuropathy Slowly progressive, distal, symmetric sensory-predominant demyelinating neuropathy with ataxia/tremor. EMG + anti-MAG titer; joint heme-neuro care. Rituximab-based therapy ; stabilization is the realistic goal. Avoid bortezomib (and vincristine) Cryoglobulinemia type I or II Raynaud's, acral necrosis, purpura, vasculitic neuropathy, GN. Draw at 37&deg;C or it is missed. Keep warm; plasmapheresis for severe ; rapid cytoreduction (BR, BDR) Cold agglutinin disease Chronic hemolysis with cold acrocyanosis; DAT C3d+, IgM&kappa; titer. Keep warm, warm IV fluids/blood . Rituximab-based (BR most active); sutimlimab blocks C1s for hemolysis AL amyloidosis Lambda light chain, cardiac/renal/nerve. Treat as AL : bortezomib- or bendamustine-based; daratumumab. cBTKi not recommended (IWWM-11) Bing-Neel CNS WM Headache, cognitive change, cranial nerve palsies, gait. MRI brain + spine with gadolinium, CSF cytology/flow + MYD88 PCR. BTKi cross the BBB : ibrutinib (n=28: 85% symptom improvement, 2-yr EFS 80%); IWWM-12 made zanubrutinib a standard . Alternatives: HD-MTX / HD-araC, fludarabine Genotype drives BTKi choice Lesion Why it matters MYD88 L265P ~90%+ Drives NF-&kappa;B via IRAK/BTK. Supports the diagnosis (rare in MZL, absent in myeloma). MYD88 wild-type: weaker BTKi response (ibrutinib major response 29%), worse OS — favor chemoimmunotherapy CXCR4 WHIM-like ~30–40% Nonsense/frameshift C-tail mutations; higher IgM + marrow burden, more hyperviscosity. Slower, shallower BTKi responses : TN ibrutinib major response 71% vs 94%, VGPR 7% vs 31%, time to major response 7.3 vs 1.8 mo TP53 , del6q, del17p Adverse; IWWM-11 counts TP53 and 6q/17p among essential pre-treatment tests First-line options — the evidence Regimen Evidence and the catch Bendamustine-rituximab IWWM/NCCN preferred chemoimmunotherapy. Randomized evidence is StiL NHL1 (BR beat R-CHOP in indolent NHL, WM a small subgroup). Rituximab maintenance after BR: no benefit overall (StiL NHL7-MAINTAIN) DRC Phase 2, n=72: ORR 83% (CR 7%), 2-yr PFS 67%; grade 3–4 neutropenia only 9%. Slow: median time to response 4.1 mo . ECWM-1: adding bortezomib (B-DRC) did not improve PFS (24-mo 80.6% vs 72.8%, P=0.32) but responses came faster (3.0 vs 5.5 mo) BDR Weekly-bortezomib EMN regimen: ORR 85% , median PFS 42 mo ; neuropathy 46% (grade ≥3 7%). Bortezomib lead-in blunts rituximab flare. Zoster prophylaxis mandatory Ibrutinib ± rituximab iNNOVATE (phase 3, n=150): IR vs placebo-R — final median PFS NR vs 20.3 mo , HR 0.25; benefit regardless of MYD88/CXCR4 . Adding ibrutinib cut rituximab IgM flare (8% vs 47%). Grade ≥3 AF 12% vs 1% , HTN 13% vs 4% Zanubrutinib ASPEN (phase 3, n=201 MYD88-mutant): primary endpoint VGPR+CR 28% vs 19%, P=0.09 — not met . Final (44 mo): VGPR+CR 36% vs 25%; CXCR4-mutant 21% vs 10%. Less AF (7.9% vs 23.5%), HTN, bleeding, diarrhea ; more neutropenia. FDA-approved Aug 2021 Acalabrutinib Single-arm phase 2, n=106: ORR 93% TN and R/R; grade 3–4 AF 1%. Not FDA-approved for WM Ibrutinib + venetoclax Fixed-duration TN trial: VGPR 42% but ventricular arrhythmia 9% incl. 2 deaths → stopped early . Not a standard Fixed-duration vs continuous — how to choose Chemoimmunotherapy: finite (~6 mo), then time off therapy; myelosuppression, infections; the better fit for MYD88 wild-type and a reasonable one for CXCR4-mutant disease cBTKi: oral, rapid Hb recovery, indefinite — cost, cumulative AF/HTN/bleeding, and IgM rebound if stopped . Best in MYD88-mutant/CXCR4-WT; zanubrutinib over ibrutinib for tolerability IgM lags the marrow: IgM can plateau or rise transiently (rituximab flare; bortezomib/rituximab-era discordance ) — do not call progression on IgM alone; confirm, check marrow/Hb/nodes. BR/DRC responses deepen for months after the last cycle Relapsed / refractory Durable first remission → the same regimen can be reused ; early relapse or refractory → switch class Ibrutinib withdrawal: IgM rebound (≥25%) in 73% of discontinuations, half within 4 weeks, some with HVS; salvage works better if started within 2 weeks. Continue the BTKi until the next therapy starts ; hold only ~3–7 days peri-procedure Pirtobrutinib (non-covalent; binds C481-mutant BTK): BRUIN WM n=80 (79% cBTKi-exposed) — ORR 82.5% (81% post-cBTKi), major response ~72%. Not FDA-approved for WM (MCL/CLL only) — single-arm, off-label Venetoclax 200→800 mg daily ×2 yr: ORR 84%, major 81%, median PFS 30 mo ; slower after BTKi (4.5 vs 1.4 mo); CXCR4 did not matter . Neutropenia 45%. Off-label Also: bortezomib/carfilzomib-based, BR after BTKi, clinical trials (BTK degraders, CXCR4 antagonists, bispecifics). Autologous SCT for select chemosensitive young patients. Transformation to DLBCL → treat as DLBCL Response (IWWM-6 / simplified IWWM-11) CR Normal IgM, negative immunofixation , no marrow disease, resolved nodes/spleen VGPR ≥90% IgM reduction PR 50–89% IgM reduction · major response = PR or better MR 25–49% IgM reduction (counts in “overall” response) PD ≥25% IgM rise from nadir (confirmed) or new disease/complication IWWM-11 lets PR/VGPR be called on serum IgM alone, with guidance for flare/rebound. ORR in WM trials includes minor responses — compare major response rates across studies. Regimen dosing Regimen Dosing BR Bendamustine 90 mg/m² d1–2 + rituximab 375 mg/m² d1, q28d ×6 DRC Dexamethasone 20 mg IV + rituximab 375 mg/m² d1 + cyclophosphamide 100 mg/m² PO BID d1–5 , q21d ×6 BDR EMN Cycle 1 bortezomib alone 1.3 mg/m² d1,4,8,11; then 1.6 mg/m² weekly d1,8,15,22 q35d ×4 ; dex 40 mg + rituximab 375 in cycles 2 and 5. SC bortezomib in practice Zanubrutinib 160 mg BID or 320 mg daily , continuous Ibrutinib ± R 420 mg daily , continuous; iNNOVATE rituximab 375 mg/m² weekly, weeks 1–4 and 17–20 Acalabrutinib 100 mg BID, continuous Pirtobrutinib 200 mg daily, continuous Venetoclax Ramp 200 → 800 mg daily , up to 2 yr; TLS precautions Monitoring and prophylaxis HBsAg + anti-HBc before any anti-CD20 — entecavir if core-Ab positive. Acyclovir/valacyclovir with bortezomib (zoster in 4 of the first 7 BDR patients) and commonly with BR and BTKi BTKi: baseline ECG and BP; ask about palpitations; treat HTN . AF → rate control, weigh anticoagulation with bleeding; switch ibrutinib → zanubrutinib. No warfarin; avoid fish oil/vit E ; hold ~3–7 days around surgery. Strong CYP3A inhibitors → dose-adjust Bortezomib: neuropathy check every cycle; weekly + SC dosing lowers it; dose-reduce at grade 2 with pain Rituximab: IgM before each dose; hold or pre-pherese if IgM is high (commonly ≥4,000 mg/dL); a rising IgM in the first months is often flare, not progression IgM + CBC q1–3 mo on therapy; SPEP/IgM q3–6 mo in remission. Same lab, same method Key trials iNNOVATE Ibrutinib-R vs placebo-R — median PFS NR vs 20.3 mo, HR 0.25, genotype-independent ASPEN Zanubrutinib vs ibrutinib — VGPR+CR primary not met (28 vs 19%); far less AF ECWM-1 B-DRC vs DRC — no PFS gain; faster response DRC (Dimopoulos) Phase 2 — ORR 83%, 2-yr PFS 67% BDR (EMN) Phase 2 — ORR 85%, median PFS 42 mo, weekly bortezomib Ibrutinib TN / R/R Phase 2 — CXCR4 and MYD88 genotype set depth and speed BRUIN WM Pirtobrutinib R/R — ORR 82.5%, active post-cBTKi Venetoclax (Castillo) R/R — major response 81%, median PFS 30 mo"
+}

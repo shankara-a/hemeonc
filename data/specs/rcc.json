@@ -3,53 +3,45 @@
  "spec_file": "rcc.py",
  "pdf": "Renal Cell Carcinoma.pdf",
  "title": "Renal cell carcinoma",
- "subtitle": "Two forks decide everything &mdash; <b>clear cell vs non-clear cell</b> histology, and <b>IMDC risk</b>. Localized disease is surgical; metastatic clear cell is an <b>IO backbone</b> (IO/IO or IO/TKI) with essentially no predictive biomarker",
- "source": "Stanford Oncology Handbook 2025, GU: Renal Cell Carcinoma &middot; NCCN Kidney Cancer &middot; items marked &dagger; are outside the handbook chapter",
+ "subtitle": "Two forks decide everything &mdash; <b>clear cell vs non-clear cell</b>, and <b>IMDC risk</b>. Localized disease is surgical &plusmn; adjuvant pembrolizumab; metastatic clear cell gets an <b>IO backbone</b> (IO/TKI or ipi/nivo) with no predictive biomarker; <b>after IO, switch mechanism &mdash; never re-add IO</b>",
+ "source": "Compiled from the Stanford Oncology Handbook 2025, GU: Renal Cell Carcinoma (Ruiz SM, Fan AC) &middot; NCCN &middot; primary trial reports and FDA actions verified against PubMed, September 2026.",
  "pages": [
   {
    "columns": [
     {
-     "width": "27%",
+     "width": "30%",
      "blocks": [
       {
        "type": "bullets",
-       "heading": "&dagger; Workup",
+       "heading": "Workup",
        "items": [
-        "<b>CT abdomen/pelvis with contrast</b> (or MRI) defines T stage and venous extension; chest CT for staging. Brain/bone imaging only if symptomatic",
-        "<b>Renal mass biopsy is not required before nephrectomy</b> &mdash; get it for small masses under surveillance/ablation, suspected lymphoma or metastasis, or before systemic therapy without surgery",
-        "Labs feeding IMDC: <b>CBC (Hgb, neutrophils, platelets), calcium</b>, LDH, creatinine, LFTs",
-        "Grade (WHO/ISUP) is nucleolar: <b>G1</b> nucleoli inconspicuous at 400&times; &middot; <b>G2</b> conspicuous at 400&times; &middot; <b>G3</b> conspicuous at 100&times; &middot; <b>G4</b> pleomorphism, giant cells, <b>rhabdoid or sarcomatoid</b>"
-       ]
-      },
-      {
-       "type": "bullets",
-       "heading": "Genetics referral (NCCN)",
-       "items": [
-        "RCC diagnosed at <b>age &lt;46</b>",
-        "<b>Bilateral or multifocal</b> tumors",
-        "<b>&ge;1 first- or second-degree relative</b> with RCC",
-        "Somatic NGS finds a gene with germline implications (BRCA1/2, Lynch, etc.)"
+        "<b>Most are found incidentally</b> on imaging; the classic triad (flank pain, hematuria, mass) is seen in only ~10%",
+        "<b>Paraneoplastic:</b> erythrocytosis (EPO), <b>hypercalcemia</b> (PTHrP), hypertension (renin), <b>Stauffer syndrome</b> (cholestasis without liver mets &mdash; resolves after nephrectomy)",
+        "<b>CT abdomen/pelvis with contrast</b> (MRI if poor renal function, IVC thrombus, or to call fat in an angiomyolipoma) + <b>chest CT</b>. Brain MRI and bone scan when symptomatic or before systemic therapy in high-risk disease",
+        "<b>Biopsy is not required before nephrectomy</b> for a solid enhancing mass &mdash; get it for small masses when it would change AS vs treatment, suspected lymphoma/metastasis/infection, or before systemic therapy without surgery",
+        "Labs that feed IMDC: <b>CBC with differential, calcium</b>, plus LDH, creatinine, LFTs",
+        "<b>Genetics referral (NCCN):</b> RCC at <b>age &le;46</b>, bilateral or multifocal tumors, &ge;1 first/second-degree relative with RCC, or a somatic hit with germline implications"
        ]
       },
       {
        "type": "table",
-       "heading": "Staging (AJCC)",
+       "heading": "Staging (AJCC 8th)",
        "widths": [
-        "18%",
+        "16%",
         ""
        ],
        "rows": [
         [
          "T1",
-         "Confined to kidney <b>&lt;7 cm</b> &mdash; T1a &lt;4 cm, T1b 4&ndash;7 cm"
+         "Confined to kidney, <b>&le;7 cm</b> &mdash; T1a &le;4 cm, T1b &gt;4&ndash;7 cm"
         ],
         [
          "T2",
-         "Confined to kidney <b>&gt;7 cm</b> &mdash; T2a 7&ndash;10 cm, T2b &gt;10 cm"
+         "Confined to kidney, <b>&gt;7 cm</b> &mdash; T2a &le;10 cm, T2b &gt;10 cm"
         ],
         [
          "T3",
-         "Into major veins or perinephric tissue, <b>not</b> beyond Gerota's &mdash; <b>a</b> renal vein / pelvicalyceal / sinus fat &middot; <b>b</b> IVC below diaphragm &middot; <b>c</b> IVC above diaphragm or caval wall"
+         "Major veins or perinephric fat, not beyond Gerota's &mdash; <b>a</b> renal vein / sinus or perirenal fat &middot; <b>b</b> IVC below diaphragm &middot; <b>c</b> IVC above diaphragm or caval wall"
         ],
         [
          "T4",
@@ -57,40 +49,40 @@
         ],
         [
          "Stage",
-         "<b>I</b> T1N0 &middot; <b>II</b> T2N0 &middot; <b>III</b> T1&ndash;2N1 or T3 any N &middot; <b>IV</b> T4 or any M1"
+         "<b>I</b> T1N0 &middot; <b>II</b> T2N0 &middot; <b>III</b> T1&ndash;2N1 or T3 any N &middot; <b>IV</b> T4 or M1"
         ]
-       ]
+       ],
+       "footnote": "<b>Grade (WHO/ISUP) is nucleolar:</b> G1&ndash;G3 by nucleolar prominence at 400&times;/100&times;; <b>G4 = marked pleomorphism, giant cells, rhabdoid or sarcomatoid</b>."
       },
       {
        "type": "table",
-       "heading": "IMDC risk &mdash; 6 factors",
+       "heading": "IMDC risk &mdash; the 6 factors",
        "widths": [
         "50%",
         ""
        ],
        "rows": [
         [
-         "KPS &lt;80",
-         "Hemoglobin &lt; LLN"
+         "<b>KPS &lt;80%</b>",
+         "<b>Hemoglobin &lt; LLN</b>"
         ],
         [
-         "Dx &rarr; treatment <b>&lt;1 year</b>",
-         "Calcium &gt; ULN"
+         "<b>Diagnosis &rarr; systemic tx &lt;1 year</b>",
+         "<b>Calcium &gt; ULN</b> (corrected)"
         ],
         [
-         "Neutrophils &gt; ULN",
-         "Platelets &gt; ULN"
+         "<b>Neutrophils &gt; ULN</b>",
+         "<b>Platelets &gt; ULN</b>"
         ]
        ],
-       "footnote": "<b>Favorable = 0 &middot; Intermediate = 1&ndash;2 &middot; Poor = &ge;3.</b> Three of the six are simple counts &mdash; neutrophils, platelets, hemoglobin."
+       "footnote": "<b>Favorable = 0 &middot; Intermediate = 1&ndash;2 &middot; Poor = &ge;3.</b> Two clinical + four labs. <b>Prognostic, and it is how the 1L trials were stratified</b> &mdash; but it does not predict IO vs TKI benefit except that ipi/nivo underperforms in favorable risk."
       },
       {
        "type": "bullets",
-       "heading": "&dagger; Pearls",
+       "heading": "After nephrectomy",
        "items": [
-        "<b>Cytoreductive nephrectomy is no longer routine</b> &mdash; CARMENA showed sunitinib alone non-inferior to nephrectomy + sunitinib in int/poor risk. Reserve it for good-performance patients with limited metastatic burden and a large symptomatic primary",
-        "<b>Sarcomatoid features</b> carry a poor prognosis but are the one histologic feature that predicts <b>unusually good response to IO</b> &mdash; favor ipi/nivo",
-        "<b>Bone and brain metastases are common</b>; TKIs do not treat CNS disease &mdash; image the brain before starting therapy in symptomatic patients"
+        "<b>Surveillance</b> (NCCN, risk-adapted): history, labs and chest/abdominal imaging every 3&ndash;6 months for ~3 years after stage II&ndash;III, then annually to year 5 and beyond &mdash; <b>RCC recurs late</b>, sometimes a decade or more after surgery",
+        "<b>Unusual metastatic sites are classic:</b> pancreas, thyroid, adrenal, skin, and hypervascular brain lesions that bleed"
        ]
       }
      ]
@@ -107,28 +99,50 @@
          "color": "teal",
          "boxes": [
           [
-           "Surgery, then adjuvant or surveillance",
+           "Resect (or surveil the small mass)",
            [
-            "&dagger; T1a: <b>partial nephrectomy</b> (or ablation / AS)",
-            "T1b&ndash;T4: partial if feasible, else radical",
-            "ccRCC II G4 &plusmn; sarcomatoid or III: <b>adjuvant pembro</b>",
-            "<b>non-clear cell II&ndash;III: surveillance only</b>"
+            "T1a: <b>partial nephrectomy</b>, ablation &lt;3 cm, or AS",
+            "T1b&ndash;T3: partial if feasible, else radical",
+            "renal vein / IVC thrombus: still resectable"
+           ]
+          ],
+          [
+           "Adjuvant &mdash; clear cell, increased risk",
+           [
+            "pT2 G4/sarcomatoid, &ge;pT3, N+, or M1 NED",
+            "<b>pembrolizumab &times;1 yr</b> (KEYNOTE-564, OS HR 0.62)",
+            "<b>or pembro + belzutifan</b> (LITESPARK-022, FDA 6/2026)",
+            "<b>non-clear cell: surveillance</b> &mdash; no adjuvant data"
            ]
           ]
          ]
         },
         {
-         "header": "Metastatic clear cell &mdash; first line",
+         "header": "Metastatic clear cell &mdash; first line by IMDC",
          "color": "purple",
          "boxes": [
           [
-           "Approved across all IMDC risk groups",
+           "Favorable (0 factors)",
            [
-            "<b>ipilimumab + nivolumab</b> (CheckMate 214)",
-            "<b>lenvatinib + pembrolizumab</b> (CLEAR)",
-            "axitinib + pembro &middot; cabozantinib + nivolumab",
-            "<b>int/poor:</b> ipi/nivo strongest OS; or cabo alone",
-            "&dagger; <b>favorable:</b> IO/TKI favored over ipi/nivo"
+            "<b>IO/TKI:</b> pembro + axitinib, nivo + cabozantinib,",
+            "or lenvatinib + pembro",
+            "<b>not ipi/nivo</b> (ORR 30% vs 52% for sunitinib)",
+            "indolent, low-volume: active surveillance"
+           ]
+          ],
+          [
+           "Intermediate (1&ndash;2) / poor (&ge;3)",
+           [
+            "<b>ipi/nivo</b> (8-yr OS HR 0.69) <b>or any IO/TKI</b>",
+            "sarcomatoid: IO combination, not TKI alone",
+            "IO-ineligible: <b>cabozantinib</b> (CABOSUN)",
+            "<b>no triplet</b> &mdash; COSMIC-313 had no OS gain"
+           ]
+          ],
+          [
+           "Cytoreductive nephrectomy",
+           [
+            "selected only &mdash; usually deferred after response"
            ]
           ]
          ]
@@ -138,144 +152,167 @@
          "color": "blue",
          "boxes": [
           [
-           "ccRCC: sequence by what came before",
+           "After IO (1L or adjuvant)",
            [
-            "<b>IO-naive:</b> use any first-line regimen",
-            "<b>prior IO:</b> single agents or lenva + everolimus",
-            "after IO <b>and</b> VEGF TKI: <b>belzutifan</b>",
-            "&ge;2 prior lines: <b>tivozanib</b>"
+            "<b>switch to a VEGF TKI</b>: cabozantinib, axitinib,",
+            "lenvatinib + everolimus; tivozanib after &ge;2 lines",
+            "<b>belzutifan</b> after IO + VEGF TKI",
+            "<b>do not add IO back</b> (CONTACT-03, TiNivo-2)",
+            "belz + lenvatinib: FDA decision due 4 Oct 2026"
            ]
           ],
           [
-           "Non-clear cell: trial is NCCN preferred",
+           "Non-clear cell &mdash; trial preferred",
            [
-            "cabozantinib &plusmn; nivolumab &middot; lenva + pembro",
-            "<b>HLRCC: erlotinib+bev &middot; TSC: everolimus</b>",
-            "<b>VHL: belzutifan</b>"
+            "papillary: <b>cabozantinib</b> (PAPMET)",
+            "lenva + pembro or cabo + nivo (single-arm)",
+            "collecting duct / medullary: <b>gem + platinum</b>",
+            "HLRCC: <b>erlotinib + bevacizumab</b>"
            ]
           ]
          ]
         }
        ]
-      },
-      {
-       "type": "note",
-       "html": "<b>No predictive biomarker.</b> PD-L1, TMB and MSI do not select therapy &mdash; the only biomarker-directed choices are syndromic. <b>CABOSUN and PAPMET are randomized phase 2</b>, not phase 3."
       }
      ]
     },
     {
-     "width": "39%",
+     "width": "36%",
      "blocks": [
       {
        "type": "table",
-       "heading": "Adjuvant and first-line clear cell",
+       "heading": "Histology",
        "headers": [
-        "Regimen",
-        "Dosing",
-        "Cycle"
+        "Subtype",
+        "Biology &middot; what it means"
        ],
        "widths": [
-        "27%",
-        "",
-        "16%"
+        "25%",
+        ""
        ],
        "rows": [
         [
-         "<b>Pembrolizumab</b> (adjuvant)",
-         "300 mg or 600 mg IV",
-         "q3wk / q6wk"
+         "<b>Clear cell</b> <span class='r'>~75%</span>",
+         "<b>VHL loss (3p) &rarr; HIF-2&alpha; accumulation &rarr; VEGF</b>. Why VEGF TKIs, IO and belzutifan work; chemo-resistant"
         ],
         [
-         "Sunitinib (adjuvant)",
-         "50 mg PO days 1&ndash;28",
-         "q42d"
+         "<b>Papillary</b> <span class='r'>~10&ndash;15%</span>",
+         "MET-driven subset (chr 7 gain, MET alterations). <b>Cabozantinib</b> best randomized data"
         ],
         [
-         "<b>Ipilimumab + nivolumab</b>",
-         "Ipi 1 mg/kg IV &times;4; nivo 3 mg/kg &times;4, then 240 or 480 mg",
-         "q3wk &times;4, then q2/q4wk"
+         "<b>Chromophobe</b> <span class='r'>~5%</span>",
+         "Usually indolent; <b>IO barely works</b>. BHD (FLCN) association"
         ],
         [
-         "<b>Lenvatinib + pembrolizumab</b>",
-         "Lenvatinib 20 mg PO daily; pembro 200 or 400 mg IV",
-         "q3wk / q6wk"
+         "<b>Collecting duct</b> <span class='r'>&lt;1%</span>",
+         "Aggressive, often metastatic at diagnosis &mdash; <b>treat like urothelial: gemcitabine + platinum</b>"
         ],
         [
-         "Axitinib + pembrolizumab",
-         "Axitinib 5 mg PO BID; pembro 200 or 400 mg IV",
-         "q3wk / q6wk"
+         "<b>Renal medullary</b> <span class='r'>&lt;1%</span>",
+         "<b>Young patients with sickle cell trait</b>; SMARCB1 (INI1) loss. Platinum-based chemo; dismal prognosis"
         ],
         [
-         "Cabozantinib + nivolumab",
-         "Cabozantinib 40 mg PO daily; nivo 240 or 480 mg IV",
-         "q2wk / q4wk"
+         "<b>FH-deficient</b>",
+         "HLRCC-associated (formerly 'type 2 papillary'); <b>metastasizes when small</b>"
         ],
         [
-         "Axitinib + avelumab",
-         "Axitinib 5 mg PO BID; avelumab 10 mg/kg IV",
-         "q2wk"
+         "<b>Translocation</b>",
+         "TFE3/TFEB (MiT family); children and young adults"
         ],
         [
-         "Cabozantinib single agent",
-         "60 mg PO daily",
-         "continuous"
-        ],
-        [
-         "Pazopanib &middot; sunitinib",
-         "800 mg PO daily &middot; 50 mg PO days 1&ndash;28",
-         "daily &middot; q42d"
-        ]
-       ],
-       "footnote": "IO is capped at <b>24 months</b> across these regimens. Historical: temsirolimus 25 mg IV weekly (ARCC) and high-dose IL-2 600,000 IU/kg IV q8h days 1&ndash;5 and 15&ndash;19, inpatient, ORR 14%."
-      },
-      {
-       "type": "table",
-       "heading": "Later lines and non-clear cell",
-       "headers": [
-        "Regimen",
-        "Dosing",
-        "Cycle"
-       ],
-       "widths": [
-        "27%",
-        "",
-        "16%"
-       ],
-       "rows": [
-        [
-         "Lenvatinib + everolimus",
-         "Lenvatinib 18 mg + everolimus 5 mg PO daily",
-         "continuous"
-        ],
-        [
-         "<b>Belzutifan</b>",
-         "120 mg PO daily &mdash; after IO <b>and</b> VEGF TKI",
-         "continuous"
-        ],
-        [
-         "<b>Tivozanib</b>",
-         "1.34 mg PO &mdash; 3 wk on, 1 wk off, after &ge;2 lines",
-         "q4wk"
-        ],
-        [
-         "Axitinib",
-         "5 mg PO BID &rarr; <b>7 mg BID if BP &le;150/90</b>, max 10 mg BID",
-         "continuous"
-        ],
-        [
-         "<b>Erlotinib + bevacizumab</b>",
-         "Erlotinib 150 mg PO daily; bev 10 mg/kg IV &mdash; FH-deficient / HLRCC",
-         "q2wk"
+         "<b>Sarcomatoid</b> <span class='r'>any subtype</span>",
+         "Not a subtype but dedifferentiation &mdash; <b>poor prognosis, yet the best responders to IO</b>"
         ]
        ]
       },
       {
+       "type": "bullets",
+       "heading": "Localized disease &amp; surgery",
+       "items": [
+        "<b>Small renal mass (&le;4 cm): active surveillance is legitimate</b>, especially in the elderly or comorbid &mdash; many are benign or indolent. Serial imaging; intervene for growth (~&gt;5 mm/yr) or size &gt;3&ndash;4 cm. <b>Ablation</b> (cryo/RFA) for &lt;3 cm",
+        "<b>Partial nephrectomy preferred for T1a</b> (and T1b when feasible) to protect renal function. The one RCT, <b>EORTC 30904</b>, did not show OS non-inferiority (10-yr OS 75.7% vs 81.1%) but was underpowered &mdash; nephron-sparing remains standard",
+        "<b>IVC tumor thrombus is not a contraindication</b> to resection. Lymphadenectomy has no proven OS benefit; no role for adjuvant RT",
+        "<b>Cytoreductive nephrectomy is no longer routine:</b> CARMENA &mdash; sunitinib alone non-inferior (OS 18.4 vs 13.9 mo); SURTIME &mdash; deferred CN after 3 cycles of sunitinib gave longer OS (exploratory). Keep it for good PS, low-volume disease, symptomatic primary, or a responder with residual primary",
+        "<b>Metastasectomy / SBRT</b> for oligometastatic disease, especially with a long disease-free interval"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>No chemotherapy for clear cell</b> &mdash; the only chemo-sensitive RCCs are collecting duct and medullary",
+        "<b>Renal mass + sickle cell trait in a young Black patient = medullary carcinoma</b> until proven otherwise",
+        "<b>Belzutifan is the VHL drug</b> (hereditary) <b>and</b> a later-line drug in sporadic ccRCC &mdash; same target, HIF-2&alpha;",
+        "<b>Cabozantinib appears at every step:</b> 1L (with nivo or alone), 2L after IO (METEOR, CONTACT-03 control arm), and papillary (PAPMET)"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; the evidence: adjuvant (including the negatives), first line, later lines, non-clear cell and hereditary RCC",
+   "columns": [
+    {
+     "width": "50%",
+     "blocks": [
+      {
        "type": "table",
-       "heading": "Landmark trials",
+       "heading": "Adjuvant &mdash; why KEYNOTE-564 stood alone",
        "headers": [
         "Trial",
-        "Result"
+        "Agent &middot; result"
+       ],
+       "widths": [
+        "19%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>KEYNOTE-564</b>",
+         "<b>Pembrolizumab &times;1 yr vs placebo</b> &mdash; DFS HR 0.68; <b>OS HR 0.62</b> (48-mo OS 91.2% vs 86.0%). The first adjuvant therapy in RCC with an OS benefit"
+        ],
+        [
+         "<b>LITESPARK-022</b>",
+         "<b>Pembro + belzutifan vs pembro</b> &mdash; DFS HR 0.72, 24-mo DFS 80.7% vs 73.7%. <b>OS immature</b> (HR 0.78, NS); grade &ge;3 AEs <b>52% vs 30%</b>. FDA approved 12 Jun 2026"
+        ],
+        [
+         "RAMPART <span class='r'>abstract only</span>",
+         "Durvalumab + tremelimumab vs monitoring &mdash; DFS HR 0.65; <b>durvalumab alone NS</b> (HR 0.74). Not approved"
+        ],
+        [
+         "CheckMate 914 A",
+         "Nivo + ipi &times;24 wk &mdash; <b>DFS HR 0.92, negative</b>; 32% stopped for toxicity, 4 treatment deaths"
+        ],
+        [
+         "CheckMate 914 B",
+         "Nivolumab alone &mdash; <b>DFS HR 0.87, negative</b>"
+        ],
+        [
+         "PROSPER",
+         "One neoadjuvant nivo dose + 9 adjuvant &mdash; <b>RFS HR 0.94, stopped for futility</b> (included non-clear cell)"
+        ],
+        [
+         "IMmotion010",
+         "Atezolizumab &times;1 yr &mdash; <b>DFS HR 0.93, negative</b>"
+        ],
+        [
+         "S-TRAC",
+         "Sunitinib &times;1 yr &mdash; DFS 6.8 vs 5.6 yr (HR 0.76), <b>no OS benefit</b> (HR 0.92). FDA-approved 2017, rarely used"
+        ],
+        [
+         "ASSURE &middot; PROTECT &middot; ATLAS",
+         "Sunitinib or sorafenib (DFS HR 1.02 / 0.97) &middot; pazopanib (HR 0.86) &middot; axitinib (HR 0.87, stopped for futility) &mdash; <b>all negative</b>"
+        ]
+       ],
+       "footnote": "<b>Candidate explanations</b> for the IO split &mdash; anti-PD-1 vs anti-PD-L1, inclusion of resected M1 NED patients, adding CTLA-4 toxicity, PROSPER's single neoadjuvant dose &mdash; <b>none is proven</b>. Adjuvant therapy is for clear cell only."
+      },
+      {
+       "type": "table",
+       "heading": "First-line clear cell &mdash; all vs sunitinib unless stated",
+       "headers": [
+        "Regimen &middot; trial",
+        "Long-term result"
        ],
        "widths": [
         "22%",
@@ -283,42 +320,380 @@
        ],
        "rows": [
         [
-         "KEYNOTE-564",
-         "Adjuvant pembro, high-risk ccRCC &mdash; 48-mo DFS <b>64.9% vs 56.6%</b>, OS <b>91.2% vs 86%</b> (HR 0.72)"
+         "<b>Ipi + nivo</b> <span class='r'>CheckMate 214</span>",
+         "<b>Int/poor:</b> OS HR 0.69 at 8 yr, CR 11.8% vs 2.6%, median DOR 82.8 mo &mdash; the most durable tail. <b>Favorable:</b> OS HR 0.82 (NS), ORR 30% vs 52%. PFS co-primary missed its &alpha;"
         ],
         [
-         "CheckMate 214",
-         "Ipi/nivo vs sunitinib, <b>int/poor</b> &mdash; OS <b>47.0 vs 26.6 mo</b>, CR 11% vs 2%; <b>no benefit in favorable risk</b>"
+         "<b>Pembro + axitinib</b> <span class='r'>KEYNOTE-426</span>",
+         "Final (43 mo): <b>OS HR 0.73</b>, PFS HR 0.68, ORR 60% vs 40%. All risk groups"
         ],
         [
-         "CLEAR",
-         "Lenva/pembro &mdash; PFS <b>23.9 vs 9.2 mo</b>, ORR 71.3% vs 36.7% (longest 1L PFS reported)"
+         "<b>Nivo + cabozantinib</b> <span class='r'>CheckMate 9ER</span>",
+         "Final (5.6 yr): <b>OS 46.5 vs 35.5 mo, HR 0.79</b>; PFS 16.4 vs 8.3 mo; ORR 55.7% vs 27.4%, CR 13.9%. Best QoL data"
         ],
         [
-         "KEYNOTE-426 &middot; CheckMate 9ER",
-         "Axi/pembro OS 46 vs 40 mo &middot; cabo/nivo OS 46.5 vs 36 mo, both vs sunitinib"
+         "<b>Lenvatinib + pembro</b> <span class='r'>CLEAR</span>",
+         "<b>PFS 23.9 vs 9.2 mo</b> (HR 0.47), ORR 71.3% &mdash; highest response rate. Final OS HR 0.79, <b>medians equal</b> (53.7 vs 54.3 mo)"
         ],
         [
-         "LITESPARK-005",
-         "Belzutifan after IO + TKI &mdash; ORR 21.9% vs 3.5%; <b>median PFS 5.6 mo in both arms; OS failed</b>"
+         "Cabo + nivo + ipi <span class='r'>COSMIC-313</span>",
+         "vs ipi/nivo, int/poor &mdash; PFS 16.6 vs 11.2 mo (HR 0.82) but <b>OS HR 1.02</b>, grade 3&ndash;4 AEs 79% vs 56%. <b>Triplet rejected</b>"
+        ],
+        [
+         "Cabozantinib <span class='r'>CABOSUN</span>",
+         "Int/poor, <b>randomized phase 2</b> &mdash; PFS 8.2 vs 5.6 mo. The IO-ineligible option"
+        ]
+       ],
+       "footnote": "<b>No head-to-head trial between IO combinations and no predictive biomarker</b> (PD-L1 does not select). Pick by risk group, comorbidity, and whether you want response (IO/TKI) or a durable treatment-free tail (ipi/nivo)."
+      },
+      {
+       "type": "bullets",
+       "heading": "Choosing among the first-line regimens",
+       "items": [
+        "<b>Symptomatic, bulky, or need a response now</b> &rarr; IO/TKI; <b>lenvatinib + pembro</b> has the highest ORR and longest PFS",
+        "<b>Int/poor risk, want a chance at a durable treatment-free remission</b> &rarr; <b>ipi/nivo</b>; also avoids chronic TKI toxicity. Expect front-loaded irAEs",
+        "<b>Favorable risk</b> &rarr; IO/TKI (ipi/nivo lost on ORR and PFS); indolent low-volume disease can be watched",
+        "<b>Autoimmune disease, transplant, or IO-ineligible</b> &rarr; cabozantinib (int/poor) or sunitinib/pazopanib",
+        "<b>Relapse after adjuvant pembrolizumab:</b> no randomized data &mdash; most use a VEGF TKI-based regimen, especially if relapse occurs on or soon after IO"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "50%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Second line and beyond",
+       "headers": [
+        "Trial",
+        "Setting &middot; result"
+       ],
+       "widths": [
+        "19%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>LITESPARK-011</b>",
+         "<b>Belzutifan + lenvatinib vs cabozantinib</b> after anti-PD-(L)1 &mdash; PFS 14.8 vs 10.7 mo (HR 0.70), ORR ~53% vs ~40%; <b>interim OS HR 0.85, not significant</b> (final pending). FDA action date 4 Oct 2026"
+        ],
+        [
+         "<b>LITESPARK-005</b>",
+         "<b>Belzutifan vs everolimus</b> after IO + TKI &mdash; ORR 21.9% vs 3.5%, 18-mo PFS 24% vs 8%, but <b>median PFS 5.6 mo in both</b> and <b>OS HR 0.88, NS</b>. FDA 14 Dec 2023"
+        ],
+        [
+         "<b>METEOR</b>",
+         "<b>Cabozantinib vs everolimus</b> after VEGF TKI &mdash; OS 21.4 vs 16.5 mo (HR 0.66), PFS HR 0.51"
+        ],
+        [
+         "<b>CheckMate 025</b>",
+         "<b>Nivolumab vs everolimus</b> after VEGF TKI &mdash; OS 25.0 vs 19.6 mo (HR 0.73); the IO-naive 2L option"
+        ],
+        [
+         "Study 205",
+         "<b>Lenvatinib + everolimus</b> vs everolimus, randomized phase 2 &mdash; PFS 14.6 vs 5.5 mo (HR 0.40)"
         ],
         [
          "TIVO-3",
-         "Tivozanib after &ge;2 lines &mdash; PFS 5.6 vs 3.9 mo, <b>no OS benefit</b>"
+         "<b>Tivozanib vs sorafenib</b> after &ge;2 lines &mdash; PFS 5.6 vs 3.9 mo; <b>no OS benefit</b>"
         ],
         [
-         "SWOG 1500 (PAPMET)",
-         "<b>Papillary</b> &mdash; cabozantinib PFS 9.0 vs 5.6 mo; MET inhibitors failed"
+         "<b>CONTACT-03</b>",
+         "Atezolizumab + cabo vs cabo after IO &mdash; <b>PFS HR 1.03, OS HR 0.94: negative</b>"
         ],
         [
-         "S-TRAC",
-         "Adjuvant sunitinib &mdash; DFS 6.8 vs 5.6 yr, no OS benefit"
+         "<b>TiNivo-2</b>",
+         "Tivozanib + nivolumab vs tivozanib after IO &mdash; <b>PFS 5.7 vs 7.4 mo, negative</b>"
+        ]
+       ],
+       "footnote": "<b>IO rechallenge does not work</b> &mdash; two negative phase 3s. After IO, the next drug is a VEGF TKI; belzutifan comes after IO + TKI."
+      },
+      {
+       "type": "table",
+       "heading": "Non-clear cell &mdash; mostly single-arm data",
+       "headers": [
+        "Histology / trial",
+        "Evidence"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Papillary</b> <span class='r'>SWOG S1500 (PAPMET)</span>",
+         "<b>Cabozantinib vs sunitinib</b>, randomized phase 2 &mdash; PFS 9.0 vs 5.6 mo (HR 0.60), ORR 23% vs 4%; OS NS. Savolitinib and crizotinib arms closed for futility"
+        ],
+        [
+         "Mixed nccRCC <span class='r'>KEYNOTE-B61</span>",
+         "<b>Lenvatinib + pembro</b>, single-arm &mdash; ORR 49% (51% at 2 yr), sarcomatoid 47%"
+        ],
+        [
+         "Mixed nccRCC <span class='r'>phase 2</span>",
+         "<b>Cabo + nivo</b> &mdash; ORR 47.5% papillary/unclassified; <b>0 of 7 chromophobe responded</b>"
+        ],
+        [
+         "Mixed nccRCC <span class='r'>KEYNOTE-427 B</span>",
+         "Pembrolizumab alone &mdash; ORR 26.7%, mPFS 4.2 mo"
+        ],
+        [
+         "<b>Chromophobe</b>",
+         "IO largely inactive; VEGF TKI &plusmn; mTOR (e.g., lenvatinib + everolimus). Trial preferred"
+        ],
+        [
+         "<b>Collecting duct &middot; medullary</b>",
+         "<b>Gemcitabine + cisplatin/carboplatin</b>; TKIs and IO rarely help. <b>Check sickle status in a young patient with a renal mass</b>"
+        ],
+        [
+         "<b>Sarcomatoid</b>",
+         "Use an <b>IO combination</b> whatever the parent histology &mdash; the highest CR rates in 1L subgroups"
         ]
        ]
       },
       {
-       "type": "note",
-       "html": "<b>&dagger; Surveillance</b> is not in the chapter &mdash; NCCN: exam, labs and cross-sectional imaging q3&ndash;6 mo &times;3 yr after resection of stage II&ndash;III, then annually to year 5."
+       "type": "table",
+       "heading": "Hereditary syndromes (all autosomal dominant)",
+       "headers": [
+        "Syndrome / gene",
+        "Renal tumor &middot; other features &middot; management"
+       ],
+       "widths": [
+        "19%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>VHL</b> <span class='r'>VHL, 3p</span>",
+         "<b>Clear cell, multifocal/bilateral</b>; CNS/retinal hemangioblastomas, pheochromocytoma, pNET, pancreatic cysts. <b>Belzutifan</b> (LITESPARK-004: RCC ORR 49%; FDA Aug 2021) spares repeated surgery; resect when the largest tumor reaches ~3 cm"
+        ],
+        [
+         "<b>HLRCC</b> <span class='r'>FH</span>",
+         "<b>FH-deficient RCC</b> &mdash; solitary, aggressive, metastasizes early: <b>excise promptly, no surveillance</b>. Cutaneous + uterine leiomyomas. Advanced: <b>erlotinib + bevacizumab</b> (ORR 72%, mPFS 21.1 mo)"
+        ],
+        [
+         "<b>Birt-Hogg-Dub&eacute;</b> <span class='r'>FLCN</span>",
+         "<b>Chromophobe / hybrid oncocytic</b>, bilateral; fibrofolliculomas, lung cysts &rarr; pneumothorax"
+        ],
+        [
+         "<b>Tuberous sclerosis</b> <span class='r'>TSC1/2</span>",
+         "<b>Angiomyolipomas</b> (rarely RCC); <b>everolimus</b>. Angiofibromas, SEGA, LAM"
+        ],
+        [
+         "<b>BAP1 TPDS</b> <span class='r'>BAP1</span>",
+         "Aggressive <b>clear cell</b>; uveal and cutaneous melanoma, mesothelioma"
+        ],
+        [
+         "<b>HPRC</b> <span class='r'>MET</span>",
+         "<b>Papillary</b>, multifocal and bilateral"
+        ],
+        [
+         "<b>Hereditary PGL/PCC</b> <span class='r'>SDHB/C/D</span>",
+         "<b>SDH-deficient RCC</b>; paraganglioma, pheochromocytoma, GIST"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 3 &mdash; regimen dosing, toxicity and monitoring, key trials",
+   "columns": [
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimen dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Adjuvant pembrolizumab</b> <span class='r'>KEYNOTE-564</span>",
+         "<b>200 mg IV q3wk &times;17</b> or 400 mg q6wk (~1 yr)"
+        ],
+        [
+         "<b>+ Belzutifan</b> <span class='r'>LITESPARK-022</span>",
+         "Belzutifan <b>120 mg PO daily &times;up to 54 wk</b> with pembrolizumab 200 q3wk / 400 q6wk &times;12 mo"
+        ],
+        [
+         "<b>Pembro + axitinib</b>",
+         "Axitinib <b>5 mg PO BID</b> (titrate to 7 then 10 mg BID if BP controlled) + pembrolizumab 200 mg q3wk / 400 q6wk, IO up to 2 yr"
+        ],
+        [
+         "<b>Ipi + nivo</b>",
+         "Nivolumab <b>3 mg/kg</b> + ipilimumab <b>1 mg/kg</b> IV <b>q3wk &times;4</b> &rarr; nivolumab 240 mg q2wk or 480 mg q4wk"
+        ],
+        [
+         "<b>Nivo + cabozantinib</b>",
+         "Cabozantinib <b>40 mg</b> PO daily (not 60) + nivolumab 240 q2wk / 480 q4wk, nivo max 2 yr"
+        ],
+        [
+         "<b>Lenvatinib + pembro</b>",
+         "Lenvatinib <b>20 mg</b> PO daily + pembrolizumab 200 q3wk / 400 q6wk, IO up to 2 yr"
+        ],
+        [
+         "<b>Cabozantinib</b>",
+         "<b>60 mg PO daily</b> on an empty stomach; hold &ge;3 wk before surgery"
+        ],
+        [
+         "<b>Belzutifan</b>",
+         "<b>120 mg PO daily</b> &mdash; after IO + VEGF TKI, and for VHL tumors"
+        ],
+        [
+         "Belzutifan + lenvatinib",
+         "120 mg + <b>20 mg</b> daily (LITESPARK-011; pending FDA)"
+        ],
+        [
+         "<b>Tivozanib</b>",
+         "<b>1.34 mg PO daily, 21 days on / 7 off</b> &mdash; after &ge;2 prior systemic lines"
+        ],
+        [
+         "Lenvatinib + everolimus",
+         "Lenvatinib <b>18 mg</b> + everolimus <b>5 mg</b> PO daily"
+        ],
+        [
+         "Axitinib alone",
+         "5 mg BID &rarr; 7 &rarr; 10 mg BID if BP &le;150/90 and tolerated"
+        ],
+        [
+         "<b>Sunitinib</b>",
+         "<b>50 mg PO daily, 4 wk on / 2 wk off</b> (or 2 on / 1 off for tolerance)"
+        ],
+        [
+         "<b>Pazopanib</b>",
+         "<b>800 mg PO daily</b>, empty stomach"
+        ],
+        [
+         "Nivolumab alone",
+         "240 mg q2wk or 480 mg q4wk"
+        ],
+        [
+         "Erlotinib + bevacizumab",
+         "Erlotinib 150 mg PO daily + bevacizumab 10 mg/kg IV q2wk &mdash; HLRCC / papillary"
+        ]
+       ],
+       "footnote": "Pembrolizumab in RCC is 200 mg q3wk or 400 mg q6wk &mdash; not 300/600. Historical: high-dose IL-2 (ORR ~14%, rare durable CRs), temsirolimus (poor-risk, ARCC)."
+      }
+     ]
+    },
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Toxicity &amp; monitoring",
+       "items": [
+        "<b>Hypertension is the signature VEGF-TKI toxicity</b> &mdash; control BP before starting, home BP log, add agents early rather than stopping the TKI. Urine protein with lenvatinib and bevacizumab",
+        "<b>Transaminitis on axitinib + pembrolizumab</b> (or cabo/lenva + IO): <b>hold both drugs</b>. TKI hepatitis resolves within days (short half-lives); <b>if ALT is not falling after ~1 week, or grade &ge;3, treat as immune hepatitis</b> with prednisone 1&ndash;2 mg/kg. Restart the TKI first at reduced dose; rechallenge IO only if it wasn't the culprit",
+        "<b>Pazopanib carries a boxed warning for hepatotoxicity</b> &mdash; LFTs before starting and every ~2 weeks through month 4; also QT prolongation",
+        "<b>Hypothyroidism</b> from both TKIs (sunitinib, axitinib, lenvatinib) and IO &mdash; TSH every 4&ndash;6 wk on treatment",
+        "<b>Belzutifan: on-target anemia</b> (HIF-2&alpha; drives EPO &mdash; decreased Hgb is the most common adverse reaction) and <b>hypoxia</b>: check Hgb and pulse oximetry at baseline and periodically; transfuse, hold or dose-reduce. <b>Boxed warning: embryo-fetal toxicity</b>, and it can make hormonal contraception ineffective",
+        "<b>Ipi/nivo:</b> front-loaded irAEs &mdash; colitis, hepatitis, hypophysitis, adrenal insufficiency. Check cortisol with fatigue or hyponatremia",
+        "<b>Cabozantinib:</b> diarrhea, hand-foot, stomatitis, wound-healing and bleeding &mdash; dose reductions to 40/20 mg are routine",
+        "<b>Sunitinib:</b> hand-foot, mucositis, cytopenias, cardiomyopathy. <b>mTOR inhibitors:</b> pneumonitis, hyperglycemia, hyperlipidemia",
+        "<b>Bone metastases</b> (lytic, ~1/3): zoledronic acid (renally dosed) or denosumab; <b>brain metastases</b> &mdash; SRS before or alongside systemic therapy"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Special situations",
+       "items": [
+        "<b>Brain metastases:</b> treat locally first (SRS or resection); patients with treated, stable brain mets can receive standard systemic therapy",
+        "<b>Dialysis / poor renal function:</b> IO needs no renal adjustment; dose-adjust zoledronic acid, and <b>denosumab carries a severe-hypocalcemia risk in advanced CKD</b>",
+        "<b>Pre-existing autoimmune disease or solid-organ transplant:</b> avoid IO; TKI monotherapy",
+        "<b>Surgery on a TKI:</b> hold cabozantinib &ge;3 wk before and resume only after wound healing; bevacizumab &ge;28 days"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "widths": [
+        "36%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>KEYNOTE-564</b>",
+         "Adjuvant pembrolizumab &mdash; DFS HR 0.68, <b>OS HR 0.62</b>"
+        ],
+        [
+         "<b>LITESPARK-022</b>",
+         "Adding belzutifan to adjuvant pembro &mdash; DFS HR 0.72, OS immature"
+        ],
+        [
+         "<b>CheckMate 914 &middot; PROSPER &middot; IMmotion010</b>",
+         "Adjuvant nivo &plusmn; ipi, perioperative nivo, atezolizumab &mdash; <b>all negative</b>"
+        ],
+        [
+         "<b>CheckMate 214</b>",
+         "Ipi/nivo, int/poor &mdash; 8-yr OS HR 0.69, durable CRs"
+        ],
+        [
+         "<b>CLEAR</b>",
+         "Lenva + pembro &mdash; PFS 23.9 vs 9.2 mo, ORR 71%"
+        ],
+        [
+         "<b>COSMIC-313</b>",
+         "Triplet cabo + ipi/nivo &mdash; PFS gain, <b>no OS gain</b>"
+        ],
+        [
+         "<b>CARMENA &middot; SURTIME</b>",
+         "Immediate cytoreductive nephrectomy not needed; defer and select"
+        ],
+        [
+         "<b>METEOR</b>",
+         "Cabozantinib after TKI &mdash; OS HR 0.66"
+        ],
+        [
+         "<b>LITESPARK-005 / -011</b>",
+         "Belzutifan after IO + TKI (ORR 22%); + lenvatinib post-IO, PFS HR 0.70"
+        ],
+        [
+         "<b>CONTACT-03 &middot; TiNivo-2</b>",
+         "IO rechallenge after IO &mdash; <b>no benefit</b>"
+        ],
+        [
+         "<b>PAPMET</b>",
+         "Papillary: cabozantinib beats sunitinib on PFS"
+        ],
+        [
+         "<b>LITESPARK-004</b>",
+         "Belzutifan in VHL disease &mdash; RCC ORR 49%"
+        ],
+        [
+         "<b>S-TRAC &middot; ASSURE</b>",
+         "Adjuvant sunitinib: DFS+ but no OS (S-TRAC); negative (ASSURE)"
+        ],
+        [
+         "<b>KEYNOTE-426 &middot; 9ER</b>",
+         "IO/TKI vs sunitinib &mdash; final OS HR 0.73 / 0.79"
+        ],
+        [
+         "<b>CheckMate 025</b>",
+         "Nivolumab after TKI &mdash; OS 25.0 vs 19.6 mo"
+        ],
+        [
+         "<b>NCI bev + erlotinib</b>",
+         "HLRCC papillary RCC &mdash; ORR 72%, mPFS 21.1 mo"
+        ],
+        [
+         "<b>EORTC 30904</b>",
+         "Partial vs radical nephrectomy &mdash; the only RCT; underpowered"
+        ]
+       ]
       }
      ]
     }
@@ -326,15 +701,24 @@
   }
  ],
  "headings": [
-  "&dagger; Workup",
-  "Genetics referral (NCCN)",
-  "Staging (AJCC)",
-  "IMDC risk &mdash; 6 factors",
-  "&dagger; Pearls",
+  "Workup",
+  "Staging (AJCC 8th)",
+  "IMDC risk &mdash; the 6 factors",
+  "After nephrectomy",
   "Treatment pathway",
-  "Adjuvant and first-line clear cell",
-  "Later lines and non-clear cell",
-  "Landmark trials"
+  "Histology",
+  "Localized disease &amp; surgery",
+  "Pearls",
+  "Adjuvant &mdash; why KEYNOTE-564 stood alone",
+  "First-line clear cell &mdash; all vs sunitinib unless stated",
+  "Choosing among the first-line regimens",
+  "Second line and beyond",
+  "Non-clear cell &mdash; mostly single-arm data",
+  "Hereditary syndromes (all autosomal dominant)",
+  "Regimen dosing",
+  "Toxicity &amp; monitoring",
+  "Special situations",
+  "Key trials"
  ],
- "text": "Renal cell carcinoma Two forks decide everything — clear cell vs non-clear cell histology, and IMDC risk . Localized disease is surgical; metastatic clear cell is an IO backbone (IO/IO or IO/TKI) with essentially no predictive biomarker Stanford Oncology Handbook 2025, GU: Renal Cell Carcinoma · NCCN Kidney Cancer · items marked † are outside the handbook chapter † Workup CT abdomen/pelvis with contrast (or MRI) defines T stage and venous extension; chest CT for staging. Brain/bone imaging only if symptomatic Renal mass biopsy is not required before nephrectomy — get it for small masses under surveillance/ablation, suspected lymphoma or metastasis, or before systemic therapy without surgery Labs feeding IMDC: CBC (Hgb, neutrophils, platelets), calcium , LDH, creatinine, LFTs Grade (WHO/ISUP) is nucleolar: G1 nucleoli inconspicuous at 400× · G2 conspicuous at 400× · G3 conspicuous at 100× · G4 pleomorphism, giant cells, rhabdoid or sarcomatoid Genetics referral (NCCN) RCC diagnosed at age <46 Bilateral or multifocal tumors ≥1 first- or second-degree relative with RCC Somatic NGS finds a gene with germline implications (BRCA1/2, Lynch, etc.) Staging (AJCC) T1 Confined to kidney <7 cm — T1a <4 cm, T1b 4–7 cm T2 Confined to kidney >7 cm — T2a 7–10 cm, T2b >10 cm T3 Into major veins or perinephric tissue, not beyond Gerota's — a renal vein / pelvicalyceal / sinus fat · b IVC below diaphragm · c IVC above diaphragm or caval wall T4 Beyond Gerota's fascia, incl. contiguous ipsilateral adrenal Stage I T1N0 · II T2N0 · III T1–2N1 or T3 any N · IV T4 or any M1 IMDC risk — 6 factors KPS <80 Hemoglobin < LLN Dx → treatment <1 year Calcium > ULN Neutrophils > ULN Platelets > ULN Favorable = 0 · Intermediate = 1–2 · Poor = ≥3. Three of the six are simple counts — neutrophils, platelets, hemoglobin. † Pearls Cytoreductive nephrectomy is no longer routine — CARMENA showed sunitinib alone non-inferior to nephrectomy + sunitinib in int/poor risk. Reserve it for good-performance patients with limited metastatic burden and a large symptomatic primary Sarcomatoid features carry a poor prognosis but are the one histologic feature that predicts unusually good response to IO — favor ipi/nivo Bone and brain metastases are common ; TKIs do not treat CNS disease — image the brain before starting therapy in symptomatic patients Treatment pathway Localized — stage I–III Surgery, then adjuvant or surveillance † T1a: partial nephrectomy (or ablation / AS) T1b–T4: partial if feasible, else radical ccRCC II G4 ± sarcomatoid or III: adjuvant pembro non-clear cell II–III: surveillance only Metastatic clear cell — first line Approved across all IMDC risk groups ipilimumab + nivolumab (CheckMate 214) lenvatinib + pembrolizumab (CLEAR) axitinib + pembro · cabozantinib + nivolumab int/poor: ipi/nivo strongest OS; or cabo alone † favorable: IO/TKI favored over ipi/nivo Later lines & non-clear cell ccRCC: sequence by what came before IO-naive: use any first-line regimen prior IO: single agents or lenva + everolimus after IO and VEGF TKI: belzutifan ≥2 prior lines: tivozanib Non-clear cell: trial is NCCN preferred cabozantinib ± nivolumab · lenva + pembro HLRCC: erlotinib+bev · TSC: everolimus VHL: belzutifan No predictive biomarker. PD-L1, TMB and MSI do not select therapy — the only biomarker-directed choices are syndromic. CABOSUN and PAPMET are randomized phase 2 , not phase 3. Adjuvant and first-line clear cell Regimen Dosing Cycle Pembrolizumab (adjuvant) 300 mg or 600 mg IV q3wk / q6wk Sunitinib (adjuvant) 50 mg PO days 1–28 q42d Ipilimumab + nivolumab Ipi 1 mg/kg IV ×4; nivo 3 mg/kg ×4, then 240 or 480 mg q3wk ×4, then q2/q4wk Lenvatinib + pembrolizumab Lenvatinib 20 mg PO daily; pembro 200 or 400 mg IV q3wk / q6wk Axitinib + pembrolizumab Axitinib 5 mg PO BID; pembro 200 or 400 mg IV q3wk / q6wk Cabozantinib + nivolumab Cabozantinib 40 mg PO daily; nivo 240 or 480 mg IV q2wk / q4wk Axitinib + avelumab Axitinib 5 mg PO BID; avelumab 10 mg/kg IV q2wk Cabozantinib single agent 60 mg PO daily continuous Pazopanib · sunitinib 800 mg PO daily · 50 mg PO days 1–28 daily · q42d IO is capped at 24 months across these regimens. Historical: temsirolimus 25 mg IV weekly (ARCC) and high-dose IL-2 600,000 IU/kg IV q8h days 1–5 and 15–19, inpatient, ORR 14%. Later lines and non-clear cell Regimen Dosing Cycle Lenvatinib + everolimus Lenvatinib 18 mg + everolimus 5 mg PO daily continuous Belzutifan 120 mg PO daily — after IO and VEGF TKI continuous Tivozanib 1.34 mg PO — 3 wk on, 1 wk off, after ≥2 lines q4wk Axitinib 5 mg PO BID → 7 mg BID if BP ≤150/90 , max 10 mg BID continuous Erlotinib + bevacizumab Erlotinib 150 mg PO daily; bev 10 mg/kg IV — FH-deficient / HLRCC q2wk Landmark trials Trial Result KEYNOTE-564 Adjuvant pembro, high-risk ccRCC — 48-mo DFS 64.9% vs 56.6% , OS 91.2% vs 86% (HR 0.72) CheckMate 214 Ipi/nivo vs sunitinib, int/poor — OS 47.0 vs 26.6 mo , CR 11% vs 2%; no benefit in favorable risk CLEAR Lenva/pembro — PFS 23.9 vs 9.2 mo , ORR 71.3% vs 36.7% (longest 1L PFS reported) KEYNOTE-426 · CheckMate 9ER Axi/pembro OS 46 vs 40 mo · cabo/nivo OS 46.5 vs 36 mo, both vs sunitinib LITESPARK-005 Belzutifan after IO + TKI — ORR 21.9% vs 3.5%; median PFS 5.6 mo in both arms; OS failed TIVO-3 Tivozanib after ≥2 lines — PFS 5.6 vs 3.9 mo, no OS benefit SWOG 1500 (PAPMET) Papillary — cabozantinib PFS 9.0 vs 5.6 mo; MET inhibitors failed S-TRAC Adjuvant sunitinib — DFS 6.8 vs 5.6 yr, no OS benefit † Surveillance is not in the chapter — NCCN: exam, labs and cross-sectional imaging q3–6 mo ×3 yr after resection of stage II–III, then annually to year 5."
+ "text": "Renal cell carcinoma Two forks decide everything — clear cell vs non-clear cell , and IMDC risk . Localized disease is surgical ± adjuvant pembrolizumab; metastatic clear cell gets an IO backbone (IO/TKI or ipi/nivo) with no predictive biomarker; after IO, switch mechanism — never re-add IO Compiled from the Stanford Oncology Handbook 2025, GU: Renal Cell Carcinoma (Ruiz SM, Fan AC) · NCCN · primary trial reports and FDA actions verified against PubMed, September 2026. Workup Most are found incidentally on imaging; the classic triad (flank pain, hematuria, mass) is seen in only ~10% Paraneoplastic: erythrocytosis (EPO), hypercalcemia (PTHrP), hypertension (renin), Stauffer syndrome (cholestasis without liver mets — resolves after nephrectomy) CT abdomen/pelvis with contrast (MRI if poor renal function, IVC thrombus, or to call fat in an angiomyolipoma) + chest CT . Brain MRI and bone scan when symptomatic or before systemic therapy in high-risk disease Biopsy is not required before nephrectomy for a solid enhancing mass — get it for small masses when it would change AS vs treatment, suspected lymphoma/metastasis/infection, or before systemic therapy without surgery Labs that feed IMDC: CBC with differential, calcium , plus LDH, creatinine, LFTs Genetics referral (NCCN): RCC at age ≤46 , bilateral or multifocal tumors, ≥1 first/second-degree relative with RCC, or a somatic hit with germline implications Staging (AJCC 8th) T1 Confined to kidney, ≤7 cm — T1a ≤4 cm, T1b >4–7 cm T2 Confined to kidney, >7 cm — T2a ≤10 cm, T2b >10 cm T3 Major veins or perinephric fat, not beyond Gerota's — a renal vein / sinus or perirenal fat · b IVC below diaphragm · c IVC above diaphragm or caval wall T4 Beyond Gerota's fascia, incl. contiguous ipsilateral adrenal Stage I T1N0 · II T2N0 · III T1–2N1 or T3 any N · IV T4 or M1 Grade (WHO/ISUP) is nucleolar: G1–G3 by nucleolar prominence at 400×/100×; G4 = marked pleomorphism, giant cells, rhabdoid or sarcomatoid . IMDC risk — the 6 factors KPS <80% Hemoglobin < LLN Diagnosis → systemic tx <1 year Calcium > ULN (corrected) Neutrophils > ULN Platelets > ULN Favorable = 0 · Intermediate = 1–2 · Poor = ≥3. Two clinical + four labs. Prognostic, and it is how the 1L trials were stratified — but it does not predict IO vs TKI benefit except that ipi/nivo underperforms in favorable risk. After nephrectomy Surveillance (NCCN, risk-adapted): history, labs and chest/abdominal imaging every 3–6 months for ~3 years after stage II–III, then annually to year 5 and beyond — RCC recurs late , sometimes a decade or more after surgery Unusual metastatic sites are classic: pancreas, thyroid, adrenal, skin, and hypervascular brain lesions that bleed Treatment pathway Localized — stage I–III Resect (or surveil the small mass) T1a: partial nephrectomy , ablation <3 cm, or AS T1b–T3: partial if feasible, else radical renal vein / IVC thrombus: still resectable Adjuvant — clear cell, increased risk pT2 G4/sarcomatoid, ≥pT3, N+, or M1 NED pembrolizumab ×1 yr (KEYNOTE-564, OS HR 0.62) or pembro + belzutifan (LITESPARK-022, FDA 6/2026) non-clear cell: surveillance — no adjuvant data Metastatic clear cell — first line by IMDC Favorable (0 factors) IO/TKI: pembro + axitinib, nivo + cabozantinib, or lenvatinib + pembro not ipi/nivo (ORR 30% vs 52% for sunitinib) indolent, low-volume: active surveillance Intermediate (1–2) / poor (≥3) ipi/nivo (8-yr OS HR 0.69) or any IO/TKI sarcomatoid: IO combination, not TKI alone IO-ineligible: cabozantinib (CABOSUN) no triplet — COSMIC-313 had no OS gain Cytoreductive nephrectomy selected only — usually deferred after response Later lines & non-clear cell After IO (1L or adjuvant) switch to a VEGF TKI : cabozantinib, axitinib, lenvatinib + everolimus; tivozanib after ≥2 lines belzutifan after IO + VEGF TKI do not add IO back (CONTACT-03, TiNivo-2) belz + lenvatinib: FDA decision due 4 Oct 2026 Non-clear cell — trial preferred papillary: cabozantinib (PAPMET) lenva + pembro or cabo + nivo (single-arm) collecting duct / medullary: gem + platinum HLRCC: erlotinib + bevacizumab Histology Subtype Biology · what it means Clear cell ~75% VHL loss (3p) → HIF-2&alpha; accumulation → VEGF . Why VEGF TKIs, IO and belzutifan work; chemo-resistant Papillary ~10–15% MET-driven subset (chr 7 gain, MET alterations). Cabozantinib best randomized data Chromophobe ~5% Usually indolent; IO barely works . BHD (FLCN) association Collecting duct <1% Aggressive, often metastatic at diagnosis — treat like urothelial: gemcitabine + platinum Renal medullary <1% Young patients with sickle cell trait ; SMARCB1 (INI1) loss. Platinum-based chemo; dismal prognosis FH-deficient HLRCC-associated (formerly 'type 2 papillary'); metastasizes when small Translocation TFE3/TFEB (MiT family); children and young adults Sarcomatoid any subtype Not a subtype but dedifferentiation — poor prognosis, yet the best responders to IO Localized disease & surgery Small renal mass (≤4 cm): active surveillance is legitimate , especially in the elderly or comorbid — many are benign or indolent. Serial imaging; intervene for growth (~>5 mm/yr) or size >3–4 cm. Ablation (cryo/RFA) for <3 cm Partial nephrectomy preferred for T1a (and T1b when feasible) to protect renal function. The one RCT, EORTC 30904 , did not show OS non-inferiority (10-yr OS 75.7% vs 81.1%) but was underpowered — nephron-sparing remains standard IVC tumor thrombus is not a contraindication to resection. Lymphadenectomy has no proven OS benefit; no role for adjuvant RT Cytoreductive nephrectomy is no longer routine: CARMENA — sunitinib alone non-inferior (OS 18.4 vs 13.9 mo); SURTIME — deferred CN after 3 cycles of sunitinib gave longer OS (exploratory). Keep it for good PS, low-volume disease, symptomatic primary, or a responder with residual primary Metastasectomy / SBRT for oligometastatic disease, especially with a long disease-free interval Pearls No chemotherapy for clear cell — the only chemo-sensitive RCCs are collecting duct and medullary Renal mass + sickle cell trait in a young Black patient = medullary carcinoma until proven otherwise Belzutifan is the VHL drug (hereditary) and a later-line drug in sporadic ccRCC — same target, HIF-2&alpha; Cabozantinib appears at every step: 1L (with nivo or alone), 2L after IO (METEOR, CONTACT-03 control arm), and papillary (PAPMET) Adjuvant — why KEYNOTE-564 stood alone Trial Agent · result KEYNOTE-564 Pembrolizumab ×1 yr vs placebo — DFS HR 0.68; OS HR 0.62 (48-mo OS 91.2% vs 86.0%). The first adjuvant therapy in RCC with an OS benefit LITESPARK-022 Pembro + belzutifan vs pembro — DFS HR 0.72, 24-mo DFS 80.7% vs 73.7%. OS immature (HR 0.78, NS); grade ≥3 AEs 52% vs 30% . FDA approved 12 Jun 2026 RAMPART abstract only Durvalumab + tremelimumab vs monitoring — DFS HR 0.65; durvalumab alone NS (HR 0.74). Not approved CheckMate 914 A Nivo + ipi ×24 wk — DFS HR 0.92, negative ; 32% stopped for toxicity, 4 treatment deaths CheckMate 914 B Nivolumab alone — DFS HR 0.87, negative PROSPER One neoadjuvant nivo dose + 9 adjuvant — RFS HR 0.94, stopped for futility (included non-clear cell) IMmotion010 Atezolizumab ×1 yr — DFS HR 0.93, negative S-TRAC Sunitinib ×1 yr — DFS 6.8 vs 5.6 yr (HR 0.76), no OS benefit (HR 0.92). FDA-approved 2017, rarely used ASSURE · PROTECT · ATLAS Sunitinib or sorafenib (DFS HR 1.02 / 0.97) · pazopanib (HR 0.86) · axitinib (HR 0.87, stopped for futility) — all negative Candidate explanations for the IO split — anti-PD-1 vs anti-PD-L1, inclusion of resected M1 NED patients, adding CTLA-4 toxicity, PROSPER's single neoadjuvant dose — none is proven . Adjuvant therapy is for clear cell only. First-line clear cell — all vs sunitinib unless stated Regimen · trial Long-term result Ipi + nivo CheckMate 214 Int/poor: OS HR 0.69 at 8 yr, CR 11.8% vs 2.6%, median DOR 82.8 mo — the most durable tail. Favorable: OS HR 0.82 (NS), ORR 30% vs 52%. PFS co-primary missed its &alpha; Pembro + axitinib KEYNOTE-426 Final (43 mo): OS HR 0.73 , PFS HR 0.68, ORR 60% vs 40%. All risk groups Nivo + cabozantinib CheckMate 9ER Final (5.6 yr): OS 46.5 vs 35.5 mo, HR 0.79 ; PFS 16.4 vs 8.3 mo; ORR 55.7% vs 27.4%, CR 13.9%. Best QoL data Lenvatinib + pembro CLEAR PFS 23.9 vs 9.2 mo (HR 0.47), ORR 71.3% — highest response rate. Final OS HR 0.79, medians equal (53.7 vs 54.3 mo) Cabo + nivo + ipi COSMIC-313 vs ipi/nivo, int/poor — PFS 16.6 vs 11.2 mo (HR 0.82) but OS HR 1.02 , grade 3–4 AEs 79% vs 56%. Triplet rejected Cabozantinib CABOSUN Int/poor, randomized phase 2 — PFS 8.2 vs 5.6 mo. The IO-ineligible option No head-to-head trial between IO combinations and no predictive biomarker (PD-L1 does not select). Pick by risk group, comorbidity, and whether you want response (IO/TKI) or a durable treatment-free tail (ipi/nivo). Choosing among the first-line regimens Symptomatic, bulky, or need a response now → IO/TKI; lenvatinib + pembro has the highest ORR and longest PFS Int/poor risk, want a chance at a durable treatment-free remission → ipi/nivo ; also avoids chronic TKI toxicity. Expect front-loaded irAEs Favorable risk → IO/TKI (ipi/nivo lost on ORR and PFS); indolent low-volume disease can be watched Autoimmune disease, transplant, or IO-ineligible → cabozantinib (int/poor) or sunitinib/pazopanib Relapse after adjuvant pembrolizumab: no randomized data — most use a VEGF TKI-based regimen, especially if relapse occurs on or soon after IO Second line and beyond Trial Setting · result LITESPARK-011 Belzutifan + lenvatinib vs cabozantinib after anti-PD-(L)1 — PFS 14.8 vs 10.7 mo (HR 0.70), ORR ~53% vs ~40%; interim OS HR 0.85, not significant (final pending). FDA action date 4 Oct 2026 LITESPARK-005 Belzutifan vs everolimus after IO + TKI — ORR 21.9% vs 3.5%, 18-mo PFS 24% vs 8%, but median PFS 5.6 mo in both and OS HR 0.88, NS . FDA 14 Dec 2023 METEOR Cabozantinib vs everolimus after VEGF TKI — OS 21.4 vs 16.5 mo (HR 0.66), PFS HR 0.51 CheckMate 025 Nivolumab vs everolimus after VEGF TKI — OS 25.0 vs 19.6 mo (HR 0.73); the IO-naive 2L option Study 205 Lenvatinib + everolimus vs everolimus, randomized phase 2 — PFS 14.6 vs 5.5 mo (HR 0.40) TIVO-3 Tivozanib vs sorafenib after ≥2 lines — PFS 5.6 vs 3.9 mo; no OS benefit CONTACT-03 Atezolizumab + cabo vs cabo after IO — PFS HR 1.03, OS HR 0.94: negative TiNivo-2 Tivozanib + nivolumab vs tivozanib after IO — PFS 5.7 vs 7.4 mo, negative IO rechallenge does not work — two negative phase 3s. After IO, the next drug is a VEGF TKI; belzutifan comes after IO + TKI. Non-clear cell — mostly single-arm data Histology / trial Evidence Papillary SWOG S1500 (PAPMET) Cabozantinib vs sunitinib , randomized phase 2 — PFS 9.0 vs 5.6 mo (HR 0.60), ORR 23% vs 4%; OS NS. Savolitinib and crizotinib arms closed for futility Mixed nccRCC KEYNOTE-B61 Lenvatinib + pembro , single-arm — ORR 49% (51% at 2 yr), sarcomatoid 47% Mixed nccRCC phase 2 Cabo + nivo — ORR 47.5% papillary/unclassified; 0 of 7 chromophobe responded Mixed nccRCC KEYNOTE-427 B Pembrolizumab alone — ORR 26.7%, mPFS 4.2 mo Chromophobe IO largely inactive; VEGF TKI ± mTOR (e.g., lenvatinib + everolimus). Trial preferred Collecting duct · medullary Gemcitabine + cisplatin/carboplatin ; TKIs and IO rarely help. Check sickle status in a young patient with a renal mass Sarcomatoid Use an IO combination whatever the parent histology — the highest CR rates in 1L subgroups Hereditary syndromes (all autosomal dominant) Syndrome / gene Renal tumor · other features · management VHL VHL, 3p Clear cell, multifocal/bilateral ; CNS/retinal hemangioblastomas, pheochromocytoma, pNET, pancreatic cysts. Belzutifan (LITESPARK-004: RCC ORR 49%; FDA Aug 2021) spares repeated surgery; resect when the largest tumor reaches ~3 cm HLRCC FH FH-deficient RCC — solitary, aggressive, metastasizes early: excise promptly, no surveillance . Cutaneous + uterine leiomyomas. Advanced: erlotinib + bevacizumab (ORR 72%, mPFS 21.1 mo) Birt-Hogg-Dub&eacute; FLCN Chromophobe / hybrid oncocytic , bilateral; fibrofolliculomas, lung cysts → pneumothorax Tuberous sclerosis TSC1/2 Angiomyolipomas (rarely RCC); everolimus . Angiofibromas, SEGA, LAM BAP1 TPDS BAP1 Aggressive clear cell ; uveal and cutaneous melanoma, mesothelioma HPRC MET Papillary , multifocal and bilateral Hereditary PGL/PCC SDHB/C/D SDH-deficient RCC ; paraganglioma, pheochromocytoma, GIST Regimen dosing Regimen Dosing Adjuvant pembrolizumab KEYNOTE-564 200 mg IV q3wk ×17 or 400 mg q6wk (~1 yr) + Belzutifan LITESPARK-022 Belzutifan 120 mg PO daily ×up to 54 wk with pembrolizumab 200 q3wk / 400 q6wk ×12 mo Pembro + axitinib Axitinib 5 mg PO BID (titrate to 7 then 10 mg BID if BP controlled) + pembrolizumab 200 mg q3wk / 400 q6wk, IO up to 2 yr Ipi + nivo Nivolumab 3 mg/kg + ipilimumab 1 mg/kg IV q3wk ×4 → nivolumab 240 mg q2wk or 480 mg q4wk Nivo + cabozantinib Cabozantinib 40 mg PO daily (not 60) + nivolumab 240 q2wk / 480 q4wk, nivo max 2 yr Lenvatinib + pembro Lenvatinib 20 mg PO daily + pembrolizumab 200 q3wk / 400 q6wk, IO up to 2 yr Cabozantinib 60 mg PO daily on an empty stomach; hold ≥3 wk before surgery Belzutifan 120 mg PO daily — after IO + VEGF TKI, and for VHL tumors Belzutifan + lenvatinib 120 mg + 20 mg daily (LITESPARK-011; pending FDA) Tivozanib 1.34 mg PO daily, 21 days on / 7 off — after ≥2 prior systemic lines Lenvatinib + everolimus Lenvatinib 18 mg + everolimus 5 mg PO daily Axitinib alone 5 mg BID → 7 → 10 mg BID if BP ≤150/90 and tolerated Sunitinib 50 mg PO daily, 4 wk on / 2 wk off (or 2 on / 1 off for tolerance) Pazopanib 800 mg PO daily , empty stomach Nivolumab alone 240 mg q2wk or 480 mg q4wk Erlotinib + bevacizumab Erlotinib 150 mg PO daily + bevacizumab 10 mg/kg IV q2wk — HLRCC / papillary Pembrolizumab in RCC is 200 mg q3wk or 400 mg q6wk — not 300/600. Historical: high-dose IL-2 (ORR ~14%, rare durable CRs), temsirolimus (poor-risk, ARCC). Toxicity & monitoring Hypertension is the signature VEGF-TKI toxicity — control BP before starting, home BP log, add agents early rather than stopping the TKI. Urine protein with lenvatinib and bevacizumab Transaminitis on axitinib + pembrolizumab (or cabo/lenva + IO): hold both drugs . TKI hepatitis resolves within days (short half-lives); if ALT is not falling after ~1 week, or grade ≥3, treat as immune hepatitis with prednisone 1–2 mg/kg. Restart the TKI first at reduced dose; rechallenge IO only if it wasn't the culprit Pazopanib carries a boxed warning for hepatotoxicity — LFTs before starting and every ~2 weeks through month 4; also QT prolongation Hypothyroidism from both TKIs (sunitinib, axitinib, lenvatinib) and IO — TSH every 4–6 wk on treatment Belzutifan: on-target anemia (HIF-2&alpha; drives EPO — decreased Hgb is the most common adverse reaction) and hypoxia : check Hgb and pulse oximetry at baseline and periodically; transfuse, hold or dose-reduce. Boxed warning: embryo-fetal toxicity , and it can make hormonal contraception ineffective Ipi/nivo: front-loaded irAEs — colitis, hepatitis, hypophysitis, adrenal insufficiency. Check cortisol with fatigue or hyponatremia Cabozantinib: diarrhea, hand-foot, stomatitis, wound-healing and bleeding — dose reductions to 40/20 mg are routine Sunitinib: hand-foot, mucositis, cytopenias, cardiomyopathy. mTOR inhibitors: pneumonitis, hyperglycemia, hyperlipidemia Bone metastases (lytic, ~1/3): zoledronic acid (renally dosed) or denosumab; brain metastases — SRS before or alongside systemic therapy Special situations Brain metastases: treat locally first (SRS or resection); patients with treated, stable brain mets can receive standard systemic therapy Dialysis / poor renal function: IO needs no renal adjustment; dose-adjust zoledronic acid, and denosumab carries a severe-hypocalcemia risk in advanced CKD Pre-existing autoimmune disease or solid-organ transplant: avoid IO; TKI monotherapy Surgery on a TKI: hold cabozantinib ≥3 wk before and resume only after wound healing; bevacizumab ≥28 days Key trials KEYNOTE-564 Adjuvant pembrolizumab — DFS HR 0.68, OS HR 0.62 LITESPARK-022 Adding belzutifan to adjuvant pembro — DFS HR 0.72, OS immature CheckMate 914 · PROSPER · IMmotion010 Adjuvant nivo ± ipi, perioperative nivo, atezolizumab — all negative CheckMate 214 Ipi/nivo, int/poor — 8-yr OS HR 0.69, durable CRs CLEAR Lenva + pembro — PFS 23.9 vs 9.2 mo, ORR 71% COSMIC-313 Triplet cabo + ipi/nivo — PFS gain, no OS gain CARMENA · SURTIME Immediate cytoreductive nephrectomy not needed; defer and select METEOR Cabozantinib after TKI — OS HR 0.66 LITESPARK-005 / -011 Belzutifan after IO + TKI (ORR 22%); + lenvatinib post-IO, PFS HR 0.70 CONTACT-03 · TiNivo-2 IO rechallenge after IO — no benefit PAPMET Papillary: cabozantinib beats sunitinib on PFS LITESPARK-004 Belzutifan in VHL disease — RCC ORR 49% S-TRAC · ASSURE Adjuvant sunitinib: DFS+ but no OS (S-TRAC); negative (ASSURE) KEYNOTE-426 · 9ER IO/TKI vs sunitinib — final OS HR 0.73 / 0.79 CheckMate 025 Nivolumab after TKI — OS 25.0 vs 19.6 mo NCI bev + erlotinib HLRCC papillary RCC — ORR 72%, mPFS 21.1 mo EORTC 30904 Partial vs radical nephrectomy — the only RCT; underpowered"
 }

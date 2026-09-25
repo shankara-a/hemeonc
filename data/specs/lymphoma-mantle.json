@@ -1,0 +1,471 @@
+{
+ "disease": "lymphoma-mantle",
+ "spec_file": "lymphoma_mantle.py",
+ "pdf": "Lymphoma - Mantle Cell.pdf",
+ "title": "Mantle cell lymphoma",
+ "subtitle": "<b>CD5+, cyclin D1+ B-cell lymphoma driven by t(11;14)</b> &middot; a spectrum from observable leukemic non-nodal disease to blastoid disease &middot; <b>TP53 status, Ki-67 and fitness &mdash; not stage &mdash; choose the therapy</b>; BTK inhibitors have displaced routine ASCT",
+ "source": "Compiled from the Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin &mdash; mantle cell (Chou L, Schroers-Martin J, Gupta NK) &middot; NCCN B-Cell Lymphomas v4.2026 &middot; primary trial reports and FDA actions verified against PubMed, September 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Diagnosis",
+       "items": [
+        "<b>Hallmark: t(11;14)(q13;q32), IGH::CCND1 &rarr; cyclin D1 overexpression</b> &mdash; show it by cyclin D1 IHC or FISH",
+        "<b>Phenotype: CD5+, CD20 bright, CD23&minus;, CD10&minus;, cyclin D1+, SOX11+.</b> CD23 negativity and cyclin D1 separate it from CLL, which is CD5+ CD23+",
+        "<b>Cyclin D1-negative MCL is real:</b> SOX11+, with a <b>CCND2 rearrangement in ~55%</b>. Diagnose it on SOX11 + morphology; treat as MCL <span class='r'>Salaverria, Blood 2013</span>",
+        "<b>SOX11 does double duty</b> &mdash; rescues the cyclin D1-negative diagnosis, and its <b>absence flags the indolent leukemic non-nodal form</b>"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "The spectrum &mdash; WHO-HAEM5 / ICC 2022",
+       "headers": [
+        "Form",
+        "Features &rarr; behavior"
+       ],
+       "widths": [
+        "27%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Classic (nodal)</b>",
+         "SOX11+, IGHV mostly unmutated; nodes + marrow, spleen, <b>GI tract</b> (lymphomatous polyposis). Chronic relapsing course"
+        ],
+        [
+         "<b>Leukemic non-nodal</b>",
+         "<b>SOX11&minus;, IGHV-mutated</b>, blood + marrow &plusmn; spleen, no significant adenopathy. <b>Indolent</b>: 5-yr OS <b>78% vs 36%</b> for SOX11+ <span class='r'>Fern&agrave;ndez 2010</span> &mdash; <b>observe</b> unless it acquires TP53 or goes nodal"
+        ],
+        [
+         "<b>Blastoid / pleomorphic</b>",
+         "High Ki-67, TP53 enriched, CNS-prone. <b>Treat as high risk</b>; blastoid adds nothing to prognosis once Ki-67 is known"
+        ],
+        [
+         "In situ mantle cell neoplasia",
+         "Cyclin D1+ cells confined to mantle zones of a reactive node &mdash; usually incidental; stage and observe"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "<b>PET/CT</b>, marrow biopsy with flow and t(11;14) FISH, CBC with smear (leukemic phase), LDH, &beta;2-microglobulin, HBV serology before anti-CD20",
+        "<b>TP53 by NGS (+ del(17p) FISH) and Ki-67 at diagnosis in every patient</b> &mdash; they pick the regimen, not the stage",
+        "<b>EGD + colonoscopy</b> for apparent stage I&ndash;II (to confirm limited disease) and when GI symptoms",
+        "<b>LP / brain MRI</b> if blastoid or neurologic symptoms. Echo before anthracycline"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>CD5+ CD23&minus; small B cells = send cyclin D1.</b> If cyclin D1&minus; but SOX11+, it is still MCL",
+        "<b>Send TP53 before choosing.</b> A TP53-mutant patient gets little from cytarabine + ASCT",
+        "<b>Rituximab maintenance is standard in MCL</b> after both intensive and BR induction &mdash; unlike follicular, its OS benefit (LyMa) was real at 4 yr, though attenuated at 7",
+        "<b>No BTKi-added frontline trial in older patients has shown OS gain</b> (SHINE, ECHO) &mdash; PFS gain costs toxicity",
+        "<b>Brexu-cel is the most active post-BTKi therapy</b> but the most neurotoxic; liso-cel trades a little efficacy for much less CRS/ICANS"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "MIPI &mdash; add the points",
+       "headers": [
+        "Pts",
+        "Age",
+        "ECOG",
+        "LDH / ULN",
+        "WBC &times;10<sup>9</sup>/L"
+       ],
+       "widths": [
+        "10%",
+        "18%",
+        "16%",
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "0",
+         "&lt;50",
+         "0&ndash;1",
+         "&lt;0.67",
+         "&lt;6.7"
+        ],
+        [
+         "1",
+         "50&ndash;59",
+         "&mdash;",
+         "0.67&ndash;0.99",
+         "6.7&ndash;9.99"
+        ],
+        [
+         "2",
+         "60&ndash;69",
+         "2&ndash;4",
+         "1.00&ndash;1.49",
+         "10&ndash;14.99"
+        ],
+        [
+         "3",
+         "&ge;70",
+         "&mdash;",
+         "&ge;1.50",
+         "&ge;15"
+        ]
+       ],
+       "footnote": "<b>Low 0&ndash;3</b> (44%; median OS not reached) &middot; <b>intermediate 4&ndash;5</b> (35%; 51 mo) &middot; <b>high 6&ndash;11</b> (21%; 29 mo). Hoster, Blood 2008 &mdash; pre-BTKi survival; use it to stratify, not to counsel."
+      },
+      {
+       "type": "bullets",
+       "heading": "Biology that overrides the score",
+       "items": [
+        "<b>TP53 mutation is the dominant adverse factor.</b> <span class='r'>11% in Nordic MCL2/3</span> Median OS <b>1.8 vs 12.7 yr</b>, OS HR 6.2; half relapsed within a year of cytarabine induction + ASCT <span class='r'>Eskelund, Blood 2017</span>",
+        "<b>Ki-67 &ge;30%</b> is the validated cutoff. <b>MIPI-c</b> = MIPI group + Ki-67 &rarr; 4 groups, 5-yr OS <b>85% / 72% / 43% / 17%</b> <span class='r'>Hoster, JCO 2016</span>",
+        "<b>Blastoid/pleomorphic cytology, complex karyotype, del(17p)</b> travel with TP53 and high Ki-67"
+       ]
+      },
+      {
+       "type": "note",
+       "html": "<b>Watch and wait is legitimate for selected patients</b> &mdash; leukemic non-nodal SOX11&minus; disease, or asymptomatic classic MCL with low burden, low Ki-67 and wild-type TP53. In a Weill Cornell series <b>32% were observed</b>; median time to treatment <b>12 mo (range 4&ndash;128)</b>, with no survival penalty (a selected cohort) <span class='r'>Martin, JCO 2009</span>."
+      },
+      {
+       "type": "note",
+       "html": "<b>ASCT in first remission is no longer default.</b> Its PFS benefit predates BTKi and maintenance. <b>TRIANGLE</b>: adding ASCT to ibrutinib gave no FFS gain and more toxicity. <b>EA4151</b>: in MRD-negative CR, ASCT + rituximab = rituximab alone (abstract only)."
+      },
+      {
+       "type": "bullets",
+       "heading": "Chemo-immunotherapy &mdash; infection and supportive care",
+       "items": [
+        "<b>Bendamustine is deeply immunosuppressive</b> &mdash; prolonged CD4 lymphopenia: <b>PJP (TMP-SMX) + VZV (acyclovir) prophylaxis</b>; ECHO grade 5 COVID-19 <b>9.4% vs 6.7%</b>. Rash with allopurinol",
+        "<b>Rituximab maintenance</b> &rarr; hypogammaglobulinemia and infection; check IgG, replace if recurrent infections. HBV prophylaxis if core Ab+",
+        "<b>Lenalidomide:</b> aspirin or anticoagulant VTE prophylaxis, renal dose adjustment"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "37%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Frontline &mdash; by biology, then fitness",
+         "color": "teal",
+         "boxes": [
+          [
+           "Indolent / low burden, TP53 wild-type",
+           [
+            "leukemic non-nodal, or low Ki-67 asymptomatic",
+            "<b>observe</b> &mdash; treat for symptoms or progression"
+           ]
+          ],
+          [
+           "Fit, &le;65&ndash;70, TP53 wild-type",
+           [
+            "<b>TRIANGLE</b>: R-CHOP + ibrutinib alternating with",
+            "R-DHAP (or R-DHAOx) &times;6 &rarr; <b>ibrutinib &times;2 yr</b>",
+            "&plusmn; rituximab q8wk &mdash; <b>ASCT can be omitted</b>",
+            "older standard: Nordic or R-DHAP &rarr; ASCT &rarr; R q2mo &times;3 yr"
+           ]
+          ],
+          [
+           "Older or unfit, TP53 wild-type",
+           [
+            "<b>acalabrutinib + BR</b> (ECHO) &rarr; R maintenance",
+            "BR &rarr; R maintenance &middot; VR-CAP &middot; RBAC500 (fit)",
+            "chemo-free: BTKi + rituximab (ENRICH)"
+           ]
+          ],
+          [
+           "<b>TP53-mutated</b>",
+           [
+            "<b>avoid chemo-heavy regimens and ASCT</b>",
+            "<b>clinical trial</b>, or BTKi-based: BOVen",
+            "(zanubrutinib + obinutuzumab + venetoclax)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Relapsed / refractory",
+         "color": "coral",
+         "boxes": [
+          [
+           "BTKi-naive",
+           [
+            "<b>covalent BTKi</b>: acalabrutinib or zanubrutinib",
+            "or ibrutinib + venetoclax (SYMPATICO, off-label)"
+           ]
+          ],
+          [
+           "After a covalent BTKi",
+           [
+            "<b>CAR-T</b>: brexu-cel or liso-cel (fit)",
+            "<b>pirtobrutinib</b> &mdash; bridge, or if CAR-T not possible",
+            "sonrotoclax &middot; R&sup2; &middot; glofitamab on trial"
+           ]
+          ],
+          [
+           "After CAR-T",
+           [
+            "allo-HCT if fit &middot; trials (bispecifics, BTK degraders)"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; the evidence (frontline by fitness; relapsed disease by agent and approval status), regimen dosing and toxicity",
+   "columns": [
+    {
+     "width": "37%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Frontline evidence",
+       "headers": [
+        "Trial",
+        "Result",
+        "How to read it"
+       ],
+       "widths": [
+        "16%",
+        "45%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>TRIANGLE</b> <span class='r'>&le;65, n=870</span>",
+         "Ibrutinib + ASCT (A+I) beat ASCT alone (A): 3-yr FFS <b>88% vs 72%</b>, HR 0.52. At 4.5 yr <b>A+I not better than ibrutinib without ASCT (I)</b>: 4-yr FFS 82% vs 81%. <b>4-yr OS 88&ndash;90% vs 81%</b> for either ibrutinib arm vs A (HR 0.57&ndash;0.59)",
+         "Primary endpoint is <b>FFS</b>. Maintenance grade 3&ndash;5 heme toxicity <b>54% A+I vs 28% I</b>. Uses ibrutinib, which has <b>no US MCL label</b>; applying it to acalabrutinib/zanubrutinib is extrapolation"
+        ],
+        [
+         "TRIANGLE R-maint <span class='r'>secondary</span>",
+         "Rituximab maintenance on top of ibrutinib: 4-yr PFS <b>85% vs 73%</b> (arm I)",
+         "Non-randomized; grade 3&ndash;5 infections <b>34% vs 11%</b>"
+        ],
+        [
+         "<b>LyMa</b> <span class='r'>&lt;66, n=240 rand.</span>",
+         "R-DHAP &rarr; ASCT &rarr; <b>rituximab q2mo &times;3 yr</b> vs observation: 4-yr EFS <b>79% vs 61%</b>, OS <b>89% vs 80%</b> (HR 0.50)",
+         "<b>The OS benefit is the one usually quoted &mdash; at 7 yr it is no longer significant</b> (83% vs 72%, HR 0.63, p=0.088); PFS gain holds (HR 0.36)"
+        ],
+        [
+         "<b>EA4151</b> <span class='r'>MRD&minus; CR1, n=516 rand.</span>",
+         "ASCT + R maintenance vs <b>R maintenance alone</b>: 3-yr OS <b>82.1% vs 82.7%</b> (HR 1.11); PFS 76.6% vs 77.4%. <b>Crossed futility</b>",
+         "<b>ASH 2024 abstract, not peer-reviewed.</b> Only 7% had BTKi induction; 25% assigned to ASCT declined it"
+        ],
+        [
+         "Nordic MCL2 <span class='r'>single-arm</span>",
+         "Maxi-R-CHOP / R-high-dose cytarabine &rarr; ASCT: median PFS <b>8.5 yr</b>, OS <b>12.7 yr</b>",
+         "No plateau &mdash; not curative"
+        ],
+        [
+         "<b>SHINE</b> <span class='r'>&ge;65, n=523</span>",
+         "Ibrutinib + BR &rarr; R maintenance: median PFS <b>80.6 vs 52.9 mo</b> (HR 0.75)",
+         "<b>No OS benefit</b> &mdash; excess adverse-event deaths; AF <b>13.9% vs 6.5%</b>"
+        ],
+        [
+         "<b>ECHO</b> <span class='r'>&ge;65, n=598</span>",
+         "Acalabrutinib + BR: median PFS <b>66.4 vs 49.6 mo</b> (HR 0.73). <b>Regular FDA approval, Jan 2025</b>",
+         "<b>No OS difference</b> (HR 0.86). AF 6.7% vs 4.4%; grade 5 COVID-19 9.4% vs 6.7%"
+        ],
+        [
+         "<b>ENRICH</b> <span class='r'>&ge;60, n=397</span>",
+         "Ibrutinib + rituximab vs R-chemo: PFS HR <b>0.69</b>. vs R-CHOP HR 0.37; <b>vs BR HR 0.91 (NS)</b>",
+         "Chemo-free BTKi-R <b>matches BR</b> and beats R-CHOP"
+        ],
+        [
+         "VR-CAP <span class='r'>n=487</span>",
+         "Bortezomib for vincristine in R-CHOP: PFS <b>24.7 vs 14.4 mo</b>; median OS <b>90.7 vs 55.7 mo</b> (HR 0.66)",
+         "The one older-patient trial with an OS gain &mdash; but vs R-CHOP, a weak comparator"
+        ],
+        [
+         "RBAC500 <span class='r'>single-arm, n=57</span>",
+         "R + bendamustine + cytarabine 500: <b>CR 91%</b>, median age 71",
+         "Missed its safety boundary: <b>72% dose-reduced</b>, grade 3&ndash;4 cytopenias in ~half of cycles"
+        ],
+        [
+         "<b>BOVen</b> <span class='r'>TP53-mut, n=25</span>",
+         "Zanubrutinib + obinutuzumab + venetoclax: ORR <b>96%</b>, CR <b>88%</b>, 2-yr PFS <b>72%</b>",
+         "Single-arm phase 2 &mdash; the best TP53 data, not yet randomized"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Relapsed / refractory &mdash; agents and status (Sept 2026)",
+       "headers": [
+        "Agent",
+        "Data",
+        "FDA status"
+       ],
+       "widths": [
+        "16%",
+        "50%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Acalabrutinib</b>",
+         "ACE-LY-004 (n=124): ORR <b>81%</b>, CR <b>40%</b>",
+         "Accelerated 2017 &rarr; <b>regular Jan 2025</b>"
+        ],
+        [
+         "<b>Zanubrutinib</b>",
+         "BGB-3111-206 (n=86): ORR <b>84%</b>, CR 69%, median PFS 22.1 mo",
+         "<b>Accelerated</b> (Nov 2019), still"
+        ],
+        [
+         "Ibrutinib",
+         "Pivotal single-arm data; SHINE did not confirm",
+         "<b>US MCL indication withdrawn</b> (effective Dec 2023)"
+        ],
+        [
+         "Ibrutinib + venetoclax",
+         "SYMPATICO (n=267): median PFS <b>31.9 vs 22.1 mo</b>, HR 0.65 vs ibrutinib",
+         "<b>Not approved</b> as a combination in MCL"
+        ],
+        [
+         "<b>Pirtobrutinib</b> <span class='r'>non-covalent</span>",
+         "BRUIN, after covalent BTKi (n=90): ORR <b>58%</b>, CR 20%, median DOR 21.6 mo; grade &ge;3 AF 1.2%",
+         "<b>Accelerated</b> (Jan 2023; &ge;2 lines incl. BTKi). Confirmatory <b>BRUIN MCL-321 not yet reported</b>"
+        ],
+        [
+         "<b>Brexu-cel</b> <span class='r'>CD19 CAR-T</span>",
+         "ZUMA-2: ORR <b>93%</b>, CR <b>67%</b>; 3-yr median PFS <b>25.8 mo</b>, OS 46.6 mo. Grade &ge;3 CRS 15%, <b>neurologic events 31%</b>",
+         "Accelerated 2020 &rarr; <b>regular Apr 2026</b> (added BTKi-naive cohort: CR 79%)"
+        ],
+        [
+         "<b>Liso-cel</b> <span class='r'>CD19 CAR-T</span>",
+         "TRANSCEND MCL (n=83): ORR <b>83%</b>, CR <b>72%</b>, median PFS 15.3 mo. Grade 3&ndash;4 CRS <b>1%</b>, neurologic 9%",
+         "Approved May 2024 (&ge;2 lines incl. BTKi)"
+        ],
+        [
+         "<b>Sonrotoclax</b> <span class='r'>BCL2</span>",
+         "Phase 2 (n=103), post-BTKi: ORR <b>52%</b>, CR 16%, median PFS <b>6.5 mo</b>; TP53-mut ORR 59%; TLS 7%",
+         "<b>Accelerated, 13 May 2026</b> (&ge;2 lines incl. BTKi)"
+        ],
+        [
+         "Glofitamab <span class='r'>CD20&times;CD3</span>",
+         "Phase 1/2 (n=60): ORR <b>85%</b>, CR <b>78%</b> (71% after BTKi); CRS 70%",
+         "<b>Not approved in MCL</b> (US or EU) &mdash; phase 3 GLOBRYTE pending"
+        ],
+        [
+         "Lenalidomide &plusmn; R",
+         "SPRINT: PFS <b>8.7 vs 5.2 mo</b> vs investigator choice (HR 0.61); EMERGE post-bortezomib ORR 28%",
+         "Approved 2013 (after bortezomib)"
+        ],
+        [
+         "Allo-HCT",
+         "Only curative-intent option after CAR-T failure",
+         "&mdash;"
+        ]
+       ],
+       "footnote": "<b>Relapse after frontline BTKi</b> (TRIANGLE, ECHO) is now common: those patients are BTKi-exposed at first relapse, so the post-BTKi column is effectively second line. Response to a covalent BTKi at relapse after BTKi-containing induction is not established."
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimen dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>TRIANGLE (A+I / I)</b>",
+         "<b>R-CHOP + ibrutinib</b>: rituximab 375, cyclophosphamide 750, doxorubicin 50, vincristine 1.4 (max 2 mg) d1, prednisone 100 mg d1&ndash;5 + <b>ibrutinib 560 mg d1&ndash;19</b>, alternating with <b>R-DHAP</b> (rituximab 375, dexamethasone 40 mg d1&ndash;4, <b>cytarabine 2 g/m&sup2; q12h &times;2 d2</b>, cisplatin 100 CIV d1) or R-DHAOx (oxaliplatin 130) &mdash; q21d &times;6. Then <b>ibrutinib 560 mg daily &times;2 yr</b> &plusmn; rituximab"
+        ],
+        [
+         "<b>LyMa</b>",
+         "R-DHAP q21d &times;4 &rarr; ASCT &rarr; <b>rituximab 375 q2 months &times;3 yr</b>"
+        ],
+        [
+         "<b>BR &plusmn; BTKi</b>",
+         "Rituximab 375 d1 + <b>bendamustine 90 d1&ndash;2</b>, q28d &times;6 &rarr; rituximab 375 q8wk &times;2 yr. ECHO adds <b>acalabrutinib 100 mg BID</b> until progression"
+        ],
+        [
+         "<b>VR-CAP</b>",
+         "Rituximab 375, cyclophosphamide 750, doxorubicin 50 d1; <b>bortezomib 1.3 d1, 4, 8, 11</b>; prednisone 100 d1&ndash;5 &mdash; q21d &times;6"
+        ],
+        [
+         "<b>RBAC500</b>",
+         "Rituximab 375 d1, <b>bendamustine 70 d2&ndash;3</b>, <b>cytarabine 500 d2&ndash;4</b> &mdash; q28d, up to 6"
+        ],
+        [
+         "<b>R&sup2;</b>",
+         "Lenalidomide 20 mg d1&ndash;21 q28d + rituximab 375 weekly &times;4 (cycle 1), then per protocol. VTE prophylaxis"
+        ],
+        [
+         "<b>BTK inhibitors</b>",
+         "Ibrutinib 560 mg daily &middot; <b>acalabrutinib 100 mg BID</b> &middot; <b>zanubrutinib 160 mg BID or 320 mg daily</b> &middot; <b>pirtobrutinib 200 mg daily</b> &mdash; continuous"
+        ],
+        [
+         "<b>CAR-T</b>",
+         "<b>Brexu-cel</b>: flu 30 + cy 500 mg/m&sup2; d&minus;5 to &minus;3, then 2&times;10<sup>6</sup> CAR-T cells/kg (max 2&times;10<sup>8</sup>). <b>Liso-cel</b>: flu 30 + cy 300 mg/m&sup2; &times;3 d, then 90&ndash;110&times;10<sup>6</sup> CAR+ T cells. <b>Avoid bendamustine shortly before apheresis</b>"
+        ]
+       ],
+       "footnote": "mg/m&sup2; unless stated. Cytarabine: <b>prednisolone 1% eye drops</b> from 12 h before to 48 h after; <b>reduce to 1 g/m&sup2; if age &gt;60</b>; hold for rising creatinine (cerebellar toxicity)."
+      },
+      {
+       "type": "bullets",
+       "heading": "Targeted and cellular therapy &mdash; toxicity",
+       "items": [
+        "<b>BTKi class: atrial fibrillation, bleeding, hypertension, infection</b>, plus arthralgia, diarrhea, rash. Hold <b>3&ndash;7 days around procedures</b>; avoid warfarin; watch CYP3A interactions",
+        "<b>Second-generation agents cut AF by about half:</b> ELEVATE-RR (CLL) <b>9.4% acalabrutinib vs 16.0% ibrutinib</b>; ALPINE fewer cardiac events with zanubrutinib; in MCL, ECHO 6.7% vs SHINE 13.9% (cross-trial). Acalabrutinib: early headache. Zanubrutinib: neutropenia. Pirtobrutinib: grade &ge;3 AF ~1%",
+        "<b>CAR-T:</b> CRS &rarr; tocilizumab &plusmn; dexamethasone; <b>ICANS</b> &rarr; dexamethasone (tocilizumab only if CRS coexists), levetiracetam. <b>Brexu-cel is the more neurotoxic</b> (grade &ge;3 neuro 31% vs 9% liso-cel). Late: cytopenias, hypogammaglobulinemia, boxed warning for T-cell malignancy",
+        "<b>Venetoclax / sonrotoclax: TLS</b> &mdash; MCL can be bulky and leukemic; ramp-up, hydration, allopurinol, lab checks at each step"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Diagnosis",
+  "The spectrum &mdash; WHO-HAEM5 / ICC 2022",
+  "Workup",
+  "Pearls",
+  "MIPI &mdash; add the points",
+  "Biology that overrides the score",
+  "Chemo-immunotherapy &mdash; infection and supportive care",
+  "Treatment pathway",
+  "Frontline evidence",
+  "Relapsed / refractory &mdash; agents and status (Sept 2026)",
+  "Regimen dosing",
+  "Targeted and cellular therapy &mdash; toxicity"
+ ],
+ "text": "Mantle cell lymphoma CD5+, cyclin D1+ B-cell lymphoma driven by t(11;14) · a spectrum from observable leukemic non-nodal disease to blastoid disease · TP53 status, Ki-67 and fitness — not stage — choose the therapy ; BTK inhibitors have displaced routine ASCT Compiled from the Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin — mantle cell (Chou L, Schroers-Martin J, Gupta NK) · NCCN B-Cell Lymphomas v4.2026 · primary trial reports and FDA actions verified against PubMed, September 2026. Diagnosis Hallmark: t(11;14)(q13;q32), IGH::CCND1 → cyclin D1 overexpression — show it by cyclin D1 IHC or FISH Phenotype: CD5+, CD20 bright, CD23−, CD10−, cyclin D1+, SOX11+. CD23 negativity and cyclin D1 separate it from CLL, which is CD5+ CD23+ Cyclin D1-negative MCL is real: SOX11+, with a CCND2 rearrangement in ~55% . Diagnose it on SOX11 + morphology; treat as MCL Salaverria, Blood 2013 SOX11 does double duty — rescues the cyclin D1-negative diagnosis, and its absence flags the indolent leukemic non-nodal form The spectrum — WHO-HAEM5 / ICC 2022 Form Features → behavior Classic (nodal) SOX11+, IGHV mostly unmutated; nodes + marrow, spleen, GI tract (lymphomatous polyposis). Chronic relapsing course Leukemic non-nodal SOX11−, IGHV-mutated , blood + marrow ± spleen, no significant adenopathy. Indolent : 5-yr OS 78% vs 36% for SOX11+ Fern&agrave;ndez 2010 — observe unless it acquires TP53 or goes nodal Blastoid / pleomorphic High Ki-67, TP53 enriched, CNS-prone. Treat as high risk ; blastoid adds nothing to prognosis once Ki-67 is known In situ mantle cell neoplasia Cyclin D1+ cells confined to mantle zones of a reactive node — usually incidental; stage and observe Workup PET/CT , marrow biopsy with flow and t(11;14) FISH, CBC with smear (leukemic phase), LDH, &beta;2-microglobulin, HBV serology before anti-CD20 TP53 by NGS (+ del(17p) FISH) and Ki-67 at diagnosis in every patient — they pick the regimen, not the stage EGD + colonoscopy for apparent stage I–II (to confirm limited disease) and when GI symptoms LP / brain MRI if blastoid or neurologic symptoms. Echo before anthracycline Pearls CD5+ CD23− small B cells = send cyclin D1. If cyclin D1− but SOX11+, it is still MCL Send TP53 before choosing. A TP53-mutant patient gets little from cytarabine + ASCT Rituximab maintenance is standard in MCL after both intensive and BR induction — unlike follicular, its OS benefit (LyMa) was real at 4 yr, though attenuated at 7 No BTKi-added frontline trial in older patients has shown OS gain (SHINE, ECHO) — PFS gain costs toxicity Brexu-cel is the most active post-BTKi therapy but the most neurotoxic; liso-cel trades a little efficacy for much less CRS/ICANS MIPI — add the points Pts Age ECOG LDH / ULN WBC ×10 9 /L 0 <50 0–1 <0.67 <6.7 1 50–59 — 0.67–0.99 6.7–9.99 2 60–69 2–4 1.00–1.49 10–14.99 3 ≥70 — ≥1.50 ≥15 Low 0–3 (44%; median OS not reached) · intermediate 4–5 (35%; 51 mo) · high 6–11 (21%; 29 mo). Hoster, Blood 2008 — pre-BTKi survival; use it to stratify, not to counsel. Biology that overrides the score TP53 mutation is the dominant adverse factor. 11% in Nordic MCL2/3 Median OS 1.8 vs 12.7 yr , OS HR 6.2; half relapsed within a year of cytarabine induction + ASCT Eskelund, Blood 2017 Ki-67 ≥30% is the validated cutoff. MIPI-c = MIPI group + Ki-67 → 4 groups, 5-yr OS 85% / 72% / 43% / 17% Hoster, JCO 2016 Blastoid/pleomorphic cytology, complex karyotype, del(17p) travel with TP53 and high Ki-67 Watch and wait is legitimate for selected patients — leukemic non-nodal SOX11− disease, or asymptomatic classic MCL with low burden, low Ki-67 and wild-type TP53. In a Weill Cornell series 32% were observed ; median time to treatment 12 mo (range 4–128) , with no survival penalty (a selected cohort) Martin, JCO 2009 . ASCT in first remission is no longer default. Its PFS benefit predates BTKi and maintenance. TRIANGLE : adding ASCT to ibrutinib gave no FFS gain and more toxicity. EA4151 : in MRD-negative CR, ASCT + rituximab = rituximab alone (abstract only). Chemo-immunotherapy — infection and supportive care Bendamustine is deeply immunosuppressive — prolonged CD4 lymphopenia: PJP (TMP-SMX) + VZV (acyclovir) prophylaxis ; ECHO grade 5 COVID-19 9.4% vs 6.7% . Rash with allopurinol Rituximab maintenance → hypogammaglobulinemia and infection; check IgG, replace if recurrent infections. HBV prophylaxis if core Ab+ Lenalidomide: aspirin or anticoagulant VTE prophylaxis, renal dose adjustment Treatment pathway Frontline — by biology, then fitness Indolent / low burden, TP53 wild-type leukemic non-nodal, or low Ki-67 asymptomatic observe — treat for symptoms or progression Fit, ≤65–70, TP53 wild-type TRIANGLE : R-CHOP + ibrutinib alternating with R-DHAP (or R-DHAOx) ×6 → ibrutinib ×2 yr ± rituximab q8wk — ASCT can be omitted older standard: Nordic or R-DHAP → ASCT → R q2mo ×3 yr Older or unfit, TP53 wild-type acalabrutinib + BR (ECHO) → R maintenance BR → R maintenance · VR-CAP · RBAC500 (fit) chemo-free: BTKi + rituximab (ENRICH) TP53-mutated avoid chemo-heavy regimens and ASCT clinical trial , or BTKi-based: BOVen (zanubrutinib + obinutuzumab + venetoclax) Relapsed / refractory BTKi-naive covalent BTKi : acalabrutinib or zanubrutinib or ibrutinib + venetoclax (SYMPATICO, off-label) After a covalent BTKi CAR-T : brexu-cel or liso-cel (fit) pirtobrutinib — bridge, or if CAR-T not possible sonrotoclax · R² · glofitamab on trial After CAR-T allo-HCT if fit · trials (bispecifics, BTK degraders) Frontline evidence Trial Result How to read it TRIANGLE ≤65, n=870 Ibrutinib + ASCT (A+I) beat ASCT alone (A): 3-yr FFS 88% vs 72% , HR 0.52. At 4.5 yr A+I not better than ibrutinib without ASCT (I) : 4-yr FFS 82% vs 81%. 4-yr OS 88–90% vs 81% for either ibrutinib arm vs A (HR 0.57–0.59) Primary endpoint is FFS . Maintenance grade 3–5 heme toxicity 54% A+I vs 28% I . Uses ibrutinib, which has no US MCL label ; applying it to acalabrutinib/zanubrutinib is extrapolation TRIANGLE R-maint secondary Rituximab maintenance on top of ibrutinib: 4-yr PFS 85% vs 73% (arm I) Non-randomized; grade 3–5 infections 34% vs 11% LyMa <66, n=240 rand. R-DHAP → ASCT → rituximab q2mo ×3 yr vs observation: 4-yr EFS 79% vs 61% , OS 89% vs 80% (HR 0.50) The OS benefit is the one usually quoted — at 7 yr it is no longer significant (83% vs 72%, HR 0.63, p=0.088); PFS gain holds (HR 0.36) EA4151 MRD− CR1, n=516 rand. ASCT + R maintenance vs R maintenance alone : 3-yr OS 82.1% vs 82.7% (HR 1.11); PFS 76.6% vs 77.4%. Crossed futility ASH 2024 abstract, not peer-reviewed. Only 7% had BTKi induction; 25% assigned to ASCT declined it Nordic MCL2 single-arm Maxi-R-CHOP / R-high-dose cytarabine → ASCT: median PFS 8.5 yr , OS 12.7 yr No plateau — not curative SHINE ≥65, n=523 Ibrutinib + BR → R maintenance: median PFS 80.6 vs 52.9 mo (HR 0.75) No OS benefit — excess adverse-event deaths; AF 13.9% vs 6.5% ECHO ≥65, n=598 Acalabrutinib + BR: median PFS 66.4 vs 49.6 mo (HR 0.73). Regular FDA approval, Jan 2025 No OS difference (HR 0.86). AF 6.7% vs 4.4%; grade 5 COVID-19 9.4% vs 6.7% ENRICH ≥60, n=397 Ibrutinib + rituximab vs R-chemo: PFS HR 0.69 . vs R-CHOP HR 0.37; vs BR HR 0.91 (NS) Chemo-free BTKi-R matches BR and beats R-CHOP VR-CAP n=487 Bortezomib for vincristine in R-CHOP: PFS 24.7 vs 14.4 mo ; median OS 90.7 vs 55.7 mo (HR 0.66) The one older-patient trial with an OS gain — but vs R-CHOP, a weak comparator RBAC500 single-arm, n=57 R + bendamustine + cytarabine 500: CR 91% , median age 71 Missed its safety boundary: 72% dose-reduced , grade 3–4 cytopenias in ~half of cycles BOVen TP53-mut, n=25 Zanubrutinib + obinutuzumab + venetoclax: ORR 96% , CR 88% , 2-yr PFS 72% Single-arm phase 2 — the best TP53 data, not yet randomized Relapsed / refractory — agents and status (Sept 2026) Agent Data FDA status Acalabrutinib ACE-LY-004 (n=124): ORR 81% , CR 40% Accelerated 2017 → regular Jan 2025 Zanubrutinib BGB-3111-206 (n=86): ORR 84% , CR 69%, median PFS 22.1 mo Accelerated (Nov 2019), still Ibrutinib Pivotal single-arm data; SHINE did not confirm US MCL indication withdrawn (effective Dec 2023) Ibrutinib + venetoclax SYMPATICO (n=267): median PFS 31.9 vs 22.1 mo , HR 0.65 vs ibrutinib Not approved as a combination in MCL Pirtobrutinib non-covalent BRUIN, after covalent BTKi (n=90): ORR 58% , CR 20%, median DOR 21.6 mo; grade ≥3 AF 1.2% Accelerated (Jan 2023; ≥2 lines incl. BTKi). Confirmatory BRUIN MCL-321 not yet reported Brexu-cel CD19 CAR-T ZUMA-2: ORR 93% , CR 67% ; 3-yr median PFS 25.8 mo , OS 46.6 mo. Grade ≥3 CRS 15%, neurologic events 31% Accelerated 2020 → regular Apr 2026 (added BTKi-naive cohort: CR 79%) Liso-cel CD19 CAR-T TRANSCEND MCL (n=83): ORR 83% , CR 72% , median PFS 15.3 mo. Grade 3–4 CRS 1% , neurologic 9% Approved May 2024 (≥2 lines incl. BTKi) Sonrotoclax BCL2 Phase 2 (n=103), post-BTKi: ORR 52% , CR 16%, median PFS 6.5 mo ; TP53-mut ORR 59%; TLS 7% Accelerated, 13 May 2026 (≥2 lines incl. BTKi) Glofitamab CD20×CD3 Phase 1/2 (n=60): ORR 85% , CR 78% (71% after BTKi); CRS 70% Not approved in MCL (US or EU) — phase 3 GLOBRYTE pending Lenalidomide ± R SPRINT: PFS 8.7 vs 5.2 mo vs investigator choice (HR 0.61); EMERGE post-bortezomib ORR 28% Approved 2013 (after bortezomib) Allo-HCT Only curative-intent option after CAR-T failure — Relapse after frontline BTKi (TRIANGLE, ECHO) is now common: those patients are BTKi-exposed at first relapse, so the post-BTKi column is effectively second line. Response to a covalent BTKi at relapse after BTKi-containing induction is not established. Regimen dosing Regimen Dosing TRIANGLE (A+I / I) R-CHOP + ibrutinib : rituximab 375, cyclophosphamide 750, doxorubicin 50, vincristine 1.4 (max 2 mg) d1, prednisone 100 mg d1–5 + ibrutinib 560 mg d1–19 , alternating with R-DHAP (rituximab 375, dexamethasone 40 mg d1–4, cytarabine 2 g/m² q12h ×2 d2 , cisplatin 100 CIV d1) or R-DHAOx (oxaliplatin 130) — q21d ×6. Then ibrutinib 560 mg daily ×2 yr ± rituximab LyMa R-DHAP q21d ×4 → ASCT → rituximab 375 q2 months ×3 yr BR ± BTKi Rituximab 375 d1 + bendamustine 90 d1–2 , q28d ×6 → rituximab 375 q8wk ×2 yr. ECHO adds acalabrutinib 100 mg BID until progression VR-CAP Rituximab 375, cyclophosphamide 750, doxorubicin 50 d1; bortezomib 1.3 d1, 4, 8, 11 ; prednisone 100 d1–5 — q21d ×6 RBAC500 Rituximab 375 d1, bendamustine 70 d2–3 , cytarabine 500 d2–4 — q28d, up to 6 R² Lenalidomide 20 mg d1–21 q28d + rituximab 375 weekly ×4 (cycle 1), then per protocol. VTE prophylaxis BTK inhibitors Ibrutinib 560 mg daily · acalabrutinib 100 mg BID · zanubrutinib 160 mg BID or 320 mg daily · pirtobrutinib 200 mg daily — continuous CAR-T Brexu-cel : flu 30 + cy 500 mg/m² d−5 to −3, then 2×10 6 CAR-T cells/kg (max 2×10 8 ). Liso-cel : flu 30 + cy 300 mg/m² ×3 d, then 90–110×10 6 CAR+ T cells. Avoid bendamustine shortly before apheresis mg/m² unless stated. Cytarabine: prednisolone 1% eye drops from 12 h before to 48 h after; reduce to 1 g/m² if age >60 ; hold for rising creatinine (cerebellar toxicity). Targeted and cellular therapy — toxicity BTKi class: atrial fibrillation, bleeding, hypertension, infection , plus arthralgia, diarrhea, rash. Hold 3–7 days around procedures ; avoid warfarin; watch CYP3A interactions Second-generation agents cut AF by about half: ELEVATE-RR (CLL) 9.4% acalabrutinib vs 16.0% ibrutinib ; ALPINE fewer cardiac events with zanubrutinib; in MCL, ECHO 6.7% vs SHINE 13.9% (cross-trial). Acalabrutinib: early headache. Zanubrutinib: neutropenia. Pirtobrutinib: grade ≥3 AF ~1% CAR-T: CRS → tocilizumab ± dexamethasone; ICANS → dexamethasone (tocilizumab only if CRS coexists), levetiracetam. Brexu-cel is the more neurotoxic (grade ≥3 neuro 31% vs 9% liso-cel). Late: cytopenias, hypogammaglobulinemia, boxed warning for T-cell malignancy Venetoclax / sonrotoclax: TLS — MCL can be bulky and leukemic; ramp-up, hydration, allopurinol, lab checks at each step"
+}

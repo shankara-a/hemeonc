@@ -1,0 +1,564 @@
+{
+ "disease": "lymphoma-marginal-zone",
+ "spec_file": "lymphoma_marginal_zone.py",
+ "pdf": "Lymphoma - Marginal Zone.pdf",
+ "title": "Marginal zone lymphoma",
+ "subtitle": "<b>The antigen-driven lymphoma</b> &mdash; extranodal (MALT), splenic and nodal MZL share a CD5&minus;/CD10&minus; phenotype but not a treatment. <b>Find and treat the driver first</b> (H. pylori, HCV, C. psittaci), irradiate localized disease with curative intent, and reserve systemic therapy for disseminated or symptomatic disease",
+ "source": "Compiled from primary trial reports and consensus guidelines (NCCN; WHO-HAEM5; EGILS) verified against PubMed, September 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Three (now four) entities &mdash; WHO-HAEM5",
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Extranodal MZL of MALT</b> <span class='r'>most common</span>",
+         "Arises in mucosa made lymphoid by <b>chronic antigen</b>. <b>Stomach most common</b>; then ocular adnexa, lung, salivary gland, thyroid, skin, breast, dura, small bowel. Lymphoepithelial lesions. Usually localized &mdash; <b>often curable locally</b>"
+        ],
+        [
+         "<b>Splenic MZL</b>",
+         "Spleen + marrow (intrasinusoidal) &plusmn; blood; <b>splenomegaly, cytopenias, villous lymphocytes</b>, small IgM paraprotein, autoimmune cytopenias. Nodes uncommon. <b>HCV</b>-linked subset. del(7q), <b>NOTCH2, KLF2</b> mutations"
+        ],
+        [
+         "<b>Nodal MZL</b>",
+         "Nodes only (no extranodal or splenic primary). Behaves and is <b>treated like FL</b>"
+        ],
+        [
+         "Primary cutaneous MZL",
+         "<b>Split off as its own entity in WHO-HAEM5</b>; very indolent, skin-directed therapy. <b>Borrelia</b> link in European series"
+        ]
+       ],
+       "footnote": "All are CD5&minus; CD10&minus; small B cells, but genetics differ by site: <b>t(11;18)(q21;q21) BIRC3::MALT1</b> in gastric and lung MALT; <b>TNFAIP3</b> loss in ocular adnexa; <b>GPR34</b> in salivary gland; <b>FAS</b> in cutaneous MZL; <b>KMT2D, NOTCH2, KLF2</b> in nodal MZL. Also t(14;18)(q32;q21) <b>IGH::MALT1</b>, t(1;14) IGH::BCL10, t(3;14) IGH::FOXP1."
+      },
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "<b>Every MZL: HCV antibody + RNA, HBsAg + anti-HBc, HIV</b>, SPEP/immunofixation (paraprotein common), LDH, &beta;2M",
+        "<b>Gastric:</b> EGD with multiple biopsies (<b>map the stomach</b>), <b><i>H. pylori</i></b> by histology <b>+</b> stool antigen or breath test (serology if on PPI), <b>EUS</b> for depth and perigastric nodes, <b>FISH for t(11;18)</b>",
+        "<b>Splenic:</b> smear (villous lymphocytes), flow, marrow biopsy, CT; DAT and autoimmune screen",
+        "<b>PET/CT</b> is less reliable than in FL (MALT and SMZL are variably FDG-avid) &mdash; CT is acceptable; <b>a hot focus raises concern for transformation</b>",
+        "Autoimmune history (Sj&ouml;gren, Hashimoto) and site-specific exams: ophthalmology, ENT, thyroid ultrasound"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "37%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Antigen driver &rarr; antimicrobial first",
+       "headers": [
+        "Site",
+        "Driver",
+        "Antimicrobial therapy &amp; evidence"
+       ],
+       "widths": [
+        "16%",
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Stomach</b>",
+         "<b><i>H. pylori</i></b>",
+         "<b>Eradication is first therapy</b> for localized disease. Remission <b>77.5%</b> (32 studies, 1,408 pts): stage I 78% vs II1 56%; mucosa/submucosa 82% vs deeper 54%; <b>t(11;18)+ only 22% vs 78%</b>"
+        ],
+        [
+         "<b>Ocular adnexa</b>",
+         "<b><i>Chlamydia psittaci</i></b> (regional)",
+         "<b>Doxycycline</b> 3 wk: ORR 65%, 5-yr PFS 55% (phase 2, stage I); better if Cp eradicated (86% vs 47%). Cp DNA in 89% of that Italian cohort &mdash; prevalence varies widely by region"
+        ],
+        [
+         "<b>Skin</b>",
+         "<i>Borrelia burgdorferi</i> (Europe)",
+         "Antibiotic trial in Borrelia-positive cases"
+        ],
+        [
+         "<b>Small bowel (IPSID)</b>",
+         "<i>Campylobacter jejuni</i>",
+         "<b>&alpha;-heavy-chain disease</b>; early disease regresses with antibiotics"
+        ],
+        [
+         "<b>Spleen</b>",
+         "<b>Hepatitis C</b>",
+         "<b>Antiviral therapy first</b> if no urgent indication: 7/9 CR after interferon with HCV clearance, none in HCV&minus; (Hermine, NEJM 2002); DAAs &mdash; SVR 98%, lymphoma response <b>73% in MZL</b> (Arcaini, Blood 2016)"
+        ],
+        [
+         "<b>Parotid</b> &middot; <b>thyroid</b>",
+         "<b>Sj&ouml;gren</b> &middot; <b>Hashimoto</b>",
+         "Autoimmune drive &mdash; no antimicrobial; treat by stage"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Staging gastric MALT &mdash; Lugano (GI) system",
+       "widths": [
+        "14%",
+        ""
+       ],
+       "rows": [
+        [
+         "I",
+         "Confined to the GI tract (single or multiple non-contiguous lesions)"
+        ],
+        [
+         "II1 / II2",
+         "Into the abdomen: <b>local</b> (perigastric) nodes / <b>distant</b> (mesenteric, para-aortic) nodes"
+        ],
+        [
+         "IIE",
+         "Penetrates serosa into adjacent organs or tissues"
+        ],
+        [
+         "IV",
+         "Disseminated extranodal, or supradiaphragmatic nodes. <i>No stage III</i>"
+        ]
+       ],
+       "footnote": "Non-gastric and nodal/splenic disease: Ann Arbor/Lugano."
+      }
+     ]
+    },
+    {
+     "width": "32%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Small B-cell differential",
+       "headers": [
+        "",
+        "CD5",
+        "CD10",
+        "CD23",
+        "Clue"
+       ],
+       "widths": [
+        "17%",
+        "9%",
+        "9%",
+        "9%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>MZL</b>",
+         "&minus;",
+         "&minus;",
+         "&minus;",
+         "Diagnosis of exclusion; <b>cyclin D1&minus;</b>, MYD88 usually wild-type"
+        ],
+        [
+         "CLL/SLL",
+         "<b>+</b>",
+         "&minus;",
+         "<b>+</b>",
+         "CD200+, dim sIg / CD20; LEF1+"
+        ],
+        [
+         "Mantle cell",
+         "<b>+</b>",
+         "&minus;",
+         "&minus;",
+         "<b>Cyclin D1, SOX11</b>, t(11;14)"
+        ],
+        [
+         "Follicular",
+         "&minus;",
+         "<b>+</b>",
+         "&minus;/+",
+         "BCL2+ follicles, <b>t(14;18) IGH::BCL2</b>"
+        ],
+        [
+         "LPL / Waldenstr&ouml;m",
+         "&minus;",
+         "&minus;",
+         "&minus;",
+         "<b>MYD88 L265P</b> (&gt;90%), IgM, plasmacytic"
+        ],
+        [
+         "Hairy cell",
+         "&minus;",
+         "&minus;",
+         "&minus;",
+         "<b>CD11c, CD25, CD103, CD123, annexin A1; BRAF V600E</b>"
+        ]
+       ],
+       "footnote": "<b>Splenic MZL vs hairy cell:</b> SMZL villi are short and <b>polar</b>, CD25&minus;/annexin&minus;/BRAF wild-type, and the marrow is intrasinusoidal and nodular; HCL has circumferential projections, a &ldquo;dry tap&rdquo;, monocytopenia. <b>Splenic B-cell lymphoma/leukemia with prominent nucleoli</b> (WHO-HAEM5; absorbs HCL-variant) is CD25&minus;, annexin&minus;, TRAP&minus;, CD123&minus;. Splenic diffuse red pulp lymphoma is the other mimic."
+      },
+      {
+       "type": "table",
+       "heading": "MALT-IPI &mdash; 1 point each",
+       "headers": [
+        "Risk",
+        "Points",
+        "5-yr EFS"
+       ],
+       "widths": [
+        "40%",
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "Low",
+         "0",
+         "70%"
+        ],
+        [
+         "Intermediate",
+         "1",
+         "56%"
+        ],
+        [
+         "High",
+         "&ge;2",
+         "<b>29%</b>"
+        ]
+       ],
+       "footnote": "<b>Age &ge;70 &middot; stage III&ndash;IV &middot; LDH &gt;ULN</b>. Derived in IELSG-19 (n=401), validated in 633; prognostic in gastric and non-gastric disease (Thieblemont, Blood 2017)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; treatment pathway, systemic therapy, dosing",
+   "columns": [
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Gastric MALT, localized",
+         "color": "teal",
+         "boxes": [
+          [
+           "H. pylori positive",
+           [
+            "<b>eradicate</b>: bismuth quadruple &times;14 days",
+            "confirm cure (breath/stool) &ge;4 wk after, PPI off"
+           ]
+          ],
+          [
+           "Re-endoscope at ~3 months, then q3&ndash;6 mo",
+           [
+            "regression is <b>slow &mdash; allow &ge;12 months</b>",
+            "persistent but stable, HP-negative: keep watching",
+            "HP still present: second-line eradication"
+           ]
+          ],
+          [
+           "HP-neg, t(11;18)+, or failure",
+           [
+            "<b>ISRT 24 Gy</b> to stomach &mdash; <b>curative intent</b>",
+            "rituximab if RT not suitable"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Non-gastric MALT, localized",
+         "color": "blue",
+         "boxes": [
+          [
+           "Antimicrobial where a driver fits",
+           [
+            "doxycycline (ocular), antibiotics (skin, IPSID)"
+           ]
+          ],
+          [
+           "Then or instead",
+           [
+            "<b>ISRT 24 Gy</b> &mdash; curative intent",
+            "observation acceptable if asymptomatic"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Splenic MZL",
+         "color": "amber",
+         "boxes": [
+          [
+           "HCV positive",
+           [
+            "<b>DAA therapy first</b> unless urgent"
+           ]
+          ],
+          [
+           "Indication to treat",
+           [
+            "symptomatic spleen, cytopenias, AIHA/ITP",
+            "<b>rituximab 375 weekly &times;4</b> &plusmn; maintenance",
+            "<b>splenectomy</b> if rituximab fails or unsuitable"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Nodal, disseminated, or relapsed",
+         "color": "coral",
+         "boxes": [
+          [
+           "Asymptomatic, low burden",
+           [
+            "observe (FL-like GELF logic)"
+           ]
+          ],
+          [
+           "Needs systemic therapy",
+           [
+            "<b>BR</b> or rituximab &plusmn; chlorambucil",
+            "R-CHOP rarely (bulky, or concern for large cells)"
+           ]
+          ],
+          [
+           "Relapse",
+           [
+            "<b>zanubrutinib</b> &middot; <b>R&sup2;</b> &middot; alternative chemo-immunotherapy",
+            "3L+: <b>liso-cel</b> CAR-T"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "38%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Systemic therapy &mdash; evidence and status",
+       "headers": [
+        "Agent &middot; US status",
+        "Evidence"
+       ],
+       "widths": [
+        "27%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Rituximab &plusmn; chlorambucil</b>",
+         "<b>IELSG-19</b> (MALT, n=454): 5-yr EFS <b>68%</b> R-chlorambucil vs 50% rituximab vs 51% chlorambucil; PFS better; <b>OS ~90% in all arms</b>"
+        ],
+        [
+         "<b>Bendamustine-rituximab</b>",
+         "Phase 2 MALT data (Salar, Blood 2017) and StiL NHL1 (which included MZL) support BR as the usual frontline chemo-immunotherapy for advanced disease"
+        ],
+        [
+         "<b>Obinutuzumab</b><br><i style='color:#8a8a8a;font-size:6pt;font-weight:normal'>not approved for MZL</i>",
+         "GALLIUM MZL subgroup (n=195): <b>no PFS benefit</b> (4-yr 72.6% vs 64.1%) and <b>more grade 5 AEs (14.9% vs 9.7%)</b> &mdash; use rituximab"
+        ],
+        [
+         "<b>Zanubrutinib</b><br><i style='color:#8a8a8a;font-size:6pt;font-weight:normal'>accelerated, 2L+ after anti-CD20 (Sep 2021)</i>",
+         "<b>MAGNOLIA</b> (single arm, n=68): ORR <b>68%</b>, CR 26%; 24-mo PFS 71%. AF 3%. Confirmatory <b>MAHOGANY</b> (zanubrutinib + rituximab vs R&sup2;) still ongoing; approval remains accelerated"
+        ],
+        [
+         "<b>Ibrutinib</b><br><i style='color:#8a8a8a;font-size:6pt;font-weight:normal'>MZL indication withdrawn Dec 2023</i>",
+         "PCYC-1121 ORR 48% led to 2017 accelerated approval; <b>SELENE (FL/MZL, + chemo) missed PFS</b> &rarr; withdrawn"
+        ],
+        [
+         "<b>R&sup2;</b><br><i style='color:#8a8a8a;font-size:6pt;font-weight:normal'>regular approval FL + MZL (2019)</i>",
+         "<b>AUGMENT</b> included 63 MZL; overall PFS HR 0.46 &mdash; but <b>the MZL subgroup showed no significant PFS benefit</b> (small, imbalanced). Approved nonetheless"
+        ],
+        [
+         "<b>Liso-cel</b><br><i style='color:#8a8a8a;font-size:6pt;font-weight:normal'>approved 3L+ (Dec 2025) &mdash; first CAR-T for MZL</i>",
+         "<b>TRANSCEND FL MZL cohort</b> (single arm; nodal 48%, splenic 27%, MALT 25%): ORR <b>95%</b> of 66 infused (84% of all leukapheresed, per label), CR 56% ITT; grade 3 CRS / neuro 4% each"
+        ],
+        [
+         "<b>Axi-cel</b><br><i style='color:#8a8a8a;font-size:6pt;font-weight:normal'>not approved for MZL</i>",
+         "ZUMA-5 MZL cohort: ORR 77%, median PFS not reached at 3 yr"
+        ],
+        [
+         "<b>Umbralisib, other PI3Ki</b><br><i style='color:#8a8a8a;font-size:6pt;font-weight:normal'>withdrawn</i>",
+         "Umbralisib MZL/FL approval withdrawn 2022 (excess deaths). <b>No bispecific is approved for MZL</b>"
+        ]
+       ]
+      },
+      {
+       "type": "note",
+       "html": "<b>Transformation</b> to DLBCL is uncommon but prognostically important: suspect with rising LDH, a rapidly growing or FDG-hot lesion, B symptoms. <b>Biopsy, then treat as DLBCL</b>. Scattered large cells in a MALT lymphoma are not by themselves transformation &mdash; sheets are."
+      },
+      {
+       "type": "table",
+       "heading": "Key evidence",
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Zullo meta-analysis</b>",
+         "H. pylori eradication: 77.5% remission; t(11;18)+ 22%"
+        ],
+        [
+         "<b>Ferreri phase 2</b>",
+         "Doxycycline, ocular adnexal MZL: ORR 65%"
+        ],
+        [
+         "<b>Hermine / Arcaini</b>",
+         "HCV clearance regresses splenic MZL (IFN; DAAs 73%)"
+        ],
+        [
+         "<b>IELSG-19</b>",
+         "R-chlorambucil &gt; either alone for EFS; OS equal"
+        ],
+        [
+         "<b>GALLIUM (MZL)</b>",
+         "Obinutuzumab: no PFS gain, more fatal AEs"
+        ],
+        [
+         "<b>MAGNOLIA</b>",
+         "Zanubrutinib R/R: ORR 68%, single arm"
+        ],
+        [
+         "<b>AUGMENT</b>",
+         "R&sup2;: benefit driven by FL, not MZL"
+        ],
+        [
+         "<b>TRANSCEND FL (MZL)</b>",
+         "Liso-cel 3L+: ORR 95% infused, CR ~56%"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "After eradication &mdash; restaging endoscopy",
+       "headers": [
+        "H. pylori",
+        "Lymphoma",
+        "Action"
+       ],
+       "widths": [
+        "20%",
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "Gone",
+         "Gone",
+         "<b>Observe</b>: EGD q3&ndash;6 mo, then yearly"
+        ],
+        [
+         "Gone",
+         "Persists",
+         "Asymptomatic and stable: <b>keep observing</b> (&ge;12 mo). Symptomatic or progressing: <b>ISRT</b>"
+        ],
+        [
+         "Present",
+         "Gone",
+         "<b>Second-line eradication</b>"
+        ],
+        [
+         "Present",
+         "Persists",
+         "Second-line eradication; <b>ISRT</b> if progressing or symptomatic"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Splenic MZL &mdash; practical points",
+       "items": [
+        "<b>Many never need treatment</b> &mdash; observe asymptomatic, stable disease",
+        "<b>Rituximab alone has largely replaced splenectomy</b> as first therapy: high response rates, no surgical risk. Splenectomy remains diagnostic and therapeutic when tissue is needed or rituximab fails",
+        "<b>Before splenectomy:</b> pneumococcal, meningococcal (ACWY + B) and Hib vaccines &ge;2 weeks before &mdash; <b>and before rituximab</b>, which blunts vaccine response",
+        "Treat <b>autoimmune cytopenias</b> as part of the disease &mdash; they often respond to rituximab"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>H. pylori</b> bismuth quadruple",
+         "PPI BID + bismuth subsalicylate 524 mg QID + tetracycline 500 mg QID + metronidazole 500 mg TID&ndash;QID, <b>14 days</b>"
+        ],
+        [
+         "<b>Rituximab</b>",
+         "<b>375 mg/m&sup2; weekly &times;4</b>; maintenance 375 q8wk &times;2 yr optional"
+        ],
+        [
+         "<b>BR</b>",
+         "Bendamustine 90 mg/m&sup2; d1+2 + rituximab 375 d1, q28d &times;6"
+        ],
+        [
+         "<b>R-chlorambucil</b> <span class='r'>IELSG-19</span>",
+         "Chlorambucil 6 mg/m&sup2;/d PO wk 1&ndash;6, then 2-wk blocks (wk 9&ndash;10, 13&ndash;14, 17&ndash;18, 21&ndash;22) + rituximab 375 wk 1&ndash;4, 9, 13, 17, 21"
+        ],
+        [
+         "<b>Zanubrutinib</b>",
+         "<b>160 mg BID</b> or 320 mg daily, continuous"
+        ],
+        [
+         "<b>R&sup2;</b>",
+         "Lenalidomide 20 mg d1&ndash;21 q28d &times;12 + rituximab weekly C1, d1 C2&ndash;5"
+        ],
+        [
+         "<b>ISRT</b>",
+         "<b>24 Gy / 12 fx</b>; 2 &times; 2 Gy for palliation"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>Always test for the driver</b> &mdash; H. pylori, HCV &mdash; before any cytotoxic therapy",
+        "<b>t(11;18) predicts H. pylori non-response</b> (and dissemination): go to RT rather than repeated antibiotics",
+        "<b>Give gastric MALT time</b>: histologic regression after eradication can take a year or more",
+        "<b>MYD88 L265P favors LPL</b>; CD5+ or cyclin D1+ is not MZL"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Three (now four) entities &mdash; WHO-HAEM5",
+  "Workup",
+  "Antigen driver &rarr; antimicrobial first",
+  "Staging gastric MALT &mdash; Lugano (GI) system",
+  "Small B-cell differential",
+  "MALT-IPI &mdash; 1 point each",
+  "Treatment pathway",
+  "Systemic therapy &mdash; evidence and status",
+  "Key evidence",
+  "After eradication &mdash; restaging endoscopy",
+  "Splenic MZL &mdash; practical points",
+  "Dosing",
+  "Pearls"
+ ],
+ "text": "Marginal zone lymphoma The antigen-driven lymphoma — extranodal (MALT), splenic and nodal MZL share a CD5−/CD10− phenotype but not a treatment. Find and treat the driver first (H. pylori, HCV, C. psittaci), irradiate localized disease with curative intent, and reserve systemic therapy for disseminated or symptomatic disease Compiled from primary trial reports and consensus guidelines (NCCN; WHO-HAEM5; EGILS) verified against PubMed, September 2026. Three (now four) entities — WHO-HAEM5 Extranodal MZL of MALT most common Arises in mucosa made lymphoid by chronic antigen . Stomach most common ; then ocular adnexa, lung, salivary gland, thyroid, skin, breast, dura, small bowel. Lymphoepithelial lesions. Usually localized — often curable locally Splenic MZL Spleen + marrow (intrasinusoidal) ± blood; splenomegaly, cytopenias, villous lymphocytes , small IgM paraprotein, autoimmune cytopenias. Nodes uncommon. HCV -linked subset. del(7q), NOTCH2, KLF2 mutations Nodal MZL Nodes only (no extranodal or splenic primary). Behaves and is treated like FL Primary cutaneous MZL Split off as its own entity in WHO-HAEM5 ; very indolent, skin-directed therapy. Borrelia link in European series All are CD5− CD10− small B cells, but genetics differ by site: t(11;18)(q21;q21) BIRC3::MALT1 in gastric and lung MALT; TNFAIP3 loss in ocular adnexa; GPR34 in salivary gland; FAS in cutaneous MZL; KMT2D, NOTCH2, KLF2 in nodal MZL. Also t(14;18)(q32;q21) IGH::MALT1 , t(1;14) IGH::BCL10, t(3;14) IGH::FOXP1. Workup Every MZL: HCV antibody + RNA, HBsAg + anti-HBc, HIV , SPEP/immunofixation (paraprotein common), LDH, &beta;2M Gastric: EGD with multiple biopsies ( map the stomach ), H. pylori by histology + stool antigen or breath test (serology if on PPI), EUS for depth and perigastric nodes, FISH for t(11;18) Splenic: smear (villous lymphocytes), flow, marrow biopsy, CT; DAT and autoimmune screen PET/CT is less reliable than in FL (MALT and SMZL are variably FDG-avid) — CT is acceptable; a hot focus raises concern for transformation Autoimmune history (Sj&ouml;gren, Hashimoto) and site-specific exams: ophthalmology, ENT, thyroid ultrasound Antigen driver → antimicrobial first Site Driver Antimicrobial therapy & evidence Stomach H. pylori Eradication is first therapy for localized disease. Remission 77.5% (32 studies, 1,408 pts): stage I 78% vs II1 56%; mucosa/submucosa 82% vs deeper 54%; t(11;18)+ only 22% vs 78% Ocular adnexa Chlamydia psittaci (regional) Doxycycline 3 wk: ORR 65%, 5-yr PFS 55% (phase 2, stage I); better if Cp eradicated (86% vs 47%). Cp DNA in 89% of that Italian cohort — prevalence varies widely by region Skin Borrelia burgdorferi (Europe) Antibiotic trial in Borrelia-positive cases Small bowel (IPSID) Campylobacter jejuni &alpha;-heavy-chain disease ; early disease regresses with antibiotics Spleen Hepatitis C Antiviral therapy first if no urgent indication: 7/9 CR after interferon with HCV clearance, none in HCV− (Hermine, NEJM 2002); DAAs — SVR 98%, lymphoma response 73% in MZL (Arcaini, Blood 2016) Parotid · thyroid Sj&ouml;gren · Hashimoto Autoimmune drive — no antimicrobial; treat by stage Staging gastric MALT — Lugano (GI) system I Confined to the GI tract (single or multiple non-contiguous lesions) II1 / II2 Into the abdomen: local (perigastric) nodes / distant (mesenteric, para-aortic) nodes IIE Penetrates serosa into adjacent organs or tissues IV Disseminated extranodal, or supradiaphragmatic nodes. No stage III Non-gastric and nodal/splenic disease: Ann Arbor/Lugano. Small B-cell differential CD5 CD10 CD23 Clue MZL − − − Diagnosis of exclusion; cyclin D1− , MYD88 usually wild-type CLL/SLL + − + CD200+, dim sIg / CD20; LEF1+ Mantle cell + − − Cyclin D1, SOX11 , t(11;14) Follicular − + −/+ BCL2+ follicles, t(14;18) IGH::BCL2 LPL / Waldenstr&ouml;m − − − MYD88 L265P (>90%), IgM, plasmacytic Hairy cell − − − CD11c, CD25, CD103, CD123, annexin A1; BRAF V600E Splenic MZL vs hairy cell: SMZL villi are short and polar , CD25−/annexin−/BRAF wild-type, and the marrow is intrasinusoidal and nodular; HCL has circumferential projections, a “dry tap”, monocytopenia. Splenic B-cell lymphoma/leukemia with prominent nucleoli (WHO-HAEM5; absorbs HCL-variant) is CD25−, annexin−, TRAP−, CD123−. Splenic diffuse red pulp lymphoma is the other mimic. MALT-IPI — 1 point each Risk Points 5-yr EFS Low 0 70% Intermediate 1 56% High ≥2 29% Age ≥70 · stage III–IV · LDH >ULN . Derived in IELSG-19 (n=401), validated in 633; prognostic in gastric and non-gastric disease (Thieblemont, Blood 2017). Treatment pathway Gastric MALT, localized H. pylori positive eradicate : bismuth quadruple ×14 days confirm cure (breath/stool) ≥4 wk after, PPI off Re-endoscope at ~3 months, then q3–6 mo regression is slow — allow ≥12 months persistent but stable, HP-negative: keep watching HP still present: second-line eradication HP-neg, t(11;18)+, or failure ISRT 24 Gy to stomach — curative intent rituximab if RT not suitable Non-gastric MALT, localized Antimicrobial where a driver fits doxycycline (ocular), antibiotics (skin, IPSID) Then or instead ISRT 24 Gy — curative intent observation acceptable if asymptomatic Splenic MZL HCV positive DAA therapy first unless urgent Indication to treat symptomatic spleen, cytopenias, AIHA/ITP rituximab 375 weekly ×4 ± maintenance splenectomy if rituximab fails or unsuitable Nodal, disseminated, or relapsed Asymptomatic, low burden observe (FL-like GELF logic) Needs systemic therapy BR or rituximab ± chlorambucil R-CHOP rarely (bulky, or concern for large cells) Relapse zanubrutinib · R² · alternative chemo-immunotherapy 3L+: liso-cel CAR-T Systemic therapy — evidence and status Agent · US status Evidence Rituximab ± chlorambucil IELSG-19 (MALT, n=454): 5-yr EFS 68% R-chlorambucil vs 50% rituximab vs 51% chlorambucil; PFS better; OS ~90% in all arms Bendamustine-rituximab Phase 2 MALT data (Salar, Blood 2017) and StiL NHL1 (which included MZL) support BR as the usual frontline chemo-immunotherapy for advanced disease Obinutuzumab not approved for MZL GALLIUM MZL subgroup (n=195): no PFS benefit (4-yr 72.6% vs 64.1%) and more grade 5 AEs (14.9% vs 9.7%) — use rituximab Zanubrutinib accelerated, 2L+ after anti-CD20 (Sep 2021) MAGNOLIA (single arm, n=68): ORR 68% , CR 26%; 24-mo PFS 71%. AF 3%. Confirmatory MAHOGANY (zanubrutinib + rituximab vs R²) still ongoing; approval remains accelerated Ibrutinib MZL indication withdrawn Dec 2023 PCYC-1121 ORR 48% led to 2017 accelerated approval; SELENE (FL/MZL, + chemo) missed PFS → withdrawn R² regular approval FL + MZL (2019) AUGMENT included 63 MZL; overall PFS HR 0.46 — but the MZL subgroup showed no significant PFS benefit (small, imbalanced). Approved nonetheless Liso-cel approved 3L+ (Dec 2025) — first CAR-T for MZL TRANSCEND FL MZL cohort (single arm; nodal 48%, splenic 27%, MALT 25%): ORR 95% of 66 infused (84% of all leukapheresed, per label), CR 56% ITT; grade 3 CRS / neuro 4% each Axi-cel not approved for MZL ZUMA-5 MZL cohort: ORR 77%, median PFS not reached at 3 yr Umbralisib, other PI3Ki withdrawn Umbralisib MZL/FL approval withdrawn 2022 (excess deaths). No bispecific is approved for MZL Transformation to DLBCL is uncommon but prognostically important: suspect with rising LDH, a rapidly growing or FDG-hot lesion, B symptoms. Biopsy, then treat as DLBCL . Scattered large cells in a MALT lymphoma are not by themselves transformation — sheets are. Key evidence Zullo meta-analysis H. pylori eradication: 77.5% remission; t(11;18)+ 22% Ferreri phase 2 Doxycycline, ocular adnexal MZL: ORR 65% Hermine / Arcaini HCV clearance regresses splenic MZL (IFN; DAAs 73%) IELSG-19 R-chlorambucil > either alone for EFS; OS equal GALLIUM (MZL) Obinutuzumab: no PFS gain, more fatal AEs MAGNOLIA Zanubrutinib R/R: ORR 68%, single arm AUGMENT R²: benefit driven by FL, not MZL TRANSCEND FL (MZL) Liso-cel 3L+: ORR 95% infused, CR ~56% After eradication — restaging endoscopy H. pylori Lymphoma Action Gone Gone Observe : EGD q3–6 mo, then yearly Gone Persists Asymptomatic and stable: keep observing (≥12 mo). Symptomatic or progressing: ISRT Present Gone Second-line eradication Present Persists Second-line eradication; ISRT if progressing or symptomatic Splenic MZL — practical points Many never need treatment — observe asymptomatic, stable disease Rituximab alone has largely replaced splenectomy as first therapy: high response rates, no surgical risk. Splenectomy remains diagnostic and therapeutic when tissue is needed or rituximab fails Before splenectomy: pneumococcal, meningococcal (ACWY + B) and Hib vaccines ≥2 weeks before — and before rituximab , which blunts vaccine response Treat autoimmune cytopenias as part of the disease — they often respond to rituximab Dosing Regimen Dosing H. pylori bismuth quadruple PPI BID + bismuth subsalicylate 524 mg QID + tetracycline 500 mg QID + metronidazole 500 mg TID–QID, 14 days Rituximab 375 mg/m² weekly ×4 ; maintenance 375 q8wk ×2 yr optional BR Bendamustine 90 mg/m² d1+2 + rituximab 375 d1, q28d ×6 R-chlorambucil IELSG-19 Chlorambucil 6 mg/m²/d PO wk 1–6, then 2-wk blocks (wk 9–10, 13–14, 17–18, 21–22) + rituximab 375 wk 1–4, 9, 13, 17, 21 Zanubrutinib 160 mg BID or 320 mg daily, continuous R² Lenalidomide 20 mg d1–21 q28d ×12 + rituximab weekly C1, d1 C2–5 ISRT 24 Gy / 12 fx ; 2 × 2 Gy for palliation Pearls Always test for the driver — H. pylori, HCV — before any cytotoxic therapy t(11;18) predicts H. pylori non-response (and dissemination): go to RT rather than repeated antibiotics Give gastric MALT time : histologic regression after eradication can take a year or more MYD88 L265P favors LPL ; CD5+ or cyclin D1+ is not MZL"
+}

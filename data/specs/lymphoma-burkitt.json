@@ -1,0 +1,455 @@
+{
+ "disease": "lymphoma-burkitt",
+ "spec_file": "lymphoma_burkitt.py",
+ "pdf": "Lymphoma - Burkitt.pdf",
+ "title": "Burkitt lymphoma",
+ "subtitle": "<b>MYC-driven, Ki-67 ~100%, curable</b> &mdash; if you prevent tumor lysis, cover the CNS, and give intensive rituximab-containing therapy without delay. The regimen decision turns on <b>age, fitness, and whether the CSF is involved</b>",
+ "source": "Compiled from the Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin &mdash; Burkitt and HIV-associated lymphoma &middot; NCCN &middot; primary trial reports verified against PubMed, September 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Biology and diagnosis",
+       "widths": [
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Defining lesion</b>",
+         "<b>MYC rearrangement to an Ig locus</b>, confirmed by FISH: <b>t(8;14) IGH</b> <span class='r'>~80%</span> &middot; <b>t(2;8) IGK</b> <span class='r'>~15%</span> &middot; <b>t(8;22) IGL</b> <span class='r'>~5%</span>. Co-operating ID3, TCF3, TP53 mutations"
+        ],
+        [
+         "<b>Morphology</b>",
+         "Monomorphic medium cells, diffuse. <b>&ldquo;Starry sky&rdquo;</b> &mdash; tingible-body macrophages engulfing apoptotic debris"
+        ],
+        [
+         "<b>Phenotype</b>",
+         "CD20+, <b>CD10+, BCL6+, BCL2 negative</b>, TdT negative &middot; <b>Ki-67 ~100%</b>"
+        ],
+        [
+         "<b>Endemic</b>",
+         "Equatorial Africa, children; <b>EBV+ in nearly all</b>, malaria co-factor. <b>Jaw / orbit</b>, abdominal viscera"
+        ],
+        [
+         "<b>Sporadic</b>",
+         "Worldwide, all ages; EBV+ in a minority. <b>Ileocecal / abdominal mass</b>, marrow, CNS"
+        ],
+        [
+         "<b>Immunodeficiency</b>",
+         "<b>HIV</b> (often at relatively preserved CD4), post-transplant. Nodal, marrow and CNS disease common"
+        ],
+        [
+         "<b>Not Burkitt</b>",
+         "<b>BCL2 or BCL6 rearranged too</b> &rarr; HGBCL double-hit (treat per DLBCL card). <b>MYC-negative with 11q gain/loss</b> &rarr; HGBCL with 11q aberration (WHO-HAEM5; ICC: LBCL with 11q), formerly &ldquo;Burkitt-like&rdquo;. <b>TdT+</b> &rarr; lymphoblastic"
+        ]
+       ],
+       "footnote": "WHO-HAEM5 now subtypes Burkitt by <b>EBV status</b> (EBV+ vs EBV&minus;) rather than by the epidemiologic variant."
+      },
+      {
+       "type": "bullets",
+       "heading": "Workup &mdash; treat as an emergency",
+       "items": [
+        "<b>Excisional or core biopsy with MYC FISH</b> (plus BCL2, BCL6 FISH); start therapy within days",
+        "<b>TLS labs at presentation:</b> K, phos, Ca, uric acid, creatinine, <b>LDH</b> &mdash; spontaneous TLS before any chemo is classic",
+        "<b>PET/CT</b> &middot; <b>bone marrow biopsy</b> &middot; <b>LP with cytology AND flow cytometry</b> (brain MRI if symptoms) &mdash; CNS involved in <b>~19%</b> of adults",
+        "<b>HIV</b>, HBsAg / anti-HBc / anti-HBs, HCV &middot; <b>echo</b> &middot; <b>G6PD before rasburicase</b> &middot; pregnancy test &middot; fertility counseling",
+        "<b>No LP if circulating blasts or platelets &lt;50,000</b>"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Risk stratification",
+       "widths": [
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Low risk</b> (regimen gate)",
+         "<b>All of:</b> normal LDH, ECOG 0&ndash;1, stage I&ndash;II, no mass &ge;10 cm, &le;1 extranodal site (Magrath / Mead). <b>NCI 9177 used mass &lt;7 cm</b>, not 10. <b>Everyone else is high risk</b> (~85&ndash;90% of adults)"
+        ],
+        [
+         "<b>BL-IPI</b> (prognosis)",
+         "1 point each: <b>age &ge;40 &middot; ECOG &ge;2 &middot; LDH &gt;3&times; ULN &middot; CNS involvement</b>. 3-yr PFS <b>0 = 92%</b> &middot; 1 = 72% &middot; <b>&ge;2 = 53%</b> <span class='r'>Olszewski, JCO 2021</span>"
+        ]
+       ],
+       "footnote": "Real-world (30 US centres, 641 adults): 3-yr PFS <b>64%</b>, <b>treatment-related mortality 10%</b> &mdash; well below trial results. Rituximab (PFS 67% vs 38%) and <b>academic-centre care</b> (67% vs 46%) tracked with better outcome <span class='r'>Evens, Blood 2021</span>."
+      }
+     ]
+    },
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Day 0 &mdash; before chemotherapy",
+         "color": "amber",
+         "boxes": [
+          [
+           "TLS prophylaxis + staging in parallel",
+           [
+            "IV fluids, <b>rasburicase</b>, labs q6&ndash;8h, strict I/O",
+            "LP / marrow; <b>always add rituximab</b> (LMB: EFS 75 vs 62%)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Choose a regimen",
+         "color": "teal",
+         "boxes": [
+          [
+           "Low risk",
+           [
+            "<b>R-CODOX-M &times;3</b> (A-A-A), or",
+            "<b>DA-EPOCH-R &times;3</b>, no intrathecal (NCI 9177)"
+           ]
+          ],
+          [
+           "High risk, CNS negative",
+           [
+            "<b>R-CODOX-M / R-IVAC &times;4</b> (A-B-A-B) if fit, &lt;~65",
+            "<b>DA-EPOCH-R &times;6 + IT MTX</b> if older, HIV+,",
+            "&nbsp;&nbsp;comorbid &mdash; HOVON: similar PFS, less toxicity",
+            "R-hyper-CVAD / MA &times;6&ndash;8 is an alternative"
+           ]
+          ],
+          [
+           "High risk, CNS POSITIVE",
+           [
+            "<b>HD-MTX + HD-cytarabine regimen</b> &mdash;",
+            "&nbsp;&nbsp;R-CODOX-M/R-IVAC (16 IT total) or R-hyper-CVAD",
+            "<b>avoid DA-EPOCH-R</b>: CSF+ 4-yr EFS 45.5%"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Response",
+         "color": "blue",
+         "boxes": [
+          [
+           "End-of-treatment PET/CT",
+           [
+            "no maintenance, no consolidative ASCT in CR1",
+            "relapses are early (mostly &lt;1 yr) and CNS-prone"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Relapsed / refractory &mdash; poor",
+         "color": "coral",
+         "boxes": [
+          [
+           "Clinical trial first",
+           [
+            "salvage (R-ICE, R-DHAP) &rarr; ASCT if chemosensitive",
+            "allo-HCT for selected young, fit patients",
+            "<b>CD19 CAR-T off-label</b> &mdash; Burkitt not in the pivotal",
+            "&nbsp;&nbsp;trials; bridge to transplant in case series"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "note",
+       "html": "<b>Burkitt is the highest TLS-risk lymphoma</b> (Cairo-Coiffier high-risk category). <b>Rasburicase prophylaxis</b>, not allopurinol alone: label 0.2 mg/kg IV daily up to 5 days, though a <b>single fixed 6 mg dose</b> usually suffices (handbook: give for uric acid &gt;7.5, renal dysfunction, or WBC &ge;100,000). <b>Contraindicated in G6PD deficiency</b> (hemolysis, methemoglobinemia); post-dose uric acid in a <b>pre-chilled heparin tube on ice</b>. NS <b>2&ndash;3 L/m&sup2;/day</b>, goal UOP ~100 mL/h; <b>labs q6&ndash;8h</b>; continue <b>&ge;72 h after chemo</b>. <span class='warn'>Do NOT alkalinize urine for TLS</span> &mdash; it promotes calcium-phosphate and xanthine precipitation (guideline: not recommended). Early nephrology if K, phos or creatinine climb. Allopurinol 300 mg BID after rasburicase."
+      }
+     ]
+    },
+    {
+     "width": "38%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimen choice &mdash; what the evidence says",
+       "headers": [
+        "Regimen",
+        "Evidence",
+        "Weak spot"
+       ],
+       "widths": [
+        "20%",
+        "47%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>R-CODOX-M / R-IVAC</b> <span class='r'>modified Magrath</span>",
+         "LY10 (Mead 2008, MTX cut to 3 g/m&sup2;): 2-yr PFS <b>85% low risk, 49% high risk</b>, with less toxicity than full-dose. <b>Lowest CNS relapse</b> in real-world data (~4%)",
+         "Most toxic: grade 3&ndash;5 infection 56% (HOVON). Inpatient; age &gt;65 needs dose reduction"
+        ],
+        [
+         "<b>DA-EPOCH-R</b>",
+         "NCI 9177 (single arm, n=113, 25% HIV+): 4-yr <b>EFS 84.5%</b> &mdash; 100% low risk, 82% high risk; same across age and HIV. <b>HOVON/SAKK randomized</b> (CNS-negative high risk): 2-yr PFS 70% vs 76%, HR 1.42, <b>p=0.40</b> &mdash; underpowered, closed early",
+         "<b>CNS.</b> CSF+ high-risk EFS <b>45.5% vs 89.9%</b>. Real-world CNS relapse <b>13% vs 3&ndash;4%</b> with MTX/cytarabine regimens (aSHR 4.38)"
+        ],
+        [
+         "<b>R-hyper-CVAD / MA</b>",
+         "MDACC, n=31 (29% &ge;60 yr): CR 86%, 3-yr OS <b>89%</b>, EFS 80%. Single arm",
+         "Long (6&ndash;8 cycles), myelosuppressive; small series"
+        ],
+        [
+         "<b>Rituximab</b>",
+         "<b>Ribrag, Lancet 2016</b> (LMB &plusmn; R, n=260, randomized): 3-yr EFS <b>75% vs 62%</b>, HR 0.59, no added toxicity",
+         "&mdash; add to every regimen"
+        ]
+       ],
+       "footnote": "No regimen has beaten another for survival in a completed randomized trial. Practical rule: <b>fit, younger, or CNS-positive &rarr; HD-MTX/cytarabine-based</b>; <b>older, HIV+, or frail and CNS-negative &rarr; DA-EPOCH-R</b>."
+      },
+      {
+       "type": "bullets",
+       "heading": "CNS &mdash; everyone gets covered",
+       "items": [
+        "<b>Prophylaxis is universal</b> (IT MTX &plusmn; cytarabine built into every regimen, + systemic HD-MTX in Magrath and hyper-CVAD). The one exception: <b>NCI 9177 low-risk patients received none</b> and none relapsed",
+        "<b>CSF involvement is the strongest adverse factor</b> in every series &mdash; stage it properly (cytology + flow) before cycle 1 IT",
+        "<b>CNS-positive:</b> intensify IT (Magrath: 2 extra per cycle, 16 total; hyper-CVAD: IT twice weekly until CSF clear &times;2) &mdash; systemic HD-MTX and HD-cytarabine penetrate the parenchyma, infusional EPOCH does not"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "HIV-associated Burkitt",
+       "items": [
+        "<b>Treat with curative intent, same regimens</b> &mdash; HIV status no longer predicts outcome (NCI 9177 EFS 84.9% HIV+ vs 84.5% HIV&minus;; US-UK series 3-yr PFS 61%)",
+        "<b>Continue or start ART</b> with oncology-pharmacy review; <b>avoid ritonavir / cobicistat boosting</b> (CYP3A4 &rarr; vincristine neuropathy, anthracycline and etoposide toxicity) &mdash; an integrase-inhibitor backbone is usual",
+        "US-UK HIV-BL cohort (n=249): baseline CNS disease 3-yr PFS 36% vs 69%; <b>CNS recurrence higher after DA-EPOCH</b> (sHR 2.52); CODOX-M/IVAC associated with longer PFS (aHR 0.45) &mdash; retrospective",
+        "PJP prophylaxis throughout; <b>MAC prophylaxis if CD4 &lt;100</b>; consider quinolone during nadir"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; regimen dosing, high-dose methotrexate administration, supportive care, and the evidence",
+   "columns": [
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Modified Magrath (Mead, Blood 2008) &mdash; q21d or on count recovery",
+       "headers": [
+        "Cycle",
+        "Dosing (mg/m&sup2; unless stated)"
+       ],
+       "widths": [
+        "17%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>A &mdash; R-CODOX-M</b>",
+         "Rituximab 375 d1 &middot; cyclophosphamide <b>800 d1 + 200 d2&ndash;5</b> (first A; later A cycles 800 d1+2) &middot; doxorubicin 40 d1 &middot; vincristine 1.5 (cap 2 mg) d1+8 &middot; <b>MTX 3000 over 24 h on d10</b> (300 over 1 h, then 2700 over 23 h) &middot; IT cytarabine 70 mg d1+3 &middot; IT MTX 12 mg d15"
+        ],
+        [
+         "<b>B &mdash; R-IVAC</b>",
+         "Rituximab 375 d1 &middot; etoposide 60 d1&ndash;5 &middot; ifosfamide 1500 d1&ndash;5 + mesna &middot; <b>cytarabine 2000 q12h &times;4</b> d1&ndash;2 (steroid eye drops) &middot; IT MTX 12 mg d5"
+        ],
+        [
+         "<b>Age &gt;65</b>",
+         "MTX <b>1000</b> (100 over 1 h, then 900 over 23 h) &middot; ifosfamide 1000 &middot; cytarabine <b>1000</b>"
+        ],
+        [
+         "<b>CNS positive</b>",
+         "A: + IT cytarabine 70 mg d5, IT MTX 12 mg d17 &middot; B: + IT cytarabine 70 mg d7 and d9 &mdash; <b>16 IT total</b>"
+        ],
+        [
+         "<b>Leucovorin</b>",
+         "15 mg/m&sup2; IV at <b>36 h</b> from MTX start, q3h to 48 h, then q6h until MTX &lt;0.05 &micro;M. After each IT MTX: 15 mg PO at 24 h"
+        ],
+        [
+         "<b>Start cycle if</b>",
+         "ANC &gt;1000, plt &gt;75k, direct bili &lt;1.4, Cr &lt;1.2 &mdash; <b>not required for cycle 1 or for d10 HD-MTX</b>"
+        ]
+       ],
+       "footnote": "Rituximab was not part of LY10 (added in routine practice; Ribrag). G-CSF after the MTX level is &lt;0.02 (A); d7&ndash;16 or pegfilgrastim d7 (B). Levofloxacin during nadir."
+      },
+      {
+       "type": "table",
+       "heading": "DA-EPOCH-R (Roschewski, JCO 2020) &mdash; q21d",
+       "headers": [
+        "",
+        "Dosing"
+       ],
+       "widths": [
+        "17%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Drugs</b>",
+         "Rituximab 375 d1 &middot; <b>etoposide 50, doxorubicin 10, vincristine 0.4 (no cap)</b>, each /day CIV d1&ndash;4 &middot; cyclophosphamide 750 d5 &middot; prednisone 60 BID PO d1&ndash;5 (handbook lists 60/day)"
+        ],
+        [
+         "<b>Cycles</b>",
+         "Low risk <b>&times;3, no IT</b> &middot; high risk <b>&times;6 + IT MTX 12 mg</b> each cycle (extended IT if CSF+)"
+        ],
+        [
+         "<b>Adjust</b>",
+         "CBC twice weekly; ANC nadir &ge;500 &rarr; <b>+20%</b> (E, D, C) &middot; &lt;500 on 1&ndash;2 checks &rarr; same &middot; &lt;500 on 3 checks or plt &lt;25k &rarr; <b>&minus;20%</b>"
+        ]
+       ],
+       "footnote": "G-CSF from 24 h after chemo. Outpatient-feasible via ambulatory pump."
+      },
+      {
+       "type": "bullets",
+       "heading": "Supportive care that trips people up",
+       "items": [
+        "<b>Hold TMP-SMX around HD-MTX</b> (delays clearance) &mdash; use atovaquone or pentamidine for PJP, or resume once MTX has cleared",
+        "<b>Avoid azoles that inhibit CYP3A4 (posaconazole, voriconazole, itraconazole) with vincristine</b> &mdash; severe neuropathy and ileus. Bowel regimen with every vincristine dose",
+        "<b>HD-cytarabine:</b> prednisolone 1% drops 2 gtt OU BID from 12 h before to 48 h after; <b>check for cerebellar signs before each dose</b> (higher risk with age &gt;60 or renal dysfunction)",
+        "<b>Ifosfamide:</b> mesna with every dose; watch for encephalopathy",
+        "<b>HBV:</b> entecavir if HBsAg+ or anti-HBc+ on rituximab &middot; G-CSF with every cycle &middot; quinolone during neutropenia"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "32%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "R-hyper-CVAD / R-MA (Thomas, Cancer 2006) &mdash; alternating, 6&ndash;8 cycles",
+       "headers": [
+        "",
+        "Dosing"
+       ],
+       "widths": [
+        "17%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>A (1,3,5,7)</b>",
+         "Rituximab 375 &middot; cyclophosphamide 300 q12h &times;6 d1&ndash;3 (mesna) &middot; doxorubicin 50 CIV d4 &middot; vincristine 2 mg d4+11 &middot; dexamethasone 40 mg d1&ndash;4, 11&ndash;14"
+        ],
+        [
+         "<b>B (2,4,6,8)</b>",
+         "Rituximab 375 &middot; <b>MTX 200 over 2 h + 800 over 22 h d1</b> &middot; <b>cytarabine 3000 q12h &times;4 d2&ndash;3</b> (1000 if &gt;60 yr or Cr &gt;1.5) &middot; leucovorin from 36 h"
+        ],
+        [
+         "<b>CNS</b>",
+         "IT MTX 12 mg d2 + IT cytarabine 100 mg d8, cycles 1&ndash;4 (8 IT). CNS+: twice weekly until CSF clear &times;2"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "High-dose MTX &mdash; the alkalinization that DOES apply",
+       "widths": [
+        "23%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Pre-check</b>",
+         "<b>Drain or avoid if effusion / ascites</b> (third-space reservoir) &middot; stop <b>PPIs, TMP-SMX, penicillins, NSAIDs, salicylates, probenecid</b> &middot; CrCl: 50% dose if 10&ndash;50, omit &lt;10"
+        ],
+        [
+         "<b>Alkalinize</b>",
+         "&frac12;NS + 100 mEq NaHCO&#8323;/L at 500 mL/h &times;2 h, then 125 mL/h. <b>Start MTX only when urine pH &ge;7</b> and UOP &gt;100 mL/h; keep pH &ge;7 until cleared"
+        ],
+        [
+         "<b>Levels</b>",
+         "q24h from 24 h. <b>Escalate leucovorin to 100 mg/m&sup2; q6h</b> if at 24 h Cr &uarr;&gt;50% or level &gt;20 &micro;M; 48 h &gt;1 &micro;M; 72 h &gt;0.1 &micro;M"
+        ],
+        [
+         "<b>Glucarpidase</b>",
+         "<b>50 U/kg IV</b> if level &gt;1 &micro;M with delayed clearance from renal failure. <b>No leucovorin within 2 h</b> either side; <b>immunoassay unreliable for 48 h</b> (use chromatographic assay)"
+        ]
+       ],
+       "footnote": "Contrast with TLS (page 1): urine alkalinization is <b>required for HD-MTX</b> (MTX precipitates in acid urine) but <b>harmful for TLS</b>. When both overlap (cycle 1 d10), rasburicase has already handled urate &mdash; alkalinize for the MTX."
+      }
+     ]
+    },
+    {
+     "width": "32%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Key trials and cohorts",
+       "rows": [
+        [
+         "<b>LY10</b> <span class='r'>Mead, Blood 2008</span>",
+         "Dose-modified CODOX-M/IVAC (MTX 3 g/m&sup2;), prospective: 2-yr PFS 64% in BL; low risk 85%, high risk 49%"
+        ],
+        [
+         "<b>LMB &plusmn; R</b> <span class='r'>Ribrag, Lancet 2016</span>",
+         "Phase 3, n=260, HIV&minus;: rituximab 3-yr EFS <b>75% vs 62%</b>, HR 0.59 &mdash; the rituximab randomization"
+        ],
+        [
+         "<b>NCI 9177</b> <span class='r'>Roschewski, JCO 2020</span>",
+         "Risk-adapted DA-EPOCH-R, single arm: EFS 84.5%; <b>CSF+ is the failure group</b>"
+        ],
+        [
+         "<b>HOVON/SAKK</b> <span class='r'>Chamuleau, Lancet Haem 2023</span>",
+         "R-CODOX-M/R-IVAC vs DA-EPOCH-R, CNS&minus; high risk: 2-yr PFS 76% vs 70%, <b>not significant</b>; closed early (n=89); fewer infections with EPOCH"
+        ],
+        [
+         "<b>MDACC R-hyper-CVAD</b> <span class='r'>Thomas, Cancer 2006</span>",
+         "n=31: 3-yr OS 89%; rituximab improved outcome vs historical hyper-CVAD"
+        ],
+        [
+         "<b>BL-IPI</b> <span class='r'>Olszewski, JCO 2021</span>",
+         "Age &ge;40, ECOG &ge;2, LDH &gt;3&times;, CNS &mdash; 3-yr PFS 92 / 72 / 53%; validated in 457 ex-US patients"
+        ],
+        [
+         "<b>US real-world</b> <span class='r'>Evens, Blood 2021</span>",
+         "641 adults, 30 centres: 3-yr PFS 64%, OS 70%, <b>TRM 10%</b>; no difference by HIV status"
+        ],
+        [
+         "<b>CNS cohort</b> <span class='r'>Zayac, Haematologica 2021</span>",
+         "CNS+ in 19%; CR 59% vs 77%. 3-yr CNS relapse <b>13% after DA-EPOCH-R</b> vs 4% CODOX-M/IVAC, 3% hyper-CVAD/MA"
+        ],
+        [
+         "<b>HIV-BL</b> <span class='r'>Alderuccio, Blood Adv 2021</span>",
+         "n=249 US-UK: 3-yr PFS 61%; CD4 did not predict; CNS relapse higher after DA-EPOCH"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>Board triad: MYC-IG translocation + BCL2-negative + Ki-67 ~100%</b>. BCL2-positive with MYC = think double hit, not Burkitt",
+        "<b>Urine alkalinization: never for TLS, always for HD-MTX</b>",
+        "Don&rsquo;t wait for complete staging to start TLS prophylaxis &mdash; several pediatric-derived protocols (LMB) open with a low-intensity <b>pre-phase</b> (cyclophosphamide, vincristine, prednisone) to debulk",
+        "<b>If CSF is positive, don&rsquo;t choose DA-EPOCH-R</b>; if the patient is old, HIV+ or frail and CSF-negative, DA-EPOCH-R is the kinder, equally effective choice",
+        "No maintenance, no consolidative transplant in CR1"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Biology and diagnosis",
+  "Workup &mdash; treat as an emergency",
+  "Risk stratification",
+  "Treatment pathway",
+  "Regimen choice &mdash; what the evidence says",
+  "CNS &mdash; everyone gets covered",
+  "HIV-associated Burkitt",
+  "Modified Magrath (Mead, Blood 2008) &mdash; q21d or on count recovery",
+  "DA-EPOCH-R (Roschewski, JCO 2020) &mdash; q21d",
+  "Supportive care that trips people up",
+  "R-hyper-CVAD / R-MA (Thomas, Cancer 2006) &mdash; alternating, 6&ndash;8 cycles",
+  "High-dose MTX &mdash; the alkalinization that DOES apply",
+  "Key trials and cohorts",
+  "Pearls"
+ ],
+ "text": "Burkitt lymphoma MYC-driven, Ki-67 ~100%, curable — if you prevent tumor lysis, cover the CNS, and give intensive rituximab-containing therapy without delay. The regimen decision turns on age, fitness, and whether the CSF is involved Compiled from the Stanford Oncology Handbook 2025, Lymphoma: Non-Hodgkin — Burkitt and HIV-associated lymphoma · NCCN · primary trial reports verified against PubMed, September 2026. Biology and diagnosis Defining lesion MYC rearrangement to an Ig locus , confirmed by FISH: t(8;14) IGH ~80% · t(2;8) IGK ~15% · t(8;22) IGL ~5% . Co-operating ID3, TCF3, TP53 mutations Morphology Monomorphic medium cells, diffuse. “Starry sky” — tingible-body macrophages engulfing apoptotic debris Phenotype CD20+, CD10+, BCL6+, BCL2 negative , TdT negative · Ki-67 ~100% Endemic Equatorial Africa, children; EBV+ in nearly all , malaria co-factor. Jaw / orbit , abdominal viscera Sporadic Worldwide, all ages; EBV+ in a minority. Ileocecal / abdominal mass , marrow, CNS Immunodeficiency HIV (often at relatively preserved CD4), post-transplant. Nodal, marrow and CNS disease common Not Burkitt BCL2 or BCL6 rearranged too → HGBCL double-hit (treat per DLBCL card). MYC-negative with 11q gain/loss → HGBCL with 11q aberration (WHO-HAEM5; ICC: LBCL with 11q), formerly “Burkitt-like”. TdT+ → lymphoblastic WHO-HAEM5 now subtypes Burkitt by EBV status (EBV+ vs EBV−) rather than by the epidemiologic variant. Workup — treat as an emergency Excisional or core biopsy with MYC FISH (plus BCL2, BCL6 FISH); start therapy within days TLS labs at presentation: K, phos, Ca, uric acid, creatinine, LDH — spontaneous TLS before any chemo is classic PET/CT · bone marrow biopsy · LP with cytology AND flow cytometry (brain MRI if symptoms) — CNS involved in ~19% of adults HIV , HBsAg / anti-HBc / anti-HBs, HCV · echo · G6PD before rasburicase · pregnancy test · fertility counseling No LP if circulating blasts or platelets <50,000 Risk stratification Low risk (regimen gate) All of: normal LDH, ECOG 0–1, stage I–II, no mass ≥10 cm, ≤1 extranodal site (Magrath / Mead). NCI 9177 used mass <7 cm , not 10. Everyone else is high risk (~85–90% of adults) BL-IPI (prognosis) 1 point each: age ≥40 · ECOG ≥2 · LDH >3× ULN · CNS involvement . 3-yr PFS 0 = 92% · 1 = 72% · ≥2 = 53% Olszewski, JCO 2021 Real-world (30 US centres, 641 adults): 3-yr PFS 64% , treatment-related mortality 10% — well below trial results. Rituximab (PFS 67% vs 38%) and academic-centre care (67% vs 46%) tracked with better outcome Evens, Blood 2021 . Treatment pathway Day 0 — before chemotherapy TLS prophylaxis + staging in parallel IV fluids, rasburicase , labs q6–8h, strict I/O LP / marrow; always add rituximab (LMB: EFS 75 vs 62%) Choose a regimen Low risk R-CODOX-M ×3 (A-A-A), or DA-EPOCH-R ×3 , no intrathecal (NCI 9177) High risk, CNS negative R-CODOX-M / R-IVAC ×4 (A-B-A-B) if fit, <~65 DA-EPOCH-R ×6 + IT MTX if older, HIV+, comorbid — HOVON: similar PFS, less toxicity R-hyper-CVAD / MA ×6–8 is an alternative High risk, CNS POSITIVE HD-MTX + HD-cytarabine regimen — R-CODOX-M/R-IVAC (16 IT total) or R-hyper-CVAD avoid DA-EPOCH-R : CSF+ 4-yr EFS 45.5% Response End-of-treatment PET/CT no maintenance, no consolidative ASCT in CR1 relapses are early (mostly <1 yr) and CNS-prone Relapsed / refractory — poor Clinical trial first salvage (R-ICE, R-DHAP) → ASCT if chemosensitive allo-HCT for selected young, fit patients CD19 CAR-T off-label — Burkitt not in the pivotal trials; bridge to transplant in case series Burkitt is the highest TLS-risk lymphoma (Cairo-Coiffier high-risk category). Rasburicase prophylaxis , not allopurinol alone: label 0.2 mg/kg IV daily up to 5 days, though a single fixed 6 mg dose usually suffices (handbook: give for uric acid >7.5, renal dysfunction, or WBC ≥100,000). Contraindicated in G6PD deficiency (hemolysis, methemoglobinemia); post-dose uric acid in a pre-chilled heparin tube on ice . NS 2–3 L/m²/day , goal UOP ~100 mL/h; labs q6–8h ; continue ≥72 h after chemo . Do NOT alkalinize urine for TLS — it promotes calcium-phosphate and xanthine precipitation (guideline: not recommended). Early nephrology if K, phos or creatinine climb. Allopurinol 300 mg BID after rasburicase. Regimen choice — what the evidence says Regimen Evidence Weak spot R-CODOX-M / R-IVAC modified Magrath LY10 (Mead 2008, MTX cut to 3 g/m²): 2-yr PFS 85% low risk, 49% high risk , with less toxicity than full-dose. Lowest CNS relapse in real-world data (~4%) Most toxic: grade 3–5 infection 56% (HOVON). Inpatient; age >65 needs dose reduction DA-EPOCH-R NCI 9177 (single arm, n=113, 25% HIV+): 4-yr EFS 84.5% — 100% low risk, 82% high risk; same across age and HIV. HOVON/SAKK randomized (CNS-negative high risk): 2-yr PFS 70% vs 76%, HR 1.42, p=0.40 — underpowered, closed early CNS. CSF+ high-risk EFS 45.5% vs 89.9% . Real-world CNS relapse 13% vs 3–4% with MTX/cytarabine regimens (aSHR 4.38) R-hyper-CVAD / MA MDACC, n=31 (29% ≥60 yr): CR 86%, 3-yr OS 89% , EFS 80%. Single arm Long (6–8 cycles), myelosuppressive; small series Rituximab Ribrag, Lancet 2016 (LMB ± R, n=260, randomized): 3-yr EFS 75% vs 62% , HR 0.59, no added toxicity — add to every regimen No regimen has beaten another for survival in a completed randomized trial. Practical rule: fit, younger, or CNS-positive → HD-MTX/cytarabine-based ; older, HIV+, or frail and CNS-negative → DA-EPOCH-R . CNS — everyone gets covered Prophylaxis is universal (IT MTX ± cytarabine built into every regimen, + systemic HD-MTX in Magrath and hyper-CVAD). The one exception: NCI 9177 low-risk patients received none and none relapsed CSF involvement is the strongest adverse factor in every series — stage it properly (cytology + flow) before cycle 1 IT CNS-positive: intensify IT (Magrath: 2 extra per cycle, 16 total; hyper-CVAD: IT twice weekly until CSF clear ×2) — systemic HD-MTX and HD-cytarabine penetrate the parenchyma, infusional EPOCH does not HIV-associated Burkitt Treat with curative intent, same regimens — HIV status no longer predicts outcome (NCI 9177 EFS 84.9% HIV+ vs 84.5% HIV−; US-UK series 3-yr PFS 61%) Continue or start ART with oncology-pharmacy review; avoid ritonavir / cobicistat boosting (CYP3A4 → vincristine neuropathy, anthracycline and etoposide toxicity) — an integrase-inhibitor backbone is usual US-UK HIV-BL cohort (n=249): baseline CNS disease 3-yr PFS 36% vs 69%; CNS recurrence higher after DA-EPOCH (sHR 2.52); CODOX-M/IVAC associated with longer PFS (aHR 0.45) — retrospective PJP prophylaxis throughout; MAC prophylaxis if CD4 <100 ; consider quinolone during nadir Modified Magrath (Mead, Blood 2008) — q21d or on count recovery Cycle Dosing (mg/m² unless stated) A — R-CODOX-M Rituximab 375 d1 · cyclophosphamide 800 d1 + 200 d2–5 (first A; later A cycles 800 d1+2) · doxorubicin 40 d1 · vincristine 1.5 (cap 2 mg) d1+8 · MTX 3000 over 24 h on d10 (300 over 1 h, then 2700 over 23 h) · IT cytarabine 70 mg d1+3 · IT MTX 12 mg d15 B — R-IVAC Rituximab 375 d1 · etoposide 60 d1–5 · ifosfamide 1500 d1–5 + mesna · cytarabine 2000 q12h ×4 d1–2 (steroid eye drops) · IT MTX 12 mg d5 Age >65 MTX 1000 (100 over 1 h, then 900 over 23 h) · ifosfamide 1000 · cytarabine 1000 CNS positive A: + IT cytarabine 70 mg d5, IT MTX 12 mg d17 · B: + IT cytarabine 70 mg d7 and d9 — 16 IT total Leucovorin 15 mg/m² IV at 36 h from MTX start, q3h to 48 h, then q6h until MTX <0.05 &micro;M. After each IT MTX: 15 mg PO at 24 h Start cycle if ANC >1000, plt >75k, direct bili <1.4, Cr <1.2 — not required for cycle 1 or for d10 HD-MTX Rituximab was not part of LY10 (added in routine practice; Ribrag). G-CSF after the MTX level is <0.02 (A); d7–16 or pegfilgrastim d7 (B). Levofloxacin during nadir. DA-EPOCH-R (Roschewski, JCO 2020) — q21d Dosing Drugs Rituximab 375 d1 · etoposide 50, doxorubicin 10, vincristine 0.4 (no cap) , each /day CIV d1–4 · cyclophosphamide 750 d5 · prednisone 60 BID PO d1–5 (handbook lists 60/day) Cycles Low risk ×3, no IT · high risk ×6 + IT MTX 12 mg each cycle (extended IT if CSF+) Adjust CBC twice weekly; ANC nadir ≥500 → +20% (E, D, C) · <500 on 1–2 checks → same · <500 on 3 checks or plt <25k → −20% G-CSF from 24 h after chemo. Outpatient-feasible via ambulatory pump. Supportive care that trips people up Hold TMP-SMX around HD-MTX (delays clearance) — use atovaquone or pentamidine for PJP, or resume once MTX has cleared Avoid azoles that inhibit CYP3A4 (posaconazole, voriconazole, itraconazole) with vincristine — severe neuropathy and ileus. Bowel regimen with every vincristine dose HD-cytarabine: prednisolone 1% drops 2 gtt OU BID from 12 h before to 48 h after; check for cerebellar signs before each dose (higher risk with age >60 or renal dysfunction) Ifosfamide: mesna with every dose; watch for encephalopathy HBV: entecavir if HBsAg+ or anti-HBc+ on rituximab · G-CSF with every cycle · quinolone during neutropenia R-hyper-CVAD / R-MA (Thomas, Cancer 2006) — alternating, 6–8 cycles Dosing A (1,3,5,7) Rituximab 375 · cyclophosphamide 300 q12h ×6 d1–3 (mesna) · doxorubicin 50 CIV d4 · vincristine 2 mg d4+11 · dexamethasone 40 mg d1–4, 11–14 B (2,4,6,8) Rituximab 375 · MTX 200 over 2 h + 800 over 22 h d1 · cytarabine 3000 q12h ×4 d2–3 (1000 if >60 yr or Cr >1.5) · leucovorin from 36 h CNS IT MTX 12 mg d2 + IT cytarabine 100 mg d8, cycles 1–4 (8 IT). CNS+: twice weekly until CSF clear ×2 High-dose MTX — the alkalinization that DOES apply Pre-check Drain or avoid if effusion / ascites (third-space reservoir) · stop PPIs, TMP-SMX, penicillins, NSAIDs, salicylates, probenecid · CrCl: 50% dose if 10–50, omit <10 Alkalinize &frac12;NS + 100 mEq NaHCO&#8323;/L at 500 mL/h ×2 h, then 125 mL/h. Start MTX only when urine pH ≥7 and UOP >100 mL/h; keep pH ≥7 until cleared Levels q24h from 24 h. Escalate leucovorin to 100 mg/m² q6h if at 24 h Cr &uarr;>50% or level >20 &micro;M; 48 h >1 &micro;M; 72 h >0.1 &micro;M Glucarpidase 50 U/kg IV if level >1 &micro;M with delayed clearance from renal failure. No leucovorin within 2 h either side; immunoassay unreliable for 48 h (use chromatographic assay) Contrast with TLS (page 1): urine alkalinization is required for HD-MTX (MTX precipitates in acid urine) but harmful for TLS . When both overlap (cycle 1 d10), rasburicase has already handled urate — alkalinize for the MTX. Key trials and cohorts LY10 Mead, Blood 2008 Dose-modified CODOX-M/IVAC (MTX 3 g/m²), prospective: 2-yr PFS 64% in BL; low risk 85%, high risk 49% LMB ± R Ribrag, Lancet 2016 Phase 3, n=260, HIV−: rituximab 3-yr EFS 75% vs 62% , HR 0.59 — the rituximab randomization NCI 9177 Roschewski, JCO 2020 Risk-adapted DA-EPOCH-R, single arm: EFS 84.5%; CSF+ is the failure group HOVON/SAKK Chamuleau, Lancet Haem 2023 R-CODOX-M/R-IVAC vs DA-EPOCH-R, CNS− high risk: 2-yr PFS 76% vs 70%, not significant ; closed early (n=89); fewer infections with EPOCH MDACC R-hyper-CVAD Thomas, Cancer 2006 n=31: 3-yr OS 89%; rituximab improved outcome vs historical hyper-CVAD BL-IPI Olszewski, JCO 2021 Age ≥40, ECOG ≥2, LDH >3×, CNS — 3-yr PFS 92 / 72 / 53%; validated in 457 ex-US patients US real-world Evens, Blood 2021 641 adults, 30 centres: 3-yr PFS 64%, OS 70%, TRM 10% ; no difference by HIV status CNS cohort Zayac, Haematologica 2021 CNS+ in 19%; CR 59% vs 77%. 3-yr CNS relapse 13% after DA-EPOCH-R vs 4% CODOX-M/IVAC, 3% hyper-CVAD/MA HIV-BL Alderuccio, Blood Adv 2021 n=249 US-UK: 3-yr PFS 61%; CD4 did not predict; CNS relapse higher after DA-EPOCH Pearls Board triad: MYC-IG translocation + BCL2-negative + Ki-67 ~100% . BCL2-positive with MYC = think double hit, not Burkitt Urine alkalinization: never for TLS, always for HD-MTX Don&rsquo;t wait for complete staging to start TLS prophylaxis — several pediatric-derived protocols (LMB) open with a low-intensity pre-phase (cyclophosphamide, vincristine, prednisone) to debulk If CSF is positive, don&rsquo;t choose DA-EPOCH-R ; if the patient is old, HIV+ or frail and CSF-negative, DA-EPOCH-R is the kinder, equally effective choice No maintenance, no consolidative transplant in CR1"
+}

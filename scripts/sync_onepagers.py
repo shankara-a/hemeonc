@@ -208,8 +208,11 @@ def main():
 
     # ---- 2b. spec export + search index ---------------------------------------------------
     if not a.dry_run:
+        specs_dir = src / "_assets" / "specs"          # specs live beside the PDFs: One Pagers/_assets/specs
+        if not specs_dir.is_dir():
+            specs_dir = src.parent / "_assets" / "specs"
         rc = subprocess.run([sys.executable, str(ROOT / "scripts" / "export_specs.py"), "--src",
-                             str(src.parent / "_assets" / "specs")], cwd=ROOT, text=True, capture_output=True)
+                             str(specs_dir)], cwd=ROOT, text=True, capture_output=True)
         print("   " + (rc.stdout.strip().replace("\n", "\n   ") or "(no spec output)"))
         if rc.returncode:
             print("   !! spec export failed — the Notes view will be stale:\n   " + rc.stderr.strip()[:400])

@@ -1,0 +1,458 @@
+{
+ "disease": "lymphoma-ctcl",
+ "spec_file": "lymphoma_ctcl.py",
+ "pdf": "Lymphoma - Cutaneous T-cell.pdf",
+ "title": "Cutaneous T-cell lymphoma",
+ "subtitle": "Mycosis fungoides &middot; S&eacute;zary syndrome &middot; primary cutaneous CD30+ LPDs &mdash; <b>a chronic disease managed for years: skin-directed first, systemic by compartment (skin vs blood), transplant for the few who can be cured</b>",
+ "source": "Compiled from the Stanford Oncology Handbook 2025, Mycosis Fungoides/S&eacute;zary Syndrome (Chou L, Khodadoust M) &middot; NCCN Primary Cutaneous Lymphomas &middot; primary trial reports and FDA actions verified against PubMed, September 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "What you are dealing with",
+       "headers": [
+        "Entity",
+        "Defining features"
+       ],
+       "widths": [
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Mycosis fungoides</b>",
+         "Most common CTCL. Patch &rarr; plaque &rarr; tumor, often in sun-protected &ldquo;bathing-trunk&rdquo; skin. Epidermotropic CD4+ cells, <b>CD7 loss</b>, Pautrier microabscesses. Skin-resident memory T-cell origin"
+        ],
+        [
+         "<b>S&eacute;zary syndrome</b> <span class='r'>&lt;5% of CTCL</span>",
+         "<b>All three:</b> erythroderma (&ge;80% BSA) + <b>B2 blood</b> + <b>a blood clone matching the skin</b>. Central-memory origin &mdash; a leukemic disease, not simply late MF"
+        ],
+        [
+         "<b>Adverse MF variants</b>",
+         "<b>Folliculotropic</b> (independent predictor of progression and death) &middot; <b>large-cell transformation</b> (&gt;25% large cells; higher progression risk) &middot; tumor stage, raised LDH"
+        ],
+        [
+         "<b>Primary cutaneous CD30+ LPDs</b> <span class='r'>2nd most common CTCL</span>",
+         "<b>Lymphomatoid papulosis</b> and <b>primary cutaneous ALCL</b> &mdash; indolent, excellent prognosis despite anaplastic cytology. Distinguish from systemic ALCL spreading to skin (ALK+ = systemic until proven otherwise)"
+        ]
+       ],
+       "footnote": "A <b>TCR clone alone is not diagnostic</b> &mdash; clonal T cells occur in benign dermatoses. Early MF often needs several biopsies, ideally taken off topical steroids."
+      },
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "<b>Skin biopsy</b> (multiple sites) with IHC incl. <b>CD30</b> and TCR gene rearrangement; <b>measure BSA</b> (patient palm + fingers &asymp; 1%) and mSWAT",
+        "<b>Blood flow cytometry</b> (CD4:CD8, CD4+CD7&minus;, CD4+CD26&minus; absolute counts) + <b>blood TCR clone</b> &mdash; needed to assign B stage",
+        "<b>Imaging: PET/CT or CT for T2b and above</b>, palpable nodes, or B1&ndash;B2 blood. Stage IA with no nodes needs no imaging",
+        "<b>Excise an abnormal node</b> &mdash; nodal histology (N1&ndash;N3) changes the stage; marrow only if unexplained cytopenias",
+        "LDH, CBC, CMP; <b>HTLV-1 serology</b> if erythroderma or from an endemic area (ATLL mimics S&eacute;zary)"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "ISCL/EORTC TNMB (Olsen, Blood 2022)",
+       "widths": [
+        "13%",
+        ""
+       ],
+       "rows": [
+        [
+         "T1 &middot; T2",
+         "Patches/plaques <b>&lt;10%</b> &middot; <b>&ge;10% BSA</b> (a = patch only, b = plaque)"
+        ],
+        [
+         "T3 &middot; T4",
+         "&ge;1 <b>tumor &ge;1 cm</b> &middot; <b>erythroderma &ge;80% BSA</b>"
+        ],
+        [
+         "N1 &middot; N2 &middot; N3",
+         "Abnormal node, histology Dutch grade 1 / 2 / 3&ndash;4 (NCI LN 0&ndash;2 / 3 / 4)"
+        ],
+        [
+         "M1",
+         "<b>Biopsy-proven</b> visceral disease"
+        ],
+        [
+         "<b>B0</b>",
+         "&le;5% S&eacute;zary cells, or &lt;250/&micro;L, or &lt;15% CD4+CD26&minus; / CD4+CD7&minus;"
+        ],
+        [
+         "<b>B1</b>",
+         "More than B0 but not B2"
+        ],
+        [
+         "<b>B2</b>",
+         "<b>&ge;1,000/&micro;L</b> S&eacute;zary cells, or CD4+CD26&minus; / CD4+CD7&minus; / other aberrant cells by flow &mdash; <b>plus a blood clone matching the skin</b>"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Stage groups",
+       "headers": [
+        "Stage",
+        "T",
+        "N",
+        "M",
+        "B"
+       ],
+       "widths": [
+        "34%",
+        "14%",
+        "16%",
+        "14%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>IA</b> &middot; <b>IB</b>",
+         "1 &middot; 2",
+         "0",
+         "0",
+         "0&ndash;1"
+        ],
+        [
+         "IIA",
+         "1&ndash;2",
+         "1&ndash;2",
+         "0",
+         "0&ndash;1"
+        ],
+        [
+         "<b>IIB</b> tumor",
+         "3",
+         "0&ndash;2",
+         "0",
+         "0&ndash;1"
+        ],
+        [
+         "IIIA &middot; IIIB erythrodermic",
+         "4",
+         "0&ndash;2",
+         "0",
+         "0 &middot; 1"
+        ],
+        [
+         "<b>IVA1 = S&eacute;zary</b>",
+         "any",
+         "0&ndash;2",
+         "0",
+         "<b>2</b>"
+        ],
+        [
+         "IVA2 &middot; IVB",
+         "any",
+         "3 &middot; any",
+         "0 &middot; 1",
+         "any"
+        ]
+       ],
+       "footnote": "<b>Stage IA: 5-yr OS 94%, median survival &ge;20 yr</b> &mdash; most die of something else. Stage III&ndash;IV: median survival ~5 yr, and over half die of disease (Agar, JCO 2010; NCI PDQ)."
+      }
+     ]
+    },
+    {
+     "width": "35%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Early MF &mdash; IA to IIA",
+         "color": "teal",
+         "boxes": [
+          [
+           "Skin-directed therapy",
+           [
+            "<b>IA</b>: topical steroid, <b>mechlorethamine gel</b>,",
+            "&nbsp;&nbsp;bexarotene gel, imiquimod, local RT",
+            "<b>IB&ndash;IIA</b>: <b>nbUVB</b> (patches) or <b>PUVA</b> (plaques)",
+            "not curative &mdash; <b>do not escalate for cosmetics</b>"
+           ]
+          ],
+          [
+           "Refractory or rapidly relapsing",
+           [
+            "add a low-intensity systemic: bexarotene, IFN,",
+            "low-dose MTX; <b>TSEBT 12 Gy</b> for widespread"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Tumor stage IIB &middot; LCT",
+         "color": "blue",
+         "boxes": [
+          [
+           "Limited vs generalized",
+           [
+            "limited tumors: <b>local RT 8&ndash;12 Gy</b> + skin therapy",
+            "generalized: <b>TSEBT</b> or systemic",
+            "<b>CD30+ or LCT: brentuximab</b> (ALCANZA)",
+            "others: HDACi, mogamulizumab, gemcitabine,",
+            "&nbsp;&nbsp;liposomal doxorubicin, pralatrexate"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Erythrodermic III &middot; S&eacute;zary IVA1",
+         "color": "purple",
+         "boxes": [
+          [
+           "Treat the blood",
+           [
+            "<b>mogamulizumab</b> (best blood responses)",
+            "<b>ECP</b> &plusmn; IFN or bexarotene &mdash; lower blood burden",
+            "romidepsin, low-dose alemtuzumab, pembrolizumab",
+            "<b>+ skin care, anti-staph, antipruritics</b>"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Advanced, refractory, fit",
+         "color": "coral",
+         "boxes": [
+          [
+           "Allogeneic HCT",
+           [
+            "only curative option; <b>go in remission</b>",
+            "CUTALLO: PFS 9.0 vs 3.0 mo (HR 0.38)",
+            "TSEBT often used to debulk skin pre-transplant"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "CD30+ LPD",
+         "color": "gray",
+         "boxes": [
+          [
+           "Lymphomatoid papulosis &middot; pc-ALCL",
+           [
+            "LyP: observe / topicals / <b>low-dose MTX</b>",
+            "pc-ALCL solitary: <b>excision or RT</b>",
+            "multifocal / relapsing: MTX or <b>brentuximab</b>",
+            "<b>multi-agent chemo is over-treatment</b>"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; skin-directed and systemic therapy, supportive care, CD30+ LPDs and trials",
+   "columns": [
+    {
+     "width": "27%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Skin-directed therapy",
+       "headers": [
+        "Therapy",
+        "How and what to know"
+       ],
+       "widths": [
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Topical corticosteroids</b>",
+         "High-potency (clobetasol) BID for T1 patches &mdash; high response rates in limited disease. Atrophy, striae, HPA suppression with large BSA"
+        ],
+        [
+         "<b>Mechlorethamine gel 0.016%</b>",
+         "Daily thin layer to lesions; gel non-inferior to compounded ointment (CAILS ORR <b>59% vs 48%</b>), faster response. <b>Contact dermatitis ~20%</b> &mdash; reduce frequency, add topical steroid. No systemic absorption"
+        ],
+        [
+         "<b>Bexarotene gel 1%</b> &middot; imiquimod",
+         "Retinoid gel titrated to BID&ndash;QID for limited lesions; irritation. Imiquimod for thick single plaques"
+        ],
+        [
+         "<b>nbUVB</b> &middot; <b>PUVA</b>",
+         "<b>nbUVB for patches</b>, <b>PUVA for thicker plaques</b> (deeper penetration); 2&ndash;3&times;/wk to clearance, then taper. <b>Cumulative risk of skin cancer</b> (PUVA: SCC, melanoma); eye protection after psoralen"
+        ],
+        [
+         "<b>Local RT</b>",
+         "<b>8&ndash;12 Gy</b> per lesion for palliation; <b>24&ndash;30 Gy for unilesional disease</b> (curative intent). MF is exquisitely radiosensitive"
+        ],
+        [
+         "<b>TSEBT</b>",
+         "<b>12 Gy low-dose</b> (1 Gy &times;12): ORR <b>88%</b>, CR 27%, median clinical benefit ~71 wk, <b>repeatable</b>. 30&ndash;36 Gy gives deeper CR but more toxicity and only once or twice per lifetime"
+        ]
+       ],
+       "footnote": "<b>Maximise skin-directed therapy and supportive care first</b> &mdash; it lengthens time to the next systemic. Check that a systemic agent is compatible with phototherapy/TSEBT before combining."
+      },
+      {
+       "type": "bullets",
+       "heading": "Primary cutaneous CD30+ LPDs &mdash; do not over-treat",
+       "items": [
+        "<b>Lymphomatoid papulosis:</b> crops of papules that <b>self-heal in weeks</b>. No therapy changes survival &mdash; observe, topical steroids, phototherapy, or <b>low-dose weekly MTX</b> for scarring or frequent crops. <b>Lifelong follow-up</b>: associated second lymphomas (MF, ALCL, Hodgkin)",
+        "<b>Primary cutaneous ALCL:</b> solitary/localized nodules, &gt;75% CD30+, ALK&minus;. <b>Excision or RT</b>; multifocal &rarr; MTX or brentuximab. Staging CT/PET to exclude systemic ALCL"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "45%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Systemic therapy &mdash; dosing, evidence, monitoring",
+       "headers": [
+        "Agent",
+        "Dose",
+        "Evidence &middot; what to watch"
+       ],
+       "widths": [
+        "17%",
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Bexarotene</b> <span class='r'>RXR, oral</span>",
+         "<b>300 mg/m&sup2;/day</b> with food; often started lower and titrated",
+         "ORR 45% in refractory IIB&ndash;IVB. <b>Hypertriglyceridemia</b> (pancreatitis) &mdash; start <b>fenofibrate</b> first, <b>avoid gemfibrozil</b> (raises bexarotene levels). <b>Central hypothyroidism: TSH falls &mdash; dose levothyroxine to free T4</b>. Teratogen"
+        ],
+        [
+         "<b>Interferon-&alpha;</b>",
+         "3&ndash;6 MU SC daily or TIW (pegylated IFN now used &mdash; Intron A off market)",
+         "Flu-like symptoms, depression, cytopenias, thyroid. Pairs well with ECP, bexarotene, PUVA"
+        ],
+        [
+         "<b>Low-dose methotrexate</b>",
+         "10&ndash;25 mg PO/SC weekly + folate",
+         "Workhorse for MF and <b>LyP</b>. LFTs, CBC; switch to pralatrexate 15 mg/m&sup2; if more is needed"
+        ],
+        [
+         "<b>Vorinostat</b> <span class='r'>HDACi</span>",
+         "400 mg PO daily",
+         "ORR <b>30%</b>, pruritus relief 32%. Diarrhea, fatigue, thrombocytopenia, <b>PE 5%</b>"
+        ],
+        [
+         "<b>Romidepsin</b> <span class='r'>HDACi</span>",
+         "14 mg/m&sup2; IV d1, 8, 15 q28d",
+         "ORR <b>34%</b>, DOR 15 mo, <b>pruritus better in 43%</b>. Nausea; <b>QTc &mdash; replete K/Mg</b>. CTCL approval intact"
+        ],
+        [
+         "<b>Brentuximab vedotin</b>",
+         "1.8 mg/kg q21d, up to 16 cycles",
+         "ALCANZA (CD30 &ge;10%): ORR4 <b>56% vs 13%</b>, PFS 16.7 vs 3.5 mo. <b>Neuropathy 67%</b>. Best for plaques/tumors, <b>LCT</b>, pc-ALCL"
+        ],
+        [
+         "<b>Mogamulizumab</b> <span class='r'>anti-CCR4</span>",
+         "1 mg/kg IV d1, 8, 15, 22 of cycle 1, then d1, 15 q28d",
+         "MAVORIC: PFS <b>7.7 vs 3.1 mo</b>; ORR 28% vs 5%, <b>S&eacute;zary 37% vs 2%</b> &mdash; blood clears best. <b>Drug eruption in ~24%</b>, median onset <b>119 days</b>, mimics progression &mdash; <b>biopsy + clonality before calling relapse</b>. Deplete Tregs: <b>raises GVHD if given shortly before allo-HCT</b>"
+        ],
+        [
+         "<b>Denileukin diftitox-cxdl</b> <span class='r'>IL-2&ndash;toxin</span>",
+         "9 &micro;g/kg/day IV d1&ndash;5 q21d, up to 8 cycles",
+         "<b>FDA Aug 2024</b>, stage I&ndash;III after &ge;1 systemic: ORR <b>36%</b>, CR 9%. <b>Capillary leak 20%</b> (boxed) &mdash; weight, albumin, edema; infusion reactions, hepatotoxicity"
+        ],
+        [
+         "<b>ECP</b>",
+         "2 consecutive days q2&ndash;4 wk",
+         "Erythrodermic / S&eacute;zary with modest blood burden; nearly non-immunosuppressive. Combine with IFN or bexarotene"
+        ],
+        [
+         "<b>Pembrolizumab</b> <span class='r'>off-label</span>",
+         "200 mg q3wk",
+         "ORR <b>38%</b> in advanced MF/SS; <b>S&eacute;zary flare (erythroderma, itch) in 53%</b> &mdash; not progression"
+        ],
+        [
+         "<b>Alemtuzumab</b> <span class='r'>low-dose, historical</span>",
+         "3 mg d1, then 10 mg SC TIW, max 12 wk",
+         "<b>S&eacute;zary / blood only</b> (skips skin-resident MF cells). <b>CMV PCR q2&ndash;3 wk</b> + acyclovir + TMP-SMX. Off the US market &mdash; access program"
+        ],
+        [
+         "Gemcitabine &middot; liposomal doxorubicin &middot; pralatrexate",
+         "Gem 1,000 mg/m&sup2; d1, 8, 15 q28d &middot; PLD 10&ndash;30 mg/m&sup2; q2&ndash;4wk &middot; pralatrexate 15 mg/m&sup2; d1, 8, 15 q28d",
+         "For tumor stage and LCT. <b>Pralatrexate at half the PTCL dose</b>, with B12/folate"
+        ]
+       ],
+       "footnote": "<b>Lacutamab</b> (anti-KIR3DL2) has breakthrough designation for S&eacute;zary but is <b>not approved</b>; phase 3 TELLOMAK-3 starting 2026. Multi-agent chemotherapy (CHOP, ICE, GDP) gives short responses and heavy infection risk &mdash; reserve for bridging."
+      }
+     ]
+    },
+    {
+     "width": "28%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Itch, skin barrier and infection",
+       "items": [
+        "<b>S. aureus colonizes ~50% of erythrodermic patients</b> and drives flares: in one series, eradication (oral antibiotics + intranasal mupirocin) cleared carriage in &gt;85% and <b>improved the skin in 58%</b>. <b>MRSA is common</b> &mdash; TMP-SMX or doxycycline empirically",
+        "<b>Dilute bleach baths</b>, emollients, wet wraps; <b>culture before calling progression</b> &mdash; infection and drug eruption both mimic it",
+        "<b>Bacteremia from skin portals</b> is a major risk in erythrodermic disease &mdash; avoid lines through involved skin when possible",
+        "<b>Pruritus</b>: often the dominant symptom; antihistamines rarely enough. Gabapentin, mirtazapine, aprepitant; <b>disease control is the best antipruritic</b> (romidepsin 43%, vorinostat 32% itch relief)",
+        "<b>Lifelong skin-cancer surveillance</b> after PUVA, TSEBT and mechlorethamine"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "rows": [
+        [
+         "<b>MAVORIC</b>",
+         "Mogamulizumab vs vorinostat &mdash; PFS 7.7 vs 3.1 mo, HR 0.53; S&eacute;zary ORR 37% vs 2%"
+        ],
+        [
+         "<b>ALCANZA</b>",
+         "BV vs MTX/bexarotene, CD30+ MF or pc-ALCL &mdash; ORR4 56% vs 13%"
+        ],
+        [
+         "<b>CUTALLO</b>",
+         "Allo-HCT vs none (donor availability) &mdash; PFS 9.0 vs 3.0 mo, HR 0.38"
+        ],
+        [
+         "<b>Study 302</b>",
+         "Denileukin diftitox-cxdl &mdash; ORR 36%, capillary leak 20%"
+        ],
+        [
+         "<b>CITN-10</b>",
+         "Pembrolizumab &mdash; ORR 38%, durable"
+        ],
+        [
+         "<b>Lessin 2013</b>",
+         "Mechlorethamine gel vs ointment &mdash; non-inferior, faster"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "What you are dealing with",
+  "Workup",
+  "ISCL/EORTC TNMB (Olsen, Blood 2022)",
+  "Stage groups",
+  "Treatment pathway",
+  "Skin-directed therapy",
+  "Primary cutaneous CD30+ LPDs &mdash; do not over-treat",
+  "Systemic therapy &mdash; dosing, evidence, monitoring",
+  "Itch, skin barrier and infection",
+  "Key trials"
+ ],
+ "text": "Cutaneous T-cell lymphoma Mycosis fungoides · S&eacute;zary syndrome · primary cutaneous CD30+ LPDs — a chronic disease managed for years: skin-directed first, systemic by compartment (skin vs blood), transplant for the few who can be cured Compiled from the Stanford Oncology Handbook 2025, Mycosis Fungoides/S&eacute;zary Syndrome (Chou L, Khodadoust M) · NCCN Primary Cutaneous Lymphomas · primary trial reports and FDA actions verified against PubMed, September 2026. What you are dealing with Entity Defining features Mycosis fungoides Most common CTCL. Patch → plaque → tumor, often in sun-protected “bathing-trunk” skin. Epidermotropic CD4+ cells, CD7 loss , Pautrier microabscesses. Skin-resident memory T-cell origin S&eacute;zary syndrome <5% of CTCL All three: erythroderma (≥80% BSA) + B2 blood + a blood clone matching the skin . Central-memory origin — a leukemic disease, not simply late MF Adverse MF variants Folliculotropic (independent predictor of progression and death) · large-cell transformation (>25% large cells; higher progression risk) · tumor stage, raised LDH Primary cutaneous CD30+ LPDs 2nd most common CTCL Lymphomatoid papulosis and primary cutaneous ALCL — indolent, excellent prognosis despite anaplastic cytology. Distinguish from systemic ALCL spreading to skin (ALK+ = systemic until proven otherwise) A TCR clone alone is not diagnostic — clonal T cells occur in benign dermatoses. Early MF often needs several biopsies, ideally taken off topical steroids. Workup Skin biopsy (multiple sites) with IHC incl. CD30 and TCR gene rearrangement; measure BSA (patient palm + fingers &asymp; 1%) and mSWAT Blood flow cytometry (CD4:CD8, CD4+CD7−, CD4+CD26− absolute counts) + blood TCR clone — needed to assign B stage Imaging: PET/CT or CT for T2b and above , palpable nodes, or B1–B2 blood. Stage IA with no nodes needs no imaging Excise an abnormal node — nodal histology (N1–N3) changes the stage; marrow only if unexplained cytopenias LDH, CBC, CMP; HTLV-1 serology if erythroderma or from an endemic area (ATLL mimics S&eacute;zary) ISCL/EORTC TNMB (Olsen, Blood 2022) T1 · T2 Patches/plaques <10% · ≥10% BSA (a = patch only, b = plaque) T3 · T4 ≥1 tumor ≥1 cm · erythroderma ≥80% BSA N1 · N2 · N3 Abnormal node, histology Dutch grade 1 / 2 / 3–4 (NCI LN 0–2 / 3 / 4) M1 Biopsy-proven visceral disease B0 ≤5% S&eacute;zary cells, or <250/&micro;L, or <15% CD4+CD26− / CD4+CD7− B1 More than B0 but not B2 B2 ≥1,000/&micro;L S&eacute;zary cells, or CD4+CD26− / CD4+CD7− / other aberrant cells by flow — plus a blood clone matching the skin Stage groups Stage T N M B IA · IB 1 · 2 0 0 0–1 IIA 1–2 1–2 0 0–1 IIB tumor 3 0–2 0 0–1 IIIA · IIIB erythrodermic 4 0–2 0 0 · 1 IVA1 = S&eacute;zary any 0–2 0 2 IVA2 · IVB any 3 · any 0 · 1 any Stage IA: 5-yr OS 94%, median survival ≥20 yr — most die of something else. Stage III–IV: median survival ~5 yr, and over half die of disease (Agar, JCO 2010; NCI PDQ). Treatment pathway Early MF — IA to IIA Skin-directed therapy IA : topical steroid, mechlorethamine gel , bexarotene gel, imiquimod, local RT IB–IIA : nbUVB (patches) or PUVA (plaques) not curative — do not escalate for cosmetics Refractory or rapidly relapsing add a low-intensity systemic: bexarotene, IFN, low-dose MTX; TSEBT 12 Gy for widespread Tumor stage IIB · LCT Limited vs generalized limited tumors: local RT 8–12 Gy + skin therapy generalized: TSEBT or systemic CD30+ or LCT: brentuximab (ALCANZA) others: HDACi, mogamulizumab, gemcitabine, liposomal doxorubicin, pralatrexate Erythrodermic III · S&eacute;zary IVA1 Treat the blood mogamulizumab (best blood responses) ECP ± IFN or bexarotene — lower blood burden romidepsin, low-dose alemtuzumab, pembrolizumab + skin care, anti-staph, antipruritics Advanced, refractory, fit Allogeneic HCT only curative option; go in remission CUTALLO: PFS 9.0 vs 3.0 mo (HR 0.38) TSEBT often used to debulk skin pre-transplant CD30+ LPD Lymphomatoid papulosis · pc-ALCL LyP: observe / topicals / low-dose MTX pc-ALCL solitary: excision or RT multifocal / relapsing: MTX or brentuximab multi-agent chemo is over-treatment Skin-directed therapy Therapy How and what to know Topical corticosteroids High-potency (clobetasol) BID for T1 patches — high response rates in limited disease. Atrophy, striae, HPA suppression with large BSA Mechlorethamine gel 0.016% Daily thin layer to lesions; gel non-inferior to compounded ointment (CAILS ORR 59% vs 48% ), faster response. Contact dermatitis ~20% — reduce frequency, add topical steroid. No systemic absorption Bexarotene gel 1% · imiquimod Retinoid gel titrated to BID–QID for limited lesions; irritation. Imiquimod for thick single plaques nbUVB · PUVA nbUVB for patches , PUVA for thicker plaques (deeper penetration); 2–3×/wk to clearance, then taper. Cumulative risk of skin cancer (PUVA: SCC, melanoma); eye protection after psoralen Local RT 8–12 Gy per lesion for palliation; 24–30 Gy for unilesional disease (curative intent). MF is exquisitely radiosensitive TSEBT 12 Gy low-dose (1 Gy ×12): ORR 88% , CR 27%, median clinical benefit ~71 wk, repeatable . 30–36 Gy gives deeper CR but more toxicity and only once or twice per lifetime Maximise skin-directed therapy and supportive care first — it lengthens time to the next systemic. Check that a systemic agent is compatible with phototherapy/TSEBT before combining. Primary cutaneous CD30+ LPDs — do not over-treat Lymphomatoid papulosis: crops of papules that self-heal in weeks . No therapy changes survival — observe, topical steroids, phototherapy, or low-dose weekly MTX for scarring or frequent crops. Lifelong follow-up : associated second lymphomas (MF, ALCL, Hodgkin) Primary cutaneous ALCL: solitary/localized nodules, >75% CD30+, ALK−. Excision or RT ; multifocal → MTX or brentuximab. Staging CT/PET to exclude systemic ALCL Systemic therapy — dosing, evidence, monitoring Agent Dose Evidence · what to watch Bexarotene RXR, oral 300 mg/m²/day with food; often started lower and titrated ORR 45% in refractory IIB–IVB. Hypertriglyceridemia (pancreatitis) — start fenofibrate first, avoid gemfibrozil (raises bexarotene levels). Central hypothyroidism: TSH falls — dose levothyroxine to free T4 . Teratogen Interferon-&alpha; 3–6 MU SC daily or TIW (pegylated IFN now used — Intron A off market) Flu-like symptoms, depression, cytopenias, thyroid. Pairs well with ECP, bexarotene, PUVA Low-dose methotrexate 10–25 mg PO/SC weekly + folate Workhorse for MF and LyP . LFTs, CBC; switch to pralatrexate 15 mg/m² if more is needed Vorinostat HDACi 400 mg PO daily ORR 30% , pruritus relief 32%. Diarrhea, fatigue, thrombocytopenia, PE 5% Romidepsin HDACi 14 mg/m² IV d1, 8, 15 q28d ORR 34% , DOR 15 mo, pruritus better in 43% . Nausea; QTc — replete K/Mg . CTCL approval intact Brentuximab vedotin 1.8 mg/kg q21d, up to 16 cycles ALCANZA (CD30 ≥10%): ORR4 56% vs 13% , PFS 16.7 vs 3.5 mo. Neuropathy 67% . Best for plaques/tumors, LCT , pc-ALCL Mogamulizumab anti-CCR4 1 mg/kg IV d1, 8, 15, 22 of cycle 1, then d1, 15 q28d MAVORIC: PFS 7.7 vs 3.1 mo ; ORR 28% vs 5%, S&eacute;zary 37% vs 2% — blood clears best. Drug eruption in ~24% , median onset 119 days , mimics progression — biopsy + clonality before calling relapse . Deplete Tregs: raises GVHD if given shortly before allo-HCT Denileukin diftitox-cxdl IL-2–toxin 9 &micro;g/kg/day IV d1–5 q21d, up to 8 cycles FDA Aug 2024 , stage I–III after ≥1 systemic: ORR 36% , CR 9%. Capillary leak 20% (boxed) — weight, albumin, edema; infusion reactions, hepatotoxicity ECP 2 consecutive days q2–4 wk Erythrodermic / S&eacute;zary with modest blood burden; nearly non-immunosuppressive. Combine with IFN or bexarotene Pembrolizumab off-label 200 mg q3wk ORR 38% in advanced MF/SS; S&eacute;zary flare (erythroderma, itch) in 53% — not progression Alemtuzumab low-dose, historical 3 mg d1, then 10 mg SC TIW, max 12 wk S&eacute;zary / blood only (skips skin-resident MF cells). CMV PCR q2–3 wk + acyclovir + TMP-SMX. Off the US market — access program Gemcitabine · liposomal doxorubicin · pralatrexate Gem 1,000 mg/m² d1, 8, 15 q28d · PLD 10–30 mg/m² q2–4wk · pralatrexate 15 mg/m² d1, 8, 15 q28d For tumor stage and LCT. Pralatrexate at half the PTCL dose , with B12/folate Lacutamab (anti-KIR3DL2) has breakthrough designation for S&eacute;zary but is not approved ; phase 3 TELLOMAK-3 starting 2026. Multi-agent chemotherapy (CHOP, ICE, GDP) gives short responses and heavy infection risk — reserve for bridging. Itch, skin barrier and infection S. aureus colonizes ~50% of erythrodermic patients and drives flares: in one series, eradication (oral antibiotics + intranasal mupirocin) cleared carriage in >85% and improved the skin in 58% . MRSA is common — TMP-SMX or doxycycline empirically Dilute bleach baths , emollients, wet wraps; culture before calling progression — infection and drug eruption both mimic it Bacteremia from skin portals is a major risk in erythrodermic disease — avoid lines through involved skin when possible Pruritus : often the dominant symptom; antihistamines rarely enough. Gabapentin, mirtazapine, aprepitant; disease control is the best antipruritic (romidepsin 43%, vorinostat 32% itch relief) Lifelong skin-cancer surveillance after PUVA, TSEBT and mechlorethamine Key trials MAVORIC Mogamulizumab vs vorinostat — PFS 7.7 vs 3.1 mo, HR 0.53; S&eacute;zary ORR 37% vs 2% ALCANZA BV vs MTX/bexarotene, CD30+ MF or pc-ALCL — ORR4 56% vs 13% CUTALLO Allo-HCT vs none (donor availability) — PFS 9.0 vs 3.0 mo, HR 0.38 Study 302 Denileukin diftitox-cxdl — ORR 36%, capillary leak 20% CITN-10 Pembrolizumab — ORR 38%, durable Lessin 2013 Mechlorethamine gel vs ointment — non-inferior, faster"
+}
