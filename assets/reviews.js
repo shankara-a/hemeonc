@@ -108,11 +108,12 @@
     const box = document.getElementById("rv-q");
     box.addEventListener("input", () => {
       query = box.value;
+      viewer?.setHighlight?.(query);        // the card marks the same words the tree matched
       HH.renderTree();
       document.getElementById("rv-clear").hidden = !query;
     });
     document.getElementById("rv-clear").addEventListener("click", () => {
-      box.value = ""; query = ""; HH.renderTree();
+      box.value = ""; query = ""; viewer?.setHighlight?.(""); HH.renderTree();
       document.getElementById("rv-clear").hidden = true;
       box.focus();
     });
@@ -196,6 +197,7 @@
     } else if (op) {
       viewer = HH.mountPdf(document.getElementById("rv-pdf"), pdfUrl, {
         title: d.name,
+        highlight: query,
         meta: `${op.pages} page${op.pages === 1 ? "" : "s"}`,
       });
     }
