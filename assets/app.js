@@ -37,7 +37,6 @@
   const showTab = (name) => {
     document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b.dataset.tab === name));
     document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("active", p.id === name));
-    $("dz-switch").hidden = name !== "reviews";
     HH.hidePop?.(0);
   };
 
@@ -103,7 +102,6 @@
 
   document.addEventListener("DOMContentLoaded", async () => {
     document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => { location.hash = "#" + b.dataset.tab; }));
-    $("dz-switch").addEventListener("click", focusSearch);
     window.addEventListener("keydown", (e) => {
       const typing = e.target.matches("input, select, textarea");
       if ((e.key === "k" && (e.metaKey || e.ctrlKey)) || (e.key === "/" && !typing)) { e.preventDefault(); focusSearch(); }

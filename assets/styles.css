@@ -52,37 +52,15 @@ a:hover { color: var(--primary); }
 }
 .tab:hover { color: var(--ink); }
 .tab.active { color: var(--primary); border-bottom-color: var(--primary); }
-.header-right { margin-left: auto; display: flex; align-items: center; }
-
-/* disease switcher */
-.dz-switch {
-  display: flex; align-items: center; gap: 8px; align-self: center; max-width: 340px;
-  background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px;
-  font: inherit; font-size: .88rem; color: var(--ink); cursor: pointer;
-}
-.dz-switch:hover, .dz-switch[aria-expanded="true"] { border-color: var(--primary); background: var(--primary-soft); }
-.dz-switch[hidden] { display: none; }
-.dz-switch-name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.dz-switch-meta { color: var(--muted); font-size: .76rem; white-space: nowrap; }
 .caret { color: var(--muted); font-size: .7rem; }
 
-/* tools menu */
-.menu { position: relative; }
-.menu-btn {
-  background: none; border: 1px solid transparent; border-radius: 8px; padding: 4px 10px; cursor: pointer;
-  font: inherit; font-size: .86rem; font-weight: 600; color: var(--muted);
+/* the other sites, flush right */
+.header-links { margin-left: auto; display: flex; align-items: center; gap: 2px; }
+.header-links a {
+  display: flex; align-items: center; gap: 3px; padding: 4px 9px; border-radius: 8px;
+  color: var(--muted); text-decoration: none; font-size: .86rem; font-weight: 600; white-space: nowrap;
 }
-.menu-btn:hover, .menu-btn[aria-expanded="true"] { color: var(--ink); border-color: var(--line); background: var(--bg); }
-.menu-list {
-  position: absolute; right: 0; top: calc(100% + 6px); min-width: 190px; background: var(--surface);
-  border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow-lg); padding: 5px; z-index: 40;
-}
-.menu-list[hidden] { display: none; }
-.menu-list a {
-  display: flex; justify-content: space-between; gap: 10px; padding: 7px 10px; border-radius: 7px;
-  color: var(--ink); text-decoration: none; font-size: .88rem;
-}
-.menu-list a:hover { background: var(--bg); color: var(--primary); }
+.header-links a:hover { color: var(--primary); background: var(--bg); }
 
 main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
 .panel { display: none; }
@@ -415,9 +393,9 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
   .wordmark { display: none; }                 /* the tabs identify the app; Home is one tap away */
   .header-inner { gap: 6px; padding: 0 10px; min-height: 44px; }
   .tab { padding: 0 8px; font-size: .88rem; }
-  .dz-switch { max-width: 34vw; padding: 3px 9px; font-size: .84rem; }
-  .dz-switch .caret { display: none; }
-  .menu-btn { padding: 4px 6px; }
+  .header-links { gap: 0; }
+  .header-links a { padding: 4px 6px; font-size: .8rem; }
+  .header-links a span { display: none; }
   .tabs { flex: none; }
   .header-inner > * { min-width: 0; }
   .palette { padding-top: 6vh; }
