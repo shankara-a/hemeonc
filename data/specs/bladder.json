@@ -1,0 +1,689 @@
+{
+ "disease": "bladder",
+ "spec_file": "bladder.py",
+ "pdf": "Bladder Cancer.pdf",
+ "title": "Bladder (urothelial) cancer",
+ "subtitle": "Three diseases on one urothelium &mdash; <b>NMIBC</b> (TURBT + intravesical therapy; BCG is the backbone), <b>MIBC</b> (perioperative systemic therapy + cystectomy, or trimodality preservation), and <b>metastatic</b> (<b>EV + pembrolizumab</b> first line). <b>Enfortumab vedotin + pembrolizumab now anchors both MIBC and metastatic disease</b>",
+ "source": "Compiled from the Stanford Oncology Handbook 2025, GU: Bladder Cancer (Khaki AR, Huober M) &middot; NCCN &middot; primary trial reports verified against PubMed, September 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "<b>Painless gross hematuria = bladder cancer until proven otherwise</b> (smokers, aromatic amines, cyclophosphamide, pelvic RT, aristolochic acid, schistosomiasis &rarr; squamous). Microhematuria: risk-stratified cystoscopy ± imaging",
+        "<b>Cystoscopy + TURBT with detrusor muscle in the specimen</b> &mdash; without muscle, T2 cannot be excluded. Bimanual exam under anesthesia",
+        "<b>Re-TURBT at 2&ndash;6 wk</b> for <b>any T1</b>, incomplete resection, or no muscle in a high-grade specimen &mdash; up to half of T1 tumors are upstaged or have residual disease",
+        "<b>CT urogram</b> (or MR urogram / retrograde pyelogram if renal function is poor) &mdash; the <b>upper tracts must be imaged</b>: urothelium is a field defect. Urine cytology catches high-grade and CIS",
+        "<b>MIBC:</b> CT chest (or PET/CT), CBC, CMP. <b>Bone scan / brain MRI only if symptomatic</b> (brain MRI for small cell). Image <b>before</b> TURBT when possible &mdash; post-TURBT inflammation mimics T3/N+",
+        "<b>Germline testing if young</b> or Lynch-type family history &mdash; especially <b>upper tract</b> tumors (MSH2)"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Staging (AJCC 8th)",
+       "widths": [
+        "16%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Ta / Tis</b>",
+         "Non-invasive papillary / <b>carcinoma in situ</b> (flat, high grade &mdash; the dangerous one)"
+        ],
+        [
+         "<b>T1</b>",
+         "Invades lamina propria &mdash; <b>still NMIBC</b>, but high-risk"
+        ],
+        [
+         "<b>T2</b>",
+         "<b>Muscularis propria</b> &mdash; a inner half, b outer half. <b>The NMIBC / MIBC line</b>"
+        ],
+        [
+         "<b>T3 / T4</b>",
+         "Perivesical fat (a micro, b macro) / <b>a</b> prostatic stroma, SV, uterus, vagina &middot; <b>b</b> pelvic or abdominal wall"
+        ],
+        [
+         "<b>N</b>",
+         "N1 single true-pelvis node &middot; N2 multiple &middot; <b>N3 common iliac</b>"
+        ],
+        [
+         "<b>Stage</b>",
+         "<b>II</b> T2N0 &middot; <b>IIIA</b> T3&ndash;4aN0 or N1 &middot; <b>IIIB</b> N2&ndash;3 &middot; <b>IVA</b> T4b or M1a (nodes beyond common iliac) &middot; <b>IVB</b> M1b"
+        ]
+       ],
+       "footnote": "<b>~75% present as NMIBC</b> (Ta/Tis/T1) &mdash; recurrence is the rule, progression the risk. <b>Grade (low vs high) matters in NMIBC</b>; essentially all MIBC is high grade."
+      },
+      {
+       "type": "table",
+       "heading": "Variant histology &mdash; changes management",
+       "headers": [
+        "Variant",
+        "What to do"
+       ],
+       "widths": [
+        "27%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Micropapillary</b>",
+         "Aggressive, often understaged. <b>Early cystectomy even for T1</b>; BCG responses are poor"
+        ],
+        [
+         "<b>Plasmacytoid</b>",
+         "<b>CDH1</b> loss; spreads along fascial planes and <b>peritoneum</b> &mdash; high positive-margin rate"
+        ],
+        [
+         "<b>Sarcomatoid</b>",
+         "Poor prognosis; treat as high-grade UC (NAC then cystectomy)"
+        ],
+        [
+         "<b>Small cell / NE</b>",
+         "<b>Treat like SCLC:</b> neoadjuvant <b>etoposide + platinum</b>, then cystectomy or chemoRT. Brain MRI"
+        ],
+        [
+         "<b>Pure squamous / adeno</b>",
+         "Chemo-resistant &mdash; surgery-first. Urachal adeno (dome): partial cystectomy + umbilicus; <b>colorectal-type regimens</b>"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "NMIBC &mdash; Ta / Tis / T1",
+         "color": "teal",
+         "boxes": [
+          [
+           "TURBT (+ re-TURBT for T1) &rarr; risk group",
+           [
+            "low: single instillation, surveillance",
+            "intermediate: intravesical chemo or BCG &times;1 yr",
+            "high: <b>BCG induction + 3 yr maintenance</b>",
+            "&plusmn; <b>durvalumab</b> if BCG-naive (POTOMAC)"
+           ]
+          ],
+          [
+           "BCG-unresponsive",
+           [
+            "<b>radical cystectomy</b> is standard",
+            "CIS, bladder-sparing: <b>TAR-200</b>, N-803 + BCG,",
+            "nadofaragene, pembrolizumab, gem/docetaxel"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "MIBC &mdash; cT2&ndash;T4a N0&ndash;1",
+         "color": "blue",
+         "boxes": [
+          [
+           "Perioperative therapy + cystectomy",
+           [
+            "<b>EV + pembro &times;3&ndash;4 &rarr; RC &rarr; adjuvant EV + P</b>",
+            "any cisplatin status (KN-905 vs RC; KN-B15 vs GC)",
+            "cis-eligible alternative: <b>GC + durvalumab</b>",
+            "(NIAGARA) or <b>ddMVAC / GC</b> alone"
+           ]
+          ],
+          [
+           "Adjuvant if no perioperative IO",
+           [
+            "pT3&ndash;4 / N+ (no NAC) or ypT2+ / ypN+:",
+            "<b>nivolumab &times;1 yr</b> (CheckMate 274)",
+            "<b>ctDNA+ &rarr; atezolizumab</b> (IMvigor011, OS gain)"
+           ]
+          ],
+          [
+           "Bladder preservation (selected)",
+           [
+            "maximal TURBT &rarr; <b>chemoRT</b> (5-FU/MMC, cis, gem)",
+            "solitary, &lt;5 cm, no hydro, no extensive CIS",
+            "<b>salvage cystectomy</b> for persistent MIBC"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Metastatic / unresectable",
+         "color": "coral",
+         "boxes": [
+          [
+           "First line &mdash; any platinum status",
+           [
+            "<b>EV + pembrolizumab</b> (EV-302, OS 31.5 vs 16.1 mo)",
+            "EV not possible: cis-fit &rarr; <b>nivo + GC</b>, or",
+            "GC / gem-carbo &rarr; <b>avelumab maintenance</b>"
+           ]
+          ],
+          [
+           "Later lines &mdash; test FGFR3 and HER2",
+           [
+            "<b>FGFR3 &rarr; erdafitinib</b> &middot; <b>HER2 3+ &rarr; T-DXd</b>",
+            "after EV+P: <b>platinum doublet</b>",
+            "taxane / clinical trial"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "NMIBC risk groups (AUA)",
+       "headers": [
+        "Risk",
+        "Tumor"
+       ],
+       "widths": [
+        "19%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Low</b>",
+         "<b>Low-grade, solitary Ta &le;3 cm</b>; PUNLMP"
+        ],
+        [
+         "<b>Intermediate</b>",
+         "Low-grade Ta that is &gt;3 cm, multifocal, or recurs &lt;1 yr &middot; <b>high-grade Ta &le;3 cm</b> &middot; low-grade T1"
+        ],
+        [
+         "<b>High</b>",
+         "<b>High-grade T1 &middot; any CIS &middot;</b> high-grade Ta &gt;3 cm or multifocal &middot; recurrent HG Ta &middot; variant histology &middot; LVI &middot; HG prostatic urethra &middot; BCG failure"
+        ]
+       ],
+       "footnote": "EAU adds a <b>very-high-risk</b> tier (e.g. T1HG + CIS, multiple/large T1HG, variant histology, LVI) where <b>immediate cystectomy</b> is offered."
+      },
+      {
+       "type": "bullets",
+       "heading": "NMIBC management",
+       "items": [
+        "<b>Single post-TURBT instillation</b> (<b>gemcitabine 2 g</b> or mitomycin) within 24 h for suspected low/intermediate risk &mdash; SWOG S0337: recurrence HR 0.66. <b>Skip if perforation</b> or extensive resection",
+        "<b>Low risk:</b> surveillance cystoscopy (3 mo, then spaced out). <b>Intermediate:</b> intravesical chemo or <b>BCG &times;1 yr</b>. <b>High:</b> <b>BCG induction + maintenance &times;3 yr</b>",
+        "<b>BCG:</b> induction weekly &times;6 (start 2&ndash;4 wk post-TURBT) &rarr; <b>SWOG maintenance: weekly &times;3 at months 3, 6, 12, 18, 24, 30, 36</b>. Maintenance doubled median RFS (76.8 vs 35.7 mo)",
+        "<b>BCG-naive high-risk: + durvalumab</b> &times;13 cycles (POTOMAC: DFS HR 0.68; <b>FDA 28 May 2026</b>) &mdash; grade 3&ndash;4 TRAEs 21% vs 4%",
+        "<b>BCG shortage:</b> reserve BCG for high risk; <b>sequential gemcitabine + docetaxel</b> is the workhorse alternative (phase 2: 3-yr HG-RFS 80%); randomized BRIDGE (vs BCG) pending"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "BCG-unresponsive (FDA definition)",
+       "items": [
+        "After <b>adequate BCG</b> (&ge;5/6 induction + &ge;2 maintenance or second-induction doses): <b>persistent/recurrent CIS within 12 mo</b>, <b>HG Ta/T1 recurrence within 6 mo</b>, or <b>T1HG at the first post-induction check</b>",
+        "<b>Radical cystectomy is the standard</b>; bladder-sparing options (page 2) are for patients who decline or are unfit. <b>Any muscle invasion &rarr; treat as MIBC</b>"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Surveillance",
+       "items": [
+        "<b>NMIBC:</b> cystoscopy + cytology q3&ndash;6 mo early, then annually (low-risk can space out faster); <b>upper-tract imaging every 1&ndash;2 yr in high risk</b>",
+        "<b>Post-cystectomy:</b> CT chest/abdomen/pelvis q3&ndash;6 mo &times;2 yr, then annually; urethral wash if prostatic urethral involvement; B12 and renal function"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; the evidence: BCG-unresponsive NMIBC, MIBC perioperative and adjuvant therapy, bladder preservation, metastatic disease, upper tract",
+   "columns": [
+    {
+     "width": "50%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "BCG-unresponsive CIS &mdash; bladder-sparing (all single-arm)",
+       "headers": [
+        "Agent &middot; trial",
+        "Result &middot; status"
+       ],
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>TAR-200</b> (gemcitabine intravesical system) <span class='r'>SunRISe-1</span>",
+         "<b>CR 82.4%</b>, median DOR 25.8 mo; grade &ge;3 TRAEs 13%. <b>FDA 9 Sep 2025</b> (Inlexzo). Indwelling device, exchanged q3wk"
+        ],
+        [
+         "<b>N-803 + BCG</b> (nogapendekin alfa) <span class='r'>QUILT-3.032</span>",
+         "CR 71% (FDA review 62%), median DOR 26.6 mo. <b>FDA 22 Apr 2024</b> (Anktiva). Needs BCG supply"
+        ],
+        [
+         "<b>Nadofaragene firadenovec</b> <span class='r'>CS-003</span>",
+         "Adenoviral IFN-&alpha;2b gene therapy, <b>q3 months</b>: CR 53%, 46% of responders durable at 12 mo. <b>FDA 16 Dec 2022</b>"
+        ],
+        [
+         "<b>Pembrolizumab</b> IV <span class='r'>KEYNOTE-057</span>",
+         "CR 41% at 3 mo, but few durable. FDA Jan 2020. Systemic irAE risk for a bladder-confined disease"
+        ],
+        [
+         "Gemcitabine + docetaxel",
+         "Off-label, retrospective; cheap and widely used"
+        ]
+       ],
+       "footnote": "<b>Cretostimogene</b> (oncolytic adenovirus, BOND-003: CR 75%, no grade &ge;3 TRAEs) is <b>not yet approved</b> (BLA expected late 2026). <b>Durable CR at 12 mo is the number that matters</b> &mdash; roughly 20&ndash;45% across agents."
+      },
+      {
+       "type": "bullets",
+       "heading": "Cisplatin eligibility (Galsky)",
+       "items": [
+        "<b>Ineligible if any:</b> ECOG &ge;2 &middot; <b>CrCl &lt;60 mL/min</b> &middot; hearing loss grade &ge;2 &middot; neuropathy grade &ge;2 &middot; NYHA class III HF",
+        "CrCl 50&ndash;60: <b>split-dose cisplatin</b> (35 mg/m&sup2; d1 + d8) is common practice &mdash; measured 24-h CrCl can rescue borderline cases",
+        "<b>Carboplatin does not replace cisplatin in the neoadjuvant setting</b> &mdash; no survival benefit shown. In metastatic disease gem/carbo is acceptable"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "MIBC &mdash; perioperative therapy",
+       "headers": [
+        "Trial",
+        "Design &middot; result"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>KEYNOTE-B15 / EV-304</b>",
+         "<b>Cis-eligible:</b> perioperative <b>EV + pembro vs neoadjuvant GC</b> &mdash; 2-yr EFS 79.4% vs 66.2% (HR 0.53); <b>OS HR 0.65</b>; pCR 55.8% vs 32.5%. Grade &ge;3 AEs 76% vs 67%. <b>FDA 10 Jul 2026</b>"
+        ],
+        [
+         "<b>KEYNOTE-905 / EV-303</b>",
+         "<b>Cis-ineligible or declined:</b> EV + pembro vs <b>cystectomy alone</b> &mdash; 2-yr EFS 74.7% vs 39.4% (HR 0.40); <b>OS HR 0.50</b>; pCR 57.1% vs 8.6%. <b>FDA 21 Nov 2025</b>"
+        ],
+        [
+         "<b>NIAGARA</b>",
+         "<b>GC + durvalumab</b> &rarr; RC &rarr; durva &times;8 vs GC &rarr; RC &mdash; 2-yr EFS 67.8% vs 59.8% (HR 0.68), <b>OS HR 0.75</b>. FDA 28 Mar 2025"
+        ],
+        [
+         "<b>VESPER</b>",
+         "ddMVAC &times;6 vs GC &times;4: neoadjuvant subgroup <b>5-yr OS 66% vs 57%</b> (HR 0.71) &mdash; <b>ddMVAC is the stronger chemo backbone</b>, at the cost of more toxicity"
+        ],
+        [
+         "<b>SWOG 8710 &middot; ABC meta-analysis</b>",
+         "Neoadjuvant MVAC: OS 77 vs 46 mo, pT0 38% vs 15%. Platinum combination NAC: <b>5% absolute 5-yr OS gain</b> (HR 0.87)"
+        ]
+       ],
+       "footnote": "<b>No head-to-head of EV + pembro vs GC + durvalumab.</b> EV+P now has OS data against both cystectomy alone and GC. Cystectomy = bladder, prostate/SV or uterus/anterior vagina, <b>bilateral pelvic LND</b>, and diversion (conduit or neobladder)."
+      },
+      {
+       "type": "table",
+       "heading": "Adjuvant after cystectomy",
+       "headers": [
+        "Trial",
+        "Result"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>CheckMate 274</b>",
+         "<b>Nivolumab &times;1 yr</b> vs placebo, ypT2+/ypN+ after NAC or pT3+/N+ without &mdash; DFS 20.8 vs 10.8 mo (HR 0.70). 5-yr: DFS HR 0.74, <b>OS 75.0 vs 50.1 mo, HR 0.83 &mdash; not yet significant</b> (follow-up ongoing). Benefit concentrated in PD-L1 &ge;1%"
+        ],
+        [
+         "<b>IMvigor011</b>",
+         "Serial ctDNA &times;1 yr; <b>ctDNA+ &rarr; atezolizumab vs placebo</b>: DFS 9.9 vs 4.8 mo (HR 0.64), <b>OS 32.8 vs 21.1 mo (HR 0.59)</b>. Persistently ctDNA&minus;: 2-yr DFS 88% untreated. <b>FDA 15 May 2026</b> (Signatera CDx)"
+        ],
+        [
+         "AMBASSADOR",
+         "Pembrolizumab &times;1 yr vs observation &mdash; DFS 29.6 vs 14.2 mo (HR 0.73); no OS gain shown"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "50%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Metastatic &mdash; first line",
+       "headers": [
+        "Regimen &middot; trial",
+        "Result"
+       ],
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>EV + pembrolizumab</b> <span class='r'>EV-302</span>",
+         "vs platinum-gem, cis- and carbo-eligible alike: <b>OS 31.5 vs 16.1 mo (HR 0.47)</b>, PFS 12.5 vs 6.3 mo (HR 0.45). Grade &ge;3 TRAEs 56% vs 70%. <b>The standard for everyone fit for it; no biomarker needed</b>"
+        ],
+        [
+         "<b>Nivo + gem/cis</b> <span class='r'>CheckMate 901</span>",
+         "Cis-eligible: OS 21.7 vs 18.9 mo (HR 0.78), PFS HR 0.72, CR 21.7% vs 11.8% with durable CRs. <b>The option when EV is contraindicated</b> (neuropathy, uncontrolled diabetes)"
+        ],
+        [
+         "<b>Platinum &rarr; avelumab</b> <span class='r'>JAVELIN Bladder 100</span>",
+         "No progression after 4&ndash;6 cycles gem/cis or gem/carbo: <b>avelumab maintenance</b> &mdash; OS 21.4 vs 14.3 mo (HR 0.69). Start within 4&ndash;10 wk of the last cycle"
+        ],
+        [
+         "Pembrolizumab alone",
+         "<b>Only if platinum-ineligible</b> and EV-ineligible (label restricted 2021)"
+        ]
+       ],
+       "footnote": "<b>Don't give chemo + pembrolizumab or chemo + atezolizumab</b> (KEYNOTE-361, IMvigor130: no OS gain) &mdash; <b>nivolumab is the only checkpoint inhibitor that adds OS to 1L platinum</b>."
+      },
+      {
+       "type": "table",
+       "heading": "Biomarkers &amp; later lines",
+       "headers": [
+        "Target / setting",
+        "Agent &middot; evidence"
+       ],
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>FGFR3</b> alteration <span class='r'>~15&ndash;20% of mUC</span>",
+         "<b>Erdafitinib</b> after &ge;1 line incl. IO (THOR: <b>OS 12.1 vs 7.8 mo</b> vs chemo, HR 0.64). Full approval Jan 2024, <b>FGFR3 only</b> (FGFR2 dropped). <b>Not instead of IO</b> in IO-naive"
+        ],
+        [
+         "<b>HER2 IHC 3+</b>",
+         "<b>T-DXd 5.4 mg/kg</b> &mdash; tumor-agnostic accelerated approval (Apr 2024; DESTINY-PanTumor02 IHC 3+ ORR 61%). ILD 10.5%"
+        ],
+        [
+         "HER2 IHC 1&ndash;3+, 1L",
+         "<b>Disitamab vedotin + toripalimab</b> vs chemo: OS 31.5 vs 16.9 mo (HR 0.54). <b>Approved in China, not US</b>"
+        ],
+        [
+         "<b>After EV + pembro</b>",
+         "<b>Platinum doublet</b> (gem/cis or gem/carbo); FGFR3 / HER2 agents; taxane; trial"
+        ],
+        [
+         "After platinum &plusmn; IO, EV-naive",
+         "<b>EV monotherapy</b> (EV-301: OS 12.9 vs 9.0 mo, HR 0.70). IO-naive after platinum: pembrolizumab (KEYNOTE-045, OS 10.3 vs 7.4 mo)"
+        ],
+        [
+         "<b>Sacituzumab govitecan</b>",
+         "<b>Withdrawn for UC (Oct 2024)</b> &mdash; TROPiCS-04 missed OS (HR 0.86) with <b>7% grade 5 AEs</b>, mostly neutropenic infection"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Trimodality therapy (bladder preservation)",
+       "items": [
+        "<b>Maximal TURBT + concurrent chemoRT</b>, then cystoscopic reassessment; <b>salvage cystectomy</b> for persistent/recurrent MIBC",
+        "<b>Best candidates:</b> solitary T2, &lt;5 cm, visibly complete TURBT, <b>no hydronephrosis</b>, no extensive CIS, good bladder capacity",
+        "<b>BC2001:</b> RT + <b>5-FU/mitomycin</b> vs RT alone &mdash; 2-yr locoregional DFS 67% vs 54% (HR 0.68); OS 48% vs 35% (NS). No randomized comparison with cystectomy",
+        "<b>Lifelong cystoscopic surveillance</b> &mdash; NMIBC recurrences in the preserved bladder are treated with TURBT ± BCG"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Upper tract urothelial carcinoma",
+       "items": [
+        "<b>~5&ndash;10% of UC</b>; renal pelvis &gt; ureter. <b>Lynch syndrome</b> (MSH2) &mdash; screen with MMR IHC / germline testing; aristolochic acid (Balkan nephropathy)",
+        "Diagnosis: CT urogram + <b>ureteroscopy with biopsy</b> and cytology. Low-grade, small: <b>kidney-sparing</b> (endoscopic ablation, mitomycin gel)",
+        "High-risk: <b>radical nephroureterectomy with bladder cuff</b>. <b>Consider neoadjuvant chemo</b> &mdash; GFR falls after NU and may exclude cisplatin later",
+        "<b>POUT:</b> adjuvant gem + platinum (carboplatin if GFR &lt;50) after NU for pT2&ndash;4/N+ &mdash; DFS HR 0.45; 5-yr OS 66% vs 57% (HR 0.68)",
+        "<b>20&ndash;50% later develop bladder tumors</b> &mdash; cystoscopic surveillance"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 3 &mdash; regimen dosing, toxicity and monitoring, key trials",
+   "columns": [
+    {
+     "width": "37%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimen dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "27%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>BCG</b> (TICE) intravesical",
+         "1 vial (50 mg) in 50 mL saline, dwell 2 h. <b>Induction weekly &times;6</b>; maintenance <b>weekly &times;3 at mo 3, 6, 12, 18, 24, 30, 36</b>"
+        ],
+        [
+         "<b>Durvalumab + BCG</b>",
+         "Durvalumab <b>1500 mg IV q4wk &times;13</b> + BCG induction + maintenance"
+        ],
+        [
+         "Post-TURBT instillation",
+         "<b>Gemcitabine 2 g</b> in 100 mL (dwell 1 h) or mitomycin 40 mg, &lt;24 h"
+        ],
+        [
+         "Gem / docetaxel intravesical",
+         "Gemcitabine 1 g, drain, then docetaxel 37.5 mg (2 h dwell) weekly &times;6 &rarr; monthly maintenance"
+        ],
+        [
+         "<b>TAR-200</b>",
+         "Gemcitabine 225 mg device, <b>q3wk &times;8 (6 mo) &rarr; q12wk &times;6</b>; removed after each 3-wk dwell"
+        ],
+        [
+         "<b>N-803 + BCG</b>",
+         "N-803 <b>400 &micro;g</b> + BCG weekly &times;6 (repeat once if no CR at 3 mo); maintenance &times;3 wk at mo 4, 7, 10, 13, 19"
+        ],
+        [
+         "<b>Nadofaragene</b>",
+         "75 mL (3&times;10<sup>11</sup> vp/mL) intravesical <b>q3 months</b>"
+        ],
+        [
+         "<b>ddMVAC</b>",
+         "MTX 30, vinblastine 3, doxorubicin 30, <b>cisplatin 70</b> mg/m&sup2; d1 <b>q14d</b> + pegfilgrastim; <b>&times;3&ndash;6 neoadjuvant</b>"
+        ],
+        [
+         "<b>Gem / cis</b>",
+         "Cisplatin <b>70</b> d1 + gemcitabine <b>1000</b> d1, 8 <b>q21d</b> (&times;4 neoadjuvant; &le;6 metastatic). Split: cis 35 d1 + d8"
+        ],
+        [
+         "<b>+ Durvalumab</b> (NIAGARA)",
+         "<b>1500 mg</b> d1 with GC &times;4 &rarr; RC &rarr; 1500 mg q4wk &times;8"
+        ],
+        [
+         "<b>EV + pembro</b>, metastatic",
+         "EV <b>1.25 mg/kg</b> (max 125 mg) <b>d1, 8</b> + pembro 200 mg d1, <b>q21d</b>; pembro max 2 yr"
+        ],
+        [
+         "<b>EV + pembro</b>, perioperative",
+         "Cis-eligible: <b>&times;4 neoadj</b> &rarr; RC &rarr; EV &times;5 + pembro &times;13. Cis-ineligible: <b>&times;3 neoadj</b> &rarr; RC &rarr; EV &times;6 + pembro &times;14"
+        ],
+        [
+         "<b>Nivo + gem/cis</b>",
+         "Nivolumab <b>360 mg</b> + GC q3wk &times;&le;6 &rarr; nivolumab 480 mg q4wk, max 2 yr"
+        ],
+        [
+         "Gem / carbo",
+         "Carboplatin AUC 4.5&ndash;5 d1 + gemcitabine 1000 d1, 8 q21d &times;4&ndash;6"
+        ],
+        [
+         "<b>Avelumab</b> maintenance",
+         "<b>800 mg IV q2wk</b> until progression"
+        ],
+        [
+         "<b>Adjuvant IO</b>",
+         "Nivolumab 240 q2wk / 480 q4wk &times;1 yr &middot; atezolizumab 1680 q4wk &times;1 yr (ctDNA+)"
+        ],
+        [
+         "<b>Erdafitinib</b>",
+         "<b>8 mg PO daily</b>; check phosphate at d14&ndash;21 &rarr; <b>9 mg if PO<sub>4</sub> &lt;9.0 mg/dL</b> and no eye toxicity"
+        ],
+        [
+         "EV monotherapy",
+         "1.25 mg/kg d1, 8, 15 q28d"
+        ],
+        [
+         "<b>ChemoRT</b> (BC2001)",
+         "5-FU 500 mg/m&sup2;/d fractions 1&ndash;5 + 16&ndash;20, <b>mitomycin 12 mg/m&sup2;</b> d1; RT 55 Gy/20 fx or 64 Gy/32 fx. Alt: weekly cisplatin 35&ndash;40 or twice-weekly gemcitabine 27 mg/m&sup2;"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Toxicity &amp; monitoring",
+       "items": [
+        "<b>Enfortumab vedotin &mdash; boxed warning: SJS/TEN</b>. Rash is common, usually in cycle 1: hold for grade 3 or suspected SJS/TEN, <b>permanently stop if confirmed</b>. Also <b>peripheral neuropathy</b> (cumulative, most common reason to stop), <b>hyperglycemia/DKA</b> (trials excluded HbA1c &ge;8%), dry eye/keratitis, pneumonitis, extravasation",
+        "<b>EV + pembro:</b> rash can be EV or immune &mdash; a derm consult early saves the regimen. Dose-reduce EV (1.0 &rarr; 0.75 &rarr; 0.5 mg/kg) rather than dropping it",
+        "<b>Erdafitinib: hyperphosphatemia</b> is on-target (FGFR blocks FGF23 signaling) &mdash; low-phosphate diet, binders, dose adjust. <b>Central serous retinopathy</b>: ophthalmology exam <b>monthly &times;4 mo, then q3 months</b>, and urgently for visual change. Also nail/hand-foot changes, stomatitis, dry eye",
+        "<b>BCG:</b> cystitis, fever &lt;48 h is common. <b>Do not instill with traumatic catheterization, gross hematuria, or active UTI</b> (intravasation risk). <b>BCG sepsis / BCGitis</b> (persistent fever, pneumonitis, hepatitis, mycotic aneurysm): <b>isoniazid + rifampin + ethambutol</b> &plusmn; steroids &mdash; <b>M. bovis is intrinsically pyrazinamide-resistant</b>. Handle as a biohazard",
+        "<b>Cisplatin:</b> nephrotoxicity (pre/post hydration, Mg), ototoxicity, neuropathy; <b>re-check eligibility every cycle</b>. ddMVAC: neutropenia (G-CSF mandatory), mucositis, anthracycline cardiotoxicity",
+        "<b>Checkpoint inhibitors:</b> standard irAE surveillance &mdash; TSH, LFTs, cortisol; watch for pneumonitis and colitis. Intravesical agents (TAR-200, N-803) are mostly local urinary toxicity",
+        "<b>After cystectomy:</b> ileal conduit/neobladder &rarr; <b>hyperchloremic metabolic acidosis</b>, B12 deficiency, stones, UTIs; neobladder needs a nocturnal voiding schedule"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>No muscle in the TURBT specimen = not staged</b>",
+        "<b>EV + pembro is now the answer in three settings</b>: cis-ineligible MIBC, cis-eligible MIBC, and 1L metastatic",
+        "<b>Nivolumab is the checkpoint inhibitor that works with platinum</b>; pembro and atezo did not"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "widths": [
+        "34%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>EV-302</b>",
+         "1L metastatic EV + pembro &mdash; OS HR 0.47"
+        ],
+        [
+         "<b>KEYNOTE-B15 / EV-304</b>",
+         "Perioperative EV + P vs GC, cis-eligible &mdash; OS HR 0.65"
+        ],
+        [
+         "<b>KEYNOTE-905 / EV-303</b>",
+         "Perioperative EV + P vs RC alone &mdash; OS HR 0.50"
+        ],
+        [
+         "<b>NIAGARA</b>",
+         "GC + perioperative durvalumab &mdash; OS HR 0.75"
+        ],
+        [
+         "<b>VESPER</b>",
+         "Neoadjuvant ddMVAC &gt; GC (5-yr OS 66 vs 57%)"
+        ],
+        [
+         "<b>SWOG 8710</b>",
+         "Neoadjuvant MVAC &mdash; OS 77 vs 46 mo"
+        ],
+        [
+         "<b>CheckMate 274</b>",
+         "Adjuvant nivolumab &mdash; DFS HR 0.70"
+        ],
+        [
+         "<b>IMvigor011</b>",
+         "ctDNA-guided adjuvant atezolizumab &mdash; OS HR 0.59"
+        ],
+        [
+         "<b>CheckMate 901</b>",
+         "Nivo + gem/cis 1L &mdash; OS HR 0.78"
+        ],
+        [
+         "<b>JAVELIN Bladder 100</b>",
+         "Avelumab maintenance &mdash; OS HR 0.69"
+        ],
+        [
+         "<b>THOR</b>",
+         "Erdafitinib, FGFR3 after IO &mdash; OS HR 0.64"
+        ],
+        [
+         "<b>EV-301</b>",
+         "EV after platinum + IO &mdash; OS HR 0.70"
+        ],
+        [
+         "<b>SWOG 8507</b>",
+         "BCG maintenance schedule &mdash; RFS 76.8 vs 35.7 mo"
+        ],
+        [
+         "<b>POTOMAC</b>",
+         "Durvalumab + BCG, BCG-naive &mdash; DFS HR 0.68"
+        ],
+        [
+         "<b>SunRISe-1</b>",
+         "TAR-200, BCG-unresponsive CIS &mdash; CR 82%"
+        ],
+        [
+         "<b>BC2001</b>",
+         "ChemoRT (5-FU/MMC) &gt; RT &mdash; LRDFS HR 0.68"
+        ],
+        [
+         "<b>POUT</b>",
+         "Adjuvant chemo for UTUC &mdash; DFS HR 0.45"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Workup",
+  "Staging (AJCC 8th)",
+  "Variant histology &mdash; changes management",
+  "Treatment pathway",
+  "NMIBC risk groups (AUA)",
+  "NMIBC management",
+  "BCG-unresponsive (FDA definition)",
+  "Surveillance",
+  "BCG-unresponsive CIS &mdash; bladder-sparing (all single-arm)",
+  "Cisplatin eligibility (Galsky)",
+  "MIBC &mdash; perioperative therapy",
+  "Adjuvant after cystectomy",
+  "Metastatic &mdash; first line",
+  "Biomarkers &amp; later lines",
+  "Trimodality therapy (bladder preservation)",
+  "Upper tract urothelial carcinoma",
+  "Regimen dosing",
+  "Toxicity &amp; monitoring",
+  "Pearls",
+  "Key trials"
+ ],
+ "text": "Bladder (urothelial) cancer Three diseases on one urothelium — NMIBC (TURBT + intravesical therapy; BCG is the backbone), MIBC (perioperative systemic therapy + cystectomy, or trimodality preservation), and metastatic ( EV + pembrolizumab first line). Enfortumab vedotin + pembrolizumab now anchors both MIBC and metastatic disease Compiled from the Stanford Oncology Handbook 2025, GU: Bladder Cancer (Khaki AR, Huober M) · NCCN · primary trial reports verified against PubMed, September 2026. Workup Painless gross hematuria = bladder cancer until proven otherwise (smokers, aromatic amines, cyclophosphamide, pelvic RT, aristolochic acid, schistosomiasis → squamous). Microhematuria: risk-stratified cystoscopy ± imaging Cystoscopy + TURBT with detrusor muscle in the specimen — without muscle, T2 cannot be excluded. Bimanual exam under anesthesia Re-TURBT at 2–6 wk for any T1 , incomplete resection, or no muscle in a high-grade specimen — up to half of T1 tumors are upstaged or have residual disease CT urogram (or MR urogram / retrograde pyelogram if renal function is poor) — the upper tracts must be imaged : urothelium is a field defect. Urine cytology catches high-grade and CIS MIBC: CT chest (or PET/CT), CBC, CMP. Bone scan / brain MRI only if symptomatic (brain MRI for small cell). Image before TURBT when possible — post-TURBT inflammation mimics T3/N+ Germline testing if young or Lynch-type family history — especially upper tract tumors (MSH2) Staging (AJCC 8th) Ta / Tis Non-invasive papillary / carcinoma in situ (flat, high grade — the dangerous one) T1 Invades lamina propria — still NMIBC , but high-risk T2 Muscularis propria — a inner half, b outer half. The NMIBC / MIBC line T3 / T4 Perivesical fat (a micro, b macro) / a prostatic stroma, SV, uterus, vagina · b pelvic or abdominal wall N N1 single true-pelvis node · N2 multiple · N3 common iliac Stage II T2N0 · IIIA T3–4aN0 or N1 · IIIB N2–3 · IVA T4b or M1a (nodes beyond common iliac) · IVB M1b ~75% present as NMIBC (Ta/Tis/T1) — recurrence is the rule, progression the risk. Grade (low vs high) matters in NMIBC ; essentially all MIBC is high grade. Variant histology — changes management Variant What to do Micropapillary Aggressive, often understaged. Early cystectomy even for T1 ; BCG responses are poor Plasmacytoid CDH1 loss; spreads along fascial planes and peritoneum — high positive-margin rate Sarcomatoid Poor prognosis; treat as high-grade UC (NAC then cystectomy) Small cell / NE Treat like SCLC: neoadjuvant etoposide + platinum , then cystectomy or chemoRT. Brain MRI Pure squamous / adeno Chemo-resistant — surgery-first. Urachal adeno (dome): partial cystectomy + umbilicus; colorectal-type regimens Treatment pathway NMIBC — Ta / Tis / T1 TURBT (+ re-TURBT for T1) → risk group low: single instillation, surveillance intermediate: intravesical chemo or BCG ×1 yr high: BCG induction + 3 yr maintenance ± durvalumab if BCG-naive (POTOMAC) BCG-unresponsive radical cystectomy is standard CIS, bladder-sparing: TAR-200 , N-803 + BCG, nadofaragene, pembrolizumab, gem/docetaxel MIBC — cT2–T4a N0–1 Perioperative therapy + cystectomy EV + pembro ×3–4 → RC → adjuvant EV + P any cisplatin status (KN-905 vs RC; KN-B15 vs GC) cis-eligible alternative: GC + durvalumab (NIAGARA) or ddMVAC / GC alone Adjuvant if no perioperative IO pT3–4 / N+ (no NAC) or ypT2+ / ypN+: nivolumab ×1 yr (CheckMate 274) ctDNA+ → atezolizumab (IMvigor011, OS gain) Bladder preservation (selected) maximal TURBT → chemoRT (5-FU/MMC, cis, gem) solitary, <5 cm, no hydro, no extensive CIS salvage cystectomy for persistent MIBC Metastatic / unresectable First line — any platinum status EV + pembrolizumab (EV-302, OS 31.5 vs 16.1 mo) EV not possible: cis-fit → nivo + GC , or GC / gem-carbo → avelumab maintenance Later lines — test FGFR3 and HER2 FGFR3 → erdafitinib · HER2 3+ → T-DXd after EV+P: platinum doublet taxane / clinical trial NMIBC risk groups (AUA) Risk Tumor Low Low-grade, solitary Ta ≤3 cm ; PUNLMP Intermediate Low-grade Ta that is >3 cm, multifocal, or recurs <1 yr · high-grade Ta ≤3 cm · low-grade T1 High High-grade T1 · any CIS · high-grade Ta >3 cm or multifocal · recurrent HG Ta · variant histology · LVI · HG prostatic urethra · BCG failure EAU adds a very-high-risk tier (e.g. T1HG + CIS, multiple/large T1HG, variant histology, LVI) where immediate cystectomy is offered. NMIBC management Single post-TURBT instillation ( gemcitabine 2 g or mitomycin) within 24 h for suspected low/intermediate risk — SWOG S0337: recurrence HR 0.66. Skip if perforation or extensive resection Low risk: surveillance cystoscopy (3 mo, then spaced out). Intermediate: intravesical chemo or BCG ×1 yr . High: BCG induction + maintenance ×3 yr BCG: induction weekly ×6 (start 2–4 wk post-TURBT) → SWOG maintenance: weekly ×3 at months 3, 6, 12, 18, 24, 30, 36 . Maintenance doubled median RFS (76.8 vs 35.7 mo) BCG-naive high-risk: + durvalumab ×13 cycles (POTOMAC: DFS HR 0.68; FDA 28 May 2026 ) — grade 3–4 TRAEs 21% vs 4% BCG shortage: reserve BCG for high risk; sequential gemcitabine + docetaxel is the workhorse alternative (phase 2: 3-yr HG-RFS 80%); randomized BRIDGE (vs BCG) pending BCG-unresponsive (FDA definition) After adequate BCG (≥5/6 induction + ≥2 maintenance or second-induction doses): persistent/recurrent CIS within 12 mo , HG Ta/T1 recurrence within 6 mo , or T1HG at the first post-induction check Radical cystectomy is the standard ; bladder-sparing options (page 2) are for patients who decline or are unfit. Any muscle invasion → treat as MIBC Surveillance NMIBC: cystoscopy + cytology q3–6 mo early, then annually (low-risk can space out faster); upper-tract imaging every 1–2 yr in high risk Post-cystectomy: CT chest/abdomen/pelvis q3–6 mo ×2 yr, then annually; urethral wash if prostatic urethral involvement; B12 and renal function BCG-unresponsive CIS — bladder-sparing (all single-arm) Agent · trial Result · status TAR-200 (gemcitabine intravesical system) SunRISe-1 CR 82.4% , median DOR 25.8 mo; grade ≥3 TRAEs 13%. FDA 9 Sep 2025 (Inlexzo). Indwelling device, exchanged q3wk N-803 + BCG (nogapendekin alfa) QUILT-3.032 CR 71% (FDA review 62%), median DOR 26.6 mo. FDA 22 Apr 2024 (Anktiva). Needs BCG supply Nadofaragene firadenovec CS-003 Adenoviral IFN-&alpha;2b gene therapy, q3 months : CR 53%, 46% of responders durable at 12 mo. FDA 16 Dec 2022 Pembrolizumab IV KEYNOTE-057 CR 41% at 3 mo, but few durable. FDA Jan 2020. Systemic irAE risk for a bladder-confined disease Gemcitabine + docetaxel Off-label, retrospective; cheap and widely used Cretostimogene (oncolytic adenovirus, BOND-003: CR 75%, no grade ≥3 TRAEs) is not yet approved (BLA expected late 2026). Durable CR at 12 mo is the number that matters — roughly 20–45% across agents. Cisplatin eligibility (Galsky) Ineligible if any: ECOG ≥2 · CrCl <60 mL/min · hearing loss grade ≥2 · neuropathy grade ≥2 · NYHA class III HF CrCl 50–60: split-dose cisplatin (35 mg/m² d1 + d8) is common practice — measured 24-h CrCl can rescue borderline cases Carboplatin does not replace cisplatin in the neoadjuvant setting — no survival benefit shown. In metastatic disease gem/carbo is acceptable MIBC — perioperative therapy Trial Design · result KEYNOTE-B15 / EV-304 Cis-eligible: perioperative EV + pembro vs neoadjuvant GC — 2-yr EFS 79.4% vs 66.2% (HR 0.53); OS HR 0.65 ; pCR 55.8% vs 32.5%. Grade ≥3 AEs 76% vs 67%. FDA 10 Jul 2026 KEYNOTE-905 / EV-303 Cis-ineligible or declined: EV + pembro vs cystectomy alone — 2-yr EFS 74.7% vs 39.4% (HR 0.40); OS HR 0.50 ; pCR 57.1% vs 8.6%. FDA 21 Nov 2025 NIAGARA GC + durvalumab → RC → durva ×8 vs GC → RC — 2-yr EFS 67.8% vs 59.8% (HR 0.68), OS HR 0.75 . FDA 28 Mar 2025 VESPER ddMVAC ×6 vs GC ×4: neoadjuvant subgroup 5-yr OS 66% vs 57% (HR 0.71) — ddMVAC is the stronger chemo backbone , at the cost of more toxicity SWOG 8710 · ABC meta-analysis Neoadjuvant MVAC: OS 77 vs 46 mo, pT0 38% vs 15%. Platinum combination NAC: 5% absolute 5-yr OS gain (HR 0.87) No head-to-head of EV + pembro vs GC + durvalumab. EV+P now has OS data against both cystectomy alone and GC. Cystectomy = bladder, prostate/SV or uterus/anterior vagina, bilateral pelvic LND , and diversion (conduit or neobladder). Adjuvant after cystectomy Trial Result CheckMate 274 Nivolumab ×1 yr vs placebo, ypT2+/ypN+ after NAC or pT3+/N+ without — DFS 20.8 vs 10.8 mo (HR 0.70). 5-yr: DFS HR 0.74, OS 75.0 vs 50.1 mo, HR 0.83 — not yet significant (follow-up ongoing). Benefit concentrated in PD-L1 ≥1% IMvigor011 Serial ctDNA ×1 yr; ctDNA+ → atezolizumab vs placebo : DFS 9.9 vs 4.8 mo (HR 0.64), OS 32.8 vs 21.1 mo (HR 0.59) . Persistently ctDNA−: 2-yr DFS 88% untreated. FDA 15 May 2026 (Signatera CDx) AMBASSADOR Pembrolizumab ×1 yr vs observation — DFS 29.6 vs 14.2 mo (HR 0.73); no OS gain shown Metastatic — first line Regimen · trial Result EV + pembrolizumab EV-302 vs platinum-gem, cis- and carbo-eligible alike: OS 31.5 vs 16.1 mo (HR 0.47) , PFS 12.5 vs 6.3 mo (HR 0.45). Grade ≥3 TRAEs 56% vs 70%. The standard for everyone fit for it; no biomarker needed Nivo + gem/cis CheckMate 901 Cis-eligible: OS 21.7 vs 18.9 mo (HR 0.78), PFS HR 0.72, CR 21.7% vs 11.8% with durable CRs. The option when EV is contraindicated (neuropathy, uncontrolled diabetes) Platinum → avelumab JAVELIN Bladder 100 No progression after 4–6 cycles gem/cis or gem/carbo: avelumab maintenance — OS 21.4 vs 14.3 mo (HR 0.69). Start within 4–10 wk of the last cycle Pembrolizumab alone Only if platinum-ineligible and EV-ineligible (label restricted 2021) Don't give chemo + pembrolizumab or chemo + atezolizumab (KEYNOTE-361, IMvigor130: no OS gain) — nivolumab is the only checkpoint inhibitor that adds OS to 1L platinum . Biomarkers & later lines Target / setting Agent · evidence FGFR3 alteration ~15–20% of mUC Erdafitinib after ≥1 line incl. IO (THOR: OS 12.1 vs 7.8 mo vs chemo, HR 0.64). Full approval Jan 2024, FGFR3 only (FGFR2 dropped). Not instead of IO in IO-naive HER2 IHC 3+ T-DXd 5.4 mg/kg — tumor-agnostic accelerated approval (Apr 2024; DESTINY-PanTumor02 IHC 3+ ORR 61%). ILD 10.5% HER2 IHC 1–3+, 1L Disitamab vedotin + toripalimab vs chemo: OS 31.5 vs 16.9 mo (HR 0.54). Approved in China, not US After EV + pembro Platinum doublet (gem/cis or gem/carbo); FGFR3 / HER2 agents; taxane; trial After platinum ± IO, EV-naive EV monotherapy (EV-301: OS 12.9 vs 9.0 mo, HR 0.70). IO-naive after platinum: pembrolizumab (KEYNOTE-045, OS 10.3 vs 7.4 mo) Sacituzumab govitecan Withdrawn for UC (Oct 2024) — TROPiCS-04 missed OS (HR 0.86) with 7% grade 5 AEs , mostly neutropenic infection Trimodality therapy (bladder preservation) Maximal TURBT + concurrent chemoRT , then cystoscopic reassessment; salvage cystectomy for persistent/recurrent MIBC Best candidates: solitary T2, <5 cm, visibly complete TURBT, no hydronephrosis , no extensive CIS, good bladder capacity BC2001: RT + 5-FU/mitomycin vs RT alone — 2-yr locoregional DFS 67% vs 54% (HR 0.68); OS 48% vs 35% (NS). No randomized comparison with cystectomy Lifelong cystoscopic surveillance — NMIBC recurrences in the preserved bladder are treated with TURBT ± BCG Upper tract urothelial carcinoma ~5–10% of UC ; renal pelvis > ureter. Lynch syndrome (MSH2) — screen with MMR IHC / germline testing; aristolochic acid (Balkan nephropathy) Diagnosis: CT urogram + ureteroscopy with biopsy and cytology. Low-grade, small: kidney-sparing (endoscopic ablation, mitomycin gel) High-risk: radical nephroureterectomy with bladder cuff . Consider neoadjuvant chemo — GFR falls after NU and may exclude cisplatin later POUT: adjuvant gem + platinum (carboplatin if GFR <50) after NU for pT2–4/N+ — DFS HR 0.45; 5-yr OS 66% vs 57% (HR 0.68) 20–50% later develop bladder tumors — cystoscopic surveillance Regimen dosing Regimen Dosing BCG (TICE) intravesical 1 vial (50 mg) in 50 mL saline, dwell 2 h. Induction weekly ×6 ; maintenance weekly ×3 at mo 3, 6, 12, 18, 24, 30, 36 Durvalumab + BCG Durvalumab 1500 mg IV q4wk ×13 + BCG induction + maintenance Post-TURBT instillation Gemcitabine 2 g in 100 mL (dwell 1 h) or mitomycin 40 mg, <24 h Gem / docetaxel intravesical Gemcitabine 1 g, drain, then docetaxel 37.5 mg (2 h dwell) weekly ×6 → monthly maintenance TAR-200 Gemcitabine 225 mg device, q3wk ×8 (6 mo) → q12wk ×6 ; removed after each 3-wk dwell N-803 + BCG N-803 400 &micro;g + BCG weekly ×6 (repeat once if no CR at 3 mo); maintenance ×3 wk at mo 4, 7, 10, 13, 19 Nadofaragene 75 mL (3×10 11 vp/mL) intravesical q3 months ddMVAC MTX 30, vinblastine 3, doxorubicin 30, cisplatin 70 mg/m² d1 q14d + pegfilgrastim; ×3–6 neoadjuvant Gem / cis Cisplatin 70 d1 + gemcitabine 1000 d1, 8 q21d (×4 neoadjuvant; ≤6 metastatic). Split: cis 35 d1 + d8 + Durvalumab (NIAGARA) 1500 mg d1 with GC ×4 → RC → 1500 mg q4wk ×8 EV + pembro , metastatic EV 1.25 mg/kg (max 125 mg) d1, 8 + pembro 200 mg d1, q21d ; pembro max 2 yr EV + pembro , perioperative Cis-eligible: ×4 neoadj → RC → EV ×5 + pembro ×13. Cis-ineligible: ×3 neoadj → RC → EV ×6 + pembro ×14 Nivo + gem/cis Nivolumab 360 mg + GC q3wk ×≤6 → nivolumab 480 mg q4wk, max 2 yr Gem / carbo Carboplatin AUC 4.5–5 d1 + gemcitabine 1000 d1, 8 q21d ×4–6 Avelumab maintenance 800 mg IV q2wk until progression Adjuvant IO Nivolumab 240 q2wk / 480 q4wk ×1 yr · atezolizumab 1680 q4wk ×1 yr (ctDNA+) Erdafitinib 8 mg PO daily ; check phosphate at d14–21 → 9 mg if PO 4 <9.0 mg/dL and no eye toxicity EV monotherapy 1.25 mg/kg d1, 8, 15 q28d ChemoRT (BC2001) 5-FU 500 mg/m²/d fractions 1–5 + 16–20, mitomycin 12 mg/m² d1; RT 55 Gy/20 fx or 64 Gy/32 fx. Alt: weekly cisplatin 35–40 or twice-weekly gemcitabine 27 mg/m² Toxicity & monitoring Enfortumab vedotin — boxed warning: SJS/TEN . Rash is common, usually in cycle 1: hold for grade 3 or suspected SJS/TEN, permanently stop if confirmed . Also peripheral neuropathy (cumulative, most common reason to stop), hyperglycemia/DKA (trials excluded HbA1c ≥8%), dry eye/keratitis, pneumonitis, extravasation EV + pembro: rash can be EV or immune — a derm consult early saves the regimen. Dose-reduce EV (1.0 → 0.75 → 0.5 mg/kg) rather than dropping it Erdafitinib: hyperphosphatemia is on-target (FGFR blocks FGF23 signaling) — low-phosphate diet, binders, dose adjust. Central serous retinopathy : ophthalmology exam monthly ×4 mo, then q3 months , and urgently for visual change. Also nail/hand-foot changes, stomatitis, dry eye BCG: cystitis, fever <48 h is common. Do not instill with traumatic catheterization, gross hematuria, or active UTI (intravasation risk). BCG sepsis / BCGitis (persistent fever, pneumonitis, hepatitis, mycotic aneurysm): isoniazid + rifampin + ethambutol ± steroids — M. bovis is intrinsically pyrazinamide-resistant . Handle as a biohazard Cisplatin: nephrotoxicity (pre/post hydration, Mg), ototoxicity, neuropathy; re-check eligibility every cycle . ddMVAC: neutropenia (G-CSF mandatory), mucositis, anthracycline cardiotoxicity Checkpoint inhibitors: standard irAE surveillance — TSH, LFTs, cortisol; watch for pneumonitis and colitis. Intravesical agents (TAR-200, N-803) are mostly local urinary toxicity After cystectomy: ileal conduit/neobladder → hyperchloremic metabolic acidosis , B12 deficiency, stones, UTIs; neobladder needs a nocturnal voiding schedule Pearls No muscle in the TURBT specimen = not staged EV + pembro is now the answer in three settings : cis-ineligible MIBC, cis-eligible MIBC, and 1L metastatic Nivolumab is the checkpoint inhibitor that works with platinum ; pembro and atezo did not Key trials EV-302 1L metastatic EV + pembro — OS HR 0.47 KEYNOTE-B15 / EV-304 Perioperative EV + P vs GC, cis-eligible — OS HR 0.65 KEYNOTE-905 / EV-303 Perioperative EV + P vs RC alone — OS HR 0.50 NIAGARA GC + perioperative durvalumab — OS HR 0.75 VESPER Neoadjuvant ddMVAC > GC (5-yr OS 66 vs 57%) SWOG 8710 Neoadjuvant MVAC — OS 77 vs 46 mo CheckMate 274 Adjuvant nivolumab — DFS HR 0.70 IMvigor011 ctDNA-guided adjuvant atezolizumab — OS HR 0.59 CheckMate 901 Nivo + gem/cis 1L — OS HR 0.78 JAVELIN Bladder 100 Avelumab maintenance — OS HR 0.69 THOR Erdafitinib, FGFR3 after IO — OS HR 0.64 EV-301 EV after platinum + IO — OS HR 0.70 SWOG 8507 BCG maintenance schedule — RFS 76.8 vs 35.7 mo POTOMAC Durvalumab + BCG, BCG-naive — DFS HR 0.68 SunRISe-1 TAR-200, BCG-unresponsive CIS — CR 82% BC2001 ChemoRT (5-FU/MMC) > RT — LRDFS HR 0.68 POUT Adjuvant chemo for UTUC — DFS HR 0.45"
+}

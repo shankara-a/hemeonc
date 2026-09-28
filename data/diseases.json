@@ -43,6 +43,22 @@
    ]
   },
   {
+   "slug": "bladder",
+   "name": "Bladder (urothelial) cancer",
+   "short": "Bladder",
+   "group": "solid",
+   "onepager": "Bladder Cancer.pdf",
+   "aliases": [
+    "bladder",
+    "urothelial",
+    "uc",
+    "nmibc",
+    "mibc",
+    "utuc",
+    "upper tract"
+   ]
+  },
+  {
    "slug": "breast",
    "name": "Breast cancer",
    "short": "Breast",
