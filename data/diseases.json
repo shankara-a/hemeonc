@@ -2,7 +2,33 @@
  "groups": [
   {
    "id": "solid",
-   "name": "Solid tumors"
+   "name": "Solid tumors",
+   "subgroups": [
+    {
+     "id": "gi",
+     "name": "Gastrointestinal"
+    },
+    {
+     "id": "gu",
+     "name": "Genitourinary"
+    },
+    {
+     "id": "thoracic",
+     "name": "Thoracic & head/neck"
+    },
+    {
+     "id": "breast",
+     "name": "Breast"
+    },
+    {
+     "id": "skin",
+     "name": "Skin"
+    },
+    {
+     "id": "endocrine",
+     "name": "Endocrine"
+    }
+   ]
   },
   {
    "id": "malignant-heme",
@@ -33,6 +59,7 @@
    "name": "Biliary tract cancer",
    "short": "Biliary",
    "group": "solid",
+   "subgroup": "gi",
    "onepager": "Biliary Tract Cancer.pdf",
    "aliases": [
     "biliary",
@@ -47,6 +74,7 @@
    "name": "Bladder (urothelial) cancer",
    "short": "Bladder",
    "group": "solid",
+   "subgroup": "gu",
    "onepager": "Bladder Cancer.pdf",
    "aliases": [
     "bladder",
@@ -63,6 +91,7 @@
    "name": "Breast cancer",
    "short": "Breast",
    "group": "solid",
+   "subgroup": "breast",
    "onepager": "Breast Cancer.pdf",
    "aliases": [
     "breast"
@@ -73,6 +102,7 @@
    "name": "Colon adenocarcinoma",
    "short": "Colon",
    "group": "solid",
+   "subgroup": "gi",
    "onepager": "Colon Adenocarcinoma.pdf",
    "aliases": [
     "colon",
@@ -98,6 +128,7 @@
    "name": "Head & neck squamous cell carcinoma",
    "short": "Head & neck",
    "group": "solid",
+   "subgroup": "thoracic",
    "onepager": null,
    "aliases": [
     "head and neck",
@@ -248,6 +279,7 @@
    "name": "Melanoma",
    "short": "Melanoma",
    "group": "solid",
+   "subgroup": "skin",
    "onepager": "Melanoma.pdf",
    "aliases": [
     "melanoma"
@@ -273,6 +305,7 @@
    "name": "Neuroendocrine tumors (GEP-NET)",
    "short": "NET",
    "group": "solid",
+   "subgroup": "gi",
    "onepager": "Neuroendocrine Tumors.pdf",
    "aliases": [
     "net",
@@ -286,6 +319,7 @@
    "name": "Non-small cell lung cancer",
    "short": "NSCLC",
    "group": "solid",
+   "subgroup": "thoracic",
    "onepager": "Non-Small Cell Lung Cancer.pdf",
    "aliases": [
     "nsclc",
@@ -298,6 +332,7 @@
    "name": "Pancreatic adenocarcinoma",
    "short": "Pancreatic",
    "group": "solid",
+   "subgroup": "gi",
    "onepager": "Pancreatic Cancer.pdf",
    "aliases": [
     "pancreatic",
@@ -310,6 +345,7 @@
    "name": "Prostate cancer",
    "short": "Prostate",
    "group": "solid",
+   "subgroup": "gu",
    "onepager": "Prostate Cancer.pdf",
    "aliases": [
     "prostate"
@@ -320,6 +356,7 @@
    "name": "Renal cell carcinoma",
    "short": "RCC",
    "group": "solid",
+   "subgroup": "gu",
    "onepager": "Renal Cell Carcinoma.pdf",
    "aliases": [
     "rcc",
@@ -333,6 +370,7 @@
    "name": "Rectal adenocarcinoma",
    "short": "Rectal",
    "group": "solid",
+   "subgroup": "gi",
    "onepager": "Rectal Adenocarcinoma.pdf",
    "aliases": [
     "rectal",
@@ -344,6 +382,7 @@
    "name": "Testicular cancer",
    "short": "Testicular",
    "group": "solid",
+   "subgroup": "gu",
    "onepager": "Testicular Cancer.pdf",
    "aliases": [
     "testicular",
@@ -356,6 +395,7 @@
    "name": "Thyroid cancer",
    "short": "Thyroid",
    "group": "solid",
+   "subgroup": "endocrine",
    "onepager": null,
    "aliases": [
     "thyroid",

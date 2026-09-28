@@ -7,9 +7,11 @@
   let view = "card";              // "card" | "notes"
   let sortMode = "new";
   let query = "";
-  let collapsed = new Set();
+  let collapsed = new Set();      // groups: open unless listed here
+  let expanded = new Set();       // subgroups: closed unless listed here
   try {
     collapsed = new Set(JSON.parse(localStorage.getItem("hh.collapsed") || "[]"));
+    expanded = new Set(JSON.parse(localStorage.getItem("hh.expanded") || "[]"));
   } catch (_) { /* ignore */ }
   try {
     sortMode = localStorage.getItem("hh.trialsort") || "new";
@@ -71,22 +73,49 @@
       const g = groups.find((x) => x.id === gid) || { name: "Other" };
       // a group opens when it holds the current disease, or when a search matched inside it
       const open = !collapsed.has(gid) || query || list.some((d) => d.slug === currentSlug);
+
+      const item = (d) => {
+        const h = hits[d.slug];
+        const why = query && h.where === "content" ? `<span class="tree-why">${h.hits} in text</span>`
+                  : query && h.where === "trials" ? `<span class="tree-why">in trials</span>` : "";
+        return `<button class="tree-item ${d.slug === currentSlug ? "active" : ""} ${op[d.slug] ? "" : "nopdf"}"
+            data-slug="${d.slug}" title="${HH.esc(d.name)}">
+          <span class="ti-name">${HH.esc(d.short || d.name)}</span>
+          ${why || `<span class="ti-n">${count[d.slug] || 0}</span>`}
+        </button>`;
+      };
+
+      /* Solid tumors carries organ systems; the other groups are short enough to stay flat.
+         A subgroup starts closed — the point is a list you can take in at a glance — and opens
+         itself for the disease you are reading or for a search that matched inside it. */
+      const subs = g.subgroups || [];
+      const seen = new Set();
+      let inner = subs.map((sg) => {
+        const sl = list.filter((d) => d.subgroup === sg.id);
+        sl.forEach((d) => seen.add(d.slug));
+        if (!sl.length) return "";
+        const key = `${gid}:${sg.id}`;
+        const sopen = expanded.has(key) || !!query || sl.some((d) => d.slug === currentSlug);
+        return `<div class="tree-sub ${sopen ? "open" : ""}">
+          <button class="tree-sub-head" data-sub="${key}" aria-expanded="${sopen ? "true" : "false"}">
+            <span class="tg-caret" aria-hidden="true">\u203a</span>
+            <span class="tg-name">${HH.esc(sg.name)}</span>
+            <span class="tree-n">${sl.length}</span>
+          </button>
+          <div class="tree-subitems">${sl.map(item).join("")}</div>
+        </div>`;
+      }).join("");
+      // anything the subgroups do not claim still shows, so a new disease is never invisible
+      const rest = list.filter((d) => !seen.has(d.slug));
+      inner += `<div class="tree-items">${rest.map(item).join("")}</div>`;
+
       return `<div class="tree-group ${open ? "open" : ""}">
         <button class="tree-group-head" data-group="${gid}" aria-expanded="${open ? "true" : "false"}">
           <span class="tg-caret" aria-hidden="true">\u203a</span>
           <span class="tg-name">${HH.esc(g.name)}</span>
           <span class="tree-n">${list.length}</span>
         </button>
-        <div class="tree-items">${list.map((d) => {
-          const h = hits[d.slug];
-          const why = query && h.where === "content" ? `<span class="tree-why">${h.hits} in text</span>`
-                    : query && h.where === "trials" ? `<span class="tree-why">in trials</span>` : "";
-          return `<button class="tree-item ${d.slug === currentSlug ? "active" : ""} ${op[d.slug] ? "" : "nopdf"}"
-              data-slug="${d.slug}" title="${HH.esc(d.name)}">
-            <span class="ti-name">${HH.esc(d.short || d.name)}</span>
-            ${why || `<span class="ti-n">${count[d.slug] || 0}</span>`}
-          </button>`;
-        }).join("")}</div>
+        <div class="tree-body">${inner}</div>
       </div>`;
     }).join("");
     if (!any) host.innerHTML = `<div class="empty small">Nothing matches “${HH.esc(query)}”.</div>`;
@@ -99,6 +128,14 @@
         const id = g.dataset.group;
         collapsed.has(id) ? collapsed.delete(id) : collapsed.add(id);
         try { localStorage.setItem("hh.collapsed", JSON.stringify([...collapsed])); } catch (_) { /* ignore */ }
+        HH.renderTree();
+        return;
+      }
+      const sg = e.target.closest(".tree-sub-head");
+      if (sg) {
+        const id = sg.dataset.sub;
+        expanded.has(id) ? expanded.delete(id) : expanded.add(id);
+        try { localStorage.setItem("hh.expanded", JSON.stringify([...expanded])); } catch (_) { /* ignore */ }
         HH.renderTree();
         return;
       }
