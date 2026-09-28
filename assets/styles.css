@@ -142,6 +142,8 @@ main { max-width: 1280px; margin: 0 auto; padding: 14px 16px 40px; }
 }
 .tree-sub-head:hover { background: var(--bg); }
 .tree-sub-head .tg-caret { font-size: .8rem; color: var(--muted); }
+/* a long subgroup name truncates rather than wrapping; the group heads above wrap fine */
+.tree-sub-head .tg-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .tree-sub.open > .tree-sub-head .tg-caret { transform: rotate(90deg); }
 .tree-subitems { display: none; }
 .tree-sub.open .tree-subitems { display: block; }

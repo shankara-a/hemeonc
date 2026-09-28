@@ -14,7 +14,11 @@
     },
     {
      "id": "thoracic",
-     "name": "Thoracic & head/neck"
+     "name": "Thoracic"
+    },
+    {
+     "id": "head-neck",
+     "name": "Head & neck"
     },
     {
      "id": "breast",
@@ -36,7 +40,25 @@
   },
   {
    "id": "lymphoma",
-   "name": "Lymphoma"
+   "name": "Lymphoma",
+   "subgroups": [
+    {
+     "id": "aggressive",
+     "name": "Aggressive B-cell"
+    },
+    {
+     "id": "indolent",
+     "name": "Indolent B-cell"
+    },
+    {
+     "id": "tcell",
+     "name": "T-cell"
+    },
+    {
+     "id": "hodgkin",
+     "name": "Hodgkin"
+    }
+   ]
   },
   {
    "id": "benign-heme",
@@ -115,6 +137,7 @@
    "name": "Hairy cell leukemia",
    "short": "Hairy cell",
    "group": "lymphoma",
+   "subgroup": "indolent",
    "onepager": "Hairy Cell Leukemia.pdf",
    "aliases": [
     "hairy cell",
@@ -126,9 +149,9 @@
   {
    "slug": "head-neck",
    "name": "Head & neck squamous cell carcinoma",
-   "short": "Head & neck",
+   "short": "HNSCC",
    "group": "solid",
-   "subgroup": "thoracic",
+   "subgroup": "head-neck",
    "onepager": null,
    "aliases": [
     "head and neck",
@@ -141,6 +164,7 @@
    "name": "Burkitt lymphoma",
    "short": "Burkitt",
    "group": "lymphoma",
+   "subgroup": "aggressive",
    "onepager": "Lymphoma - Burkitt.pdf",
    "aliases": [
     "burkitt",
@@ -152,6 +176,7 @@
    "name": "Cutaneous T-cell lymphoma",
    "short": "CTCL",
    "group": "lymphoma",
+   "subgroup": "tcell",
    "onepager": "Lymphoma - Cutaneous T-cell.pdf",
    "aliases": [
     "ctcl",
@@ -166,6 +191,7 @@
    "name": "Diffuse large B-cell lymphoma",
    "short": "DLBCL",
    "group": "lymphoma",
+   "subgroup": "aggressive",
    "onepager": "Lymphoma - DLBCL.pdf",
    "aliases": [
     "dlbcl",
@@ -187,6 +213,7 @@
    "name": "Follicular lymphoma",
    "short": "Follicular",
    "group": "lymphoma",
+   "subgroup": "indolent",
    "onepager": "Lymphoma - Follicular.pdf",
    "aliases": [
     "follicular",
@@ -200,6 +227,7 @@
    "name": "Hodgkin lymphoma",
    "short": "Hodgkin",
    "group": "lymphoma",
+   "subgroup": "hodgkin",
    "aliases": [
     "hodgkin",
     "hl",
@@ -213,6 +241,7 @@
    "name": "Mantle cell lymphoma",
    "short": "Mantle cell",
    "group": "lymphoma",
+   "subgroup": "indolent",
    "onepager": "Lymphoma - Mantle Cell.pdf",
    "aliases": [
     "mantle cell",
@@ -225,6 +254,7 @@
    "name": "Marginal zone lymphoma",
    "short": "Marginal zone",
    "group": "lymphoma",
+   "subgroup": "indolent",
    "onepager": "Lymphoma - Marginal Zone.pdf",
    "aliases": [
     "marginal zone",
@@ -240,6 +270,7 @@
    "name": "Primary CNS lymphoma",
    "short": "PCNSL",
    "group": "lymphoma",
+   "subgroup": "aggressive",
    "onepager": "Lymphoma - Primary CNS.pdf",
    "aliases": [
     "pcnsl",
@@ -252,6 +283,7 @@
    "name": "Peripheral T-cell lymphoma",
    "short": "PTCL",
    "group": "lymphoma",
+   "subgroup": "tcell",
    "onepager": "Lymphoma - Peripheral T-cell.pdf",
    "aliases": [
     "ptcl",
@@ -407,6 +439,7 @@
    "name": "Waldenström macroglobulinemia",
    "short": "Waldenström",
    "group": "lymphoma",
+   "subgroup": "indolent",
    "onepager": "Waldenstrom Macroglobulinemia.pdf",
    "aliases": [
     "waldenstrom",

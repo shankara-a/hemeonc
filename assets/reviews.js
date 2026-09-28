@@ -97,7 +97,7 @@
         const key = `${gid}:${sg.id}`;
         const sopen = expanded.has(key) || !!query || sl.some((d) => d.slug === currentSlug);
         return `<div class="tree-sub ${sopen ? "open" : ""}">
-          <button class="tree-sub-head" data-sub="${key}" aria-expanded="${sopen ? "true" : "false"}">
+          <button class="tree-sub-head" data-sub="${key}" title="${HH.esc(sg.name)}" aria-expanded="${sopen ? "true" : "false"}">
             <span class="tg-caret" aria-hidden="true">\u203a</span>
             <span class="tg-name">${HH.esc(sg.name)}</span>
             <span class="tree-n">${sl.length}</span>
