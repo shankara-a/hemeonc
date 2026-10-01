@@ -1,0 +1,598 @@
+{
+ "disease": "myeloma",
+ "spec_file": "myeloma.py",
+ "pdf": "Multiple Myeloma.pdf",
+ "title": "Multiple myeloma &amp; precursors",
+ "subtitle": "MGUS &rarr; smoldering &rarr; myeloma &middot; <b>treat on a myeloma-defining event, not on the M-spike</b> &middot; anti-CD38 quadruplets up front, T-cell redirection (CAR-T, bispecifics) moving to first relapse",
+ "source": "Compiled from primary trial reports and consensus guidelines (IMWG; NCCN) verified against PubMed, September 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "The plasma cell spectrum (IMWG 2014)",
+       "headers": [
+        "Entity",
+        "Definition"
+       ],
+       "widths": [
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>MGUS</b> <span class='r'>~3% of adults &gt;50</span>",
+         "M-protein <b>&lt;3 g/dL</b> + clonal marrow PCs <b>&lt;10%</b> + <b>no CRAB / SLiM</b> (or amyloidosis). Progresses <b>~1%/yr</b>; IgM MGUS &rarr; WM, not myeloma"
+        ],
+        [
+         "<b>Light-chain MGUS</b>",
+         "Abnormal FLC ratio + raised involved FLC, <b>no heavy chain on IFE</b>, PCs &lt;10%, urine M &lt;500 mg/24 h"
+        ],
+        [
+         "<b>Smoldering (SMM)</b>",
+         "M-protein <b>&ge;3 g/dL</b> (or urine &ge;500 mg/24 h) <b>and/or PCs 10&ndash;60%</b>, no CRAB / SLiM. <b>~10%/yr for the first 5 yr</b>, then ~3%/yr, then ~1%/yr"
+        ],
+        [
+         "<b>Multiple myeloma</b>",
+         "Clonal PCs <b>&ge;10%</b> (or biopsy-proven plasmacytoma) <b>+ &ge;1 myeloma-defining event</b> (below)"
+        ],
+        [
+         "<b>Plasma cell leukemia</b>",
+         "<b>&ge;5% circulating PCs</b> (IMWG 2021; was 20%) &mdash; treat as ultra-high risk"
+        ],
+        [
+         "Solitary plasmacytoma",
+         "Single lesion, marrow &lt;10% clonal (none = solitary; minimal = higher risk). <b>RT 40&ndash;50 Gy</b>"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Myeloma-defining events &mdash; any one = treat",
+       "items": [
+        "<b>C</b> &mdash; Ca <b>&gt;11 mg/dL</b> or &gt;1 mg/dL above ULN &middot; <b>R</b> &mdash; CrCl <b>&lt;40</b> or Cr <b>&gt;2 mg/dL</b> &middot; <b>A</b> &mdash; Hb <b>&lt;10 g/dL</b> or &gt;2 below LLN &middot; <b>B</b> &mdash; <b>&ge;1 lytic lesion</b> (&ge;5 mm) on X-ray, CT or PET-CT",
+        "<b>SLiM</b> (no CRAB needed): clonal PCs <b>&ge;60%</b> &middot; involved:uninvolved <b>FLC ratio &ge;100</b> with involved FLC &ge;100 mg/L &middot; <b>&gt;1 focal lesion on MRI</b> (&ge;5 mm)",
+        "Osteoporosis / compression fracture <b>without a lytic lesion</b> is not CRAB &mdash; image first"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "<b>SPEP + serum IFE + serum FLC</b> &mdash; plus <b>24-h UPEP + urine IFE</b> once at diagnosis",
+        "CBC, CMP (Ca, Cr, albumin), <b>&beta;2-microglobulin, LDH</b>, quantitative IgG/IgA/IgM",
+        "<b>Marrow aspirate + biopsy</b>: PC %, flow, <b>FISH on CD138-sorted cells</b> &mdash; t(4;14), t(14;16), t(14;20), t(11;14), del(17p), 1q+, del(1p); <b>TP53</b> sequencing where available",
+        "<b>Whole-body low-dose CT</b> or <b>PET-CT</b>; <b>whole-body MRI</b> if SMM with a negative CT/PET. <b>Skeletal survey is obsolete</b> (insensitive)",
+        "Albuminuria or unexplained organ dysfunction &rarr; think <b>AL amyloidosis</b> (fat pad, NT-proBNP, troponin)",
+        "<b>Type &amp; screen with extended RBC phenotype/genotype before the first anti-CD38 dose</b> (page 3)"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Smoldering myeloma",
+         "color": "teal",
+         "boxes": [
+          [
+           "Risk-stratify (Mayo 2/20/20)",
+           [
+            "low/intermediate: <b>observe</b>, labs q3&ndash;6 mo",
+            "<b>high risk: daratumumab SC &times;3 yr</b> (AQUILA)",
+            "or lenalidomide (E3A06), or a trial"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Newly diagnosed &mdash; transplant-eligible",
+         "color": "blue",
+         "boxes": [
+          [
+           "Quadruplet induction &times;4",
+           [
+            "<b>D-VRd</b> (PERSEUS) &middot; collect stem cells early",
+            "alternatives: Isa-VRd, D-KRd (high risk)"
+           ]
+          ],
+          [
+           "Melphalan 200 &rarr; ASCT &rarr; consolidation",
+           [
+            "ASCT: <b>PFS gain, no OS gain</b> (DETERMINATION)",
+            "deferral is a reasonable, informed choice"
+           ]
+          ],
+          [
+           "Maintenance until progression",
+           [
+            "<b>lenalidomide 10 mg</b> (&plusmn; daratumumab)",
+            "high risk: <b>add a PI or anti-CD38</b>"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Newly diagnosed &mdash; transplant-ineligible",
+         "color": "purple",
+         "boxes": [
+          [
+           "Fit / intermediate (IMWG frailty)",
+           [
+            "<b>D-VRd</b> (CEPHEUS) or <b>Isa-VRd</b> (IMROZ)",
+            "or <b>DRd</b> (MAIA, OS benefit) until progression"
+           ]
+          ],
+          [
+           "Frail",
+           [
+            "<b>DRd</b> with dex 20 mg weekly",
+            "or <b>VRd-lite</b>; avoid 4-drug intensity"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Relapse",
+         "color": "coral",
+         "boxes": [
+          [
+           "First relapse &mdash; usually len-refractory",
+           [
+            "<b>switch classes</b>; <b>cilta-cel</b> (OS benefit)",
+            "<b>tec + dara</b> (OS benefit) &middot; BVd &middot; anti-CD38 + K/P"
+           ]
+          ],
+          [
+           "Triple-class exposed and beyond",
+           [
+            "<b>BCMA CAR-T</b> or <b>BCMA bispecific</b>",
+            "<b>talquetamab</b> (GPRC5D) after BCMA",
+            "selinexor &middot; <b>venetoclax only if t(11;14)</b>"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Smoldering myeloma &mdash; who to treat",
+       "items": [
+        "<b>Mayo 2/20/20:</b> M-protein <b>&gt;2 g/dL</b>, marrow PCs <b>&gt;20%</b>, FLC ratio <b>&gt;20</b>. 0 / 1 / &ge;2 factors &rarr; median time to progression <b>110 / 68 / 29 months</b>",
+        "<b>High-risk SMM &rarr; daratumumab SC &times;3 yr</b> (AQUILA vs active monitoring): PFS HR <b>0.49</b>, 5-yr PFS 63% vs 41%, <b>OS HR 0.52</b> &mdash; <b>FDA 6 Nov 2025</b>, the first approved SMM therapy",
+        "<b>Lenalidomide</b> (E3A06, intermediate/high risk): PFS HR 0.28; no OS signal",
+        "<b>Low-risk SMM: observe</b> &mdash; treating it is not supported"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "MGUS &mdash; Mayo risk (20-yr progression)",
+       "headers": [
+        "Risk factors",
+        "20-yr risk"
+       ],
+       "widths": [
+        "70%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>M-protein &ge;1.5 g/dL &middot; non-IgG &middot; abnormal FLC ratio</b> &mdash; 0 factors",
+         "<b>5%</b>"
+        ],
+        [
+         "1 &middot; 2 &middot; 3 factors",
+         "21% &middot; 37% &middot; <b>58%</b>"
+        ]
+       ],
+       "footnote": "Low-risk MGUS (IgG, M &lt;1.5, normal ratio): <b>no marrow or imaging needed</b>; recheck at 6 mo then every 2&ndash;3 yr. Anything else: marrow + imaging, then yearly labs."
+      },
+      {
+       "type": "table",
+       "heading": "Staging",
+       "headers": [
+        "System",
+        "Definition &middot; outcome"
+       ],
+       "widths": [
+        "19%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>ISS</b>",
+         "I: &beta;2M <b>&lt;3.5</b> mg/L + albumin <b>&ge;3.5</b> g/dL &middot; III: &beta;2M <b>&ge;5.5</b> &middot; II: neither"
+        ],
+        [
+         "<b>R-ISS</b> (2015)",
+         "I: ISS I + standard-risk FISH + normal LDH &middot; <b>III: ISS III + high-risk FISH [del(17p), t(4;14), t(14;16)] or high LDH</b> &middot; II: rest. 5-yr OS <b>82 / 62 / 40%</b>"
+        ],
+        [
+         "<b>R2-ISS</b> (2022)",
+         "Points: ISS III 1.5, ISS II 1, del(17p) 1, high LDH 1, t(4;14) 1, <b>1q+ 0.5</b> &rarr; I 0 &middot; II 0.5&ndash;1 &middot; III 1.5&ndash;2.5 &middot; IV 3&ndash;5. Median OS NR / 109 / 69 / 38 mo. <b>Splits the big R-ISS II group</b>"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "High-risk myeloma &mdash; IMS/IMWG 2025 (any one)",
+       "items": [
+        "<b>del(17p) in &gt;20% cancer clonal fraction and/or TP53 mutation</b>",
+        "<b>IgH translocation [t(4;14), t(14;16), t(14;20)] + 1q gain/amp and/or del(1p32)</b> &mdash; translocation <b>alone no longer qualifies</b>",
+        "<b>Biallelic del(1p32)</b>, or <b>monoallelic del(1p32) + 1q gain/amp</b>",
+        "<b>&beta;2M &ge;5.5 mg/L with normal creatinine</b> (&lt;1.2 mg/dL)",
+        "Also high risk in practice: <b>plasma cell leukemia</b>, extramedullary disease, <b>relapse &lt;12&ndash;18 mo</b> from front-line therapy (functional). <b>t(11;14), t(6;14), hyperdiploidy = standard risk</b>"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; the evidence: newly diagnosed disease, response and MRD, relapse, T-cell redirection",
+   "columns": [
+    {
+     "width": "49%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Newly diagnosed &mdash; the trials that set the standard",
+       "headers": [
+        "Trial",
+        "Design &middot; result"
+       ],
+       "widths": [
+        "20%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>PERSEUS</b> <span class='r'>TE</span>",
+         "<b>D-VRd vs VRd</b> induction/consolidation + ASCT, then <b>D-R vs R</b>: 4-yr PFS <b>84.3% vs 67.7%</b> (HR 0.42); MRD-neg <b>75% vs 48%</b>. FDA 30 Jul 2024 for <b>D-VRd induction + consolidation only</b> (not D-R maintenance)"
+        ],
+        [
+         "<b>DETERMINATION</b> &middot; <b>IFM 2009</b>",
+         "RVd &plusmn; ASCT, then len: PFS <b>67.5 vs 46.2 mo</b> (IFM: 50 vs 36) &mdash; <b>no OS difference</b> (5-yr 80.7% vs 79.2%). <b>ASCT buys PFS, not OS</b>; deferral with cells banked is legitimate"
+        ],
+        [
+         "<b>Len maintenance</b> <span class='r'>meta-analysis</span>",
+         "After ASCT: PFS <b>52.8 vs 23.5 mo</b>, <b>OS HR 0.75</b>; more second primary malignancies"
+        ],
+        [
+         "<b>AURIGA</b>",
+         "MRD+ after ASCT: <b>D-R vs R maintenance</b> &mdash; MRD-neg conversion at 12 mo <b>50.5% vs 18.8%</b>; PFS HR 0.53"
+        ],
+        [
+         "<b>MAIA</b> <span class='r'>TIE</span>",
+         "<b>DRd vs Rd</b> until progression: median PFS NR vs 34.4 mo (HR 0.53), <b>OS HR 0.68</b>"
+        ],
+        [
+         "<b>SWOG S0777</b>",
+         "<b>VRd vs Rd</b>: PFS 43 vs 30 mo, <b>OS 75 vs 64 mo</b> (HR 0.71)"
+        ],
+        [
+         "<b>CEPHEUS</b> <span class='r'>TIE / deferred</span>",
+         "<b>D-VRd vs VRd</b> &times;8 &rarr; D-Rd vs Rd: MRD-neg <b>60.9% vs 39.4%</b>; PFS HR <b>0.57</b>. FDA 27 Jan 2026 (TIE only)"
+        ],
+        [
+         "<b>IMROZ</b> <span class='r'>TIE, &le;80 yr</span>",
+         "<b>Isa-VRd vs VRd</b>: 5-yr PFS <b>63.2% vs 45.2%</b> (HR 0.60). FDA Sep 2024"
+        ]
+       ],
+       "footnote": "<b>No head-to-head quadruplet vs DRd in TIE.</b> Quadruplets for fit older adults; <b>DRd for intermediate-fit / frail</b>."
+      },
+      {
+       "type": "bullets",
+       "heading": "Fitness and dose adjustment",
+       "items": [
+        "<b>IMWG frailty score</b> (age, Charlson, ADL, IADL; 0&ndash;5): <b>fit 0 &middot; intermediate 1 &middot; frail &ge;2</b> &mdash; 3-yr OS 84% / 76% / 57%; frail have ~2&times; the discontinuation rate",
+        "Age &gt;75 or frail: <b>dexamethasone 20 mg weekly</b>, <b>weekly SC bortezomib</b>, renally dosed lenalidomide"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Response (IMWG 2016)",
+       "headers": [
+        "Level",
+        "Criteria"
+       ],
+       "widths": [
+        "20%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>MRD-neg</b>",
+         "CR + no clonal PCs at <b>&le;10<sup>&minus;5</sup></b> (NGF or NGS); <b>sustained</b> = confirmed &ge;1 yr apart; imaging MRD-neg adds PET-negative"
+        ],
+        [
+         "<b>sCR / CR</b>",
+         "<b>Negative serum + urine IFE</b>, plasmacytomas gone, <b>&lt;5% marrow PCs</b> (sCR adds normal FLC ratio, no clonal PCs by IHC)"
+        ],
+        [
+         "<b>VGPR / PR</b>",
+         "&ge;90% M-protein fall (or IFE+ / SPEP&minus;) / &ge;50% serum and &ge;90% urine fall"
+        ],
+        [
+         "<b>Progression</b>",
+         "&ge;25% rise from nadir: serum M <b>&ge;0.5 g/dL absolute</b>, urine &ge;200 mg/24 h, or dFLC &gt;10 mg/dL; new lesions"
+        ]
+       ],
+       "footnote": "<b>MRD is prognostic, and now regulatory:</b> ODAC 12&ndash;0 (Apr 2024) accepted MRD-neg CR as an accelerated-approval endpoint. CEPHEUS (Jan 2026) used MRD-neg as its primary endpoint; <b>iberdomide (Aug 2026) = first accelerated approval of a new drug based on MRD</b>. <b>Stopping therapy on MRD alone is still a trial question.</b>"
+      }
+     ]
+    },
+    {
+     "width": "51%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Relapse &mdash; by what the patient is refractory to",
+       "headers": [
+        "Setting",
+        "Options &middot; evidence"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Definitions</b>",
+         "<b>Triple-class exposed</b> = PI + IMiD + anti-CD38. <b>Refractory</b> = progression on or &le;60 days after. <b>Penta</b> = 2 PIs + 2 IMiDs + anti-CD38. Treat biochemical relapse early if high-risk or rapid rise"
+        ],
+        [
+         "<b>Len-refractory, 1&ndash;3 lines</b> <span class='r'>the usual first relapse</span>",
+         "<b>Cilta-cel</b> (CARTITUDE-4): PFS NR vs 11.8 mo (HR 0.26), <b>OS HR 0.55</b>. <b>Teclistamab + dara</b> (MajesTEC-3): 36-mo PFS <b>83% vs 30%</b> (HR 0.17), <b>OS HR 0.46</b>. <b>BVd</b> (DREAMM-7): PFS 36.6 vs 13.4 mo, <b>OS HR 0.58</b>"
+        ],
+        [
+         "Anti-CD38-naive, 1&ndash;3 lines",
+         "<b>Dara-Kd</b> (CANDOR, HR 0.63) &middot; <b>Isa-Kd</b> (IKEMA, HR 0.53) &middot; <b>DPd</b> (APOLLO, 12.4 vs 6.9 mo) &middot; <b>Isa-Pd</b> (ICARIA, 11.5 vs 6.5 mo) &middot; <b>IberDd</b> (iberdomide, <b>Zenbexus</b>; accelerated Aug 2026, &ge;1 prior line incl PI + IMiD)"
+        ],
+        [
+         "<b>Anti-CD38 + len-refractory</b>",
+         "<b>Teclistamab monotherapy</b> (MajesTEC-9 vs PVd/Kd): PFS HR <b>0.29</b>, <b>OS HR 0.60</b>, grade 3&ndash;4 infection 42%. <b>BPd</b> (DREAMM-8 vs PVd): 12-mo PFS 71% vs 51%. CAR-T"
+        ],
+        [
+         "<b>&ge;4 lines, triple-class</b>",
+         "BCMA CAR-T, BCMA or GPRC5D bispecific (table below) &middot; <b>SVd</b> (BOSTON: PFS 13.9 vs 9.5 mo) &middot; clinical trial"
+        ]
+       ],
+       "footnote": "<b>Cilta-cel vs ide-cel:</b> ide-cel (KarMMa-3, 2&ndash;4 prior lines) PFS 13.3 vs 4.4 mo but <b>no OS gain</b> (HR 1.01, 56% crossover). <b>Both CAR-Ts show early excess deaths</b> during manufacturing/bridging &mdash; bridge effectively."
+      },
+      {
+       "type": "table",
+       "heading": "T-cell redirection and ADC &mdash; approvals",
+       "headers": [
+        "Agent",
+        "Target &middot; label &middot; key data"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Cilta-cel</b> (CAR-T)",
+         "BCMA &middot; <b>&ge;1 prior line, len-refractory</b> &middot; <b>OS benefit</b>. <b>Delayed parkinsonism</b>, cranial-nerve palsy (9%), GBS"
+        ],
+        [
+         "<b>Ide-cel</b> (CAR-T)",
+         "BCMA &middot; &ge;2 prior lines (IMiD, PI, anti-CD38) &middot; PFS benefit, OS not shown"
+        ],
+        [
+         "<b>Teclistamab</b>",
+         "BCMA&times;CD3 SC &middot; <b>+ dara, &ge;1 line</b> (5 Mar 2026) &middot; mono &ge;4 lines (ORR 63%) <b>converted to regular approval 5 Mar 2026</b>"
+        ],
+        [
+         "<b>Elranatamab</b>",
+         "BCMA&times;CD3 SC &middot; &ge;4 lines (accelerated; ORR 61%)"
+        ],
+        [
+         "<b>Linvoseltamab</b>",
+         "BCMA&times;CD3 IV &middot; &ge;4 lines (accelerated Jul 2025; ORR 71%, &ge;CR 50%)"
+        ],
+        [
+         "<b>Talquetamab</b>",
+         "<b>GPRC5D</b>&times;CD3 SC &middot; &ge;4 lines (accelerated; ORR ~70%) &middot; <b>works after BCMA</b>; oral/skin/nail toxicity, fewer infections"
+        ],
+        [
+         "<b>Belantamab</b> (ADC)",
+         "BCMA &middot; <b>BVd, &ge;2 lines incl PI + IMiD</b> (re-approved Oct 2025; withdrawn 2022 after DREAMM-3) &middot; <b>keratopathy</b>, REMS"
+        ]
+       ],
+       "footnote": "<b>Sequencing:</b> BCMA loss after BCMA therapy is common &mdash; after BCMA CAR-T/bispecific, <b>switch target (GPRC5D)</b> rather than re-using BCMA when possible."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 3 &mdash; regimen dosing, supportive care, emergencies, agent-specific pitfalls",
+   "columns": [
+    {
+     "width": "40%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimen dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>VRd</b> <span class='r'>21-day</span>",
+         "Bortezomib <b>1.3 mg/m&sup2; SC d1, 4, 8, 11</b> + lenalidomide <b>25 mg d1&ndash;14</b> + dex 20 mg d1, 2, 4, 5, 8, 9, 11, 12 (S0777, &times;8)"
+        ],
+        [
+         "<b>D-VRd</b> <span class='r'>28-day (PERSEUS)</span>",
+         "<b>Dara SC 1800 mg</b> weekly c1&ndash;2, q2wk c3&ndash;6 + V 1.3 d1, 4, 8, 11 + <b>R 25 d1&ndash;21</b> + dex 40 d1&ndash;4, 9&ndash;12 &times;4 &rarr; ASCT &rarr; &times;2 &rarr; <b>D-R</b> (dara q4wk)"
+        ],
+        [
+         "<b>VRd-lite</b> <span class='r'>35-day</span>",
+         "Bortezomib 1.3 SC <b>weekly</b> d1, 8, 15, 22 + len 15 d1&ndash;21 + dex 20 twice weekly"
+        ],
+        [
+         "<b>DRd</b> <span class='r'>28-day (MAIA)</span>",
+         "Dara SC <b>1800 mg: weekly wk 1&ndash;8, q2wk wk 9&ndash;24, q4wk from wk 25</b> + len 25 d1&ndash;21 + dex 40 weekly (20 if &gt;75)"
+        ],
+        [
+         "<b>Isa-VRd</b> (IMROZ)",
+         "Isatuximab <b>10 mg/kg IV</b> weekly &times;4, then q2wk; later q4wk + VRd &times;4 &rarr; Isa-Rd"
+        ],
+        [
+         "<b>KRd</b> <span class='r'>28-day</span>",
+         "Carfilzomib <b>20 &rarr; 27 mg/m&sup2; d1, 2, 8, 9, 15, 16</b> (or 56&ndash;70 once weekly) + len 25 d1&ndash;21 + dex 40 weekly"
+        ],
+        [
+         "<b>Dara-Kd / Isa-Kd</b>",
+         "Carfilzomib <b>20 &rarr; 56 mg/m&sup2;</b> d1, 2, 8, 9, 15, 16 + dex 40 weekly + anti-CD38"
+        ],
+        [
+         "<b>DPd / Isa-Pd</b>",
+         "Pomalidomide <b>4 mg d1&ndash;21</b> q28d + dex 40 weekly (20 if &ge;75) + dara SC or isatuximab 10 mg/kg"
+        ],
+        [
+         "<b>BVd</b>",
+         "Belantamab <b>2.5 mg/kg IV q3wk</b> + V 1.3 d1, 4, 8, 11 + dex 20 &times;8 cycles, then belantamab alone. Eye-toxicity reductions: 1.9 mg/kg q3wk &rarr; 1.9 q8wk"
+        ],
+        [
+         "<b>SVd</b>",
+         "Selinexor <b>100 mg PO once weekly</b> + bortezomib 1.3 SC weekly + dex 20 twice weekly (35-day)"
+        ],
+        [
+         "<b>IberDd</b> (Zenbexus)",
+         "Iberdomide <b>1 mg d1&ndash;21</b> q28d + dara SC + dex 40 weekly"
+        ],
+        [
+         "<b>Dara SC</b> (AQUILA, SMM)",
+         "<b>1800 mg</b> weekly c1&ndash;2, q2wk c3&ndash;6, then q4wk &mdash; <b>stop at 36 mo</b> (39 cycles)"
+        ],
+        [
+         "<b>Len maintenance</b>",
+         "<b>10 mg d1&ndash;28</b> (15 after 3 mo if tolerated); CrCl 30&ndash;60 &rarr; 5 mg; &lt;30 &rarr; 2.5 mg; dialysis 5 mg after HD"
+        ],
+        [
+         "<b>Mel 200</b> + ASCT",
+         "Melphalan <b>200 mg/m&sup2;</b> day &minus;2; <b>140 mg/m&sup2;</b> if renal impairment or frail (100&ndash;140 on dialysis); oral cryotherapy"
+        ],
+        [
+         "<b>Teclistamab</b> SC",
+         "<b>0.06 &rarr; 0.3 mg/kg</b> step-up, then <b>1.5 mg/kg weekly</b>; q2wk after &ge;CR &ge;6 mo. <b>With dara:</b> 1.5 weekly wk 2&ndash;8 &rarr; <b>3 mg/kg q2wk</b> wk 9&ndash;24 &rarr; q4wk"
+        ],
+        [
+         "<b>Elranatamab</b> SC",
+         "<b>12 mg d1 &rarr; 32 mg d4 &rarr; 76 mg</b> weekly; q2wk from wk 25 if responding, q4wk from wk 49"
+        ],
+        [
+         "<b>Talquetamab</b> SC",
+         "0.01 &rarr; 0.06 mg/kg &rarr; <b>0.4 mg/kg weekly</b>, or + 0.4 step &rarr; <b>0.8 mg/kg q2wk</b>"
+        ],
+        [
+         "<b>Linvoseltamab</b> IV",
+         "<b>5 &rarr; 25 &rarr; 200 mg</b> (d1, 8, 15), 200 weekly wk 4&ndash;13, <b>q2wk from wk 14</b>; q4wk from wk 24 if &ge;VGPR"
+        ],
+        [
+         "<b>CAR-T</b>",
+         "Flu 30 + Cy 300 mg/m&sup2; &times;3 d. <b>Cilta-cel 0.5&ndash;1.0&times;10<sup>6</sup> CAR+ cells/kg</b> &middot; <b>ide-cel 300&ndash;510&times;10<sup>6</sup></b>. Stay near center 2 wk, <b>no driving 2 wk</b> (REMS removed Jun 2025)"
+        ]
+       ],
+       "footnote": "<b>Lenalidomide renal dosing (induction):</b> CrCl 30&ndash;60 &rarr; 10 mg daily &middot; &lt;30 &rarr; 15 mg q48h &middot; dialysis &rarr; 5 mg daily after HD. <b>Bortezomib, daratumumab, carfilzomib, pomalidomide (off HD) need no renal adjustment</b>; bortezomib: reduce for hepatic impairment."
+      }
+     ]
+    },
+    {
+     "width": "32%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Supportive care",
+       "items": [
+        "<b>Bone:</b> <b>zoledronic acid 4 mg IV q4wk</b> (q12wk after ~1&ndash;2 yr) or <b>denosumab 120 mg SC q4wk</b> for every patient on active therapy (non-inferior, HR 0.98; <b>less renal toxicity</b> 10% vs 17%, more hypocalcemia 17% vs 12%). <b>Denosumab if CrCl &lt;30</b>; don't stop it abruptly (rebound fractures). Zoledronic acid renal dosing: CrCl 50&ndash;60 &rarr; 3.5 mg &middot; 40&ndash;49 &rarr; 3.3 &middot; 30&ndash;39 &rarr; 3.0 &middot; &lt;30 &rarr; avoid",
+        "<b>ONJ:</b> dental evaluation before starting; avoid extractions on therapy. <b>Calcium + vitamin D</b> for all (not if hypercalcemic)",
+        "<b>VTE with any IMiD:</b> <b>aspirin 81&ndash;325 mg</b> if &le;1 risk factor; <b>prophylactic LMWH or apixaban 2.5 mg BID / rivaroxaban 10 mg</b> if higher risk (IMPEDE VTE &ge;4, prior VTE, high-dose dex, doxorubicin, immobility)",
+        "<b>Infection:</b> <b>acyclovir/valacyclovir</b> with PIs, anti-CD38, CAR-T, bispecifics. <b>Levofloxacin 500 mg &times;12 wk</b> at diagnosis (TEAMM: fever or death HR 0.66). <b>PJP prophylaxis</b> with bispecifics, CAR-T, high-dose dex",
+        "<b>Bispecifics / CAR-T:</b> <b>IVIG 0.4 g/kg q4wk if IgG &lt;400 mg/dL</b> (hypogammaglobulinemia is near-universal with BCMA agents). Vaccinate: inactivated flu, pneumococcal conjugate, COVID, RSV, <b>recombinant zoster</b>; <b>no live vaccines</b>; re-vaccinate after ASCT"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Myeloma emergencies",
+       "items": [
+        "<b>Renal failure / cast nephropathy</b> (very high involved FLC): <b>start a bortezomib-based regimen immediately</b> (e.g. D-VCd / VRd with renal dosing), high-dose dex, hydrate, treat Ca; <b>stop NSAIDs, avoid IV contrast</b>. <b>Plasma exchange and high-cutoff dialysis are not routine</b> (negative trials). Biopsy if albuminuria &rarr; AL, MIDD",
+        "<b>Hypercalcemia:</b> IV saline, zoledronic acid (or <b>denosumab</b> if renal failure), calcitonin for the first 48 h, steroids + anti-myeloma therapy",
+        "<b>Cord compression:</b> <b>dexamethasone 10 mg IV now + MRI whole spine</b> &rarr; RT or surgery (instability) &middot; <b>Hyperviscosity</b> (IgA, IgG3): <b>plasmapheresis</b> &middot; Anemia: treat the myeloma; ESA if Hb &lt;10 despite therapy (VTE risk with IMiDs)"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "28%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Pitfalls with modern agents",
+       "items": [
+        "<b>Anti-CD38 &rarr; blood bank:</b> dara/isa bind CD38 on reagent RBCs &rarr; <b>panreactive indirect antiglobulin test</b> for up to 6 mo. Send <b>type &amp; screen + phenotype/genotype before dose 1</b>; lab uses <b>DTT-treated cells</b> (DTT destroys Kell &rarr; give <b>K-negative units</b>). ABO typing is unaffected &mdash; tell the blood bank",
+        "<b>Anti-CD38 &rarr; SPEP/IFE:</b> dara (IgG&kappa;) shows up as a small <b>IgG-&kappa; band</b> that mimics residual disease &mdash; use a DIRA / mass-spec assay before calling non-CR",
+        "<b>CRS / ICANS:</b> step-up dosing, <b>48-h admission</b> (or monitored outpatient) after step-ups; tocilizumab for grade &ge;2 CRS, dex for ICANS; <b>restart step-up if doses are missed</b>",
+        "<b>Cilta-cel:</b> <b>delayed movement/neurocognitive toxicity (parkinsonism)</b> weeks&ndash;months out, cranial-nerve (VII) palsy; <b>boxed warning for secondary T-cell malignancies</b> (all CAR-T, Apr 2024), MDS/AML",
+        "<b>Talquetamab:</b> <b>dysgeusia, dry mouth, dysphagia, weight loss</b>, skin peeling, <b>nail loss</b> &mdash; common and dose-limiting; dose spacing helps",
+        "<b>Belantamab:</b> <b>corneal keratopathy</b> (ocular AEs 79&ndash;89% in DREAMM-7/8) &mdash; blurred vision, dry eye; <b>eye exam at baseline and before doses</b>; hold/delay by exam findings; REMS"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Other agents &mdash; when and when not",
+       "items": [
+        "<b>Venetoclax: t(11;14) only, off-label.</b> BELLINI (Vd &plusmn; ven): PFS gain <b>but excess deaths</b> (infections), driven by non-t(11;14) &mdash; <b>never outside t(11;14)</b>",
+        "<b>Selinexor</b> (XPO1): SVd weekly &mdash; thrombocytopenia 39% grade 3&ndash;4, nausea, <b>hyponatremia</b>, fatigue; give with 5-HT3 + olanzapine prophylaxis",
+        "<b>Carfilzomib:</b> HTN, HF, cardiac events &mdash; <b>baseline echo and BP control</b>; prefer bortezomib if significant cardiac disease"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "The plasma cell spectrum (IMWG 2014)",
+  "Myeloma-defining events &mdash; any one = treat",
+  "Workup",
+  "Treatment pathway",
+  "Smoldering myeloma &mdash; who to treat",
+  "MGUS &mdash; Mayo risk (20-yr progression)",
+  "Staging",
+  "High-risk myeloma &mdash; IMS/IMWG 2025 (any one)",
+  "Newly diagnosed &mdash; the trials that set the standard",
+  "Fitness and dose adjustment",
+  "Response (IMWG 2016)",
+  "Relapse &mdash; by what the patient is refractory to",
+  "T-cell redirection and ADC &mdash; approvals",
+  "Regimen dosing",
+  "Supportive care",
+  "Myeloma emergencies",
+  "Pitfalls with modern agents",
+  "Other agents &mdash; when and when not"
+ ],
+ "text": "Multiple myeloma & precursors MGUS → smoldering → myeloma · treat on a myeloma-defining event, not on the M-spike · anti-CD38 quadruplets up front, T-cell redirection (CAR-T, bispecifics) moving to first relapse Compiled from primary trial reports and consensus guidelines (IMWG; NCCN) verified against PubMed, September 2026. The plasma cell spectrum (IMWG 2014) Entity Definition MGUS ~3% of adults >50 M-protein <3 g/dL + clonal marrow PCs <10% + no CRAB / SLiM (or amyloidosis). Progresses ~1%/yr ; IgM MGUS → WM, not myeloma Light-chain MGUS Abnormal FLC ratio + raised involved FLC, no heavy chain on IFE , PCs <10%, urine M <500 mg/24 h Smoldering (SMM) M-protein ≥3 g/dL (or urine ≥500 mg/24 h) and/or PCs 10–60% , no CRAB / SLiM. ~10%/yr for the first 5 yr , then ~3%/yr, then ~1%/yr Multiple myeloma Clonal PCs ≥10% (or biopsy-proven plasmacytoma) + ≥1 myeloma-defining event (below) Plasma cell leukemia ≥5% circulating PCs (IMWG 2021; was 20%) — treat as ultra-high risk Solitary plasmacytoma Single lesion, marrow <10% clonal (none = solitary; minimal = higher risk). RT 40–50 Gy Myeloma-defining events — any one = treat C — Ca >11 mg/dL or >1 mg/dL above ULN · R — CrCl <40 or Cr >2 mg/dL · A — Hb <10 g/dL or >2 below LLN · B — ≥1 lytic lesion (≥5 mm) on X-ray, CT or PET-CT SLiM (no CRAB needed): clonal PCs ≥60% · involved:uninvolved FLC ratio ≥100 with involved FLC ≥100 mg/L · >1 focal lesion on MRI (≥5 mm) Osteoporosis / compression fracture without a lytic lesion is not CRAB — image first Workup SPEP + serum IFE + serum FLC — plus 24-h UPEP + urine IFE once at diagnosis CBC, CMP (Ca, Cr, albumin), &beta;2-microglobulin, LDH , quantitative IgG/IgA/IgM Marrow aspirate + biopsy : PC %, flow, FISH on CD138-sorted cells — t(4;14), t(14;16), t(14;20), t(11;14), del(17p), 1q+, del(1p); TP53 sequencing where available Whole-body low-dose CT or PET-CT ; whole-body MRI if SMM with a negative CT/PET. Skeletal survey is obsolete (insensitive) Albuminuria or unexplained organ dysfunction → think AL amyloidosis (fat pad, NT-proBNP, troponin) Type & screen with extended RBC phenotype/genotype before the first anti-CD38 dose (page 3) Treatment pathway Smoldering myeloma Risk-stratify (Mayo 2/20/20) low/intermediate: observe , labs q3–6 mo high risk: daratumumab SC ×3 yr (AQUILA) or lenalidomide (E3A06), or a trial Newly diagnosed — transplant-eligible Quadruplet induction ×4 D-VRd (PERSEUS) · collect stem cells early alternatives: Isa-VRd, D-KRd (high risk) Melphalan 200 → ASCT → consolidation ASCT: PFS gain, no OS gain (DETERMINATION) deferral is a reasonable, informed choice Maintenance until progression lenalidomide 10 mg (± daratumumab) high risk: add a PI or anti-CD38 Newly diagnosed — transplant-ineligible Fit / intermediate (IMWG frailty) D-VRd (CEPHEUS) or Isa-VRd (IMROZ) or DRd (MAIA, OS benefit) until progression Frail DRd with dex 20 mg weekly or VRd-lite ; avoid 4-drug intensity Relapse First relapse — usually len-refractory switch classes ; cilta-cel (OS benefit) tec + dara (OS benefit) · BVd · anti-CD38 + K/P Triple-class exposed and beyond BCMA CAR-T or BCMA bispecific talquetamab (GPRC5D) after BCMA selinexor · venetoclax only if t(11;14) Smoldering myeloma — who to treat Mayo 2/20/20: M-protein >2 g/dL , marrow PCs >20% , FLC ratio >20 . 0 / 1 / ≥2 factors → median time to progression 110 / 68 / 29 months High-risk SMM → daratumumab SC ×3 yr (AQUILA vs active monitoring): PFS HR 0.49 , 5-yr PFS 63% vs 41%, OS HR 0.52 — FDA 6 Nov 2025 , the first approved SMM therapy Lenalidomide (E3A06, intermediate/high risk): PFS HR 0.28; no OS signal Low-risk SMM: observe — treating it is not supported MGUS — Mayo risk (20-yr progression) Risk factors 20-yr risk M-protein ≥1.5 g/dL · non-IgG · abnormal FLC ratio — 0 factors 5% 1 · 2 · 3 factors 21% · 37% · 58% Low-risk MGUS (IgG, M <1.5, normal ratio): no marrow or imaging needed ; recheck at 6 mo then every 2–3 yr. Anything else: marrow + imaging, then yearly labs. Staging System Definition · outcome ISS I: &beta;2M <3.5 mg/L + albumin ≥3.5 g/dL · III: &beta;2M ≥5.5 · II: neither R-ISS (2015) I: ISS I + standard-risk FISH + normal LDH · III: ISS III + high-risk FISH [del(17p), t(4;14), t(14;16)] or high LDH · II: rest. 5-yr OS 82 / 62 / 40% R2-ISS (2022) Points: ISS III 1.5, ISS II 1, del(17p) 1, high LDH 1, t(4;14) 1, 1q+ 0.5 → I 0 · II 0.5–1 · III 1.5–2.5 · IV 3–5. Median OS NR / 109 / 69 / 38 mo. Splits the big R-ISS II group High-risk myeloma — IMS/IMWG 2025 (any one) del(17p) in >20% cancer clonal fraction and/or TP53 mutation IgH translocation [t(4;14), t(14;16), t(14;20)] + 1q gain/amp and/or del(1p32) — translocation alone no longer qualifies Biallelic del(1p32) , or monoallelic del(1p32) + 1q gain/amp &beta;2M ≥5.5 mg/L with normal creatinine (<1.2 mg/dL) Also high risk in practice: plasma cell leukemia , extramedullary disease, relapse <12–18 mo from front-line therapy (functional). t(11;14), t(6;14), hyperdiploidy = standard risk Newly diagnosed — the trials that set the standard Trial Design · result PERSEUS TE D-VRd vs VRd induction/consolidation + ASCT, then D-R vs R : 4-yr PFS 84.3% vs 67.7% (HR 0.42); MRD-neg 75% vs 48% . FDA 30 Jul 2024 for D-VRd induction + consolidation only (not D-R maintenance) DETERMINATION · IFM 2009 RVd ± ASCT, then len: PFS 67.5 vs 46.2 mo (IFM: 50 vs 36) — no OS difference (5-yr 80.7% vs 79.2%). ASCT buys PFS, not OS ; deferral with cells banked is legitimate Len maintenance meta-analysis After ASCT: PFS 52.8 vs 23.5 mo , OS HR 0.75 ; more second primary malignancies AURIGA MRD+ after ASCT: D-R vs R maintenance — MRD-neg conversion at 12 mo 50.5% vs 18.8% ; PFS HR 0.53 MAIA TIE DRd vs Rd until progression: median PFS NR vs 34.4 mo (HR 0.53), OS HR 0.68 SWOG S0777 VRd vs Rd : PFS 43 vs 30 mo, OS 75 vs 64 mo (HR 0.71) CEPHEUS TIE / deferred D-VRd vs VRd ×8 → D-Rd vs Rd: MRD-neg 60.9% vs 39.4% ; PFS HR 0.57 . FDA 27 Jan 2026 (TIE only) IMROZ TIE, ≤80 yr Isa-VRd vs VRd : 5-yr PFS 63.2% vs 45.2% (HR 0.60). FDA Sep 2024 No head-to-head quadruplet vs DRd in TIE. Quadruplets for fit older adults; DRd for intermediate-fit / frail . Fitness and dose adjustment IMWG frailty score (age, Charlson, ADL, IADL; 0–5): fit 0 · intermediate 1 · frail ≥2 — 3-yr OS 84% / 76% / 57%; frail have ~2× the discontinuation rate Age >75 or frail: dexamethasone 20 mg weekly , weekly SC bortezomib , renally dosed lenalidomide Response (IMWG 2016) Level Criteria MRD-neg CR + no clonal PCs at ≤10 −5 (NGF or NGS); sustained = confirmed ≥1 yr apart; imaging MRD-neg adds PET-negative sCR / CR Negative serum + urine IFE , plasmacytomas gone, <5% marrow PCs (sCR adds normal FLC ratio, no clonal PCs by IHC) VGPR / PR ≥90% M-protein fall (or IFE+ / SPEP−) / ≥50% serum and ≥90% urine fall Progression ≥25% rise from nadir: serum M ≥0.5 g/dL absolute , urine ≥200 mg/24 h, or dFLC >10 mg/dL; new lesions MRD is prognostic, and now regulatory: ODAC 12–0 (Apr 2024) accepted MRD-neg CR as an accelerated-approval endpoint. CEPHEUS (Jan 2026) used MRD-neg as its primary endpoint; iberdomide (Aug 2026) = first accelerated approval of a new drug based on MRD . Stopping therapy on MRD alone is still a trial question. Relapse — by what the patient is refractory to Setting Options · evidence Definitions Triple-class exposed = PI + IMiD + anti-CD38. Refractory = progression on or ≤60 days after. Penta = 2 PIs + 2 IMiDs + anti-CD38. Treat biochemical relapse early if high-risk or rapid rise Len-refractory, 1–3 lines the usual first relapse Cilta-cel (CARTITUDE-4): PFS NR vs 11.8 mo (HR 0.26), OS HR 0.55 . Teclistamab + dara (MajesTEC-3): 36-mo PFS 83% vs 30% (HR 0.17), OS HR 0.46 . BVd (DREAMM-7): PFS 36.6 vs 13.4 mo, OS HR 0.58 Anti-CD38-naive, 1–3 lines Dara-Kd (CANDOR, HR 0.63) · Isa-Kd (IKEMA, HR 0.53) · DPd (APOLLO, 12.4 vs 6.9 mo) · Isa-Pd (ICARIA, 11.5 vs 6.5 mo) · IberDd (iberdomide, Zenbexus ; accelerated Aug 2026, ≥1 prior line incl PI + IMiD) Anti-CD38 + len-refractory Teclistamab monotherapy (MajesTEC-9 vs PVd/Kd): PFS HR 0.29 , OS HR 0.60 , grade 3–4 infection 42%. BPd (DREAMM-8 vs PVd): 12-mo PFS 71% vs 51%. CAR-T ≥4 lines, triple-class BCMA CAR-T, BCMA or GPRC5D bispecific (table below) · SVd (BOSTON: PFS 13.9 vs 9.5 mo) · clinical trial Cilta-cel vs ide-cel: ide-cel (KarMMa-3, 2–4 prior lines) PFS 13.3 vs 4.4 mo but no OS gain (HR 1.01, 56% crossover). Both CAR-Ts show early excess deaths during manufacturing/bridging — bridge effectively. T-cell redirection and ADC — approvals Agent Target · label · key data Cilta-cel (CAR-T) BCMA · ≥1 prior line, len-refractory · OS benefit . Delayed parkinsonism , cranial-nerve palsy (9%), GBS Ide-cel (CAR-T) BCMA · ≥2 prior lines (IMiD, PI, anti-CD38) · PFS benefit, OS not shown Teclistamab BCMA×CD3 SC · + dara, ≥1 line (5 Mar 2026) · mono ≥4 lines (ORR 63%) converted to regular approval 5 Mar 2026 Elranatamab BCMA×CD3 SC · ≥4 lines (accelerated; ORR 61%) Linvoseltamab BCMA×CD3 IV · ≥4 lines (accelerated Jul 2025; ORR 71%, ≥CR 50%) Talquetamab GPRC5D ×CD3 SC · ≥4 lines (accelerated; ORR ~70%) · works after BCMA ; oral/skin/nail toxicity, fewer infections Belantamab (ADC) BCMA · BVd, ≥2 lines incl PI + IMiD (re-approved Oct 2025; withdrawn 2022 after DREAMM-3) · keratopathy , REMS Sequencing: BCMA loss after BCMA therapy is common — after BCMA CAR-T/bispecific, switch target (GPRC5D) rather than re-using BCMA when possible. Regimen dosing Regimen Dosing VRd 21-day Bortezomib 1.3 mg/m² SC d1, 4, 8, 11 + lenalidomide 25 mg d1–14 + dex 20 mg d1, 2, 4, 5, 8, 9, 11, 12 (S0777, ×8) D-VRd 28-day (PERSEUS) Dara SC 1800 mg weekly c1–2, q2wk c3–6 + V 1.3 d1, 4, 8, 11 + R 25 d1–21 + dex 40 d1–4, 9–12 ×4 → ASCT → ×2 → D-R (dara q4wk) VRd-lite 35-day Bortezomib 1.3 SC weekly d1, 8, 15, 22 + len 15 d1–21 + dex 20 twice weekly DRd 28-day (MAIA) Dara SC 1800 mg: weekly wk 1–8, q2wk wk 9–24, q4wk from wk 25 + len 25 d1–21 + dex 40 weekly (20 if >75) Isa-VRd (IMROZ) Isatuximab 10 mg/kg IV weekly ×4, then q2wk; later q4wk + VRd ×4 → Isa-Rd KRd 28-day Carfilzomib 20 → 27 mg/m² d1, 2, 8, 9, 15, 16 (or 56–70 once weekly) + len 25 d1–21 + dex 40 weekly Dara-Kd / Isa-Kd Carfilzomib 20 → 56 mg/m² d1, 2, 8, 9, 15, 16 + dex 40 weekly + anti-CD38 DPd / Isa-Pd Pomalidomide 4 mg d1–21 q28d + dex 40 weekly (20 if ≥75) + dara SC or isatuximab 10 mg/kg BVd Belantamab 2.5 mg/kg IV q3wk + V 1.3 d1, 4, 8, 11 + dex 20 ×8 cycles, then belantamab alone. Eye-toxicity reductions: 1.9 mg/kg q3wk → 1.9 q8wk SVd Selinexor 100 mg PO once weekly + bortezomib 1.3 SC weekly + dex 20 twice weekly (35-day) IberDd (Zenbexus) Iberdomide 1 mg d1–21 q28d + dara SC + dex 40 weekly Dara SC (AQUILA, SMM) 1800 mg weekly c1–2, q2wk c3–6, then q4wk — stop at 36 mo (39 cycles) Len maintenance 10 mg d1–28 (15 after 3 mo if tolerated); CrCl 30–60 → 5 mg; <30 → 2.5 mg; dialysis 5 mg after HD Mel 200 + ASCT Melphalan 200 mg/m² day −2; 140 mg/m² if renal impairment or frail (100–140 on dialysis); oral cryotherapy Teclistamab SC 0.06 → 0.3 mg/kg step-up, then 1.5 mg/kg weekly ; q2wk after ≥CR ≥6 mo. With dara: 1.5 weekly wk 2–8 → 3 mg/kg q2wk wk 9–24 → q4wk Elranatamab SC 12 mg d1 → 32 mg d4 → 76 mg weekly; q2wk from wk 25 if responding, q4wk from wk 49 Talquetamab SC 0.01 → 0.06 mg/kg → 0.4 mg/kg weekly , or + 0.4 step → 0.8 mg/kg q2wk Linvoseltamab IV 5 → 25 → 200 mg (d1, 8, 15), 200 weekly wk 4–13, q2wk from wk 14 ; q4wk from wk 24 if ≥VGPR CAR-T Flu 30 + Cy 300 mg/m² ×3 d. Cilta-cel 0.5–1.0×10 6 CAR+ cells/kg · ide-cel 300–510×10 6 . Stay near center 2 wk, no driving 2 wk (REMS removed Jun 2025) Lenalidomide renal dosing (induction): CrCl 30–60 → 10 mg daily · <30 → 15 mg q48h · dialysis → 5 mg daily after HD. Bortezomib, daratumumab, carfilzomib, pomalidomide (off HD) need no renal adjustment ; bortezomib: reduce for hepatic impairment. Supportive care Bone: zoledronic acid 4 mg IV q4wk (q12wk after ~1–2 yr) or denosumab 120 mg SC q4wk for every patient on active therapy (non-inferior, HR 0.98; less renal toxicity 10% vs 17%, more hypocalcemia 17% vs 12%). Denosumab if CrCl <30 ; don't stop it abruptly (rebound fractures). Zoledronic acid renal dosing: CrCl 50–60 → 3.5 mg · 40–49 → 3.3 · 30–39 → 3.0 · <30 → avoid ONJ: dental evaluation before starting; avoid extractions on therapy. Calcium + vitamin D for all (not if hypercalcemic) VTE with any IMiD: aspirin 81–325 mg if ≤1 risk factor; prophylactic LMWH or apixaban 2.5 mg BID / rivaroxaban 10 mg if higher risk (IMPEDE VTE ≥4, prior VTE, high-dose dex, doxorubicin, immobility) Infection: acyclovir/valacyclovir with PIs, anti-CD38, CAR-T, bispecifics. Levofloxacin 500 mg ×12 wk at diagnosis (TEAMM: fever or death HR 0.66). PJP prophylaxis with bispecifics, CAR-T, high-dose dex Bispecifics / CAR-T: IVIG 0.4 g/kg q4wk if IgG <400 mg/dL (hypogammaglobulinemia is near-universal with BCMA agents). Vaccinate: inactivated flu, pneumococcal conjugate, COVID, RSV, recombinant zoster ; no live vaccines ; re-vaccinate after ASCT Myeloma emergencies Renal failure / cast nephropathy (very high involved FLC): start a bortezomib-based regimen immediately (e.g. D-VCd / VRd with renal dosing), high-dose dex, hydrate, treat Ca; stop NSAIDs, avoid IV contrast . Plasma exchange and high-cutoff dialysis are not routine (negative trials). Biopsy if albuminuria → AL, MIDD Hypercalcemia: IV saline, zoledronic acid (or denosumab if renal failure), calcitonin for the first 48 h, steroids + anti-myeloma therapy Cord compression: dexamethasone 10 mg IV now + MRI whole spine → RT or surgery (instability) · Hyperviscosity (IgA, IgG3): plasmapheresis · Anemia: treat the myeloma; ESA if Hb <10 despite therapy (VTE risk with IMiDs) Pitfalls with modern agents Anti-CD38 → blood bank: dara/isa bind CD38 on reagent RBCs → panreactive indirect antiglobulin test for up to 6 mo. Send type & screen + phenotype/genotype before dose 1 ; lab uses DTT-treated cells (DTT destroys Kell → give K-negative units ). ABO typing is unaffected — tell the blood bank Anti-CD38 → SPEP/IFE: dara (IgG&kappa;) shows up as a small IgG-&kappa; band that mimics residual disease — use a DIRA / mass-spec assay before calling non-CR CRS / ICANS: step-up dosing, 48-h admission (or monitored outpatient) after step-ups; tocilizumab for grade ≥2 CRS, dex for ICANS; restart step-up if doses are missed Cilta-cel: delayed movement/neurocognitive toxicity (parkinsonism) weeks–months out, cranial-nerve (VII) palsy; boxed warning for secondary T-cell malignancies (all CAR-T, Apr 2024), MDS/AML Talquetamab: dysgeusia, dry mouth, dysphagia, weight loss , skin peeling, nail loss — common and dose-limiting; dose spacing helps Belantamab: corneal keratopathy (ocular AEs 79–89% in DREAMM-7/8) — blurred vision, dry eye; eye exam at baseline and before doses ; hold/delay by exam findings; REMS Other agents — when and when not Venetoclax: t(11;14) only, off-label. BELLINI (Vd ± ven): PFS gain but excess deaths (infections), driven by non-t(11;14) — never outside t(11;14) Selinexor (XPO1): SVd weekly — thrombocytopenia 39% grade 3–4, nausea, hyponatremia , fatigue; give with 5-HT3 + olanzapine prophylaxis Carfilzomib: HTN, HF, cardiac events — baseline echo and BP control ; prefer bortezomib if significant cardiac disease"
+}

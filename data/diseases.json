@@ -333,6 +333,23 @@
    ]
   },
   {
+   "slug": "myeloma",
+   "name": "Multiple myeloma & precursors",
+   "short": "Myeloma",
+   "group": "malignant-heme",
+   "onepager": "Multiple Myeloma.pdf",
+   "aliases": [
+    "myeloma",
+    "mm",
+    "multiple myeloma",
+    "mgus",
+    "smoldering",
+    "smm",
+    "plasma cell",
+    "pcl"
+   ]
+  },
+  {
    "slug": "net",
    "name": "Neuroendocrine tumors (GEP-NET)",
    "short": "NET",

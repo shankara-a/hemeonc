@@ -18,6 +18,7 @@ Steps
     trial names but have no entry (so the one-pager skill can add them).
  4. git add / commit / push (unless --no-commit / --no-push / --dry-run).
 """
+from __future__ import annotations  # allows `int | None` hints on the Mac's Python 3.9
 import argparse, datetime, hashlib, json, os, re, shutil, subprocess, sys
 from pathlib import Path
 

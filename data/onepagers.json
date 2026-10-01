@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28T07:27:16",
+ "generated": "2026-09-30T23:38:23",
  "onepagers": [
   {
    "disease": "aml",
@@ -144,6 +144,15 @@
    "size": 53983,
    "sha1": "ff05a9fe04fb32883c7cb5286abcc9cfad14e6c0",
    "updated": "2026-09-19"
+  },
+  {
+   "disease": "myeloma",
+   "file": "Multiple Myeloma.pdf",
+   "title": "Multiple myeloma & precursors",
+   "pages": 3,
+   "size": 68903,
+   "sha1": "8c9aca81f660578a84b6724dc6eda72230c353e1",
+   "updated": "2026-09-30"
   },
   {
    "disease": "mds",
