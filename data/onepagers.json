@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05T08:42:07",
+ "generated": "2026-10-05T10:26:29",
  "onepagers": [
   {
    "disease": "aml",
@@ -240,8 +240,8 @@
    "file": "Transfusion Medicine.pdf",
    "title": "Transfusion medicine",
    "pages": 3,
-   "size": 65586,
-   "sha1": "7b7ba902cb162b355093e8813b8a269d73aea3c1",
+   "size": 65642,
+   "sha1": "219c484eb737c3dd5f2bd1a36323f64327b76a0f",
    "updated": "2026-10-05"
   },
   {
