@@ -452,6 +452,24 @@
    ]
   },
   {
+   "slug": "transfusion-medicine",
+   "name": "Transfusion medicine",
+   "short": "Transfusion",
+   "group": "benign-heme",
+   "onepager": "Transfusion Medicine.pdf",
+   "aliases": [
+    "transfusion",
+    "blood bank",
+    "trali",
+    "taco",
+    "irradiated",
+    "platelet refractoriness",
+    "mtp",
+    "apheresis",
+    "blood products"
+   ]
+  },
+  {
    "slug": "waldenstrom",
    "name": "Waldenström macroglobulinemia",
    "short": "Waldenström",
