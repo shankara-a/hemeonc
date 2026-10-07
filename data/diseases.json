@@ -120,6 +120,23 @@
    ]
   },
   {
+   "slug": "cll",
+   "name": "Chronic lymphocytic leukemia / SLL",
+   "short": "CLL",
+   "group": "lymphoma",
+   "subgroup": "indolent",
+   "onepager": "Chronic Lymphocytic Leukemia.pdf",
+   "aliases": [
+    "cll",
+    "sll",
+    "small lymphocytic",
+    "chronic lymphocytic",
+    "mbl",
+    "richter",
+    "b-pll"
+   ]
+  },
+  {
    "slug": "colon",
    "name": "Colon adenocarcinoma",
    "short": "Colon",

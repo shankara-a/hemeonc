@@ -1,0 +1,757 @@
+{
+ "disease": "cll",
+ "spec_file": "cll.py",
+ "pdf": "Chronic Lymphocytic Leukemia.pdf",
+ "title": "Chronic lymphocytic leukemia / small lymphocytic lymphoma",
+ "subtitle": "CD5+ CD23+ B-cell neoplasm &middot; <b>treat only on an iwCLL indication</b> &middot; <b>TP53 + IGHV</b> pick between continuous BTKi and fixed-duration venetoclax &middot; chemoimmunotherapy is obsolete for most",
+ "source": "Compiled from iwCLL 2018 &middot; NCCN &middot; WHO-HEM5/ICC 2022 &middot; primary trial reports verified against PubMed, October 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Diagnosis &mdash; CLL vs SLL vs MBL (iwCLL 2018, WHO-5)",
+       "headers": [
+        "Entity",
+        "Defining features"
+       ],
+       "widths": [
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>CLL</b>",
+         "<b>&ge;5&times;10<sup>9</sup>/L clonal B cells in blood, sustained &ge;3 mo</b>; clonality by light-chain restriction on flow. A cytopenia from typical marrow infiltrate = CLL at any count"
+        ],
+        [
+         "<b>SLL</b>",
+         "Same disease, nodal: <b>nodes and/or spleen, blood B cells &lt;5&times;10<sup>9</sup>/L</b>, no marrow-driven cytopenia; confirm on <b>lymph node biopsy</b>"
+        ],
+        [
+         "<b>MBL</b>",
+         "Clonal B cells <b>&lt;5&times;10<sup>9</sup>/L</b>, no nodes, organomegaly, cytopenia or symptoms. <b>Low-count &lt;0.5</b> (rarely progresses) vs <b>high-count 0.5&ndash;4.9</b>. Progression to treatment-requiring CLL <b>~1&ndash;2%/yr</b>; more infections and skin cancers"
+        ],
+        [
+         "<b>Prolymphocytic progression</b>",
+         "WHO-5: <b>&gt;15% prolymphocytes</b> in blood/marrow. <b>WHO-5 dropped B-PLL</b> (now CLL with PL progression, MCL variant, or splenic B-cell lymphoma with prominent nucleoli); <b>ICC 2022 keeps B-PLL</b> narrowly"
+        ],
+        [
+         "<b>Richter transformation</b>",
+         "Aggressive lymphoma arising in CLL &mdash; DLBCL type (~90%) or Hodgkin type. Page 2"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Flow phenotype and the mimics",
+       "items": [
+        "<b>CD19+ CD5+ CD23+</b> with <b>dim CD20, dim CD79b, dim surface Ig</b> (single light chain). <b>CD200+</b>, LEF1+, ROR1+; FMC7&minus;. Smudge cells on smear",
+        "<b>Matutes (RMH) score:</b> 1 point each for CD5+, CD23+, FMC7&minus;, weak sIg, weak CD22 (CD79b in the modified score). <b>4&ndash;5 = CLL</b> (87% of CLL); 3 = atypical; 0&ndash;2 = other B-LPD",
+        "<b>Mantle cell is the dangerous mimic</b> (CD5+): <b>CD23&minus;, CD200&minus;, bright sIg/CD20, cyclin D1+, SOX11+, t(11;14)</b>. Atypical/CD23-dim cases: <b>cyclin D1 IHC or t(11;14) FISH</b>",
+        "Others: marginal zone (CD5&minus;, CD23&minus;), hairy cell (CD11c/CD25/CD103, BRAF V600E), follicular (CD10+)"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pretreatment workup (iwCLL)",
+       "items": [
+        "<b>Before every line of therapy: FISH</b> (del13q, del11q, +12, <b>del17p</b>) <b>+ TP53 sequencing</b> &mdash; clones evolve; TP53 status flips the regimen",
+        "<b>IGHV mutation status once</b> (doesn't change): <b>unmutated = &ge;98% identity to germline</b>; mutated = &gt;2% deviation",
+        "<b>CpG-stimulated karyotype:</b> complex = &ge;3 abnormalities; <b>&ge;5 is independently adverse</b>; 3&ndash;4 adverse mainly with TP53 aberration",
+        "CBC + smear, CMP, LDH, uric acid, <b>&beta;2-microglobulin</b>, <b>DAT</b> + retic/haptoglobin, <b>quantitative IgG/IgA/IgM</b>, <b>HBV (HBsAg, anti-HBc), HCV</b>, HIV",
+        "<b>CT neck/C/A/P before venetoclax</b> (TLS risk) or in trials; not needed for watch-and-wait. <b>PET only if Richter suspected.</b> Marrow not required for diagnosis &mdash; do it for unexplained cytopenias",
+        "Cardiac history, ECG, BP, anticoagulants/antiplatelets and CYP3A drugs before choosing a BTKi"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Diagnosis &rarr; is there an iwCLL indication?",
+         "color": "gray",
+         "boxes": [
+          [
+           "No &rarr; watch and wait",
+           [
+            "CBC q3&ndash;6 mo; treating early does not help:",
+            "CLL12 ibrutinib vs placebo &mdash; <b>EFS gain, no OS</b>"
+           ]
+          ],
+          [
+           "Yes &rarr; test TP53 (FISH + seq) and IGHV",
+           [
+            "then fitness, cardiac risk, drug interactions,",
+            "and patient preference: fixed vs continuous"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "First line &mdash; TP53 aberrant (del17p / TP53mut)",
+         "color": "coral",
+         "boxes": [
+          [
+           "Continuous covalent BTKi",
+           [
+            "<b>zanubrutinib</b> or <b>acalabrutinib</b> (&plusmn; obinutuzumab)",
+            "SEQUOIA arm C: 18-mo PFS 88.6%",
+            "fixed-duration regimens relapse earlier here",
+            "<b>no chemoimmunotherapy</b>"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "First line &mdash; no TP53 aberration",
+         "color": "teal",
+         "boxes": [
+          [
+           "Fixed duration &mdash; time off therapy",
+           [
+            "<b>VenO &times;12 cycles</b> (CLL14; CLL13 in fit)",
+            "<b>acalabrutinib-venetoclax &times;14</b> (AMPLIFY)",
+            "ibrutinib-venetoclax &times;15 (GLOW; not US-labeled)"
+           ]
+          ],
+          [
+           "or continuous BTKi",
+           [
+            "<b>zanubrutinib</b> &middot; <b>acalabrutinib &plusmn; O</b>",
+            "<b>pirtobrutinib</b> (1L label Oct 2026, no del17p)",
+            "ibrutinib: effective, more cardiac toxicity"
+           ]
+          ],
+          [
+           "Chemoimmunotherapy &mdash; niche",
+           [
+            "FCR only IGHV-mutated, fit, young &mdash; rarely now",
+            "targeted regimens beat it (FLAIR, CLL13)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Relapse &mdash; switch class, retest TP53",
+         "color": "purple",
+         "boxes": [
+          [
+           "Progressed on a covalent BTKi",
+           [
+            "<b>VenR &times;24 mo</b> (MURANO) or <b>pirtobrutinib</b>",
+            "<b>don't switch cBTKi&rarr;cBTKi</b> for progression",
+            "(switching for intolerance is fine)"
+           ]
+          ],
+          [
+           "Relapse after fixed-duration venetoclax",
+           [
+            "long remission: <b>retreat venetoclax-based</b>",
+            "short remission: <b>covalent BTKi</b>"
+           ]
+          ],
+          [
+           "Double-exposed (BTKi + BCL2i)",
+           [
+            "<b>pirtobrutinib</b> &middot; <b>liso-cel</b> &middot; trials",
+            "<b>allo-HCT</b> if fit &mdash; the only curative option"
+           ]
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "width": "37%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "iwCLL indications to treat &mdash; need &ge;1",
+       "items": [
+        "<b>Progressive marrow failure:</b> Hb <b>&lt;10 g/dL</b> or platelets <b>&lt;100&times;10<sup>9</sup>/L</b> (a stable plt just under 100 may be watched)",
+        "<b>Spleen &ge;6 cm below costal margin</b>, or progressive/symptomatic &middot; <b>nodes &ge;10 cm</b>, or progressive/symptomatic",
+        "<b>Lymphocyte doubling time &lt;6 mo</b> or &ge;50% rise in 2 mo (ALC &lt;30: observe longer before calling LDT)",
+        "<b>Autoimmune anemia/ITP poorly responsive to steroids</b> &middot; symptomatic extranodal disease",
+        "<b>Constitutional:</b> weight loss &ge;10% in 6 mo &middot; fatigue ECOG &ge;2 &middot; fever &ge;38.0&deg;C &ge;2 wk &middot; night sweats &ge;1 mo (no infection)",
+        "<b>NOT indications:</b> high ALC alone (leukostasis is rare), hypogammaglobulinemia, a paraprotein, adverse FISH/IGHV, Rai stage alone"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Staging",
+       "headers": [
+        "System",
+        "Definition &middot; survival"
+       ],
+       "widths": [
+        "16%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Rai</b>",
+         "<b>0</b> lymphocytosis only (low) &middot; <b>I</b> nodes &middot; <b>II</b> spleen/liver (intermediate) &middot; <b>III</b> Hb &lt;11 &middot; <b>IV</b> plt &lt;100 (high). Original median survival &gt;150 / 101 / 71 / 19 / 19 mo"
+        ],
+        [
+         "<b>Binet</b>",
+         "Areas: head-neck, axillae, groins, spleen, liver. <b>A</b> &le;2 areas (~55%; near-normal survival) &middot; <b>B</b> &ge;3 areas (~30%) &middot; <b>C</b> Hb &lt;10 or plt &lt;100 (~15%; median ~2 yr)"
+        ]
+       ],
+       "footnote": "Anemia/thrombocytopenia from <b>autoimmune destruction does not upstage</b> &mdash; Rai III/IV and Binet C mean marrow failure."
+      },
+      {
+       "type": "table",
+       "heading": "CLL-IPI (2016) &mdash; prognosis, not a treatment trigger",
+       "headers": [
+        "Factor",
+        "Pts"
+       ],
+       "widths": [
+        "80%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>TP53 aberrant</b> (del17p and/or TP53 mutation)",
+         "<b>4</b>"
+        ],
+        [
+         "<b>IGHV unmutated</b> &middot; <b>&beta;2M &gt;3.5 mg/L</b>",
+         "2 each"
+        ],
+        [
+         "Rai I&ndash;IV or Binet B&ndash;C &middot; age &gt;65",
+         "1 each"
+        ]
+       ],
+       "footnote": "Low 0&ndash;1 &middot; intermediate 2&ndash;3 &middot; high 4&ndash;6 &middot; very high 7&ndash;10 &rarr; 5-yr OS <b>93 / 79 / 63 / 23%</b> (chemo era; targeted agents narrow the gaps, esp. for IGHV)."
+      },
+      {
+       "type": "table",
+       "heading": "Genetics (D&ouml;hner hierarchy)",
+       "headers": [
+        "Lesion",
+        "Meaning"
+       ],
+       "widths": [
+        "28%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>del(13q)</b> sole <span class='r'>~36% (any ~55%)</span>",
+         "Most favorable; median OS 133 mo (chemo era)"
+        ],
+        [
+         "<b>Trisomy 12</b> <span class='r'>~16%</span>",
+         "Intermediate; often atypical (CD23-dim) phenotype"
+        ],
+        [
+         "<b>del(11q)</b> <span class='r'>~18%</span>",
+         "ATM; bulky nodes; adverse with chemo &mdash; <b>largely overcome by BTKi</b>"
+        ],
+        [
+         "<b>del(17p) / TP53 mut</b> <span class='r'>~7% at dx; more at relapse</span>",
+         "Chemo-refractory; <b>never FCR/BR</b>; continuous BTKi preferred"
+        ],
+        [
+         "<b>IGHV unmutated</b> <span class='r'>~40% at dx</span>",
+         "Shorter remissions after fixed-duration and chemo; no plateau with FCR"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; first-line evidence, relapsed disease and sequencing, Richter transformation",
+   "columns": [
+    {
+     "width": "52%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "First line &mdash; the evidence",
+       "headers": [
+        "Regimen &middot; trial",
+        "Population &middot; result &middot; the catch"
+       ],
+       "widths": [
+        "19%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Zanubrutinib</b> &middot; SEQUOIA",
+         "&ge;65 or comorbid, vs BR: 5-yr median PFS <b>NR vs 44.1 mo, HR 0.29</b> (IGHV-U 0.21, IGHV-M 0.40); <b>OS no different</b> (85.8 vs 85.0%). <b>Arm C del(17p)</b> (single-arm, n=109): ORR 94.5%, 18-mo PFS 88.6%"
+        ],
+        [
+         "<b>Acalabrutinib &plusmn; O</b> &middot; ELEVATE-TN",
+         "Older/comorbid, vs Clb-O: 6-yr PFS <b>78% (A-O) / 62% (A) / 17%</b>; A-O vs A HR 0.58; <b>OS HR 0.62</b> A-O vs Clb-O. The one BTKi trial where adding anti-CD20 clearly helps"
+        ],
+        [
+         "<b>Ibrutinib</b> &middot; RESONATE-2, A041202, E1912",
+         "RESONATE-2 (&ge;65): <b>median PFS 8.9 vs 1.3 yr</b> vs chlorambucil (~10-yr). A041202 (&ge;65): 48-mo PFS 76% vs 47% (BR), <b>rituximab adds nothing</b> (HR 1.00), no OS gain; AF 18%, HTN 55%. E1912 (&le;70): IR beat FCR, PFS HR 0.37, <b>OS HR 0.47</b> &mdash; incl IGHV-mutated at 5.8 yr"
+        ],
+        [
+         "<b>Pirtobrutinib</b> &middot; BRUIN CLL-313",
+         "No del(17p), vs BR: PFS <b>HR 0.20</b>, 24-mo PFS 93.4 vs 70.7%. <b>FDA 1L approval 2 Oct 2026</b> (no del17p). CLL-314 vs ibrutinib: ORR noninferior (87.0 vs 78.5%), PFS still immature"
+        ],
+        [
+         "<b>VenO &times;12</b> &middot; CLL14",
+         "Unfit (CIRS &gt;6 or CrCl &lt;70), vs Clb-O: 6-yr median PFS <b>76.2 vs 36.4 mo</b>, HR 0.40; OS HR 0.69 (P=.052, NS). Shorter PFS with <b>del(17p), IGHV-U, nodes &ge;5 cm</b>"
+        ],
+        [
+         "<b>CLL13 / GAIA</b> <span class='r'>fit, no TP53</span>",
+         "GV / GIV / RV vs FCR-BR: 5-yr PFS <b>69.8 / 81.3 / 57.4 vs 50.7%</b>; month-15 uMRD GV 86.5% vs 52.0%. <b>Venetoclax-rituximab was not better than CIT</b> &mdash; obinutuzumab is the 1L partner. No OS difference"
+        ],
+        [
+         "<b>AV &plusmn; O</b> &middot; AMPLIFY",
+         "Fit, no del17p/TP53, vs FCR/BR: 36-mo PFS <b>AV 76.5% / AVO 83.1% / 66.5%</b>; AV HR 0.65. AVO had more COVID deaths (25 vs 10) and lower 36-mo OS (87.7 vs 94.1%). <b>FDA Feb 2026 for AV (14 cycles)</b>"
+        ],
+        [
+         "<b>Ibrutinib + venetoclax</b> &middot; GLOW, CAPTIVATE",
+         "GLOW (older/unfit, vs Clb-O): 66-mo PFS 51.7 vs 18.1%, <b>OS HR 0.46</b>. CAPTIVATE (phase 2, &le;70): 24-mo PFS 95%; after uMRD, placebo vs continued ibrutinib 1-yr DFS 95 vs 100% (NS); TP53 36-mo PFS 81%. <b>EU-approved, not FDA-labeled</b>"
+        ],
+        [
+         "<b>FLAIR</b> <span class='r'>MRD-guided I+V</span>",
+         "Fit &le;75: I+V for 2&times; the time to uMRD (max 6 yr) vs FCR: 5-yr PFS <b>93.9 vs 58.1%</b>, <b>OS HR 0.26</b>; vs ibrutinib alone PFS HR 0.29, OS HR 0.41. Cardiac SAEs 10.7% vs 0.4% (FCR)"
+        ],
+        [
+         "<b>CLL17</b> <span class='r'>fixed vs continuous</span>",
+         "VenO vs I+V vs continuous ibrutinib (n=909): 3-yr PFS <b>81.1 / 79.4 / 81.0%</b> &mdash; <b>both fixed-duration arms noninferior</b>. PB uMRD 73.3 / 47.2 / 0%"
+        ],
+        [
+         "<b>FCR</b> <span class='r'>now niche</span>",
+         "MDACC 12.8-yr PFS <b>53.9% if IGHV-mutated</b> (plateau) vs 8.7% unmutated. Beaten by E1912, FLAIR, CLL13, AMPLIFY; myelosuppression, infections, therapy-related myeloid neoplasms. <b>Never for TP53 or IGHV-U</b>"
+        ]
+       ],
+       "footnote": "<b>Fixed vs continuous:</b> CLL17 shows equal 3-yr PFS. Fixed duration = drug holiday, less cumulative cardiac/bleeding toxicity, needs TLS ramp-up and infusions (VenO). Continuous = simplest, preferred for TP53, but indefinite cost and AF/HTN. <b>Obinutuzumab, not rituximab</b>, with 1L venetoclax."
+      },
+      {
+       "type": "table",
+       "heading": "Choosing first line &mdash; patient factors",
+       "headers": [
+        "Situation",
+        "Lean toward"
+       ],
+       "widths": [
+        "32%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>del(17p) / TP53 mutation</b>",
+         "<b>Continuous zanubrutinib or acalabrutinib</b>; VenO if a BTKi is contraindicated (expect shorter PFS)"
+        ],
+        [
+         "<b>IGHV-mutated, no TP53</b>",
+         "<b>Fixed duration</b> (VenO or AV) &mdash; longest treatment-free intervals; FCR no longer needed"
+        ],
+        [
+         "<b>IGHV-unmutated, no TP53</b>",
+         "Either: fixed duration (VenO, AV, I+V) or continuous BTKi &mdash; CLL17 equal PFS; MRD-guided I+V (FLAIR) for fit"
+        ],
+        [
+         "<b>AF, heart failure, anticoagulation, bleeding risk</b>",
+         "<b>VenO</b>; if a BTKi is needed, zanubrutinib or acalabrutinib, never ibrutinib first"
+        ],
+        [
+         "<b>Renal impairment, bulky high-TLS-risk, can't do TLS labs</b>",
+         "<b>Continuous BTKi</b>, or a BTKi lead-in before venetoclax (AV, I+V)"
+        ],
+        [
+         "<b>Frail / comorbid</b>",
+         "Acalabrutinib, zanubrutinib or VenO (CLL14 enrolled CIRS &gt;6)"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Response and MRD",
+       "items": [
+        "<b>iwCLL CR:</b> ALC &lt;4&times;10<sup>9</sup>/L, nodes &lt;1.5 cm, no hepatosplenomegaly, no B symptoms, ANC &ge;1.5, plt &ge;100, Hb &ge;11 untransfused. Most patients on a BTKi reach PR, not CR &mdash; still durable",
+        "<b>BTKi redistribution lymphocytosis</b> in the first weeks (cells leave nodes) is expected, <b>not progression</b>",
+        "<b>uMRD = &lt;10<sup>&minus;4</sup></b> (1 CLL cell in 10,000) by flow or NGS. Predicts PFS after fixed-duration therapy (MURANO, GLOW, CLL14); <b>meaningless on continuous BTKi</b> (CLL17 0%). MRD-guided duration is a trial/FLAIR concept, not routine"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "48%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Relapsed / refractory &mdash; evidence and sequencing",
+       "headers": [
+        "Regimen &middot; trial",
+        "Result &middot; caveat"
+       ],
+       "widths": [
+        "19%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>VenR &times;2 yr</b> &middot; MURANO",
+         "vs BR: median PFS <b>54.7 vs 17.0 mo</b>; 7-yr OS 69.6 vs 51.0%. uMRD at end of therapy predicts long PFS. VenR retreatment: ORR 72%, median PFS 23 mo. Mostly BTKi-naive patients"
+        ],
+        [
+         "<b>Acalabrutinib vs ibrutinib</b> &middot; ELEVATE-RR",
+         "del17p/del11q: median PFS <b>38.4 mo both</b> (noninferior); AF 9.4 vs 16.0%, HTN 9.4 vs 23.2%, any bleeding 38 vs 51%"
+        ],
+        [
+         "<b>Zanubrutinib vs ibrutinib</b> &middot; ALPINE",
+         "<b>PFS superior, HR 0.65</b> (24-mo 78.4 vs 65.9%), incl del17p/TP53 (HR 0.53); AF 2.5 vs 10.1% (interim); fewer fatal cardiac events"
+        ],
+        [
+         "<b>Pirtobrutinib</b> &middot; BRUIN CLL-321",
+         "All post-cBTKi, vs idelalisib-R/BR: median PFS <b>14.0 vs 8.7 mo</b>, HR 0.54; OS no different (crossover). Accelerated 2023 &rarr; <b>regular approval 3 Dec 2025</b>: R/R after a cBTKi (BCL2i no longer required)"
+        ],
+        [
+         "<b>Pirtobrutinib-VR</b> &middot; BRUIN CLL-322",
+         "Fixed duration vs VR (80% cBTKi-exposed): 24-mo PFS <b>87 vs 72%</b>, HR 0.55. Not FDA-approved as of Oct 2026"
+        ],
+        [
+         "<b>Liso-cel</b> &middot; TRANSCEND CLL 004",
+         "After BTKi + venetoclax: CR/CRi <b>18%</b>, ORR 43%, blood uMRD 63%; median PFS 11.9 mo. CRS 85% (gr 3 9%), neurotox 45% (gr 3 18%). <b>Accelerated approval Mar 2024</b>, &ge;2 lines incl BTKi + BCL2i"
+        ],
+        [
+         "<b>Allo-HCT</b>",
+         "Only curative option; for fit patients with double-exposed/refractory disease or Richter in remission"
+        ],
+        [
+         "<b>Not approved in CLL</b>",
+         "BTK degraders (BGB-16673, bexobrutideg) and sonrotoclax &mdash; trials only (sonrotoclax is FDA-approved for R/R MCL)"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Resistance and sequencing rules",
+       "items": [
+        "<b>Ibrutinib progression: BTK C481 or PLCG2 mutations in ~85%</b>, detectable a median 9.3 mo before clinical relapse. Covalent BTKis share C481 binding &rarr; <b>don't swap cBTKi for progression</b>; <b>pirtobrutinib (noncovalent) binds C481-mutant BTK</b>",
+        "On pirtobrutinib, <b>non-C481 BTK mutations (T474I, L528W)</b> emerge; L528W and T474I also cross-resist zanubrutinib/acalabrutinib. Venetoclax resistance: <b>BCL2 G101V</b>",
+        "<b>Intolerance &ne; resistance:</b> ibrutinib AF/bleeding &rarr; switch to acalabrutinib or zanubrutinib",
+        "<b>Keep the BTKi going until the next therapy starts</b> &mdash; stopping can cause a rapid disease flare",
+        "<b>Retest FISH + TP53 at every relapse</b>; new adenopathy with a high LDH &rarr; think Richter"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Richter transformation",
+       "items": [
+        "<b>~2&ndash;10% of CLL (~0.5&ndash;1%/yr).</b> Suspect with <b>rapid, asymmetric node growth, rising LDH, B symptoms, hypercalcemia</b>, new extranodal disease",
+        "<b>PET-CT &rarr; biopsy the hottest lesion.</b> SUVmax &ge;10 flags Richter (OS 6.9 vs 56.7 mo); <b>core or excisional, not FNA</b> (FNA often nondiagnostic)",
+        "<b>Clonally related</b> (same IGHV as the CLL; more TP53 disruption) median OS <b>14.2 mo</b> vs <b>unrelated 62.5 mo</b> &mdash; unrelated behaves like de novo DLBCL",
+        "<b>Treatment:</b> R-CHOP-type induction &rarr; <b>allo-HCT in responders</b>; CD19 CAR-T or bispecifics on trial/off-label. Hodgkin type: ABVD-type. No Richter-specific FDA approval. Median OS overall ~10 mo"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 3 &mdash; regimen dosing, TLS, BTKi toxicity, disease complications, key trials",
+   "columns": [
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Regimen dosing",
+       "headers": [
+        "Regimen",
+        "Dosing"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Acalabrutinib</b>",
+         "<b>100 mg BID</b>, continuous; A-O: obinutuzumab C2&ndash;7. <b>Tablets OK with PPIs</b> (old capsules: avoid)"
+        ],
+        [
+         "<b>Zanubrutinib</b>",
+         "<b>160 mg BID or 320 mg daily</b>, continuous"
+        ],
+        [
+         "<b>Ibrutinib</b>",
+         "<b>420 mg daily</b>, continuous"
+        ],
+        [
+         "<b>Pirtobrutinib</b>",
+         "<b>200 mg daily</b>, continuous"
+        ],
+        [
+         "<b>Venetoclax ramp-up</b>",
+         "<b>20 &rarr; 50 &rarr; 100 &rarr; 200 &rarr; 400 mg</b>, one step per week (5 weeks), with TLS prophylaxis (table)"
+        ],
+        [
+         "<b>VenO</b> <span class='r'>CLL14, 12 &times; 28-d cycles</span>",
+         "Obinutuzumab <b>100 mg C1D1, 900 mg C1D2, 1000 mg C1D8 + D15</b>, then 1000 mg D1 C2&ndash;6. Venetoclax ramp <b>starts C1D22</b>, 400 mg from C3, <b>stop after C12</b>"
+        ],
+        [
+         "<b>AV</b> <span class='r'>AMPLIFY, 14 cycles</span>",
+         "Acalabrutinib 100 mg BID <b>C1&ndash;14</b>; venetoclax ramp-up <b>from C3</b>, 400 mg through C14. (AVO adds obinutuzumab C2&ndash;7 &mdash; not in US label)"
+        ],
+        [
+         "<b>I+V</b> <span class='r'>GLOW / CAPTIVATE</span>",
+         "Ibrutinib 420 mg <b>&times;3 cycles lead-in</b> (debulks: high-TLS-risk 21% &rarr; 1%), then + venetoclax ramp to 400 mg <b>&times;12 cycles</b> (15 total)"
+        ],
+        [
+         "<b>VenR</b> <span class='r'>MURANO</span>",
+         "Ramp-up 5 wk, then rituximab <b>375 mg/m&sup2; C1, 500 mg/m&sup2; C2&ndash;6</b> (q28d); venetoclax 400 mg for <b>24 mo from rituximab C1D1</b>"
+        ],
+        [
+         "<b>Liso-cel</b>",
+         "Flu/Cy lymphodepletion &rarr; <b>90&ndash;110&times;10<sup>6</sup> CAR+ T cells</b>; REMS removed; stay near center, no driving ~2 wk"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Venetoclax TLS risk (label) &mdash; reassess after debulking",
+       "headers": [
+        "Risk",
+        "Criteria &rarr; prophylaxis &middot; monitoring"
+       ],
+       "widths": [
+        "13%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Low</b>",
+         "All nodes <b>&lt;5 cm and ALC &lt;25</b> &rarr; oral fluids 1.5&ndash;2 L/d + <b>allopurinol</b> (start 2&ndash;3 d before) &middot; outpatient; labs <b>pre, 6&ndash;8 h, 24 h</b> at the first 20 and 50 mg doses"
+        ],
+        [
+         "<b>Medium</b>",
+         "Any node <b>5 to &lt;10 cm or ALC &ge;25</b> &rarr; oral &plusmn; IV fluids + allopurinol &middot; same labs; <b>consider admission if CrCl &lt;80</b>"
+        ],
+        [
+         "<b>High</b>",
+         "Any node <b>&ge;10 cm, or ALC &ge;25 + any node &ge;5 cm</b> &rarr; oral + <b>IV fluids 150&ndash;200 mL/h</b>, allopurinol, <b>rasburicase if uric acid high</b> &middot; <b>admit for 20 and 50 mg</b>; labs 0, 4, 8, 12, 24 h"
+        ]
+       ],
+       "footnote": "Labs = K, phos, Ca, uric acid, creatinine &mdash; <b>correct before the next dose</b>. Debulk first (BTKi lead-in in GLOW/AMPLIFY; obinutuzumab in VenO). <b>No urine alkalinization.</b>"
+      },
+      {
+       "type": "table",
+       "heading": "Fixed-duration regimens at a glance",
+       "headers": [
+        "Regimen",
+        "Length &middot; route &middot; uMRD &middot; setting"
+       ],
+       "widths": [
+        "18%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>VenO</b>",
+         "<b>12 cycles (~1 yr)</b> &middot; IV obinutuzumab C1&ndash;6 &middot; PB uMRD after therapy 73.3% (CLL17) &middot; 1L, any fitness"
+        ],
+        [
+         "<b>AV</b>",
+         "<b>14 cycles</b> &middot; all oral &middot; 1L (AMPLIFY excluded del17p/TP53); FDA Feb 2026"
+        ],
+        [
+         "<b>I+V</b>",
+         "<b>15 cycles</b> &middot; all oral &middot; PB uMRD 47.2% (CLL17) &middot; 1L; not US-labeled"
+        ],
+        [
+         "<b>VenR</b>",
+         "<b>24 mo</b> &middot; rituximab C1&ndash;6 &middot; R/R (MURANO)"
+        ]
+       ],
+       "footnote": "All need the 5-week venetoclax ramp-up and TLS precautions; BTKi lead-in (AV, I+V) lowers TLS risk category."
+      }
+     ]
+    },
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "BTK inhibitors compared",
+       "headers": [
+        "Agent",
+        "Binding &middot; signature toxicity"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Ibrutinib</b>",
+         "Covalent (C481), 1st gen &middot; <b>AF</b> (16.0% in ELEVATE-RR), <b>HTN</b>, ventricular arrhythmia, bleeding, arthralgia"
+        ],
+        [
+         "<b>Acalabrutinib</b>",
+         "Covalent, more selective &middot; <b>headache</b> early; AF 9.4% vs 16.0%, HTN 9.4 vs 23.2% (vs ibrutinib)"
+        ],
+        [
+         "<b>Zanubrutinib</b>",
+         "Covalent, more selective &middot; <b>neutropenia</b>; AF 2.5 vs 10.1% vs ibrutinib (ALPINE interim)"
+        ],
+        [
+         "<b>Pirtobrutinib</b>",
+         "<b>Noncovalent</b> &middot; works with C481 mutations; AF/flutter 3.1% (label, pooled); infections, rash"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "BTKi toxicity management",
+       "items": [
+        "<b>Atrial fibrillation:</b> rate control (<b>avoid diltiazem/verapamil</b> &mdash; CYP3A), DOAC if indicated; often switch to a 2nd-gen BTKi or to venetoclax",
+        "<b>Ventricular arrhythmia / sudden death:</b> ibrutinib label warning; FLAIR excess cardiac deaths. Palpitations/syncope &rarr; hold + ECG/Holter; don't rechallenge ibrutinib",
+        "<b>Hypertension:</b> 55% all-grade on ibrutinib (A041202) &mdash; check BP every visit, treat early",
+        "<b>Bleeding:</b> <b>no warfarin</b>; avoid fish oil/vitamin E; caution with DOAC + antiplatelet. <b>Hold 3&ndash;7 days before and after procedures</b>",
+        "<b>Headache with acalabrutinib</b> (31&ndash;40%, early, self-limited): acetaminophen + caffeine. Also arthralgia, rash, diarrhea, bruising",
+        "<b>CYP3A:</b> acalabrutinib &mdash; avoid strong inhibitors, 100 mg daily with moderate &middot; zanubrutinib &mdash; 80 mg daily (strong), 80 mg BID (moderate) &middot; pirtobrutinib &mdash; minus 50 mg with strong &middot; <b>venetoclax with posaconazole 70 mg</b>, other strong 100 mg, moderate &ge;50% cut; strong inhibitors contraindicated during ramp-up"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Complications of the disease",
+       "items": [
+        "<b>Autoimmune cytopenias ~5&ndash;10%:</b> <b>AIHA most common</b> (warm IgG), ITP ~2%, <b>PRCA</b> and autoimmune granulocytopenia &lt;1%. Distinguish from marrow failure (retic, haptoglobin, DAT, marrow). <b>Steroids &plusmn; rituximab</b>; IVIG for ITP bleeding. <b>Steroid-refractory autoimmune cytopenia = iwCLL indication</b> &mdash; treat the CLL (BTKi or VenO; <b>avoid fludarabine monotherapy</b>)",
+        "<b>Infection is the leading cause of death:</b> hypogammaglobulinemia + T-cell and neutrophil dysfunction. <b>IVIG if IgG &lt;500 mg/dL + recurrent serious bacterial infections</b> (fewer infections, no survival gain)",
+        "<b>Vaccines:</b> before therapy when possible; <b>no live vaccines</b>; <b>recombinant zoster</b> (2 doses), pneumococcal conjugate, influenza, COVID, RSV &mdash; responses blunted on BTKi/anti-CD20",
+        "<b>Prophylaxis:</b> <b>anti-HBc+ &rarr; entecavir</b> with anti-CD20 (HBV reactivation). <b>PJP + HSV/VZV</b> with FCR/BR, idelalisib (label) and after CAR-T; individualize on BTKi/venetoclax",
+        "<b>Second cancers:</b> <b>skin SCC, BCC, melanoma, Merkel</b> markedly increased &rarr; <b>annual skin exam</b>, sun protection. Acalabrutinib label: second primaries 16% (non-melanoma skin 9%)"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "28%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "rows": [
+        [
+         "<b>SEQUOIA</b>",
+         "Zanubrutinib vs BR 1L &mdash; PFS HR 0.29; del17p arm C works"
+        ],
+        [
+         "<b>ELEVATE-TN</b>",
+         "Acalabrutinib &plusmn; O vs Clb-O &mdash; 6-yr PFS 78/62/17%"
+        ],
+        [
+         "<b>RESONATE-2</b>",
+         "Ibrutinib 1L &mdash; median PFS 8.9 yr"
+        ],
+        [
+         "<b>E1912</b>",
+         "IR vs FCR (&le;70) &mdash; OS HR 0.47"
+        ],
+        [
+         "<b>CLL14</b>",
+         "VenO &times;12 vs Clb-O &mdash; median PFS 76.2 vs 36.4 mo"
+        ],
+        [
+         "<b>CLL13</b>",
+         "GV/GIV beat CIT; RV did not"
+        ],
+        [
+         "<b>AMPLIFY</b>",
+         "AV vs FCR/BR &mdash; PFS HR 0.65; FDA 2026"
+        ],
+        [
+         "<b>GLOW</b>",
+         "I+V vs Clb-O &mdash; OS HR 0.46 at 67 mo"
+        ],
+        [
+         "<b>FLAIR</b>",
+         "MRD-guided I+V vs FCR &mdash; OS HR 0.26"
+        ],
+        [
+         "<b>CLL17</b>",
+         "Fixed duration noninferior to continuous"
+        ],
+        [
+         "<b>BRUIN CLL-313</b>",
+         "Pirtobrutinib vs BR 1L &mdash; PFS HR 0.20"
+        ],
+        [
+         "<b>MURANO</b>",
+         "VenR vs BR R/R &mdash; OS benefit at 7 yr"
+        ],
+        [
+         "<b>ALPINE</b> &middot; <b>ELEVATE-RR</b>",
+         "2nd-gen BTKi &ge; ibrutinib, less AF"
+        ],
+        [
+         "<b>BRUIN CLL-321</b>",
+         "Pirtobrutinib post-cBTKi &mdash; PFS HR 0.54"
+        ],
+        [
+         "<b>TRANSCEND CLL 004</b>",
+         "Liso-cel double-exposed &mdash; CR 18%"
+        ],
+        [
+         "<b>CLL12</b>",
+         "Early ibrutinib: EFS only, no OS &mdash; watch and wait"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "On-treatment monitoring",
+       "items": [
+        "<b>Venetoclax neutropenia</b> (gr 3&ndash;4 52.8% in CLL14): <b>G-CSF</b>, hold/dose-reduce per label rather than stopping; check CBC each cycle",
+        "<b>Obinutuzumab infusion reactions</b> (40% with Clb-O vs 13% when given with acalabrutinib in ELEVATE-TN): split first dose 100/900 mg, premedicate (steroid, acetaminophen, antihistamine), hold antihypertensives the morning of dose 1",
+        "<b>BTKi:</b> CBC, BP, pulse every visit; ask about palpitations, bruising, infections. Long-term: <b>~20% of ibrutinib patients stop for toxicity</b> (E1912: 21.9% by 5.8 yr)",
+        "<b>Off therapy</b> (fixed duration or watch-and-wait): CBC + exam q3&ndash;6 mo; <b>imaging only for symptoms or before re-treatment</b>"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Diagnosis &mdash; CLL vs SLL vs MBL (iwCLL 2018, WHO-5)",
+  "Flow phenotype and the mimics",
+  "Pretreatment workup (iwCLL)",
+  "Treatment pathway",
+  "iwCLL indications to treat &mdash; need &ge;1",
+  "Staging",
+  "CLL-IPI (2016) &mdash; prognosis, not a treatment trigger",
+  "Genetics (D&ouml;hner hierarchy)",
+  "First line &mdash; the evidence",
+  "Choosing first line &mdash; patient factors",
+  "Response and MRD",
+  "Relapsed / refractory &mdash; evidence and sequencing",
+  "Resistance and sequencing rules",
+  "Richter transformation",
+  "Regimen dosing",
+  "Venetoclax TLS risk (label) &mdash; reassess after debulking",
+  "Fixed-duration regimens at a glance",
+  "BTK inhibitors compared",
+  "BTKi toxicity management",
+  "Complications of the disease",
+  "Key trials",
+  "On-treatment monitoring"
+ ],
+ "text": "Chronic lymphocytic leukemia / small lymphocytic lymphoma CD5+ CD23+ B-cell neoplasm · treat only on an iwCLL indication · TP53 + IGHV pick between continuous BTKi and fixed-duration venetoclax · chemoimmunotherapy is obsolete for most Compiled from iwCLL 2018 · NCCN · WHO-HEM5/ICC 2022 · primary trial reports verified against PubMed, October 2026. Diagnosis — CLL vs SLL vs MBL (iwCLL 2018, WHO-5) Entity Defining features CLL ≥5×10 9 /L clonal B cells in blood, sustained ≥3 mo ; clonality by light-chain restriction on flow. A cytopenia from typical marrow infiltrate = CLL at any count SLL Same disease, nodal: nodes and/or spleen, blood B cells <5×10 9 /L , no marrow-driven cytopenia; confirm on lymph node biopsy MBL Clonal B cells <5×10 9 /L , no nodes, organomegaly, cytopenia or symptoms. Low-count <0.5 (rarely progresses) vs high-count 0.5–4.9 . Progression to treatment-requiring CLL ~1–2%/yr ; more infections and skin cancers Prolymphocytic progression WHO-5: >15% prolymphocytes in blood/marrow. WHO-5 dropped B-PLL (now CLL with PL progression, MCL variant, or splenic B-cell lymphoma with prominent nucleoli); ICC 2022 keeps B-PLL narrowly Richter transformation Aggressive lymphoma arising in CLL — DLBCL type (~90%) or Hodgkin type. Page 2 Flow phenotype and the mimics CD19+ CD5+ CD23+ with dim CD20, dim CD79b, dim surface Ig (single light chain). CD200+ , LEF1+, ROR1+; FMC7−. Smudge cells on smear Matutes (RMH) score: 1 point each for CD5+, CD23+, FMC7−, weak sIg, weak CD22 (CD79b in the modified score). 4–5 = CLL (87% of CLL); 3 = atypical; 0–2 = other B-LPD Mantle cell is the dangerous mimic (CD5+): CD23−, CD200−, bright sIg/CD20, cyclin D1+, SOX11+, t(11;14) . Atypical/CD23-dim cases: cyclin D1 IHC or t(11;14) FISH Others: marginal zone (CD5−, CD23−), hairy cell (CD11c/CD25/CD103, BRAF V600E), follicular (CD10+) Pretreatment workup (iwCLL) Before every line of therapy: FISH (del13q, del11q, +12, del17p ) + TP53 sequencing — clones evolve; TP53 status flips the regimen IGHV mutation status once (doesn't change): unmutated = ≥98% identity to germline ; mutated = >2% deviation CpG-stimulated karyotype: complex = ≥3 abnormalities; ≥5 is independently adverse ; 3–4 adverse mainly with TP53 aberration CBC + smear, CMP, LDH, uric acid, &beta;2-microglobulin , DAT + retic/haptoglobin, quantitative IgG/IgA/IgM , HBV (HBsAg, anti-HBc), HCV , HIV CT neck/C/A/P before venetoclax (TLS risk) or in trials; not needed for watch-and-wait. PET only if Richter suspected. Marrow not required for diagnosis — do it for unexplained cytopenias Cardiac history, ECG, BP, anticoagulants/antiplatelets and CYP3A drugs before choosing a BTKi Treatment pathway Diagnosis → is there an iwCLL indication? No → watch and wait CBC q3–6 mo; treating early does not help: CLL12 ibrutinib vs placebo — EFS gain, no OS Yes → test TP53 (FISH + seq) and IGHV then fitness, cardiac risk, drug interactions, and patient preference: fixed vs continuous First line — TP53 aberrant (del17p / TP53mut) Continuous covalent BTKi zanubrutinib or acalabrutinib (± obinutuzumab) SEQUOIA arm C: 18-mo PFS 88.6% fixed-duration regimens relapse earlier here no chemoimmunotherapy First line — no TP53 aberration Fixed duration — time off therapy VenO ×12 cycles (CLL14; CLL13 in fit) acalabrutinib-venetoclax ×14 (AMPLIFY) ibrutinib-venetoclax ×15 (GLOW; not US-labeled) or continuous BTKi zanubrutinib · acalabrutinib ± O pirtobrutinib (1L label Oct 2026, no del17p) ibrutinib: effective, more cardiac toxicity Chemoimmunotherapy — niche FCR only IGHV-mutated, fit, young — rarely now targeted regimens beat it (FLAIR, CLL13) Relapse — switch class, retest TP53 Progressed on a covalent BTKi VenR ×24 mo (MURANO) or pirtobrutinib don't switch cBTKi→cBTKi for progression (switching for intolerance is fine) Relapse after fixed-duration venetoclax long remission: retreat venetoclax-based short remission: covalent BTKi Double-exposed (BTKi + BCL2i) pirtobrutinib · liso-cel · trials allo-HCT if fit — the only curative option iwCLL indications to treat — need ≥1 Progressive marrow failure: Hb <10 g/dL or platelets <100×10 9 /L (a stable plt just under 100 may be watched) Spleen ≥6 cm below costal margin , or progressive/symptomatic · nodes ≥10 cm , or progressive/symptomatic Lymphocyte doubling time <6 mo or ≥50% rise in 2 mo (ALC <30: observe longer before calling LDT) Autoimmune anemia/ITP poorly responsive to steroids · symptomatic extranodal disease Constitutional: weight loss ≥10% in 6 mo · fatigue ECOG ≥2 · fever ≥38.0&deg;C ≥2 wk · night sweats ≥1 mo (no infection) NOT indications: high ALC alone (leukostasis is rare), hypogammaglobulinemia, a paraprotein, adverse FISH/IGHV, Rai stage alone Staging System Definition · survival Rai 0 lymphocytosis only (low) · I nodes · II spleen/liver (intermediate) · III Hb <11 · IV plt <100 (high). Original median survival >150 / 101 / 71 / 19 / 19 mo Binet Areas: head-neck, axillae, groins, spleen, liver. A ≤2 areas (~55%; near-normal survival) · B ≥3 areas (~30%) · C Hb <10 or plt <100 (~15%; median ~2 yr) Anemia/thrombocytopenia from autoimmune destruction does not upstage — Rai III/IV and Binet C mean marrow failure. CLL-IPI (2016) — prognosis, not a treatment trigger Factor Pts TP53 aberrant (del17p and/or TP53 mutation) 4 IGHV unmutated · &beta;2M >3.5 mg/L 2 each Rai I–IV or Binet B–C · age >65 1 each Low 0–1 · intermediate 2–3 · high 4–6 · very high 7–10 → 5-yr OS 93 / 79 / 63 / 23% (chemo era; targeted agents narrow the gaps, esp. for IGHV). Genetics (D&ouml;hner hierarchy) Lesion Meaning del(13q) sole ~36% (any ~55%) Most favorable; median OS 133 mo (chemo era) Trisomy 12 ~16% Intermediate; often atypical (CD23-dim) phenotype del(11q) ~18% ATM; bulky nodes; adverse with chemo — largely overcome by BTKi del(17p) / TP53 mut ~7% at dx; more at relapse Chemo-refractory; never FCR/BR ; continuous BTKi preferred IGHV unmutated ~40% at dx Shorter remissions after fixed-duration and chemo; no plateau with FCR First line — the evidence Regimen · trial Population · result · the catch Zanubrutinib · SEQUOIA ≥65 or comorbid, vs BR: 5-yr median PFS NR vs 44.1 mo, HR 0.29 (IGHV-U 0.21, IGHV-M 0.40); OS no different (85.8 vs 85.0%). Arm C del(17p) (single-arm, n=109): ORR 94.5%, 18-mo PFS 88.6% Acalabrutinib ± O · ELEVATE-TN Older/comorbid, vs Clb-O: 6-yr PFS 78% (A-O) / 62% (A) / 17% ; A-O vs A HR 0.58; OS HR 0.62 A-O vs Clb-O. The one BTKi trial where adding anti-CD20 clearly helps Ibrutinib · RESONATE-2, A041202, E1912 RESONATE-2 (≥65): median PFS 8.9 vs 1.3 yr vs chlorambucil (~10-yr). A041202 (≥65): 48-mo PFS 76% vs 47% (BR), rituximab adds nothing (HR 1.00), no OS gain; AF 18%, HTN 55%. E1912 (≤70): IR beat FCR, PFS HR 0.37, OS HR 0.47 — incl IGHV-mutated at 5.8 yr Pirtobrutinib · BRUIN CLL-313 No del(17p), vs BR: PFS HR 0.20 , 24-mo PFS 93.4 vs 70.7%. FDA 1L approval 2 Oct 2026 (no del17p). CLL-314 vs ibrutinib: ORR noninferior (87.0 vs 78.5%), PFS still immature VenO ×12 · CLL14 Unfit (CIRS >6 or CrCl <70), vs Clb-O: 6-yr median PFS 76.2 vs 36.4 mo , HR 0.40; OS HR 0.69 (P=.052, NS). Shorter PFS with del(17p), IGHV-U, nodes ≥5 cm CLL13 / GAIA fit, no TP53 GV / GIV / RV vs FCR-BR: 5-yr PFS 69.8 / 81.3 / 57.4 vs 50.7% ; month-15 uMRD GV 86.5% vs 52.0%. Venetoclax-rituximab was not better than CIT — obinutuzumab is the 1L partner. No OS difference AV ± O · AMPLIFY Fit, no del17p/TP53, vs FCR/BR: 36-mo PFS AV 76.5% / AVO 83.1% / 66.5% ; AV HR 0.65. AVO had more COVID deaths (25 vs 10) and lower 36-mo OS (87.7 vs 94.1%). FDA Feb 2026 for AV (14 cycles) Ibrutinib + venetoclax · GLOW, CAPTIVATE GLOW (older/unfit, vs Clb-O): 66-mo PFS 51.7 vs 18.1%, OS HR 0.46 . CAPTIVATE (phase 2, ≤70): 24-mo PFS 95%; after uMRD, placebo vs continued ibrutinib 1-yr DFS 95 vs 100% (NS); TP53 36-mo PFS 81%. EU-approved, not FDA-labeled FLAIR MRD-guided I+V Fit ≤75: I+V for 2× the time to uMRD (max 6 yr) vs FCR: 5-yr PFS 93.9 vs 58.1% , OS HR 0.26 ; vs ibrutinib alone PFS HR 0.29, OS HR 0.41. Cardiac SAEs 10.7% vs 0.4% (FCR) CLL17 fixed vs continuous VenO vs I+V vs continuous ibrutinib (n=909): 3-yr PFS 81.1 / 79.4 / 81.0% — both fixed-duration arms noninferior . PB uMRD 73.3 / 47.2 / 0% FCR now niche MDACC 12.8-yr PFS 53.9% if IGHV-mutated (plateau) vs 8.7% unmutated. Beaten by E1912, FLAIR, CLL13, AMPLIFY; myelosuppression, infections, therapy-related myeloid neoplasms. Never for TP53 or IGHV-U Fixed vs continuous: CLL17 shows equal 3-yr PFS. Fixed duration = drug holiday, less cumulative cardiac/bleeding toxicity, needs TLS ramp-up and infusions (VenO). Continuous = simplest, preferred for TP53, but indefinite cost and AF/HTN. Obinutuzumab, not rituximab , with 1L venetoclax. Choosing first line — patient factors Situation Lean toward del(17p) / TP53 mutation Continuous zanubrutinib or acalabrutinib ; VenO if a BTKi is contraindicated (expect shorter PFS) IGHV-mutated, no TP53 Fixed duration (VenO or AV) — longest treatment-free intervals; FCR no longer needed IGHV-unmutated, no TP53 Either: fixed duration (VenO, AV, I+V) or continuous BTKi — CLL17 equal PFS; MRD-guided I+V (FLAIR) for fit AF, heart failure, anticoagulation, bleeding risk VenO ; if a BTKi is needed, zanubrutinib or acalabrutinib, never ibrutinib first Renal impairment, bulky high-TLS-risk, can't do TLS labs Continuous BTKi , or a BTKi lead-in before venetoclax (AV, I+V) Frail / comorbid Acalabrutinib, zanubrutinib or VenO (CLL14 enrolled CIRS >6) Response and MRD iwCLL CR: ALC <4×10 9 /L, nodes <1.5 cm, no hepatosplenomegaly, no B symptoms, ANC ≥1.5, plt ≥100, Hb ≥11 untransfused. Most patients on a BTKi reach PR, not CR — still durable BTKi redistribution lymphocytosis in the first weeks (cells leave nodes) is expected, not progression uMRD = <10 −4 (1 CLL cell in 10,000) by flow or NGS. Predicts PFS after fixed-duration therapy (MURANO, GLOW, CLL14); meaningless on continuous BTKi (CLL17 0%). MRD-guided duration is a trial/FLAIR concept, not routine Relapsed / refractory — evidence and sequencing Regimen · trial Result · caveat VenR ×2 yr · MURANO vs BR: median PFS 54.7 vs 17.0 mo ; 7-yr OS 69.6 vs 51.0%. uMRD at end of therapy predicts long PFS. VenR retreatment: ORR 72%, median PFS 23 mo. Mostly BTKi-naive patients Acalabrutinib vs ibrutinib · ELEVATE-RR del17p/del11q: median PFS 38.4 mo both (noninferior); AF 9.4 vs 16.0%, HTN 9.4 vs 23.2%, any bleeding 38 vs 51% Zanubrutinib vs ibrutinib · ALPINE PFS superior, HR 0.65 (24-mo 78.4 vs 65.9%), incl del17p/TP53 (HR 0.53); AF 2.5 vs 10.1% (interim); fewer fatal cardiac events Pirtobrutinib · BRUIN CLL-321 All post-cBTKi, vs idelalisib-R/BR: median PFS 14.0 vs 8.7 mo , HR 0.54; OS no different (crossover). Accelerated 2023 → regular approval 3 Dec 2025 : R/R after a cBTKi (BCL2i no longer required) Pirtobrutinib-VR · BRUIN CLL-322 Fixed duration vs VR (80% cBTKi-exposed): 24-mo PFS 87 vs 72% , HR 0.55. Not FDA-approved as of Oct 2026 Liso-cel · TRANSCEND CLL 004 After BTKi + venetoclax: CR/CRi 18% , ORR 43%, blood uMRD 63%; median PFS 11.9 mo. CRS 85% (gr 3 9%), neurotox 45% (gr 3 18%). Accelerated approval Mar 2024 , ≥2 lines incl BTKi + BCL2i Allo-HCT Only curative option; for fit patients with double-exposed/refractory disease or Richter in remission Not approved in CLL BTK degraders (BGB-16673, bexobrutideg) and sonrotoclax — trials only (sonrotoclax is FDA-approved for R/R MCL) Resistance and sequencing rules Ibrutinib progression: BTK C481 or PLCG2 mutations in ~85% , detectable a median 9.3 mo before clinical relapse. Covalent BTKis share C481 binding → don't swap cBTKi for progression ; pirtobrutinib (noncovalent) binds C481-mutant BTK On pirtobrutinib, non-C481 BTK mutations (T474I, L528W) emerge; L528W and T474I also cross-resist zanubrutinib/acalabrutinib. Venetoclax resistance: BCL2 G101V Intolerance &ne; resistance: ibrutinib AF/bleeding → switch to acalabrutinib or zanubrutinib Keep the BTKi going until the next therapy starts — stopping can cause a rapid disease flare Retest FISH + TP53 at every relapse ; new adenopathy with a high LDH → think Richter Richter transformation ~2–10% of CLL (~0.5–1%/yr). Suspect with rapid, asymmetric node growth, rising LDH, B symptoms, hypercalcemia , new extranodal disease PET-CT → biopsy the hottest lesion. SUVmax ≥10 flags Richter (OS 6.9 vs 56.7 mo); core or excisional, not FNA (FNA often nondiagnostic) Clonally related (same IGHV as the CLL; more TP53 disruption) median OS 14.2 mo vs unrelated 62.5 mo — unrelated behaves like de novo DLBCL Treatment: R-CHOP-type induction → allo-HCT in responders ; CD19 CAR-T or bispecifics on trial/off-label. Hodgkin type: ABVD-type. No Richter-specific FDA approval. Median OS overall ~10 mo Regimen dosing Regimen Dosing Acalabrutinib 100 mg BID , continuous; A-O: obinutuzumab C2–7. Tablets OK with PPIs (old capsules: avoid) Zanubrutinib 160 mg BID or 320 mg daily , continuous Ibrutinib 420 mg daily , continuous Pirtobrutinib 200 mg daily , continuous Venetoclax ramp-up 20 → 50 → 100 → 200 → 400 mg , one step per week (5 weeks), with TLS prophylaxis (table) VenO CLL14, 12 × 28-d cycles Obinutuzumab 100 mg C1D1, 900 mg C1D2, 1000 mg C1D8 + D15 , then 1000 mg D1 C2–6. Venetoclax ramp starts C1D22 , 400 mg from C3, stop after C12 AV AMPLIFY, 14 cycles Acalabrutinib 100 mg BID C1–14 ; venetoclax ramp-up from C3 , 400 mg through C14. (AVO adds obinutuzumab C2–7 — not in US label) I+V GLOW / CAPTIVATE Ibrutinib 420 mg ×3 cycles lead-in (debulks: high-TLS-risk 21% → 1%), then + venetoclax ramp to 400 mg ×12 cycles (15 total) VenR MURANO Ramp-up 5 wk, then rituximab 375 mg/m² C1, 500 mg/m² C2–6 (q28d); venetoclax 400 mg for 24 mo from rituximab C1D1 Liso-cel Flu/Cy lymphodepletion → 90–110×10 6 CAR+ T cells ; REMS removed; stay near center, no driving ~2 wk Venetoclax TLS risk (label) — reassess after debulking Risk Criteria → prophylaxis · monitoring Low All nodes <5 cm and ALC <25 → oral fluids 1.5–2 L/d + allopurinol (start 2–3 d before) · outpatient; labs pre, 6–8 h, 24 h at the first 20 and 50 mg doses Medium Any node 5 to <10 cm or ALC ≥25 → oral ± IV fluids + allopurinol · same labs; consider admission if CrCl <80 High Any node ≥10 cm, or ALC ≥25 + any node ≥5 cm → oral + IV fluids 150–200 mL/h , allopurinol, rasburicase if uric acid high · admit for 20 and 50 mg ; labs 0, 4, 8, 12, 24 h Labs = K, phos, Ca, uric acid, creatinine — correct before the next dose . Debulk first (BTKi lead-in in GLOW/AMPLIFY; obinutuzumab in VenO). No urine alkalinization. Fixed-duration regimens at a glance Regimen Length · route · uMRD · setting VenO 12 cycles (~1 yr) · IV obinutuzumab C1–6 · PB uMRD after therapy 73.3% (CLL17) · 1L, any fitness AV 14 cycles · all oral · 1L (AMPLIFY excluded del17p/TP53); FDA Feb 2026 I+V 15 cycles · all oral · PB uMRD 47.2% (CLL17) · 1L; not US-labeled VenR 24 mo · rituximab C1–6 · R/R (MURANO) All need the 5-week venetoclax ramp-up and TLS precautions; BTKi lead-in (AV, I+V) lowers TLS risk category. BTK inhibitors compared Agent Binding · signature toxicity Ibrutinib Covalent (C481), 1st gen · AF (16.0% in ELEVATE-RR), HTN , ventricular arrhythmia, bleeding, arthralgia Acalabrutinib Covalent, more selective · headache early; AF 9.4% vs 16.0%, HTN 9.4 vs 23.2% (vs ibrutinib) Zanubrutinib Covalent, more selective · neutropenia ; AF 2.5 vs 10.1% vs ibrutinib (ALPINE interim) Pirtobrutinib Noncovalent · works with C481 mutations; AF/flutter 3.1% (label, pooled); infections, rash BTKi toxicity management Atrial fibrillation: rate control ( avoid diltiazem/verapamil — CYP3A), DOAC if indicated; often switch to a 2nd-gen BTKi or to venetoclax Ventricular arrhythmia / sudden death: ibrutinib label warning; FLAIR excess cardiac deaths. Palpitations/syncope → hold + ECG/Holter; don't rechallenge ibrutinib Hypertension: 55% all-grade on ibrutinib (A041202) — check BP every visit, treat early Bleeding: no warfarin ; avoid fish oil/vitamin E; caution with DOAC + antiplatelet. Hold 3–7 days before and after procedures Headache with acalabrutinib (31–40%, early, self-limited): acetaminophen + caffeine. Also arthralgia, rash, diarrhea, bruising CYP3A: acalabrutinib — avoid strong inhibitors, 100 mg daily with moderate · zanubrutinib — 80 mg daily (strong), 80 mg BID (moderate) · pirtobrutinib — minus 50 mg with strong · venetoclax with posaconazole 70 mg , other strong 100 mg, moderate ≥50% cut; strong inhibitors contraindicated during ramp-up Complications of the disease Autoimmune cytopenias ~5–10%: AIHA most common (warm IgG), ITP ~2%, PRCA and autoimmune granulocytopenia <1%. Distinguish from marrow failure (retic, haptoglobin, DAT, marrow). Steroids ± rituximab ; IVIG for ITP bleeding. Steroid-refractory autoimmune cytopenia = iwCLL indication — treat the CLL (BTKi or VenO; avoid fludarabine monotherapy ) Infection is the leading cause of death: hypogammaglobulinemia + T-cell and neutrophil dysfunction. IVIG if IgG <500 mg/dL + recurrent serious bacterial infections (fewer infections, no survival gain) Vaccines: before therapy when possible; no live vaccines ; recombinant zoster (2 doses), pneumococcal conjugate, influenza, COVID, RSV — responses blunted on BTKi/anti-CD20 Prophylaxis: anti-HBc+ → entecavir with anti-CD20 (HBV reactivation). PJP + HSV/VZV with FCR/BR, idelalisib (label) and after CAR-T; individualize on BTKi/venetoclax Second cancers: skin SCC, BCC, melanoma, Merkel markedly increased → annual skin exam , sun protection. Acalabrutinib label: second primaries 16% (non-melanoma skin 9%) Key trials SEQUOIA Zanubrutinib vs BR 1L — PFS HR 0.29; del17p arm C works ELEVATE-TN Acalabrutinib ± O vs Clb-O — 6-yr PFS 78/62/17% RESONATE-2 Ibrutinib 1L — median PFS 8.9 yr E1912 IR vs FCR (≤70) — OS HR 0.47 CLL14 VenO ×12 vs Clb-O — median PFS 76.2 vs 36.4 mo CLL13 GV/GIV beat CIT; RV did not AMPLIFY AV vs FCR/BR — PFS HR 0.65; FDA 2026 GLOW I+V vs Clb-O — OS HR 0.46 at 67 mo FLAIR MRD-guided I+V vs FCR — OS HR 0.26 CLL17 Fixed duration noninferior to continuous BRUIN CLL-313 Pirtobrutinib vs BR 1L — PFS HR 0.20 MURANO VenR vs BR R/R — OS benefit at 7 yr ALPINE · ELEVATE-RR 2nd-gen BTKi ≥ ibrutinib, less AF BRUIN CLL-321 Pirtobrutinib post-cBTKi — PFS HR 0.54 TRANSCEND CLL 004 Liso-cel double-exposed — CR 18% CLL12 Early ibrutinib: EFS only, no OS — watch and wait On-treatment monitoring Venetoclax neutropenia (gr 3–4 52.8% in CLL14): G-CSF , hold/dose-reduce per label rather than stopping; check CBC each cycle Obinutuzumab infusion reactions (40% with Clb-O vs 13% when given with acalabrutinib in ELEVATE-TN): split first dose 100/900 mg, premedicate (steroid, acetaminophen, antihistamine), hold antihypertensives the morning of dose 1 BTKi: CBC, BP, pulse every visit; ask about palpitations, bruising, infections. Long-term: ~20% of ibrutinib patients stop for toxicity (E1912: 21.9% by 5.8 yr) Off therapy (fixed duration or watch-and-wait): CBC + exam q3–6 mo; imaging only for symptoms or before re-treatment"
+}

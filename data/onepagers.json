@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05T10:26:29",
+ "generated": "2026-10-07T11:32:36",
  "onepagers": [
   {
    "disease": "aml",
@@ -36,6 +36,15 @@
    "size": 71475,
    "sha1": "4d1a3d1e3258b5129652e4bbf1b295d323581dd2",
    "updated": "2026-09-25"
+  },
+  {
+   "disease": "cll",
+   "file": "Chronic Lymphocytic Leukemia.pdf",
+   "title": "Chronic lymphocytic leukemia / SLL",
+   "pages": 3,
+   "size": 74594,
+   "sha1": "5c445d5852ce3d8cc02558b371813e24072e1b4a",
+   "updated": "2026-10-07"
   },
   {
    "disease": "colon",
