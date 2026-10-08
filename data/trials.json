@@ -11247,15 +11247,15 @@
    "arms": "D-VRd x4 -> ASCT -> D-VRd x2 -> D-R maintenance vs VRd -> ASCT -> VRd -> R",
    "n": 709,
    "primary_endpoint": "Progression-free survival",
-   "results": "4-yr PFS 84.3% vs 67.7% (HR 0.42, 95% CI 0.30-0.59); >=CR 87.9% vs 70.1%; MRD-negative 75.2% vs 47.5%",
+   "results": "Primary (47.5 mo): 4-yr PFS 84.3% vs 67.7% (HR 0.42, 95% CI 0.30-0.59); >=CR 87.9% vs 70.1%; MRD-negative 75.2% vs 47.5%. 81-mo update (meeting report): 6-yr PFS 81.1% vs 56.1% (HR 0.35, 95% CI 0.26-0.46); 6-yr OS 85.9% vs 78.6% (immature)",
    "toxicity": "Grade 3-4 neutropenia 62.1% vs 51.0%, thrombocytopenia 29.1% vs 17.3%",
    "reference": "Sonneveld P et al. N Engl J Med 2024;390:301-313",
    "pmid": "38084760",
    "nct": "NCT03710603",
    "highlights": [
     "Established quadruplet D-VRd as the transplant-eligible standard (FDA 30 Jul 2024 for D-VRd induction + consolidation only)",
-    "Daratumumab also added to lenalidomide maintenance (D-R phase not part of the FDA label)",
-    "OS immature at primary analysis"
+    "D-R maintenance is the de facto standard after D-VRd (off-label in the US); daratumumab stopped after >=24 mo if CR with MRD negativity sustained >=12 mo",
+    "81-mo update: PFS HR 0.35; OS trending in favor but immature"
    ],
    "takeaway": "Adding daratumumab to VRd and lenalidomide maintenance markedly improves PFS and MRD negativity in transplant-eligible myeloma.",
    "tags": [
@@ -11265,7 +11265,7 @@
    ],
    "source": "onepager:myeloma",
    "verified": true,
-   "updated": "2026-09-30"
+   "updated": "2026-10-08"
   },
   {
    "id": "auriga",
@@ -16333,6 +16333,39 @@
    "source": "onepager:waldenstrom",
    "verified": true,
    "updated": "2026-09-24"
+  },
+  {
+   "id": "midas",
+   "name": "MIDAS (IFM 2020-02)",
+   "disease": "myeloma",
+   "year": 2025,
+   "phase": "3",
+   "setting": "Transplant-eligible newly diagnosed MM",
+   "descriptor": "MRD-guided consolidation after Isa-KRd induction: ASCT vs no ASCT (MRD-neg) and tandem vs single ASCT (MRD-pos)",
+   "population": "Transplant-eligible NDMM after 6 cycles of isatuximab-carfilzomib-lenalidomide-dexamethasone (Isa-KRd) induction; 718 randomized by MRD status",
+   "arms": "MRD-neg at 1e-5 (n=485): ASCT + Isa-KRd x2 vs Isa-KRd x6 (no ASCT). MRD-pos (n=233): tandem ASCT vs single ASCT + Isa-KRd x2",
+   "n": 718,
+   "primary_endpoint": "Premaintenance MRD negativity at 1e-6 (NGS)",
+   "results": "MRD-neg cohort: MRD-neg 1e-6 86% (ASCT) vs 84% (Isa-KRd), adjusted RR 1.02 (95% CI 0.95-1.10), P=0.64. MRD-pos cohort: 32% (tandem) vs 40% (single), RR 0.82 (0.58-1.15), P=0.31. Median follow-up ~17 mo; PFS not yet reported",
+   "toxicity": "No new safety signals; 15% of tandem arm did not get second ASCT",
+   "reference": "Perrot A et al. N Engl J Med 2025;393:425-437",
+   "pmid": "40459097",
+   "nct": "NCT04934475",
+   "highlights": [
+    "Among patients MRD-negative after quadruplet induction, ASCT did not deepen MRD response vs more Isa-KRd",
+    "Tandem ASCT did not help MRD-positive patients",
+    "MRD endpoint with short follow-up: supports ASCT deferral in MRD-negative standard-risk patients, pending PFS"
+   ],
+   "takeaway": "After Isa-KRd induction, MRD-negative patients reached the same premaintenance MRD negativity without ASCT, and tandem ASCT did not help MRD-positive patients.",
+   "tags": [
+    "MRD",
+    "isatuximab",
+    "carfilzomib",
+    "transplant",
+    "Isa-KRd"
+   ],
+   "source": "onepager:myeloma",
+   "verified": true
   }
  ]
 }
