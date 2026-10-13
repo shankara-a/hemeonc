@@ -407,6 +407,23 @@
    ]
   },
   {
+   "slug": "pnh",
+   "name": "Paroxysmal nocturnal hemoglobinuria",
+   "short": "PNH",
+   "group": "benign-heme",
+   "onepager": "Paroxysmal Nocturnal Hemoglobinuria.pdf",
+   "aliases": [
+    "pnh",
+    "paroxysmal nocturnal",
+    "complement inhibitor",
+    "eculizumab",
+    "ravulizumab",
+    "iptacopan",
+    "pegcetacoplan",
+    "flaer"
+   ]
+  },
+  {
    "slug": "prostate",
    "name": "Prostate cancer",
    "short": "Prostate",

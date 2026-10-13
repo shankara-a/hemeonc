@@ -1,0 +1,426 @@
+{
+ "disease": "pnh",
+ "spec_file": "pnh.py",
+ "pdf": "Paroxysmal Nocturnal Hemoglobinuria.pdf",
+ "title": "Paroxysmal nocturnal hemoglobinuria",
+ "subtitle": "Acquired PIGA-mutant clone &middot; hemolysis, thrombosis, marrow failure &middot; <b>diagnose by granulocyte FLAER flow, treat hemolysis or thrombosis with complement inhibition, vaccinate before starting</b>",
+ "source": "Compiled from ICCS/ESCCA flow guidance &middot; IPIG &middot; FDA labels &middot; primary trial reports verified against PubMed, October 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Pathophysiology",
+       "items": [
+        "<b>Somatic PIGA mutation in a stem cell &rarr; no GPI anchor &rarr; CD55 + CD59 absent</b> from every progeny cell &rarr; RBCs lysed by the alternative complement pathway. The clone expands only where the normal marrow is under immune attack &mdash; hence the overlap with aplastic anemia",
+        "<b>Triad: intravascular hemolysis, thrombosis, marrow failure.</b> Free Hb scavenges NO &rarr; <b>dysphagia, abdominal pain, erectile dysfunction</b>, pulmonary hypertension, CKD. Dark morning urine is the name, not the rule",
+        "<b>Untreated natural history:</b> median survival 10 yr; 39% had venous thrombosis <span class='r'>Hillmen NEJM 1995, n=80</span>. <b>On eculizumab, survival matches age-matched controls</b> <span class='r'>Kelly Blood 2011</span>"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Clinical features",
+       "items": [
+        "<b>DAT-negative intravascular hemolysis</b> &mdash; high LDH, absent haptoglobin, hemoglobinuria or hemosiderinuria",
+        "<b>Unexplained thrombosis at an unusual site</b> &mdash; Budd-Chiari, mesenteric/portal, cerebral venous sinus, dermal &mdash; or thrombosis + hemolysis or cytopenias",
+        "<b>Unexplained cytopenias</b> &mdash; PNH is a marrow failure disorder: anemia with a <b>retic low for the degree of hemolysis</b>, or any cytopenia + hemolysis/thrombosis",
+        "<b>Aplastic anemia: at diagnosis and periodically</b> (yearly, or with any sign of hemolysis); <b>hypoplastic MDS</b>",
+        "<b>Do not use Ham or sucrose lysis</b> &mdash; obsolete. Do not send RBC CD55/CD59 alone"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Flow cytometry &mdash; ICCS/ESCCA",
+       "headers": [
+        "Lineage",
+        "Reagents &middot; what it tells you"
+       ],
+       "widths": [
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Granulocytes</b>",
+         "<b>FLAER + CD24</b>, gated on CD15. <b>The clone-size number</b> &mdash; unaffected by hemolysis or transfusion"
+        ],
+        [
+         "<b>Monocytes</b>",
+         "<b>FLAER + CD14</b>, gated on CD64. Confirms a second lineage"
+        ],
+        [
+         "<b>RBCs</b>",
+         "<b>CD59</b>, gated on CD235a. <b>Type III</b> = absent (lyses), <b>type II</b> = partial, type I = normal. <b>Underestimates the clone</b> &mdash; PNH RBCs are destroyed and transfused cells dilute"
+        ],
+        [
+         "<b>Sensitivity</b>",
+         "Routine ~1%. <b>High-sensitivity 0.01%</b> &mdash; needed for AA/MDS screening <span class='r'>Borowitz 2010; Illingworth 2018</span>"
+        ]
+       ],
+       "footnote": "FLAER binds the GPI anchor itself, so it is lineage-agnostic &mdash; but it does not work on RBCs. Report % granulocyte, % monocyte and RBC type II + III separately."
+      },
+      {
+       "type": "bullets",
+       "heading": "Monitoring",
+       "items": [
+        "<b>Each visit:</b> CBC, retic, LDH, bili; DAT (C3) if anemic on a C5i; ferritin, B12, folate periodically",
+        "<b>Flow clone size every 6&ndash;12 mo</b> (granulocytes) &mdash; and in AA/MDS patients without PNH, yearly screening",
+        "Renal function; new cytopenias &rarr; marrow (AA or MDS evolution)"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "35%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway",
+       "chains": [
+        {
+         "header": "Hemolytic PNH needing therapy",
+         "color": "teal",
+         "boxes": [
+          [
+           "1. Vaccinate before dose 1",
+           [
+            "<b>MenACWY + MenB &ge;2 wk before</b>",
+            "proximal agents: + pneumococcal",
+            "urgent start: antibiotic cover until 2 wk post-vaccine"
+           ]
+          ],
+          [
+           "2. Choose the agent",
+           [
+            "<b>C5i</b>: ravulizumab IV q8wk or crovalimab SC q4wk",
+            "&mdash; IVH + thrombosis control, longest record",
+            "<b>Proximal</b>: iptacopan PO or pegcetacoplan SC",
+            "&mdash; also fixes EVH (higher Hb); adherence-critical,",
+            "BTH can be severe. <b>Pregnancy &rarr; eculizumab/ravulizumab</b>"
+           ]
+          ],
+          [
+           "3. Reassess at 3&ndash;6 months",
+           [
+            "Hb, LDH, retic, bili, transfusions, DAT (C3)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "On a C5 inhibitor and still anemic",
+         "color": "blue",
+         "boxes": [
+          [
+           "Sort out why",
+           [
+            "LDH &le;1.5&times; ULN + high retic + DAT C3+ &rarr; <b>EVH</b>",
+            "LDH rising &rarr; <b>BTH</b> (trough or trigger) &mdash; page 2",
+            "low retic &rarr; <b>marrow failure</b>, iron, B12, folate"
+           ]
+          ],
+          [
+           "Clinically significant EVH",
+           [
+            "<b>switch</b> to iptacopan (APPLY) or pegcetacoplan",
+            "(PEGASUS), <b>or add</b> danicopan to the C5i (ALPHA)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Marrow failure dominates",
+         "color": "coral",
+         "boxes": [
+          [
+           "Treat the aplastic anemia",
+           [
+            "IST (hATG + cyclosporine &plusmn; eltrombopag)",
+            "or allo-HCT; complement Rx only for hemolysis"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Allo-HCT",
+         "color": "purple",
+         "boxes": [
+          [
+           "Indications",
+           [
+            "severe aplastic anemia / MDS or AML evolution",
+            "refractory hemolysis or recurrent thrombosis",
+            "despite inhibition, or no access to inhibitors"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Who needs treatment",
+       "items": [
+        "<b>Treat:</b> symptomatic hemolysis (transfusion need, fatigue, smooth-muscle symptoms), <b>any thrombosis</b>, hemolysis-related organ damage (renal, pulmonary hypertension), <b>pregnancy</b>",
+        "<b>Watch:</b> subclinical or small clones without hemolysis &mdash; CBC + LDH, repeat flow every 6&ndash;12 mo"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Baseline labs",
+       "items": [
+        "<b>Hemolysis:</b> LDH (the IVH marker), retic, haptoglobin, indirect bili, free Hb, UA + <b>urine hemosiderin</b>. <b>DAT negative</b> (becomes C3d+ on a C5 inhibitor)",
+        "<b>Iron, B12, folate:</b> chronic hemoglobinuria causes <b>iron deficiency</b>; on C5i, transfused EVH can swing to overload",
+        "<b>CBC + marrow biopsy with cytogenetics</b> if any cytopenia &mdash; is there AA or MDS underneath? Creatinine; imaging only for symptoms"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "IPIG classification &mdash; Parker 2005",
+       "headers": [
+        "Category",
+        "Defines"
+       ],
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Classic</b>",
+         "Clinical IVH, cellular marrow, no other marrow disorder. Usually a large clone"
+        ],
+        [
+         "<b>PNH + another BMF</b>",
+         "Hemolysis with AA or low-risk MDS documented &mdash; treat whichever dominates"
+        ],
+        [
+         "<b>Subclinical</b>",
+         "Small clone, <b>no clinical or lab hemolysis</b>; seen in AA/MDS. <b>No complement therapy</b> &mdash; monitor the clone"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Thrombosis",
+       "items": [
+        "<b>Leading cause of death</b> in PNH. <b>Mostly venous, often unusual sites</b>; can occur on therapeutic anticoagulation",
+        "<b>Clone size predicts it:</b> granulocyte clone &gt;50% &rarr; 10-yr risk <b>44% vs 5.8%</b> <span class='r'>Hall Blood 2003</span>",
+        "<b>Acute event: therapeutic LMWH/UFH + start complement inhibition now</b> &mdash; anticoagulation alone does not stop it. Eculizumab cut events <b>7.37 &rarr; 1.07/100 pt-yr</b> <span class='r'>Hillmen Blood 2007</span>. Continue anticoagulation long term after a thrombosis",
+        "<b>Primary prophylaxis: not routine on a complement inhibitor</b> &mdash; 21 patients without prior thrombosis stopped warfarin with no events <span class='r'>Kelly 2011</span>. Warfarin for clone &gt;50% <span class='r'>Hall 2003</span> is the no-access fallback"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "AA / PNH overlap",
+       "items": [
+        "<b>Small PNH clones are common in AA</b> &mdash; screen by high-sensitivity flow; a clone supports immune-mediated AA",
+        "<b>Clones can expand after IST</b> into hemolytic PNH (or vanish) &mdash; re-check flow at least yearly",
+        "<b>Severe marrow failure is treated as AA</b> (IST or transplant); complement inhibition only for clinically significant hemolysis",
+        "<b>Clone size &mdash; rough guide, no cutoff defines PNH</b> (category = hemolysis + marrow status): <b>&lt;10%</b> usually subclinical (typical in AA) &middot; <b>10&ndash;50%</b> grey zone, check LDH/retic/haptoglobin &middot; <b>&gt;50%</b> typical of classic PNH, highest thrombosis risk"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; mechanism, agents, safety, breakthrough hemolysis, pregnancy, trials",
+   "columns": [
+    {
+     "width": "35%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Complement cascade",
+       "widths": [
+        "100%"
+       ],
+       "rows": [
+        [
+         "<img style='width:100%;display:block' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAyIj48ZGVmcz48bWFya2VyIGlkPSJhIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjgiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI1IiBtYXJrZXJIZWlnaHQ9IjUiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTIgMUw4IDVMMiA5IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMS41Ii8+PC9tYXJrZXI+PHN0eWxlPnRleHR7Zm9udC1mYW1pbHk6SGVsdmV0aWNhLEFyaWFsLHNhbnMtc2VyaWY7dGV4dC1hbmNob3I6bWlkZGxlfS5ie2ZvbnQtc2l6ZTo3LjZweDtmb250LXdlaWdodDpib2xkfS5ze2ZvbnQtc2l6ZTo2LjZweH08L3N0eWxlPjwvZGVmcz48cmVjdCB4PSI1NSIgeT0iMiIgd2lkdGg9IjE3MCIgaGVpZ2h0PSIyNiIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNDAuMCIgeT0iMTMuMCIgY2xhc3M9ImIiIGZpbGw9IiM0NDQ0NDEiPkNvbXBsZW1lbnQgYWN0aXZhdGlvbjwvdGV4dD48dGV4dCB4PSIxNDAuMCIgeT0iMjIuNSIgY2xhc3M9InMiIGZpbGw9IiM0NDQ0NDEiPmNvbnN0YW50IGxvdy1sZXZlbCBDMyBoeWRyb2x5c2lzPC90ZXh0PjxwYXRoIGQ9Ik0xNDAgMjggTDE0MCAzNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxyZWN0IHg9IjExNSIgeT0iMzgiIHdpZHRoPSI1MCIgaGVpZ2h0PSIxNyIgcng9IjMiIGZpbGw9IiNFMUY1RUUiIHN0cm9rZT0iIzBGNkU1NiIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNDAuMCIgeT0iNDkuNSIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPkMzPC90ZXh0PjxwYXRoIGQ9Ik0xNDAgNTUgTDE0MCA2MyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxyZWN0IHg9IjExNSIgeT0iNjQiIHdpZHRoPSI1MCIgaGVpZ2h0PSIxNiIgcng9IjMiIGZpbGw9IiNFMUY1RUUiIHN0cm9rZT0iIzBGNkU1NiIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNDAuMCIgeT0iNzUuMCIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPkMzYjwvdGV4dD48cGF0aCBkPSJNMTQwIDgwIEwxNDAgODkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48cmVjdCB4PSI5MiIgeT0iOTAiIHdpZHRoPSI5NiIgaGVpZ2h0PSIyNiIgcng9IjMiIGZpbGw9IiNFMUY1RUUiIHN0cm9rZT0iIzBGNkU1NiIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNDAuMCIgeT0iMTAxLjAiIGNsYXNzPSJiIiBmaWxsPSIjMDg1MDQxIj5DMyBjb252ZXJ0YXNlPC90ZXh0Pjx0ZXh0IHg9IjE0MC4wIiB5PSIxMTAuNSIgY2xhc3M9InMiIGZpbGw9IiMwODUwNDEiPkMzYkJiPC90ZXh0PjxyZWN0IHg9IjIwNSIgeT0iNTgiIHdpZHRoPSI2MiIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyMzYuMCIgeT0iNjguMCIgY2xhc3M9ImIiIGZpbGw9IiM0NDQ0NDEiPkZhY3RvciBCPC90ZXh0Pjx0ZXh0IHg9IjIzNi4wIiB5PSI3Ny41IiBjbGFzcz0icyIgZmlsbD0iIzQ0NDQ0MSI+YmluZHMgQzNiPC90ZXh0PjxwYXRoIGQ9Ik0yMDUgNzIgTDE2NyA3MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxyZWN0IHg9IjIwNSIgeT0iODgiIHdpZHRoPSI2MiIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyMzYuMCIgeT0iOTguMCIgY2xhc3M9ImIiIGZpbGw9IiM0NDQ0NDEiPkZhY3RvciBEPC90ZXh0Pjx0ZXh0IHg9IjIzNi4wIiB5PSIxMDcuNSIgY2xhc3M9InMiIGZpbGw9IiM0NDQ0NDEiPmNsZWF2ZXMgQjwvdGV4dD48cGF0aCBkPSJNMjA1IDEwMCBMMTkwIDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxsaW5lIHgxPSIyNzQiIHkxPSI3MCIgeDI9IjI2OCIgeTI9IjcwIiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS4yIi8+PGxpbmUgeDE9IjI2OCIgeTE9IjY1IiB4Mj0iMjY4IiB5Mj0iNzUiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSIyODEiIGN5PSI3MCIgcj0iNi41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjgxIiB5PSI3MyIgY2xhc3M9ImIiIGZpbGw9IiM3MTJCMTMiPkI8L3RleHQ+PGxpbmUgeDE9IjI3NCIgeTE9IjEwMCIgeDI9IjI2OCIgeTI9IjEwMCIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuMiIvPjxsaW5lIHgxPSIyNjgiIHkxPSI5NSIgeDI9IjI2OCIgeTI9IjEwNSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuNiIvPjxjaXJjbGUgY3g9IjI4MSIgY3k9IjEwMCIgcj0iNi41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjgxIiB5PSIxMDMiIGNsYXNzPSJiIiBmaWxsPSIjNzEyQjEzIj5EPC90ZXh0PjxsaW5lIHgxPSIxNzEiIHkxPSI0Ni41IiB4Mj0iMTY2IiB5Mj0iNDYuNSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuMiIvPjxsaW5lIHgxPSIxNjYiIHkxPSI0MS41IiB4Mj0iMTY2IiB5Mj0iNTEuNSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuNiIvPjxjaXJjbGUgY3g9IjE3OCIgY3k9IjQ2LjUiIHI9IjYuNSIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjE3OCIgeT0iNDkuNSIgY2xhc3M9ImIiIGZpbGw9IiM3MTJCMTMiPlA8L3RleHQ+PHBhdGggZD0iTTkyIDExMCBMNzYgMTEwIEw3NiA0Ni41IEwxMTMgNDYuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjx0ZXh0IHg9IjQiIHk9IjcyIiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNDQ0Ij5hbXBsaWZpY2F0aW9uPC90ZXh0Pjx0ZXh0IHg9IjQiIHk9IjgxIiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNDQ0Ij5sb29wPC90ZXh0Pjx0ZXh0IHg9Ijg4IiB5PSIxMjgiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6ZW5kIiBmaWxsPSIjMEY2RTU2Ij5DRDU1IGFic2VudDwvdGV4dD48cGF0aCBkPSJNMTQwIDExNiBMMTQwIDEzMyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxyZWN0IHg9IjExNSIgeT0iMTM0IiB3aWR0aD0iNTAiIGhlaWdodD0iMTciIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTQwLjAiIHk9IjE0NS41IiBjbGFzcz0iYiIgZmlsbD0iIzA4NTA0MSI+QzU8L3RleHQ+PGxpbmUgeDE9IjE3NiIgeTE9IjE0Mi41IiB4Mj0iMTY2IiB5Mj0iMTQyLjUiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjIiLz48bGluZSB4MT0iMTY2IiB5MT0iMTM3LjUiIHgyPSIxNjYiIHkyPSIxNDcuNSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuNiIvPjxyZWN0IHg9IjE3NiIgeT0iMTM2IiB3aWR0aD0iMjQiIGhlaWdodD0iMTMiIHJ4PSI2LjUiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxODguMCIgeT0iMTQ1LjUiIGNsYXNzPSJiIiBmaWxsPSIjNzEyQjEzIj5DNWk8L3RleHQ+PHBhdGggZD0iTTExNSAxNDIuNSBMNDQgMTQyLjUgTDQ0IDE2MyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjx0ZXh0IHg9IjcyIiB5PSIxMzkiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6bWlkZGxlIiBmaWxsPSIjNDQ0Ij5DNWE8L3RleHQ+PHJlY3QgeD0iMiIgeT0iMTY0IiB3aWR0aD0iODQiIGhlaWdodD0iMjYiIHJ4PSIzIiBmaWxsPSIjRjFFRkU4IiBzdHJva2U9IiM4ODg3ODAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iNDQuMCIgeT0iMTc1LjAiIGNsYXNzPSJiIiBmaWxsPSIjNDQ0NDQxIj5JbmZsYW1tYXRpb248L3RleHQ+PHRleHQgeD0iNDQuMCIgeT0iMTg0LjUiIGNsYXNzPSJzIiBmaWxsPSIjNDQ0NDQxIj5wbGF0ZWxldHMsIHRocm9tYm9zaXM8L3RleHQ+PHBhdGggZD0iTTE0MCAxNTEgTDE0MCAxNzEiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48dGV4dCB4PSIxNDYiIHk9IjE2NCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+QzViPC90ZXh0PjxyZWN0IHg9IjExMCIgeT0iMTcyIiB3aWR0aD0iNjAiIGhlaWdodD0iMjQiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTQwLjAiIHk9IjE4Mi4wIiBjbGFzcz0iYiIgZmlsbD0iIzA4NTA0MSI+TUFDPC90ZXh0Pjx0ZXh0IHg9IjE0MC4wIiB5PSIxOTEuNSIgY2xhc3M9InMiIGZpbGw9IiMwODUwNDEiPkM1Yi05IHBvcmU8L3RleHQ+PHRleHQgeD0iMTc0IiB5PSIxOTciIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiMwRjZFNTYiPkNENTkgYWJzZW50PC90ZXh0PjxwYXRoIGQ9Ik0xNDAgMTk2IEwxNDAgMjA5IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PGVsbGlwc2UgY3g9IjE0MCIgY3k9IjIyNiIgcng9IjQyIiByeT0iMTQiIGZpbGw9IiNGQ0VCRUIiIHN0cm9rZT0iI0EzMkQyRCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNDAiIHk9IjIyOSIgY2xhc3M9ImIiIGZpbGw9IiM3OTFGMUYiPlBOSCByZWQgY2VsbDwvdGV4dD48cmVjdCB4PSIxMzgiIHk9IjIxMSIgd2lkdGg9IjQiIGhlaWdodD0iNCIgZmlsbD0iIzQ0NCIvPjxjaXJjbGUgY3g9IjE4OCIgY3k9IjIyMiIgcj0iMi4yIiBmaWxsPSIjRTI0QjRBIi8+PGNpcmNsZSBjeD0iMTk1IiBjeT0iMjE3IiByPSIxLjciIGZpbGw9IiNFMjRCNEEiLz48Y2lyY2xlIGN4PSIyMDEiIGN5PSIyMjMiIHI9IjEuOSIgZmlsbD0iI0UyNEI0QSIvPjx0ZXh0IHg9IjIwNyIgeT0iMjI2IiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNDQ0Ij5JVkg6IGZyZWUgSGI8L3RleHQ+PHBhdGggZD0iTTE4OCAxMTMgTDI0OCAxMTMgTDI0OCAxMjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48Y2lyY2xlIGN4PSIyMjYiIGN5PSIxMzUiIHI9IjIuMiIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjxjaXJjbGUgY3g9IjIzNyIgY3k9IjEzMyIgcj0iMi4yIiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PGNpcmNsZSBjeD0iMjQ4IiBjeT0iMTMzIiByPSIyLjIiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48Y2lyY2xlIGN4PSIyNTkiIGN5PSIxMzMiIHI9IjIuMiIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjxjaXJjbGUgY3g9IjI3MCIgY3k9IjEzNSIgcj0iMi4yIiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PGVsbGlwc2UgY3g9IjI0OCIgY3k9IjE0NSIgcng9IjQwIiByeT0iMTIiIGZpbGw9IiNGQ0VCRUIiIHN0cm9rZT0iI0EzMkQyRCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyNDgiIHk9IjE0OCIgY2xhc3M9ImIiIGZpbGw9IiM3OTFGMUYiPkMzYi1jb2F0ZWQgY2VsbDwvdGV4dD48cGF0aCBkPSJNMjQ4IDE1NyBMMjQ4IDE2OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxlbGxpcHNlIGN4PSIyNTAiIGN5PSIxODQiIHJ4PSI0MiIgcnk9IjE0IiBmaWxsPSIjRjFFRkU4IiBzdHJva2U9IiM4ODg3ODAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PGVsbGlwc2UgY3g9IjIyOCIgY3k9IjE4NCIgcng9IjEwIiByeT0iNSIgZmlsbD0iI0ZDRUJFQiIgc3Ryb2tlPSIjQTMyRDJEIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjI2MyIgeT0iMTg3IiBjbGFzcz0iYiIgc3R5bGU9InRleHQtYW5jaG9yOm1pZGRsZSIgZmlsbD0iIzQ0NCI+TWFjcm9waGFnZTwvdGV4dD48dGV4dCB4PSIyNTAiIHk9IjIwOCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjptaWRkbGUiIGZpbGw9IiM0NDQiPkVWSDogc3BsZWVuLCBsaXZlcjwvdGV4dD48bGluZSB4MT0iMiIgeTE9IjI0NCIgeDI9IjI5OCIgeTI9IjI0NCIgc3Ryb2tlPSIjY2NjIiBzdHJva2Utd2lkdGg9IjAuNSIvPjxjaXJjbGUgY3g9IjgiIGN5PSIyNTUiIHI9IjUuNSIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjgiIHk9IjI1Ny42IiBjbGFzcz0icyIgZmlsbD0iIzcxMkIxMyI+QjwvdGV4dD48dGV4dCB4PSIxNyIgeT0iMjU3LjYiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPmlwdGFjb3BhbjogZmFjdG9yIEIgaW5oaWJpdG9yPC90ZXh0PjxjaXJjbGUgY3g9IjE1MCIgY3k9IjI1NSIgcj0iNS41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTUwIiB5PSIyNTcuNiIgY2xhc3M9InMiIGZpbGw9IiM3MTJCMTMiPkQ8L3RleHQ+PHRleHQgeD0iMTU5IiB5PSIyNTcuNiIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+ZGFuaWNvcGFuOiBmYWN0b3IgRCBpbmhpYml0b3IgKGFkZC1vbik8L3RleHQ+PGNpcmNsZSBjeD0iOCIgY3k9IjI2OSIgcj0iNS41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iOCIgeT0iMjcxLjYiIGNsYXNzPSJzIiBmaWxsPSIjNzEyQjEzIj5QPC90ZXh0Pjx0ZXh0IHg9IjE3IiB5PSIyNzEuNiIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+cGVnY2V0YWNvcGxhbjogQzMgaW5oaWJpdG9yPC90ZXh0PjxyZWN0IHg9IjEzOSIgeT0iMjYzLjUiIHdpZHRoPSIyMCIgaGVpZ2h0PSIxMSIgcng9IjUuNSIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjE0OSIgeT0iMjcxLjYiIGNsYXNzPSJzIiBmaWxsPSIjNzEyQjEzIj5DNWk8L3RleHQ+PHRleHQgeD0iMTYzIiB5PSIyNzEuNiIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+ZWN1bGl6dW1hYiDCtyByYXZ1bGl6dW1hYiDCtyBjcm92YWxpbWFiPC90ZXh0Pjx0ZXh0IHg9IjIiIHk9IjI4NyIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+Q0Q1NSBkaXNtYW50bGVzIHRoZSBDMyBjb252ZXJ0YXNlOyBDRDU5IGJsb2NrcyB0aGUgTUFDLiBCb3RoIG1pc3Npbmcgb24gUE5IIGNlbGxzLjwvdGV4dD48dGV4dCB4PSIyIiB5PSIyOTciIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPkM1aSBzdG9wIElWSCwgbm90IEMzYiBjb2F0aW5nLCBzbyBFVkggcGVyc2lzdHMuIEJsb2NraW5nIEIsIEQgb3IgQzMgc3RvcHMgYm90aC48L3RleHQ+PC9zdmc+'>"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Infection safety",
+       "items": [
+        "<b>MenACWY + MenB &ge;2 wk before the first dose</b>; if treatment cannot wait, give antibiotic prophylaxis until 2 wk after vaccination. <b>Revaccinate per ACIP</b> for as long as the patient is on therapy",
+        "<b>Proximal inhibitors (pegcetacoplan, iptacopan, danicopan) also block opsonization</b> &rarr; boxed warning extends to <b>S. pneumoniae and Hib</b>; vaccinate against pneumococcus (Hib per ACIP)",
+        "<b>Vaccines do not fully protect</b> &mdash; meningococcal disease has occurred in vaccinated patients. Every patient carries the <b>safety card</b>",
+        "<b>Fever or meningism = emergency:</b> blood cultures + empiric ceftriaxone immediately, then evaluate"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pregnancy",
+       "items": [
+        "<b>High-risk for thrombosis, peaking postpartum</b>. Use <b>eculizumab or ravulizumab</b>; proximal agents lack human data &mdash; switch before conception",
+        "Eculizumab, 75 pregnancies: <b>no maternal deaths</b>, 3 fetal deaths (4%); <b>dose/frequency increased in 54%</b>; LMWH in 88%; both thromboses postpartum <span class='r'>Kelly NEJM 2015</span>",
+        "<b>Prophylactic LMWH</b> through pregnancy and the postpartum period; expect to escalate the C5i in the 2nd&ndash;3rd trimester"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "39%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Agents &mdash; dosing",
+       "headers": [
+        "Agent",
+        "Target &middot; dosing",
+        "Notes"
+       ],
+       "widths": [
+        "18%",
+        "50%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Eculizumab</b> <span class='r'>Soliris 2007 + biosimilars</span>",
+         "<b>C5</b>, IV. <b>600 mg weekly &times;4 &rarr; 900 mg wk 5 &rarr; 900 mg q2wk</b>",
+         "q2wk infusions; trough BTH. <b>C5 R885H</b> variant: no response"
+        ],
+        [
+         "<b>Ravulizumab</b> <span class='r'>Ultomiris 2018</span>",
+         "<b>C5</b>, IV, weight-based load &rarr; maintenance 2 wk later, then <b>q8wk</b>: 40&ndash;&lt;60 kg <b>2400 &rarr; 3000 mg</b> &middot; 60&ndash;&lt;100 kg <b>2700 &rarr; 3300</b> &middot; &ge;100 kg <b>3000 &rarr; 3600</b>. Switching: load 2 wk after last eculizumab",
+         "Default C5i; same R885H gap"
+        ],
+        [
+         "<b>Crovalimab</b> <span class='r'>PiaSky 2024, &ge;13 y + &ge;40 kg</span>",
+         "<b>C5</b> (different epitope). <b>D1 1000 mg IV</b> (1500 if &ge;100 kg) &rarr; <b>340 mg SC D2, 8, 15, 22</b> &rarr; <b>680 mg SC q4wk</b> from D29 (1020 if &ge;100 kg). Switching: load at the next scheduled dose",
+         "<b>Switch from ecu/ravu &rarr; type III immune-complex reactions</b> (19% per label). Works in R885H"
+        ],
+        [
+         "<b>Pegcetacoplan</b> <span class='r'>Empaveli 2021</span>",
+         "<b>C3</b>, SC. <b>1080 mg twice weekly</b>; every 3 d if LDH &gt;2&times; ULN. From eculizumab: <b>overlap 4 wk</b>, then stop it; from ravulizumab: start &le;4 wk after last dose",
+         "Injection-site reactions. <b>Monitor &ge;8 wk after stopping</b>"
+        ],
+        [
+         "<b>Iptacopan</b> <span class='r'>Fabhalta 2023</span>",
+         "<b>Factor B</b>, oral. <b>200 mg BID</b>. Start &le;1 wk after last eculizumab or &le;6 wk after last ravulizumab",
+         "<b>Missed doses &rarr; hemolysis.</b> Monitor &ge;2 wk after stopping"
+        ],
+        [
+         "<b>Danicopan</b> <span class='r'>Voydeya 2024</span>",
+         "<b>Factor D</b>, oral, <b>added to</b> ravulizumab/eculizumab. <b>150 mg TID &rarr; 200 mg TID</b> if Hb rise &lt;2 g/dL at 4 wk or transfused",
+         "<b>Never monotherapy</b> &mdash; for cs-EVH only"
+        ]
+       ],
+       "footnote": "<b>All six carry a boxed warning for serious meningococcal infection and are REMS-restricted.</b> No approval yet for pozelimab + cemdisiran (investigational)."
+      },
+      {
+       "type": "bullets",
+       "heading": "Breakthrough hemolysis (BTH)",
+       "items": [
+        "<b>BTH = return of IVH on therapy:</b> LDH up, dark urine, Hb falls, symptoms back",
+        "<b>Pharmacokinetic</b> (C5i): drug runs out before the next dose &mdash; classic late in the eculizumab interval. Fix: shorten the interval / raise the dose, or move to ravulizumab <span class='r'>301: BTH 4.0% vs 10.7%</span>",
+        "<b>Pharmacodynamic:</b> a complement-amplifying trigger &mdash; <b>infection, surgery, pregnancy</b>, vaccination. Treat the trigger; give an extra C5i dose",
+        "<b>On a proximal inhibitor BTH can be abrupt and severe</b> &mdash; the whole, now-unprotected PNH RBC mass lyses at once. Check adherence, <b>give a C5i rescue dose</b> (eculizumab/ravulizumab), transfuse, involve a PNH center",
+        "<b>Never stop a proximal inhibitor abruptly</b> &mdash; rebound hemolysis; bridge directly to another agent"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "26%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "headers": [
+        "Trial",
+        "Result &rarr; practice"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>TRIUMPH</b> <span class='r'>NEJM 2006</span>",
+         "Eculizumab vs placebo, transfused pts (n=87): Hb stabilized <b>49% vs 0%</b>; median 0 vs 10 units"
+        ],
+        [
+         "<b>SHEPHERD</b> <span class='r'>Blood 2008</span>",
+         "Single-arm, broader population (n=97): LDH &darr;87%; <b>51% transfusion-free</b> for 52 wk"
+        ],
+        [
+         "<b>Study 301 / 302</b> <span class='r'>Blood 2019</span>",
+         "Ravulizumab q8wk <b>noninferior</b> to eculizumab q2wk in naive (n=246) and switched (n=195) patients"
+        ],
+        [
+         "<b>COMMODORE 2</b> <span class='r'>AJH 2024</span>",
+         "Crovalimab vs eculizumab, naive (n=204): hemolysis control <b>79.3% vs 79.0%</b>, noninferior. COMMODORE 3 (China, single-arm) supportive"
+        ],
+        [
+         "<b>PEGASUS</b> <span class='r'>NEJM 2021</span>",
+         "Switch from eculizumab, Hb &lt;10.5 (n=80): pegcetacoplan <b>Hb +3.84 g/dL vs eculizumab</b>; transfusion-free 85% vs 15%"
+        ],
+        [
+         "<b>PRINCE</b> <span class='r'>Blood Adv 2023</span>",
+         "Naive, vs supportive care (n=53): Hb stabilization <b>85.7% vs 0%</b>"
+        ],
+        [
+         "<b>APPLY-PNH</b> <span class='r'>NEJM 2024</span>",
+         "Anti-C5 with Hb &lt;10 &rarr; switch to iptacopan (n=97): Hb &uarr;&ge;2 g/dL in <b>51/60 vs 0/35</b>; Hb &ge;12 in 42/60"
+        ],
+        [
+         "<b>APPOINT-PNH</b> <span class='r'>NEJM 2024</span>",
+         "Naive, single-arm (n=40): Hb &uarr;&ge;2 g/dL in <b>31/33</b>; no transfusions"
+        ],
+        [
+         "<b>ALPHA</b> <span class='r'>Lancet Haem 2023</span>",
+         "Danicopan added to C5i for cs-EVH: Hb <b>+2.94 vs +0.50 g/dL</b> at 12 wk (diff 2.44)"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>On a C5i the RBC clone grows</b> &mdash; PNH RBCs now survive. That is treatment effect, not progression; follow the granulocyte clone",
+        "<b>DAT C3d+ on a C5i = EVH</b>, not a new autoimmune hemolysis",
+        "<b>LDH on a C5i usually sits &le;1.5&times; ULN</b>; a sudden rise is BTH until proven otherwise",
+        "<b>C5 R885H polymorphism</b> (described in Japanese patients): no response to eculizumab or ravulizumab &mdash; crovalimab binds a different C5 epitope",
+        "Eculizumab/ravulizumab protect against thrombosis, but <b>after a thrombosis anticoagulation continues</b>"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Pathophysiology",
+  "Clinical features",
+  "Flow cytometry &mdash; ICCS/ESCCA",
+  "Monitoring",
+  "Treatment pathway",
+  "Who needs treatment",
+  "Baseline labs",
+  "IPIG classification &mdash; Parker 2005",
+  "Thrombosis",
+  "AA / PNH overlap",
+  "Complement cascade",
+  "Infection safety",
+  "Pregnancy",
+  "Agents &mdash; dosing",
+  "Breakthrough hemolysis (BTH)",
+  "Key trials",
+  "Pearls"
+ ],
+ "text": "Paroxysmal nocturnal hemoglobinuria Acquired PIGA-mutant clone · hemolysis, thrombosis, marrow failure · diagnose by granulocyte FLAER flow, treat hemolysis or thrombosis with complement inhibition, vaccinate before starting Compiled from ICCS/ESCCA flow guidance · IPIG · FDA labels · primary trial reports verified against PubMed, October 2026. Pathophysiology Somatic PIGA mutation in a stem cell → no GPI anchor → CD55 + CD59 absent from every progeny cell → RBCs lysed by the alternative complement pathway. The clone expands only where the normal marrow is under immune attack — hence the overlap with aplastic anemia Triad: intravascular hemolysis, thrombosis, marrow failure. Free Hb scavenges NO → dysphagia, abdominal pain, erectile dysfunction , pulmonary hypertension, CKD. Dark morning urine is the name, not the rule Untreated natural history: median survival 10 yr; 39% had venous thrombosis Hillmen NEJM 1995, n=80 . On eculizumab, survival matches age-matched controls Kelly Blood 2011 Clinical features DAT-negative intravascular hemolysis — high LDH, absent haptoglobin, hemoglobinuria or hemosiderinuria Unexplained thrombosis at an unusual site — Budd-Chiari, mesenteric/portal, cerebral venous sinus, dermal — or thrombosis + hemolysis or cytopenias Unexplained cytopenias — PNH is a marrow failure disorder: anemia with a retic low for the degree of hemolysis , or any cytopenia + hemolysis/thrombosis Aplastic anemia: at diagnosis and periodically (yearly, or with any sign of hemolysis); hypoplastic MDS Do not use Ham or sucrose lysis — obsolete. Do not send RBC CD55/CD59 alone Flow cytometry — ICCS/ESCCA Lineage Reagents · what it tells you Granulocytes FLAER + CD24 , gated on CD15. The clone-size number — unaffected by hemolysis or transfusion Monocytes FLAER + CD14 , gated on CD64. Confirms a second lineage RBCs CD59 , gated on CD235a. Type III = absent (lyses), type II = partial, type I = normal. Underestimates the clone — PNH RBCs are destroyed and transfused cells dilute Sensitivity Routine ~1%. High-sensitivity 0.01% — needed for AA/MDS screening Borowitz 2010; Illingworth 2018 FLAER binds the GPI anchor itself, so it is lineage-agnostic — but it does not work on RBCs. Report % granulocyte, % monocyte and RBC type II + III separately. Monitoring Each visit: CBC, retic, LDH, bili; DAT (C3) if anemic on a C5i; ferritin, B12, folate periodically Flow clone size every 6–12 mo (granulocytes) — and in AA/MDS patients without PNH, yearly screening Renal function; new cytopenias → marrow (AA or MDS evolution) Treatment pathway Hemolytic PNH needing therapy 1. Vaccinate before dose 1 MenACWY + MenB ≥2 wk before proximal agents: + pneumococcal urgent start: antibiotic cover until 2 wk post-vaccine 2. Choose the agent C5i : ravulizumab IV q8wk or crovalimab SC q4wk — IVH + thrombosis control, longest record Proximal : iptacopan PO or pegcetacoplan SC — also fixes EVH (higher Hb); adherence-critical, BTH can be severe. Pregnancy → eculizumab/ravulizumab 3. Reassess at 3–6 months Hb, LDH, retic, bili, transfusions, DAT (C3) On a C5 inhibitor and still anemic Sort out why LDH ≤1.5× ULN + high retic + DAT C3+ → EVH LDH rising → BTH (trough or trigger) — page 2 low retic → marrow failure , iron, B12, folate Clinically significant EVH switch to iptacopan (APPLY) or pegcetacoplan (PEGASUS), or add danicopan to the C5i (ALPHA) Marrow failure dominates Treat the aplastic anemia IST (hATG + cyclosporine ± eltrombopag) or allo-HCT; complement Rx only for hemolysis Allo-HCT Indications severe aplastic anemia / MDS or AML evolution refractory hemolysis or recurrent thrombosis despite inhibition, or no access to inhibitors Who needs treatment Treat: symptomatic hemolysis (transfusion need, fatigue, smooth-muscle symptoms), any thrombosis , hemolysis-related organ damage (renal, pulmonary hypertension), pregnancy Watch: subclinical or small clones without hemolysis — CBC + LDH, repeat flow every 6–12 mo Baseline labs Hemolysis: LDH (the IVH marker), retic, haptoglobin, indirect bili, free Hb, UA + urine hemosiderin . DAT negative (becomes C3d+ on a C5 inhibitor) Iron, B12, folate: chronic hemoglobinuria causes iron deficiency ; on C5i, transfused EVH can swing to overload CBC + marrow biopsy with cytogenetics if any cytopenia — is there AA or MDS underneath? Creatinine; imaging only for symptoms IPIG classification — Parker 2005 Category Defines Classic Clinical IVH, cellular marrow, no other marrow disorder. Usually a large clone PNH + another BMF Hemolysis with AA or low-risk MDS documented — treat whichever dominates Subclinical Small clone, no clinical or lab hemolysis ; seen in AA/MDS. No complement therapy — monitor the clone Thrombosis Leading cause of death in PNH. Mostly venous, often unusual sites ; can occur on therapeutic anticoagulation Clone size predicts it: granulocyte clone >50% → 10-yr risk 44% vs 5.8% Hall Blood 2003 Acute event: therapeutic LMWH/UFH + start complement inhibition now — anticoagulation alone does not stop it. Eculizumab cut events 7.37 → 1.07/100 pt-yr Hillmen Blood 2007 . Continue anticoagulation long term after a thrombosis Primary prophylaxis: not routine on a complement inhibitor — 21 patients without prior thrombosis stopped warfarin with no events Kelly 2011 . Warfarin for clone >50% Hall 2003 is the no-access fallback AA / PNH overlap Small PNH clones are common in AA — screen by high-sensitivity flow; a clone supports immune-mediated AA Clones can expand after IST into hemolytic PNH (or vanish) — re-check flow at least yearly Severe marrow failure is treated as AA (IST or transplant); complement inhibition only for clinically significant hemolysis Clone size — rough guide, no cutoff defines PNH (category = hemolysis + marrow status): <10% usually subclinical (typical in AA) · 10–50% grey zone, check LDH/retic/haptoglobin · >50% typical of classic PNH, highest thrombosis risk Complement cascade Infection safety MenACWY + MenB ≥2 wk before the first dose ; if treatment cannot wait, give antibiotic prophylaxis until 2 wk after vaccination. Revaccinate per ACIP for as long as the patient is on therapy Proximal inhibitors (pegcetacoplan, iptacopan, danicopan) also block opsonization → boxed warning extends to S. pneumoniae and Hib ; vaccinate against pneumococcus (Hib per ACIP) Vaccines do not fully protect — meningococcal disease has occurred in vaccinated patients. Every patient carries the safety card Fever or meningism = emergency: blood cultures + empiric ceftriaxone immediately, then evaluate Pregnancy High-risk for thrombosis, peaking postpartum . Use eculizumab or ravulizumab ; proximal agents lack human data — switch before conception Eculizumab, 75 pregnancies: no maternal deaths , 3 fetal deaths (4%); dose/frequency increased in 54% ; LMWH in 88%; both thromboses postpartum Kelly NEJM 2015 Prophylactic LMWH through pregnancy and the postpartum period; expect to escalate the C5i in the 2nd–3rd trimester Agents — dosing Agent Target · dosing Notes Eculizumab Soliris 2007 + biosimilars C5 , IV. 600 mg weekly ×4 → 900 mg wk 5 → 900 mg q2wk q2wk infusions; trough BTH. C5 R885H variant: no response Ravulizumab Ultomiris 2018 C5 , IV, weight-based load → maintenance 2 wk later, then q8wk : 40–<60 kg 2400 → 3000 mg · 60–<100 kg 2700 → 3300 · ≥100 kg 3000 → 3600 . Switching: load 2 wk after last eculizumab Default C5i; same R885H gap Crovalimab PiaSky 2024, ≥13 y + ≥40 kg C5 (different epitope). D1 1000 mg IV (1500 if ≥100 kg) → 340 mg SC D2, 8, 15, 22 → 680 mg SC q4wk from D29 (1020 if ≥100 kg). Switching: load at the next scheduled dose Switch from ecu/ravu → type III immune-complex reactions (19% per label). Works in R885H Pegcetacoplan Empaveli 2021 C3 , SC. 1080 mg twice weekly ; every 3 d if LDH >2× ULN. From eculizumab: overlap 4 wk , then stop it; from ravulizumab: start ≤4 wk after last dose Injection-site reactions. Monitor ≥8 wk after stopping Iptacopan Fabhalta 2023 Factor B , oral. 200 mg BID . Start ≤1 wk after last eculizumab or ≤6 wk after last ravulizumab Missed doses → hemolysis. Monitor ≥2 wk after stopping Danicopan Voydeya 2024 Factor D , oral, added to ravulizumab/eculizumab. 150 mg TID → 200 mg TID if Hb rise <2 g/dL at 4 wk or transfused Never monotherapy — for cs-EVH only All six carry a boxed warning for serious meningococcal infection and are REMS-restricted. No approval yet for pozelimab + cemdisiran (investigational). Breakthrough hemolysis (BTH) BTH = return of IVH on therapy: LDH up, dark urine, Hb falls, symptoms back Pharmacokinetic (C5i): drug runs out before the next dose — classic late in the eculizumab interval. Fix: shorten the interval / raise the dose, or move to ravulizumab 301: BTH 4.0% vs 10.7% Pharmacodynamic: a complement-amplifying trigger — infection, surgery, pregnancy , vaccination. Treat the trigger; give an extra C5i dose On a proximal inhibitor BTH can be abrupt and severe — the whole, now-unprotected PNH RBC mass lyses at once. Check adherence, give a C5i rescue dose (eculizumab/ravulizumab), transfuse, involve a PNH center Never stop a proximal inhibitor abruptly — rebound hemolysis; bridge directly to another agent Key trials Trial Result → practice TRIUMPH NEJM 2006 Eculizumab vs placebo, transfused pts (n=87): Hb stabilized 49% vs 0% ; median 0 vs 10 units SHEPHERD Blood 2008 Single-arm, broader population (n=97): LDH &darr;87%; 51% transfusion-free for 52 wk Study 301 / 302 Blood 2019 Ravulizumab q8wk noninferior to eculizumab q2wk in naive (n=246) and switched (n=195) patients COMMODORE 2 AJH 2024 Crovalimab vs eculizumab, naive (n=204): hemolysis control 79.3% vs 79.0% , noninferior. COMMODORE 3 (China, single-arm) supportive PEGASUS NEJM 2021 Switch from eculizumab, Hb <10.5 (n=80): pegcetacoplan Hb +3.84 g/dL vs eculizumab ; transfusion-free 85% vs 15% PRINCE Blood Adv 2023 Naive, vs supportive care (n=53): Hb stabilization 85.7% vs 0% APPLY-PNH NEJM 2024 Anti-C5 with Hb <10 → switch to iptacopan (n=97): Hb &uarr;≥2 g/dL in 51/60 vs 0/35 ; Hb ≥12 in 42/60 APPOINT-PNH NEJM 2024 Naive, single-arm (n=40): Hb &uarr;≥2 g/dL in 31/33 ; no transfusions ALPHA Lancet Haem 2023 Danicopan added to C5i for cs-EVH: Hb +2.94 vs +0.50 g/dL at 12 wk (diff 2.44) Pearls On a C5i the RBC clone grows — PNH RBCs now survive. That is treatment effect, not progression; follow the granulocyte clone DAT C3d+ on a C5i = EVH , not a new autoimmune hemolysis LDH on a C5i usually sits ≤1.5× ULN ; a sudden rise is BTH until proven otherwise C5 R885H polymorphism (described in Japanese patients): no response to eculizumab or ravulizumab — crovalimab binds a different C5 epitope Eculizumab/ravulizumab protect against thrombosis, but after a thrombosis anticoagulation continues"
+}

@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-07",
+ "updated": "2026-10-13",
  "trials": [
   {
    "id": "e1900",
@@ -11364,6 +11364,39 @@
    "updated": "2026-09-30"
   },
   {
+   "id": "midas",
+   "name": "MIDAS (IFM 2020-02)",
+   "disease": "myeloma",
+   "year": 2025,
+   "phase": "3",
+   "setting": "Transplant-eligible newly diagnosed MM",
+   "descriptor": "MRD-guided consolidation after Isa-KRd induction: ASCT vs no ASCT (MRD-neg) and tandem vs single ASCT (MRD-pos)",
+   "population": "Transplant-eligible NDMM after 6 cycles of isatuximab-carfilzomib-lenalidomide-dexamethasone (Isa-KRd) induction; 718 randomized by MRD status",
+   "arms": "MRD-neg at 1e-5 (n=485): ASCT + Isa-KRd x2 vs Isa-KRd x6 (no ASCT). MRD-pos (n=233): tandem ASCT vs single ASCT + Isa-KRd x2",
+   "n": 718,
+   "primary_endpoint": "Premaintenance MRD negativity at 1e-6 (NGS)",
+   "results": "MRD-neg cohort: MRD-neg 1e-6 86% (ASCT) vs 84% (Isa-KRd), adjusted RR 1.02 (95% CI 0.95-1.10), P=0.64. MRD-pos cohort: 32% (tandem) vs 40% (single), RR 0.82 (0.58-1.15), P=0.31. Median follow-up ~17 mo; PFS not yet reported",
+   "toxicity": "No new safety signals; 15% of tandem arm did not get second ASCT",
+   "reference": "Perrot A et al. N Engl J Med 2025;393:425-437",
+   "pmid": "40459097",
+   "nct": "NCT04934475",
+   "highlights": [
+    "Among patients MRD-negative after quadruplet induction, ASCT did not deepen MRD response vs more Isa-KRd",
+    "Tandem ASCT did not help MRD-positive patients",
+    "MRD endpoint with short follow-up: supports ASCT deferral in MRD-negative standard-risk patients, pending PFS"
+   ],
+   "takeaway": "After Isa-KRd induction, MRD-negative patients reached the same premaintenance MRD negativity without ASCT, and tandem ASCT did not help MRD-positive patients.",
+   "tags": [
+    "MRD",
+    "isatuximab",
+    "carfilzomib",
+    "transplant",
+    "Isa-KRd"
+   ],
+   "source": "onepager:myeloma",
+   "verified": true
+  },
+  {
    "id": "excaliber-rrmm",
    "name": "EXCALIBER-RRMM",
    "disease": "myeloma",
@@ -12514,6 +12547,360 @@
    "source": "onepager:pancreatic",
    "verified": true,
    "updated": "2026-09-20"
+  },
+  {
+   "id": "triumph",
+   "name": "TRIUMPH",
+   "disease": "pnh",
+   "year": 2006,
+   "phase": "3",
+   "setting": "Transfusion-dependent hemolytic PNH",
+   "descriptor": "eculizumab vs placebo - the first complement inhibitor trial in PNH",
+   "population": "87 transfusion-dependent adults with PNH (>=4 transfusions in prior 12 months, type III RBC clone >10%, LDH >=1.5x ULN, platelets >100k)",
+   "arms": "Eculizumab 600 mg IV weekly x4, 900 mg week 5, then 900 mg every 2 weeks through week 26, vs placebo",
+   "n": 87,
+   "primary_endpoint": "Co-primary: hemoglobin stabilization without transfusion; units of packed red cells transfused",
+   "results": "Hemoglobin stabilized in 49% (21/43) vs 0% (0/44), P<0.001. Median 0 vs 10 units transfused. LDH AUC 85.8% lower. FACIT-Fatigue improved",
+   "toxicity": "Serious adverse events 4 vs 9 patients, none treatment-related; no meningococcal infections reported",
+   "reference": "Hillmen P et al. N Engl J Med 2006;355:1233-1243",
+   "pmid": "16990386",
+   "nct": "NCT00122330",
+   "highlights": [
+    "Established terminal (C5) complement blockade as the treatment of hemolytic PNH",
+    "Half of transfusion-dependent patients became transfusion-free with stable hemoglobin",
+    "Residual anemia on C5 blockade later explained by C3-mediated extravascular hemolysis"
+   ],
+   "takeaway": "Eculizumab abolishes intravascular hemolysis and transfusion need in hemolytic PNH and became the standard of care.",
+   "tags": [
+    "eculizumab",
+    "C5 inhibitor",
+    "placebo-controlled"
+   ],
+   "source": "onepager:pnh",
+   "verified": true,
+   "updated": "2026-10-13"
+  },
+  {
+   "id": "shepherd",
+   "name": "SHEPHERD",
+   "disease": "pnh",
+   "year": 2008,
+   "phase": "3",
+   "setting": "Hemolytic PNH, broader population than TRIUMPH",
+   "descriptor": "open-label single-arm 52-week eculizumab safety and efficacy study",
+   "population": "97 patients with hemolytic PNH at 33 sites, including those with fewer transfusions and thrombocytopenia",
+   "arms": "Eculizumab 600 mg IV weekly x4, 900 mg one week later, then 900 mg every 14 days for 52 weeks (single arm)",
+   "n": 97,
+   "primary_endpoint": "Hemolysis (LDH AUC) and safety",
+   "results": "LDH reduced 87% (P<.001); FACIT-Fatigue +12.2 points; median transfusions 8.0 to 0.0 units; 51% (49/97) transfusion-free for all 52 weeks",
+   "toxicity": "Well tolerated; safety consistent with TRIUMPH",
+   "reference": "Brodsky RA et al. Blood 2008;111:1840-1847",
+   "pmid": "18055865",
+   "nct": "NCT00130000",
+   "highlights": [
+    "Single-arm, non-randomized",
+    "Benefit independent of baseline hemolysis level or thrombocytopenia",
+    "Extended eculizumab to patients not meeting TRIUMPH's transfusion threshold"
+   ],
+   "takeaway": "Eculizumab's benefit extends to a broad hemolytic PNH population regardless of transfusion burden or platelet count.",
+   "tags": [
+    "eculizumab",
+    "C5 inhibitor",
+    "single-arm"
+   ],
+   "source": "onepager:pnh",
+   "verified": true,
+   "updated": "2026-10-13"
+  },
+  {
+   "id": "ravulizumab-301",
+   "name": "Ravulizumab Study 301",
+   "disease": "pnh",
+   "year": 2019,
+   "phase": "3",
+   "setting": "Complement inhibitor-naive PNH",
+   "descriptor": "ravulizumab every 8 weeks vs eculizumab every 2 weeks, noninferiority",
+   "population": "246 complement inhibitor-naive adults with PNH, LDH >=1.5x ULN and >=1 PNH symptom",
+   "arms": "Ravulizumab weight-based IV load then every 8 weeks vs eculizumab every 2 weeks, 183 days, open-label",
+   "n": 246,
+   "primary_endpoint": "Co-primary: transfusion avoidance and LDH normalization",
+   "results": "Noninferior on all endpoints: transfusion avoidance 73.6% vs 66.1%; LDH normalization 53.6% vs 49.4% (OR 1.19); breakthrough hemolysis 4.0% vs 10.7%",
+   "toxicity": "Similar safety; no meningococcal infections",
+   "reference": "Lee JW et al. Blood 2019;133:530-539",
+   "pmid": "30510080",
+   "nct": "NCT02946463",
+   "highlights": [
+    "q8wk dosing with immediate, complete, sustained C5 inhibition",
+    "Fewer pharmacokinetic breakthrough hemolysis events than eculizumab (not formally superior)",
+    "Made ravulizumab the default C5 inhibitor"
+   ],
+   "takeaway": "Ravulizumab every 8 weeks is noninferior to eculizumab every 2 weeks in complement inhibitor-naive PNH.",
+   "tags": [
+    "ravulizumab",
+    "C5 inhibitor",
+    "noninferiority"
+   ],
+   "source": "onepager:pnh",
+   "verified": true,
+   "updated": "2026-10-13"
+  },
+  {
+   "id": "ravulizumab-302",
+   "name": "Ravulizumab Study 302",
+   "disease": "pnh",
+   "year": 2019,
+   "phase": "3",
+   "setting": "Stable PNH on eculizumab >6 months",
+   "descriptor": "switch to ravulizumab vs continue eculizumab, noninferiority",
+   "population": "195 clinically stable adults on labeled-dose eculizumab (900 mg q2wk) for >6 months",
+   "arms": "Switch to ravulizumab q8wk (n=97) vs continue eculizumab (n=98), open-label",
+   "n": 195,
+   "primary_endpoint": "Percent change in LDH from baseline to day 183",
+   "results": "Noninferior for all endpoints (P<.0006); LDH difference 9.21% (95% CI -0.42 to 18.84; P=.058 for superiority)",
+   "toxicity": "Headache most common (26.8% vs 17.3%); no meningococcal infections, no discontinuations for AEs",
+   "reference": "Kulasekararaj AG et al. Blood 2019;133:540-549",
+   "pmid": "30510079",
+   "nct": "NCT03056040",
+   "highlights": [
+    "Stable eculizumab patients can be switched safely",
+    "Load ravulizumab 2 weeks after the last eculizumab dose",
+    "Superiority on LDH narrowly missed - noninferiority only"
+   ],
+   "takeaway": "Patients stable on eculizumab can switch to every-8-week ravulizumab without loss of disease control.",
+   "tags": [
+    "ravulizumab",
+    "C5 inhibitor",
+    "switch"
+   ],
+   "source": "onepager:pnh",
+   "verified": true,
+   "updated": "2026-10-13"
+  },
+  {
+   "id": "pegasus",
+   "name": "PEGASUS",
+   "disease": "pnh",
+   "year": 2021,
+   "phase": "3",
+   "setting": "PNH with Hb <10.5 g/dL despite eculizumab",
+   "descriptor": "pegcetacoplan (C3 inhibitor) vs continued eculizumab",
+   "population": "80 adults with PNH and hemoglobin <10.5 g/dL on eculizumab",
+   "arms": "4-week run-in of pegcetacoplan + eculizumab, then randomized to SC pegcetacoplan monotherapy (n=41) vs IV eculizumab (n=39)",
+   "n": 80,
+   "primary_endpoint": "Change in hemoglobin from baseline to week 16",
+   "results": "Pegcetacoplan superior: adjusted mean Hb difference 3.84 g/dL (P<0.001). Transfusion-free 85% vs 15%",
+   "toxicity": "Injection-site reactions 37% vs 3%, diarrhea 22% vs 3%; breakthrough hemolysis 10% vs 23%",
+   "reference": "Hillmen P et al. N Engl J Med 2021;384:1028-1037",
+   "pmid": "33730455",
+   "nct": "NCT03500549",
+   "highlights": [
+    "First proximal complement inhibitor - controls both intravascular and extravascular hemolysis",
+    "Switching from eculizumab requires a 4-week overlap",
+    "Monitor for hemolysis >=8 weeks after discontinuation"
+   ],
+   "takeaway": "Proximal C3 blockade with pegcetacoplan is superior to eculizumab for anemia in PNH patients with residual extravascular hemolysis.",
+   "tags": [
+    "pegcetacoplan",
+    "C3 inhibitor",
+    "extravascular hemolysis"
+   ],
+   "source": "onepager:pnh",
+   "verified": true,
+   "updated": "2026-10-13"
+  },
+  {
+   "id": "alpha-danicopan",
+   "name": "ALPHA",
+   "disease": "pnh",
+   "year": 2023,
+   "phase": "3",
+   "setting": "PNH with clinically significant EVH on a C5 inhibitor",
+   "descriptor": "oral factor D inhibitor danicopan added to ravulizumab or eculizumab",
+   "population": "Adults with PNH on ravulizumab/eculizumab >=6 months with Hb <=9.5 g/dL and ARC >=120x10^9/L (73 randomized at interim cutoff)",
+   "arms": "Danicopan 150 mg PO TID (escalable to 200 mg) vs placebo added to C5 inhibitor, randomized 2:1, 12 weeks",
+   "n": 73,
+   "primary_endpoint": "Change in hemoglobin baseline to week 12",
+   "results": "Interim efficacy analysis (n=63; 42 danicopan vs 21 placebo): LSM Hb change at wk 12 +2.94 vs +0.50 g/dL; difference 2.44 g/dL (95% CI 1.69-3.20), P<0.0001",
+   "toxicity": "No new safety signals; grade 3 ALT elevation 4%",
+   "reference": "Lee JW et al. Lancet Haematol 2023;10:e955-e965",
+   "pmid": "38030318",
+   "nct": "NCT04469465",
+   "highlights": [
+    "Add-on only - not monotherapy",
+    "Keeps the C5 inhibitor for IVH control while treating EVH",
+    "FDA approved March 2024 with REMS"
+   ],
+   "takeaway": "Adding danicopan to a C5 inhibitor raises hemoglobin by ~2.4 g/dL in PNH with clinically significant extravascular hemolysis.",
+   "tags": [
+    "danicopan",
+    "factor D inhibitor",
+    "add-on",
+    "extravascular hemolysis"
+   ],
+   "source": "onepager:pnh",
+   "verified": true,
+   "updated": "2026-10-13"
+  },
+  {
+   "id": "commodore-3",
+   "name": "COMMODORE 3",
+   "disease": "pnh",
+   "year": 2023,
+   "phase": "3",
+   "setting": "C5 inhibitor-naive PNH, China",
+   "descriptor": "single-arm crovalimab in transfusion-dependent naive patients",
+   "population": "51 complement inhibitor-naive patients >=12 years at five Chinese centers, LDH >=2x ULN, >=4 transfusions in prior 12 months",
+   "arms": "Crovalimab IV load + 4 SC loading doses, then SC every 4 weeks, weight-tiered (single arm)",
+   "n": 51,
+   "primary_endpoint": "Co-primary: hemolysis control (LDH <=1.5x ULN) weeks 5-25; transfusion avoidance vs pre-study",
+   "results": "Mean hemolysis control 78.7% (95% CI 67.8-86.6); transfusion avoidance 51.0% vs 0% in the 24 weeks before screening (p<.0001)",
+   "toxicity": "No adverse events led to discontinuation",
+   "reference": "Liu H et al. Am J Hematol 2023;98:1407-1414",
+   "pmid": "37421604",
+   "nct": "NCT04654468",
+   "highlights": [
+    "Single-arm, non-randomized",
+    "Supportive evidence for the crovalimab approval",
+    "Every-4-week SC maintenance"
+   ],
+   "takeaway": "Crovalimab controls hemolysis and eliminates transfusion need in half of heavily transfused naive Chinese PNH patients.",
+   "tags": [
+    "crovalimab",
+    "C5 inhibitor",
+    "single-arm"
+   ],
+   "source": "onepager:pnh",
+   "verified": true,
+   "updated": "2026-10-13"
+  },
+  {
+   "id": "prince-pnh",
+   "name": "PRINCE",
+   "disease": "pnh",
+   "year": 2023,
+   "phase": "3",
+   "setting": "Complement inhibitor-naive PNH",
+   "descriptor": "pegcetacoplan vs supportive care in complement inhibitor-naive patients",
+   "population": "53 complement inhibitor-naive adults with PNH (LDH >=1.5x ULN, Hb below normal), receiving supportive care only",
+   "arms": "Pegcetacoplan SC (n=35) vs supportive care (n=18), open-label, 26 weeks",
+   "n": 53,
+   "primary_endpoint": "Co-primary: hemoglobin stabilization and LDH change at week 26",
+   "results": "Hb stabilization 85.7% vs 0% (difference 73.1%, P<.0001); LDH change -1870.5 vs -400.1 U/L (P<.0001)",
+   "toxicity": "Well tolerated; no serious pegcetacoplan-related adverse events",
+   "reference": "Wong RSM et al. Blood Adv 2023;7:2468-2478",
+   "pmid": "36848639",
+   "nct": "NCT04085601",
+   "highlights": [
+    "Comparator was supportive care, not a C5 inhibitor",
+    "Supports first-line pegcetacoplan in naive patients",
+    "Enrolled largely in Asia, Latin America and Eastern Europe"
+   ],
+   "takeaway": "Pegcetacoplan controls hemolysis and stabilizes hemoglobin in complement inhibitor-naive PNH.",
+   "tags": [
+    "pegcetacoplan",
+    "C3 inhibitor",
+    "first-line"
+   ],
+   "source": "onepager:pnh",
+   "verified": true,
+   "updated": "2026-10-13"
+  },
+  {
+   "id": "apply-pnh",
+   "name": "APPLY-PNH",
+   "disease": "pnh",
+   "year": 2024,
+   "phase": "3",
+   "setting": "PNH with Hb <10 g/dL despite anti-C5 therapy",
+   "descriptor": "switch to oral iptacopan (factor B inhibitor) vs continued anti-C5",
+   "population": "97 adults with PNH on stable eculizumab or ravulizumab >=6 months with mean Hb <10 g/dL",
+   "arms": "Iptacopan 200 mg PO BID (n=62) vs continued anti-C5 (n=35), randomized 8:5, 24 weeks",
+   "n": 97,
+   "primary_endpoint": "Hb increase >=2 g/dL without transfusion; Hb >=12 g/dL without transfusion",
+   "results": "Hb rise >=2 g/dL: 51/60 vs 0/35; Hb >=12 g/dL: 42/60 vs 0/35. Transfusion-free 59/62 vs 14/35",
+   "toxicity": "Headache most frequent adverse event",
+   "reference": "Peffault de Latour R et al. N Engl J Med 2024;390:994-1008",
+   "pmid": "38477987",
+   "nct": "NCT04558918",
+   "highlights": [
+    "First oral monotherapy for PNH",
+    "Superior to anti-C5 for hemoglobin in residual anemia",
+    "Adherence-critical: missed doses risk hemolysis; monitor >=2 weeks after stopping"
+   ],
+   "takeaway": "Switching anemic anti-C5-treated PNH patients to oral iptacopan normalizes hemoglobin in most and is superior to staying on anti-C5.",
+   "tags": [
+    "iptacopan",
+    "factor B inhibitor",
+    "switch"
+   ],
+   "source": "onepager:pnh",
+   "verified": true,
+   "updated": "2026-10-13"
+  },
+  {
+   "id": "appoint-pnh",
+   "name": "APPOINT-PNH",
+   "disease": "pnh",
+   "year": 2024,
+   "phase": "3",
+   "setting": "Complement inhibitor-naive PNH",
+   "descriptor": "single-arm oral iptacopan monotherapy in naive patients",
+   "population": "40 complement inhibitor-naive adults with PNH, LDH >1.5x ULN, Hb <10 g/dL",
+   "arms": "Iptacopan 200 mg PO BID, single arm, 24-week core",
+   "n": 40,
+   "primary_endpoint": "Hb increase >=2 g/dL from baseline without transfusion",
+   "results": "31 of 33 evaluable patients achieved Hb rise >=2 g/dL without transfusion; no patient required transfusion; mean LDH fell below 1.5x ULN",
+   "toxicity": "Headache most frequent adverse event",
+   "reference": "Peffault de Latour R et al. N Engl J Med 2024;390:994-1008",
+   "pmid": "38477987",
+   "nct": "NCT04820530",
+   "highlights": [
+    "Single-arm, non-randomized",
+    "Published jointly with APPLY-PNH",
+    "Supports first-line oral therapy"
+   ],
+   "takeaway": "Iptacopan monotherapy controls hemolysis and anemia in complement inhibitor-naive PNH.",
+   "tags": [
+    "iptacopan",
+    "factor B inhibitor",
+    "first-line",
+    "single-arm"
+   ],
+   "source": "onepager:pnh",
+   "verified": true,
+   "updated": "2026-10-13"
+  },
+  {
+   "id": "commodore-2",
+   "name": "COMMODORE 2",
+   "disease": "pnh",
+   "year": 2024,
+   "phase": "3",
+   "setting": "C5 inhibitor-naive PNH",
+   "descriptor": "subcutaneous crovalimab every 4 weeks vs eculizumab, noninferiority",
+   "population": "204 C5 inhibitor-naive patients with PNH and LDH >=2x ULN",
+   "arms": "Crovalimab (IV load, then SC weekly loading, then SC q4wk, weight-tiered) vs eculizumab, randomized 2:1, 24 weeks",
+   "n": 204,
+   "primary_endpoint": "Co-primary: hemolysis control (LDH <=1.5x ULN) and transfusion avoidance",
+   "results": "Noninferior: hemolysis control 79.3% vs 79.0% (OR 1.0, 95% CI 0.6-1.8); transfusion avoidance 65.7% vs 68.1%; BTH 10.4% vs 14.5%; Hb stabilization 63.4% vs 60.9%",
+   "toxicity": "Similar to eculizumab; no meningococcal infections. Switching between C5 inhibitors with different epitopes causes transient immune-complex (type III) reactions (16% in COMMODORE 1)",
+   "reference": "Roth A et al. Am J Hematol 2024;99:1768-1777",
+   "pmid": "38884175",
+   "nct": "NCT04434092",
+   "highlights": [
+    "Low-volume SC self-administration every 4 weeks",
+    "Binds a different C5 epitope - active in the R885H C5 polymorphism",
+    "COMMODORE 3 (China, single-arm, n=51) supportive: hemolysis control 78.7%"
+   ],
+   "takeaway": "Crovalimab given subcutaneously every 4 weeks is noninferior to eculizumab in C5 inhibitor-naive PNH.",
+   "tags": [
+    "crovalimab",
+    "C5 inhibitor",
+    "subcutaneous"
+   ],
+   "source": "onepager:pnh",
+   "verified": true,
+   "updated": "2026-10-13"
   },
   {
    "id": "eortc-22863",
@@ -16333,39 +16720,6 @@
    "source": "onepager:waldenstrom",
    "verified": true,
    "updated": "2026-09-24"
-  },
-  {
-   "id": "midas",
-   "name": "MIDAS (IFM 2020-02)",
-   "disease": "myeloma",
-   "year": 2025,
-   "phase": "3",
-   "setting": "Transplant-eligible newly diagnosed MM",
-   "descriptor": "MRD-guided consolidation after Isa-KRd induction: ASCT vs no ASCT (MRD-neg) and tandem vs single ASCT (MRD-pos)",
-   "population": "Transplant-eligible NDMM after 6 cycles of isatuximab-carfilzomib-lenalidomide-dexamethasone (Isa-KRd) induction; 718 randomized by MRD status",
-   "arms": "MRD-neg at 1e-5 (n=485): ASCT + Isa-KRd x2 vs Isa-KRd x6 (no ASCT). MRD-pos (n=233): tandem ASCT vs single ASCT + Isa-KRd x2",
-   "n": 718,
-   "primary_endpoint": "Premaintenance MRD negativity at 1e-6 (NGS)",
-   "results": "MRD-neg cohort: MRD-neg 1e-6 86% (ASCT) vs 84% (Isa-KRd), adjusted RR 1.02 (95% CI 0.95-1.10), P=0.64. MRD-pos cohort: 32% (tandem) vs 40% (single), RR 0.82 (0.58-1.15), P=0.31. Median follow-up ~17 mo; PFS not yet reported",
-   "toxicity": "No new safety signals; 15% of tandem arm did not get second ASCT",
-   "reference": "Perrot A et al. N Engl J Med 2025;393:425-437",
-   "pmid": "40459097",
-   "nct": "NCT04934475",
-   "highlights": [
-    "Among patients MRD-negative after quadruplet induction, ASCT did not deepen MRD response vs more Isa-KRd",
-    "Tandem ASCT did not help MRD-positive patients",
-    "MRD endpoint with short follow-up: supports ASCT deferral in MRD-negative standard-risk patients, pending PFS"
-   ],
-   "takeaway": "After Isa-KRd induction, MRD-negative patients reached the same premaintenance MRD negativity without ASCT, and tandem ASCT did not help MRD-positive patients.",
-   "tags": [
-    "MRD",
-    "isatuximab",
-    "carfilzomib",
-    "transplant",
-    "Isa-KRd"
-   ],
-   "source": "onepager:myeloma",
-   "verified": true
   }
  ]
 }
