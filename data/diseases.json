@@ -77,6 +77,22 @@
    ]
   },
   {
+   "slug": "aplastic-anemia",
+   "name": "Acquired aplastic anemia",
+   "short": "Aplastic anemia",
+   "group": "benign-heme",
+   "onepager": "Aplastic Anemia.pdf",
+   "aliases": [
+    "aplastic anemia",
+    "aa",
+    "saa",
+    "marrow failure",
+    "bone marrow failure",
+    "atg",
+    "eltrombopag"
+   ]
+  },
+  {
    "slug": "biliary",
    "name": "Biliary tract cancer",
    "short": "Biliary",

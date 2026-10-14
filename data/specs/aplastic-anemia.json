@@ -1,0 +1,436 @@
+{
+ "disease": "aplastic-anemia",
+ "spec_file": "aplastic_anemia.py",
+ "pdf": "Aplastic Anemia.pdf",
+ "title": "Acquired aplastic anemia",
+ "subtitle": "Immune destruction of hematopoietic stem cells &middot; pancytopenia + empty marrow &middot; <b>grade severity, exclude hypoplastic MDS and inherited BMF, HLA-type early; MSD HCT if young, otherwise hATG + cyclosporine + eltrombopag</b>",
+ "source": "Compiled from ASH 2026, BSH 2024 and ASTCT 2024 guidelines &middot; NIH / EBMT data &middot; FDA labels &middot; primary trial reports verified against PubMed, October 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Definition &amp; severity",
+       "headers": [
+        "Grade",
+        "Criteria"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>AA</b>",
+         "<b>Pancytopenia + hypocellular marrow</b> with no abnormal infiltrate, no fibrosis and no MDS-defining dysplasia/cytogenetics. A diagnosis of exclusion"
+        ],
+        [
+         "<b>Severe (SAA)</b> <span class='r'>Camitta</span>",
+         "<b>Cellularity &lt;25%</b> (or 25&ndash;50% with &lt;30% residual hematopoietic cells) <b>+ &ge;2 of:</b> ANC &lt;0.5 &middot; plt &lt;20 &middot; retic &lt;60 &times;10<sup>9</sup>/L"
+        ],
+        [
+         "<b>Very severe</b> <span class='r'>Bacigalupo</span>",
+         "SAA criteria <b>+ ANC &lt;0.2</b> &mdash; highest infection mortality; treat urgently"
+        ],
+        [
+         "<b>Non-severe</b>",
+         "Hypocellular marrow + cytopenias not meeting SAA. Split by <b>transfusion dependence</b>"
+        ]
+       ],
+       "footnote": "Severity, age and donor availability drive every treatment decision."
+      },
+      {
+       "type": "table",
+       "heading": "Causes",
+       "headers": [
+        "Type",
+        "Examples &middot; clues"
+       ],
+       "widths": [
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Idiopathic immune</b>",
+         "Most cases. Cytotoxic T cells (IFN-&gamma;, TNF) destroy HSPCs; responds to IST"
+        ],
+        [
+         "<b>Drugs / toxins</b>",
+         "Chloramphenicol, gold, carbamazepine, felbamate, sulfonamides; <b>benzene</b>. Chemo/radiation aplasia is expected, not AA"
+        ],
+        [
+         "<b>Hepatitis-associated</b>",
+         "AA weeks&ndash;months after a <b>seronegative (non-A&ndash;E) hepatitis</b>, often young men; immune, treat as AA"
+        ],
+        [
+         "<b>Other acquired</b>",
+         "Pregnancy &middot; <b>PNH</b> &middot; <b>LGL leukemia</b> &middot; thymoma &middot; SLE &middot; eosinophilic fasciitis &middot; viruses (EBV, HIV); parvovirus B19 = red cells only"
+        ],
+        [
+         "<b>Fanconi anemia</b>",
+         "Short stature, radial/thumb anomalies, caf&eacute;-au-lait. <b>Chromosome breakage (DEB/MMC)</b>. Do not give standard Cy conditioning"
+        ],
+        [
+         "<b>Telomere biology</b>",
+         "Nail dystrophy, leukoplakia, early graying, <b>pulmonary fibrosis, cirrhosis</b>. <b>Telomere length flow-FISH</b>; TERT/TERC. Poor IST response"
+        ],
+        [
+         "<b>GATA2</b>",
+         "Monocytopenia, B/NK lymphopenia, <b>MAC/HPV infections</b>, lymphedema; hypocellular MDS risk"
+        ],
+        [
+         "<b>SDS &middot; DBA</b>",
+         "SDS: neutropenia + pancreatic insufficiency (<b>SBDS</b>). DBA: <b>red-cell aplasia</b>, macrocytosis, high eADA"
+        ]
+       ],
+       "footnote": "Suspect inherited BMF in the young, with family history, physical stigmata or IST failure &mdash; and <b>screen a sibling donor for the same disorder</b>."
+      }
+     ]
+    },
+    {
+     "width": "35%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment pathway &mdash; severe / very severe AA",
+       "chains": [
+        {
+         "header": "Matched sibling donor, age &le;40",
+         "color": "teal",
+         "boxes": [
+          [
+           "MSD bone marrow HCT up front",
+           [
+            "<b>Marrow graft</b> (PBSC worse: more cGVHD, lower OS)",
+            "Cy + ATG conditioning; add fludarabine if older",
+            "ASH 2026 / BSH: HCT over IST to age 40;",
+            "ASTCT: no fixed cutoff for fit older adults"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "No MSD, age &gt;40, or not fit for HCT",
+         "color": "blue",
+         "boxes": [
+          [
+           "1. hATG + cyclosporine + eltrombopag",
+           [
+            "<b>hATG 40 mg/kg/d &times;4</b> + CsA from day 1",
+            "+ <b>eltrombopag 150 mg/d &times;6 mo</b> (RACE, NIH)",
+            "rATG inferior up front (Scheinberg 2011)"
+           ]
+          ],
+          [
+           "2. Reassess counts at 3 and 6 months",
+           [
+            "responses are slow &mdash; do not judge before 3 mo",
+            "responder: CsA continued, then slow taper"
+           ]
+          ],
+          [
+           "Up-front MUD HCT instead",
+           [
+            "young + severe infection + MUD readily available",
+            "(BSH); age &lt;40: MUD or IST both acceptable (ASH)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Refractory (no response by 3&ndash;6 mo) or relapse",
+         "color": "coral",
+         "boxes": [
+          [
+           "Second line by 6 mo after ATG",
+           [
+            "<b>&lt;40 y: HCT (MUD or haplo-PTCy)</b> over 2nd ATG",
+            "40&ndash;60 y: HCT favored &middot; &gt;60 y: HCT or 2nd ATG",
+            "relapse: CsA &plusmn; EPAG; HCT or 2nd ATG (&gt;60: 2nd ATG)",
+            "no HCT: eltrombopag alone (44%, Olnes 2012)"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Non-severe AA",
+         "color": "gray",
+         "boxes": [
+          [
+           "By transfusion need",
+           [
+            "not transfusion-dependent: observe, CBC q1&ndash;3 mo",
+            "transfusion-dependent or worsening: CsA &plusmn;",
+            "eltrombopag, or treat as SAA (hATG-based IST)"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pearls",
+       "items": [
+        "<b>HLA-type siblings in week 1</b> &mdash; donor availability is the first branch point",
+        "<b>Hypocellular marrow in the elderly is normal</b>; read cellularity for age",
+        "<b>Never start ATG during active uncontrolled infection</b> if avoidable; treat infection first",
+        "<b>Short telomeres or a germline variant change management</b>: IST works poorly, Fanconi needs reduced-intensity conditioning"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "<b>CBC + diff, retic, smear</b> &mdash; macrocytosis common; <b>no blasts, no dysplasia</b>. HbF (raised in inherited BMF)",
+        "<b>Exclude mimics:</b> B12, folate, copper; LFTs; <b>HBV, HCV, HIV, EBV, CMV, parvovirus B19 PCR</b>; ANA/dsDNA; T-cell flow / TCR clonality (LGL); CT chest if thymoma suspected",
+        "<b>High-sensitivity PNH flow</b> (granulocyte FLAER, 0.01%) at diagnosis",
+        "<b>Marrow aspirate + trephine</b>: cellularity, dysplasia, blasts, reticulin; <b>karyotype</b> (&plusmn; FISH 5/7) + <b>myeloid NGS panel</b>",
+        "<b>Inherited screen</b>: DEB/MMC breakage, telomere length flow-FISH, germline panel when suspected",
+        "<b>HLA-type patient + full siblings at diagnosis</b>; start an unrelated-donor search early. Ferritin, creatinine, CMV serostatus, pregnancy test"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Clones &middot; AA vs hypoplastic MDS",
+       "headers": [
+        "Finding",
+        "Meaning"
+       ],
+       "widths": [
+        "32%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>PIGA, BCOR/BCORL1</b>",
+         "<b>Better IST response + survival</b> <span class='r'>Yoshizato NEJM 2015</span>"
+        ],
+        [
+         "<b>DNMT3A, ASXL1</b>",
+         "Clones grow over time; <b>worse outcome</b>, higher MDS/AML risk"
+        ],
+        [
+         "<b>RUNX1, TP53, &minus;7/7q&minus;</b>",
+         "Favor hypoplastic MDS &rarr; HCT; &minus;7 after IST = high-risk evolution"
+        ],
+        [
+         "<b>Somatic CH</b>",
+         "Myeloid-gene mutations in ~1/3, CH in 47%, low VAF &mdash; <b>not MDS by itself</b>"
+        ],
+        [
+         "<b>Morphology</b>",
+         "Hypo-MDS: dysplastic megakaryocytes, blasts, CD34+ &uarr;, fibrosis. AA: fatty marrow, lymphoid aggregates, mild dyserythropoiesis only"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Supportive care",
+       "items": [
+        "<b>Products leukoreduced; irradiated</b> around ATG and for HCT candidates. <b>No family-donor transfusions before HCT</b> &mdash; sensitizes to donor antigens, raises graft rejection",
+        "<b>Prophylactic platelets at &lt;10</b> (higher if febrile/bleeding); restrictive RBC thresholds",
+        "<b>ANC &lt;0.5: mold-active azole + antibacterial prophylaxis</b> <span class='r'>ASH 2026</span>; HSV/VZV prophylaxis with ATG. <b>Azoles raise CsA levels</b>",
+        "<b>No routine G-CSF</b> &mdash; no survival benefit (Tichelli 2011); short-term use only in severe infection",
+        "<b>Iron overload: chelate</b> (deferasirox or deferoxamine); <b>avoid deferiprone</b> (agranulocytosis). Phlebotomy after recovery"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; mechanism, agents, response, relapse, transplant, pregnancy, trials",
+   "columns": [
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Pathophysiology",
+       "widths": [
+        "100%"
+       ],
+       "rows": [
+        [
+         "<img style='width:100%;display:block' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzIwIj48ZGVmcz48bWFya2VyIGlkPSJhIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjgiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI1IiBtYXJrZXJIZWlnaHQ9IjUiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTIgMUw4IDVMMiA5IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMS41Ii8+PC9tYXJrZXI+PG1hcmtlciBpZD0iYyIgdmlld0JveD0iMCAwIDEwIDEwIiByZWZYPSI4IiByZWZZPSI1IiBtYXJrZXJXaWR0aD0iNSIgbWFya2VySGVpZ2h0PSI1IiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0yIDFMOCA1TDIgOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuNSIvPjwvbWFya2VyPjxzdHlsZT50ZXh0e2ZvbnQtZmFtaWx5OkhlbHZldGljYSxBcmlhbCxzYW5zLXNlcmlmO3RleHQtYW5jaG9yOm1pZGRsZX0uYntmb250LXNpemU6Ny42cHg7Zm9udC13ZWlnaHQ6Ym9sZH0uc3tmb250LXNpemU6Ni42cHh9PC9zdHlsZT48L2RlZnM+PHJlY3QgeD0iODUiIHk9IjIiIHdpZHRoPSIxMzAiIGhlaWdodD0iMjYiIHJ4PSIzIiBmaWxsPSIjRjFFRkU4IiBzdHJva2U9IiM4ODg3ODAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTUwLjAiIHk9IjEzLjAiIGNsYXNzPSJiIiBmaWxsPSIjNDQ0NDQxIj5UcmlnZ2VyPC90ZXh0Pjx0ZXh0IHg9IjE1MC4wIiB5PSIyMi41IiBjbGFzcz0icyIgZmlsbD0iIzQ0NDQ0MSI+ZHJ1ZywgdmlydXMgLyBoZXBhdGl0aXMsIHVua25vd248L3RleHQ+PHBhdGggZD0iTTE1MCAyOCBMMTUwIDM2IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iODUiIHk9IjM3IiB3aWR0aD0iMTMwIiBoZWlnaHQ9IjI0IiByeD0iMyIgZmlsbD0iI0YxRUZFOCIgc3Ryb2tlPSIjODg4NzgwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjE1MC4wIiB5PSI0Ny4wIiBjbGFzcz0iYiIgZmlsbD0iIzQ0NDQ0MSI+QW50aWdlbi1wcmVzZW50aW5nIGNlbGw8L3RleHQ+PHRleHQgeD0iMTUwLjAiIHk9IjU2LjUiIGNsYXNzPSJzIiBmaWxsPSIjNDQ0NDQxIj5wcmVzZW50cyBhbnRpZ2VuPC90ZXh0PjxwYXRoIGQ9Ik0xNTAgNjEgTDE1MCA3MSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxyZWN0IHg9Ijg1IiB5PSI3MiIgd2lkdGg9IjEzMCIgaGVpZ2h0PSIyNiIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNTAuMCIgeT0iODMuMCIgY2xhc3M9ImIiIGZpbGw9IiM0NDQ0NDEiPkN5dG90b3hpYyBDRDgrIFQgY2VsbHM8L3RleHQ+PHRleHQgeD0iMTUwLjAiIHk9IjkyLjUiIGNsYXNzPSJzIiBmaWxsPSIjNDQ0NDQxIj5vbGlnb2Nsb25hbCwgVGgxLXNrZXdlZDwvdGV4dD48bGluZSB4MT0iNjkiIHkxPSI4NSIgeDI9Ijg0IiB5Mj0iODUiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjIiLz48bGluZSB4MT0iODQiIHkxPSI4MCIgeDI9Ijg0IiB5Mj0iOTAiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSI2MiIgY3k9Ijg1IiByPSI2LjUiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSI2MiIgeT0iODgiIGNsYXNzPSJiIiBmaWxsPSIjNzEyQjEzIj5BPC90ZXh0Pjx0ZXh0IHg9IjYyIiB5PSIxMDAiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6bWlkZGxlIiBmaWxsPSIjNzEyQjEzIj5kZXBsZXRlczwvdGV4dD48bGluZSB4MT0iMjMxIiB5MT0iODUiIHgyPSIyMTYiIHkyPSI4NSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuMiIvPjxsaW5lIHgxPSIyMTYiIHkxPSI4MCIgeDI9IjIxNiIgeTI9IjkwIiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS42Ii8+PGNpcmNsZSBjeD0iMjM4IiBjeT0iODUiIHI9IjYuNSIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjIzOCIgeT0iODgiIGNsYXNzPSJiIiBmaWxsPSIjNzEyQjEzIj5DPC90ZXh0Pjx0ZXh0IHg9IjIzOCIgeT0iMTAwIiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOm1pZGRsZSIgZmlsbD0iIzcxMkIxMyI+4oaTIElMLTI8L3RleHQ+PHBhdGggZD0iTTE1MCA5OCBMMTUwIDEwOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxyZWN0IHg9Ijg1IiB5PSIxMDkiIHdpZHRoPSIxMzAiIGhlaWdodD0iMjYiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTUwLjAiIHk9IjEyMC4wIiBjbGFzcz0iYiIgZmlsbD0iIzA4NTA0MSI+SUZOLc6zIMK3IFRORi3OsTwvdGV4dD48dGV4dCB4PSIxNTAuMCIgeT0iMTI5LjUiIGNsYXNzPSJzIiBmaWxsPSIjMDg1MDQxIj51cHJlZ3VsYXRlIEZhcyBvbiBIU0NzPC90ZXh0PjxwYXRoIGQ9Ik0xNTAgMTM1IEwxNTAgMTQ1IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PGVsbGlwc2UgY3g9IjE1MCIgY3k9IjE2MiIgcng9IjQ2IiByeT0iMTYiIGZpbGw9IiNGQ0VCRUIiIHN0cm9rZT0iI0EzMkQyRCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNTAiIHk9IjE2MSIgY2xhc3M9ImIiIGZpbGw9IiM3OTFGMUYiPkNEMzQrIEhTUENzPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMTY5LjUiIGNsYXNzPSJzIiBmaWxsPSIjNzkxRjFGIj5hcG9wdG9zaXMgdmlhIEZhczwvdGV4dD48cGF0aCBkPSJNMjUzIDE2MiBMMTk5IDE2MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuMiIgbWFya2VyLWVuZD0idXJsKCNjKSIvPjxjaXJjbGUgY3g9IjI2MCIgY3k9IjE2MiIgcj0iNi41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjYwIiB5PSIxNjUiIGNsYXNzPSJiIiBmaWxsPSIjNzEyQjEzIj5FPC90ZXh0Pjx0ZXh0IHg9IjIyNiIgeT0iMTU3IiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOm1pZGRsZSIgZmlsbD0iIzcxMkIxMyI+c3RpbXVsYXRlczwvdGV4dD48dGV4dCB4PSIyIiB5PSIxNDEiIGNsYXNzPSJiIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiMwODUwNDEiPkltbXVuZSBlc2NhcGU8L3RleHQ+PHRleHQgeD0iMiIgeT0iMTUwIiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjMEY2RTU2Ij5QSUdBIOKGkiBHUEniiJIgKFBOSCBjbG9uZSk8L3RleHQ+PHRleHQgeD0iMiIgeT0iMTU4LjUiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiMwRjZFNTYiPkhMQS1JIGxvc3MgKDZwIENOLUxPSCk8L3RleHQ+PHRleHQgeD0iMiIgeT0iMTcyIiBjbGFzcz0iYiIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjMDg1MDQxIj5DbG9uYWwgbWFya2VyczwvdGV4dD48dGV4dCB4PSIyIiB5PSIxODEiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiMwRjZFNTYiPkJDT1IvQkNPUkwxOiBmYXZvcmFibGU8L3RleHQ+PHRleHQgeD0iMiIgeT0iMTg5LjUiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiMwRjZFNTYiPkFTWEwxLCBETk1UM0EsIOKIkjc6PC90ZXh0Pjx0ZXh0IHg9IjIiIHk9IjE5OCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzBGNkU1NiI+TURTL0FNTCByaXNrPC90ZXh0PjxwYXRoIGQ9Ik0xNTAgMTc4IEwxNTAgMTg5IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iMTAyIiB5PSIxOTAiIHdpZHRoPSI5NiIgaGVpZ2h0PSIyOCIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNTAuMCIgeT0iMjAyLjAiIGNsYXNzPSJiIiBmaWxsPSIjNDQ0NDQxIj5IeXBvY2VsbHVsYXIgbWFycm93PC90ZXh0Pjx0ZXh0IHg9IjE1MC4wIiB5PSIyMTEuNSIgY2xhc3M9InMiIGZpbGw9IiM0NDQ0NDEiPmZhdCByZXBsYWNlcyBoZW1hdG9wb2llc2lzPC90ZXh0PjxyZWN0IHg9IjIyNiIgeT0iMTkyIiB3aWR0aD0iNjIiIGhlaWdodD0iMjQiIHJ4PSIzIiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjU3LjAiIHk9IjIwMi4wIiBjbGFzcz0iYiIgZmlsbD0iIzcxMkIxMyI+QWxsbyBIQ1Q8L3RleHQ+PHRleHQgeD0iMjU3LjAiIHk9IjIxMS41IiBjbGFzcz0icyIgZmlsbD0iIzcxMkIxMyI+cmVwbGFjZXMgbWFycm93PC90ZXh0PjxwYXRoIGQ9Ik0yMjYgMjA0IEwyMDAgMjA0IiBmaWxsPSJub25lIiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS4yIiBtYXJrZXItZW5kPSJ1cmwoI2MpIi8+PHBhdGggZD0iTTE1MCAyMTggTDE1MCAyMzUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48cGF0aCBkPSJNMTUwIDIyNyBMNTYgMjI3IEw1NiAyMzUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48cGF0aCBkPSJNMTUwIDIyNyBMMjQ0IDIyNyBMMjQ0IDIzNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjx0ZXh0IHg9IjIiIHk9IjIyNCIgY2xhc3M9ImIiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzc5MUYxRiI+UGFuY3l0b3BlbmlhPC90ZXh0PjxyZWN0IHg9IjE2IiB5PSIyMzYiIHdpZHRoPSI4MCIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNGQ0VCRUIiIHN0cm9rZT0iI0EzMkQyRCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSI1Ni4wIiB5PSIyNDYuMCIgY2xhc3M9ImIiIGZpbGw9IiM3OTFGMUYiPkFuZW1pYTwvdGV4dD48dGV4dCB4PSI1Ni4wIiB5PSIyNTUuNSIgY2xhc3M9InMiIGZpbGw9IiM3OTFGMUYiPmZhdGlndWUsIHRyYW5zZnVzaW9uczwvdGV4dD48cmVjdCB4PSIxMTAiIHk9IjIzNiIgd2lkdGg9IjgwIiBoZWlnaHQ9IjI0IiByeD0iMyIgZmlsbD0iI0ZDRUJFQiIgc3Ryb2tlPSIjQTMyRDJEIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjE1MC4wIiB5PSIyNDYuMCIgY2xhc3M9ImIiIGZpbGw9IiM3OTFGMUYiPk5ldXRyb3BlbmlhPC90ZXh0Pjx0ZXh0IHg9IjE1MC4wIiB5PSIyNTUuNSIgY2xhc3M9InMiIGZpbGw9IiM3OTFGMUYiPmluZmVjdGlvbnM8L3RleHQ+PHJlY3QgeD0iMjA0IiB5PSIyMzYiIHdpZHRoPSI4MCIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNGQ0VCRUIiIHN0cm9rZT0iI0EzMkQyRCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyNDQuMCIgeT0iMjQ2LjAiIGNsYXNzPSJiIiBmaWxsPSIjNzkxRjFGIj5UaHJvbWJvY3l0b3BlbmlhPC90ZXh0Pjx0ZXh0IHg9IjI0NC4wIiB5PSIyNTUuNSIgY2xhc3M9InMiIGZpbGw9IiM3OTFGMUYiPmJsZWVkaW5nPC90ZXh0PjxsaW5lIHgxPSIyIiB5MT0iMjY3IiB4Mj0iMjk4IiB5Mj0iMjY3IiBzdHJva2U9IiNjY2MiIHN0cm9rZS13aWR0aD0iMC41Ii8+PGNpcmNsZSBjeD0iOCIgY3k9IjI3NyIgcj0iNS41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iOCIgeT0iMjc5LjYiIGNsYXNzPSJzIiBmaWxsPSIjNzEyQjEzIj5BPC90ZXh0Pjx0ZXh0IHg9IjE3IiB5PSIyNzkuNiIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+aG9yc2UgQVRHOiBkZXBsZXRlcyBUIGNlbGxzPC90ZXh0PjxjaXJjbGUgY3g9IjE1OCIgY3k9IjI3NyIgcj0iNS41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTU4IiB5PSIyNzkuNiIgY2xhc3M9InMiIGZpbGw9IiM3MTJCMTMiPkM8L3RleHQ+PHRleHQgeD0iMTY3IiB5PSIyNzkuNiIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+Y3ljbG9zcG9yaW5lOiBjYWxjaW5ldXJpbiBpbmhpYml0b3I8L3RleHQ+PGNpcmNsZSBjeD0iOCIgY3k9IjI5MCIgcj0iNS41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iOCIgeT0iMjkyLjYiIGNsYXNzPSJzIiBmaWxsPSIjNzEyQjEzIj5FPC90ZXh0Pjx0ZXh0IHg9IjE3IiB5PSIyOTIuNiIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+ZWx0cm9tYm9wYWc6IFRQTy1yZWNlcHRvciAoTVBMKSBhZ29uaXN0PC90ZXh0PjxyZWN0IHg9IjE1MiIgeT0iMjg0LjUiIHdpZHRoPSIyMCIgaGVpZ2h0PSIxMSIgcng9IjIiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNjIiIHk9IjI5Mi42IiBjbGFzcz0icyIgZmlsbD0iIzcxMkIxMyI+SENUPC90ZXh0Pjx0ZXh0IHg9IjE3NiIgeT0iMjkyLjYiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPmFsbG9nZW5laWMgSENUOiBuZXcgZG9ub3IgbWFycm93PC90ZXh0Pjx0ZXh0IHg9IjIiIHk9IjMwNiIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+SVNUIChob3JzZSBBVEcgKyBjeWNsb3Nwb3JpbmUpIHJlbW92ZXMgdGhlIFQtY2VsbCBhdHRhY2s7IGVsdHJvbWJvcGFnIGV4cGFuZHMgc3Vydml2aW5nIEhTQ3MuPC90ZXh0Pjx0ZXh0IHg9IjIiIHk9IjMxNSIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+U21hbGwgUE5IIGNsb25lcyBtYXJrIGltbXVuZSBBQTsgQVNYTDEvRE5NVDNBL+KIkjcgY2xvbmVzIGZsYWcgbGF0ZXIgTURTL0FNTC48L3RleHQ+PC9zdmc+'>"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Response &amp; timing &mdash; NIH criteria",
+       "headers": [
+        "Response",
+        "Definition"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Complete</b>",
+         "<b>ANC &ge;1.0, plt &ge;100, Hb &ge;10</b> (all three)"
+        ],
+        [
+         "<b>Partial</b>",
+         "<b>No longer meets SAA criteria</b>; usually transfusion-independent"
+        ],
+        [
+         "<b>None</b>",
+         "Still meets SAA criteria"
+        ]
+       ],
+       "footnote": "Assess at <b>3 and 6 months</b>. Median time to first response <b>3.0 mo with eltrombopag vs 8.8 mo without</b> (RACE). Start second-line therapy <b>no later than 6 mo after ATG</b> (ASH 2026)."
+      },
+      {
+       "type": "bullets",
+       "heading": "Relapse &amp; clonal evolution",
+       "items": [
+        "<b>Relapse 39% at 4 yr</b> in responders on CsA maintenance &mdash; clustered after the 6-mo CsA cut / eltrombopag stop and after CsA stops at 2 yr; <b>~2/3 respond to CsA &plusmn; eltrombopag again</b> <span class='r'>Patel Blood 2022, n=178</span>",
+        "<b>Clonal evolution 15% at 4 yr</b>; high-risk (myeloid neoplasm or chr 7) <b>5.7%</b>, with worse OS &mdash; not higher than IST alone, but earlier",
+        "<b>New cytopenia or falling counts &rarr; repeat marrow + karyotype</b>; &minus;7 or MDS/AML &rarr; HCT",
+        "<b>PNH clones:</b> small clones are common in AA and predict IST response; they can expand after IST into hemolytic PNH &mdash; <b>re-check flow at least yearly</b>; complement inhibition only for clinically significant hemolysis"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "40%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Agents &mdash; dosing",
+       "headers": [
+        "Agent",
+        "Dosing",
+        "Notes"
+       ],
+       "widths": [
+        "15%",
+        "50%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Horse ATG</b> <span class='r'>Atgam</span>",
+         "<b>40 mg/kg/d IV &times;4 days</b> over ~4 h (NIH; label: 10&ndash;20 mg/kg/d &times;8&ndash;14 d). Premed acetaminophen + antihistamine; <b>prednisone 1 mg/kg/d &times;10 d, taper over 7&ndash;14 d</b>",
+         "Infusion reactions; <b>serum sickness</b> (fever, rash, arthralgia) ~day 7&ndash;14. Platelets before each dose; inpatient"
+        ],
+        [
+         "<b>Rabbit ATG</b> <span class='r'>Thymoglobulin</span>",
+         "Second IST course or HCT conditioning",
+         "Inferior to hATG up front"
+        ],
+        [
+         "<b>Cyclosporine</b>",
+         "<b>3 mg/kg PO q12h</b> (6 mg/kg/d) from day 1 &rarr; <b>trough 200&ndash;400 &micro;g/L</b>. Responders: continue, then taper slowly (NIH: 2 mg/kg/d to 24 mo)",
+         "Nephrotoxicity, HTN, Mg wasting, gingival hyperplasia, PRES. <b>Azole interactions</b>"
+        ],
+        [
+         "<b>Eltrombopag</b> <span class='r'>Promacta</span>",
+         "<b>First-line: 150 mg daily &times;6 mo</b> with IST (&ge;12 y; label &ge;2 y, weight/age-based); <b>75 mg if East/Southeast Asian ancestry</b> or hepatic impairment. <b>Refractory: 50 mg &rarr; max 150 mg</b>; stop if no response by 16 wk",
+         "<b>Take &ge;2 h before or 4 h after cations</b> (antacids, calcium, iron, dairy). LFTs; cataract exam; &minus;7 in 4 (D1&ndash;M6 cohort), 7/153 across cohorts. FDA: refractory 2014, first-line 2018"
+        ],
+        [
+         "<b>Romiplostim</b>",
+         "Japan-approved (refractory AA 2019, all AA 2023); <b>not FDA-approved for AA</b>",
+         "Asian phase 2/3 data only"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Allogeneic HCT",
+       "items": [
+        "<b>MSD vs URD</b> (EBMT, n=1448): URD survival not significantly worse in multivariate analysis, but <b>more acute (25% vs 13%) and chronic GVHD (26% vs 14%)</b>. Worst predictor: <b>PBSC graft</b>; also &ge;180 d from diagnosis, age &ge;20, no ATG <span class='r'>Bacigalupo 2015</span>",
+        "<b>Marrow over PBSC</b>: age &lt;20 MSD, 5-yr OS <b>85% vs 73%</b> <span class='r'>Schrezenmeier Blood 2007</span>",
+        "<b>Haplo with PTCy up front</b> (Hopkins phase 2, n=27): <b>3-yr OS 92%</b>; aGVHD II&ndash;IV 7%, cGVHD 4%; with 400 cGy TBI <b>20/20 alive</b> <span class='r'>DeZern Blood 2023</span>",
+        "<b>Guidelines differ:</b> ASTCT 2024 favors MUD/haplo over IST when no MSD; ASH 2026 still favors <b>IST over haplo up front at any age</b>. Conditioning: rATG, fludarabine for MUD/haplo"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "27%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "headers": [
+        "Trial",
+        "Result &rarr; practice"
+       ],
+       "widths": [
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>hATG vs rATG</b> <span class='r'>NEJM 2011</span>",
+         "Randomized, n=120: 6-mo response <b>68% vs 37%</b>; 3-yr OS 96% vs 76%. <b>Horse ATG is standard</b>"
+        ],
+        [
+         "<b>NIH IST + EPAG</b> <span class='r'>NEJM 2017</span>",
+         "Phase 1&ndash;2, n=92: eltrombopag day 1&ndash;6 mo cohort <b>CR 58%, ORR 94%</b> vs historical CR 10%, ORR 66%"
+        ],
+        [
+         "<b>RACE</b> <span class='r'>NEJM 2022</span>",
+         "Phase 3, n=197, hATG + CsA &plusmn; EPAG: <b>CR at 3 mo 22% vs 10%</b> (OR 3.2); ORR 6 mo 68% vs 41%; no extra toxicity"
+        ],
+        [
+         "<b>Refractory EPAG</b> <span class='r'>NEJM 2012</span>",
+         "Single-arm, n=25: <b>44% response</b> at 12 wk, multilineage"
+        ],
+        [
+         "<b>EBMT G-CSF</b> <span class='r'>Blood 2011</span>",
+         "Randomized, n=192: fewer infections, <b>no OS/EFS benefit</b> &mdash; no routine G-CSF"
+        ],
+        [
+         "<b>Hopkins haplo</b> <span class='r'>Blood 2023</span>",
+         "Up-front haplo-PTCy, n=27: 3-yr OS 92%, minimal GVHD"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Pregnancy",
+       "items": [
+        "AA can present or relapse in pregnancy; after IST, <b>19% of 36 pregnancies relapsed</b>, 34 live births <span class='r'>Tichelli 2002</span>",
+        "<b>Supportive care</b> (transfusion) is the mainstay; <b>CsA can be continued</b>; avoid ATG and eltrombopag",
+        "Low platelets and a PNH clone predict complications &mdash; consider LMWH if a PNH clone is present"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Definition &amp; severity",
+  "Causes",
+  "Treatment pathway &mdash; severe / very severe AA",
+  "Pearls",
+  "Workup",
+  "Clones &middot; AA vs hypoplastic MDS",
+  "Supportive care",
+  "Pathophysiology",
+  "Response &amp; timing &mdash; NIH criteria",
+  "Relapse &amp; clonal evolution",
+  "Agents &mdash; dosing",
+  "Allogeneic HCT",
+  "Key trials",
+  "Pregnancy"
+ ],
+ "text": "Acquired aplastic anemia Immune destruction of hematopoietic stem cells · pancytopenia + empty marrow · grade severity, exclude hypoplastic MDS and inherited BMF, HLA-type early; MSD HCT if young, otherwise hATG + cyclosporine + eltrombopag Compiled from ASH 2026, BSH 2024 and ASTCT 2024 guidelines · NIH / EBMT data · FDA labels · primary trial reports verified against PubMed, October 2026. Definition & severity Grade Criteria AA Pancytopenia + hypocellular marrow with no abnormal infiltrate, no fibrosis and no MDS-defining dysplasia/cytogenetics. A diagnosis of exclusion Severe (SAA) Camitta Cellularity <25% (or 25–50% with <30% residual hematopoietic cells) + ≥2 of: ANC <0.5 · plt <20 · retic <60 ×10 9 /L Very severe Bacigalupo SAA criteria + ANC <0.2 — highest infection mortality; treat urgently Non-severe Hypocellular marrow + cytopenias not meeting SAA. Split by transfusion dependence Severity, age and donor availability drive every treatment decision. Causes Type Examples · clues Idiopathic immune Most cases. Cytotoxic T cells (IFN-&gamma;, TNF) destroy HSPCs; responds to IST Drugs / toxins Chloramphenicol, gold, carbamazepine, felbamate, sulfonamides; benzene . Chemo/radiation aplasia is expected, not AA Hepatitis-associated AA weeks–months after a seronegative (non-A–E) hepatitis , often young men; immune, treat as AA Other acquired Pregnancy · PNH · LGL leukemia · thymoma · SLE · eosinophilic fasciitis · viruses (EBV, HIV); parvovirus B19 = red cells only Fanconi anemia Short stature, radial/thumb anomalies, caf&eacute;-au-lait. Chromosome breakage (DEB/MMC) . Do not give standard Cy conditioning Telomere biology Nail dystrophy, leukoplakia, early graying, pulmonary fibrosis, cirrhosis . Telomere length flow-FISH ; TERT/TERC. Poor IST response GATA2 Monocytopenia, B/NK lymphopenia, MAC/HPV infections , lymphedema; hypocellular MDS risk SDS · DBA SDS: neutropenia + pancreatic insufficiency ( SBDS ). DBA: red-cell aplasia , macrocytosis, high eADA Suspect inherited BMF in the young, with family history, physical stigmata or IST failure — and screen a sibling donor for the same disorder . Treatment pathway — severe / very severe AA Matched sibling donor, age ≤40 MSD bone marrow HCT up front Marrow graft (PBSC worse: more cGVHD, lower OS) Cy + ATG conditioning; add fludarabine if older ASH 2026 / BSH: HCT over IST to age 40; ASTCT: no fixed cutoff for fit older adults No MSD, age >40, or not fit for HCT 1. hATG + cyclosporine + eltrombopag hATG 40 mg/kg/d ×4 + CsA from day 1 + eltrombopag 150 mg/d ×6 mo (RACE, NIH) rATG inferior up front (Scheinberg 2011) 2. Reassess counts at 3 and 6 months responses are slow — do not judge before 3 mo responder: CsA continued, then slow taper Up-front MUD HCT instead young + severe infection + MUD readily available (BSH); age <40: MUD or IST both acceptable (ASH) Refractory (no response by 3–6 mo) or relapse Second line by 6 mo after ATG <40 y: HCT (MUD or haplo-PTCy) over 2nd ATG 40–60 y: HCT favored · >60 y: HCT or 2nd ATG relapse: CsA ± EPAG; HCT or 2nd ATG (>60: 2nd ATG) no HCT: eltrombopag alone (44%, Olnes 2012) Non-severe AA By transfusion need not transfusion-dependent: observe, CBC q1–3 mo transfusion-dependent or worsening: CsA ± eltrombopag, or treat as SAA (hATG-based IST) Pearls HLA-type siblings in week 1 — donor availability is the first branch point Hypocellular marrow in the elderly is normal ; read cellularity for age Never start ATG during active uncontrolled infection if avoidable; treat infection first Short telomeres or a germline variant change management : IST works poorly, Fanconi needs reduced-intensity conditioning Workup CBC + diff, retic, smear — macrocytosis common; no blasts, no dysplasia . HbF (raised in inherited BMF) Exclude mimics: B12, folate, copper; LFTs; HBV, HCV, HIV, EBV, CMV, parvovirus B19 PCR ; ANA/dsDNA; T-cell flow / TCR clonality (LGL); CT chest if thymoma suspected High-sensitivity PNH flow (granulocyte FLAER, 0.01%) at diagnosis Marrow aspirate + trephine : cellularity, dysplasia, blasts, reticulin; karyotype (± FISH 5/7) + myeloid NGS panel Inherited screen : DEB/MMC breakage, telomere length flow-FISH, germline panel when suspected HLA-type patient + full siblings at diagnosis ; start an unrelated-donor search early. Ferritin, creatinine, CMV serostatus, pregnancy test Clones · AA vs hypoplastic MDS Finding Meaning PIGA, BCOR/BCORL1 Better IST response + survival Yoshizato NEJM 2015 DNMT3A, ASXL1 Clones grow over time; worse outcome , higher MDS/AML risk RUNX1, TP53, −7/7q− Favor hypoplastic MDS → HCT; −7 after IST = high-risk evolution Somatic CH Myeloid-gene mutations in ~1/3, CH in 47%, low VAF — not MDS by itself Morphology Hypo-MDS: dysplastic megakaryocytes, blasts, CD34+ &uarr;, fibrosis. AA: fatty marrow, lymphoid aggregates, mild dyserythropoiesis only Supportive care Products leukoreduced; irradiated around ATG and for HCT candidates. No family-donor transfusions before HCT — sensitizes to donor antigens, raises graft rejection Prophylactic platelets at <10 (higher if febrile/bleeding); restrictive RBC thresholds ANC <0.5: mold-active azole + antibacterial prophylaxis ASH 2026 ; HSV/VZV prophylaxis with ATG. Azoles raise CsA levels No routine G-CSF — no survival benefit (Tichelli 2011); short-term use only in severe infection Iron overload: chelate (deferasirox or deferoxamine); avoid deferiprone (agranulocytosis). Phlebotomy after recovery Pathophysiology Response & timing — NIH criteria Response Definition Complete ANC ≥1.0, plt ≥100, Hb ≥10 (all three) Partial No longer meets SAA criteria ; usually transfusion-independent None Still meets SAA criteria Assess at 3 and 6 months . Median time to first response 3.0 mo with eltrombopag vs 8.8 mo without (RACE). Start second-line therapy no later than 6 mo after ATG (ASH 2026). Relapse & clonal evolution Relapse 39% at 4 yr in responders on CsA maintenance — clustered after the 6-mo CsA cut / eltrombopag stop and after CsA stops at 2 yr; ~2/3 respond to CsA ± eltrombopag again Patel Blood 2022, n=178 Clonal evolution 15% at 4 yr ; high-risk (myeloid neoplasm or chr 7) 5.7% , with worse OS — not higher than IST alone, but earlier New cytopenia or falling counts → repeat marrow + karyotype ; −7 or MDS/AML → HCT PNH clones: small clones are common in AA and predict IST response; they can expand after IST into hemolytic PNH — re-check flow at least yearly ; complement inhibition only for clinically significant hemolysis Agents — dosing Agent Dosing Notes Horse ATG Atgam 40 mg/kg/d IV ×4 days over ~4 h (NIH; label: 10–20 mg/kg/d ×8–14 d). Premed acetaminophen + antihistamine; prednisone 1 mg/kg/d ×10 d, taper over 7–14 d Infusion reactions; serum sickness (fever, rash, arthralgia) ~day 7–14. Platelets before each dose; inpatient Rabbit ATG Thymoglobulin Second IST course or HCT conditioning Inferior to hATG up front Cyclosporine 3 mg/kg PO q12h (6 mg/kg/d) from day 1 → trough 200–400 &micro;g/L . Responders: continue, then taper slowly (NIH: 2 mg/kg/d to 24 mo) Nephrotoxicity, HTN, Mg wasting, gingival hyperplasia, PRES. Azole interactions Eltrombopag Promacta First-line: 150 mg daily ×6 mo with IST (≥12 y; label ≥2 y, weight/age-based); 75 mg if East/Southeast Asian ancestry or hepatic impairment. Refractory: 50 mg → max 150 mg ; stop if no response by 16 wk Take ≥2 h before or 4 h after cations (antacids, calcium, iron, dairy). LFTs; cataract exam; −7 in 4 (D1–M6 cohort), 7/153 across cohorts. FDA: refractory 2014, first-line 2018 Romiplostim Japan-approved (refractory AA 2019, all AA 2023); not FDA-approved for AA Asian phase 2/3 data only Allogeneic HCT MSD vs URD (EBMT, n=1448): URD survival not significantly worse in multivariate analysis, but more acute (25% vs 13%) and chronic GVHD (26% vs 14%) . Worst predictor: PBSC graft ; also ≥180 d from diagnosis, age ≥20, no ATG Bacigalupo 2015 Marrow over PBSC : age <20 MSD, 5-yr OS 85% vs 73% Schrezenmeier Blood 2007 Haplo with PTCy up front (Hopkins phase 2, n=27): 3-yr OS 92% ; aGVHD II–IV 7%, cGVHD 4%; with 400 cGy TBI 20/20 alive DeZern Blood 2023 Guidelines differ: ASTCT 2024 favors MUD/haplo over IST when no MSD; ASH 2026 still favors IST over haplo up front at any age . Conditioning: rATG, fludarabine for MUD/haplo Key trials Trial Result → practice hATG vs rATG NEJM 2011 Randomized, n=120: 6-mo response 68% vs 37% ; 3-yr OS 96% vs 76%. Horse ATG is standard NIH IST + EPAG NEJM 2017 Phase 1–2, n=92: eltrombopag day 1–6 mo cohort CR 58%, ORR 94% vs historical CR 10%, ORR 66% RACE NEJM 2022 Phase 3, n=197, hATG + CsA ± EPAG: CR at 3 mo 22% vs 10% (OR 3.2); ORR 6 mo 68% vs 41%; no extra toxicity Refractory EPAG NEJM 2012 Single-arm, n=25: 44% response at 12 wk, multilineage EBMT G-CSF Blood 2011 Randomized, n=192: fewer infections, no OS/EFS benefit — no routine G-CSF Hopkins haplo Blood 2023 Up-front haplo-PTCy, n=27: 3-yr OS 92%, minimal GVHD Pregnancy AA can present or relapse in pregnancy; after IST, 19% of 36 pregnancies relapsed , 34 live births Tichelli 2002 Supportive care (transfusion) is the mainstay; CsA can be continued ; avoid ATG and eltrombopag Low platelets and a PNH clone predict complications — consider LMWH if a PNH clone is present"
+}

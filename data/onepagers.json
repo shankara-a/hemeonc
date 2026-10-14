@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T09:55:59",
+ "generated": "2026-10-14T11:34:44",
  "onepagers": [
   {
    "disease": "aml",
@@ -8,6 +8,15 @@
    "pages": 3,
    "size": 107923,
    "sha1": "d1b56c68adedfd14b29bd032e2233a93a11c5fdb",
+   "updated": "2026-10-14"
+  },
+  {
+   "disease": "aplastic-anemia",
+   "file": "Aplastic Anemia.pdf",
+   "title": "Acquired aplastic anemia",
+   "pages": 2,
+   "size": 75008,
+   "sha1": "cd62d3594930b9833adc1a23c535f853621278a7",
    "updated": "2026-10-14"
   },
   {
