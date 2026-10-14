@@ -3,13 +3,13 @@
  "spec_file": "mpn.py",
  "pdf": "Myeloproliferative Neoplasms.pdf",
  "title": "Myeloproliferative neoplasms &mdash; PV, ET, PMF",
- "subtitle": "Philadelphia-negative MPNs driven by constitutive JAK-STAT activation (<b>JAK2 V617F, CALR, MPL</b>) &middot; shared risks are <b>thrombosis</b>, progression to <b>myelofibrosis</b>, and <b>blast-phase transformation</b>",
- "source": "No Stanford handbook chapter &mdash; compiled from WHO 2022 / ICC criteria, NCCN MPN guidelines, and landmark trials. Verify against primary sources before acting.",
+ "subtitle": "Philadelphia-negative MPNs driven by constitutive JAK-STAT signaling (<b>JAK2 V617F, CALR, MPL</b>) &middot; goals: <b>prevent thrombosis</b> in PV/ET, <b>control spleen, symptoms and anemia</b> in MF, and <b>transplant</b> the fit high-risk MF patient",
+ "source": "No Stanford Oncology Handbook chapter &mdash; compiled from WHO 2022 / ICC 2022 criteria &middot; NCCN MPN &middot; ELN &middot; primary trial reports verified against PubMed; approvals against FDA labels, October 2026.",
  "pages": [
   {
    "columns": [
     {
-     "width": "28%",
+     "width": "33%",
      "blocks": [
       {
        "type": "table",
@@ -21,32 +21,32 @@
         "PMF"
        ],
        "widths": [
-        "31%",
+        "34%",
         "",
         "",
         ""
        ],
        "rows": [
         [
-         "<b>JAK2</b> V617F",
+         "<b>JAK2 V617F</b> <span class='r'>exon 14</span>",
          "~95%",
          "50&ndash;60%",
-         "~60%"
+         "50&ndash;60%"
         ],
         [
-         "JAK2 exon 12",
+         "<b>JAK2 exon 12</b>",
          "~3%",
          "&mdash;",
          "&mdash;"
         ],
         [
-         "<b>CALR</b>",
+         "<b>CALR</b> <span class='r'>exon 9</span>",
          "&mdash;",
          "20&ndash;25%",
          "25&ndash;30%"
         ],
         [
-         "<b>MPL</b>",
+         "<b>MPL</b> <span class='r'>W515L/K</span>",
          "&mdash;",
          "3&ndash;5%",
          "5&ndash;8%"
@@ -58,36 +58,47 @@
          "~10%"
         ]
        ],
-       "footnote": "<b>PV is essentially always JAK2-mutated</b> &mdash; a JAK2-negative erythrocytosis should send you back to the differential, not to a PV diagnosis. In ET, <b>CALR</b> predicts higher platelets but <b>lower thrombosis risk</b> than JAK2."
+       "footnote": "<b>JAK2-negative erythrocytosis is not PV</b> until exon 12 is excluded &mdash; go back to the secondary differential. <b>CALR never occurs in PV</b> (mutant CALR signals only through MPL). In ET, CALR = higher platelets but <b>lower thrombosis risk</b> than JAK2; in PMF, <b>CALR type 1 is favorable</b> and triple-negative is worst."
       },
       {
-       "type": "bullets",
-       "heading": "Mutation biology",
-       "items": [
-        "<b>All three drivers converge on JAK-STAT</b> &mdash; JAK inhibitors work irrespective of which one is present",
-        "<b>JAK2 V617F</b> &mdash; exon 14 <b>pseudokinase (JH2) domain</b>; relieves autoinhibition &rarr; ligand-independent signaling. <b>Homozygosity via 9p uniparental disomy</b> is common in PV/PMF, rare in ET; higher allele burden tracks with PV phenotype, pruritus and fibrotic progression",
-        "<b>JAK2 exon 12</b> &mdash; ~3% of PV: <b>isolated erythrocytosis</b>, younger, very low EPO; outcomes similar to V617F",
-        "<b>CALR</b> &mdash; exon 9 frameshift; the mutant C-terminus loses the <b>KDEL ER-retention motif</b> and instead activates <b>MPL</b> &mdash; which is exactly why CALR occurs in ET and PMF but <b>never in PV</b>. <b>Type 1 (del52)</b> predominates in PMF and is favorable; <b>type 2 (ins5)</b> in ET",
-        "<b>MPL W515L/K</b> &mdash; exon 10 TPO receptor; ET and PMF only. <b>Triple-negative</b> &mdash; worst prognosis in PMF"
-       ]
-      },
-      {
-       "type": "bullets",
-       "heading": "Diagnostic anchors (WHO 2022)",
-       "items": [
-        "<b>PV:</b> Hb &gt;16.5 (M) / &gt;16.0 (F) or Hct &gt;49% (M) / &gt;48% (F) + trilineage hypercellularity with pleomorphic megakaryocytes + JAK2 mutation; <b>subnormal EPO</b> is a minor criterion",
-        "<b>ET:</b> platelets <b>&ge;450</b> &times;10<sup>9</sup>/L + large hyperlobulated (&ldquo;staghorn&rdquo;) megakaryocytes + <b>reticulin &le; grade 1</b> + a clonal marker, having excluded other MPNs",
-        "<b>PMF:</b> megakaryocyte atypia with dense clustering + fibrosis grade (prefibrotic vs overt) + leukoerythroblastosis, anemia, splenomegaly, &uarr;LDH"
-       ]
-      },
-      {
-       "type": "note",
-       "html": "<b>The hardest and highest-stakes distinction is prefibrotic PMF vs ET.</b> They look alike on counts, but prefibrotic PMF has materially worse survival and higher transformation risk. It turns on <b>marrow morphology</b> &mdash; megakaryocyte clustering and atypia &mdash; not on the CBC.<br><br><b>Masked PV:</b> concurrent iron deficiency can normalize the hematocrit. If JAK2 is mutated with a &ldquo;normal&rdquo; Hct, think PV.<br><br><b>Splanchnic vein thrombosis</b> (Budd-Chiari, portal vein) &mdash; test JAK2 in everyone, even with normal counts; MPN is a leading occult cause."
+       "type": "table",
+       "heading": "Diagnosis (WHO 2022 &middot; ICC 2022)",
+       "headers": [
+        "Entity",
+        "Criteria"
+       ],
+       "widths": [
+        "19%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>PV</b>",
+         "<b>Hb &gt;16.5 (M) / &gt;16.0 (F) or Hct &gt;49% / &gt;48%</b> + trilineage marrow hypercellularity with pleomorphic mature megakaryocytes + <b>JAK2 V617F or exon 12</b>. Minor: <b>subnormal EPO</b>. All 3 major, or first 2 + minor. Marrow can be skipped if Hb &gt;18.5 / &gt;16.5 (Hct &gt;55.5 / &gt;49.5%) with JAK2 + low EPO &mdash; but it misses early fibrosis"
+        ],
+        [
+         "<b>ET</b>",
+         "<b>Platelets &ge;450</b> + marrow with large, hyperlobulated (&ldquo;staghorn&rdquo;) megakaryocytes, <b>no left shift, reticulin &le;grade 1</b> + not another myeloid neoplasm + <b>JAK2 / CALR / MPL</b>. Minor: other clonal marker or no reactive cause. <b>Marrow is required</b>"
+        ],
+        [
+         "<b>Prefibrotic PMF</b>",
+         "Megakaryocyte proliferation <b>with atypia</b> (clustering, cloud-like nuclei), <b>reticulin &le;grade 1</b>, hypercellular, granulocytic &uarr; / erythroid &darr; + driver or clonal marker + &ge;1 minor: anemia, WBC &ge;11, palpable spleen, &uarr;LDH"
+        ],
+        [
+         "<b>Overt PMF</b>",
+         "Same megakaryocyte atypia + <b>reticulin/collagen grade 2&ndash;3</b> + clonal marker + &ge;1 minor (above, or <b>leukoerythroblastosis</b>)"
+        ],
+        [
+         "<b>Post-PV / ET MF</b>",
+         "Prior PV/ET + <b>grade 2&ndash;3 fibrosis</b> + &ge;2 of: anemia (post-PV: or loss of phlebotomy/cytoreduction need; post-ET: Hb &darr;&ge;2 g/dL), leukoerythroblastosis, enlarging spleen (&ge;5 cm), constitutional symptoms, &uarr;LDH (post-ET) (IWG-MRT)"
+        ]
+       ],
+       "footnote": "<b>Prefibrotic PMF vs ET</b> &mdash; same CBC, but prefibrotic PMF has worse survival and more fibrotic/leukemic progression. It turns on <b>megakaryocyte morphology</b>, so every suspected ET needs a marrow."
       }
      ]
     },
     {
-     "width": "34%",
+     "width": "31%",
      "blocks": [
       {
        "type": "pathway",
@@ -101,17 +112,24 @@
            "All patients",
            [
             "<b>phlebotomy to Hct &lt;45%</b> (CYTO-PV)",
-            "aspirin 81 mg + cardiovascular risk control",
-            "<b>do not replace iron</b> &mdash; it defeats the target"
+            "aspirin 81 mg daily; treat CV risk factors",
+            "<b>no iron supplementation</b>"
            ]
           ],
           [
-           "High risk &mdash; age &ge;60 or prior thrombosis",
+           "Low risk (&lt;60, no thrombosis)",
            [
-            "cytoreduce: <b>ropeginterferon</b> (NCCN-preferred)",
-            "or hydroxyurea; peg-IFN alfa-2a alternative",
-            "HU-resistant/intolerant: ruxolitinib (RESPONSE)",
-            "phlebotomy-dependent: rusfertide (VERIFY)"
+            "phlebotomy + aspirin",
+            "cytoreduce if phlebotomy-intolerant, symptomatic,",
+            "rising WBC/plt or splenomegaly: <b>ropeg</b> (Low-PV)"
+           ]
+          ],
+          [
+           "High risk (&ge;60 or prior thrombosis)",
+           [
+            "<b>ropeginterferon</b> or <b>hydroxyurea</b>",
+            "HU-resistant/intolerant: <b>ruxolitinib</b> or IFN",
+            "phlebotomy-dependent: add <b>rusfertide</b> (FDA 2026)"
            ]
           ]
          ]
@@ -121,42 +139,56 @@
          "color": "teal",
          "boxes": [
           [
-           "Low / very low risk",
+           "Very low / low risk",
            [
-            "aspirin 81 mg &mdash; consider <b>BID</b> if JAK2+ or CV RFs",
-            "observation reasonable if very low risk",
-            "<b>check vWF activity if platelets &gt;1000</b>"
+            "observe, or aspirin 81 mg if JAK2+ or CV RFs",
+            "<b>CALR+, no CV RF: skip aspirin</b> (bleeding)",
+            "<b>plt &gt;1000: check vWF:RCo first</b>"
            ]
           ],
           [
-           "High risk &mdash; prior thrombosis, or &gt;60 + JAK2+",
+           "Intermediate (&gt;60, JAK2 WT)",
            [
-            "cytoreduce: <b>hydroxyurea</b> first line",
-            "anagrelide second line (PT-1)",
-            "interferon preferred in pregnancy / young"
+            "aspirin 81 mg daily",
+            "cytoreduce if symptoms or extreme platelets"
+           ]
+          ],
+          [
+           "High (thrombosis, or &gt;60 + JAK2+)",
+           [
+            "aspirin + <b>hydroxyurea</b> (PT-1)",
+            "or <b>ropeginterferon</b> (FDA any line; SURPASS-ET 2L)",
+            "or anagrelide; IFN if young / pregnancy"
            ]
           ]
          ]
         },
         {
-         "header": "Primary myelofibrosis",
+         "header": "Myelofibrosis (PMF, post-PV/ET)",
          "color": "purple",
          "boxes": [
           [
-           "Risk-stratify first",
+           "Risk-stratify &rarr; transplant decision",
            [
-            "DIPSS / DIPSS-plus, MIPSS70+ v2, GIPSS",
-            "<b>allogeneic transplant is the only cure</b>",
-            "refer intermediate-2 / high risk if eligible"
+            "DIPSS-plus / MIPSS70+ v2 / MYSEC-PM",
+            "<b>int-2 / high risk, fit: refer for allo-HCT</b>",
+            "low risk, asymptomatic: observe"
            ]
           ],
           [
-           "Spleen and symptom directed",
+           "Symptoms or spleen &mdash; JAK inhibitor",
            [
-            "<b>ruxolitinib</b> first line &mdash; most survival data",
-            "platelets &lt;50: <b>pacritinib</b>",
-            "anemia / transfusion-dependent: <b>momelotinib</b>",
-            "after ruxolitinib: fedratinib"
+            "plt &ge;50 + Hb OK: <b>ruxolitinib</b> (OS signal)",
+            "Hb &lt;10 / transfusions: <b>momelotinib</b>",
+            "plt &lt;50: <b>pacritinib</b>",
+            "after ruxolitinib: fedratinib, momelotinib"
+           ]
+          ],
+          [
+           "Anemia / blast phase",
+           [
+            "anemia: ESA (EPO &lt;500), danazol, momelotinib",
+            "BP (&ge;20% blasts): HMA &plusmn; ven &rarr; allo-HCT"
            ]
           ]
          ]
@@ -166,14 +198,299 @@
      ]
     },
     {
-     "width": "38%",
+     "width": "36%",
      "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Workup",
+       "items": [
+        "<b>Peripheral blood JAK2 V617F</b> (qPCR, report VAF) &rarr; if negative: <b>CALR + MPL</b> (thrombocytosis / fibrosis) or <b>JAK2 exon 12</b> (erythrocytosis). Most labs now run an <b>MPN NGS panel</b> up front",
+        "<b>NGS for high-molecular-risk mutations</b>: <b>ASXL1, SRSF2, U2AF1 Q157, EZH2, IDH1/2</b> (+ TP53, RAS) &mdash; drive MIPSS70+ and transplant referral",
+        "<b>BCR::ABL1</b> (PCR or FISH) in every thrombocytosis / leukocytosis &mdash; CML can present as isolated thrombocytosis",
+        "<b>Erythrocytosis:</b> <b>serum EPO</b> (low &rarr; PV; normal/high &rarr; secondary), ferritin/iron (iron deficiency masks PV), SpO<sub>2</sub>, sleep study, smoking/CO-Hb, <b>testosterone/SGLT2i</b>, renal/hepatic mass imaging",
+        "<b>Thrombocytosis:</b> exclude iron deficiency, inflammation/infection, asplenia, malignancy, bleeding (CRP, ferritin)",
+        "<b>Marrow aspirate + biopsy</b> with reticulin stain + karyotype; abdominal US for spleen; LDH, uric acid",
+        "<b>Platelets &gt;1000&ndash;1500 or any bleeding:</b> <b>vWF:RCo (ristocetin cofactor) + vWF antigen</b> &mdash; acquired vWD; ratio &lt;0.7 or RCo &lt;30% &rarr; hold aspirin, cytoreduce"
+       ]
+      },
       {
        "type": "table",
        "heading": "Risk stratification",
        "headers": [
+        "Score",
+        "Factors &middot; groups"
+       ],
+       "widths": [
+        "21%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>PV</b>",
+         "<b>High = age &ge;60 OR prior thrombosis</b>; low = neither. Leukocytosis, CV risk factors and JAK2 VAF add risk but are not in the score"
+        ],
+        [
+         "<b>ET &mdash; revised IPSET-thrombosis</b>",
+         "<b>Very low:</b> &le;60, no thrombosis, JAK2 WT &middot; <b>low:</b> &le;60, no thrombosis, JAK2+ &middot; <b>intermediate:</b> &gt;60, no thrombosis, JAK2 WT &middot; <b>high:</b> prior thrombosis, or &gt;60 + JAK2+"
+        ],
+        [
+         "<b>DIPSS-plus</b> <span class='r'>PMF, any time</span>",
+         "DIPSS (age &gt;65, Hb &lt;10 [2 pts], WBC &gt;25, blasts &ge;1%, constitutional sx) + <b>unfavorable karyotype, plt &lt;100, transfusion need</b>. Median OS: low 185 &middot; int-1 78 &middot; int-2 35 &middot; high 16 mo"
+        ],
+        [
+         "<b>MIPSS70+ v2.0</b> <span class='r'>PMF, molecular</span>",
+         "Very-high-risk karyotype 4, unfavorable karyotype 3, <b>&ge;2 HMR mutations 3</b> / 1 HMR 2, <b>absent CALR type 1</b> 2, constitutional sx 2, severe anemia 2 (moderate 1), blasts &ge;2% 1 &rarr; very low / low / intermediate / high / very high"
+        ],
+        [
+         "<b>MYSEC-PM</b> <span class='r'>post-PV/ET MF</span>",
+         "Hb &lt;11 (2), blasts &ge;3% (2), <b>CALR-unmutated</b> (2), plt &lt;150 (1), constitutional sx (1), +0.15/yr of age. Median OS: low NR &middot; int-1 9.3 &middot; int-2 4.4 &middot; high 2 yr"
+        ]
+       ],
+       "footnote": "<b>Use MYSEC-PM, not DIPSS/IPSS, for secondary MF.</b> HMR = ASXL1, SRSF2, U2AF1 Q157, EZH2, IDH1/2; <b>TP53</b> (multi-hit) predicts leukemic transformation."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; pathophysiology, PV and ET evidence, JAK inhibitor choice, anemia, transplant, blast phase",
+   "columns": [
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Pathophysiology",
+       "widths": [
+        "100%"
+       ],
+       "rows": [
+        [
+         "<img style='width:100%;display:block' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzE4Ij48ZGVmcz48bWFya2VyIGlkPSJhIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjgiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI1IiBtYXJrZXJIZWlnaHQ9IjUiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTIgMUw4IDVMMiA5IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMS41Ii8+PC9tYXJrZXI+PHN0eWxlPnRleHR7Zm9udC1mYW1pbHk6SGVsdmV0aWNhLEFyaWFsLHNhbnMtc2VyaWY7dGV4dC1hbmNob3I6bWlkZGxlfS5ie2ZvbnQtc2l6ZTo3LjZweDtmb250LXdlaWdodDpib2xkfS5ze2ZvbnQtc2l6ZTo2LjZweH08L3N0eWxlPjwvZGVmcz48cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iNTgiIGhlaWdodD0iMjQiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMzMuMCIgeT0iMTQuMCIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPkVQT1I8L3RleHQ+PHRleHQgeD0iMzMuMCIgeT0iMjMuNSIgY2xhc3M9InMiIGZpbGw9IiMwODUwNDEiPkVQTyByZWNlcHRvcjwvdGV4dD48cmVjdCB4PSI5MiIgeT0iNCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjI0IiByeD0iMyIgZmlsbD0iI0UxRjVFRSIgc3Ryb2tlPSIjMEY2RTU2IiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjEyMi4wIiB5PSIxNC4wIiBjbGFzcz0iYiIgZmlsbD0iIzA4NTA0MSI+TVBMPC90ZXh0Pjx0ZXh0IHg9IjEyMi4wIiB5PSIyMy41IiBjbGFzcz0icyIgZmlsbD0iIzA4NTA0MSI+VFBPIHJlY2VwdG9yPC90ZXh0PjxyZWN0IHg9IjE2NiIgeT0iNCIgd2lkdGg9IjYyIiBoZWlnaHQ9IjI0IiByeD0iMyIgZmlsbD0iI0UxRjVFRSIgc3Ryb2tlPSIjMEY2RTU2IiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjE5Ny4wIiB5PSIxNC4wIiBjbGFzcz0iYiIgZmlsbD0iIzA4NTA0MSI+TXV0YW50IENBTFI8L3RleHQ+PHRleHQgeD0iMTk3LjAiIHk9IjIzLjUiIGNsYXNzPSJzIiBmaWxsPSIjMDg1MDQxIj5hY3RpdmF0ZXMgTVBMPC90ZXh0PjxwYXRoIGQ9Ik0xNjYgMTYgTDE1NCAxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxyZWN0IHg9IjI0MCIgeT0iNCIgd2lkdGg9IjU2IiBoZWlnaHQ9IjI0IiByeD0iMyIgZmlsbD0iI0UxRjVFRSIgc3Ryb2tlPSIjMEY2RTU2IiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjI2OC4wIiB5PSIxNC4wIiBjbGFzcz0iYiIgZmlsbD0iIzA4NTA0MSI+Ry1DU0ZSPC90ZXh0Pjx0ZXh0IHg9IjI2OC4wIiB5PSIyMy41IiBjbGFzcz0icyIgZmlsbD0iIzA4NTA0MSI+Ry1DU0YgcmVjZXB0b3I8L3RleHQ+PHBhdGggZD0iTTMzIDI4IEwzMyAzNCBMMTEwIDM0IEwxMTAgNDMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48cGF0aCBkPSJNMTIyIDI4IEwxMjIgNDMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48cGF0aCBkPSJNMjY4IDI4IEwyNjggMzQgTDE5MCAzNCBMMTkwIDQzIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHRleHQgeD0iMTI2IiB5PSI0MCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iI0EzMkQyRCI+TVBMIFc1MTVML0s8L3RleHQ+PHJlY3QgeD0iOTUiIHk9IjQ0IiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjI0IiByeD0iMyIgZmlsbD0iI0UxRjVFRSIgc3Ryb2tlPSIjMEY2RTU2IiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjE1MC4wIiB5PSI1NC4wIiBjbGFzcz0iYiIgZmlsbD0iIzA4NTA0MSI+SkFLMjwvdGV4dD48dGV4dCB4PSIxNTAuMCIgeT0iNjMuNSIgY2xhc3M9InMiIGZpbGw9IiMwODUwNDEiPnJlY2VwdG9yLWJvdW5kIGtpbmFzZTwvdGV4dD48dGV4dCB4PSI5MSIgeT0iNTAiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6ZW5kIiBmaWxsPSIjQTMyRDJEIj5KQUsyIFY2MTdGIChleG9uIDE0KTwvdGV4dD48dGV4dCB4PSI5MSIgeT0iNTgiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6ZW5kIiBmaWxsPSIjQTMyRDJEIj5+OTUlIFBWIMK3IDUw4oCTNjAlIEVUL1BNRjwvdGV4dD48dGV4dCB4PSI5MSIgeT0iNjYiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6ZW5kIiBmaWxsPSIjQTMyRDJEIj5KQUsyIGV4b24gMTI6IFBWPC90ZXh0PjxsaW5lIHgxPSIyMTUiIHkxPSI1NiIgeDI9IjIwNyIgeTI9IjU2IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS4yIi8+PGxpbmUgeDE9IjIwNyIgeTE9IjUxIiB4Mj0iMjA3IiB5Mj0iNjEiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSIyMjIiIGN5PSI1NiIgcj0iNi41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjIyIiB5PSI1OSIgY2xhc3M9ImIiIGZpbGw9IiM3MTJCMTMiPko8L3RleHQ+PHBhdGggZD0iTTExNSA2OCBMMTE1IDc3IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHBhdGggZD0iTTE5MCA2OCBMMTkwIDc3IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iNzgiIHk9Ijc4IiB3aWR0aD0iNzQiIGhlaWdodD0iMjQiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTE1LjAiIHk9Ijg4LjAiIGNsYXNzPSJiIiBmaWxsPSIjMDg1MDQxIj5TVEFUNSAvIFNUQVQzPC90ZXh0Pjx0ZXh0IHg9IjExNS4wIiB5PSI5Ny41IiBjbGFzcz0icyIgZmlsbD0iIzA4NTA0MSI+Z2VuZSB0cmFuc2NyaXB0aW9uPC90ZXh0PjxyZWN0IHg9IjE2MCIgeT0iNzgiIHdpZHRoPSI2NCIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNFMUY1RUUiIHN0cm9rZT0iIzBGNkU1NiIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxOTIuMCIgeT0iODguMCIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPlBJM0sgLyBNQVBLPC90ZXh0Pjx0ZXh0IHg9IjE5Mi4wIiB5PSI5Ny41IiBjbGFzcz0icyIgZmlsbD0iIzA4NTA0MSI+Z3Jvd3RoLCBzdXJ2aXZhbDwvdGV4dD48cGF0aCBkPSJNMTE1IDEwMiBMMTE1IDExMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxwYXRoIGQ9Ik0xOTAgMTAyIEwxOTAgMTExIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iODAiIHk9IjExMiIgd2lkdGg9IjE0NCIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNGQ0VCRUIiIHN0cm9rZT0iI0EzMkQyRCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNTIuMCIgeT0iMTIyLjAiIGNsYXNzPSJiIiBmaWxsPSIjNzkxRjFGIj5NdXRhbnQgc3RlbS1jZWxsIGNsb25lPC90ZXh0Pjx0ZXh0IHg9IjE1Mi4wIiB5PSIxMzEuNSIgY2xhc3M9InMiIGZpbGw9IiM3OTFGMUYiPmN5dG9raW5lLWluZGVwZW5kZW50IGdyb3d0aDwvdGV4dD48cmVjdCB4PSIyIiB5PSIxMTIiIHdpZHRoPSI1OCIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIzMS4wIiB5PSIxMjIuMCIgY2xhc3M9ImIiIGZpbGw9IiM0NDQ0NDEiPkROQSBzeW50aGVzaXM8L3RleHQ+PHRleHQgeD0iMzEuMCIgeT0iMTMxLjUiIGNsYXNzPSJzIiBmaWxsPSIjNDQ0NDQxIj5kaXZpZGluZyBjZWxsczwvdGV4dD48cGF0aCBkPSJNNjAgMTI0IEw3OCAxMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48bGluZSB4MT0iMzEiIHkxPSIxMDQuNSIgeDI9IjMxIiB5Mj0iMTExIiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS4yIi8+PGxpbmUgeDE9IjI2IiB5MT0iMTExIiB4Mj0iMzYiIHkyPSIxMTEiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSIzMSIgY3k9Ijk4IiByPSI2LjUiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIzMSIgeT0iMTAxIiBjbGFzcz0iYiIgZmlsbD0iIzcxMkIxMyI+SDwvdGV4dD48bGluZSB4MT0iMjMzIiB5MT0iMTI0IiB4Mj0iMjI2IiB5Mj0iMTI0IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS4yIi8+PGxpbmUgeDE9IjIyNiIgeTE9IjExOSIgeDI9IjIyNiIgeTI9IjEyOSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuNiIvPjxjaXJjbGUgY3g9IjI0MCIgY3k9IjEyNCIgcj0iNi41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjQwIiB5PSIxMjciIGNsYXNzPSJiIiBmaWxsPSIjNzEyQjEzIj5JPC90ZXh0PjxwYXRoIGQ9Ik05MCAxMzYgTDkwIDE0MiBMNDggMTQyIEw0OCAxNDciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48cGF0aCBkPSJNMTQ2IDEzNiBMMTQ2IDE0NyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxwYXRoIGQ9Ik0yMTQgMTM2IEwyMTQgMTQ3IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iNCIgeT0iMTQ4IiB3aWR0aD0iODgiIGhlaWdodD0iMjQiIHJ4PSIzIiBmaWxsPSIjRkNFQkVCIiBzdHJva2U9IiNBMzJEMkQiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iNDguMCIgeT0iMTU4LjAiIGNsYXNzPSJiIiBmaWxsPSIjNzkxRjFGIj5Fcnl0aHJvY3l0b3NpczwvdGV4dD48dGV4dCB4PSI0OC4wIiB5PSIxNjcuNSIgY2xhc3M9InMiIGZpbGw9IiM3OTFGMUYiPlBWIMK3IEVQT1ItZHJpdmVuPC90ZXh0PjxyZWN0IHg9IjEwMiIgeT0iMTQ4IiB3aWR0aD0iODgiIGhlaWdodD0iMjQiIHJ4PSIzIiBmaWxsPSIjRkNFQkVCIiBzdHJva2U9IiNBMzJEMkQiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTQ2LjAiIHk9IjE1OC4wIiBjbGFzcz0iYiIgZmlsbD0iIzc5MUYxRiI+VGhyb21ib2N5dG9zaXM8L3RleHQ+PHRleHQgeD0iMTQ2LjAiIHk9IjE2Ny41IiBjbGFzcz0icyIgZmlsbD0iIzc5MUYxRiI+RVQgwrcgTVBMLWRyaXZlbjwvdGV4dD48cmVjdCB4PSIyMDAiIHk9IjE0OCIgd2lkdGg9Ijk2IiBoZWlnaHQ9IjI0IiByeD0iMyIgZmlsbD0iI0ZDRUJFQiIgc3Ryb2tlPSIjQTMyRDJEIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjI0OC4wIiB5PSIxNTguMCIgY2xhc3M9ImIiIGZpbGw9IiM3OTFGMUYiPk1lZ2FrYXJ5b2N5dGVzPC90ZXh0Pjx0ZXh0IHg9IjI0OC4wIiB5PSIxNjcuNSIgY2xhc3M9InMiIGZpbGw9IiM3OTFGMUYiPnJlbGVhc2UgVEdGLc6yPC90ZXh0PjxwYXRoIGQ9Ik0yNDggMTcyIEwyNDggMTc5IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iMjAwIiB5PSIxODAiIHdpZHRoPSI5NiIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyNDguMCIgeT0iMTkwLjAiIGNsYXNzPSJiIiBmaWxsPSIjNDQ0NDQxIj5NYXJyb3cgZmlicm9zaXM8L3RleHQ+PHRleHQgeD0iMjQ4LjAiIHk9IjE5OS41IiBjbGFzcz0icyIgZmlsbD0iIzQ0NDQ0MSI+UE1GLCBwb3N0LVBWL0VUIE1GPC90ZXh0PjxwYXRoIGQ9Ik0yNDggMjA0IEwyNDggMjExIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iMjAwIiB5PSIyMTIiIHdpZHRoPSI5NiIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyNDguMCIgeT0iMjIyLjAiIGNsYXNzPSJiIiBmaWxsPSIjNDQ0NDQxIj5TcGxlbm9tZWdhbHk8L3RleHQ+PHRleHQgeD0iMjQ4LjAiIHk9IjIzMS41IiBjbGFzcz0icyIgZmlsbD0iIzQ0NDQ0MSI+ZXh0cmFtZWR1bGxhcnkgaGVtYXRvcG9pZXNpczwvdGV4dD48dGV4dCB4PSIyMCIgeT0iMTkzIiBjbGFzcz0iYiIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNDQ0NDQxIj5BbmVtaWEgb2YgTUY6IEFDVlIxIHJhaXNlcyBoZXBjaWRpbjwvdGV4dD48cmVjdCB4PSIyMCIgeT0iMjAwIiB3aWR0aD0iNTAiIGhlaWdodD0iMjQiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iNDUuMCIgeT0iMjEwLjAiIGNsYXNzPSJiIiBmaWxsPSIjMDg1MDQxIj5BQ1ZSMTwvdGV4dD48dGV4dCB4PSI0NS4wIiB5PSIyMTkuNSIgY2xhc3M9InMiIGZpbGw9IiMwODUwNDEiPkJNUCByZWNlcHRvcjwvdGV4dD48cGF0aCBkPSJNNzAgMjEyIEw3OSAyMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48cmVjdCB4PSI4MCIgeT0iMjAwIiB3aWR0aD0iNTYiIGhlaWdodD0iMjQiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTA4LjAiIHk9IjIxMC4wIiBjbGFzcz0iYiIgZmlsbD0iIzA4NTA0MSI+SGVwY2lkaW48L3RleHQ+PHRleHQgeD0iMTA4LjAiIHk9IjIxOS41IiBjbGFzcz0icyIgZmlsbD0iIzA4NTA0MSI+bG9ja3MgYXdheSBpcm9uPC90ZXh0PjxwYXRoIGQ9Ik0xMzYgMjEyIEwxNDUgMjEyIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iMTQ2IiB5PSIyMDAiIHdpZHRoPSI1MCIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNzEuMCIgeT0iMjEwLjAiIGNsYXNzPSJiIiBmaWxsPSIjNDQ0NDQxIj5BbmVtaWE8L3RleHQ+PHRleHQgeD0iMTcxLjAiIHk9IjIxOS41IiBjbGFzcz0icyIgZmlsbD0iIzQ0NDQ0MSI+aXJvbi1yZXN0cmljdGVkPC90ZXh0PjxsaW5lIHgxPSIxNiIgeTE9IjIxMiIgeDI9IjIwIiB5Mj0iMjEyIiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS4yIi8+PGxpbmUgeDE9IjIwIiB5MT0iMjA3IiB4Mj0iMjAiIHkyPSIyMTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSI5IiBjeT0iMjEyIiByPSI2LjUiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSI5IiB5PSIyMTUiIGNsYXNzPSJiIiBmaWxsPSIjNzEyQjEzIj5NPC90ZXh0PjxsaW5lIHgxPSIyIiB5MT0iMjQ0IiB4Mj0iMjk4IiB5Mj0iMjQ0IiBzdHJva2U9IiNjY2MiIHN0cm9rZS13aWR0aD0iMC41Ii8+PGNpcmNsZSBjeD0iOCIgY3k9IjI1NCIgcj0iNS41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iOCIgeT0iMjU2LjYiIGNsYXNzPSJzIiBmaWxsPSIjNzEyQjEzIj5KPC90ZXh0Pjx0ZXh0IHg9IjE3IiB5PSIyNTYuNiIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+SkFLIGluaGliaXRvcnM6IHJ1eG9saXRpbmliIChKQUsxLzIpIMK3IGZlZHJhdGluaWIgKEpBSzIpIMK3PC90ZXh0Pjx0ZXh0IHg9IjE3IiB5PSIyNjQuNiIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+cGFjcml0aW5pYiAoSkFLMi9JUkFLMSkgwrcgbW9tZWxvdGluaWIgKEpBSzEvMik8L3RleHQ+PGNpcmNsZSBjeD0iOCIgY3k9IjI3NiIgcj0iNS41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iOCIgeT0iMjc4LjYiIGNsYXNzPSJzIiBmaWxsPSIjNzEyQjEzIj5NPC90ZXh0Pjx0ZXh0IHg9IjE3IiB5PSIyNzguNiIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+bW9tZWxvdGluaWI6IEFDVlIxIGluaGliaXRvcjwvdGV4dD48Y2lyY2xlIGN4PSIxNTAiIGN5PSIyNzYiIHI9IjUuNSIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjE1MCIgeT0iMjc4LjYiIGNsYXNzPSJzIiBmaWxsPSIjNzEyQjEzIj5IPC90ZXh0Pjx0ZXh0IHg9IjE1OSIgeT0iMjc4LjYiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPmh5ZHJveHl1cmVhOiByaWJvbnVjbGVvdGlkZSByZWR1Y3Rhc2UgaW5oaWJpdG9yPC90ZXh0PjxjaXJjbGUgY3g9IjgiIGN5PSIyODkiIHI9IjUuNSIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjgiIHk9IjI5MS42IiBjbGFzcz0icyIgZmlsbD0iIzcxMkIxMyI+STwvdGV4dD48dGV4dCB4PSIxNyIgeT0iMjkxLjYiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPnJvcGVnaW50ZXJmZXJvbiDCtyBwZWdpbnRlcmZlcm9uOiBpbnRlcmZlcm9uLc6xLCBwcmVmZXJlbnRpYWxseSB0YXJnZXRzIG11dGFudCBzdGVtIGNlbGxzPC90ZXh0Pjx0ZXh0IHg9IjIiIHk9IjMwNCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+SHlkcm94eXVyZWEgbG93ZXJzIGNvdW50cyBub24tc2VsZWN0aXZlbHk7IEpBSyBpbmhpYml0b3JzIHJlZHVjZSBzcGxlZW4gYW5kIHN5bXB0b21zOzwvdGV4dD48dGV4dCB4PSIyIiB5PSIzMTMiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPm5laXRoZXIgY2hhbmdlcyBhbGxlbGUgYnVyZGVuIG11Y2guIEludGVyZmVyb24gY2FuIGxvd2VyIEpBSzIvQ0FMUiBhbGxlbGUgYnVyZGVuLjwvdGV4dD48L3N2Zz4='>"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Follow-up and progression",
+       "items": [
+        "<b>Stable PV/ET:</b> CBC every 3&ndash;6 mo, symptom score (MPN-SAF TSS), spleen exam, CV risk factors; reassess risk category with each new thrombosis or birthday past 60",
+        "<b>Suspect post-PV/ET MF:</b> falling Hb or loss of phlebotomy need, rising LDH, leukoerythroblastosis, growing spleen, new constitutional symptoms &rarr; <b>repeat marrow + NGS</b>, restage with MYSEC-PM",
+        "<b>Suspect accelerated/blast phase:</b> circulating blasts &ge;10%, new refractory cytopenias &rarr; marrow, karyotype, NGS (TP53), HLA typing",
+        "<b>JAK2/CALR VAF</b> is worth tracking on interferon (molecular response); not needed on HU"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Other MPNs (brief)",
+       "items": [
+        "<b>MPN-U</b> &mdash; MPN features that fit no category (often early PMF or splanchnic thrombosis presentations); manage by the dominant phenotype",
+        "<b>CNL</b> &mdash; sustained neutrophilia &ge;25 (&ge;80% segs/bands), no dysplasia; <b>CSF3R T618I</b> (~60&ndash;80%); ruxolitinib responses; allo-HCT for fit",
+        "<b>CEL</b> &mdash; clonal eosinophilia &ge;1.5 with marrow abnormality; first exclude <b>PDGFRA/B, FGFR1, JAK2 rearrangements</b> (imatinib-sensitive PDGFR)"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "32%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Polycythemia vera &mdash; evidence",
+       "headers": [
+        "Question",
+        "Answer &middot; trial"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Hct target</b>",
+         "<b>&lt;45% for everyone</b> (CYTO-PV, n=365): CV death or major thrombosis <b>2.7% vs 9.8%</b> at 45&ndash;50% (HR 3.91)"
+        ],
+        [
+         "<b>Aspirin</b>",
+         "81&ndash;100 mg daily for all without contraindication (ECLAP: fewer thromboses)"
+        ],
+        [
+         "<b>Interferon vs HU</b>",
+         "<b>PROUD-PV / CONTINUATION-PV</b> (ropeg vs HU, early PV): 12-mo non-inferiority <b>not met</b> (CHR + normal spleen 21% vs 28%), but CHR at 36 mo <b>71% vs 51%</b> and deeper JAK2 VAF falls. <b>Responses accrue slowly</b>"
+        ],
+        [
+         "<b>Low-risk PV</b>",
+         "<b>Low-PV</b> (randomized phase 2, age &le;60): ropeg 100 &micro;g q2wk + phlebotomy kept Hct &le;45% in <b>84% vs 60%</b>; stopped early for efficacy"
+        ],
+        [
+         "<b>HU-resistant / intolerant</b>",
+         "<b>Ruxolitinib</b> &mdash; RESPONSE (phase 3): Hct control + spleen response <b>21% vs 1%</b>; MAJIC-PV (phase 2): CR <b>43% vs 26%</b>, <b>event-free survival HR 0.58</b>"
+        ],
+        [
+         "<b>Phlebotomy-dependent</b>",
+         "<b>Rusfertide</b> (hepcidin mimetic, VERIFY phase 3, n=293): no phlebotomy wk 20&ndash;32 <b>76.9% vs 32.9%</b>; Hct &lt;45% 62.6% vs 14.4%. <b>FDA 28 Aug 2026</b> (Mimrylo). Erythrocytosis only &mdash; <b>not cytoreductive</b>"
+        ]
+       ],
+       "footnote": "HU resistance (ELN): need for phlebotomy, plt &gt;400 + WBC &gt;10, or no spleen response after 3 mo at &ge;2 g/day; cytopenia at lowest effective dose; or intolerable toxicity (leg ulcers, mucositis)."
+      },
+      {
+       "type": "table",
+       "heading": "Essential thrombocythemia &mdash; evidence",
+       "headers": [
+        "Question",
+        "Answer &middot; trial"
+       ],
+       "widths": [
+        "22%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Aspirin by risk</b>",
+         "JAK2+ or CV risk factors: <b>aspirin 81 mg</b>. <b>Low-risk CALR+</b>: aspirin did not cut thrombosis but <b>raised bleeding</b> (retrospective) &mdash; observe. BID aspirin is an option if JAK2+ with CV risk factors (faster platelet turnover)"
+        ],
+        [
+         "<b>HU vs anagrelide</b>",
+         "<b>PT-1</b> (n=809, high risk, + aspirin): anagrelide arm <b>more arterial thrombosis, serious bleeding and myelofibrosis</b>, fewer VTE (composite OR 1.57) &rarr; <b>HU first line</b>"
+        ],
+        [
+         "<b>Second line</b>",
+         "<b>Ropeginterferon</b> &mdash; SURPASS-ET (phase 3, HU-resistant/intolerant + WBC &gt;10): durable ELN response <b>43% vs 6%</b> vs anagrelide; thromboembolic events 1 vs 10 (FDA label). <b>FDA 31 Aug 2026</b> (all adult ET). 96% Asian cohort"
+        ],
+        [
+         "<b>Platelet goal</b>",
+         "Cytoreduce to symptom control and <b>plt &lt;400&ndash;450</b>; no evidence that normalizing counts alone prevents thrombosis in low-risk disease"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Myelofibrosis &mdash; JAK inhibitor choice",
+       "headers": [
+        "Agent",
+        "Use &middot; evidence"
+       ],
+       "widths": [
+        "20%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Ruxolitinib</b> <span class='r'>JAK1/2</span>",
+         "<b>Default first line, plt &ge;50.</b> COMFORT-I: SVR35 <b>41.9% vs 0.7%</b>, TSS50 46% vs 5%, deaths HR 0.50; COMFORT-II vs BAT: SVR35 28% vs 0%. Worsens anemia/plt early"
+        ],
+        [
+         "<b>Fedratinib</b> <span class='r'>JAK2</span>",
+         "JAKARTA (1L): SVR35 36% vs 1%. <b>FREEDOM2 (post-rux): 36% vs 6%</b> vs BAT. <b>Thiamine</b> (Wernicke in 4 at 500 mg)"
+        ],
+        [
+         "<b>Pacritinib</b> <span class='r'>JAK2/IRAK1</span>",
+         "<b>Plt &lt;50</b> (accelerated 2022). PERSIST-2 (plt &le;100): 200 mg BID SVR35 <b>22% vs 3%</b>, TSS50 32% vs 14%. Confirmatory PACIFICA (plt &lt;50) not yet reported"
+        ],
+        [
+         "<b>Momelotinib</b> <span class='r'>JAK1/2 + ACVR1</span>",
+         "<b>Anemia (Hb &lt;10)</b>, FDA 2023. MOMENTUM (JAKi-exposed, anemic): TSS50 <b>25% vs 9%</b> vs danazol + better transfusion independence. SIMPLIFY-1: SVR35 non-inferior to rux (26.5 vs 29%); symptoms not"
+        ]
+       ],
+       "footnote": "<b>Add-on combinations: spleen up, symptoms not, none approved.</b> With ruxolitinib in JAKi-naive MF, SVR35 roughly doubled with <b>pelabresib</b> (MANIFEST-2: 66% vs 35%), <b>navitoclax</b> (TRANSFORM-1: 63% vs 32%), <b>selinexor</b> (SENTRY: 50% vs 28%) &mdash; symptom endpoints not met in all three; pelabresib has an <b>excess leukemic transformation signal</b>; US filing deferred."
+      },
+      {
+       "type": "bullets",
+       "heading": "Anemia, transplant, blast phase",
+       "items": [
+        "<b>Anemia of MF:</b> <b>ESA</b> if EPO &lt;500 and not transfusion-dependent; <b>danazol</b> (monitor LFTs, PSA); <b>switch to momelotinib</b>. <b>Luspatercept</b> (INDEPENDENCE, transfusion-dependent on JAKi): RBC-TI 23% vs 13%, <b>primary endpoint not met</b> (P=0.067) &mdash; off-label",
+        "<b>Allo-HCT</b> &mdash; only curative therapy. Refer <b>DIPSS int-2/high, MIPSS70+ high, HMR mutations, transfusion dependence, plt &lt;100, TP53/complex karyotype</b>, age generally &lt;70. Continue JAKi up to conditioning (taper over days)",
+        "<b>MTSS</b> (post-transplant): age &ge;57, KPS &lt;90, plt &lt;150, WBC &gt;25, HLA-mismatched unrelated donor, <b>ASXL1</b>, non-CALR/MPL driver &rarr; 5-yr OS <b>83 / 64 / 37 / 22%</b>",
+        "<b>Accelerated (10&ndash;19% blasts) / blast phase (&ge;20%):</b> median OS ~<b>3&ndash;6 mo</b>. <b>HMA + venetoclax</b> gives CR/CRi ~40&ndash;45% but median OS only ~7&ndash;8 mo (retrospective series) &mdash; use as a <b>bridge to allo-HCT</b>, the only route to long-term survival. Intensive induction gives no OS edge without transplant; IDH-mutant: ivosidenib/enasidenib"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 3 &mdash; dosing, toxicity and monitoring, special situations, key trials",
+   "columns": [
+    {
+     "width": "37%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Agents &mdash; dosing",
+       "headers": [
+        "Agent",
+        "Dosing"
+       ],
+       "widths": [
+        "23%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Aspirin</b>",
+         "<b>81 mg daily</b>; 81 mg BID option in JAK2+ ET with CV risk factors. Hold if vWF:RCo &lt;30%"
+        ],
+        [
+         "<b>Phlebotomy</b>",
+         "250&ndash;500 mL to <b>Hct &lt;45%</b>; check CBC q4&ndash;6 wk once stable. No iron"
+        ],
+        [
+         "<b>Hydroxyurea</b>",
+         "<b>500 mg BID</b> (15&ndash;20 mg/kg/day) &rarr; titrate to counts; avoid in pregnancy"
+        ],
+        [
+         "<b>Ropeginterferon alfa-2b</b> <span class='r'>Besremi</span>",
+         "<b>PV:</b> 100 &micro;g SC q2wk (50 if on HU) &rarr; +50 &micro;g q2wk to max <b>500 &micro;g</b> until counts stable. <b>ET:</b> <b>250 &rarr; 350 (wk 2) &rarr; 500 &micro;g q2wk</b> from wk 4"
+        ],
+        [
+         "<b>Peg-IFN alfa-2a</b> <span class='r'>off-label</span>",
+         "45&ndash;90 &micro;g SC weekly, titrate to 180 &micro;g; <b>pregnancy-compatible</b>"
+        ],
+        [
+         "<b>Rusfertide</b> <span class='r'>Mimrylo</span>",
+         "<b>19 mg SC weekly</b> &rarr; titrate (9.5&ndash;108 mg) to hold Hct &lt;45%; CBC q2&ndash;4 wk during titration"
+        ],
+        [
+         "<b>Anagrelide</b>",
+         "Label: 0.5 mg QID or 1 mg BID (0.5 mg BID often used) &rarr; &uarr; &le;0.5 mg/day per week; max 10 mg/day, 2.5 mg/dose. <b>ECG</b> + cardiac history (QT, palpitations, HF)"
+        ],
+        [
+         "<b>Ruxolitinib</b> <span class='r'>MF</span>",
+         "By platelets: <b>&gt;200 &rarr; 20 mg BID</b> &middot; 100&ndash;200 &rarr; 15 BID &middot; 50&ndash;&lt;100 &rarr; 5 BID; titrate. <b>PV: 10 mg BID</b>"
+        ],
+        [
+         "<b>Fedratinib</b>",
+         "<b>400 mg daily</b> (plt &ge;50); 200 mg if CrCl 15&ndash;29 or strong CYP3A4 inhibitor. <b>Thiamine level at baseline; replete before start</b>; prophylactic antiemetic"
+        ],
+        [
+         "<b>Pacritinib</b>",
+         "<b>200 mg BID</b> (plt &lt;50); avoid with QTc &gt;480, active bleeding"
+        ],
+        [
+         "<b>Momelotinib</b>",
+         "<b>200 mg daily</b>; no platelet floor on the label (MOMENTUM enrolled plt &ge;25); dose-reduce for cytopenias per label"
+        ],
+        [
+         "<b>Danazol</b>",
+         "200 mg TID (600 mg/day); LFTs, PSA in men"
+        ],
+        [
+         "<b>ESA</b>",
+         "Epoetin alfa 40,000 U weekly or darbepoetin 150&ndash;300 &micro;g q2wk if EPO &lt;500; stop if no response by 12 wk"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Response definitions",
+       "headers": [
         "Disease",
-        "Scheme"
+        "Response"
        ],
        "widths": [
         "16%",
@@ -181,97 +498,117 @@
        ],
        "rows": [
         [
-         "<b>PV</b>",
-         "<b>High risk = age &ge;60 OR prior thrombosis</b>; low risk = neither. High risk (or symptomatic/progressive) triggers cytoreduction"
+         "<b>PV</b> <span class='r'>ELN CHR</span>",
+         "Hct &lt;45% <b>without phlebotomy</b>, plt &le;400, WBC &le;10, normal spleen, no disease symptoms"
         ],
         [
-         "<b>ET</b>",
-         "<b>IPSET-thrombosis (revised):</b> very low = &le;60, no thrombosis, JAK2 WT &middot; low = &le;60, no thrombosis, JAK2-mutant &middot; intermediate = &gt;60, no thrombosis, JAK2 WT &middot; <b>high = prior thrombosis, or &gt;60 AND JAK2-mutant</b>"
+         "<b>ET</b> <span class='r'>ELN CHR</span>",
+         "Plt &le;400, WBC &lt;10, normal spleen, no symptoms, no thrombosis/bleeding"
         ],
         [
-         "<b>PMF</b>",
-         "IPSS (at diagnosis) &middot; DIPSS / DIPSS-plus (any time) &middot; <b>MIPSS70 / MIPSS70+ v2</b> (molecular; transplant candidates) &middot; GIPSS (genetic only)"
+         "<b>MF</b> <span class='r'>trial endpoints</span>",
+         "<b>SVR35</b> = &ge;35% spleen volume reduction on MRI/CT at wk 24 &middot; <b>TSS50</b> = &ge;50% fall in MFSAF total symptom score &middot; anemia: <b>transfusion independence</b> &ge;12 wk"
         ]
-       ],
-       "footnote": "<b>Non-driver mutations set prognosis, not diagnosis.</b> High-molecular-risk in PMF: <b>ASXL1, SRSF2, EZH2, IDH1/2, U2AF1 Q157</b> &mdash; these drive the MIPSS scores and push toward transplant. <b>TP53</b> drives blast-phase transformation."
-      },
+       ]
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
       {
-       "type": "table",
-       "heading": "Agents &amp; dosing",
-       "headers": [
-        "Agent",
-        "Dose",
-        "Setting"
-       ],
-       "widths": [
-        "24%",
-        "",
-        "26%"
-       ],
-       "rows": [
-        [
-         "Aspirin",
-         "81 mg daily; <b>BID</b> if JAK2+ or high-risk ET",
-         "all PV, most ET"
-        ],
-        [
-         "Hydroxyurea",
-         "500&ndash;1000 mg daily, titrated to counts",
-         "1st-line cytoreduction"
-        ],
-        [
-         "<b>Ropeginterferon alfa-2b</b>",
-         "100 &micro;g SQ q2wk (50 if switching from HU); titrate by 50 to max 500",
-         "NCCN-preferred 1st-line PV"
-        ],
-        [
-         "Peginterferon alfa-2a",
-         "45&ndash;180 &micro;g SQ weekly",
-         "alternative; <b>pregnancy</b>"
-        ],
-        [
-         "<b>Rusfertide</b> (Mimrylo)",
-         "weekly SQ, dose-titrated",
-         "PV erythrocytosis, phlebotomy-dependent"
-        ],
-        [
-         "Anagrelide",
-         "0.5 mg BID, titrate",
-         "2nd-line ET"
-        ],
-        [
-         "<b>Ruxolitinib</b>",
-         "PV 10 mg BID &middot; MF 5&ndash;20 mg BID by platelet count",
-         "HU-resistant PV; 1st-line MF"
-        ],
-        [
-         "Fedratinib",
-         "400 mg daily",
-         "MF after ruxolitinib"
-        ],
-        [
-         "Pacritinib",
-         "200 mg BID",
-         "MF, <b>platelets &lt;50</b>"
-        ],
-        [
-         "Momelotinib",
-         "200 mg daily",
-         "MF with <b>anemia</b> (also anti-ACVR1)"
-        ]
-       ],
-       "footnote": "<b>Fedratinib requires thiamine</b> &mdash; check and replete before and during treatment (Wernicke encephalopathy). <b>Never stop ruxolitinib abruptly</b> &mdash; cytokine rebound/withdrawal syndrome; taper."
+       "type": "bullets",
+       "heading": "Toxicity and monitoring",
+       "items": [
+        "<b>Hydroxyurea:</b> macrocytosis (expected), cytopenias, <b>leg / oral ulcers</b>, <b>NMSC</b> (annual skin exam). Leukemogenic risk is low and not proven",
+        "<b>Interferons:</b> <b>boxed warning</b> &mdash; depression/suicidality, autoimmune thyroiditis, retinopathy, hepatotoxicity. Baseline + periodic <b>TSH, LFTs, eye exam</b>, mood screen; avoid with uncontrolled psychiatric or autoimmune disease",
+        "<b>JAK inhibitors:</b> anemia/thrombocytopenia (nadir wk 8&ndash;12), <b>herpes zoster</b> (recombinant zoster vaccine), <b>HBV reactivation</b> (screen HBsAg/anti-HBc), TB, PML, <b>NMSC</b>, lipids &uarr;. MACE/VTE/malignancy class warnings from tofacitinib in RA",
+        "<b>Ruxolitinib discontinuation syndrome:</b> abrupt stop &rarr; symptom/spleen rebound, rarely SIRS-like collapse &mdash; <b>taper</b>, steroids if needed",
+        "<b>Fedratinib:</b> <b>Wernicke encephalopathy</b> &mdash; thiamine monthly early, stop for confusion/ataxia/vision change and give IV thiamine; GI toxicity, amylase/lipase",
+        "<b>Rusfertide:</b> injection-site reactions (56%), anemia (16%) per label; <b>may worsen thrombocytosis</b> &mdash; monitor platelets, may need cytoreduction; induced iron restriction is intended &mdash; <b>don't give iron</b>"
+       ]
       },
       {
        "type": "bullets",
-       "heading": "Complications &amp; pearls",
+       "heading": "Special situations",
        "items": [
-        "<b>Acquired von Willebrand syndrome</b> with extreme thrombocytosis (&gt;1000&ndash;1500) &mdash; paradoxical <b>bleeding</b>. Check ristocetin cofactor before starting aspirin; hold aspirin if severely reduced",
-        "<b>CYTO-PV:</b> Hct target &lt;45% gave ~4&times; fewer cardiovascular deaths and major thromboses than a 45&ndash;50% target &mdash; the number to defend",
-        "<b>Post-PV / post-ET myelofibrosis</b> (IWG-MRT criteria) &mdash; suspect with rising LDH, falling counts, enlarging spleen, new constitutional symptoms",
-        "<b>Blast phase (&ge;20% blasts)</b> is dismal and chemo-refractory &mdash; allogeneic transplant is the only meaningful option",
-        "<b>Aquagenic pruritus</b> in PV &mdash; antihistamines, SSRIs, interferon, or ruxolitinib (a genuine quality-of-life issue, not a nuisance)",
-        "Anemia in MF: ESAs if EPO &lt;500, danazol, luspatercept, or switch to momelotinib"
+        "<b>Splanchnic vein thrombosis / Budd-Chiari:</b> <b>test JAK2 V617F</b> (then CALR) even with normal counts &mdash; portal hypertension masks erythrocytosis and thrombocytosis. Long-term anticoagulation + cytoreduction (IFN or HU)",
+        "<b>Pregnancy:</b> aspirin throughout; <b>peg-IFN</b> if cytoreduction needed (stop HU, anagrelide, JAKi before conception); Hct &lt;45% in PV; <b>LMWH for 6 wk postpartum</b>, antepartum too if prior thrombosis",
+        "<b>Surgery:</b> control counts first (Hct &lt;45%, plt near normal); hold aspirin 7 days for high-bleed procedures; aggressive VTE prophylaxis &mdash; perioperative thrombosis and bleeding both rise",
+        "<b>Extreme thrombocytosis</b> (&gt;1000&ndash;1500): acquired vWD &rarr; bleeding, not clotting; check vWF:RCo, hold aspirin if low, cytoreduce. Plateletpheresis only for acute thrombosis/bleeding",
+        "<b>Pruritus</b> (aquagenic, PV): antihistamines, SSRIs (paroxetine), narrowband UVB; <b>IFN or ruxolitinib</b> for refractory itch",
+        "<b>Thrombosis on therapy:</b> arterial &rarr; aspirin + cytoreduce; venous &rarr; DOAC/warfarin long term + cytoreduce; reassess Hct/plt control"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "headers": [
+        "Trial",
+        "Design &middot; result"
+       ],
+       "widths": [
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>CYTO-PV</b> <span class='r'>2013</span>",
+         "Hct &lt;45% vs 45&ndash;50%: CV death/thrombosis <b>2.7% vs 9.8%</b>"
+        ],
+        [
+         "<b>PROUD / CONTINUATION-PV</b> <span class='r'>2020</span>",
+         "Ropeg vs HU: 12-mo NI missed; CHR 36 mo <b>71% vs 51%</b>"
+        ],
+        [
+         "<b>Low-PV</b> <span class='r'>2021, ph 2</span>",
+         "Ropeg + phlebotomy in low-risk PV: response <b>84% vs 60%</b>"
+        ],
+        [
+         "<b>RESPONSE</b> <span class='r'>2015</span>",
+         "Rux vs BAT, HU-R/I PV: composite <b>21% vs 1%</b>"
+        ],
+        [
+         "<b>MAJIC-PV</b> <span class='r'>2023, ph 2</span>",
+         "Rux vs BAT: CR 43% vs 26%; <b>EFS HR 0.58</b>"
+        ],
+        [
+         "<b>VERIFY</b> <span class='r'>2025</span>",
+         "Rusfertide vs placebo: no phlebotomy <b>77% vs 33%</b>"
+        ],
+        [
+         "<b>PT-1</b> <span class='r'>2005</span>",
+         "HU vs anagrelide in high-risk ET: <b>HU superior</b> (OR 1.57)"
+        ],
+        [
+         "<b>SURPASS-ET</b> <span class='r'>2025</span>",
+         "Ropeg vs anagrelide, 2L ET: response <b>43% vs 6%</b>"
+        ],
+        [
+         "<b>COMFORT-I / II</b> <span class='r'>2012</span>",
+         "Rux: SVR35 <b>42% vs 1%</b> (placebo); 28% vs 0% (BAT)"
+        ],
+        [
+         "<b>JAKARTA / FREEDOM2</b>",
+         "Fedratinib SVR35 36% vs 1% (1L); <b>36% vs 6%</b> post-rux"
+        ],
+        [
+         "<b>PERSIST-2</b> <span class='r'>2018</span>",
+         "Pacritinib, plt &le;100: SVR35 <b>18% vs 3%</b>"
+        ],
+        [
+         "<b>MOMENTUM</b> <span class='r'>2023</span>",
+         "Momelotinib vs danazol, anemic: TSS50 <b>25% vs 9%</b>"
+        ],
+        [
+         "<b>SIMPLIFY-1</b> <span class='r'>2017</span>",
+         "Momelotinib vs rux: SVR35 non-inferior; TSS not"
+        ]
        ]
       }
      ]
@@ -281,12 +618,22 @@
  ],
  "headings": [
   "Driver mutations",
-  "Mutation biology",
-  "Diagnostic anchors (WHO 2022)",
+  "Diagnosis (WHO 2022 &middot; ICC 2022)",
   "Treatment pathway",
+  "Workup",
   "Risk stratification",
-  "Agents &amp; dosing",
-  "Complications &amp; pearls"
+  "Pathophysiology",
+  "Follow-up and progression",
+  "Other MPNs (brief)",
+  "Polycythemia vera &mdash; evidence",
+  "Essential thrombocythemia &mdash; evidence",
+  "Myelofibrosis &mdash; JAK inhibitor choice",
+  "Anemia, transplant, blast phase",
+  "Agents &mdash; dosing",
+  "Response definitions",
+  "Toxicity and monitoring",
+  "Special situations",
+  "Key trials"
  ],
- "text": "Myeloproliferative neoplasms — PV, ET, PMF Philadelphia-negative MPNs driven by constitutive JAK-STAT activation ( JAK2 V617F, CALR, MPL ) · shared risks are thrombosis , progression to myelofibrosis , and blast-phase transformation No Stanford handbook chapter — compiled from WHO 2022 / ICC criteria, NCCN MPN guidelines, and landmark trials. Verify against primary sources before acting. Driver mutations Driver PV ET PMF JAK2 V617F ~95% 50–60% ~60% JAK2 exon 12 ~3% — — CALR — 20–25% 25–30% MPL — 3–5% 5–8% Triple-negative — 10–15% ~10% PV is essentially always JAK2-mutated — a JAK2-negative erythrocytosis should send you back to the differential, not to a PV diagnosis. In ET, CALR predicts higher platelets but lower thrombosis risk than JAK2. Mutation biology All three drivers converge on JAK-STAT — JAK inhibitors work irrespective of which one is present JAK2 V617F — exon 14 pseudokinase (JH2) domain ; relieves autoinhibition → ligand-independent signaling. Homozygosity via 9p uniparental disomy is common in PV/PMF, rare in ET; higher allele burden tracks with PV phenotype, pruritus and fibrotic progression JAK2 exon 12 — ~3% of PV: isolated erythrocytosis , younger, very low EPO; outcomes similar to V617F CALR — exon 9 frameshift; the mutant C-terminus loses the KDEL ER-retention motif and instead activates MPL — which is exactly why CALR occurs in ET and PMF but never in PV . Type 1 (del52) predominates in PMF and is favorable; type 2 (ins5) in ET MPL W515L/K — exon 10 TPO receptor; ET and PMF only. Triple-negative — worst prognosis in PMF Diagnostic anchors (WHO 2022) PV: Hb >16.5 (M) / >16.0 (F) or Hct >49% (M) / >48% (F) + trilineage hypercellularity with pleomorphic megakaryocytes + JAK2 mutation; subnormal EPO is a minor criterion ET: platelets ≥450 ×10 9 /L + large hyperlobulated (“staghorn”) megakaryocytes + reticulin ≤ grade 1 + a clonal marker, having excluded other MPNs PMF: megakaryocyte atypia with dense clustering + fibrosis grade (prefibrotic vs overt) + leukoerythroblastosis, anemia, splenomegaly, &uarr;LDH The hardest and highest-stakes distinction is prefibrotic PMF vs ET. They look alike on counts, but prefibrotic PMF has materially worse survival and higher transformation risk. It turns on marrow morphology — megakaryocyte clustering and atypia — not on the CBC. Masked PV: concurrent iron deficiency can normalize the hematocrit. If JAK2 is mutated with a “normal” Hct, think PV. Splanchnic vein thrombosis (Budd-Chiari, portal vein) — test JAK2 in everyone, even with normal counts; MPN is a leading occult cause. Treatment pathway Polycythemia vera All patients phlebotomy to Hct <45% (CYTO-PV) aspirin 81 mg + cardiovascular risk control do not replace iron — it defeats the target High risk — age ≥60 or prior thrombosis cytoreduce: ropeginterferon (NCCN-preferred) or hydroxyurea; peg-IFN alfa-2a alternative HU-resistant/intolerant: ruxolitinib (RESPONSE) phlebotomy-dependent: rusfertide (VERIFY) Essential thrombocythemia Low / very low risk aspirin 81 mg — consider BID if JAK2+ or CV RFs observation reasonable if very low risk check vWF activity if platelets >1000 High risk — prior thrombosis, or >60 + JAK2+ cytoreduce: hydroxyurea first line anagrelide second line (PT-1) interferon preferred in pregnancy / young Primary myelofibrosis Risk-stratify first DIPSS / DIPSS-plus, MIPSS70+ v2, GIPSS allogeneic transplant is the only cure refer intermediate-2 / high risk if eligible Spleen and symptom directed ruxolitinib first line — most survival data platelets <50: pacritinib anemia / transfusion-dependent: momelotinib after ruxolitinib: fedratinib Risk stratification Disease Scheme PV High risk = age ≥60 OR prior thrombosis ; low risk = neither. High risk (or symptomatic/progressive) triggers cytoreduction ET IPSET-thrombosis (revised): very low = ≤60, no thrombosis, JAK2 WT · low = ≤60, no thrombosis, JAK2-mutant · intermediate = >60, no thrombosis, JAK2 WT · high = prior thrombosis, or >60 AND JAK2-mutant PMF IPSS (at diagnosis) · DIPSS / DIPSS-plus (any time) · MIPSS70 / MIPSS70+ v2 (molecular; transplant candidates) · GIPSS (genetic only) Non-driver mutations set prognosis, not diagnosis. High-molecular-risk in PMF: ASXL1, SRSF2, EZH2, IDH1/2, U2AF1 Q157 — these drive the MIPSS scores and push toward transplant. TP53 drives blast-phase transformation. Agents & dosing Agent Dose Setting Aspirin 81 mg daily; BID if JAK2+ or high-risk ET all PV, most ET Hydroxyurea 500–1000 mg daily, titrated to counts 1st-line cytoreduction Ropeginterferon alfa-2b 100 &micro;g SQ q2wk (50 if switching from HU); titrate by 50 to max 500 NCCN-preferred 1st-line PV Peginterferon alfa-2a 45–180 &micro;g SQ weekly alternative; pregnancy Rusfertide (Mimrylo) weekly SQ, dose-titrated PV erythrocytosis, phlebotomy-dependent Anagrelide 0.5 mg BID, titrate 2nd-line ET Ruxolitinib PV 10 mg BID · MF 5–20 mg BID by platelet count HU-resistant PV; 1st-line MF Fedratinib 400 mg daily MF after ruxolitinib Pacritinib 200 mg BID MF, platelets <50 Momelotinib 200 mg daily MF with anemia (also anti-ACVR1) Fedratinib requires thiamine — check and replete before and during treatment (Wernicke encephalopathy). Never stop ruxolitinib abruptly — cytokine rebound/withdrawal syndrome; taper. Complications & pearls Acquired von Willebrand syndrome with extreme thrombocytosis (>1000–1500) — paradoxical bleeding . Check ristocetin cofactor before starting aspirin; hold aspirin if severely reduced CYTO-PV: Hct target <45% gave ~4× fewer cardiovascular deaths and major thromboses than a 45–50% target — the number to defend Post-PV / post-ET myelofibrosis (IWG-MRT criteria) — suspect with rising LDH, falling counts, enlarging spleen, new constitutional symptoms Blast phase (≥20% blasts) is dismal and chemo-refractory — allogeneic transplant is the only meaningful option Aquagenic pruritus in PV — antihistamines, SSRIs, interferon, or ruxolitinib (a genuine quality-of-life issue, not a nuisance) Anemia in MF: ESAs if EPO <500, danazol, luspatercept, or switch to momelotinib"
+ "text": "Myeloproliferative neoplasms — PV, ET, PMF Philadelphia-negative MPNs driven by constitutive JAK-STAT signaling ( JAK2 V617F, CALR, MPL ) · goals: prevent thrombosis in PV/ET, control spleen, symptoms and anemia in MF, and transplant the fit high-risk MF patient No Stanford Oncology Handbook chapter — compiled from WHO 2022 / ICC 2022 criteria · NCCN MPN · ELN · primary trial reports verified against PubMed; approvals against FDA labels, October 2026. Driver mutations Driver PV ET PMF JAK2 V617F exon 14 ~95% 50–60% 50–60% JAK2 exon 12 ~3% — — CALR exon 9 — 20–25% 25–30% MPL W515L/K — 3–5% 5–8% Triple-negative — 10–15% ~10% JAK2-negative erythrocytosis is not PV until exon 12 is excluded — go back to the secondary differential. CALR never occurs in PV (mutant CALR signals only through MPL). In ET, CALR = higher platelets but lower thrombosis risk than JAK2; in PMF, CALR type 1 is favorable and triple-negative is worst. Diagnosis (WHO 2022 · ICC 2022) Entity Criteria PV Hb >16.5 (M) / >16.0 (F) or Hct >49% / >48% + trilineage marrow hypercellularity with pleomorphic mature megakaryocytes + JAK2 V617F or exon 12 . Minor: subnormal EPO . All 3 major, or first 2 + minor. Marrow can be skipped if Hb >18.5 / >16.5 (Hct >55.5 / >49.5%) with JAK2 + low EPO — but it misses early fibrosis ET Platelets ≥450 + marrow with large, hyperlobulated (“staghorn”) megakaryocytes, no left shift, reticulin ≤grade 1 + not another myeloid neoplasm + JAK2 / CALR / MPL . Minor: other clonal marker or no reactive cause. Marrow is required Prefibrotic PMF Megakaryocyte proliferation with atypia (clustering, cloud-like nuclei), reticulin ≤grade 1 , hypercellular, granulocytic &uarr; / erythroid &darr; + driver or clonal marker + ≥1 minor: anemia, WBC ≥11, palpable spleen, &uarr;LDH Overt PMF Same megakaryocyte atypia + reticulin/collagen grade 2–3 + clonal marker + ≥1 minor (above, or leukoerythroblastosis ) Post-PV / ET MF Prior PV/ET + grade 2–3 fibrosis + ≥2 of: anemia (post-PV: or loss of phlebotomy/cytoreduction need; post-ET: Hb &darr;≥2 g/dL), leukoerythroblastosis, enlarging spleen (≥5 cm), constitutional symptoms, &uarr;LDH (post-ET) (IWG-MRT) Prefibrotic PMF vs ET — same CBC, but prefibrotic PMF has worse survival and more fibrotic/leukemic progression. It turns on megakaryocyte morphology , so every suspected ET needs a marrow. Treatment pathway Polycythemia vera All patients phlebotomy to Hct <45% (CYTO-PV) aspirin 81 mg daily; treat CV risk factors no iron supplementation Low risk (<60, no thrombosis) phlebotomy + aspirin cytoreduce if phlebotomy-intolerant, symptomatic, rising WBC/plt or splenomegaly: ropeg (Low-PV) High risk (≥60 or prior thrombosis) ropeginterferon or hydroxyurea HU-resistant/intolerant: ruxolitinib or IFN phlebotomy-dependent: add rusfertide (FDA 2026) Essential thrombocythemia Very low / low risk observe, or aspirin 81 mg if JAK2+ or CV RFs CALR+, no CV RF: skip aspirin (bleeding) plt >1000: check vWF:RCo first Intermediate (>60, JAK2 WT) aspirin 81 mg daily cytoreduce if symptoms or extreme platelets High (thrombosis, or >60 + JAK2+) aspirin + hydroxyurea (PT-1) or ropeginterferon (FDA any line; SURPASS-ET 2L) or anagrelide; IFN if young / pregnancy Myelofibrosis (PMF, post-PV/ET) Risk-stratify → transplant decision DIPSS-plus / MIPSS70+ v2 / MYSEC-PM int-2 / high risk, fit: refer for allo-HCT low risk, asymptomatic: observe Symptoms or spleen — JAK inhibitor plt ≥50 + Hb OK: ruxolitinib (OS signal) Hb <10 / transfusions: momelotinib plt <50: pacritinib after ruxolitinib: fedratinib, momelotinib Anemia / blast phase anemia: ESA (EPO <500), danazol, momelotinib BP (≥20% blasts): HMA ± ven → allo-HCT Workup Peripheral blood JAK2 V617F (qPCR, report VAF) → if negative: CALR + MPL (thrombocytosis / fibrosis) or JAK2 exon 12 (erythrocytosis). Most labs now run an MPN NGS panel up front NGS for high-molecular-risk mutations : ASXL1, SRSF2, U2AF1 Q157, EZH2, IDH1/2 (+ TP53, RAS) — drive MIPSS70+ and transplant referral BCR::ABL1 (PCR or FISH) in every thrombocytosis / leukocytosis — CML can present as isolated thrombocytosis Erythrocytosis: serum EPO (low → PV; normal/high → secondary), ferritin/iron (iron deficiency masks PV), SpO 2 , sleep study, smoking/CO-Hb, testosterone/SGLT2i , renal/hepatic mass imaging Thrombocytosis: exclude iron deficiency, inflammation/infection, asplenia, malignancy, bleeding (CRP, ferritin) Marrow aspirate + biopsy with reticulin stain + karyotype; abdominal US for spleen; LDH, uric acid Platelets >1000–1500 or any bleeding: vWF:RCo (ristocetin cofactor) + vWF antigen — acquired vWD; ratio <0.7 or RCo <30% → hold aspirin, cytoreduce Risk stratification Score Factors · groups PV High = age ≥60 OR prior thrombosis ; low = neither. Leukocytosis, CV risk factors and JAK2 VAF add risk but are not in the score ET — revised IPSET-thrombosis Very low: ≤60, no thrombosis, JAK2 WT · low: ≤60, no thrombosis, JAK2+ · intermediate: >60, no thrombosis, JAK2 WT · high: prior thrombosis, or >60 + JAK2+ DIPSS-plus PMF, any time DIPSS (age >65, Hb <10 [2 pts], WBC >25, blasts ≥1%, constitutional sx) + unfavorable karyotype, plt <100, transfusion need . Median OS: low 185 · int-1 78 · int-2 35 · high 16 mo MIPSS70+ v2.0 PMF, molecular Very-high-risk karyotype 4, unfavorable karyotype 3, ≥2 HMR mutations 3 / 1 HMR 2, absent CALR type 1 2, constitutional sx 2, severe anemia 2 (moderate 1), blasts ≥2% 1 → very low / low / intermediate / high / very high MYSEC-PM post-PV/ET MF Hb <11 (2), blasts ≥3% (2), CALR-unmutated (2), plt <150 (1), constitutional sx (1), +0.15/yr of age. Median OS: low NR · int-1 9.3 · int-2 4.4 · high 2 yr Use MYSEC-PM, not DIPSS/IPSS, for secondary MF. HMR = ASXL1, SRSF2, U2AF1 Q157, EZH2, IDH1/2; TP53 (multi-hit) predicts leukemic transformation. Pathophysiology Follow-up and progression Stable PV/ET: CBC every 3–6 mo, symptom score (MPN-SAF TSS), spleen exam, CV risk factors; reassess risk category with each new thrombosis or birthday past 60 Suspect post-PV/ET MF: falling Hb or loss of phlebotomy need, rising LDH, leukoerythroblastosis, growing spleen, new constitutional symptoms → repeat marrow + NGS , restage with MYSEC-PM Suspect accelerated/blast phase: circulating blasts ≥10%, new refractory cytopenias → marrow, karyotype, NGS (TP53), HLA typing JAK2/CALR VAF is worth tracking on interferon (molecular response); not needed on HU Other MPNs (brief) MPN-U — MPN features that fit no category (often early PMF or splanchnic thrombosis presentations); manage by the dominant phenotype CNL — sustained neutrophilia ≥25 (≥80% segs/bands), no dysplasia; CSF3R T618I (~60–80%); ruxolitinib responses; allo-HCT for fit CEL — clonal eosinophilia ≥1.5 with marrow abnormality; first exclude PDGFRA/B, FGFR1, JAK2 rearrangements (imatinib-sensitive PDGFR) Polycythemia vera — evidence Question Answer · trial Hct target <45% for everyone (CYTO-PV, n=365): CV death or major thrombosis 2.7% vs 9.8% at 45–50% (HR 3.91) Aspirin 81–100 mg daily for all without contraindication (ECLAP: fewer thromboses) Interferon vs HU PROUD-PV / CONTINUATION-PV (ropeg vs HU, early PV): 12-mo non-inferiority not met (CHR + normal spleen 21% vs 28%), but CHR at 36 mo 71% vs 51% and deeper JAK2 VAF falls. Responses accrue slowly Low-risk PV Low-PV (randomized phase 2, age ≤60): ropeg 100 &micro;g q2wk + phlebotomy kept Hct ≤45% in 84% vs 60% ; stopped early for efficacy HU-resistant / intolerant Ruxolitinib — RESPONSE (phase 3): Hct control + spleen response 21% vs 1% ; MAJIC-PV (phase 2): CR 43% vs 26% , event-free survival HR 0.58 Phlebotomy-dependent Rusfertide (hepcidin mimetic, VERIFY phase 3, n=293): no phlebotomy wk 20–32 76.9% vs 32.9% ; Hct <45% 62.6% vs 14.4%. FDA 28 Aug 2026 (Mimrylo). Erythrocytosis only — not cytoreductive HU resistance (ELN): need for phlebotomy, plt >400 + WBC >10, or no spleen response after 3 mo at ≥2 g/day; cytopenia at lowest effective dose; or intolerable toxicity (leg ulcers, mucositis). Essential thrombocythemia — evidence Question Answer · trial Aspirin by risk JAK2+ or CV risk factors: aspirin 81 mg . Low-risk CALR+ : aspirin did not cut thrombosis but raised bleeding (retrospective) — observe. BID aspirin is an option if JAK2+ with CV risk factors (faster platelet turnover) HU vs anagrelide PT-1 (n=809, high risk, + aspirin): anagrelide arm more arterial thrombosis, serious bleeding and myelofibrosis , fewer VTE (composite OR 1.57) → HU first line Second line Ropeginterferon — SURPASS-ET (phase 3, HU-resistant/intolerant + WBC >10): durable ELN response 43% vs 6% vs anagrelide; thromboembolic events 1 vs 10 (FDA label). FDA 31 Aug 2026 (all adult ET). 96% Asian cohort Platelet goal Cytoreduce to symptom control and plt <400–450 ; no evidence that normalizing counts alone prevents thrombosis in low-risk disease Myelofibrosis — JAK inhibitor choice Agent Use · evidence Ruxolitinib JAK1/2 Default first line, plt ≥50. COMFORT-I: SVR35 41.9% vs 0.7% , TSS50 46% vs 5%, deaths HR 0.50; COMFORT-II vs BAT: SVR35 28% vs 0%. Worsens anemia/plt early Fedratinib JAK2 JAKARTA (1L): SVR35 36% vs 1%. FREEDOM2 (post-rux): 36% vs 6% vs BAT. Thiamine (Wernicke in 4 at 500 mg) Pacritinib JAK2/IRAK1 Plt <50 (accelerated 2022). PERSIST-2 (plt ≤100): 200 mg BID SVR35 22% vs 3% , TSS50 32% vs 14%. Confirmatory PACIFICA (plt <50) not yet reported Momelotinib JAK1/2 + ACVR1 Anemia (Hb <10) , FDA 2023. MOMENTUM (JAKi-exposed, anemic): TSS50 25% vs 9% vs danazol + better transfusion independence. SIMPLIFY-1: SVR35 non-inferior to rux (26.5 vs 29%); symptoms not Add-on combinations: spleen up, symptoms not, none approved. With ruxolitinib in JAKi-naive MF, SVR35 roughly doubled with pelabresib (MANIFEST-2: 66% vs 35%), navitoclax (TRANSFORM-1: 63% vs 32%), selinexor (SENTRY: 50% vs 28%) — symptom endpoints not met in all three; pelabresib has an excess leukemic transformation signal ; US filing deferred. Anemia, transplant, blast phase Anemia of MF: ESA if EPO <500 and not transfusion-dependent; danazol (monitor LFTs, PSA); switch to momelotinib . Luspatercept (INDEPENDENCE, transfusion-dependent on JAKi): RBC-TI 23% vs 13%, primary endpoint not met (P=0.067) — off-label Allo-HCT — only curative therapy. Refer DIPSS int-2/high, MIPSS70+ high, HMR mutations, transfusion dependence, plt <100, TP53/complex karyotype , age generally <70. Continue JAKi up to conditioning (taper over days) MTSS (post-transplant): age ≥57, KPS <90, plt <150, WBC >25, HLA-mismatched unrelated donor, ASXL1 , non-CALR/MPL driver → 5-yr OS 83 / 64 / 37 / 22% Accelerated (10–19% blasts) / blast phase (≥20%): median OS ~ 3–6 mo . HMA + venetoclax gives CR/CRi ~40–45% but median OS only ~7–8 mo (retrospective series) — use as a bridge to allo-HCT , the only route to long-term survival. Intensive induction gives no OS edge without transplant; IDH-mutant: ivosidenib/enasidenib Agents — dosing Agent Dosing Aspirin 81 mg daily ; 81 mg BID option in JAK2+ ET with CV risk factors. Hold if vWF:RCo <30% Phlebotomy 250–500 mL to Hct <45% ; check CBC q4–6 wk once stable. No iron Hydroxyurea 500 mg BID (15–20 mg/kg/day) → titrate to counts; avoid in pregnancy Ropeginterferon alfa-2b Besremi PV: 100 &micro;g SC q2wk (50 if on HU) → +50 &micro;g q2wk to max 500 &micro;g until counts stable. ET: 250 → 350 (wk 2) → 500 &micro;g q2wk from wk 4 Peg-IFN alfa-2a off-label 45–90 &micro;g SC weekly, titrate to 180 &micro;g; pregnancy-compatible Rusfertide Mimrylo 19 mg SC weekly → titrate (9.5–108 mg) to hold Hct <45%; CBC q2–4 wk during titration Anagrelide Label: 0.5 mg QID or 1 mg BID (0.5 mg BID often used) → &uarr; ≤0.5 mg/day per week; max 10 mg/day, 2.5 mg/dose. ECG + cardiac history (QT, palpitations, HF) Ruxolitinib MF By platelets: >200 → 20 mg BID · 100–200 → 15 BID · 50–<100 → 5 BID; titrate. PV: 10 mg BID Fedratinib 400 mg daily (plt ≥50); 200 mg if CrCl 15–29 or strong CYP3A4 inhibitor. Thiamine level at baseline; replete before start ; prophylactic antiemetic Pacritinib 200 mg BID (plt <50); avoid with QTc >480, active bleeding Momelotinib 200 mg daily ; no platelet floor on the label (MOMENTUM enrolled plt ≥25); dose-reduce for cytopenias per label Danazol 200 mg TID (600 mg/day); LFTs, PSA in men ESA Epoetin alfa 40,000 U weekly or darbepoetin 150–300 &micro;g q2wk if EPO <500; stop if no response by 12 wk Response definitions Disease Response PV ELN CHR Hct <45% without phlebotomy , plt ≤400, WBC ≤10, normal spleen, no disease symptoms ET ELN CHR Plt ≤400, WBC <10, normal spleen, no symptoms, no thrombosis/bleeding MF trial endpoints SVR35 = ≥35% spleen volume reduction on MRI/CT at wk 24 · TSS50 = ≥50% fall in MFSAF total symptom score · anemia: transfusion independence ≥12 wk Toxicity and monitoring Hydroxyurea: macrocytosis (expected), cytopenias, leg / oral ulcers , NMSC (annual skin exam). Leukemogenic risk is low and not proven Interferons: boxed warning — depression/suicidality, autoimmune thyroiditis, retinopathy, hepatotoxicity. Baseline + periodic TSH, LFTs, eye exam , mood screen; avoid with uncontrolled psychiatric or autoimmune disease JAK inhibitors: anemia/thrombocytopenia (nadir wk 8–12), herpes zoster (recombinant zoster vaccine), HBV reactivation (screen HBsAg/anti-HBc), TB, PML, NMSC , lipids &uarr;. MACE/VTE/malignancy class warnings from tofacitinib in RA Ruxolitinib discontinuation syndrome: abrupt stop → symptom/spleen rebound, rarely SIRS-like collapse — taper , steroids if needed Fedratinib: Wernicke encephalopathy — thiamine monthly early, stop for confusion/ataxia/vision change and give IV thiamine; GI toxicity, amylase/lipase Rusfertide: injection-site reactions (56%), anemia (16%) per label; may worsen thrombocytosis — monitor platelets, may need cytoreduction; induced iron restriction is intended — don't give iron Special situations Splanchnic vein thrombosis / Budd-Chiari: test JAK2 V617F (then CALR) even with normal counts — portal hypertension masks erythrocytosis and thrombocytosis. Long-term anticoagulation + cytoreduction (IFN or HU) Pregnancy: aspirin throughout; peg-IFN if cytoreduction needed (stop HU, anagrelide, JAKi before conception); Hct <45% in PV; LMWH for 6 wk postpartum , antepartum too if prior thrombosis Surgery: control counts first (Hct <45%, plt near normal); hold aspirin 7 days for high-bleed procedures; aggressive VTE prophylaxis — perioperative thrombosis and bleeding both rise Extreme thrombocytosis (>1000–1500): acquired vWD → bleeding, not clotting; check vWF:RCo, hold aspirin if low, cytoreduce. Plateletpheresis only for acute thrombosis/bleeding Pruritus (aquagenic, PV): antihistamines, SSRIs (paroxetine), narrowband UVB; IFN or ruxolitinib for refractory itch Thrombosis on therapy: arterial → aspirin + cytoreduce; venous → DOAC/warfarin long term + cytoreduce; reassess Hct/plt control Key trials Trial Design · result CYTO-PV 2013 Hct <45% vs 45–50%: CV death/thrombosis 2.7% vs 9.8% PROUD / CONTINUATION-PV 2020 Ropeg vs HU: 12-mo NI missed; CHR 36 mo 71% vs 51% Low-PV 2021, ph 2 Ropeg + phlebotomy in low-risk PV: response 84% vs 60% RESPONSE 2015 Rux vs BAT, HU-R/I PV: composite 21% vs 1% MAJIC-PV 2023, ph 2 Rux vs BAT: CR 43% vs 26%; EFS HR 0.58 VERIFY 2025 Rusfertide vs placebo: no phlebotomy 77% vs 33% PT-1 2005 HU vs anagrelide in high-risk ET: HU superior (OR 1.57) SURPASS-ET 2025 Ropeg vs anagrelide, 2L ET: response 43% vs 6% COMFORT-I / II 2012 Rux: SVR35 42% vs 1% (placebo); 28% vs 0% (BAT) JAKARTA / FREEDOM2 Fedratinib SVR35 36% vs 1% (1L); 36% vs 6% post-rux PERSIST-2 2018 Pacritinib, plt ≤100: SVR35 18% vs 3% MOMENTUM 2023 Momelotinib vs danazol, anemic: TSS50 25% vs 9% SIMPLIFY-1 2017 Momelotinib vs rux: SVR35 non-inferior; TSS not"
 }

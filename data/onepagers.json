@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T17:01:31",
+ "generated": "2026-10-14T09:18:55",
  "onepagers": [
   {
    "disease": "aml",
@@ -42,9 +42,9 @@
    "file": "Chronic Lymphocytic Leukemia.pdf",
    "title": "Chronic lymphocytic leukemia / SLL",
    "pages": 3,
-   "size": 74082,
-   "sha1": "d3763d812763479cf7eaf8eeed70f196eb2f5e4c",
-   "updated": "2026-10-13"
+   "size": 94857,
+   "sha1": "eb8dc18faa7c3071f08ad8ddf5d8e1495a3f9cc6",
+   "updated": "2026-10-14"
   },
   {
    "disease": "colon",
@@ -159,9 +159,9 @@
    "file": "Multiple Myeloma.pdf",
    "title": "Multiple myeloma & precursors",
    "pages": 3,
-   "size": 69437,
-   "sha1": "5b613bc818999d940781bd900ebc9eac3dc783e4",
-   "updated": "2026-10-13"
+   "size": 96927,
+   "sha1": "075733cc2b0139534da62aa8ebf30037e486ad60",
+   "updated": "2026-10-14"
   },
   {
    "disease": "mds",
@@ -176,10 +176,10 @@
    "disease": "mpn",
    "file": "Myeloproliferative Neoplasms.pdf",
    "title": "Myeloproliferative neoplasms (PV / ET / PMF)",
-   "pages": 1,
-   "size": 40523,
-   "sha1": "e28d364e122ac1a844b995d7c69343a93876720f",
-   "updated": "2026-09-19"
+   "pages": 3,
+   "size": 95060,
+   "sha1": "881fdba9941035ccdb09b9b7d9123e72af1be637",
+   "updated": "2026-10-14"
   },
   {
    "disease": "net",
@@ -222,9 +222,9 @@
    "file": "Prostate Cancer.pdf",
    "title": "Prostate cancer",
    "pages": 3,
-   "size": 65806,
-   "sha1": "4be94ed89275db5eeeec1486cbcae263b6d745f7",
-   "updated": "2026-10-13"
+   "size": 85564,
+   "sha1": "716f9b80ec9b0a8e2e61f8a90a20ddfeec8cc4db",
+   "updated": "2026-10-14"
   },
   {
    "disease": "rectal",
@@ -240,9 +240,9 @@
    "file": "Renal Cell Carcinoma.pdf",
    "title": "Renal cell carcinoma",
    "pages": 3,
-   "size": 68357,
-   "sha1": "683b562ac382e0cd701a23a4d8727ec656bae47a",
-   "updated": "2026-10-13"
+   "size": 92465,
+   "sha1": "043c4c1f1a4a1d6a63a74ebef194ccb90a6a3bd1",
+   "updated": "2026-10-14"
   },
   {
    "disease": "testicular",

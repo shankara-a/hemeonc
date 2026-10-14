@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-13",
+ "updated": "2026-10-14",
  "trials": [
   {
    "id": "e1900",
@@ -10385,6 +10385,102 @@
    "updated": "2026-09-20"
   },
   {
+   "id": "pt-1",
+   "name": "MRC PT-1",
+   "disease": "mpn",
+   "year": 2005,
+   "phase": "3",
+   "setting": "High-risk essential thrombocythemia",
+   "descriptor": "hydroxyurea vs anagrelide, both with aspirin, in high-risk ET",
+   "population": "High-risk ET (age ≥60, prior thrombosis/hemorrhage, or platelets ≥1000)",
+   "arms": "Hydroxyurea + aspirin vs anagrelide + aspirin",
+   "n": 809,
+   "primary_endpoint": "Composite of arterial thrombosis, venous thrombosis, serious hemorrhage, or death from thrombosis/hemorrhage",
+   "results": "Anagrelide arm reached the composite more often (OR 1.57, p=0.03): more arterial thrombosis (p=0.004), serious hemorrhage (p=0.008) and myelofibrotic transformation (p=0.01), less VTE (p=0.006); equal platelet control",
+   "toxicity": "Anagrelide: more withdrawals (palpitations, headache, fluid retention)",
+   "reference": "Harrison CN et al. N Engl J Med 2005;353:33-45",
+   "pmid": "16000354",
+   "nct": null,
+   "highlights": [
+    "Equal platelet counts did not mean equal outcomes: anagrelide plus aspirin caused more arterial events and bleeding",
+    "Anagrelide was associated with more myelofibrotic transformation",
+    "Established hydroxyurea as first-line cytoreduction in high-risk ET"
+   ],
+   "takeaway": "Hydroxyurea plus aspirin is superior to anagrelide plus aspirin for high-risk ET.",
+   "tags": [
+    "hydroxyurea",
+    "anagrelide",
+    "essential thrombocythemia"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "comfort-i",
+   "name": "COMFORT-I",
+   "disease": "mpn",
+   "year": 2012,
+   "phase": "3",
+   "setting": "Intermediate-2/high-risk myelofibrosis",
+   "descriptor": "ruxolitinib vs placebo in myelofibrosis",
+   "population": "Intermediate-2 or high-risk MF (PMF, post-PV, post-ET), platelets ≥100",
+   "arms": "Ruxolitinib BID vs placebo",
+   "n": 309,
+   "primary_endpoint": "≥35% spleen volume reduction at week 24 (MRI)",
+   "results": "SVR35 41.9% vs 0.7%; TSS50 45.9% vs 5.3%; deaths 13 vs 24 (HR 0.50)",
+   "toxicity": "Anemia and thrombocytopenia, mostly early",
+   "reference": "Verstovsek S et al. N Engl J Med 2012;366:799-807",
+   "pmid": "22375971",
+   "nct": "NCT00952289",
+   "highlights": [
+    "Established ruxolitinib as first-line therapy for symptomatic MF",
+    "Spleen and symptom benefit with an early survival signal",
+    "Anemia and thrombocytopenia peak early and rarely force discontinuation"
+   ],
+   "takeaway": "Ruxolitinib shrinks the spleen, relieves symptoms and was associated with fewer deaths than placebo in higher-risk MF.",
+   "tags": [
+    "ruxolitinib",
+    "myelofibrosis",
+    "JAK inhibitor"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "comfort-ii",
+   "name": "COMFORT-II",
+   "disease": "mpn",
+   "year": 2012,
+   "phase": "3",
+   "setting": "Intermediate-2/high-risk myelofibrosis",
+   "descriptor": "ruxolitinib vs best available therapy in myelofibrosis",
+   "population": "Intermediate-2 or high-risk PMF, post-PV or post-ET MF",
+   "arms": "Ruxolitinib vs best available therapy (2:1)",
+   "n": 219,
+   "primary_endpoint": "≥35% spleen volume reduction at week 48",
+   "results": "SVR35 28% vs 0% at week 48 (32% vs 0% at week 24); improved quality of life; OS effect not shown at primary analysis",
+   "toxicity": "Thrombocytopenia, anemia",
+   "reference": "Harrison C et al. N Engl J Med 2012;366:787-798",
+   "pmid": "22375970",
+   "nct": "NCT00934544",
+   "highlights": [
+    "Confirmed ruxolitinib's spleen benefit against active best available therapy",
+    "Responses were durable (80% maintained at 12 months)",
+    "Supports ruxolitinib over hydroxyurea for MF splenomegaly"
+   ],
+   "takeaway": "Ruxolitinib outperforms best available therapy for spleen reduction and quality of life in MF.",
+   "tags": [
+    "ruxolitinib",
+    "myelofibrosis",
+    "JAK inhibitor"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
+  },
+  {
    "id": "cyto-pv",
    "name": "CYTO-PV",
    "disease": "mpn",
@@ -10414,6 +10510,38 @@
    "source": "onepager:mpn",
    "verified": true,
    "updated": "2026-09-20"
+  },
+  {
+   "id": "jakarta",
+   "name": "JAKARTA",
+   "disease": "mpn",
+   "year": 2015,
+   "phase": "3",
+   "setting": "JAK inhibitor-naive myelofibrosis",
+   "descriptor": "fedratinib vs placebo in intermediate-2/high-risk MF",
+   "population": "Intermediate-2 or high-risk MF, platelets ≥50",
+   "arms": "Fedratinib 400 mg or 500 mg daily vs placebo",
+   "n": 289,
+   "primary_endpoint": "≥35% spleen volume reduction at week 24, confirmed 4 weeks later",
+   "results": "SVR35 36% (400 mg) and 40% (500 mg) vs 1%; symptom response 36% vs 7%",
+   "toxicity": "Anemia, GI toxicity, transaminase, creatinine and pancreatic enzyme rises; Wernicke encephalopathy in 4 women on 500 mg",
+   "reference": "Pardanani A et al. JAMA Oncol 2015;1:643-651",
+   "pmid": "26181658",
+   "nct": "NCT01437787",
+   "highlights": [
+    "Fedratinib 400 mg reduces spleen size and symptoms versus placebo",
+    "Wernicke encephalopathy led to a clinical hold; thiamine monitoring is now mandatory",
+    "FDA approval in 2019 at 400 mg daily"
+   ],
+   "takeaway": "Fedratinib is an effective JAK2 inhibitor for MF, provided thiamine is checked and repleted.",
+   "tags": [
+    "fedratinib",
+    "myelofibrosis",
+    "thiamine"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
   },
   {
    "id": "response",
@@ -10447,6 +10575,294 @@
    "updated": "2026-09-20"
   },
   {
+   "id": "simplify-1",
+   "name": "SIMPLIFY-1",
+   "disease": "mpn",
+   "year": 2017,
+   "phase": "3",
+   "setting": "JAK inhibitor-naive myelofibrosis",
+   "descriptor": "momelotinib vs ruxolitinib in JAK inhibitor-naive MF",
+   "population": "JAKi-naive high/intermediate-2 or symptomatic intermediate-1 MF",
+   "arms": "Momelotinib 200 mg daily vs ruxolitinib 20 mg BID (per label) × 24 weeks",
+   "n": 432,
+   "primary_endpoint": "SVR35 at week 24 (non-inferiority)",
+   "results": "SVR35 26.5% vs 29% (non-inferior); TSS50 28.4% vs 42.2% (non-inferiority not met); improved transfusion independence with momelotinib",
+   "toxicity": "Peripheral neuropathy 10% vs 5%; grade ≥3 infection 7% vs 3%",
+   "reference": "Mesa RA et al. J Clin Oncol 2017;35:3844-3850",
+   "pmid": "28930494",
+   "nct": "NCT01969838",
+   "highlights": [
+    "Momelotinib matched ruxolitinib on spleen but not on symptoms",
+    "Transfusion requirements improved with momelotinib",
+    "The anemic subgroup contributed to the 2023 approval"
+   ],
+   "takeaway": "Momelotinib is non-inferior to ruxolitinib for spleen response but not symptoms, with a transfusion advantage.",
+   "tags": [
+    "momelotinib",
+    "ruxolitinib",
+    "myelofibrosis"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "persist-2",
+   "name": "PERSIST-2",
+   "disease": "mpn",
+   "year": 2018,
+   "phase": "3",
+   "setting": "Myelofibrosis with thrombocytopenia",
+   "descriptor": "pacritinib vs best available therapy in MF with platelets ≤100",
+   "population": "MF with platelets ≤100; 48% prior ruxolitinib",
+   "arms": "Pacritinib 400 mg daily or 200 mg BID vs BAT (45% ruxolitinib)",
+   "n": 311,
+   "primary_endpoint": "Co-primary: SVR35 and TSS50 at week 24",
+   "results": "Pacritinib (combined) SVR35 18% vs 3% (p=0.001); TSS50 25% vs 14% (p=0.08, NS). 200 mg BID: SVR35 22% vs 3%, TSS50 32% vs 14%",
+   "toxicity": "Grade 3-4 thrombocytopenia and anemia; GI toxicity",
+   "reference": "Mascarenhas J et al. JAMA Oncol 2018;4:652-659",
+   "pmid": "29522138",
+   "nct": "NCT02055781",
+   "highlights": [
+    "Pacritinib works in thrombocytopenic MF where ruxolitinib dosing is limited",
+    "200 mg BID was the best-performing schedule and is the approved dose",
+    "FDA accelerated approval (2022) for platelets <50; confirmatory PACIFICA ongoing"
+   ],
+   "takeaway": "Pacritinib 200 mg BID reduces spleen size in MF with severe thrombocytopenia.",
+   "tags": [
+    "pacritinib",
+    "myelofibrosis",
+    "thrombocytopenia"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "proud-pv",
+   "name": "PROUD-PV / CONTINUATION-PV",
+   "disease": "mpn",
+   "year": 2020,
+   "phase": "3",
+   "setting": "Early polycythemia vera",
+   "descriptor": "ropeginterferon alfa-2b vs hydroxyurea in early PV",
+   "population": "Adults with early PV (no prior cytoreduction or <3 yr of HU), WHO 2008 criteria",
+   "arms": "Ropeginterferon alfa-2b SC q2wk from 100 µg vs hydroxyurea from 500 mg/day; CONTINUATION-PV extension",
+   "n": 257,
+   "primary_endpoint": "PROUD-PV: non-inferiority for complete hematologic response with normal spleen at 12 mo; CONTINUATION-PV: CHR with improved disease burden",
+   "results": "12-mo CHR + normal spleen 21% vs 28% (non-inferiority not shown); CHR alone 43% vs 46% at 12 mo; at 36 mo CHR 71% vs 51% (p=0.012), CHR + improved disease burden 53% vs 38% (p=0.044)",
+   "toxicity": "Ropeg: GGT/ALT elevation; HU: leukopenia, thrombocytopenia",
+   "reference": "Gisslinger H et al. Lancet Haematol 2020;7:e196-e208",
+   "pmid": "32014125",
+   "nct": "NCT01949805",
+   "highlights": [
+    "The 12-month non-inferiority endpoint was missed; ropeginterferon's advantage over HU emerged by 36 months",
+    "Interferon responses accrue slowly and come with deeper JAK2 allele-burden reductions",
+    "Supported EMA approval; FDA 2021 PV approval rested on the single-arm PEGINVERA study"
+   ],
+   "takeaway": "Ropeginterferon is slower than hydroxyurea at 12 months but achieves more durable hematologic responses by 3 years in early PV.",
+   "tags": [
+    "ropeginterferon",
+    "interferon",
+    "polycythemia vera"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "low-pv",
+   "name": "Low-PV",
+   "disease": "mpn",
+   "year": 2021,
+   "phase": "2",
+   "setting": "Low-risk polycythemia vera",
+   "descriptor": "ropeginterferon added to phlebotomy vs phlebotomy alone in low-risk PV",
+   "population": "PV aged 18-60 without prior thrombosis (low risk), Italy",
+   "arms": "Ropeginterferon alfa-2b 100 µg SC q2wk + phlebotomy/aspirin vs phlebotomy + aspirin",
+   "n": 127,
+   "primary_endpoint": "Median Hct ≤45% without progressive disease over 12 months",
+   "results": "Response 84% vs 60% (absolute difference 24%, p=0.0075) at the second interim analysis; accrual stopped for efficacy",
+   "toxicity": "Neutropenia 8% grade ≥3 with ropeg; no grade 4-5 events",
+   "reference": "Barbui T et al. Lancet Haematol 2021;8:e175-e184",
+   "pmid": "33476571",
+   "nct": "NCT03003325",
+   "highlights": [
+    "Phlebotomy alone fails to hold Hct on target in a large fraction of low-risk PV",
+    "Low-dose fixed ropeg 100 µg q2wk improved Hct control without added grade 4-5 toxicity",
+    "Randomized phase 2 with an interim stop; supports early interferon in selected low-risk patients"
+   ],
+   "takeaway": "Adding low-dose ropeginterferon to phlebotomy keeps hematocrit on target more reliably in low-risk PV.",
+   "tags": [
+    "ropeginterferon",
+    "low-risk PV",
+    "phlebotomy"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "majic-pv",
+   "name": "MAJIC-PV",
+   "disease": "mpn",
+   "year": 2023,
+   "phase": "2",
+   "setting": "PV resistant/intolerant to hydroxyurea",
+   "descriptor": "ruxolitinib vs best available therapy in HU-resistant/intolerant PV",
+   "population": "PV resistant or intolerant to hydroxycarbamide (UK)",
+   "arms": "Ruxolitinib vs best available therapy",
+   "n": 180,
+   "primary_endpoint": "Complete response within 1 year",
+   "results": "CR 43% vs 26% (OR 2.12); longer CR duration (HR 0.38); event-free survival (thrombosis, hemorrhage, transformation, death) HR 0.58; molecular response linked to EFS, PFS and OS",
+   "toxicity": "As previously reported for ruxolitinib (cytopenias, infections)",
+   "reference": "Harrison CN et al. J Clin Oncol 2023;41:3534-3544",
+   "pmid": "37126762",
+   "nct": null,
+   "highlights": [
+    "First randomized evidence that ruxolitinib improves event-free survival in second-line PV",
+    "JAK2 V617F molecular response tracked with EFS, PFS and OS",
+    "ASXL1 mutations predicted adverse EFS"
+   ],
+   "takeaway": "Ruxolitinib beats best available therapy for complete response and event-free survival in HU-resistant/intolerant PV.",
+   "tags": [
+    "ruxolitinib",
+    "polycythemia vera",
+    "second line"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "momentum",
+   "name": "MOMENTUM",
+   "disease": "mpn",
+   "year": 2023,
+   "phase": "3",
+   "setting": "Anemic, JAK inhibitor-exposed myelofibrosis",
+   "descriptor": "momelotinib vs danazol in symptomatic, anemic MF after a JAK inhibitor",
+   "population": "Symptomatic MF with Hb <10, previously treated with a JAK inhibitor, platelets ≥25",
+   "arms": "Momelotinib 200 mg daily vs danazol 300 mg BID (2:1, double-blind)",
+   "n": 195,
+   "primary_endpoint": "TSS50 at week 24",
+   "results": "TSS50 25% vs 9% (difference 16%, p=0.0095); improved anemia measures and spleen response",
+   "toxicity": "Grade ≥3 anemia 61% vs 75%, thrombocytopenia 28% vs 26%; less AKI and pneumonia than danazol",
+   "reference": "Verstovsek S et al. Lancet 2023;401:269-280",
+   "pmid": "36709073",
+   "nct": "NCT04173494",
+   "highlights": [
+    "Momelotinib inhibits ACVR1, lowering hepcidin and improving anemia while controlling symptoms",
+    "Basis for FDA approval (15 Sep 2023) in MF with anemia",
+    "Preferred JAK inhibitor when anemia or transfusion dependence dominates"
+   ],
+   "takeaway": "Momelotinib improves symptoms, anemia and spleen versus danazol in anemic MF after a JAK inhibitor.",
+   "tags": [
+    "momelotinib",
+    "myelofibrosis",
+    "anemia"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "freedom2",
+   "name": "FREEDOM2",
+   "disease": "mpn",
+   "year": 2024,
+   "phase": "3",
+   "setting": "Myelofibrosis after ruxolitinib",
+   "descriptor": "fedratinib vs best available therapy after ruxolitinib failure or intolerance",
+   "population": "Intermediate-2/high-risk MF relapsed, refractory or intolerant to ruxolitinib",
+   "arms": "Fedratinib 400 mg daily vs BAT (78% ruxolitinib), with thiamine and antiemetic prophylaxis",
+   "n": 201,
+   "primary_endpoint": "SVR35 at end of cycle 6",
+   "results": "SVR35 36% vs 6% (difference 30%, p<0.0001); 46 BAT patients crossed over",
+   "toxicity": "Grade ≥3 treatment-related AEs 40% vs 12%; GI events mostly grade 1-2; low thiamine rare with prophylaxis",
+   "reference": "Harrison CN et al. Lancet Haematol 2024;11:e729-e740",
+   "pmid": "39265613",
+   "nct": "NCT03952039",
+   "highlights": [
+    "Randomized evidence for fedratinib as second-line JAK inhibitor after ruxolitinib",
+    "Prophylactic thiamine and antiemetics made toxicity manageable",
+    "Comparator was mostly continued ruxolitinib"
+   ],
+   "takeaway": "Fedratinib reduces spleen volume far more than best available therapy after ruxolitinib failure.",
+   "tags": [
+    "fedratinib",
+    "myelofibrosis",
+    "second line"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "manifest-2",
+   "name": "MANIFEST-2",
+   "disease": "mpn",
+   "year": 2025,
+   "phase": "3",
+   "setting": "JAK inhibitor-naive myelofibrosis",
+   "descriptor": "pelabresib (BET inhibitor) + ruxolitinib vs placebo + ruxolitinib",
+   "population": "JAKi-naive MF",
+   "arms": "Pelabresib 125 mg daily d1-14 q21d + ruxolitinib vs placebo + ruxolitinib",
+   "n": 430,
+   "primary_endpoint": "SVR35 at week 24",
+   "results": "SVR35 65.9% vs 35.2% (p<0.001); TSS change -15.99 vs -14.05 (p=0.0545, NS); TSS50 52.3% vs 46.3%",
+   "toxicity": "More thrombocytopenia, less anemia; sponsor later reported an imbalance in leukemic transformation, deferring US filing",
+   "reference": "Rampal RK et al. Nat Med 2025;31:1531-1538",
+   "pmid": "40065169",
+   "nct": "NCT04603495",
+   "highlights": [
+    "Spleen response nearly doubled, but the symptom key secondary endpoints were not met",
+    "Novartis reported excess malignant transformations with pelabresib; US filing deferred pending MANIFEST-3",
+    "Not approved; do not add outside a trial"
+   ],
+   "takeaway": "Pelabresib plus ruxolitinib improves spleen response without significant symptom benefit and carries a transformation signal.",
+   "tags": [
+    "pelabresib",
+    "BET inhibitor",
+    "myelofibrosis"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "surpass-et",
+   "name": "SURPASS-ET",
+   "disease": "mpn",
+   "year": 2025,
+   "phase": "3",
+   "setting": "ET resistant/intolerant to hydroxyurea",
+   "descriptor": "ropeginterferon alfa-2b vs anagrelide as second-line therapy for high-risk ET",
+   "population": "High-risk ET, HU-intolerant or -resistant, WBC >10; 96% Asian, 55 sites in Asia and North America",
+   "arms": "Ropeginterferon 250 → 350 → 500 µg SC q2wk vs anagrelide",
+   "n": 174,
+   "primary_endpoint": "Durable modified ELN response at months 9 and 12",
+   "results": "43% vs 6% (difference 36.5%, p=0.0001) in the publication; 37.4% vs 3.6% in the FDA-label analysis; major thrombotic events 1 vs 8 by month 12",
+   "toxicity": "Grade ≥3 TEAEs 23% vs 34%; serious AEs 14% vs 30%; ropeg: transaminase rise, anemia, pyrexia, pruritus",
+   "reference": "Mesa R et al. Lancet Haematol 2025;12:e862-e875",
+   "pmid": "41193116",
+   "nct": "NCT04285086",
+   "highlights": [
+    "First randomized win over anagrelide in second-line ET",
+    "Basis for FDA approval of ropeginterferon in adult ET on 31 Aug 2026",
+    "Predominantly Asian cohort; the label covers ET regardless of line"
+   ],
+   "takeaway": "Ropeginterferon produces far more durable responses than anagrelide in HU-resistant/intolerant ET and is now FDA-approved for ET.",
+   "tags": [
+    "ropeginterferon",
+    "essential thrombocythemia",
+    "anagrelide"
+   ],
+   "source": "onepager:mpn",
+   "verified": true,
+   "updated": "2026-10-14"
+  },
+  {
    "id": "verify",
    "name": "VERIFY",
    "disease": "mpn",
@@ -10455,27 +10871,124 @@
    "setting": "Phlebotomy-dependent PV",
    "descriptor": "rusfertide (hepcidin mimetic) vs placebo, phlebotomy-dependent PV",
    "population": "Polycythemia vera requiring frequent phlebotomy (≥3 in the prior 28 weeks) ± cytoreductive therapy",
-   "arms": "Rusfertide SQ weekly vs placebo, added to current therapy, × 32 weeks",
+   "arms": "Rusfertide SC weekly (start 19 mg, titrated) vs placebo, added to current standard of care, weeks 0-32; open-label rusfertide weeks 32-52",
    "n": 293,
    "primary_endpoint": "Proportion achieving clinical response (no phlebotomy eligibility) weeks 20–32",
-   "results": "Response 77% vs 33% (p<0.0001); mean phlebotomies 0.5 vs 1.8; hematocrit <45% maintained in 62% vs 15%; improved fatigue/symptom scores",
-   "toxicity": "Injection-site reactions, anemia rare; squamous skin cancers observed in phase 2 (monitored)",
-   "reference": "Kremyanskaya M et al. NEJM 2025 (ASCO/EHA 2025 plenary)",
+   "results": "Clinical response (no phlebotomy eligibility, no phlebotomy weeks 20-32) 76.9% vs 32.9% (p<0.0001); mean phlebotomies 0.5 vs 1.8; Hct <45% maintained 62.6% vs 14.4%; 84.1% of responders maintained response to week 52",
+   "toxicity": "Injection-site reactions 47.4%, anemia 25.6%, fatigue 19.6%, mostly grade 1-2; no grade 4-5 events",
+   "reference": "Kuykendall AT et al. J Clin Oncol 2025;43(17 suppl):LBA3 (ASCO 2025); 52-week data Blood 2025;146(suppl 1):81",
    "pmid": null,
-   "nct": null,
+   "nct": "NCT05210790",
    "highlights": [
-    "A hepcidin mimetic sequesters iron to hold hematocrit <45% without phlebotomy — addresses the iron deficiency that phlebotomy creates.",
-    "Regulatory decision pending; expected to be the first agent specifically for phlebotomy dependence in PV."
+    "A hepcidin mimetic restricts iron to hold hematocrit <45% without phlebotomy",
+    "FDA approved rusfertide (Mimrylo) for PV on 28 Aug 2026, based on VERIFY",
+    "Controls erythrocytosis only; not cytoreductive, so it is added to, not substituted for, risk-directed therapy"
    ],
-   "takeaway": "Rusfertide eliminates phlebotomy need in most phlebotomy-dependent PV patients (77% vs 33% response)",
+   "takeaway": "Rusfertide eliminates phlebotomy need in most phlebotomy-dependent PV patients (77% vs 33%) and is now FDA-approved.",
    "tags": [
     "rusfertide",
     "hepcidin",
     "polycythemia vera"
    ],
    "source": "onepager:mpn",
+   "verified": false,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "independence-mf",
+   "name": "INDEPENDENCE",
+   "disease": "mpn",
+   "year": 2026,
+   "phase": "3",
+   "setting": "Transfusion-dependent anemia of MF on a JAK inhibitor",
+   "descriptor": "luspatercept vs placebo with concomitant JAK inhibitor in transfusion-dependent MF",
+   "population": "MPN-associated MF on a JAK inhibitor requiring 4-12 RBC units per 12 weeks",
+   "arms": "Luspatercept vs placebo (2:1) + JAK inhibitor",
+   "n": 313,
+   "primary_endpoint": "RBC transfusion independence for ≥12 consecutive weeks within the first 24 weeks",
+   "results": "23.1% vs 13.3% (risk difference 9.7%, P=0.0674); primary endpoint not met; improvements in transfusion burden and Hb",
+   "toxicity": "Not detailed in source reviewed",
+   "reference": "BMS topline (Jul 2025); EHA 2026 presentation",
+   "pmid": null,
+   "nct": "NCT04717414",
+   "highlights": [
+    "Primary endpoint missed (prespecified threshold P<0.044)",
+    "Secondary transfusion-burden and Hb improvements reported",
+    "Luspatercept remains off-label in MF"
+   ],
+   "takeaway": "Luspatercept did not significantly increase transfusion independence in JAKi-treated, transfusion-dependent MF.",
+   "tags": [
+    "luspatercept",
+    "myelofibrosis",
+    "anemia"
+   ],
+   "source": "onepager:mpn",
+   "verified": false,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "sentry",
+   "name": "SENTRY",
+   "disease": "mpn",
+   "year": 2026,
+   "phase": "3",
+   "setting": "JAK inhibitor-naive myelofibrosis",
+   "descriptor": "selinexor + ruxolitinib vs placebo + ruxolitinib",
+   "population": "JAKi-naive MF, platelets >100",
+   "arms": "Selinexor 60 mg weekly + ruxolitinib vs placebo + ruxolitinib (2:1)",
+   "n": 353,
+   "primary_endpoint": "Co-primary: SVR35 at week 24 and mean change in absolute TSS",
+   "results": "SVR35 50% vs 28% (one-sided p<0.0001); Abs-TSS improvement 9.89 vs 10.86 points (not met); exploratory OS HR 0.43 (95% CI 0.19-1.00), immature",
+   "toxicity": "Nausea 57% vs 17%, thrombocytopenia 59% vs 43%, neutropenia 27% vs 9%; grade ≥3 TEAEs 70% vs 50%",
+   "reference": "Karyopharm topline press release 24 Mar 2026; ASCO/EHA 2026 presentations",
+   "pmid": null,
+   "nct": "NCT04562389",
+   "highlights": [
+    "Met the spleen co-primary, missed the symptom co-primary",
+    "Early, immature OS signal only",
+    "Not approved; sNDA discussions with FDA"
+   ],
+   "takeaway": "Selinexor plus ruxolitinib improves spleen response but not symptoms in JAKi-naive MF.",
+   "tags": [
+    "selinexor",
+    "XPO1",
+    "myelofibrosis"
+   ],
+   "source": "onepager:mpn",
+   "verified": false,
+   "updated": "2026-10-14"
+  },
+  {
+   "id": "transform-1",
+   "name": "TRANSFORM-1",
+   "disease": "mpn",
+   "year": 2026,
+   "phase": "3",
+   "setting": "JAK inhibitor-naive myelofibrosis",
+   "descriptor": "navitoclax + ruxolitinib vs placebo + ruxolitinib",
+   "population": "JAKi-naive intermediate-2/high-risk MF",
+   "arms": "Navitoclax 200 mg/day (or 100 → 200) + ruxolitinib vs placebo + ruxolitinib",
+   "n": 252,
+   "primary_endpoint": "SVR35 at week 24",
+   "results": "SVR35 63.2% vs 31.5% (p<0.0001); mean TSS change -10.2 vs -11.6 (p=0.29, NS)",
+   "toxicity": "Grade 3/4 thrombocytopenia 54% vs 19%, neutropenia 40% vs 9%; diarrhea 42% vs 17%",
+   "reference": "Pemmaraju N et al. Blood 2026 (online 30 Jun 2026)",
+   "pmid": "42378247",
+   "nct": "NCT04472598",
+   "highlights": [
+    "BCL-xL/BCL-2 inhibition doubled spleen responses on top of ruxolitinib",
+    "No symptom benefit and substantially more cytopenias",
+    "Not approved"
+   ],
+   "takeaway": "Navitoclax plus ruxolitinib doubles spleen response but adds cytopenias without symptom benefit.",
+   "tags": [
+    "navitoclax",
+    "BCL-2",
+    "myelofibrosis"
+   ],
+   "source": "onepager:mpn",
    "verified": true,
-   "updated": "2026-09-20"
+   "updated": "2026-10-14"
   },
   {
    "id": "ifm-2009",
