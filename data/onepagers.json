@@ -1,176 +1,176 @@
 {
- "generated": "2026-10-13T16:39:18",
+ "generated": "2026-10-13T17:01:31",
  "onepagers": [
   {
    "disease": "aml",
    "file": "Acute Myeloid Leukemia.pdf",
    "title": "Acute myeloid leukemia",
    "pages": 3,
-   "size": 76602,
-   "sha1": "47c2c74614a130ded2f0d261652798b7ee09e5af",
-   "updated": "2026-09-25"
+   "size": 76624,
+   "sha1": "94fa626a6afa7d411d8e45a67bfcaf499e3246d6",
+   "updated": "2026-10-13"
   },
   {
    "disease": "biliary",
    "file": "Biliary Tract Cancer.pdf",
    "title": "Biliary tract cancer",
    "pages": 2,
-   "size": 53511,
-   "sha1": "075f42b825647b012e5bd37b7c0d605b5ad6b784",
-   "updated": "2026-09-25"
+   "size": 53350,
+   "sha1": "1392635b266621da131341f98f4fe72ad9d33cda",
+   "updated": "2026-10-13"
   },
   {
    "disease": "bladder",
    "file": "Bladder Cancer.pdf",
    "title": "Bladder (urothelial) cancer",
    "pages": 3,
-   "size": 68227,
-   "sha1": "e3eebce6878dd74aaeb00c2552423bca2459fe13",
-   "updated": "2026-09-28"
+   "size": 68104,
+   "sha1": "c285f792facebc11b2ae398806f44f44f7564027",
+   "updated": "2026-10-13"
   },
   {
    "disease": "breast",
    "file": "Breast Cancer.pdf",
    "title": "Breast cancer",
    "pages": 3,
-   "size": 71475,
-   "sha1": "4d1a3d1e3258b5129652e4bbf1b295d323581dd2",
-   "updated": "2026-09-25"
+   "size": 71392,
+   "sha1": "3c30c3393a9d28c56c6ebfab1ca7501b30751484",
+   "updated": "2026-10-13"
   },
   {
    "disease": "cll",
    "file": "Chronic Lymphocytic Leukemia.pdf",
    "title": "Chronic lymphocytic leukemia / SLL",
    "pages": 3,
-   "size": 74594,
-   "sha1": "5c445d5852ce3d8cc02558b371813e24072e1b4a",
-   "updated": "2026-10-07"
+   "size": 74082,
+   "sha1": "d3763d812763479cf7eaf8eeed70f196eb2f5e4c",
+   "updated": "2026-10-13"
   },
   {
    "disease": "colon",
    "file": "Colon Adenocarcinoma.pdf",
    "title": "Colon adenocarcinoma",
    "pages": 1,
-   "size": 38643,
-   "sha1": "467557aaba93110b7aab8288229a07f569018480",
-   "updated": "2026-09-19"
+   "size": 38612,
+   "sha1": "1afd9a642168ef650cd6a3f40a60a140e5e1fe8d",
+   "updated": "2026-10-13"
   },
   {
    "disease": "hairy-cell-leukemia",
    "file": "Hairy Cell Leukemia.pdf",
    "title": "Hairy cell leukemia",
    "pages": 2,
-   "size": 50446,
-   "sha1": "684334603c753e297cc07ddcbe9bfcf3c75a2f59",
-   "updated": "2026-09-24"
+   "size": 50428,
+   "sha1": "bb39eec57d8ab23cb8082441c5a268ea3314c870",
+   "updated": "2026-10-13"
   },
   {
    "disease": "lymphoma-burkitt",
    "file": "Lymphoma - Burkitt.pdf",
    "title": "Burkitt lymphoma",
    "pages": 2,
-   "size": 59774,
-   "sha1": "83981a51c261d61001338699faa507c4adcab849",
-   "updated": "2026-09-25"
+   "size": 59525,
+   "sha1": "5db44bdea23beee982696664a9d501458dfbfe03",
+   "updated": "2026-10-13"
   },
   {
    "disease": "lymphoma-ctcl",
    "file": "Lymphoma - Cutaneous T-cell.pdf",
    "title": "Cutaneous T-cell lymphoma",
    "pages": 2,
-   "size": 56528,
-   "sha1": "58667a74886172836d05a4828654c4e32b39b425",
-   "updated": "2026-09-24"
+   "size": 56388,
+   "sha1": "ed06a8a0dd02ad8362b2e7fe74820964228a417a",
+   "updated": "2026-10-13"
   },
   {
    "disease": "lymphoma-dlbcl",
    "file": "Lymphoma - DLBCL.pdf",
    "title": "Diffuse large B-cell lymphoma",
    "pages": 3,
-   "size": 66400,
-   "sha1": "9b4902191a2bcd1de38e9e0d689f5107f876b377",
-   "updated": "2026-09-25"
+   "size": 66351,
+   "sha1": "8a630f792af5451799dc441b9d9bb07635c61383",
+   "updated": "2026-10-13"
   },
   {
    "disease": "lymphoma-follicular",
    "file": "Lymphoma - Follicular.pdf",
    "title": "Follicular lymphoma",
    "pages": 2,
-   "size": 60012,
-   "sha1": "cf6a706798465bbc364c92a844fb3e60cf3864be",
-   "updated": "2026-09-25"
+   "size": 59800,
+   "sha1": "0ceb324a1cfd95ccee41fa192a3338013dcf437b",
+   "updated": "2026-10-13"
   },
   {
    "disease": "lymphoma-hodgkin",
    "file": "Lymphoma - Hodgkin.pdf",
    "title": "Hodgkin lymphoma",
    "pages": 3,
-   "size": 68948,
-   "sha1": "e3c6dfdd1f2b890a653b85dbc732842860801107",
-   "updated": "2026-09-25"
+   "size": 68677,
+   "sha1": "a23ac4844a4d231704b25b8950a2b463b1fb1e68",
+   "updated": "2026-10-13"
   },
   {
    "disease": "lymphoma-mantle",
    "file": "Lymphoma - Mantle Cell.pdf",
    "title": "Mantle cell lymphoma",
    "pages": 2,
-   "size": 61390,
-   "sha1": "1875afb811fcfde8ddcef2cd81179aa96cf10f07",
-   "updated": "2026-09-25"
+   "size": 61108,
+   "sha1": "09532fa5fffc8859fdf332f8c3962dc02901ea0d",
+   "updated": "2026-10-13"
   },
   {
    "disease": "lymphoma-marginal-zone",
    "file": "Lymphoma - Marginal Zone.pdf",
    "title": "Marginal zone lymphoma",
    "pages": 2,
-   "size": 58011,
-   "sha1": "dd81ba2c434dd1cbf4fd92170b854784481076b6",
-   "updated": "2026-09-24"
+   "size": 57911,
+   "sha1": "6ef5f829da8011b0834d58555eba317c2d12a329",
+   "updated": "2026-10-13"
   },
   {
    "disease": "lymphoma-ptcl",
    "file": "Lymphoma - Peripheral T-cell.pdf",
    "title": "Peripheral T-cell lymphoma",
    "pages": 3,
-   "size": 71719,
-   "sha1": "8b41599e7b2693927a8b819e1f60167cae9b54e4",
-   "updated": "2026-09-25"
+   "size": 71678,
+   "sha1": "d3e03f754eef5349d7e0db7ef6846f04631dab60",
+   "updated": "2026-10-13"
   },
   {
    "disease": "lymphoma-pcnsl",
    "file": "Lymphoma - Primary CNS.pdf",
    "title": "Primary CNS lymphoma",
    "pages": 2,
-   "size": 56209,
-   "sha1": "551d9321868e8618fa658b3ba08c082a12bf09b9",
-   "updated": "2026-09-24"
+   "size": 55973,
+   "sha1": "4b62be76670ebb9224f73be94ddd0893c0a8e8a5",
+   "updated": "2026-10-13"
   },
   {
    "disease": "melanoma",
    "file": "Melanoma.pdf",
    "title": "Melanoma",
    "pages": 2,
-   "size": 53983,
-   "sha1": "ff05a9fe04fb32883c7cb5286abcc9cfad14e6c0",
-   "updated": "2026-09-19"
+   "size": 53942,
+   "sha1": "49c54eadf157d3e0b313f3c2ce7f35d026205601",
+   "updated": "2026-10-13"
   },
   {
    "disease": "myeloma",
    "file": "Multiple Myeloma.pdf",
    "title": "Multiple myeloma & precursors",
    "pages": 3,
-   "size": 69609,
-   "sha1": "eb7e539dc1b9fb8b2a2a295b60c56168bff89bf9",
-   "updated": "2026-10-08"
+   "size": 69437,
+   "sha1": "5b613bc818999d940781bd900ebc9eac3dc783e4",
+   "updated": "2026-10-13"
   },
   {
    "disease": "mds",
    "file": "Myelodysplastic Syndromes.pdf",
    "title": "Myelodysplastic syndromes",
    "pages": 1,
-   "size": 38902,
-   "sha1": "33136fe1413ffdd0dbd6fc47755d4317cf9caed3",
-   "updated": "2026-09-20"
+   "size": 38751,
+   "sha1": "8e0b44f9870e87e4ae394e3ed783b626daa7dbec",
+   "updated": "2026-10-13"
   },
   {
    "disease": "mpn",
@@ -186,18 +186,18 @@
    "file": "Neuroendocrine Tumors.pdf",
    "title": "Neuroendocrine tumors (GEP-NET)",
    "pages": 2,
-   "size": 45383,
-   "sha1": "39f9ee00145210e42f462c1347d61da9fb030e96",
-   "updated": "2026-09-19"
+   "size": 45345,
+   "sha1": "5a68a8dc822edd0b48b37496fceb6c84f4c9b9b8",
+   "updated": "2026-10-13"
   },
   {
    "disease": "nsclc",
    "file": "Non-Small Cell Lung Cancer.pdf",
    "title": "Non-small cell lung cancer",
    "pages": 3,
-   "size": 60233,
-   "sha1": "f0681bebf4b6bb01a76aacee188d56930cd89b43",
-   "updated": "2026-09-25"
+   "size": 60154,
+   "sha1": "6b1ad7d28a546b9bc7f42db4b4b3a88ed5d03a2f",
+   "updated": "2026-10-13"
   },
   {
    "disease": "pancreatic",
@@ -222,54 +222,54 @@
    "file": "Prostate Cancer.pdf",
    "title": "Prostate cancer",
    "pages": 3,
-   "size": 65841,
-   "sha1": "444f95724c4ef812e250e4fa668f485620e3b36e",
-   "updated": "2026-09-25"
+   "size": 65806,
+   "sha1": "4be94ed89275db5eeeec1486cbcae263b6d745f7",
+   "updated": "2026-10-13"
   },
   {
    "disease": "rectal",
    "file": "Rectal Adenocarcinoma.pdf",
    "title": "Rectal adenocarcinoma",
    "pages": 1,
-   "size": 39231,
-   "sha1": "81ccc465d5273b7a9bae38825cc09bdf8dbff8f6",
-   "updated": "2026-09-19"
+   "size": 39185,
+   "sha1": "941b953e312e253886288ff379d0214f51194f74",
+   "updated": "2026-10-13"
   },
   {
    "disease": "rcc",
    "file": "Renal Cell Carcinoma.pdf",
    "title": "Renal cell carcinoma",
    "pages": 3,
-   "size": 68422,
-   "sha1": "71a0dff8a37e36ddf2904826fc4a7972da9c9f93",
-   "updated": "2026-09-25"
+   "size": 68357,
+   "sha1": "683b562ac382e0cd701a23a4d8727ec656bae47a",
+   "updated": "2026-10-13"
   },
   {
    "disease": "testicular",
    "file": "Testicular Cancer.pdf",
    "title": "Testicular cancer",
    "pages": 1,
-   "size": 38939,
-   "sha1": "c37de6274aa7c1dbe4d491e4a5117b3bc9954b60",
-   "updated": "2026-09-21"
+   "size": 38830,
+   "sha1": "359c6dbe46538b51660d1221eae0a3a0e6c57964",
+   "updated": "2026-10-13"
   },
   {
    "disease": "transfusion-medicine",
    "file": "Transfusion Medicine.pdf",
    "title": "Transfusion medicine",
    "pages": 3,
-   "size": 65642,
-   "sha1": "219c484eb737c3dd5f2bd1a36323f64327b76a0f",
-   "updated": "2026-10-05"
+   "size": 65477,
+   "sha1": "019bc208f42894c8e614657a68563f0a06618743",
+   "updated": "2026-10-13"
   },
   {
    "disease": "waldenstrom",
    "file": "Waldenstrom Macroglobulinemia.pdf",
    "title": "Waldenström macroglobulinemia",
    "pages": 2,
-   "size": 57870,
-   "sha1": "1f65edc93a3c37764fc5b9eefac81c3881f7e3aa",
-   "updated": "2026-09-24"
+   "size": 57561,
+   "sha1": "f544570b4a8e69ecba81e51806f1e63a696691d7",
+   "updated": "2026-10-13"
   }
  ]
 }
