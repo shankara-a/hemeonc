@@ -1,14 +1,14 @@
 {
- "generated": "2026-10-14T09:18:55",
+ "generated": "2026-10-14T09:55:59",
  "onepagers": [
   {
    "disease": "aml",
    "file": "Acute Myeloid Leukemia.pdf",
    "title": "Acute myeloid leukemia",
    "pages": 3,
-   "size": 76624,
-   "sha1": "94fa626a6afa7d411d8e45a67bfcaf499e3246d6",
-   "updated": "2026-10-13"
+   "size": 107923,
+   "sha1": "d1b56c68adedfd14b29bd032e2233a93a11c5fdb",
+   "updated": "2026-10-14"
   },
   {
    "disease": "biliary",
@@ -33,9 +33,9 @@
    "file": "Breast Cancer.pdf",
    "title": "Breast cancer",
    "pages": 3,
-   "size": 71392,
-   "sha1": "3c30c3393a9d28c56c6ebfab1ca7501b30751484",
-   "updated": "2026-10-13"
+   "size": 102221,
+   "sha1": "7a24154a8158d4bc003dff1e0be6d1b9d9f303f8",
+   "updated": "2026-10-14"
   },
   {
    "disease": "cll",
