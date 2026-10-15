@@ -125,6 +125,30 @@
    ]
   },
   {
+   "slug": "bleeding",
+   "name": "Bleeding and bleeding disorders",
+   "short": "Bleeding",
+   "group": "benign-heme",
+   "onepager": "Bleeding and Bleeding Disorders.pdf",
+   "aliases": [
+    "bleeding",
+    "bleeding disorder",
+    "von willebrand",
+    "vwd",
+    "hemophilia",
+    "coagulopathy",
+    "mtp",
+    "massive transfusion",
+    "blood products",
+    "reversal",
+    "novoseven",
+    "rfviia",
+    "txa",
+    "ddavp",
+    "transfusion thresholds"
+   ]
+  },
+  {
    "slug": "breast",
    "name": "Breast cancer",
    "short": "Breast",
@@ -514,9 +538,7 @@
     "taco",
     "irradiated",
     "platelet refractoriness",
-    "mtp",
-    "apheresis",
-    "blood products"
+    "apheresis"
    ]
   },
   {

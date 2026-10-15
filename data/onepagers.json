@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T11:34:44",
+ "generated": "2026-10-15T10:23:51",
  "onepagers": [
   {
    "disease": "aml",
@@ -36,6 +36,15 @@
    "size": 68104,
    "sha1": "c285f792facebc11b2ae398806f44f44f7564027",
    "updated": "2026-10-13"
+  },
+  {
+   "disease": "bleeding",
+   "file": "Bleeding and Bleeding Disorders.pdf",
+   "title": "Bleeding and bleeding disorders",
+   "pages": 3,
+   "size": 100682,
+   "sha1": "2d1a0e66c8fd18f39303240d562f3214c8cf2848",
+   "updated": "2026-10-15"
   },
   {
    "disease": "breast",
@@ -266,10 +275,10 @@
    "disease": "transfusion-medicine",
    "file": "Transfusion Medicine.pdf",
    "title": "Transfusion medicine",
-   "pages": 3,
-   "size": 65477,
-   "sha1": "019bc208f42894c8e614657a68563f0a06618743",
-   "updated": "2026-10-13"
+   "pages": 2,
+   "size": 55130,
+   "sha1": "6af5274b5fe20a56bba62dc2a0b6989d6563b8d8",
+   "updated": "2026-10-15"
   },
   {
    "disease": "waldenstrom",

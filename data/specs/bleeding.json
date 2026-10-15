@@ -1,0 +1,778 @@
+{
+ "disease": "bleeding",
+ "spec_file": "bleeding.py",
+ "pdf": "Bleeding and Bleeding Disorders.pdf",
+ "title": "Bleeding and bleeding disorders",
+ "subtitle": "Approach and lab workup &middot; VWD, hemophilia, rare factor and platelet disorders, acquired inhibitors &middot; products, thresholds, massive hemorrhage, reversal &middot; hemostatic agents and special situations",
+ "source": "Compiled from the Fellowship Coagulation &amp; Bleeding Disorders, Hemophilia and Transfusion Medicine reviews &middot; ASH/ISTH/NHF/WFH 2021 VWD, WFH 2020, AABB 2023/2025, AABB/ICTMG 2025 guidance &middot; FDA labels &middot; primary trial reports verified against PubMed, October 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Approach to the bleeding patient",
+       "items": [
+        "<b>History:</b> how did surgery, dental extraction, childbirth, menses and trauma go? Transfusion or iron for bleeding counts. Drugs (antiplatelets, anticoagulants, SSRIs, fish oil), liver/renal disease, family history",
+        "<b>ISTH-BAT abnormal at &ge;4 in adult men, &ge;6 in adult women, &ge;3 in children</b> <span class='r'>Elbatarny 2014</span>. A low score in a young patient with few challenges does not exclude",
+        "<b>Pattern:</b> <b>mucocutaneous</b> (epistaxis, gums, menses, petechiae) &rarr; <b>platelets or VWF</b>. <b>Deep tissue</b> (joints, muscle, delayed post-op) &rarr; <b>factor deficiency</b>. Delayed bleeding + poor healing &rarr; FXIII; fibrinolytic sites (mouth, nose, urinary) &rarr; FXI",
+        "<b>First-line labs:</b> CBC + <b>smear</b>, <b>PT/INR, aPTT, Clauss fibrinogen, TT</b>; <b>VWF panel even if the aPTT is normal</b>",
+        "<b>Pre-analytic traps:</b> heparin from a line, underfilled tube, Hct &gt;55% (excess citrate) falsely prolong clotting times &mdash; redraw by clean venipuncture",
+        "<b>Stanford:</b> Special Coag lab 650-723-4813 &middot; Transfusion Medicine pager 12027"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "PT and aPTT patterns",
+       "headers": [
+        "Pattern",
+        "Think"
+       ],
+       "widths": [
+        "25%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>PT &uarr; only</b>",
+         "<b>FVII deficiency</b>; early vitamin K deficiency/warfarin (FVII t&frac12; ~6 h); liver"
+        ],
+        [
+         "<b>aPTT &uarr; only, bleeding</b>",
+         "<b>FVIII, IX, XI deficiency</b>; VWD (low FVIII); <b>acquired hemophilia A</b>; heparin"
+        ],
+        [
+         "<b>aPTT &uarr; only, no bleeding</b>",
+         "<b>FXII</b>, prekallikrein, HMWK deficiency; <b>lupus anticoagulant</b> (thrombosis, not bleeding)"
+        ],
+        [
+         "<b>Both &uarr;</b>",
+         "<b>FX, V, II or fibrinogen</b> deficiency; <b>DIC</b>; liver disease; severe vitamin K deficiency/warfarin; <b>DOACs</b>; dilution; amyloid (FX)"
+        ],
+        [
+         "<b>TT &uarr;</b>",
+         "Heparin, <b>dabigatran</b>, low/dysfunctional fibrinogen, FDPs, paraprotein"
+        ],
+        [
+         "<b>Both normal + bleeding</b>",
+         "<b>VWD</b>, platelet function defect or drug, <b>FXIII</b>, &alpha;2-antiplasmin/PAI-1, vascular (EDS, HHT, scurvy), mild factor deficiency"
+        ]
+       ],
+       "footnote": "<b>A normal PT does not exclude apixaban</b> &mdash; use a drug-calibrated anti-Xa level."
+      },
+      {
+       "type": "bullets",
+       "heading": "Second-line tests",
+       "items": [
+        "<b>Specific factor assays</b> (one-stage, chromogenic for FVIII on emicizumab); <b>Bethesda</b> for inhibitors",
+        "<b>VWF panel</b> &plusmn; multimers, low-dose RIPA (2B), FVIII-binding (2N)",
+        "<b>Platelet function:</b> PFA-100 as a screen, <b>light transmission aggregometry</b>, flow for GPIIb/IIIa and GPIb, electron microscopy for granules",
+        "<b>FXIII activity</b>, &alpha;2-antiplasmin, PAI-1 when screens are normal",
+        "<b>Viscoelastic testing</b> (TEG/ROTEM) for acute bleeding; anti-Xa or drug levels for anticoagulants",
+        "Normal full workup + convincing bleeding = <b>bleeding disorder of unknown cause</b>: manage as mild disorder (TXA &plusmn; DDAVP trial)"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Coagulation cascade",
+       "widths": [
+        "100%"
+       ],
+       "rows": [
+        [
+         "<img style='width:100%;display:block' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzI4Ij48ZGVmcz48bWFya2VyIGlkPSJhIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjgiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI1IiBtYXJrZXJIZWlnaHQ9IjUiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTIgMUw4IDVMMiA5IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMS41Ii8+PC9tYXJrZXI+PG1hcmtlciBpZD0iYyIgdmlld0JveD0iMCAwIDEwIDEwIiByZWZYPSI4IiByZWZZPSI1IiBtYXJrZXJXaWR0aD0iNSIgbWFya2VySGVpZ2h0PSI1IiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0yIDFMOCA1TDIgOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuNSIvPjwvbWFya2VyPjxzdHlsZT50ZXh0e2ZvbnQtZmFtaWx5OkhlbHZldGljYSxBcmlhbCxzYW5zLXNlcmlmO3RleHQtYW5jaG9yOm1pZGRsZX0uYntmb250LXNpemU6Ny42cHg7Zm9udC13ZWlnaHQ6Ym9sZH0uc3tmb250LXNpemU6Ni42cHh9LnR7Zm9udC1zaXplOjYuMnB4O2ZvbnQtd2VpZ2h0OmJvbGR9Lmt7Zm9udC1zaXplOjUuNHB4O2ZvbnQtd2VpZ2h0OmJvbGR9Lmxie2ZvbnQtc2l6ZTo2LjZweDtmb250LXdlaWdodDpib2xkfTwvc3R5bGU+PC9kZWZzPjxyZWN0IHg9IjE2IiB5PSIxMiIgd2lkdGg9IjQyIiBoZWlnaHQ9IjIyIiByeD0iMyIgZmlsbD0iI0UxRjVFRSIgc3Ryb2tlPSIjMEY2RTU2IiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjM3LjAiIHk9IjIxLjIiIGNsYXNzPSJiIiBmaWxsPSIjMDg1MDQxIj5YSUk8L3RleHQ+PHRleHQgeD0iMzcuMCIgeT0iMzAuMCIgY2xhc3M9InMiIGZpbGw9IiMwODUwNDEiPmNvbnRhY3Q8L3RleHQ+PHBhdGggZD0iTTU4IDIzIEw3MiAyMyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxyZWN0IHg9Ijc0IiB5PSIxMiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjIyIiByeD0iMyIgZmlsbD0iI0UxRjVFRSIgc3Ryb2tlPSIjMEY2RTU2IiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjEwMi4wIiB5PSIyMS4yIiBjbGFzcz0iYiIgZmlsbD0iIzA4NTA0MSI+WEk8L3RleHQ+PHRleHQgeD0iMTAyLjAiIHk9IjMwLjAiIGNsYXNzPSJzIiBmaWxsPSIjMDg1MDQxIj5hY3RpdmF0ZXMgSVg8L3RleHQ+PHRleHQgeD0iMTM0IiB5PSIyNiIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iI0EzMkQyRCI+RlhJIGRlZmljaWVuY3k8L3RleHQ+PHJlY3QgeD0iMTYiIHk9IjQ2IiB3aWR0aD0iNDIiIGhlaWdodD0iMjIiIHJ4PSIzIiBmaWxsPSIjRjFFRkU4IiBzdHJva2U9IiM4ODg3ODAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMzcuMCIgeT0iNTUuMiIgY2xhc3M9ImIiIGZpbGw9IiM0NDQ0NDEiPlZJSUk8L3RleHQ+PHRleHQgeD0iMzcuMCIgeT0iNjQuMCIgY2xhc3M9InMiIGZpbGw9IiM0NDQ0NDEiPklYYSBjb2ZhY3RvcjwvdGV4dD48dGV4dCB4PSIzNyIgeT0iNDIuNSIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjptaWRkbGUiIGZpbGw9IiNBMzJEMkQiPmhlbW9waGlsaWEgQTwvdGV4dD48cGF0aCBkPSJNMTAyIDM0IEwxMDIgNDUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48cmVjdCB4PSI3NCIgeT0iNDYiIHdpZHRoPSI1NiIgaGVpZ2h0PSIyMiIgcng9IjMiIGZpbGw9IiNFMUY1RUUiIHN0cm9rZT0iIzBGNkU1NiIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxMDIuMCIgeT0iNTUuMiIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPklYPC90ZXh0Pjx0ZXh0IHg9IjEwMi4wIiB5PSI2NC4wIiBjbGFzcz0icyIgZmlsbD0iIzA4NTA0MSI+YWN0aXZhdGVzIFg8L3RleHQ+PHBhdGggZD0iTTU4IDU3IEw3MiA1NyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjx0ZXh0IHg9IjEwNiIgeT0iNDIuNSIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iI0EzMkQyRCI+aGVtb3BoaWxpYSBCPC90ZXh0PjxyZWN0IHg9IjEzOCIgeT0iNDYiIHdpZHRoPSI0MiIgaGVpZ2h0PSIyMiIgcng9IjMiIGZpbGw9IiNFMUY1RUUiIHN0cm9rZT0iIzBGNkU1NiIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNTkuMCIgeT0iNTUuMiIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPlRGICsgVklJYTwvdGV4dD48dGV4dCB4PSIxNTkuMCIgeT0iNjQuMCIgY2xhc3M9InMiIGZpbGw9IiMwODUwNDEiPnRpc3N1ZSBpbmp1cnk8L3RleHQ+PHBhdGggZD0iTTE4MyA0NiBMMTg2IDQ2IEwxODYgNjggTDE4MyA2OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjODg4IiBzdHJva2Utd2lkdGg9IjAuNyIvPjx0ZXh0IHg9IjE4OS41IiB5PSI1Ny4wIiBjbGFzcz0ibGIiIHRyYW5zZm9ybT0icm90YXRlKC05MCAxODkuNSA1Ny4wKSIgZmlsbD0iIzU1NSI+UFQ8L3RleHQ+PHBhdGggZD0iTTEwMiA2OCBMMTAyIDgzIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHBhdGggZD0iTTE1MCA2OCBMMTI0IDgzIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iNzQiIHk9Ijg0IiB3aWR0aD0iNTYiIGhlaWdodD0iMjIiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTAyLjAiIHk9IjkzLjIiIGNsYXNzPSJiIiBmaWxsPSIjMDg1MDQxIj5YIOKGkiBYYTwvdGV4dD48dGV4dCB4PSIxMDIuMCIgeT0iMTAyLjAiIGNsYXNzPSJzIiBmaWxsPSIjMDg1MDQxIj53aXRoIFZhIGNvZmFjdG9yPC90ZXh0PjxwYXRoIGQ9Ik0xMDIgMTA2IEwxMDIgMTE1IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iNzQiIHk9IjExNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjIyIiByeD0iMyIgZmlsbD0iI0UxRjVFRSIgc3Ryb2tlPSIjMEY2RTU2IiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjEwMi4wIiB5PSIxMjUuMiIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPlByb3Rocm9tYmluPC90ZXh0Pjx0ZXh0IHg9IjEwMi4wIiB5PSIxMzQuMCIgY2xhc3M9InMiIGZpbGw9IiMwODUwNDEiPmZhY3RvciBJSTwvdGV4dD48cGF0aCBkPSJNMTAyIDEzOCBMMTAyIDE0NyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxyZWN0IHg9Ijc0IiB5PSIxNDgiIHdpZHRoPSI1NiIgaGVpZ2h0PSIyMiIgcng9IjMiIGZpbGw9IiNFMUY1RUUiIHN0cm9rZT0iIzBGNkU1NiIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxMDIuMCIgeT0iMTU3LjIiIGNsYXNzPSJiIiBmaWxsPSIjMDg1MDQxIj5UaHJvbWJpbjwvdGV4dD48dGV4dCB4PSIxMDIuMCIgeT0iMTY2LjAiIGNsYXNzPSJzIiBmaWxsPSIjMDg1MDQxIj5mYWN0b3IgSUlhPC90ZXh0PjxwYXRoIGQ9Ik0xMDIgMTcwIEwxMDIgMTgxIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iNzQiIHk9IjE4MiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjIyIiByeD0iMyIgZmlsbD0iI0UxRjVFRSIgc3Ryb2tlPSIjMEY2RTU2IiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjEwMi4wIiB5PSIxOTEuMiIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPkZpYnJpbm9nZW48L3RleHQ+PHRleHQgeD0iMTAyLjAiIHk9IjIwMC4wIiBjbGFzcz0icyIgZmlsbD0iIzA4NTA0MSI+ZmFjdG9yIEk8L3RleHQ+PHBhdGggZD0iTTEzMCAxOTMgTDEzOSAxOTMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48cmVjdCB4PSIxNDAiIHk9IjE4MiIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIyIiByeD0iMyIgZmlsbD0iI0UxRjVFRSIgc3Ryb2tlPSIjMEY2RTU2IiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjE2MC4wIiB5PSIxOTEuMiIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPkZpYnJpbjwvdGV4dD48dGV4dCB4PSIxNjAuMCIgeT0iMjAwLjAiIGNsYXNzPSJzIiBmaWxsPSIjMDg1MDQxIj5sb29zZSBjbG90PC90ZXh0PjxwYXRoIGQ9Ik0xNjAgMjA0IEwxNjAgMjE3IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHRleHQgeD0iMTY0IiB5PSIyMTMiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPlhJSUlhPC90ZXh0PjxyZWN0IHg9IjEyNiIgeT0iMjE4IiB3aWR0aD0iNTYiIGhlaWdodD0iMjIiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTU0LjAiIHk9IjIyNy4yIiBjbGFzcz0iYiIgZmlsbD0iIzA4NTA0MSI+U3RhYmxlIGNsb3Q8L3RleHQ+PHRleHQgeD0iMTU0LjAiIHk9IjIzNi4wIiBjbGFzcz0icyIgZmlsbD0iIzA4NTA0MSI+Y3Jvc3MtbGlua2VkIGZpYnJpbjwvdGV4dD48dGV4dCB4PSIxMjIiIHk9IjIzMSIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjplbmQiIGZpbGw9IiNBMzJEMkQiPkZYSUlJIGRlZmljaWVuY3k8L3RleHQ+PHRleHQgeD0iMTIyIiB5PSIyMzkiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6ZW5kIiBmaWxsPSIjNDQ0Ij5ub3JtYWwgUFQgKyBhUFRUPC90ZXh0PjxjaXJjbGUgY3g9IjEyOSIgY3k9IjExNyIgcj0iNCIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNSIvPjx0ZXh0IHg9IjEyOSIgeT0iMTE5IiBjbGFzcz0iayIgZmlsbD0iIzcxMkIxMyI+SzwvdGV4dD48Y2lyY2xlIGN4PSIxMjkiIGN5PSI4NSIgcj0iNCIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNSIvPjx0ZXh0IHg9IjEyOSIgeT0iODciIGNsYXNzPSJrIiBmaWxsPSIjNzEyQjEzIj5LPC90ZXh0PjxjaXJjbGUgY3g9IjEyOSIgY3k9IjQ3IiByPSI0IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC41Ii8+PHRleHQgeD0iMTI5IiB5PSI0OSIgY2xhc3M9ImsiIGZpbGw9IiM3MTJCMTMiPks8L3RleHQ+PGNpcmNsZSBjeD0iMTc5IiBjeT0iNDciIHI9IjQiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48dGV4dCB4PSIxNzkiIHk9IjQ5IiBjbGFzcz0iayIgZmlsbD0iIzcxMkIxMyI+SzwvdGV4dD48cGF0aCBkPSJNMTEgMTIgTDggMTIgTDggNjggTDExIDY4IiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMC43Ii8+PHRleHQgeD0iNC41IiB5PSI0MC4wIiBjbGFzcz0ibGIiIHRyYW5zZm9ybT0icm90YXRlKC05MCA0LjUgNDAuMCkiIGZpbGw9IiM1NTUiPmFQVFQ8L3RleHQ+PHBhdGggZD0iTTExIDg0IEw4IDg0IEw4IDIwNCBMMTEgMjA0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMC43Ii8+PHRleHQgeD0iNC41IiB5PSIxNDQuMCIgY2xhc3M9ImxiIiB0cmFuc2Zvcm09InJvdGF0ZSgtOTAgNC41IDE0NC4wKSIgZmlsbD0iIzU1NSI+Y29tbW9uOiBQVCArIGFQVFQ8L3RleHQ+PHBhdGggZD0iTTc0IDIwOSBMNzQgMjEyIEwxMzkgMjEyIEwxMzkgMjA5IiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMC43Ii8+PHRleHQgeD0iMTA1IiB5PSIyMTkuNSIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjptaWRkbGUiIGZpbGw9IiM1NTUiPlRULCBmaWJyaW5vZ2VuIGxldmVsPC90ZXh0PjxwYXRoIGQ9Ik03NCAxNjQgTDMwIDE2NCBMMzAgNjkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIHN0cm9rZS1kYXNoYXJyYXk9IjIgMS41IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHRleHQgeD0iMzQiIHk9IjExOCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+dGhyb21iaW48L3RleHQ+PHRleHQgeD0iMzQiIHk9IjEyNiIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+ZmVlZGJhY2s6PC90ZXh0Pjx0ZXh0IHg9IjM0IiB5PSIxMzQiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPlYsIFZJSUksIFhJPC90ZXh0PjxjaXJjbGUgY3g9IjY0IiBjeT0iNzYiIHI9IjYiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSI2NCIgeT0iNzguNCIgY2xhc3M9InQiIGZpbGw9IiM3MTJCMTMiPkU8L3RleHQ+PHBhdGggZD0iTTcwIDc2IEw5OSA3NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuMCIgbWFya2VyLWVuZD0idXJsKCNjKSIvPjxsaW5lIHgxPSI2OCIgeTE9Ijk1IiB4Mj0iNzMiIHkyPSI5NSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuMiIvPjxsaW5lIHgxPSI3MyIgeTE9IjkwLjUiIHgyPSI3MyIgeTI9Ijk5LjUiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSI2MiIgY3k9Ijk1IiByPSI2IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iNjIiIHk9Ijk3LjQiIGNsYXNzPSJ0IiBmaWxsPSIjNzEyQjEzIj5IPC90ZXh0PjxsaW5lIHgxPSI2OCIgeTE9IjE1NCIgeDI9IjczIiB5Mj0iMTU0IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS4yIi8+PGxpbmUgeDE9IjczIiB5MT0iMTQ5LjUiIHgyPSI3MyIgeTI9IjE1OC41IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS42Ii8+PGNpcmNsZSBjeD0iNjIiIGN5PSIxNTQiIHI9IjYiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSI2MiIgeT0iMTU2LjQiIGNsYXNzPSJ0IiBmaWxsPSIjNzEyQjEzIj5IPC90ZXh0PjxsaW5lIHgxPSIxNDAiIHkxPSI5OSIgeDI9IjEzMSIgeTI9Ijk5IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS4yIi8+PGxpbmUgeDE9IjEzMSIgeTE9Ijk0LjUiIHgyPSIxMzEiIHkyPSIxMDMuNSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuNiIvPjxjaXJjbGUgY3g9IjE0NiIgY3k9Ijk5IiByPSI2IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTQ2IiB5PSIxMDEuNCIgY2xhc3M9InQiIGZpbGw9IiM3MTJCMTMiPkE8L3RleHQ+PGNpcmNsZSBjeD0iMTY2IiBjeT0iOTEiIHI9IjYiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNjYiIHk9IjkzLjQiIGNsYXNzPSJ0IiBmaWxsPSIjNzEyQjEzIj43YTwvdGV4dD48cGF0aCBkPSJNMTYwIDkxIEwxMzEgOTEiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjAiIG1hcmtlci1lbmQ9InVybCgjYykiLz48bGluZSB4MT0iMTQwIiB5MT0iMTU5IiB4Mj0iMTMxIiB5Mj0iMTU5IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS4yIi8+PGxpbmUgeDE9IjEzMSIgeTE9IjE1NC41IiB4Mj0iMTMxIiB5Mj0iMTYzLjUiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSIxNDYiIGN5PSIxNTkiIHI9IjYiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNDYiIHk9IjE2MS40IiBjbGFzcz0idCIgZmlsbD0iIzcxMkIxMyI+QjwvdGV4dD48cmVjdCB4PSIxOTMiIHk9IjgiIHdpZHRoPSIxMDUiIGhlaWdodD0iMTE0IiByeD0iMyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmJiIiBzdHJva2Utd2lkdGg9IjAuNSIvPjx0ZXh0IHg9IjI0NS41IiB5PSIxOCIgY2xhc3M9ImIiIHN0eWxlPSJ0ZXh0LWFuY2hvcjptaWRkbGUiIGZpbGw9IiM0NDQiPlByaW1hcnkgaGVtb3N0YXNpczwvdGV4dD48ZWxsaXBzZSBjeD0iMjE0IiBjeT0iMzIiIHJ4PSIxNyIgcnk9IjciIGZpbGw9IiNGQ0VCRUIiIHN0cm9rZT0iI0EzMkQyRCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyMTQiIHk9IjM0LjQiIGNsYXNzPSJzIiBmaWxsPSIjNzkxRjFGIj5wbGF0ZWxldDwvdGV4dD48cmVjdCB4PSIyMTEiIHk9IjM5IiB3aWR0aD0iNiIgaGVpZ2h0PSIxMSIgZmlsbD0iI0UxRjVFRSIgc3Ryb2tlPSIjMEY2RTU2IiBzdHJva2Utd2lkdGg9IjAuNSIvPjxlbGxpcHNlIGN4PSIyMTQiIGN5PSI1NyIgcng9IjE3IiByeT0iNyIgZmlsbD0iI0ZDRUJFQiIgc3Ryb2tlPSIjQTMyRDJEIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjIxNCIgeT0iNTkuNCIgY2xhc3M9InMiIGZpbGw9IiM3OTFGMUYiPnBsYXRlbGV0PC90ZXh0PjxyZWN0IHg9IjIxMSIgeT0iNjQiIHdpZHRoPSI2IiBoZWlnaHQ9IjkiIGZpbGw9IiNFMUY1RUUiIHN0cm9rZT0iIzBGNkU1NiIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48cmVjdCB4PSIxOTYiIHk9Ijc0IiB3aWR0aD0iMzYiIGhlaWdodD0iMTYiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjE0LjAiIHk9Ijg0LjciIGNsYXNzPSJiIiBmaWxsPSIjMDg1MDQxIj5WV0Y8L3RleHQ+PHJlY3QgeD0iMTk2IiB5PSI5MiIgd2lkdGg9Ijk5IiBoZWlnaHQ9IjgiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48dGV4dCB4PSIyNDUuNSIgeT0iOTguMyIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjptaWRkbGUiIGZpbGw9IiM0NDQ0NDEiPmV4cG9zZWQgY29sbGFnZW4gKHZlc3NlbCBpbmp1cnkpPC90ZXh0PjxwYXRoIGQ9Ik0yMTggNDQuNSBMMjM0IDQ0LjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYiIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48dGV4dCB4PSIyMzYiIHk9IjM4IiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNDQ0Ij5HUElJYi9JSUlhICs8L3RleHQ+PHRleHQgeD0iMjM2IiB5PSI0NSIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+Zmlicmlub2dlbjwvdGV4dD48dGV4dCB4PSIyMzYiIHk9IjUyIiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjQTMyRDJEIj5HbGFuem1hbm48L3RleHQ+PHBhdGggZD0iTTIxOCA2OC41IEwyMzQgNjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYiIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48dGV4dCB4PSIyMzYiIHk9IjYxIiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNDQ0Ij5HUEliPC90ZXh0Pjx0ZXh0IHg9IjIzNiIgeT0iNjgiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiNBMzJEMkQiPkJlcm5hcmQtU291bGllcjwvdGV4dD48dGV4dCB4PSIyMzYiIHk9Ijc3IiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNDQ0Ij5jYXJyaWVzIEZWSUlJPC90ZXh0Pjx0ZXh0IHg9IjIzNiIgeT0iODQiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiNBMzJEMkQiPnZXRDwvdGV4dD48Y2lyY2xlIGN4PSIyODkiIGN5PSI4NyIgcj0iNS41IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjg5IiB5PSI4OS40IiBjbGFzcz0idCIgZmlsbD0iIzcxMkIxMyI+RDwvdGV4dD48cGF0aCBkPSJNMjgzLjUgODcuNSBMMjMzLjUgODYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjAiIG1hcmtlci1lbmQ9InVybCgjYykiLz48dGV4dCB4PSIyNDUuNSIgeT0iMTEwIiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOm1pZGRsZSIgZmlsbD0iIzQ0NCI+VldGIHRldGhlcnMgcGxhdGVsZXRzIHRvPC90ZXh0Pjx0ZXh0IHg9IjI0NS41IiB5PSIxMTcuNSIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjptaWRkbGUiIGZpbGw9IiM0NDQiPmNvbGxhZ2VuOyBHUElJYi9JSUlhIGFnZ3JlZ2F0ZXM8L3RleHQ+PHRleHQgeD0iMjQ1LjUiIHk9IjEzNiIgY2xhc3M9ImIiIHN0eWxlPSJ0ZXh0LWFuY2hvcjptaWRkbGUiIGZpbGw9IiM0NDQiPkZpYnJpbm9seXNpczwvdGV4dD48cmVjdCB4PSIyMTQiIHk9IjE0MiIgd2lkdGg9IjYyIiBoZWlnaHQ9IjE4IiByeD0iMyIgZmlsbD0iI0UxRjVFRSIgc3Ryb2tlPSIjMEY2RTU2IiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjI0NS4wIiB5PSIxNTMuNyIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPlBsYXNtaW5vZ2VuPC90ZXh0PjxwYXRoIGQ9Ik0yNDUgMTYwIEwyNDUgMTczIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHRleHQgeD0iMjQxIiB5PSIxNjkiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6ZW5kIiBmaWxsPSIjNDQ0Ij50UEE8L3RleHQ+PGxpbmUgeDE9IjI2MCIgeTE9IjE2Ni41IiB4Mj0iMjQ4IiB5Mj0iMTY2LjUiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjIiLz48bGluZSB4MT0iMjQ4IiB5MT0iMTYyLjAiIHgyPSIyNDgiIHkyPSIxNzEuMCIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuNiIvPjxjaXJjbGUgY3g9IjI2NiIgY3k9IjE2Ni41IiByPSI2IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjY2IiB5PSIxNjguOSIgY2xhc3M9InQiIGZpbGw9IiM3MTJCMTMiPlQ8L3RleHQ+PHJlY3QgeD0iMjE0IiB5PSIxNzQiIHdpZHRoPSI2MiIgaGVpZ2h0PSIyMiIgcng9IjMiIGZpbGw9IiNFMUY1RUUiIHN0cm9rZT0iIzBGNkU1NiIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyNDUuMCIgeT0iMTgzLjIiIGNsYXNzPSJiIiBmaWxsPSIjMDg1MDQxIj5QbGFzbWluPC90ZXh0Pjx0ZXh0IHg9IjI0NS4wIiB5PSIxOTIuMCIgY2xhc3M9InMiIGZpbGw9IiMwODUwNDEiPmx5c2VzIGZpYnJpbjwvdGV4dD48cGF0aCBkPSJNMjQ1IDE5NiBMMjQ1IDIwOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjAuOCIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxyZWN0IHg9IjIwOCIgeT0iMjEwIiB3aWR0aD0iNzQiIGhlaWdodD0iMjQiIHJ4PSIzIiBmaWxsPSIjRjFFRkU4IiBzdHJva2U9IiM4ODg3ODAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjQ1LjAiIHk9IjIyMC4yIiBjbGFzcz0iYiIgZmlsbD0iIzQ0NDQ0MSI+RC1kaW1lciwgRkRQczwvdGV4dD48dGV4dCB4PSIyNDUuMCIgeT0iMjI5LjAiIGNsYXNzPSJzIiBmaWxsPSIjNDQ0NDQxIj5maWJyaW4gZnJhZ21lbnRzPC90ZXh0PjxwYXRoIGQ9Ik0xODIgMjI5IEwyMDcgMjI1IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PGxpbmUgeDE9IjIiIHkxPSIyNDgiIHgyPSIyOTgiIHkyPSIyNDgiIHN0cm9rZT0iI2NjYyIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48Y2lyY2xlIGN4PSI3IiBjeT0iMjU3IiByPSI0IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC41Ii8+PHRleHQgeD0iNyIgeT0iMjU5IiBjbGFzcz0iayIgZmlsbD0iIzcxMkIxMyI+SzwvdGV4dD48dGV4dCB4PSIxNSIgeT0iMjU5LjQiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPnZpdGFtaW4gSy1kZXBlbmRlbnQ7IHdhcmZhcmluIGJsb2NrczwvdGV4dD48Y2lyY2xlIGN4PSIxNTciIGN5PSIyNTciIHI9IjUiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNTciIHk9IjI1OS40IiBjbGFzcz0idCIgZmlsbD0iIzcxMkIxMyI+SDwvdGV4dD48dGV4dCB4PSIxNjUiIHk9IjI1OS40IiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNDQ0Ij5oZXBhcmluICsgQVQ6IGluaGliaXRzIElJYSwgWGE8L3RleHQ+PGNpcmNsZSBjeD0iNyIgY3k9IjI2OCIgcj0iNSIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjciIHk9IjI3MC40IiBjbGFzcz0idCIgZmlsbD0iIzcxMkIxMyI+QTwvdGV4dD48dGV4dCB4PSIxNSIgeT0iMjcwLjQiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPmFwaXhhYmFuLCByaXZhcm94YWJhbjogWGEgaW5oaWJpdG9yczwvdGV4dD48Y2lyY2xlIGN4PSIxNTciIGN5PSIyNjgiIHI9IjUiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNTciIHk9IjI3MC40IiBjbGFzcz0idCIgZmlsbD0iIzcxMkIxMyI+QjwvdGV4dD48dGV4dCB4PSIxNjUiIHk9IjI3MC40IiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNDQ0Ij5kYWJpZ2F0cmFuOiBkaXJlY3QgSUlhIGluaGliaXRvcjwvdGV4dD48Y2lyY2xlIGN4PSI3IiBjeT0iMjc5IiByPSI1IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iNyIgeT0iMjgxLjQiIGNsYXNzPSJ0IiBmaWxsPSIjNzEyQjEzIj5UPC90ZXh0Pjx0ZXh0IHg9IjE1IiB5PSIyODEuNCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+VFhBOiBibG9ja3MgcGxhc21pbm9nZW4gbHlzaW5lIHNpdGVzPC90ZXh0PjxjaXJjbGUgY3g9IjE1NyIgY3k9IjI3OSIgcj0iNSIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjE1NyIgeT0iMjgxLjQiIGNsYXNzPSJ0IiBmaWxsPSIjNzEyQjEzIj5EPC90ZXh0Pjx0ZXh0IHg9IjE2NSIgeT0iMjgxLjQiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPkREQVZQOiByZWxlYXNlcyBWV0YgKyBGVklJSTwvdGV4dD48Y2lyY2xlIGN4PSI3IiBjeT0iMjkwIiByPSI1IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iNyIgeT0iMjkyLjQiIGNsYXNzPSJ0IiBmaWxsPSIjNzEyQjEzIj43YTwvdGV4dD48dGV4dCB4PSIxNSIgeT0iMjkyLjQiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPnJGVklJYTogYWN0aXZhdGVzIFggb24gcGxhdGVsZXRzPC90ZXh0PjxjaXJjbGUgY3g9IjE1NyIgY3k9IjI5MCIgcj0iNSIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjE1NyIgeT0iMjkyLjQiIGNsYXNzPSJ0IiBmaWxsPSIjNzEyQjEzIj5FPC90ZXh0Pjx0ZXh0IHg9IjE2NSIgeT0iMjkyLjQiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPmVtaWNpenVtYWI6IGJyaWRnZXMgSVhhICsgWDwvdGV4dD48dGV4dCB4PSIyIiB5PSIzMDEiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPlJldmVyc2FsOiBpZGFydWNpenVtYWIgKGRhYmlnYXRyYW4pOyA0Ri1QQ0MgKyB2aXQgSyAod2FyZmFyaW4pOyBwcm90YW1pbmUgKGhlcGFyaW4pPC90ZXh0PjxsaW5lIHgxPSIyIiB5MT0iMzA2IiB4Mj0iMjk4IiB5Mj0iMzA2IiBzdHJva2U9IiNjY2MiIHN0cm9rZS13aWR0aD0iMC41Ii8+PHRleHQgeD0iMiIgeT0iMzE1IiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNDQ0Ij5QVCA9IFZJSSArIGNvbW1vbiBwYXRod2F5OyBhUFRUID0gWElJLCBYSSwgSVgsIFZJSUkgKyBjb21tb247IFRUID0gZmlicmlub2dlbiDihpIgZmlicmluLjwvdGV4dD48dGV4dCB4PSIyIiB5PSIzMjQiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPkJsZWVkaW5nIHdpdGggbm9ybWFsIFBUICsgYVBUVDogdldELCBwbGF0ZWxldCBmdW5jdGlvbiBkZWZlY3QsIEZYSUlJIGRlZmljaWVuY3kuPC90ZXh0Pjwvc3ZnPg=='>"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Mixing study",
+       "items": [
+        "<b>1:1 with pooled normal plasma. Corrects &rarr; deficiency</b> (50% of any factor suffices). <b>Fails to correct &rarr; inhibitor</b>",
+        "<b>Immediate inhibitor:</b> lupus anticoagulant, heparin (check TT / anti-Xa first)",
+        "<b>Time- and temperature-dependent: anti-FVIII autoantibody</b>: corrects at first, prolongs after <b>1&ndash;2 h at 37&deg;C</b> &mdash; ask the lab to incubate",
+        "Next: factor levels, <b>Bethesda titer</b>, LA testing (dRVVT)"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Rare factor deficiencies",
+       "items": [
+        "<b>FXI:</b> autosomal, common in <b>Ashkenazi Jews</b>; <b>bleeding does not track the level</b>; fibrinolytic sites (mouth, nose, urinary). TXA &plusmn; plasma",
+        "<b>FXIII: PT and aPTT normal.</b> Umbilical stump, delayed bleeding, poor healing, ICH. Quantitative FXIII activity (clot solubility is insensitive); monthly FXIII concentrate",
+        "<b>FVII:</b> isolated &uarr;PT; bleeding correlates poorly with level; rFVIIa 15&ndash;30 &micro;g/kg",
+        "<b>Fibrinogen:</b> dysfibrinogenemia can bleed or clot (low Clauss, &uarr;TT); fibrinogen concentrate",
+        "<b>&alpha;2-antiplasmin / PAI-1:</b> normal screens, delayed bleeding &rarr; TXA"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "35%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Von Willebrand disease &mdash; ASH/ISTH/NHF/WFH 2021",
+       "items": [
+        "<b>Most common inherited bleeding disorder</b>; mucocutaneous bleeding, heavy menses, postpartum hemorrhage",
+        "<b>Panel:</b> VWF:Ag, platelet-binding activity (<b>VWF:GPIbM</b> or GPIbR preferred over VWF:RCo), FVIII; <b>multimers</b> if activity:Ag &lt;0.7",
+        "<b>Diagnose type 1 at VWF &lt;0.30 IU/mL regardless of bleeding, or &lt;0.50 with abnormal bleeding.</b> Activity:Ag &lt;0.7 &rarr; type 2",
+        "<b>Levels move:</b> stress, inflammation, <b>pregnancy, estrogen raise VWF</b>; <b>group O runs ~25% lower</b>. Repeat before excluding; levels that normalize with age &rarr; reconsider, don't remove, the diagnosis",
+        "<b>Rx:</b> <b>DDAVP trial</b> (VWF + FVIII at baseline, 1 h, 4 h) &rarr; responders use it for minor procedures &middot; <b>TXA</b> for mucosal bleeding &middot; <b>VWF concentrate</b> (plasma-derived or recombinant vonicog alfa) for type 3, 2B, non-responders, major surgery &middot; hormonal therapy or TXA for heavy menses"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "VWD types",
+       "headers": [
+        "Type",
+        "Defect &middot; key pattern",
+        "Treatment"
+       ],
+       "widths": [
+        "9%",
+        "58%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>1</b> <span class='r'>~75%</span>",
+         "Partial quantitative; ratio &ge;0.7, normal multimers",
+         "DDAVP usually works"
+        ],
+        [
+         "<b>2A</b>",
+         "Loss of high-molecular-weight (HMW) multimers; ratio &lt;0.7",
+         "Concentrate; DDAVP variable"
+        ],
+        [
+         "<b>2B</b>",
+         "Gain-of-function GPIb binding &rarr; HMW loss + <b>low platelets</b>; &uarr; low-dose RIPA; exclude platelet-type (GP1BA)",
+         "<b>Avoid DDAVP</b> (drops platelets); concentrate"
+        ],
+        [
+         "<b>2M</b>",
+         "&darr; GPIb binding with <b>normal multimers</b>; ratio &lt;0.7",
+         "Concentrate; DDAVP variable"
+        ],
+        [
+         "<b>2N</b>",
+         "<b>Low FVIII, near-normal VWF</b> &mdash; mimics mild hemophilia A but autosomal",
+         "FVIII-containing VWF concentrate"
+        ],
+        [
+         "<b>3</b>",
+         "Near-absent VWF, FVIII &lt;10%; joint bleeds",
+         "VWF concentrate"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "VWD &mdash; procedures and pregnancy",
+       "items": [
+        "<b>Major surgery: VWF activity and FVIII both &ge;0.50 IU/mL for &ge;3 days</b>",
+        "<b>Minor procedures:</b> raise VWF to &ge;0.50 (DDAVP or concentrate) <b>+ TXA</b>; type 1 with VWF &gt;0.30 and mild phenotype &rarr; <b>TXA alone</b>",
+        "<b>Neuraxial anesthesia:</b> target VWF activity <b>0.50&ndash;1.50</b>; keep &gt;0.50 while the catheter is in and &ge;6 h after removal. Check levels in the third trimester",
+        "<b>Postpartum: TXA</b> for type 1 or low VWF (reasonable in types 2 and 3)",
+        "Give antiplatelets or anticoagulants when truly indicated; VWD is not a contraindication"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Acquired von Willebrand syndrome",
+       "items": [
+        "<b>Shear destroys HMW multimers:</b> <b>aortic stenosis</b> (Heyde: angiodysplasia bleeding, resolves after valve replacement), <b>LVAD</b> (near-universal), <b>ECMO</b>",
+        "<b>Adsorption onto platelets:</b> <b>MPN with very high counts</b> (ET &gt;1,000k) &rarr; hold aspirin, cytoreduce",
+        "<b>Antibody / clearance:</b> <b>MGUS</b> and lymphoproliferative disease (IgG MGUS responds to IVIG), SLE, hypothyroidism",
+        "Clue: low activity:Ag ratio, lost HMW multimers, short DDAVP response"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; hemophilia, acquired hemophilia, platelet disorders, products, thresholds, massive hemorrhage, reversal",
+   "columns": [
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Hemophilia A and B",
+       "items": [
+        "<b>X-linked</b>; A (FVIII) ~1 in 5,000 males, B (FIX) ~1 in 25,000&ndash;30,000. Joints, muscle, ICH; &uarr;aPTT that corrects",
+        "<b>Severity by factor level:</b> severe &lt;1% (spontaneous bleeds) &middot; moderate 1&ndash;5% &middot; mild &gt;5&ndash;&lt;40% (bleeds with trauma, surgery). <b>Carriers can bleed</b> &mdash; check a level before surgery or delivery",
+        "<b>Acute bleed: replace first, image second.</b> CNS/life-threatening <b>FVIII 80&ndash;100%, FIX 60&ndash;80%</b>, joint 40&ndash;60% <span class='r'>WFH 2020</span>. FVIII 1 U/kg &rarr; &uarr;~2%, FIX &rarr; &uarr;~1%",
+        "<b>Inhibitors</b> (~25&ndash;30% of severe A, rare in B): &ge;5 BU = high titer &rarr; <b>bypassing agents</b> (rFVIIa, aPCC); immune tolerance to eradicate",
+        "<b>Emicizumab</b> (IXa&ndash;X bispecific): SC prophylaxis for A &plusmn; inhibitors (HAVEN 1, 3), <b>not for acute bleeds</b>. <b>Normalizes the aPTT and corrupts one-stage FVIII/Bethesda assays &rarr; use bovine chromogenic assays</b>",
+        "Also: extended-half-life factor, anti-TFPI (<b>marstacimab, concizumab</b>), <b>fitusiran</b> (antithrombin siRNA), gene therapy. <b>DDAVP for mild A only</b>"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Acquired hemophilia A",
+       "items": [
+        "<b>Autoantibody to FVIII.</b> Elderly, <b>postpartum</b>, autoimmune, cancer; ~half idiopathic",
+        "<b>New extensive soft-tissue bleeding</b> (ecchymoses, muscle, retroperitoneum); <b>joints rare</b>. &uarr;aPTT not correcting after incubation, low FVIII, Bethesda titer (does not predict bleeding)",
+        "<b>Stop the bleed:</b> <b>recombinant porcine FVIII</b> (Obizur; 200 U/kg, then by FVIII level) or <b>bypassing agents</b> &mdash; rFVIIa 90 &micro;g/kg q2&ndash;3 h or aPCC 50&ndash;100 U/kg (max 200 U/kg/day). <b>Emicizumab</b> prophylaxis is off-label in the US (approved in Japan 2022)",
+        "<b>Eradicate at diagnosis:</b> prednisone 1 mg/kg &plusmn; cyclophosphamide or rituximab; seek the cause"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Platelet function disorders",
+       "headers": [
+        "Disorder",
+        "Defect &middot; lab clue"
+       ],
+       "widths": [
+        "26%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Glanzmann</b>",
+         "<b>GPIIb/IIIa</b>  (ITGA2B/ITGB3), recessive; normal count. LTA: <b>no aggregation to any agonist except ristocetin</b>. Platelets (HLA-matched if alloimmunized); rFVIIa if refractory"
+        ],
+        [
+         "<b>Bernard-Soulier</b>",
+         "<b>GPIb-IX-V</b>; <b>giant platelets + low count</b> (often mislabeled ITP). Absent ristocetin response, not corrected by normal plasma"
+        ],
+        [
+         "<b>Storage pool</b>",
+         "&delta;-granule: absent secondary wave (Hermansky-Pudlak with albinism; Chediak-Higashi). &alpha;-granule: gray platelet syndrome (NBEAL2). DDAVP often helps"
+        ],
+        [
+         "<b>Acquired</b> <span class='r'>most common</span>",
+         "Antiplatelets, uremia, MPN, bypass, SSRIs, paraprotein"
+        ]
+       ],
+       "footnote": "<b>PFA-100</b> catches VWD and severe defects, misses storage pool and mild defects; invalid if plt &lt;100k or Hct &lt;30%. <b>Light transmission aggregometry</b> is the reference test; bleeding time is obsolete."
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Blood products",
+       "headers": [
+        "Product",
+        "Adult dose &rarr; effect"
+       ],
+       "widths": [
+        "16%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>RBCs</b>",
+         "~300 mL, Hct ~55&ndash;65%. <b>1 unit &rarr; Hb &uarr; ~1 g/dL</b> in a non-bleeding adult. Single units, then reassess"
+        ],
+        [
+         "<b>Platelets</b>",
+         "1 apheresis unit &asymp; pool of 4&ndash;6 whole-blood units. <b>1 unit &rarr; &uarr; ~30k</b> (less with fever, sepsis, splenomegaly, refractoriness). Dose doesn't change bleeding (PLADO)"
+        ],
+        [
+         "<b>Plasma</b>",
+         "All coagulation factors. <b>10&ndash;15 mL/kg</b> (~4 units in 70 kg) for a real coagulopathy; TACO risk"
+        ],
+        [
+         "<b>Cryo</b>",
+         "Fibrinogen, FVIII, VWF, FXIII. <b>10 units (2 pools of 5) &rarr; fibrinogen &uarr; ~70&ndash;100 mg/dL</b>"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "RBC thresholds &mdash; AABB 2023",
+       "headers": [
+        "Setting",
+        "Transfuse at Hb"
+       ],
+       "widths": [
+        "40%",
+        ""
+       ],
+       "rows": [
+        [
+         "Hospitalized, hemodynamically stable (incl. ICU)",
+         "<b>&lt;7 g/dL</b> (TRICC) <span class='r'>strong</span>"
+        ],
+        [
+         "<b>Heme/onc inpatients</b> (chemo, HSCT)",
+         "<b>&lt;7 g/dL</b> <span class='r'>conditional</span>"
+        ],
+        [
+         "Cardiac surgery",
+         "<b>&lt;7.5 g/dL</b>"
+        ],
+        [
+         "Orthopedic surgery or <b>CVD</b>",
+         "<b>&lt;8 g/dL</b> (FOCUS)"
+        ],
+        [
+         "Septic shock",
+         "<b>&lt;7 g/dL</b> (TRISS)"
+        ],
+        [
+         "<b>Acute MI + anemia</b>",
+         "<b>Liberal &lt;10 g/dL</b> <span class='r'>AABB 2025 conditional; ACC/AHA 2025 2b</span>. MINT: MI/death 16.9% restrictive vs 14.5% liberal, RR 1.15, P=0.07 &mdash; favored, not proven"
+        ],
+        [
+         "Active bleeding",
+         "Clinical endpoints, not a number"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Platelet thresholds &mdash; AABB/ICTMG 2025",
+       "headers": [
+        "Setting",
+        "Transfuse below"
+       ],
+       "widths": [
+        "56%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Chemo or allo-HSCT</b>, not bleeding",
+         "<b>10k</b> <span class='r'>strong; Rebulla, TOPPS</span>"
+        ],
+        [
+         "<b>Auto-HSCT or aplastic anemia</b>, not bleeding",
+         "<b>No routine prophylaxis</b>"
+        ],
+        [
+         "Consumptive, no major bleeding; <b>CVC</b> (compressible)",
+         "<b>10k</b>"
+        ],
+        [
+         "Fever / sepsis",
+         "<b>~20k</b> <span class='r'>convention</span>"
+        ],
+        [
+         "<b>Lumbar puncture</b>; low-risk IR",
+         "<b>20k</b>"
+        ],
+        [
+         "High-risk IR; major non-neuraxial surgery",
+         "<b>50k</b>"
+        ],
+        [
+         "Neurosurgery, ocular, neuraxial; CNS bleed",
+         "<b>~100k</b> <span class='r'>convention</span>"
+        ],
+        [
+         "Active bleeding",
+         "<b>&gt;50k</b>"
+        ]
+       ],
+       "footnote": "<b>Avoid platelets</b> in TTP/HIT unless life-threatening bleeding; ITP only for serious bleeding, with IVIG + steroids; useless in PTP; <b>harmful in antiplatelet ICH</b> (PATCH)."
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Massive hemorrhage",
+       "items": [
+        "<b>Activate the MTP</b>; T&amp;S, CBC, PT/aPTT, fibrinogen, iCa, ABG, lactate every 30&ndash;60 min",
+        "<b>1:1:1 plasma : platelets : RBC</b> &mdash; PROPPR vs 1:1:2: 30-d mortality not different (22.4% vs 26.1%), but <b>hemostasis 86% vs 78%</b> and <b>exsanguination death at 24 h 9.2% vs 14.6%</b>",
+        "<b>TXA 1 g over 10 min + 1 g over 8 h, within 3 h</b> (CRASH-2). <b>After 3 h bleeding deaths rose (RR 1.44) &mdash; don't start late</b>",
+        "<b>Fibrinogen &gt;150&ndash;200 mg/dL</b>  (cryo or concentrate); replace <b>ionized calcium</b> early (citrate); prevent <b>hypothermia</b> and correct <b>acidosis</b>",
+        "<b>Viscoelastic testing</b> (TEG/ROTEM): long R/CT &rarr; plasma; low MA/MCF &rarr; platelets or fibrinogen (FIBTEM); high LY30 &rarr; TXA",
+        "Reverse anticoagulants; prehospital plasma in long air transport (PAMPer)"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Anticoagulant and antiplatelet reversal",
+       "headers": [
+        "Agent",
+        "Reversal for major bleeding"
+       ],
+       "widths": [
+        "19%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Warfarin</b>",
+         "<b>4F-PCC</b> 25 / 35 / 50 U/kg for INR 2&ndash;&lt;4 / 4&ndash;6 / &gt;6 (max 2500 / 3500 / 5000 U) or fixed 1000&ndash;1500 U, <b>+ vitamin K 10 mg IV</b>. PCC beats plasma: rapid INR correction 62% vs 10% (Sarode 2013); in ICH, INR &le;1.2 by 3 h 67% vs 9% (INCH). No bleeding, INR &gt;10 &rarr; oral vitamin K"
+        ],
+        [
+         "<b>Dabigatran</b>",
+         "<b>Idarucizumab 5 g IV</b> (REVERSE-AD: median reversal 100%); dialyzable. Normal TT excludes a relevant level"
+        ],
+        [
+         "<b>Apixaban, rivaroxaban, edoxaban</b>",
+         "<b>4F-PCC 25&ndash;50 U/kg</b> or fixed 2000 U (off-label). <b>Andexanet left the US market 22 Dec 2025</b> &mdash; FDA judged thrombotic risk to outweigh benefit (ANNEXA-I: thrombosis 10.3% vs 5.6%, ischemic stroke 6.5% vs 1.5%). Charcoal if ingested &lt;2&ndash;4 h"
+        ],
+        [
+         "<b>UFH</b>",
+         "<b>Protamine 1 mg per 100 U</b> given in the last 2&ndash;3 h (max 50 mg); check aPTT"
+        ],
+        [
+         "<b>LMWH</b>",
+         "Enoxaparin &le;8 h: <b>protamine 1 mg/mg</b>; 8&ndash;12 h: 0.5 mg/mg (max 50 mg). <b>Partial</b> (~60% of anti-Xa)"
+        ],
+        [
+         "<b>Antiplatelets</b>",
+         "<b>No platelet transfusion in ICH</b> (PATCH: death or dependence OR 2.05) <b>unless neurosurgery</b>; DDAVP 0.4 &micro;g/kg &times;1 an option (NCS/SCCM 2016)"
+        ],
+        [
+         "<b>Thrombolytics</b>",
+         "Stop; <b>cryo 10 units</b> (fibrinogen &ge;150); <b>TXA 1 g</b> or aminocaproic acid 4&ndash;5 g"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Plasma and cryo &mdash; when",
+       "items": [
+        "<b>Plasma for:</b> bleeding + coagulopathy (liver, DIC, dilution), massive transfusion, TTP plasma exchange, a factor deficiency without a concentrate (FV)",
+        "<b>Don't correct an INR &lt;1.7 with plasma before a procedure:</b> little effect, added TACO and TRALI risk. Not a volume expander; <b>not for warfarin reversal when PCC is available</b>",
+        "<b>Cryo or fibrinogen concentrate: fibrinogen &lt;150 mg/dL with bleeding</b> (DIC, MTP, APL; &lt;200 in obstetric hemorrhage)"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 3 &mdash; hemostatic agents, special situations, key trials",
+   "columns": [
+    {
+     "width": "36%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Hemostatic agents &mdash; dosing",
+       "headers": [
+        "Agent",
+        "Dose",
+        "Use &middot; cautions"
+       ],
+       "widths": [
+        "15%",
+        "36%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Tranexamic acid</b>",
+         "<b>1 g IV over 10 min</b> (trauma + 1 g over 8 h; PPH repeat at 30 min if bleeding). PO 1300 mg TID &times; 5 d (menses); 5% mouthwash. Renal dosing. Aminocaproic acid 4&ndash;5 g then 1 g/h is the alternative",
+         "Mucosal, dental, menses, trauma, PPH, surgery. <b>Avoid in upper urinary tract bleeding</b> (ureteral clots). <b>No benefit in GI bleeding, more VTE</b> (HALT-IT)"
+        ],
+        [
+         "<b>Desmopressin</b> (DDAVP)",
+         "<b>0.3 &micro;g/kg IV/SC over 30 min</b> (max 20 &micro;g); peak 30&ndash;60 min",
+         "Type 1 VWD, mild hemophilia A, carriers, uremia, platelet dysfunction. <b>Tachyphylaxis after 2&ndash;3 doses</b>; <b>restrict fluids 24 h, check Na</b>; caution CAD, age &lt;2. <b>Avoid in 2B</b>"
+        ],
+        [
+         "<b>Cryo / fibrinogen concentrate</b>",
+         "Cryo 10 units &rarr; &uarr;70&ndash;100 mg/dL. Concentrate (RiaSTAP, Fibryga): mg/kg = (target &minus; measured mg/dL) &divide; 1.7 (RiaSTAP); &divide; 1.8 Fibryga (&divide; 1.4 if &lt;12 y)",
+         "Concentrate: standardized, pathogen-reduced, low volume"
+        ],
+        [
+         "<b>4F-PCC</b> (Kcentra, Balfaxar)",
+         "25&ndash;50 U/kg by INR (reversal table)",
+         "II, VII, IX, X + C/S + heparin &mdash; <b>avoid in HIT</b>"
+        ],
+        [
+         "<b>aPCC</b> (FEIBA)",
+         "50&ndash;100 U/kg q6&ndash;12 h, <b>max 200 U/kg/day</b>",
+         "Inhibitors (congenital or acquired). <b>On emicizumab: &gt;100 U/kg/24 h for &ge;24 h &rarr; TMA, thrombosis</b>"
+        ],
+        [
+         "<b>rFVIIa</b> (NovoSeven RT)",
+         "Inhibitors / AHA: <b>90 &micro;g/kg q2&ndash;3 h</b>. FVII deficiency: 15&ndash;30 &micro;g/kg q4&ndash;6 h",
+         "Licensed: hemophilia with inhibitors, FVII deficiency, Glanzmann refractory to platelets, acquired hemophilia. <b>Off-label rescue: no mortality benefit, &uarr; arterial thrombosis</b>"
+        ],
+        [
+         "<b>Vitamin K</b>",
+         "<b>10 mg IV</b> slowly for bleeding; 1&ndash;5 mg PO non-urgent",
+         "IV acts in hours (full 12&ndash;24 h); avoid SC. Rare anaphylactoid reaction"
+        ],
+        [
+         "<b>FVIII / FIX</b>",
+         "FVIII U = kg &times; desired % rise &divide; 2. FIX U = kg &times; desired % rise (&divide; ~0.8 for some recombinant FIX)",
+         "Recheck trough; extended-half-life products dosed less often"
+        ],
+        [
+         "<b>Emicizumab</b>",
+         "3 mg/kg SC weekly &times;4, then <b>1.5 mg/kg weekly, 3 mg/kg q2wk or 6 mg/kg q4wk</b>",
+         "Prophylaxis only; breakthrough &rarr; rFVIIa preferred"
+        ],
+        [
+         "<b>Conjugated estrogens</b>",
+         "<b>0.6 mg/kg/day IV &times; 5 d</b>",
+         "Uremic bleeding; onset ~1 d, effect lasts ~2 wk"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Heavy menstrual bleeding",
+       "items": [
+        "<b>Screen for a bleeding disorder</b> when heavy menses date from menarche, or with iron deficiency or postpartum hemorrhage",
+        "<b>VWD:</b> hormonal therapy (combined contraception or levonorgestrel IUS) <b>or TXA</b>, preferred over DDAVP <span class='r'>ASH/ISTH 2021</span>",
+        "Treat iron deficiency in parallel (IV iron if oral fails)"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Patients who decline blood",
+       "items": [
+        "<b>Ask product by product</b> &mdash; many Jehovah's Witnesses accept albumin, factor concentrates, PCC, fibrinogen concentrate or cell salvage; document it",
+        "<b>Build reserve, cut losses:</b> IV iron &plusmn; ESA, TXA, pediatric tubes and fewer draws, early reversal of anticoagulants"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Special situations",
+       "headers": [
+        "Setting",
+        "Approach"
+       ],
+       "widths": [
+        "17%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Liver disease</b>",
+         "<b>Rebalanced hemostasis</b>; INR does not predict procedural bleeding &mdash; <b>don't give plasma to fix it.</b> Fibrinogen and platelets matter more when bleeding; TEG/ROTEM. TPO-RA (avatrombopag, lusutrombopag) before procedures if plt &lt;50k. Variceal bleeding is portal pressure &mdash; avoid volume"
+        ],
+        [
+         "<b>Uremia</b>",
+         "Dialysis; raise Hb toward ~10 (improves platelet margination); DDAVP 0.3 &micro;g/kg for acute bleeds or procedures; conjugated estrogens for longer effect; cryo if refractory"
+        ],
+        [
+         "<b>DIC</b>",
+         "<b>Treat the cause.</b> Products only for bleeding or procedures: <b>plt &gt;50k, fibrinogen &gt;150 mg/dL</b>, plasma 15&ndash;30 mL/kg for prolonged PT/aPTT. ISTH score &ge;5 = overt. Heparin only when thrombosis dominates"
+        ],
+        [
+         "<b>Cardiac surgery / ECMO</b>",
+         "TXA routinely; protamine for heparin rebound; viscoelastic-guided algorithms reduce transfusion; bypass causes platelet dysfunction; <b>acquired VWS</b> on ECMO/LVAD"
+        ],
+        [
+         "<b>Obstetric hemorrhage</b>",
+         "<b>TXA 1 g IV within 3 h</b> (WOMAN: bleeding death 1.5% vs 1.9%, RR 0.81; &le;3 h RR 0.69). <b>Fibrinogen &le;2 g/L predicts severe PPH</b> (PPV 100%, Charbit 2007) &rarr; keep &gt;2 g/L. Abruption and amniotic fluid embolism &rarr; DIC"
+        ],
+        [
+         "<b>APL</b>",
+         "Coagulopathy is the early killer: <b>start ATRA on suspicion</b>; keep fibrinogen &gt;100&ndash;150 mg/dL and plt &gt;30&ndash;50k with cryo and platelets; avoid invasive procedures"
+        ],
+        [
+         "<b>ICH</b>",
+         "Reverse now: <b>4F-PCC + vitamin K</b> for warfarin; idarucizumab or PCC for DOACs. SBP target ~140, avoid &lt;130 <span class='r'>AHA/ASA 2022</span>. No platelets for antiplatelet ICH (PATCH). <b>rFVIIa not recommended</b> (FAST, FASTEST)"
+        ],
+        [
+         "<b>Trauma</b>",
+         "TXA &le;3 h (CRASH-2); TBI: head-injury death &darr; in mild&ndash;moderate injury (CRASH-3, RR 0.78); 1:1:1 (PROPPR); prehospital plasma (PAMPer)"
+        ],
+        [
+         "<b>Surgery in hemophilia</b>",
+         "Major surgery: <b>FVIII 80&ndash;100% / FIX 60&ndash;80% pre-op</b>, then taper over 1&ndash;2 wk (WFH 2020); dental: TXA mouthwash + factor. Plan with the hemophilia treatment center"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "ISTH overt DIC score",
+       "headers": [
+        "Parameter",
+        "0",
+        "1",
+        "2",
+        "3"
+       ],
+       "widths": [
+        "34%",
+        "18%",
+        "16%",
+        "16%",
+        ""
+       ],
+       "rows": [
+        [
+         "Platelets (&times;10<sup>9</sup>/L)",
+         "&gt;100",
+         "50&ndash;100",
+         "&lt;50",
+         ""
+        ],
+        [
+         "D-dimer / FDP",
+         "normal",
+         "",
+         "moderate &uarr;",
+         "strong &uarr;"
+        ],
+        [
+         "PT prolongation",
+         "&lt;3 s",
+         "3&ndash;6 s",
+         "&gt;6 s",
+         ""
+        ],
+        [
+         "Fibrinogen",
+         "&gt;1 g/L",
+         "&lt;1 g/L",
+         "",
+         ""
+        ]
+       ],
+       "footnote": "<b>Score &ge;5 = overt DIC</b>; repeat daily. Only in a patient with a condition known to cause DIC <span class='r'>Taylor 2001</span>."
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "headers": [
+        "Trial",
+        "Result &rarr; practice"
+       ],
+       "widths": [
+        "19%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>CRASH-2</b> <span class='r'>Lancet 2010</span>",
+         "Trauma TXA (n=20,211): death 14.5% vs 16.0%, RR 0.91; harm if started &gt;3 h"
+        ],
+        [
+         "<b>CRASH-3</b> <span class='r'>Lancet 2019</span>",
+         "TBI TXA &le;3 h: head-injury death 18.5% vs 19.8% (NS); mild&ndash;moderate RR 0.78"
+        ],
+        [
+         "<b>PROPPR</b> <span class='r'>JAMA 2015</span>",
+         "1:1:1 vs 1:1:2: mortality NS; hemostasis 86% vs 78%, exsanguination 9.2% vs 14.6%"
+        ],
+        [
+         "<b>PAMPer</b> <span class='r'>NEJM 2018</span>",
+         "Prehospital plasma, air transport: 30-d mortality 23.2% vs 33.0%"
+        ],
+        [
+         "<b>WOMAN</b> <span class='r'>Lancet 2017</span>",
+         "PPH TXA (n=20,060): bleeding death 1.5% vs 1.9% (RR 0.81); no &uarr; thrombosis"
+        ],
+        [
+         "<b>HALT-IT</b> <span class='r'>Lancet 2020</span>",
+         "GI bleeding TXA: bleeding death 4% vs 4% (RR 0.99); VTE 0.8% vs 0.4% &rarr; <b>don't use</b>"
+        ],
+        [
+         "<b>PATCH</b> <span class='r'>Lancet 2016</span>",
+         "Platelets for antiplatelet ICH: death/dependence OR 2.05 &rarr; <b>don't transfuse</b>"
+        ],
+        [
+         "<b>FAST / FASTEST</b> <span class='r'>NEJM 2008 / Lancet 2026</span>",
+         "rFVIIa in ICH: less hematoma growth, no functional benefit; arterial events 9% vs 4%; FASTEST stopped for futility, thromboembolism RR 3.41"
+        ],
+        [
+         "<b>Sarode / INCH</b> <span class='r'>2013 / 2016</span>",
+         "4F-PCC vs plasma for warfarin bleeding: hemostasis 72% vs 65% (non-inferior), rapid INR correction 62% vs 10%; ICH: INR &le;1.2 in 3 h 67% vs 9%"
+        ],
+        [
+         "<b>TRICC</b> <span class='r'>NEJM 1999</span>",
+         "ICU Hb 7 vs 10: 30-d mortality 18.7% vs 23.3% (P=0.11) &rarr; restrictive is safe"
+        ],
+        [
+         "<b>FOCUS</b> <span class='r'>NEJM 2011</span>",
+         "Hip fracture + CV risk, Hb 10 vs &lt;8/symptoms: death or inability to walk 35.2% vs 34.7%"
+        ],
+        [
+         "<b>TRISS</b> <span class='r'>NEJM 2014</span>",
+         "Septic shock, Hb 7 vs 9: 90-d mortality 43.0% vs 45.0%"
+        ],
+        [
+         "<b>MINT</b> <span class='r'>NEJM 2023</span>",
+         "Acute MI, restrictive vs liberal &lt;10: MI/death 16.9% vs 14.5%, RR 1.15, P=0.07"
+        ],
+        [
+         "<b>Rebulla</b> <span class='r'>NEJM 1997</span>",
+         "AML induction, plt 10k vs 20k: major bleeding 21.5% vs 20%; 21.5% fewer transfusions"
+        ],
+        [
+         "<b>PLADO</b> <span class='r'>NEJM 2010</span>",
+         "Platelet dose 1.1 / 2.2 / 4.4 &times;10<sup>11</sup>/m&sup2;: grade &ge;2 bleeding 71 / 69 / 70%"
+        ],
+        [
+         "<b>TOPPS</b> <span class='r'>NEJM 2013</span>",
+         "No prophylactic platelets: WHO &ge;2 bleeding 50% vs 43% &rarr; keep 10k prophylaxis"
+        ],
+        [
+         "<b>REVERSE-AD</b> <span class='r'>NEJM 2017</span>",
+         "Idarucizumab: median maximum dabigatran reversal 100%"
+        ],
+        [
+         "<b>ANNEXA-I</b> <span class='r'>NEJM 2024</span>",
+         "Andexanet vs usual care, Xa-inhibitor ICH: hemostasis 67% vs 53%; thrombosis 10.3% vs 5.6% &rarr; withdrawn in US"
+        ],
+        [
+         "<b>HAVEN 1 / 3</b> <span class='r'>NEJM 2017 / 2018</span>",
+         "Emicizumab: annualized bleeds 2.9 vs 23.3 with inhibitors (&minus;87%); 1.5 vs 38.2 without (&minus;96%)"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Approach to the bleeding patient",
+  "PT and aPTT patterns",
+  "Second-line tests",
+  "Coagulation cascade",
+  "Mixing study",
+  "Rare factor deficiencies",
+  "Von Willebrand disease &mdash; ASH/ISTH/NHF/WFH 2021",
+  "VWD types",
+  "VWD &mdash; procedures and pregnancy",
+  "Acquired von Willebrand syndrome",
+  "Hemophilia A and B",
+  "Acquired hemophilia A",
+  "Platelet function disorders",
+  "Blood products",
+  "RBC thresholds &mdash; AABB 2023",
+  "Platelet thresholds &mdash; AABB/ICTMG 2025",
+  "Massive hemorrhage",
+  "Anticoagulant and antiplatelet reversal",
+  "Plasma and cryo &mdash; when",
+  "Hemostatic agents &mdash; dosing",
+  "Heavy menstrual bleeding",
+  "Patients who decline blood",
+  "Special situations",
+  "ISTH overt DIC score",
+  "Key trials"
+ ],
+ "text": "Bleeding and bleeding disorders Approach and lab workup · VWD, hemophilia, rare factor and platelet disorders, acquired inhibitors · products, thresholds, massive hemorrhage, reversal · hemostatic agents and special situations Compiled from the Fellowship Coagulation & Bleeding Disorders, Hemophilia and Transfusion Medicine reviews · ASH/ISTH/NHF/WFH 2021 VWD, WFH 2020, AABB 2023/2025, AABB/ICTMG 2025 guidance · FDA labels · primary trial reports verified against PubMed, October 2026. Approach to the bleeding patient History: how did surgery, dental extraction, childbirth, menses and trauma go? Transfusion or iron for bleeding counts. Drugs (antiplatelets, anticoagulants, SSRIs, fish oil), liver/renal disease, family history ISTH-BAT abnormal at ≥4 in adult men, ≥6 in adult women, ≥3 in children Elbatarny 2014 . A low score in a young patient with few challenges does not exclude Pattern: mucocutaneous (epistaxis, gums, menses, petechiae) → platelets or VWF . Deep tissue (joints, muscle, delayed post-op) → factor deficiency . Delayed bleeding + poor healing → FXIII; fibrinolytic sites (mouth, nose, urinary) → FXI First-line labs: CBC + smear , PT/INR, aPTT, Clauss fibrinogen, TT ; VWF panel even if the aPTT is normal Pre-analytic traps: heparin from a line, underfilled tube, Hct >55% (excess citrate) falsely prolong clotting times — redraw by clean venipuncture Stanford: Special Coag lab 650-723-4813 · Transfusion Medicine pager 12027 PT and aPTT patterns Pattern Think PT &uarr; only FVII deficiency ; early vitamin K deficiency/warfarin (FVII t&frac12; ~6 h); liver aPTT &uarr; only, bleeding FVIII, IX, XI deficiency ; VWD (low FVIII); acquired hemophilia A ; heparin aPTT &uarr; only, no bleeding FXII , prekallikrein, HMWK deficiency; lupus anticoagulant (thrombosis, not bleeding) Both &uarr; FX, V, II or fibrinogen deficiency; DIC ; liver disease; severe vitamin K deficiency/warfarin; DOACs ; dilution; amyloid (FX) TT &uarr; Heparin, dabigatran , low/dysfunctional fibrinogen, FDPs, paraprotein Both normal + bleeding VWD , platelet function defect or drug, FXIII , &alpha;2-antiplasmin/PAI-1, vascular (EDS, HHT, scurvy), mild factor deficiency A normal PT does not exclude apixaban — use a drug-calibrated anti-Xa level. Second-line tests Specific factor assays (one-stage, chromogenic for FVIII on emicizumab); Bethesda for inhibitors VWF panel ± multimers, low-dose RIPA (2B), FVIII-binding (2N) Platelet function: PFA-100 as a screen, light transmission aggregometry , flow for GPIIb/IIIa and GPIb, electron microscopy for granules FXIII activity , &alpha;2-antiplasmin, PAI-1 when screens are normal Viscoelastic testing (TEG/ROTEM) for acute bleeding; anti-Xa or drug levels for anticoagulants Normal full workup + convincing bleeding = bleeding disorder of unknown cause : manage as mild disorder (TXA ± DDAVP trial) Coagulation cascade Mixing study 1:1 with pooled normal plasma. Corrects → deficiency (50% of any factor suffices). Fails to correct → inhibitor Immediate inhibitor: lupus anticoagulant, heparin (check TT / anti-Xa first) Time- and temperature-dependent: anti-FVIII autoantibody : corrects at first, prolongs after 1–2 h at 37&deg;C — ask the lab to incubate Next: factor levels, Bethesda titer , LA testing (dRVVT) Rare factor deficiencies FXI: autosomal, common in Ashkenazi Jews ; bleeding does not track the level ; fibrinolytic sites (mouth, nose, urinary). TXA ± plasma FXIII: PT and aPTT normal. Umbilical stump, delayed bleeding, poor healing, ICH. Quantitative FXIII activity (clot solubility is insensitive); monthly FXIII concentrate FVII: isolated &uarr;PT; bleeding correlates poorly with level; rFVIIa 15–30 &micro;g/kg Fibrinogen: dysfibrinogenemia can bleed or clot (low Clauss, &uarr;TT); fibrinogen concentrate &alpha;2-antiplasmin / PAI-1: normal screens, delayed bleeding → TXA Von Willebrand disease — ASH/ISTH/NHF/WFH 2021 Most common inherited bleeding disorder ; mucocutaneous bleeding, heavy menses, postpartum hemorrhage Panel: VWF:Ag, platelet-binding activity ( VWF:GPIbM or GPIbR preferred over VWF:RCo), FVIII; multimers if activity:Ag <0.7 Diagnose type 1 at VWF <0.30 IU/mL regardless of bleeding, or <0.50 with abnormal bleeding. Activity:Ag <0.7 → type 2 Levels move: stress, inflammation, pregnancy, estrogen raise VWF ; group O runs ~25% lower . Repeat before excluding; levels that normalize with age → reconsider, don't remove, the diagnosis Rx: DDAVP trial (VWF + FVIII at baseline, 1 h, 4 h) → responders use it for minor procedures · TXA for mucosal bleeding · VWF concentrate (plasma-derived or recombinant vonicog alfa) for type 3, 2B, non-responders, major surgery · hormonal therapy or TXA for heavy menses VWD types Type Defect · key pattern Treatment 1 ~75% Partial quantitative; ratio ≥0.7, normal multimers DDAVP usually works 2A Loss of high-molecular-weight (HMW) multimers; ratio <0.7 Concentrate; DDAVP variable 2B Gain-of-function GPIb binding → HMW loss + low platelets ; &uarr; low-dose RIPA; exclude platelet-type (GP1BA) Avoid DDAVP (drops platelets); concentrate 2M &darr; GPIb binding with normal multimers ; ratio <0.7 Concentrate; DDAVP variable 2N Low FVIII, near-normal VWF — mimics mild hemophilia A but autosomal FVIII-containing VWF concentrate 3 Near-absent VWF, FVIII <10%; joint bleeds VWF concentrate VWD — procedures and pregnancy Major surgery: VWF activity and FVIII both ≥0.50 IU/mL for ≥3 days Minor procedures: raise VWF to ≥0.50 (DDAVP or concentrate) + TXA ; type 1 with VWF >0.30 and mild phenotype → TXA alone Neuraxial anesthesia: target VWF activity 0.50–1.50 ; keep >0.50 while the catheter is in and ≥6 h after removal. Check levels in the third trimester Postpartum: TXA for type 1 or low VWF (reasonable in types 2 and 3) Give antiplatelets or anticoagulants when truly indicated; VWD is not a contraindication Acquired von Willebrand syndrome Shear destroys HMW multimers: aortic stenosis (Heyde: angiodysplasia bleeding, resolves after valve replacement), LVAD (near-universal), ECMO Adsorption onto platelets: MPN with very high counts (ET >1,000k) → hold aspirin, cytoreduce Antibody / clearance: MGUS and lymphoproliferative disease (IgG MGUS responds to IVIG), SLE, hypothyroidism Clue: low activity:Ag ratio, lost HMW multimers, short DDAVP response Hemophilia A and B X-linked ; A (FVIII) ~1 in 5,000 males, B (FIX) ~1 in 25,000–30,000. Joints, muscle, ICH; &uarr;aPTT that corrects Severity by factor level: severe <1% (spontaneous bleeds) · moderate 1–5% · mild >5–<40% (bleeds with trauma, surgery). Carriers can bleed — check a level before surgery or delivery Acute bleed: replace first, image second. CNS/life-threatening FVIII 80–100%, FIX 60–80% , joint 40–60% WFH 2020 . FVIII 1 U/kg → &uarr;~2%, FIX → &uarr;~1% Inhibitors (~25–30% of severe A, rare in B): ≥5 BU = high titer → bypassing agents (rFVIIa, aPCC); immune tolerance to eradicate Emicizumab (IXa–X bispecific): SC prophylaxis for A ± inhibitors (HAVEN 1, 3), not for acute bleeds . Normalizes the aPTT and corrupts one-stage FVIII/Bethesda assays → use bovine chromogenic assays Also: extended-half-life factor, anti-TFPI ( marstacimab, concizumab ), fitusiran (antithrombin siRNA), gene therapy. DDAVP for mild A only Acquired hemophilia A Autoantibody to FVIII. Elderly, postpartum , autoimmune, cancer; ~half idiopathic New extensive soft-tissue bleeding (ecchymoses, muscle, retroperitoneum); joints rare . &uarr;aPTT not correcting after incubation, low FVIII, Bethesda titer (does not predict bleeding) Stop the bleed: recombinant porcine FVIII (Obizur; 200 U/kg, then by FVIII level) or bypassing agents — rFVIIa 90 &micro;g/kg q2–3 h or aPCC 50–100 U/kg (max 200 U/kg/day). Emicizumab prophylaxis is off-label in the US (approved in Japan 2022) Eradicate at diagnosis: prednisone 1 mg/kg ± cyclophosphamide or rituximab; seek the cause Platelet function disorders Disorder Defect · lab clue Glanzmann GPIIb/IIIa (ITGA2B/ITGB3), recessive; normal count. LTA: no aggregation to any agonist except ristocetin . Platelets (HLA-matched if alloimmunized); rFVIIa if refractory Bernard-Soulier GPIb-IX-V ; giant platelets + low count (often mislabeled ITP). Absent ristocetin response, not corrected by normal plasma Storage pool &delta;-granule: absent secondary wave (Hermansky-Pudlak with albinism; Chediak-Higashi). &alpha;-granule: gray platelet syndrome (NBEAL2). DDAVP often helps Acquired most common Antiplatelets, uremia, MPN, bypass, SSRIs, paraprotein PFA-100 catches VWD and severe defects, misses storage pool and mild defects; invalid if plt <100k or Hct <30%. Light transmission aggregometry is the reference test; bleeding time is obsolete. Blood products Product Adult dose → effect RBCs ~300 mL, Hct ~55–65%. 1 unit → Hb &uarr; ~1 g/dL in a non-bleeding adult. Single units, then reassess Platelets 1 apheresis unit &asymp; pool of 4–6 whole-blood units. 1 unit → &uarr; ~30k (less with fever, sepsis, splenomegaly, refractoriness). Dose doesn't change bleeding (PLADO) Plasma All coagulation factors. 10–15 mL/kg (~4 units in 70 kg) for a real coagulopathy; TACO risk Cryo Fibrinogen, FVIII, VWF, FXIII. 10 units (2 pools of 5) → fibrinogen &uarr; ~70–100 mg/dL RBC thresholds — AABB 2023 Setting Transfuse at Hb Hospitalized, hemodynamically stable (incl. ICU) <7 g/dL (TRICC) strong Heme/onc inpatients (chemo, HSCT) <7 g/dL conditional Cardiac surgery <7.5 g/dL Orthopedic surgery or CVD <8 g/dL (FOCUS) Septic shock <7 g/dL (TRISS) Acute MI + anemia Liberal <10 g/dL AABB 2025 conditional; ACC/AHA 2025 2b . MINT: MI/death 16.9% restrictive vs 14.5% liberal, RR 1.15, P=0.07 — favored, not proven Active bleeding Clinical endpoints, not a number Platelet thresholds — AABB/ICTMG 2025 Setting Transfuse below Chemo or allo-HSCT , not bleeding 10k strong; Rebulla, TOPPS Auto-HSCT or aplastic anemia , not bleeding No routine prophylaxis Consumptive, no major bleeding; CVC (compressible) 10k Fever / sepsis ~20k convention Lumbar puncture ; low-risk IR 20k High-risk IR; major non-neuraxial surgery 50k Neurosurgery, ocular, neuraxial; CNS bleed ~100k convention Active bleeding >50k Avoid platelets in TTP/HIT unless life-threatening bleeding; ITP only for serious bleeding, with IVIG + steroids; useless in PTP; harmful in antiplatelet ICH (PATCH). Massive hemorrhage Activate the MTP ; T&S, CBC, PT/aPTT, fibrinogen, iCa, ABG, lactate every 30–60 min 1:1:1 plasma : platelets : RBC — PROPPR vs 1:1:2: 30-d mortality not different (22.4% vs 26.1%), but hemostasis 86% vs 78% and exsanguination death at 24 h 9.2% vs 14.6% TXA 1 g over 10 min + 1 g over 8 h, within 3 h (CRASH-2). After 3 h bleeding deaths rose (RR 1.44) — don't start late Fibrinogen >150–200 mg/dL (cryo or concentrate); replace ionized calcium early (citrate); prevent hypothermia and correct acidosis Viscoelastic testing (TEG/ROTEM): long R/CT → plasma; low MA/MCF → platelets or fibrinogen (FIBTEM); high LY30 → TXA Reverse anticoagulants; prehospital plasma in long air transport (PAMPer) Anticoagulant and antiplatelet reversal Agent Reversal for major bleeding Warfarin 4F-PCC 25 / 35 / 50 U/kg for INR 2–<4 / 4–6 / >6 (max 2500 / 3500 / 5000 U) or fixed 1000–1500 U, + vitamin K 10 mg IV . PCC beats plasma: rapid INR correction 62% vs 10% (Sarode 2013); in ICH, INR ≤1.2 by 3 h 67% vs 9% (INCH). No bleeding, INR >10 → oral vitamin K Dabigatran Idarucizumab 5 g IV (REVERSE-AD: median reversal 100%); dialyzable. Normal TT excludes a relevant level Apixaban, rivaroxaban, edoxaban 4F-PCC 25–50 U/kg or fixed 2000 U (off-label). Andexanet left the US market 22 Dec 2025 — FDA judged thrombotic risk to outweigh benefit (ANNEXA-I: thrombosis 10.3% vs 5.6%, ischemic stroke 6.5% vs 1.5%). Charcoal if ingested <2–4 h UFH Protamine 1 mg per 100 U given in the last 2–3 h (max 50 mg); check aPTT LMWH Enoxaparin ≤8 h: protamine 1 mg/mg ; 8–12 h: 0.5 mg/mg (max 50 mg). Partial (~60% of anti-Xa) Antiplatelets No platelet transfusion in ICH (PATCH: death or dependence OR 2.05) unless neurosurgery ; DDAVP 0.4 &micro;g/kg ×1 an option (NCS/SCCM 2016) Thrombolytics Stop; cryo 10 units (fibrinogen ≥150); TXA 1 g or aminocaproic acid 4–5 g Plasma and cryo — when Plasma for: bleeding + coagulopathy (liver, DIC, dilution), massive transfusion, TTP plasma exchange, a factor deficiency without a concentrate (FV) Don't correct an INR <1.7 with plasma before a procedure: little effect, added TACO and TRALI risk. Not a volume expander; not for warfarin reversal when PCC is available Cryo or fibrinogen concentrate: fibrinogen <150 mg/dL with bleeding (DIC, MTP, APL; <200 in obstetric hemorrhage) Hemostatic agents — dosing Agent Dose Use · cautions Tranexamic acid 1 g IV over 10 min (trauma + 1 g over 8 h; PPH repeat at 30 min if bleeding). PO 1300 mg TID × 5 d (menses); 5% mouthwash. Renal dosing. Aminocaproic acid 4–5 g then 1 g/h is the alternative Mucosal, dental, menses, trauma, PPH, surgery. Avoid in upper urinary tract bleeding (ureteral clots). No benefit in GI bleeding, more VTE (HALT-IT) Desmopressin (DDAVP) 0.3 &micro;g/kg IV/SC over 30 min (max 20 &micro;g); peak 30–60 min Type 1 VWD, mild hemophilia A, carriers, uremia, platelet dysfunction. Tachyphylaxis after 2–3 doses ; restrict fluids 24 h, check Na ; caution CAD, age <2. Avoid in 2B Cryo / fibrinogen concentrate Cryo 10 units → &uarr;70–100 mg/dL. Concentrate (RiaSTAP, Fibryga): mg/kg = (target − measured mg/dL) &divide; 1.7 (RiaSTAP); &divide; 1.8 Fibryga (&divide; 1.4 if <12 y) Concentrate: standardized, pathogen-reduced, low volume 4F-PCC (Kcentra, Balfaxar) 25–50 U/kg by INR (reversal table) II, VII, IX, X + C/S + heparin — avoid in HIT aPCC (FEIBA) 50–100 U/kg q6–12 h, max 200 U/kg/day Inhibitors (congenital or acquired). On emicizumab: >100 U/kg/24 h for ≥24 h → TMA, thrombosis rFVIIa (NovoSeven RT) Inhibitors / AHA: 90 &micro;g/kg q2–3 h . FVII deficiency: 15–30 &micro;g/kg q4–6 h Licensed: hemophilia with inhibitors, FVII deficiency, Glanzmann refractory to platelets, acquired hemophilia. Off-label rescue: no mortality benefit, &uarr; arterial thrombosis Vitamin K 10 mg IV slowly for bleeding; 1–5 mg PO non-urgent IV acts in hours (full 12–24 h); avoid SC. Rare anaphylactoid reaction FVIII / FIX FVIII U = kg × desired % rise &divide; 2. FIX U = kg × desired % rise (&divide; ~0.8 for some recombinant FIX) Recheck trough; extended-half-life products dosed less often Emicizumab 3 mg/kg SC weekly ×4, then 1.5 mg/kg weekly, 3 mg/kg q2wk or 6 mg/kg q4wk Prophylaxis only; breakthrough → rFVIIa preferred Conjugated estrogens 0.6 mg/kg/day IV × 5 d Uremic bleeding; onset ~1 d, effect lasts ~2 wk Heavy menstrual bleeding Screen for a bleeding disorder when heavy menses date from menarche, or with iron deficiency or postpartum hemorrhage VWD: hormonal therapy (combined contraception or levonorgestrel IUS) or TXA , preferred over DDAVP ASH/ISTH 2021 Treat iron deficiency in parallel (IV iron if oral fails) Patients who decline blood Ask product by product — many Jehovah's Witnesses accept albumin, factor concentrates, PCC, fibrinogen concentrate or cell salvage; document it Build reserve, cut losses: IV iron ± ESA, TXA, pediatric tubes and fewer draws, early reversal of anticoagulants Special situations Setting Approach Liver disease Rebalanced hemostasis ; INR does not predict procedural bleeding — don't give plasma to fix it. Fibrinogen and platelets matter more when bleeding; TEG/ROTEM. TPO-RA (avatrombopag, lusutrombopag) before procedures if plt <50k. Variceal bleeding is portal pressure — avoid volume Uremia Dialysis; raise Hb toward ~10 (improves platelet margination); DDAVP 0.3 &micro;g/kg for acute bleeds or procedures; conjugated estrogens for longer effect; cryo if refractory DIC Treat the cause. Products only for bleeding or procedures: plt >50k, fibrinogen >150 mg/dL , plasma 15–30 mL/kg for prolonged PT/aPTT. ISTH score ≥5 = overt. Heparin only when thrombosis dominates Cardiac surgery / ECMO TXA routinely; protamine for heparin rebound; viscoelastic-guided algorithms reduce transfusion; bypass causes platelet dysfunction; acquired VWS on ECMO/LVAD Obstetric hemorrhage TXA 1 g IV within 3 h (WOMAN: bleeding death 1.5% vs 1.9%, RR 0.81; ≤3 h RR 0.69). Fibrinogen ≤2 g/L predicts severe PPH (PPV 100%, Charbit 2007) → keep >2 g/L. Abruption and amniotic fluid embolism → DIC APL Coagulopathy is the early killer: start ATRA on suspicion ; keep fibrinogen >100–150 mg/dL and plt >30–50k with cryo and platelets; avoid invasive procedures ICH Reverse now: 4F-PCC + vitamin K for warfarin; idarucizumab or PCC for DOACs. SBP target ~140, avoid <130 AHA/ASA 2022 . No platelets for antiplatelet ICH (PATCH). rFVIIa not recommended (FAST, FASTEST) Trauma TXA ≤3 h (CRASH-2); TBI: head-injury death &darr; in mild–moderate injury (CRASH-3, RR 0.78); 1:1:1 (PROPPR); prehospital plasma (PAMPer) Surgery in hemophilia Major surgery: FVIII 80–100% / FIX 60–80% pre-op , then taper over 1–2 wk (WFH 2020); dental: TXA mouthwash + factor. Plan with the hemophilia treatment center ISTH overt DIC score Parameter 0 1 2 3 Platelets (×10 9 /L) >100 50–100 <50 D-dimer / FDP normal moderate &uarr; strong &uarr; PT prolongation <3 s 3–6 s >6 s Fibrinogen >1 g/L <1 g/L Score ≥5 = overt DIC ; repeat daily. Only in a patient with a condition known to cause DIC Taylor 2001 . Key trials Trial Result → practice CRASH-2 Lancet 2010 Trauma TXA (n=20,211): death 14.5% vs 16.0%, RR 0.91; harm if started >3 h CRASH-3 Lancet 2019 TBI TXA ≤3 h: head-injury death 18.5% vs 19.8% (NS); mild–moderate RR 0.78 PROPPR JAMA 2015 1:1:1 vs 1:1:2: mortality NS; hemostasis 86% vs 78%, exsanguination 9.2% vs 14.6% PAMPer NEJM 2018 Prehospital plasma, air transport: 30-d mortality 23.2% vs 33.0% WOMAN Lancet 2017 PPH TXA (n=20,060): bleeding death 1.5% vs 1.9% (RR 0.81); no &uarr; thrombosis HALT-IT Lancet 2020 GI bleeding TXA: bleeding death 4% vs 4% (RR 0.99); VTE 0.8% vs 0.4% → don't use PATCH Lancet 2016 Platelets for antiplatelet ICH: death/dependence OR 2.05 → don't transfuse FAST / FASTEST NEJM 2008 / Lancet 2026 rFVIIa in ICH: less hematoma growth, no functional benefit; arterial events 9% vs 4%; FASTEST stopped for futility, thromboembolism RR 3.41 Sarode / INCH 2013 / 2016 4F-PCC vs plasma for warfarin bleeding: hemostasis 72% vs 65% (non-inferior), rapid INR correction 62% vs 10%; ICH: INR ≤1.2 in 3 h 67% vs 9% TRICC NEJM 1999 ICU Hb 7 vs 10: 30-d mortality 18.7% vs 23.3% (P=0.11) → restrictive is safe FOCUS NEJM 2011 Hip fracture + CV risk, Hb 10 vs <8/symptoms: death or inability to walk 35.2% vs 34.7% TRISS NEJM 2014 Septic shock, Hb 7 vs 9: 90-d mortality 43.0% vs 45.0% MINT NEJM 2023 Acute MI, restrictive vs liberal <10: MI/death 16.9% vs 14.5%, RR 1.15, P=0.07 Rebulla NEJM 1997 AML induction, plt 10k vs 20k: major bleeding 21.5% vs 20%; 21.5% fewer transfusions PLADO NEJM 2010 Platelet dose 1.1 / 2.2 / 4.4 ×10 11 /m²: grade ≥2 bleeding 71 / 69 / 70% TOPPS NEJM 2013 No prophylactic platelets: WHO ≥2 bleeding 50% vs 43% → keep 10k prophylaxis REVERSE-AD NEJM 2017 Idarucizumab: median maximum dabigatran reversal 100% ANNEXA-I NEJM 2024 Andexanet vs usual care, Xa-inhibitor ICH: hemostasis 67% vs 53%; thrombosis 10.3% vs 5.6% → withdrawn in US HAVEN 1 / 3 NEJM 2017 / 2018 Emicizumab: annualized bleeds 2.9 vs 23.3 with inhibitors (−87%); 1.5 vs 38.2 without (−96%)"
+}
