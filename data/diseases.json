@@ -542,6 +542,24 @@
    ]
   },
   {
+   "slug": "vte",
+   "name": "Venous thromboembolism (DVT / PE)",
+   "short": "VTE",
+   "group": "benign-heme",
+   "onepager": "Venous Thromboembolism.pdf",
+   "aliases": [
+    "vte",
+    "dvt",
+    "pe",
+    "pulmonary embolism",
+    "deep vein thrombosis",
+    "anticoagulation",
+    "thrombophilia",
+    "cancer-associated thrombosis",
+    "doac"
+   ]
+  },
+  {
    "slug": "waldenstrom",
    "name": "Waldenström macroglobulinemia",
    "short": "Waldenström",

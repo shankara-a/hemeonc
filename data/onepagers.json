@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T10:23:51",
+ "generated": "2026-10-18T20:01:42",
  "onepagers": [
   {
    "disease": "aml",
@@ -279,6 +279,15 @@
    "size": 55130,
    "sha1": "6af5274b5fe20a56bba62dc2a0b6989d6563b8d8",
    "updated": "2026-10-15"
+  },
+  {
+   "disease": "vte",
+   "file": "Venous Thromboembolism.pdf",
+   "title": "Venous thromboembolism (DVT / PE)",
+   "pages": 3,
+   "size": 101259,
+   "sha1": "aef0dec27b6cf156e1176855c2f4441956c851ae",
+   "updated": "2026-10-18"
   },
   {
    "disease": "waldenstrom",

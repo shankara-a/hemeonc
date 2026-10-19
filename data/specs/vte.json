@@ -1,0 +1,782 @@
+{
+ "disease": "vte",
+ "spec_file": "vte.py",
+ "pdf": "Venous Thromboembolism.pdf",
+ "title": "Venous thromboembolism (DVT / PE)",
+ "subtitle": "Diagnose with pretest probability &rarr; D-dimer &rarr; imaging &middot; triage PE by ESC risk class &middot; <b>3 months for everyone, then stop for a major transient provocation or extend (often reduced-dose DOAC) for unprovoked or persistent risk</b> &middot; DOACs first-line; LMWH or warfarin in pregnancy, APS and selected cancers",
+ "source": "Compiled from the Fellowship DVT/PE, Anticoagulation &amp; Reversal and Hematology in Pregnancy reviews &middot; ESC 2019 PE, ASH 2018&ndash;2021, ASCO 2023, ISTH SSC guidance &middot; FDA labels &middot; primary trial reports verified against published abstracts, October 2026.",
+ "pages": [
+  {
+   "columns": [
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Diagnosis",
+       "items": [
+        "<b>Pretest probability first.</b> Wells DVT <b>&le;1 &rarr; D-dimer</b> (negative excludes), <b>&ge;2 &rarr; compression ultrasound</b>. Wells PE <b>&le;4 &rarr; D-dimer</b>, <b>&gt;4 &rarr; CTPA</b>",
+        "<b>PERC</b> only if gestalt &lt;15%: age &lt;50, HR &lt;100, SaO&#8322; &ge;95%, no hemoptysis, estrogen, prior VTE, leg swelling, recent surgery/trauma &rarr; no testing",
+        "<b>Age-adjusted D-dimer:</b> <b>age &times; 10 &micro;g/L</b> if &gt;50 y <span class='r'>ADJUST-PE</span>. <b>YEARS:</b> no items (DVT signs, hemoptysis, PE most likely) &rarr; exclude if &lt;1000 ng/mL; &ge;1 item &rarr; &lt;500; CTPA avoided in 48%",
+        "<b>D-dimer rules out, never in</b> &mdash; skip it when probability is high",
+        "<b>Imaging:</b> CUS (repeat in 1 wk if negative proximal scan + high suspicion). <b>CTPA</b> for PE; <b>V/Q</b> if contrast allergy, renal failure, or pregnancy with normal CXR. Unstable: bedside echo + CUS"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Acute PE risk &mdash; ESC 2019",
+       "headers": [
+        "Class",
+        "Defined by",
+        "Management"
+       ],
+       "widths": [
+        "20%",
+        "42%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>High</b>",
+         "<b>Hemodynamic instability</b>: arrest, SBP &lt;90 or pressors, or SBP drop &ge;40 for &gt;15 min",
+         "UFH + <b>systemic lysis</b>; embolectomy (surgical/catheter) if contraindicated or fails"
+        ],
+        [
+         "<b>Intermediate-high</b>",
+         "sPESI &ge;1 + <b>RV dysfunction AND raised troponin</b>",
+         "Anticoagulate, monitor; <b>rescue lysis or catheter therapy if decompensates</b>; PERT"
+        ],
+        [
+         "<b>Intermediate-low</b>",
+         "sPESI &ge;1 + one or neither, or sPESI 0 + either positive",
+         "Admit, anticoagulate"
+        ],
+        [
+         "<b>Low</b>",
+         "<b>sPESI 0</b>, no RV dysfunction/troponin",
+         "<b>Home or early discharge</b> if Hestia-negative"
+        ]
+       ],
+       "footnote": "<b>sPESI</b> (1 each): age &gt;80, cancer, chronic heart/lung disease, HR &ge;110, SBP &lt;100, SaO&#8322; &lt;90%. <b>RV dysfunction:</b> RV/LV &ge;1.0 on CT or echo dilation/hypokinesis. <b>Hestia:</b> 11 exclusions (O&#8322; need, bleeding risk, CrCl &lt;30, pregnancy, social&hellip;)."
+      },
+      {
+       "type": "bullets",
+       "heading": "Acute PE &mdash; therapies",
+       "items": [
+        "<b>Systemic lysis for high-risk PE only:</b> alteplase <b>100 mg over 2 h</b>. Not routine in intermediate-high: tenecteplase cut decompensation 2.6% vs 5.6% but <b>hemorrhagic stroke 2.0% vs 0.2%</b> <span class='r'>PEITHO</span>",
+        "<b>Catheter-directed therapy:</b> lysis contraindicated, or intermediate-high deteriorating &mdash; PERT decision. <b>UFH</b> first if lysis/procedure likely",
+        "<b>IVC filter only if acute proximal DVT/PE + anticoagulation contraindicated</b>; retrievable &mdash; anticoagulate and remove once safe. Not for recurrence on therapy or added to anticoagulation"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "40%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Pathophysiology",
+       "widths": [
+        "100%"
+       ],
+       "rows": [
+        [
+         "<img style='width:100%;display:block' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzU0Ij48ZGVmcz48bWFya2VyIGlkPSJhIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjgiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI1IiBtYXJrZXJIZWlnaHQ9IjUiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTIgMUw4IDVMMiA5IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMS41Ii8+PC9tYXJrZXI+PG1hcmtlciBpZD0iYyIgdmlld0JveD0iMCAwIDEwIDEwIiByZWZYPSI4IiByZWZZPSI1IiBtYXJrZXJXaWR0aD0iNSIgbWFya2VySGVpZ2h0PSI1IiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0yIDFMOCA1TDIgOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjEuNSIvPjwvbWFya2VyPjxzdHlsZT50ZXh0e2ZvbnQtZmFtaWx5OkhlbHZldGljYSxBcmlhbCxzYW5zLXNlcmlmO3RleHQtYW5jaG9yOm1pZGRsZX0uYntmb250LXNpemU6Ny42cHg7Zm9udC13ZWlnaHQ6Ym9sZH0uc3tmb250LXNpemU6Ni42cHh9PC9zdHlsZT48L2RlZnM+PHRleHQgeD0iNzAiIHk9IjciIGNsYXNzPSJiIiBzdHlsZT0idGV4dC1hbmNob3I6bWlkZGxlIiBmaWxsPSIjNjY2Ij5JbnRyaW5zaWMgKGNvbnRhY3QpPC90ZXh0Pjx0ZXh0IHg9IjIzMCIgeT0iNyIgY2xhc3M9ImIiIHN0eWxlPSJ0ZXh0LWFuY2hvcjptaWRkbGUiIGZpbGw9IiM2NjYiPkV4dHJpbnNpYyAodGlzc3VlIGZhY3Rvcik8L3RleHQ+PHJlY3QgeD0iMzUiIHk9IjEyIiB3aWR0aD0iNzAiIGhlaWdodD0iMjIiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iNzAuMCIgeT0iMjEuMCIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPlhJSTwvdGV4dD48dGV4dCB4PSI3MC4wIiB5PSIzMC41IiBjbGFzcz0icyIgZmlsbD0iIzA4NTA0MSI+d2l0aCBQSywgSE1XSzwvdGV4dD48cGF0aCBkPSJNNzAgMzQgTDcwIDQxIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iMzUiIHk9IjQyIiB3aWR0aD0iNzAiIGhlaWdodD0iMjIiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iNzAuMCIgeT0iNTEuMCIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPlhJPC90ZXh0Pjx0ZXh0IHg9IjcwLjAiIHk9IjYwLjUiIGNsYXNzPSJzIiBmaWxsPSIjMDg1MDQxIj5hbHNvIHRocm9tYmluLWFjdGl2YXRlZDwvdGV4dD48cGF0aCBkPSJNNzAgNjQgTDcwIDcxIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iMzUiIHk9IjcyIiB3aWR0aD0iNzAiIGhlaWdodD0iMjQiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iNzAuMCIgeT0iODIuMCIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPklYYSArIFZJSUlhPC90ZXh0Pjx0ZXh0IHg9IjcwLjAiIHk9IjkxLjUiIGNsYXNzPSJzIiBmaWxsPSIjMDg1MDQxIj5pbnRyaW5zaWMgdGVuYXNlPC90ZXh0PjxjaXJjbGUgY3g9IjQwIiBjeT0iNzYiIHI9IjMuNiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjQwIiB5PSI3Ny45IiBzdHlsZT0iZm9udC1zaXplOjVweDtmb250LXdlaWdodDpib2xkIiBmaWxsPSIjNzEyQjEzIj5LPC90ZXh0PjxyZWN0IHg9IjE5NSIgeT0iMTIiIHdpZHRoPSI3MCIgaGVpZ2h0PSIyMiIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyMzAuMCIgeT0iMjEuMCIgY2xhc3M9ImIiIGZpbGw9IiM0NDQ0NDEiPlRGUEk8L3RleHQ+PHRleHQgeD0iMjMwLjAiIHk9IjMwLjUiIGNsYXNzPSJzIiBmaWxsPSIjNDQ0NDQxIj5ibG9ja3MgVEYtVklJYSwgWGE8L3RleHQ+PGxpbmUgeDE9IjIzMCIgeTE9IjM0IiB4Mj0iMjMwIiB5Mj0iNDEiIHN0cm9rZT0iIzg4OCIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjIyNiIgeTE9IjQxIiB4Mj0iMjM0IiB5Mj0iNDEiIHN0cm9rZT0iIzg4OCIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48cmVjdCB4PSIxOTUiIHk9IjQyIiB3aWR0aD0iNzAiIGhlaWdodD0iMjQiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjMwLjAiIHk9IjUyLjAiIGNsYXNzPSJiIiBmaWxsPSIjMDg1MDQxIj5URiArIFZJSWE8L3RleHQ+PHRleHQgeD0iMjMwLjAiIHk9IjYxLjUiIGNsYXNzPSJzIiBmaWxsPSIjMDg1MDQxIj50aXNzdWUgaW5qdXJ5PC90ZXh0PjxjaXJjbGUgY3g9IjIwMCIgY3k9IjQ2IiByPSIzLjYiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyMDAiIHk9IjQ3LjkiIHN0eWxlPSJmb250LXNpemU6NXB4O2ZvbnQtd2VpZ2h0OmJvbGQiIGZpbGw9IiM3MTJCMTMiPks8L3RleHQ+PHBhdGggZD0iTTE5NSA1OCBMMTA2IDgyIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHRleHQgeD0iMTUwIiB5PSI2NCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjptaWRkbGUiIGZpbGw9IiM2NjYiPmFjdGl2YXRlcyBJWDwvdGV4dD48cGF0aCBkPSJNODQgOTYgTDEzMCAxMDciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48cGF0aCBkPSJNMjIyIDY2IEwxNzIgMTA3IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iMTEyIiB5PSIxMDgiIHdpZHRoPSI3NiIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNFMUY1RUUiIHN0cm9rZT0iIzBGNkU1NiIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNTAuMCIgeT0iMTE4LjAiIGNsYXNzPSJiIiBmaWxsPSIjMDg1MDQxIj5YIOKGkiBYYTwvdGV4dD48dGV4dCB4PSIxNTAuMCIgeT0iMTI3LjUiIGNsYXNzPSJzIiBmaWxsPSIjMDg1MDQxIj4rIFZhID0gcHJvdGhyb21iaW5hc2U8L3RleHQ+PGNpcmNsZSBjeD0iMTE3IiBjeT0iMTEyIiByPSIzLjYiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxMTciIHk9IjExMy45IiBzdHlsZT0iZm9udC1zaXplOjVweDtmb250LXdlaWdodDpib2xkIiBmaWxsPSIjNzEyQjEzIj5LPC90ZXh0PjxwYXRoIGQ9Ik0xNTAgMTMyIEwxNTAgMTM5IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iMTEyIiB5PSIxNDAiIHdpZHRoPSI3NiIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNFMUY1RUUiIHN0cm9rZT0iIzBGNkU1NiIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNTAuMCIgeT0iMTUwLjAiIGNsYXNzPSJiIiBmaWxsPSIjMDg1MDQxIj5JSSDihpIgSUlhPC90ZXh0Pjx0ZXh0IHg9IjE1MC4wIiB5PSIxNTkuNSIgY2xhc3M9InMiIGZpbGw9IiMwODUwNDEiPnByb3Rocm9tYmluIOKGkiB0aHJvbWJpbjwvdGV4dD48Y2lyY2xlIGN4PSIxMTciIGN5PSIxNDQiIHI9IjMuNiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjExNyIgeT0iMTQ1LjkiIHN0eWxlPSJmb250LXNpemU6NXB4O2ZvbnQtd2VpZ2h0OmJvbGQiIGZpbGw9IiM3MTJCMTMiPks8L3RleHQ+PHBhdGggZD0iTTE1MCAxNjQgTDE1MCAxNzEiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY2NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG1hcmtlci1lbmQ9InVybCgjYSkiLz48cmVjdCB4PSIxMTIiIHk9IjE3MiIgd2lkdGg9Ijc2IiBoZWlnaHQ9IjI0IiByeD0iMyIgZmlsbD0iI0UxRjVFRSIgc3Ryb2tlPSIjMEY2RTU2IiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjE1MC4wIiB5PSIxODIuMCIgY2xhc3M9ImIiIGZpbGw9IiMwODUwNDEiPkZpYnJpbm9nZW4g4oaSIGZpYnJpbjwvdGV4dD48dGV4dCB4PSIxNTAuMCIgeT0iMTkxLjUiIGNsYXNzPSJzIiBmaWxsPSIjMDg1MDQxIj5sb29zZSBjbG90PC90ZXh0PjxwYXRoIGQ9Ik0xNTAgMTk2IEwxNTAgMjAzIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHJlY3QgeD0iMTEyIiB5PSIyMDQiIHdpZHRoPSI3NiIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNFMUY1RUUiIHN0cm9rZT0iIzBGNkU1NiIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxNTAuMCIgeT0iMjE0LjAiIGNsYXNzPSJiIiBmaWxsPSIjMDg1MDQxIj5Dcm9zcy1saW5rZWQgZmlicmluPC90ZXh0Pjx0ZXh0IHg9IjE1MC4wIiB5PSIyMjMuNSIgY2xhc3M9InMiIGZpbGw9IiMwODUwNDEiPlhJSUlhIGNyb3NzLWxpbmtzPC90ZXh0Pjx0ZXh0IHg9IjE5NCIgeT0iMTY4IiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNjY2Ij50aHJvbWJpbiBmZWVkYmFjazogYWN0aXZhdGVzPC90ZXh0Pjx0ZXh0IHg9IjE5NCIgeT0iMTc2IiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNjY2Ij5WLCBWSUlJLCBYSSwgWElJSSwgcGxhdGVsZXRzPC90ZXh0PjxyZWN0IHg9IjIxMiIgeT0iMjA0IiB3aWR0aD0iODQiIGhlaWdodD0iMjQiIHJ4PSIzIiBmaWxsPSIjRTFGNUVFIiBzdHJva2U9IiMwRjZFNTYiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjU0LjAiIHk9IjIxNC4wIiBjbGFzcz0iYiIgZmlsbD0iIzA4NTA0MSI+UGxhc21pbjwvdGV4dD48dGV4dCB4PSIyNTQuMCIgeT0iMjIzLjUiIGNsYXNzPSJzIiBmaWxsPSIjMDg1MDQxIj5mcm9tIHBsYXNtaW5vZ2VuICh0UEEpPC90ZXh0PjxwYXRoIGQ9Ik0yMTIgMjE2IEwxOTAgMjE2IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMC44IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHRleHQgeD0iMjAxIiB5PSIyMzQiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6bWlkZGxlIiBmaWxsPSIjNDQ0Ij7ihpIgRC1kaW1lcjwvdGV4dD48bGluZSB4MT0iMjU0IiB5MT0iMTkxIiB4Mj0iMjU0IiB5Mj0iMjAyIiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS4yIiBtYXJrZXItZW5kPSJ1cmwoI2MpIi8+PGNpcmNsZSBjeD0iMjU0IiBjeT0iMTg1IiByPSI2IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMjU0IiB5PSIxODcuOCIgY2xhc3M9ImIiIGZpbGw9IiM3MTJCMTMiPlQ8L3RleHQ+PHJlY3QgeD0iMjEyIiB5PSIyNDAiIHdpZHRoPSI4NCIgaGVpZ2h0PSIyNCIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyNTQuMCIgeT0iMjUwLjAiIGNsYXNzPSJiIiBmaWxsPSIjNDQ0NDQxIj5QQUktMSDCtyDOsTItYW50aXBsYXNtaW48L3RleHQ+PHRleHQgeD0iMjU0LjAiIHk9IjI1OS41IiBjbGFzcz0icyIgZmlsbD0iIzQ0NDQ0MSI+VEFGSSDCtyBzbG93IGZpYnJpbm9seXNpczwvdGV4dD48bGluZSB4MT0iMjU0IiB5MT0iMjQwIiB4Mj0iMjU0IiB5Mj0iMjI5IiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSIyNTAiIHkxPSIyMjkiIHgyPSIyNTgiIHkyPSIyMjkiIHN0cm9rZT0iIzg4OCIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48cmVjdCB4PSIyIiB5PSIxMDgiIHdpZHRoPSI4MCIgaGVpZ2h0PSIzNCIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSI0Mi4wIiB5PSIxMTkiIGNsYXNzPSJiIiBmaWxsPSIjNDQ0NDQxIj5BUEMgKyBwcm90ZWluIFM8L3RleHQ+PHRleHQgeD0iNDIiIHk9IjEyOCIgY2xhc3M9InMiIGZpbGw9IiM0NDQiPmluYWN0aXZhdGVzIFZhLCBWSUlJYTwvdGV4dD48dGV4dCB4PSI0MiIgeT0iMTM3IiBjbGFzcz0icyIgZmlsbD0iIzQ0NCI+dGhyb21iaW7igJNUTSBhY3RpdmF0ZXM8L3RleHQ+PGxpbmUgeDE9IjQyIiB5MT0iMTA3IiB4Mj0iNDIiIHkyPSI5NyIgc3Ryb2tlPSIjODg4IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iMzgiIHkxPSI5NyIgeDI9IjQ2IiB5Mj0iOTciIHN0cm9rZT0iIzg4OCIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48bGluZSB4MT0iODIiIHkxPSIxMjAiIHgyPSIxMTEiIHkyPSIxMjAiIHN0cm9rZT0iIzg4OCIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjExMSIgeTE9IjExNiIgeDI9IjExMSIgeTI9IjEyNCIgc3Ryb2tlPSIjODg4IiBzdHJva2Utd2lkdGg9IjEuNCIvPjx0ZXh0IHg9IjQiIHk9IjE1MCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iI0EzMkQyRCI+cHJvdGVpbiBDIC8gUyBkZWZpY2llbmN5PC90ZXh0Pjx0ZXh0IHg9IjQiIHk9IjE1OCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iI0EzMkQyRCI+RlZMOiBWYSByZXNpc3RzIEFQQzwvdGV4dD48cmVjdCB4PSIyIiB5PSIxNjgiIHdpZHRoPSI4MCIgaGVpZ2h0PSIyOCIgcng9IjMiIGZpbGw9IiNGMUVGRTgiIHN0cm9rZT0iIzg4ODc4MCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSI0Mi4wIiB5PSIxODAuMCIgY2xhc3M9ImIiIGZpbGw9IiM0NDQ0NDEiPkFudGl0aHJvbWJpbjwvdGV4dD48dGV4dCB4PSI0Mi4wIiB5PSIxODkuNSIgY2xhc3M9InMiIGZpbGw9IiM0NDQ0NDEiPmluaGliaXRzIElJYSwgWGEsIElYYSwgWElhPC90ZXh0PjxsaW5lIHgxPSI4MiIgeTE9IjE3NiIgeDI9IjExMSIgeTI9IjE1NiIgc3Ryb2tlPSIjODg4IiBzdHJva2Utd2lkdGg9IjEiLz48bGluZSB4MT0iMTExIiB5MT0iMTUyIiB4Mj0iMTExIiB5Mj0iMTYwIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMS40Ii8+PHRleHQgeD0iNCIgeT0iMjA0IiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjQTMyRDJEIj5hbnRpdGhyb21iaW4gZGVmaWNpZW5jeTwvdGV4dD48bGluZSB4MT0iMjAxIiB5MT0iMTIwIiB4Mj0iMTg5IiB5Mj0iMTIwIiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS4yIi8+PGxpbmUgeDE9IjE4OSIgeTE9IjExNS41IiB4Mj0iMTg5IiB5Mj0iMTI0LjUiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSIyMDciIGN5PSIxMjAiIHI9IjYiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyMDciIHk9IjEyMi44IiBjbGFzcz0iYiIgZmlsbD0iIzcxMkIxMyI+QTwvdGV4dD48Y2lyY2xlIGN4PSIyMjAiIGN5PSIxMjAiIHI9IjYiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyMjAiIHk9IjEyMi44IiBjbGFzcz0iYiIgZmlsbD0iIzcxMkIxMyI+RjwvdGV4dD48Y2lyY2xlIGN4PSIyMzMiIGN5PSIxMjAiIHI9IjYiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyMzMiIHk9IjEyMi44IiBjbGFzcz0iYiIgZmlsbD0iIzcxMkIxMyI+TDwvdGV4dD48Y2lyY2xlIGN4PSIyNDYiIGN5PSIxMjAiIHI9IjYiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyNDYiIHk9IjEyMi44IiBjbGFzcz0iYiIgZmlsbD0iIzcxMkIxMyI+SDwvdGV4dD48bGluZSB4MT0iMjAxIiB5MT0iMTUyIiB4Mj0iMTg5IiB5Mj0iMTUyIiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMS4yIi8+PGxpbmUgeDE9IjE4OSIgeTE9IjE0Ny41IiB4Mj0iMTg5IiB5Mj0iMTU2LjUiIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSIyMDciIGN5PSIxNTIiIHI9IjYiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyMDciIHk9IjE1NC44IiBjbGFzcz0iYiIgZmlsbD0iIzcxMkIxMyI+SDwvdGV4dD48Y2lyY2xlIGN4PSIyMjAiIGN5PSIxNTIiIHI9IjYiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIyMjAiIHk9IjE1NC44IiBjbGFzcz0iYiIgZmlsbD0iIzcxMkIxMyI+RDwvdGV4dD48dGV4dCB4PSIyMzAiIHk9IjE1NSIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iI0EzMkQyRCI+UFQgRzIwMjEwQTog4oaRIElJPC90ZXh0PjxsaW5lIHgxPSIyIiB5MT0iMjcwIiB4Mj0iMjk4IiB5Mj0iMjcwIiBzdHJva2U9IiNjY2MiIHN0cm9rZS13aWR0aD0iMC41Ii8+PGNpcmNsZSBjeD0iNyIgY3k9IjI4MCIgcj0iNSIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjciIHk9IjI4Mi40IiBjbGFzcz0icyIgZmlsbD0iIzcxMkIxMyI+QTwvdGV4dD48dGV4dCB4PSIxNSIgeT0iMjgyLjQiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPmFwaXhhYmFuIMK3IHJpdmFyb3hhYmFuIMK3IGVkb3hhYmFuOiBkaXJlY3QgWGE8L3RleHQ+PGNpcmNsZSBjeD0iMTkwIiBjeT0iMjgwIiByPSI1IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTkwIiB5PSIyODIuNCIgY2xhc3M9InMiIGZpbGw9IiM3MTJCMTMiPkY8L3RleHQ+PHRleHQgeD0iMTk4IiB5PSIyODIuNCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+Zm9uZGFwYXJpbnV4OiBYYSB2aWEgQVQ8L3RleHQ+PGNpcmNsZSBjeD0iNyIgY3k9IjI5MiIgcj0iNSIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjciIHk9IjI5NC40IiBjbGFzcz0icyIgZmlsbD0iIzcxMkIxMyI+TDwvdGV4dD48dGV4dCB4PSIxNSIgeT0iMjk0LjQiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPkxNV0g6IG1vc3RseSBYYSB2aWEgQVQ8L3RleHQ+PGNpcmNsZSBjeD0iMTkwIiBjeT0iMjkyIiByPSI1IiBmaWxsPSIjRkFFQ0U3IiBzdHJva2U9IiNEODVBMzAiIHN0cm9rZS13aWR0aD0iMC42Ii8+PHRleHQgeD0iMTkwIiB5PSIyOTQuNCIgY2xhc3M9InMiIGZpbGw9IiM3MTJCMTMiPkg8L3RleHQ+PHRleHQgeD0iMTk4IiB5PSIyOTQuNCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+VUZIOiBJSWEgKyBYYSB2aWEgQVQ8L3RleHQ+PGNpcmNsZSBjeD0iNyIgY3k9IjMwNCIgcj0iNSIgZmlsbD0iI0ZBRUNFNyIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjciIHk9IjMwNi40IiBjbGFzcz0icyIgZmlsbD0iIzcxMkIxMyI+RDwvdGV4dD48dGV4dCB4PSIxNSIgeT0iMzA2LjQiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPmRhYmlnYXRyYW4gwrcgYXJnYXRyb2JhbiDCtyBiaXZhbGlydWRpbjogZGlyZWN0IElJYTwvdGV4dD48Y2lyY2xlIGN4PSIxOTAiIGN5PSIzMDQiIHI9IjUiIGZpbGw9IiNGQUVDRTciIHN0cm9rZT0iI0Q4NUEzMCIgc3Ryb2tlLXdpZHRoPSIwLjYiLz48dGV4dCB4PSIxOTAiIHk9IjMwNi40IiBjbGFzcz0icyIgZmlsbD0iIzcxMkIxMyI+VDwvdGV4dD48dGV4dCB4PSIxOTgiIHk9IjMwNi40IiBjbGFzcz0icyIgc3R5bGU9InRleHQtYW5jaG9yOnN0YXJ0IiBmaWxsPSIjNDQ0Ij5hbHRlcGxhc2U6IGFjdGl2YXRlcyBwbGFzbWluPC90ZXh0PjxjaXJjbGUgY3g9IjciIGN5PSIzMTYiIHI9IjMuNiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjRDg1QTMwIiBzdHJva2Utd2lkdGg9IjAuNiIvPjx0ZXh0IHg9IjciIHk9IjMxNy45IiBzdHlsZT0iZm9udC1zaXplOjVweDtmb250LXdlaWdodDpib2xkIiBmaWxsPSIjNzEyQjEzIj5LPC90ZXh0Pjx0ZXh0IHg9IjE1IiB5PSIzMTguNCIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+d2FyZmFyaW46IGJsb2NrcyB2aXRhbWluIEstZGVwZW5kZW50IElJLCBWSUksIElYLCBYICgrIHByb3RlaW5zIEMsIFMpPC90ZXh0Pjx0ZXh0IHg9IjIiIHk9IjMyOSIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+Z3JheSA9IG5hdHVyYWwgYW50aWNvYWd1bGFudHMgwrcgcmVkID0gdGhyb21ib3BoaWxpYSBkZWZlY3RzPC90ZXh0Pjx0ZXh0IHg9IjIiIHk9IjM0MSIgY2xhc3M9InMiIHN0eWxlPSJ0ZXh0LWFuY2hvcjpzdGFydCIgZmlsbD0iIzQ0NCI+VGhyb21ib3BoaWxpYXMgd2Vha2VuIHRoZSBicmFrZXMgb24gVmEsIFZJSUlhIGFuZCB0aHJvbWJpbi4gV2FyZmFyaW4gbG93ZXJzIHByb3RlaW4gQzwvdGV4dD48dGV4dCB4PSIyIiB5PSIzNTAiIGNsYXNzPSJzIiBzdHlsZT0idGV4dC1hbmNob3I6c3RhcnQiIGZpbGw9IiM0NDQiPmJlZm9yZSBJSS9YOiBvdmVybGFwIHdpdGggYSBwYXJlbnRlcmFsIGFnZW50IOKJpTUgZCBhbmQgdW50aWwgSU5SIOKJpTIuPC90ZXh0Pjwvc3ZnPg=='>"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Provoked vs unprovoked &mdash; ISTH 2016 / ESC 2019",
+       "headers": [
+        "Category",
+        "Examples",
+        "Default"
+       ],
+       "widths": [
+        "22%",
+        "50%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Major transient</b> <span class='r'>&le;3 mo</span>",
+         "Surgery &gt;30 min general anesthesia; bed-bound admission &ge;3 d; cesarean; major trauma",
+         "<b>3 mo, stop</b>"
+        ],
+        [
+         "<b>Minor transient</b> <span class='r'>&le;2 mo</span>",
+         "Short surgery or admission; <b>estrogen</b>, pregnancy; leg injury; long-haul travel",
+         "<b>3 mo</b>, usually stop"
+        ],
+        [
+         "<b>Persistent</b>",
+         "<b>Active cancer</b>, IBD, autoimmune disease, APS",
+         "<b>Extended</b>"
+        ],
+        [
+         "<b>Unprovoked</b>",
+         "No identifiable factor",
+         "<b>Extended</b> if bleeding risk OK"
+        ]
+       ],
+       "footnote": "<b>Recurrence after stopping, first unprovoked VTE:</b> 10% at 1 y, <b>25% at 5 y, 36% at 10 y</b>; higher in men <span class='r'>Khan BMJ 2019</span>. Age-appropriate cancer screening only."
+      }
+     ]
+    },
+    {
+     "width": "30%",
+     "blocks": [
+      {
+       "type": "pathway",
+       "heading": "Treatment phases and duration",
+       "chains": [
+        {
+         "header": "Initiation + treatment phase",
+         "color": "teal",
+         "boxes": [
+          [
+           "Start full dose",
+           [
+            "<b>Apixaban</b> 10 mg BID &times;7 d &rarr; 5 mg BID",
+            "<b>Rivaroxaban</b> 15 mg BID &times;21 d &rarr; 20 mg daily",
+            "<b>Edoxaban/dabigatran</b>: 5&ndash;10 d LMWH first",
+            "<b>Warfarin</b>: overlap &ge;5 d + INR &ge;2 &times;24 h"
+           ]
+          ],
+          [
+           "Treat 3 months for everyone",
+           [
+            "(cancer: &ge;6 months) &mdash; then decide"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Decision at 3 months",
+         "color": "blue",
+         "boxes": [
+          [
+           "Transient factor",
+           [
+            "major &rarr; <b>stop</b>; minor &rarr; usually stop,",
+            "extend only if the risk persists"
+           ]
+          ],
+          [
+           "Unprovoked or persistent factor",
+           [
+            "<b>extended, no stop date</b> if bleeding risk",
+            "low&ndash;moderate; <b>reassess every year</b>",
+            "2nd unprovoked VTE &rarr; indefinite"
+           ]
+          ]
+         ]
+        },
+        {
+         "header": "Extended phase (after &ge;6 months)",
+         "color": "purple",
+         "boxes": [
+          [
+           "Reduced-dose DOAC",
+           [
+            "<b>apixaban 2.5 mg BID</b> (AMPLIFY-EXT)",
+            "<b>rivaroxaban 10 mg daily</b> (EINSTEIN-CHOICE)",
+            "cancer: apixaban 2.5 BID noninferior (API-CAT)"
+           ]
+          ],
+          [
+           "Full dose or aspirin",
+           [
+            "full dose if recurrence on reduced dose (RENOVE:",
+            "reduced dose missed NI, but less bleeding)",
+            "aspirin only if stopping: ~32% fewer recurrences"
+           ]
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Extended-phase evidence",
+       "items": [
+        "<b>Apixaban 2.5 or 5 mg BID vs placebo:</b> recurrence <b>1.7% / 1.7% vs 8.8%</b>, no increase in major bleeding <span class='r'>AMPLIFY-EXT</span>",
+        "<b>Rivaroxaban 10 or 20 mg vs aspirin 100 mg:</b> <b>1.2% / 1.5% vs 4.4%</b> <span class='r'>EINSTEIN-CHOICE</span>",
+        "<b>Higher recurrence risk:</b> male sex, proximal DVT or PE (vs distal), D-dimer high after stopping, obesity, APS, active cancer"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 2 &mdash; choosing the agent, cancer, special populations, unusual sites, thrombophilia",
+   "columns": [
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Choosing the anticoagulant",
+       "headers": [
+        "Agent",
+        "Choose when",
+        "Avoid / caution"
+       ],
+       "widths": [
+        "16%",
+        "44%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Apixaban</b>",
+         "<b>Default</b>; no lead-in; ~27% renal &mdash; best DOAC in CKD and GI cancer; major bleeding RR 0.31 vs LMWH/warfarin (AMPLIFY)",
+         "APS; strong dual inducers"
+        ],
+        [
+         "<b>Rivaroxaban</b>",
+         "No lead-in; daily after day 21",
+         "<b>With food</b>; CrCl &lt;15; heavy menses"
+        ],
+        [
+         "<b>Edoxaban</b>",
+         "Daily, after parenteral lead-in",
+         "GI cancer bleeding"
+        ],
+        [
+         "<b>Dabigatran</b>",
+         "After lead-in; idarucizumab reversal",
+         "<b>CrCl &le;30</b>; dyspepsia"
+        ],
+        [
+         "<b>Warfarin</b>",
+         "<b>APS</b>, mechanical valve, dialysis, cost",
+         "<b>Pregnancy</b>; INR checks"
+        ],
+        [
+         "<b>LMWH</b>",
+         "<b>Pregnancy</b>; selected cancers; <b>recurrence on DOAC</b>",
+         "CrCl &lt;30 (adjust/UFH)"
+        ],
+        [
+         "<b>Fondaparinux</b>",
+         "HIT history (off-label); SVT",
+         "CrCl &lt;30; no reversal"
+        ],
+        [
+         "<b>UFH</b>",
+         "Lysis likely; CrCl &lt;30; high bleeding risk",
+         "HIT; monitoring"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Cancer-associated VTE &mdash; ASCO 2023, ASH 2021",
+       "items": [
+        "<b>DOAC or LMWH &ge;6 mo, then while cancer is active.</b> Treat incidental clot like symptomatic",
+        "<b>DOACs cut recurrence vs dalteparin; edoxaban/rivaroxaban add GI/GU bleeding:</b> edoxaban major bleeding <b>6.9% vs 4.0%</b> (Hokusai); rivaroxaban recurrence 4% vs 11%, CRNMB 13% vs 4% (SELECT-D). <b>Apixaban no excess</b>: 3.8% vs 4.0% (Caravaggio), 0% vs 1.4% (ADAM VTE)",
+        "<b>LMWH (or apixaban)</b> for unresected luminal GI/GU tumors, platelets &lt;50k, poor intake, interacting drugs (enzalutamide, apalutamide, azoles, ritonavir)",
+        "<b>Extended:</b> apixaban <b>2.5 mg BID</b> after &ge;6 mo &mdash; recurrence 2.1% vs 2.8%, bleeding 12.1% vs 15.6% <span class='r'>API-CAT</span>",
+        "<b>Prophylaxis:</b> starting chemo + <b>Khorana &ge;2</b> + low bleeding risk &rarr; <b>apixaban 2.5 BID or rivaroxaban 10 daily</b>. AVERT 4.2% vs 10.2%; CASSINI NS at 180 d (6.0% vs 8.8%). <b>Myeloma + IMiD:</b> aspirin or LMWH/DOAC by risk"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Khorana score",
+       "headers": [
+        "Factor",
+        "Points"
+       ],
+       "widths": [
+        "80%",
+        ""
+       ],
+       "rows": [
+        [
+         "Very high-risk site: <b>stomach, pancreas</b>",
+         "2"
+        ],
+        [
+         "High-risk site: lung, lymphoma, gynecologic, bladder, testicular",
+         "1"
+        ],
+        [
+         "Pre-chemo platelets &ge;350k &middot; Hb &lt;10 or ESA &middot; WBC &gt;11k &middot; BMI &ge;35",
+         "1 each"
+        ]
+       ],
+       "footnote": "0 low, 1&ndash;2 intermediate, &ge;3 high. Trials and ASCO 2023 use <b>&ge;2</b> as the prophylaxis threshold."
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Special populations",
+       "headers": [
+        "Setting",
+        "Approach"
+       ],
+       "widths": [
+        "20%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>APS</b>",
+         "<b>Warfarin INR 2&ndash;3; no DOACs</b>, above all triple-positive or arterial events. TRAPS (rivaroxaban, triple-positive): thromboembolism <b>12% vs 0</b>, stopped early; ASTRO-APS (apixaban): excess strokes"
+        ],
+        [
+         "<b>Pregnancy</b>",
+         "<b>Therapeutic LMWH by weight</b>; no routine anti-Xa. <b>No warfarin or DOAC antepartum.</b> Treat to <b>&ge;6 wk postpartum, &ge;3 mo total</b>. Planned delivery: last therapeutic dose <b>24 h</b> before neuraxial (prophylactic 12 h). Postpartum LMWH or warfarin (breastfeeding OK); DOAC only if not breastfeeding"
+        ],
+        [
+         "<b>Prior VTE, now pregnant</b>",
+         "Antepartum prophylaxis if prior VTE was unprovoked or hormonal; <b>postpartum prophylaxis 6 wk</b> for most. <b>Fixed low-dose LMWH</b> is enough &mdash; weight-adjusted intermediate dose no better (Highlow: 2% vs 3%)"
+        ],
+        [
+         "<b>Obesity</b>",
+         "<b>Standard-dose apixaban or rivaroxaban at any BMI/weight</b> (ISTH 2021); avoid dabigatran/edoxaban at extremes; no routine DOAC levels. <b>After bariatric surgery:</b> parenteral first, not a DOAC"
+        ],
+        [
+         "<b>CKD</b>",
+         "CrCl &lt;30: <b>apixaban</b> (limited data), UFH, or enoxaparin 1 mg/kg daily; avoid dabigatran (&le;30) and rivaroxaban (&lt;15); edoxaban 30 mg for CrCl 15&ndash;50. Dialysis: apixaban or warfarin"
+        ],
+        [
+         "<b>Thrombocytopenia</b>",
+         "<b>&gt;50k: full dose.</b> 25&ndash;50k: acute, high-risk clot &rarr; full-dose LMWH + platelet transfusion to 40&ndash;50k; otherwise 50% or prophylactic LMWH. <b>&lt;25k: hold</b> <span class='r'>ISTH 2018</span>. Avoid DOACs &lt;50k"
+        ],
+        [
+         "<b>HIT</b>",
+         "Stop all heparin (flushes too); <b>argatroban, bivalirudin, fondaparinux or a DOAC</b>. <b>No warfarin until platelets recover</b> (&ge;150k), then overlap &ge;5 d; vitamin K if on warfarin at diagnosis. Bilateral CUS. With thrombosis treat 3 mo"
+        ],
+        [
+         "<b>Elderly / frail</b>",
+         "DOAC over warfarin; apixaban lowest bleeding. <b>AF dose-reduction criteria do not apply to VTE</b> &mdash; apixaban 5 mg BID regardless of age/weight/creatinine"
+        ],
+        [
+         "<b>Recurrence on therapy</b>",
+         "Confirm it is new clot (compare with baseline imaging). Check <b>adherence, dose, interactions, absorption</b>; look for <b>cancer, APS, HIT, MPN/PNH</b>, May-Thurner. <b>DOAC/warfarin &rarr; therapeutic LMWH; on LMWH &rarr; raise dose 20&ndash;25%</b>"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Recurrence and bleeding risk",
+       "items": [
+        "<b>HERDOO2</b> (women, first unprovoked VTE, after 5&ndash;12 mo): post-thrombotic signs, <b>D-dimer &ge;250 &micro;g/L</b> on treatment, BMI &ge;30, age &ge;65. <b>&le;1 &rarr; may stop</b>: 3.0%/pt-yr vs 8.1% in high-risk women + men <span class='r'>REVERSE II</span>",
+        "<b>Bleeding risk:</b> age &gt;65&ndash;75, prior bleeding, cancer, renal/liver failure, low platelets, prior stroke, antiplatelets, alcohol, anemia &rarr; <b>high risk favors stopping at 3 mo</b>"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "33%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Unusual sites and distal clot",
+       "headers": [
+        "Site",
+        "Approach"
+       ],
+       "widths": [
+        "19%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Splanchnic</b>",
+         "Non-cirrhotic: <b>JAK2 V617F</b> (then CALR, marrow), <b>PNH flow</b>, APS; local causes. Treat &ge;3&ndash;6 mo; <b>indefinite if MPN, unprovoked, Budd-Chiari</b>. Screen varices without delaying"
+        ],
+        [
+         "<b>Cerebral venous</b>",
+         "<b>Anticoagulate even with hemorrhagic infarct.</b> Heparin &rarr; <b>DOAC acceptable</b> (RE-SPECT CVT, n=120; ACTION-CVT cohort: less major hemorrhage, HR 0.35). 3&ndash;12 mo"
+        ],
+        [
+         "<b>Arm / catheter</b>",
+         "<b>3 mo or while the line stays</b>; <b>keep a working, needed line</b>. Paget-Schroetter: CDT + thoracic outlet decompression"
+        ],
+        [
+         "<b>Superficial vein</b>",
+         "<b>&ge;5 cm, &gt;3 cm from SFJ &rarr; fondaparinux 2.5 mg &times;45 d</b> (CALISTO 0.9% vs 5.9%). <b>&le;3 cm from SFJ &rarr; treat as DVT</b>"
+        ],
+        [
+         "<b>Isolated distal DVT</b>",
+         "Mild, no risk factors &rarr; <b>serial CUS over 2 wk</b>. Treat 3 mo if severe symptoms, extensive, cancer, inpatient, prior VTE. CACTUS: nadroparin no better (3% vs 5%), bleeding 4% vs 0%"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Thrombophilia testing",
+       "items": [
+        "<b>Don't test</b> if it won't change management: major transient provocation; unprovoked VTE already on extended therapy; cancer; acute clot or on anticoagulation; routine relatives",
+        "<b>May matter:</b> <b>APS</b> in young unprovoked VTE, unusual sites, arterial + venous events, pregnancy morbidity &mdash; before choosing a DOAC. Women with a relative's VTE + known thrombophilia weighing estrogen/pregnancy",
+        "<b>Timing:</b> FVL, PT G20210A any time. <b>Protein C/S, AT fall with acute clot</b>; warfarin lowers C/S, heparin AT, pregnancy S; DOACs falsely raise clot-based assays. <b>LA unreliable on DOAC/warfarin</b>; ELISAs unaffected. <b>APS needs persistence &ge;12 wk</b>"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Thrombophilias",
+       "headers": [
+        "Defect",
+        "Prevalence &middot; RR first VTE <span class='r'>ASH Ed 2016</span>",
+        "Notes"
+       ],
+       "widths": [
+        "22%",
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Factor V Leiden</b> (het)",
+         "3&ndash;7% of Europeans &middot; <b>3&ndash;5&times;</b>",
+         "APC resistance; ~20% of VTE pts. Homozygous much higher"
+        ],
+        [
+         "<b>Prothrombin G20210A</b>",
+         "0.7&ndash;4% &middot; <b>2&ndash;3&times;</b>",
+         "Small effect on recurrence"
+        ],
+        [
+         "<b>Antithrombin def.</b>",
+         "0.02&ndash;0.2% &middot; <b>5&ndash;10&times;</b>",
+         "Strongest; heparin resistance"
+        ],
+        [
+         "<b>Protein C def.</b>",
+         "rare &middot; <b>4&ndash;6.5&times;</b>",
+         "Warfarin skin necrosis &mdash; overlap heparin"
+        ],
+        [
+         "<b>Protein S def.</b>",
+         "rare &middot; <b>1&ndash;10&times;</b>",
+         "Free S low in pregnancy, estrogen"
+        ],
+        [
+         "<b>Acquired</b>",
+         "&mdash;",
+         "<b>APS</b>, cancer, MPN (JAK2), PNH, nephrotic syndrome, IBD, HIT, estrogen, pregnancy"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subtitle": "Page 3 &mdash; dosing, switching, procedures, interactions, follow-up, hormonal therapy, key trials",
+   "columns": [
+    {
+     "width": "35%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Agents &mdash; dosing",
+       "headers": [
+        "Agent",
+        "Treatment",
+        "Extended &middot; renal"
+       ],
+       "widths": [
+        "14%",
+        "44%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Apixaban</b>",
+         "<b>10 mg BID &times;7 d &rarr; 5 mg BID</b>",
+         "<b>2.5 mg BID</b> after &ge;6 mo. No renal or age reduction for VTE"
+        ],
+        [
+         "<b>Rivaroxaban</b>",
+         "<b>15 mg BID &times;21 d &rarr; 20 mg daily</b>, with food",
+         "<b>10 mg daily</b> after &ge;6 mo. Avoid CrCl &lt;15"
+        ],
+        [
+         "<b>Edoxaban</b>",
+         "LMWH/UFH &ge;5 d &rarr; <b>60 mg daily</b>",
+         "<b>30 mg</b> if CrCl 15&ndash;50, &le;60 kg, or P-gp inhibitor"
+        ],
+        [
+         "<b>Dabigatran</b>",
+         "LMWH/UFH 5&ndash;10 d &rarr; <b>150 mg BID</b>",
+         "Avoid CrCl &le;30"
+        ],
+        [
+         "<b>Warfarin</b>",
+         "Start with parenteral; <b>overlap &ge;5 d and until INR &ge;2 for 24 h</b>; target 2&ndash;3",
+         "Not renally cleared"
+        ],
+        [
+         "<b>Enoxaparin</b>",
+         "<b>1 mg/kg q12h</b> (1.5 mg/kg daily option; avoid in obesity/cancer)",
+         "CrCl &lt;30: <b>1 mg/kg daily</b>. Peak anti-Xa 0.6&ndash;1.0 (q12h) if obese, pregnant, renal"
+        ],
+        [
+         "<b>Dalteparin</b>",
+         "Cancer: <b>200 IU/kg daily &times;1 mo &rarr; 150 IU/kg daily</b> (max 18,000 IU)",
+         "Anti-Xa if CrCl &lt;30"
+        ],
+        [
+         "<b>Fondaparinux</b>",
+         "<b>&lt;50 kg 5 mg &middot; 50&ndash;100 kg 7.5 mg &middot; &gt;100 kg 10 mg</b> daily",
+         "SVT 2.5 mg &times;45 d. Avoid CrCl &lt;30"
+        ],
+        [
+         "<b>UFH</b>",
+         "<b>80 U/kg bolus &rarr; 18 U/kg/h</b>; anti-Xa 0.3&ndash;0.7",
+         "Preferred for CrCl &lt;30 or likely lysis"
+        ],
+        [
+         "<b>Argatroban</b> <span class='r'>HIT</span>",
+         "<b>2 &micro;g/kg/min</b> (0.5&ndash;1.2 if hepatic dysfunction, ICU); aPTT 1.5&ndash;3&times; baseline",
+         "Hepatic clearance; raises INR"
+        ],
+        [
+         "<b>Alteplase</b> <span class='r'>high-risk PE</span>",
+         "<b>100 mg IV over 2 h</b>",
+         "Hold UFH during infusion (US label); ESC allows continuing"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Switching agents",
+       "headers": [
+        "From &rarr; to",
+        "How"
+       ],
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>LMWH &rarr; DOAC</b>",
+         "Give DOAC when the next LMWH dose is due"
+        ],
+        [
+         "<b>UFH infusion &rarr; DOAC</b>",
+         "Start DOAC when the infusion stops"
+        ],
+        [
+         "<b>DOAC &rarr; LMWH/UFH</b>",
+         "Start when the next DOAC dose is due"
+        ],
+        [
+         "<b>Warfarin &rarr; DOAC</b>",
+         "Stop warfarin; start apixaban/dabigatran at INR &lt;2, edoxaban &le;2.5, rivaroxaban &lt;3"
+        ],
+        [
+         "<b>DOAC &rarr; warfarin</b>",
+         "Overlap until INR &ge;2 (edoxaban: halve dose during overlap); DOACs raise the INR &mdash; draw at DOAC trough"
+        ]
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Follow-up after VTE",
+       "items": [
+        "<b>Post-thrombotic syndrome</b> (pain, swelling, skin change, ulcer; score by Villalta): <b>stockings do not prevent it</b> &mdash; 14.2% vs 12.7% with placebo stockings <span class='r'>SOX 2014</span>; use them for symptoms. <b>No routine catheter lysis for proximal DVT</b>: PTS 47% vs 48%, major bleeding 1.7% vs 0.3% <span class='r'>ATTRACT 2017</span>",
+        "<b>CTEPH:</b> persistent dyspnea or exercise limitation at <b>3&ndash;6 mo after PE</b> &rarr; echo + <b>V/Q scan</b> (more sensitive than CTPA for chronic clot) &rarr; CTEPH center. No routine screening of asymptomatic patients",
+        "<b>At 3 months:</b> recheck bleeding risk, renal function, CBC, adherence; record a baseline CUS/imaging if it would help judge a future recurrence"
+       ]
+      }
+     ]
+    },
+    {
+     "width": "31%",
+     "blocks": [
+      {
+       "type": "bullets",
+       "heading": "Periprocedural management",
+       "items": [
+        "<b>DOACs: hold by bleeding risk, no bridging, no pre-op levels</b> <span class='r'>PAUSE 2019</span>. Xa inhibitors: <b>low/moderate risk skip 1 day</b> before, resume day 1 after; <b>high risk skip 2 days</b>, resume day 2&ndash;3. Dabigatran with CrCl &lt;50: 2 d / 4 d. Major bleeding &le;2% (~3% high-risk procedures), arterial events &lt;1% (AF population)",
+        "<b>Warfarin:</b> stop 5 d before; <b>no bridging for most</b> &mdash; BRIDGE (AF): arterial events 0.4% vs 0.3%, major bleeding <b>1.3% vs 3.2%</b> with LMWH bridging",
+        "<b>VTE &lt;3 months ago:</b> defer elective surgery; if it can't wait, bridge with LMWH; if &lt;1 mo and surgery is mandatory, a retrievable filter can be considered",
+        "<b>Neuraxial:</b> follow ASRA intervals; prophylactic LMWH 12 h, therapeutic 24 h before the needle"
+       ]
+      },
+      {
+       "type": "bullets",
+       "heading": "Drug interactions",
+       "items": [
+        "<b>Avoid DOACs with strong combined CYP3A4 + P-gp inducers:</b> rifampin, carbamazepine, phenytoin, St John's wort, enzalutamide, apalutamide &rarr; use LMWH",
+        "<b>Strong combined inhibitors</b> (ketoconazole, itraconazole, ritonavir incl. nirmatrelvir/ritonavir, cobicistat): avoid rivaroxaban; apixaban halve the dose (avoid if already on 2.5 mg). <b>Dabigatran/edoxaban:</b> P-gp inhibitors (dronedarone, ketoconazole) raise levels",
+        "<b>Bleeding add-ons:</b> antiplatelets, NSAIDs, SSRIs, ibrutinib; stop aspirin unless there is a firm arterial indication"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Hormonal therapy &mdash; VTE risk by type",
+       "headers": [
+        "Type",
+        "VTE risk"
+       ],
+       "widths": [
+        "30%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>Combined pill</b>",
+         "<b>&uarr; ~3&times;</b> (OR 2.97): levonorgestrel / norethisterone / norgestimate ~2.5&times;; desogestrel, gestodene, drospirenone, cyproterone ~3.6&ndash;4.3&times; <span class='r'>Vinogradova BMJ 2015</span>"
+        ],
+        [
+         "<b>Combined patch / ring</b>",
+         "<b>&uarr; ~8&times;</b> patch, ~6.5&times; ring vs non-users; ~2&times; vs levonorgestrel pill <span class='r'>Lidegaard BMJ 2012</span>"
+        ],
+        [
+         "<b>Oral HRT</b>",
+         "<b>&uarr; ~1.6&times;</b> (hepatic first pass); CEE + MPA 2.1&times;, estradiol + dydrogesterone 1.2&times; (NS)"
+        ],
+        [
+         "<b>Transdermal estradiol</b> <span class='r'>patch / gel</span>",
+         "<b>No &uarr;</b> (OR 0.93 <span class='r'>Vinogradova BMJ 2019</span>; 0.9 <span class='r'>ESTHER</span>) &mdash; preferred; pair with micronized progesterone or dydrogesterone"
+        ],
+        [
+         "<b>Progestin-only</b>",
+         "LNG-IUD, pill: no &uarr;; implant ~1.4&times; (NS); <b>DMPA &uarr; ~2.7&times;</b>"
+        ],
+        [
+         "<b>Tamoxifen / raloxifene</b>",
+         "<b>&uarr; ~2&ndash;3&times;</b>; raloxifene ~30% fewer events than tamoxifen (STAR)"
+        ]
+       ],
+       "footnote": "Low-dose vaginal estrogen: no clear &uarr;. Estrogen-containing or progestin-only therapy may continue during therapeutic anticoagulation (no excess recurrence, EINSTEIN &mdash; Martinelli Blood 2016); stop estrogen before anticoagulation ends (German guidance: &ge;6 wk before). Gender-affirming: estradiol not ethinyl estradiol; transdermal preferred."
+      }
+     ]
+    },
+    {
+     "width": "34%",
+     "blocks": [
+      {
+       "type": "table",
+       "heading": "Key trials",
+       "headers": [
+        "Trial",
+        "Result &rarr; practice"
+       ],
+       "widths": [
+        "24%",
+        ""
+       ],
+       "rows": [
+        [
+         "<b>AMPLIFY-EXT</b> <span class='r'>NEJM 2013</span>",
+         "Apixaban 2.5 or 5 mg BID vs placebo, 12 mo after 6&ndash;12 mo Rx: recurrent VTE/VTE death <b>1.7% / 1.7% vs 8.8%</b>; major bleeding 0.2 / 0.1 vs 0.5%"
+        ],
+        [
+         "<b>EINSTEIN-CHOICE</b> <span class='r'>NEJM 2017</span>",
+         "Rivaroxaban 20 / 10 mg vs aspirin 100 mg (n=3396): recurrence <b>1.5% / 1.2% vs 4.4%</b>; no significant bleeding increase"
+        ],
+        [
+         "<b>RENOVE</b> <span class='r'>Lancet 2025</span>",
+         "High-risk, reduced vs full-dose DOAC (n=2768): recurrence 2.2% vs 1.8%, <b>noninferiority not met</b>; clinically relevant bleeding <b>9.9% vs 15.2%</b>"
+        ],
+        [
+         "<b>Hokusai VTE Cancer</b> <span class='r'>NEJM 2018</span>",
+         "Edoxaban vs dalteparin: recurrence/major bleeding 12.8% vs 13.5% (NI); <b>major bleeding 6.9% vs 4.0%</b>, mostly GI cancer"
+        ],
+        [
+         "<b>SELECT-D</b> <span class='r'>JCO 2018</span>",
+         "Rivaroxaban vs dalteparin (n=406): 6-mo recurrence <b>4% vs 11%</b>; CRNMB 13% vs 4%"
+        ],
+        [
+         "<b>Caravaggio</b> <span class='r'>NEJM 2020</span>",
+         "Apixaban vs dalteparin (n=1155): recurrence 5.6% vs 7.9% (NI); <b>major bleeding 3.8% vs 4.0%</b>"
+        ],
+        [
+         "<b>API-CAT</b> <span class='r'>NEJM 2025</span>",
+         "Cancer, after &ge;6 mo: apixaban 2.5 vs 5 mg BID (n=1766): recurrence 2.1% vs 2.8% (NI); CR bleeding <b>12.1% vs 15.6%</b>"
+        ],
+        [
+         "<b>ADAM VTE</b> <span class='r'>JTH 2020</span>",
+         "Apixaban vs dalteparin (n=300): major bleeding <b>0% vs 1.4%</b> (NS); recurrence 0.7% vs 6.3%"
+        ],
+        [
+         "<b>AVERT</b> <span class='r'>NEJM 2019</span>",
+         "Khorana &ge;2, apixaban 2.5 BID vs placebo: VTE <b>4.2% vs 10.2%</b>; major bleeding 3.5% on apixaban"
+        ],
+        [
+         "<b>CASSINI</b> <span class='r'>NEJM 2019</span>",
+         "Rivaroxaban 10 mg vs placebo: 6.0% vs 8.8% at 180 d (<b>NS</b>); on-treatment 2.6% vs 6.4%"
+        ],
+        [
+         "<b>TRAPS</b> <span class='r'>Blood 2018</span>",
+         "Triple-positive APS: rivaroxaban thromboembolism <b>12% vs 0</b> on warfarin &rarr; stopped early, <b>no DOACs</b>"
+        ],
+        [
+         "<b>PEITHO</b> <span class='r'>NEJM 2014</span>",
+         "Intermediate-risk PE, tenecteplase: death/decompensation 2.6% vs 5.6%; <b>hemorrhagic stroke 2.0% vs 0.2%</b> &rarr; no routine lysis"
+        ],
+        [
+         "<b>REVERSE II</b> <span class='r'>BMJ 2017</span>",
+         "HERDOO2 &le;1 women stopped: recurrence <b>3.0%/pt-yr</b>"
+        ],
+        [
+         "<b>YEARS</b> <span class='r'>Lancet 2017</span>",
+         "Variable D-dimer threshold: CTPA avoided in 48% of suspected PE"
+        ],
+        [
+         "<b>CALISTO</b> <span class='r'>NEJM 2010</span>",
+         "SVT &ge;5 cm, fondaparinux 2.5 mg &times;45 d: <b>0.9% vs 5.9%</b>"
+        ],
+        [
+         "<b>CACTUS</b> <span class='r'>Lancet Haem 2016</span>",
+         "Low-risk calf DVT: nadroparin vs placebo 3% vs 5% (NS); bleeding 4% vs 0%"
+        ],
+        [
+         "<b>Highlow</b> <span class='r'>Lancet 2022</span>",
+         "Pregnancy, prior VTE: weight-adjusted intermediate vs fixed low-dose LMWH, VTE 2% vs 3% (NS) &rarr; <b>low dose</b>"
+        ],
+        [
+         "<b>SOX / ATTRACT</b> <span class='r'>2014 / 2017</span>",
+         "Stockings and catheter lysis <b>do not prevent PTS</b>; ATTRACT more major bleeding"
+        ],
+        [
+         "<b>PAUSE / BRIDGE</b> <span class='r'>2019 / 2015</span>",
+         "Standardized DOAC holds, no bridging: major bleeding &le;2% (~3% high-risk procedures), arterial &lt;1%. Bridging warfarin raised major bleeding 1.3% &rarr; 3.2%, no fewer arterial events"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "headings": [
+  "Diagnosis",
+  "Acute PE risk &mdash; ESC 2019",
+  "Acute PE &mdash; therapies",
+  "Pathophysiology",
+  "Provoked vs unprovoked &mdash; ISTH 2016 / ESC 2019",
+  "Treatment phases and duration",
+  "Extended-phase evidence",
+  "Choosing the anticoagulant",
+  "Cancer-associated VTE &mdash; ASCO 2023, ASH 2021",
+  "Khorana score",
+  "Special populations",
+  "Recurrence and bleeding risk",
+  "Unusual sites and distal clot",
+  "Thrombophilia testing",
+  "Thrombophilias",
+  "Agents &mdash; dosing",
+  "Switching agents",
+  "Follow-up after VTE",
+  "Periprocedural management",
+  "Drug interactions",
+  "Hormonal therapy &mdash; VTE risk by type",
+  "Key trials"
+ ],
+ "text": "Venous thromboembolism (DVT / PE) Diagnose with pretest probability → D-dimer → imaging · triage PE by ESC risk class · 3 months for everyone, then stop for a major transient provocation or extend (often reduced-dose DOAC) for unprovoked or persistent risk · DOACs first-line; LMWH or warfarin in pregnancy, APS and selected cancers Compiled from the Fellowship DVT/PE, Anticoagulation & Reversal and Hematology in Pregnancy reviews · ESC 2019 PE, ASH 2018–2021, ASCO 2023, ISTH SSC guidance · FDA labels · primary trial reports verified against published abstracts, October 2026. Diagnosis Pretest probability first. Wells DVT ≤1 → D-dimer (negative excludes), ≥2 → compression ultrasound . Wells PE ≤4 → D-dimer , >4 → CTPA PERC only if gestalt <15%: age <50, HR <100, SaO&#8322; ≥95%, no hemoptysis, estrogen, prior VTE, leg swelling, recent surgery/trauma → no testing Age-adjusted D-dimer: age × 10 &micro;g/L if >50 y ADJUST-PE . YEARS: no items (DVT signs, hemoptysis, PE most likely) → exclude if <1000 ng/mL; ≥1 item → <500; CTPA avoided in 48% D-dimer rules out, never in — skip it when probability is high Imaging: CUS (repeat in 1 wk if negative proximal scan + high suspicion). CTPA for PE; V/Q if contrast allergy, renal failure, or pregnancy with normal CXR. Unstable: bedside echo + CUS Acute PE risk — ESC 2019 Class Defined by Management High Hemodynamic instability : arrest, SBP <90 or pressors, or SBP drop ≥40 for >15 min UFH + systemic lysis ; embolectomy (surgical/catheter) if contraindicated or fails Intermediate-high sPESI ≥1 + RV dysfunction AND raised troponin Anticoagulate, monitor; rescue lysis or catheter therapy if decompensates ; PERT Intermediate-low sPESI ≥1 + one or neither, or sPESI 0 + either positive Admit, anticoagulate Low sPESI 0 , no RV dysfunction/troponin Home or early discharge if Hestia-negative sPESI (1 each): age >80, cancer, chronic heart/lung disease, HR ≥110, SBP <100, SaO&#8322; <90%. RV dysfunction: RV/LV ≥1.0 on CT or echo dilation/hypokinesis. Hestia: 11 exclusions (O&#8322; need, bleeding risk, CrCl <30, pregnancy, social&hellip;). Acute PE — therapies Systemic lysis for high-risk PE only: alteplase 100 mg over 2 h . Not routine in intermediate-high: tenecteplase cut decompensation 2.6% vs 5.6% but hemorrhagic stroke 2.0% vs 0.2% PEITHO Catheter-directed therapy: lysis contraindicated, or intermediate-high deteriorating — PERT decision. UFH first if lysis/procedure likely IVC filter only if acute proximal DVT/PE + anticoagulation contraindicated ; retrievable — anticoagulate and remove once safe. Not for recurrence on therapy or added to anticoagulation Pathophysiology Provoked vs unprovoked — ISTH 2016 / ESC 2019 Category Examples Default Major transient ≤3 mo Surgery >30 min general anesthesia; bed-bound admission ≥3 d; cesarean; major trauma 3 mo, stop Minor transient ≤2 mo Short surgery or admission; estrogen , pregnancy; leg injury; long-haul travel 3 mo , usually stop Persistent Active cancer , IBD, autoimmune disease, APS Extended Unprovoked No identifiable factor Extended if bleeding risk OK Recurrence after stopping, first unprovoked VTE: 10% at 1 y, 25% at 5 y, 36% at 10 y ; higher in men Khan BMJ 2019 . Age-appropriate cancer screening only. Treatment phases and duration Initiation + treatment phase Start full dose Apixaban 10 mg BID ×7 d → 5 mg BID Rivaroxaban 15 mg BID ×21 d → 20 mg daily Edoxaban/dabigatran : 5–10 d LMWH first Warfarin : overlap ≥5 d + INR ≥2 ×24 h Treat 3 months for everyone (cancer: ≥6 months) — then decide Decision at 3 months Transient factor major → stop ; minor → usually stop, extend only if the risk persists Unprovoked or persistent factor extended, no stop date if bleeding risk low–moderate; reassess every year 2nd unprovoked VTE → indefinite Extended phase (after ≥6 months) Reduced-dose DOAC apixaban 2.5 mg BID (AMPLIFY-EXT) rivaroxaban 10 mg daily (EINSTEIN-CHOICE) cancer: apixaban 2.5 BID noninferior (API-CAT) Full dose or aspirin full dose if recurrence on reduced dose (RENOVE: reduced dose missed NI, but less bleeding) aspirin only if stopping: ~32% fewer recurrences Extended-phase evidence Apixaban 2.5 or 5 mg BID vs placebo: recurrence 1.7% / 1.7% vs 8.8% , no increase in major bleeding AMPLIFY-EXT Rivaroxaban 10 or 20 mg vs aspirin 100 mg: 1.2% / 1.5% vs 4.4% EINSTEIN-CHOICE Higher recurrence risk: male sex, proximal DVT or PE (vs distal), D-dimer high after stopping, obesity, APS, active cancer Choosing the anticoagulant Agent Choose when Avoid / caution Apixaban Default ; no lead-in; ~27% renal — best DOAC in CKD and GI cancer; major bleeding RR 0.31 vs LMWH/warfarin (AMPLIFY) APS; strong dual inducers Rivaroxaban No lead-in; daily after day 21 With food ; CrCl <15; heavy menses Edoxaban Daily, after parenteral lead-in GI cancer bleeding Dabigatran After lead-in; idarucizumab reversal CrCl ≤30 ; dyspepsia Warfarin APS , mechanical valve, dialysis, cost Pregnancy ; INR checks LMWH Pregnancy ; selected cancers; recurrence on DOAC CrCl <30 (adjust/UFH) Fondaparinux HIT history (off-label); SVT CrCl <30; no reversal UFH Lysis likely; CrCl <30; high bleeding risk HIT; monitoring Cancer-associated VTE — ASCO 2023, ASH 2021 DOAC or LMWH ≥6 mo, then while cancer is active. Treat incidental clot like symptomatic DOACs cut recurrence vs dalteparin; edoxaban/rivaroxaban add GI/GU bleeding: edoxaban major bleeding 6.9% vs 4.0% (Hokusai); rivaroxaban recurrence 4% vs 11%, CRNMB 13% vs 4% (SELECT-D). Apixaban no excess : 3.8% vs 4.0% (Caravaggio), 0% vs 1.4% (ADAM VTE) LMWH (or apixaban) for unresected luminal GI/GU tumors, platelets <50k, poor intake, interacting drugs (enzalutamide, apalutamide, azoles, ritonavir) Extended: apixaban 2.5 mg BID after ≥6 mo — recurrence 2.1% vs 2.8%, bleeding 12.1% vs 15.6% API-CAT Prophylaxis: starting chemo + Khorana ≥2 + low bleeding risk → apixaban 2.5 BID or rivaroxaban 10 daily . AVERT 4.2% vs 10.2%; CASSINI NS at 180 d (6.0% vs 8.8%). Myeloma + IMiD: aspirin or LMWH/DOAC by risk Khorana score Factor Points Very high-risk site: stomach, pancreas 2 High-risk site: lung, lymphoma, gynecologic, bladder, testicular 1 Pre-chemo platelets ≥350k · Hb <10 or ESA · WBC >11k · BMI ≥35 1 each 0 low, 1–2 intermediate, ≥3 high. Trials and ASCO 2023 use ≥2 as the prophylaxis threshold. Special populations Setting Approach APS Warfarin INR 2–3; no DOACs , above all triple-positive or arterial events. TRAPS (rivaroxaban, triple-positive): thromboembolism 12% vs 0 , stopped early; ASTRO-APS (apixaban): excess strokes Pregnancy Therapeutic LMWH by weight ; no routine anti-Xa. No warfarin or DOAC antepartum. Treat to ≥6 wk postpartum, ≥3 mo total . Planned delivery: last therapeutic dose 24 h before neuraxial (prophylactic 12 h). Postpartum LMWH or warfarin (breastfeeding OK); DOAC only if not breastfeeding Prior VTE, now pregnant Antepartum prophylaxis if prior VTE was unprovoked or hormonal; postpartum prophylaxis 6 wk for most. Fixed low-dose LMWH is enough — weight-adjusted intermediate dose no better (Highlow: 2% vs 3%) Obesity Standard-dose apixaban or rivaroxaban at any BMI/weight (ISTH 2021); avoid dabigatran/edoxaban at extremes; no routine DOAC levels. After bariatric surgery: parenteral first, not a DOAC CKD CrCl <30: apixaban (limited data), UFH, or enoxaparin 1 mg/kg daily; avoid dabigatran (≤30) and rivaroxaban (<15); edoxaban 30 mg for CrCl 15–50. Dialysis: apixaban or warfarin Thrombocytopenia >50k: full dose. 25–50k: acute, high-risk clot → full-dose LMWH + platelet transfusion to 40–50k; otherwise 50% or prophylactic LMWH. <25k: hold ISTH 2018 . Avoid DOACs <50k HIT Stop all heparin (flushes too); argatroban, bivalirudin, fondaparinux or a DOAC . No warfarin until platelets recover (≥150k), then overlap ≥5 d; vitamin K if on warfarin at diagnosis. Bilateral CUS. With thrombosis treat 3 mo Elderly / frail DOAC over warfarin; apixaban lowest bleeding. AF dose-reduction criteria do not apply to VTE — apixaban 5 mg BID regardless of age/weight/creatinine Recurrence on therapy Confirm it is new clot (compare with baseline imaging). Check adherence, dose, interactions, absorption ; look for cancer, APS, HIT, MPN/PNH , May-Thurner. DOAC/warfarin → therapeutic LMWH; on LMWH → raise dose 20–25% Recurrence and bleeding risk HERDOO2 (women, first unprovoked VTE, after 5–12 mo): post-thrombotic signs, D-dimer ≥250 &micro;g/L on treatment, BMI ≥30, age ≥65. ≤1 → may stop : 3.0%/pt-yr vs 8.1% in high-risk women + men REVERSE II Bleeding risk: age >65–75, prior bleeding, cancer, renal/liver failure, low platelets, prior stroke, antiplatelets, alcohol, anemia → high risk favors stopping at 3 mo Unusual sites and distal clot Site Approach Splanchnic Non-cirrhotic: JAK2 V617F (then CALR, marrow), PNH flow , APS; local causes. Treat ≥3–6 mo; indefinite if MPN, unprovoked, Budd-Chiari . Screen varices without delaying Cerebral venous Anticoagulate even with hemorrhagic infarct. Heparin → DOAC acceptable (RE-SPECT CVT, n=120; ACTION-CVT cohort: less major hemorrhage, HR 0.35). 3–12 mo Arm / catheter 3 mo or while the line stays ; keep a working, needed line . Paget-Schroetter: CDT + thoracic outlet decompression Superficial vein ≥5 cm, >3 cm from SFJ → fondaparinux 2.5 mg ×45 d (CALISTO 0.9% vs 5.9%). ≤3 cm from SFJ → treat as DVT Isolated distal DVT Mild, no risk factors → serial CUS over 2 wk . Treat 3 mo if severe symptoms, extensive, cancer, inpatient, prior VTE. CACTUS: nadroparin no better (3% vs 5%), bleeding 4% vs 0% Thrombophilia testing Don't test if it won't change management: major transient provocation; unprovoked VTE already on extended therapy; cancer; acute clot or on anticoagulation; routine relatives May matter: APS in young unprovoked VTE, unusual sites, arterial + venous events, pregnancy morbidity — before choosing a DOAC. Women with a relative's VTE + known thrombophilia weighing estrogen/pregnancy Timing: FVL, PT G20210A any time. Protein C/S, AT fall with acute clot ; warfarin lowers C/S, heparin AT, pregnancy S; DOACs falsely raise clot-based assays. LA unreliable on DOAC/warfarin ; ELISAs unaffected. APS needs persistence ≥12 wk Thrombophilias Defect Prevalence · RR first VTE ASH Ed 2016 Notes Factor V Leiden (het) 3–7% of Europeans · 3–5× APC resistance; ~20% of VTE pts. Homozygous much higher Prothrombin G20210A 0.7–4% · 2–3× Small effect on recurrence Antithrombin def. 0.02–0.2% · 5–10× Strongest; heparin resistance Protein C def. rare · 4–6.5× Warfarin skin necrosis — overlap heparin Protein S def. rare · 1–10× Free S low in pregnancy, estrogen Acquired — APS , cancer, MPN (JAK2), PNH, nephrotic syndrome, IBD, HIT, estrogen, pregnancy Agents — dosing Agent Treatment Extended · renal Apixaban 10 mg BID ×7 d → 5 mg BID 2.5 mg BID after ≥6 mo. No renal or age reduction for VTE Rivaroxaban 15 mg BID ×21 d → 20 mg daily , with food 10 mg daily after ≥6 mo. Avoid CrCl <15 Edoxaban LMWH/UFH ≥5 d → 60 mg daily 30 mg if CrCl 15–50, ≤60 kg, or P-gp inhibitor Dabigatran LMWH/UFH 5–10 d → 150 mg BID Avoid CrCl ≤30 Warfarin Start with parenteral; overlap ≥5 d and until INR ≥2 for 24 h ; target 2–3 Not renally cleared Enoxaparin 1 mg/kg q12h (1.5 mg/kg daily option; avoid in obesity/cancer) CrCl <30: 1 mg/kg daily . Peak anti-Xa 0.6–1.0 (q12h) if obese, pregnant, renal Dalteparin Cancer: 200 IU/kg daily ×1 mo → 150 IU/kg daily (max 18,000 IU) Anti-Xa if CrCl <30 Fondaparinux <50 kg 5 mg · 50–100 kg 7.5 mg · >100 kg 10 mg daily SVT 2.5 mg ×45 d. Avoid CrCl <30 UFH 80 U/kg bolus → 18 U/kg/h ; anti-Xa 0.3–0.7 Preferred for CrCl <30 or likely lysis Argatroban HIT 2 &micro;g/kg/min (0.5–1.2 if hepatic dysfunction, ICU); aPTT 1.5–3× baseline Hepatic clearance; raises INR Alteplase high-risk PE 100 mg IV over 2 h Hold UFH during infusion (US label); ESC allows continuing Switching agents From → to How LMWH → DOAC Give DOAC when the next LMWH dose is due UFH infusion → DOAC Start DOAC when the infusion stops DOAC → LMWH/UFH Start when the next DOAC dose is due Warfarin → DOAC Stop warfarin; start apixaban/dabigatran at INR <2, edoxaban ≤2.5, rivaroxaban <3 DOAC → warfarin Overlap until INR ≥2 (edoxaban: halve dose during overlap); DOACs raise the INR — draw at DOAC trough Follow-up after VTE Post-thrombotic syndrome (pain, swelling, skin change, ulcer; score by Villalta): stockings do not prevent it — 14.2% vs 12.7% with placebo stockings SOX 2014 ; use them for symptoms. No routine catheter lysis for proximal DVT : PTS 47% vs 48%, major bleeding 1.7% vs 0.3% ATTRACT 2017 CTEPH: persistent dyspnea or exercise limitation at 3–6 mo after PE → echo + V/Q scan (more sensitive than CTPA for chronic clot) → CTEPH center. No routine screening of asymptomatic patients At 3 months: recheck bleeding risk, renal function, CBC, adherence; record a baseline CUS/imaging if it would help judge a future recurrence Periprocedural management DOACs: hold by bleeding risk, no bridging, no pre-op levels PAUSE 2019 . Xa inhibitors: low/moderate risk skip 1 day before, resume day 1 after; high risk skip 2 days , resume day 2–3. Dabigatran with CrCl <50: 2 d / 4 d. Major bleeding ≤2% (~3% high-risk procedures), arterial events <1% (AF population) Warfarin: stop 5 d before; no bridging for most — BRIDGE (AF): arterial events 0.4% vs 0.3%, major bleeding 1.3% vs 3.2% with LMWH bridging VTE <3 months ago: defer elective surgery; if it can't wait, bridge with LMWH; if <1 mo and surgery is mandatory, a retrievable filter can be considered Neuraxial: follow ASRA intervals; prophylactic LMWH 12 h, therapeutic 24 h before the needle Drug interactions Avoid DOACs with strong combined CYP3A4 + P-gp inducers: rifampin, carbamazepine, phenytoin, St John's wort, enzalutamide, apalutamide → use LMWH Strong combined inhibitors (ketoconazole, itraconazole, ritonavir incl. nirmatrelvir/ritonavir, cobicistat): avoid rivaroxaban; apixaban halve the dose (avoid if already on 2.5 mg). Dabigatran/edoxaban: P-gp inhibitors (dronedarone, ketoconazole) raise levels Bleeding add-ons: antiplatelets, NSAIDs, SSRIs, ibrutinib; stop aspirin unless there is a firm arterial indication Hormonal therapy — VTE risk by type Type VTE risk Combined pill &uarr; ~3× (OR 2.97): levonorgestrel / norethisterone / norgestimate ~2.5×; desogestrel, gestodene, drospirenone, cyproterone ~3.6–4.3× Vinogradova BMJ 2015 Combined patch / ring &uarr; ~8× patch, ~6.5× ring vs non-users; ~2× vs levonorgestrel pill Lidegaard BMJ 2012 Oral HRT &uarr; ~1.6× (hepatic first pass); CEE + MPA 2.1×, estradiol + dydrogesterone 1.2× (NS) Transdermal estradiol patch / gel No &uarr; (OR 0.93 Vinogradova BMJ 2019 ; 0.9 ESTHER ) — preferred; pair with micronized progesterone or dydrogesterone Progestin-only LNG-IUD, pill: no &uarr;; implant ~1.4× (NS); DMPA &uarr; ~2.7× Tamoxifen / raloxifene &uarr; ~2–3× ; raloxifene ~30% fewer events than tamoxifen (STAR) Low-dose vaginal estrogen: no clear &uarr;. Estrogen-containing or progestin-only therapy may continue during therapeutic anticoagulation (no excess recurrence, EINSTEIN — Martinelli Blood 2016); stop estrogen before anticoagulation ends (German guidance: ≥6 wk before). Gender-affirming: estradiol not ethinyl estradiol; transdermal preferred. Key trials Trial Result → practice AMPLIFY-EXT NEJM 2013 Apixaban 2.5 or 5 mg BID vs placebo, 12 mo after 6–12 mo Rx: recurrent VTE/VTE death 1.7% / 1.7% vs 8.8% ; major bleeding 0.2 / 0.1 vs 0.5% EINSTEIN-CHOICE NEJM 2017 Rivaroxaban 20 / 10 mg vs aspirin 100 mg (n=3396): recurrence 1.5% / 1.2% vs 4.4% ; no significant bleeding increase RENOVE Lancet 2025 High-risk, reduced vs full-dose DOAC (n=2768): recurrence 2.2% vs 1.8%, noninferiority not met ; clinically relevant bleeding 9.9% vs 15.2% Hokusai VTE Cancer NEJM 2018 Edoxaban vs dalteparin: recurrence/major bleeding 12.8% vs 13.5% (NI); major bleeding 6.9% vs 4.0% , mostly GI cancer SELECT-D JCO 2018 Rivaroxaban vs dalteparin (n=406): 6-mo recurrence 4% vs 11% ; CRNMB 13% vs 4% Caravaggio NEJM 2020 Apixaban vs dalteparin (n=1155): recurrence 5.6% vs 7.9% (NI); major bleeding 3.8% vs 4.0% API-CAT NEJM 2025 Cancer, after ≥6 mo: apixaban 2.5 vs 5 mg BID (n=1766): recurrence 2.1% vs 2.8% (NI); CR bleeding 12.1% vs 15.6% ADAM VTE JTH 2020 Apixaban vs dalteparin (n=300): major bleeding 0% vs 1.4% (NS); recurrence 0.7% vs 6.3% AVERT NEJM 2019 Khorana ≥2, apixaban 2.5 BID vs placebo: VTE 4.2% vs 10.2% ; major bleeding 3.5% on apixaban CASSINI NEJM 2019 Rivaroxaban 10 mg vs placebo: 6.0% vs 8.8% at 180 d ( NS ); on-treatment 2.6% vs 6.4% TRAPS Blood 2018 Triple-positive APS: rivaroxaban thromboembolism 12% vs 0 on warfarin → stopped early, no DOACs PEITHO NEJM 2014 Intermediate-risk PE, tenecteplase: death/decompensation 2.6% vs 5.6%; hemorrhagic stroke 2.0% vs 0.2% → no routine lysis REVERSE II BMJ 2017 HERDOO2 ≤1 women stopped: recurrence 3.0%/pt-yr YEARS Lancet 2017 Variable D-dimer threshold: CTPA avoided in 48% of suspected PE CALISTO NEJM 2010 SVT ≥5 cm, fondaparinux 2.5 mg ×45 d: 0.9% vs 5.9% CACTUS Lancet Haem 2016 Low-risk calf DVT: nadroparin vs placebo 3% vs 5% (NS); bleeding 4% vs 0% Highlow Lancet 2022 Pregnancy, prior VTE: weight-adjusted intermediate vs fixed low-dose LMWH, VTE 2% vs 3% (NS) → low dose SOX / ATTRACT 2014 / 2017 Stockings and catheter lysis do not prevent PTS ; ATTRACT more major bleeding PAUSE / BRIDGE 2019 / 2015 Standardized DOAC holds, no bridging: major bleeding ≤2% (~3% high-risk procedures), arterial <1%. Bridging warfarin raised major bleeding 1.3% → 3.2%, no fewer arterial events"
+}
