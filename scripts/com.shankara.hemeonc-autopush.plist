@@ -6,8 +6,9 @@
   <string>com.shankara.hemeonc-autopush</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/bin/bash</string>
-    <string>/Users/shankaraanand/Library/CloudStorage/GoogleDrive-shankara.k.anand@gmail.com/My Drive/Personal/projects/hemeonc/scripts/autopush.sh</string>
+    <string>/usr/bin/open</string>
+    <string>-g</string>
+    <string>/Users/shankaraanand/Applications/HemeOnc Autopush.app</string>
   </array>
   <key>StartInterval</key>
   <integer>60</integer>
